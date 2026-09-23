@@ -1,0 +1,18 @@
+Phase 2 收尾：防止过时脚本误生成旧版审核文件
+
+问题
+- tools/build-phase2-review.mjs 会往 review/ 根目录写上一版的 CSV 审核表，
+  而 review/ 根目录现在只应放当前的 .xlsx 审核包。
+  若以后误跑该脚本，会在人工审核目录里混入过时文件，造成工厂人员混淆。
+
+修正
+- build-phase2-review.mjs 默认拒绝运行（exit 2），并提示改用
+  tools/build-phase2-package.mjs；确需重新生成历史 CSV 时须显式传 --force-legacy。
+- verify-phase2.mjs（历史验收测试）改为读取归档目录
+  review/_archive_phase2-csv/，保留历史可审计性。
+
+验证（三套测试全部通过）
+- tools/verify-phase2-package.mjs  85 项通过（当前阶段）
+- tools/verify-phase2.mjs          61 项通过（历史 CSV，读归档目录）
+- tools/verify-db.mjs              57 项通过（Phase 1 回归）
+- build-phase2-review.mjs 无参数运行时正确拒绝（exit 2）

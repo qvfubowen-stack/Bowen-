@@ -1,5 +1,13 @@
 /**
- * Phase 2 审核文件验收：确保非技术用户能直接打开、系统/人工列分离、护栏未被突破。
+ * ⚠️ 已取代（superseded）—— 历史验收测试
+ * ---------------------------------------------------------------------
+ * 本脚本验收的是 Phase 2 第一版的 **CSV** 审核表。
+ * 该阶段目标已取消，现阶段的审核包改为带下拉菜单的 Excel，
+ * 由 tools/verify-phase2-package.mjs 验收（85 项）。
+ *
+ * 本脚本改为读取归档目录 review/_archive_phase2-csv/，
+ * 保留仅为了证明历史产出仍然可复现、可审计。
+ * ---------------------------------------------------------------------
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -7,7 +15,8 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const D = path.join(ROOT, 'data', 'derived');
-const REVIEW = path.join(ROOT, 'review');
+// 历史 CSV 已归档，不在 review/ 根目录
+const REVIEW = path.join(ROOT, 'review', '_archive_phase2-csv');
 
 let pass = 0, fail = 0;
 const ok = (n, c, extra = '') => { if (c) { pass++; console.log(`  [PASS] ${n}`); } else { fail++; console.log(`  [FAIL] ${n} ${extra}`); } };

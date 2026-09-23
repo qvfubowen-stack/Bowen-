@@ -1,15 +1,26 @@
 /**
- * Phase 2：上线产品确认——生成人审文件
+ * ⚠️ 已取代（superseded）—— 请勿用于当前阶段
  * ---------------------------------------------------------------------
- * 输入：data/derived/**（Phase 1 产出，只读）
- * 输出：review/**（供业务方逐项确认）+ data/derived/phase2-review-flags.csv（机器可读）
+ * 本脚本生成的是 Phase 2 第一版的 **CSV** 审核表
+ * （first-72-products-review.csv、shared-oe-review.csv、
+ *   bowen-variant-review.csv、row-misalignment-review.csv）。
  *
- * 铁律：
- *   - 不修改原始 Excel / PDF
- *   - 不猜 product_type
- *   - 未经人工确认，绝不设置 indexable=yes 或 fitment_confidence=exact
- *   - 系统列（phase2_flag_* / suggested_action）与人工列（reviewer_*）严格分开
+ * 该阶段目标「自动确认 72 个 Published 产品」已被取消，
+ * 现阶段的审核交付物已改为**带下拉菜单的 Excel**，由
+ *   tools/build-phase2-package.mjs
+ * 生成，输出到 review/*.xlsx。
+ *
+ * 原 CSV 已归档到 review/_archive_phase2-csv/，仅作历史留档。
+ * 本脚本默认拒绝运行，避免误生成过时文件造成混淆。
+ * 如果确实需要重新生成历史 CSV，请显式传 --force-legacy。
+ * ---------------------------------------------------------------------
  */
+if (!process.argv.includes('--force-legacy')) {
+  console.error('本脚本已取代，请使用 tools/build-phase2-package.mjs 生成当前审核包。');
+  console.error('（如确需重新生成历史 CSV，请显式传 --force-legacy）');
+  process.exit(2);
+}
+
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
