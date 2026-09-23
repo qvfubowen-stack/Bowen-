@@ -72,8 +72,10 @@ const csv = (v) => {
 };
 const writeCsv = (file, header, rows) => {
   const lines = [header.join(',')];
-  for (const r of rows) lines.push(header.map((h) => csv(r[h])).join(','));
-  fs.writeFileSync(file, '\uFEFF' + lines.join('\r\n') + '\r\n', 'utf8');
+  for (const row of rows) lines.push(header.map((h) => csv(row[h])).join(','));
+  // 统一使用 LF 换行：与 .gitattributes 的 eol=lf 一致，避免 Git 反复改写导致虚假 diff。
+  // 文件头带 UTF-8 BOM，便于直接用 Excel 双击打开而不乱码。
+  fs.writeFileSync(file, '\uFEFF' + lines.join('\n') + '\n', 'utf8');
   return rows.length;
 };
 const writeJson = (file, obj) => fs.writeFileSync(file, JSON.stringify(obj, null, 2), 'utf8');

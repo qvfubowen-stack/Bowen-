@@ -1,0 +1,15 @@
+阶段一修正：派生 CSV 统一为 LF 换行，消除虚假 diff
+
+问题
+- 派生 CSV 原先用 CRLF 写出，而 .gitattributes 规定 eol=lf，
+  导致每次重新生成后 git status 都会显示全部文件被修改（换行符抖动），
+  无法判断"数据真的变了"还是"只是换行符变了"。
+
+修正
+- tools/build-product-db.mjs 的 writeCsv 改为写出 LF 换行，并保留 UTF-8 BOM
+  （BOM 便于直接用 Excel 双击打开中文/日文内容不乱码）。
+- 本次同时把已入库的派生数据一次性归一化为 LF。
+
+验证
+- 连续重跑两次 build + verify，验收测试 57 项全部通过。
+- 之后 git status 应保持干净（可复现性确认）。
