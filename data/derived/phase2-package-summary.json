@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-09-23T09:31:42.917Z",
+  "data_version": "v2.1.0-phase2-package",
+  "totals": {
+    "产品总数": 466,
+    "原始记录数": 970,
+    "publish_candidate": 72,
+    "searchable_noindex": 297,
+    "draft": 86,
+    "blocked": 11,
+    "published": 0
+  },
+  "产品类型未知": 466,
+  "跨工作表OE差异涉及产品": 157,
+  "Bowen编号变体涉及产品": 49,
+  "被blocked产品": 11,
+  "publish_candidate产品": 72,
+  "review_files": {
+    "first-batch-business-review.xlsx": 72,
+    "oe-cross-sheet-review.xlsx": 1843,
+    "bowen-number-variant-review.xlsx": 49,
+    "row-misalignment-review.xlsx": 29
+  },
+  "guards": {
+    "published_count": 0,
+    "product_type_filled_count": 0,
+    "fitment_exact_count": 0,
+    "indexable_yes_count": 0,
+    "high_severity_all_blocked": true
+  }
+}

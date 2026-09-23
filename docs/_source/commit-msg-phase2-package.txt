@@ -1,0 +1,59 @@
+Phase 2（调整后）：建立人工业务审核包
+
+目标调整
+- 取消「自动确认 72 个 Published 产品」的要求。
+- 新目标：建立人工业务审核包，而不是让 Agent 猜产品信息。
+- 当前 72 个第一批推荐产品不得标为 published，统一改为 publish_candidate。
+
+新增：自研 XLSX 写出器（零第三方依赖）
+- tools/lib/xlsx-writer.mjs
+  支持中文、表头样式、列宽、冻结窗格、自动筛选、单元格下拉菜单、
+  超链接、数字/文本类型。严格按 OOXML 元素顺序拼装，避免 Excel 报损坏。
+- tools/selftest-xlsx-writer.mjs 自测，写出的文件可被自研 reader 读回。
+- 目标：让完全不懂代码的工厂人员能双击打开并逐项确认。
+
+新增：人工审核包（review/）
+- first-batch-business-review.xlsx   72 个产品，含 5 个下拉列；
+                                     Confirmed Product Type 下拉为需求指定的 10 个类型
+- oe-cross-sheet-review.xlsx         OE 跨表差异 1843 行；含「第一批优先审核」881 行
+                                     与「按编号汇总」286 行
+- bowen-number-variant-review.xlsx   18 族 49 个编号，含 OE 重叠证据
+- row-misalignment-review.xlsx       29 条，按严重度排序
+
+调整：发布状态模型（取消 published）
+- publish_candidate  72   第一批候选，等人工确认
+- searchable_noindex 297
+- draft                86
+- blocked              11  硬性阻断：不得用于产品页 / OE 搜索 / Google 索引
+- published             0  只有人工确认记录后才能出现
+- 产出 data/derived/products-v2.csv 与 product-oe-index-v2.csv
+
+修正了两处检测缺陷
+1. 跨表 OE 差异原先用 oe-number-index 的 source_sheet 字段，而该字段只是
+   「首次出现的工作表」，导致误得「0 处差异」。改为从 source_cells 解析
+   形如 "Product Information!C4 | Volkswagen!C12" 的真实来源位置。
+2. 错位规则原先把「Sheet1 的 Vehicle Model 列装的是 OEM 号」也算作错位，
+   造成 82 个产品被误 blocked。改正：该问题是 Sheet1 表结构缺少车型列，
+   属于表结构限制而非行错位，改为在报告中单独说明，不计入错位。
+
+保持不变的硬约束（85 项验收测试强制检查）
+- 全库 product_type 一律 review_required，不猜
+- 全库 product_name_en 一律为空
+- 全库 fitment_confidence 一律 review_required，无 exact
+- 全库 indexable 一律 false
+- 第一批 72 个全部 publish_candidate，published = 0
+- 11 个 HIGH 级错位记录全部 blocked = true
+- 未自动删除任何 OE、未自动合并任何 Bowen No.（产品数仍 466、OE 行数仍 2364）
+- 原始 Excel SHA-256 校验一致，未被修改
+
+文档
+- docs/phase2-business-review-package.md   当前阶段交接报告
+- docs/phase2-data-readiness-report.md     标注为「已被取代」，保留作历史记录
+- README.md                                更新为当前状态
+- review/_archive_phase2-csv/              上一版 CSV 审核表归档
+
+验收
+- tools/verify-phase2-package.mjs  85 项全部通过
+- tools/verify-db.mjs              57 项全部通过（Phase 1 回归）
+
+本阶段未开发任何网站页面，未修改原始 Excel / PDF。

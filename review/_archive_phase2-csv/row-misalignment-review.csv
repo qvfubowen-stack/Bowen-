@@ -1,0 +1,55 @@
+﻿#博文外贸独立站 — Phase 2 疑似行错位 / 列错位审核表
+#什么是错位：Bowen No.（博文编号）这一列里，混进了本来不该在这里的内容，
+#例如尺寸「120*85*90」、温度「82℃」、两个编号、或者括号里的另一个编号。
+#为什么重要：这一列错位，说明同一行的温度列、尺寸列也可能装的是别的产品的东西 → 整行数据可能是错的。
+#怎么用：拿着 source_sheet + source_row 去原始 Excel 里核对那一行，然后填 reviewer_decision。
+#原始 Excel 位置：data/raw/产品信息表1_英文版.xlsx（只读，请勿修改）
+#
+#reviewer_decision 可选值,,FIX_DATA = 我核对了原表，数据确实错了，需修正（请在 notes 写明正确值）
+#,,DATA_OK = 我核对了原表，数据没问题，是原表写法特殊，可以保留
+#,,SPLIT_PRODUCT = 两个编号应该拆成两个产品
+#,,EXCLUDE = 这个产品先不上线
+product_id,bowen_no,bowen_no_raw,issue_types,severity,evidence,product_type_suggestion,oe_count,vehicle_make,opening_temperature,dimensions,application_notes,source_sheet,source_row,publish_status,in_first_batch,current_publish_blocked,phase2_status_recommendation,in_phase1_warning_set,suggested_action,needs_human_confirmation,reviewer_decision,reviewer_notes
+bw-301188-,3011 88°,"3011
+88°",bowen_contains_unit_text,HIGH,"Bowen 列出现单位/温度：3011
+88°",Thermostat (unconfirmed),4,,,,,Sheet1,Sheet1!75S,DRAFT,no,yes,保持当前状态（已被 Phase 1 拦截）,no,HIGH：编号列混入尺寸/温度单位 → 请先核对原表整行，确认温度与尺寸属于哪个编号,yes,,
+bw-302588-,3025 88°,3025 88°,bowen_contains_unit_text,HIGH,Bowen 列出现单位/温度：3025 88°,Thermostat (unconfirmed),6,,,,,Sheet1,Sheet1!110S,DRAFT,no,yes,保持当前状态（已被 Phase 1 拦截）,no,HIGH：编号列混入尺寸/温度单位 → 请先核对原表整行，确认温度与尺寸属于哪个编号,yes,,
+bw-302992-,3029  92°,3029  92°,bowen_contains_unit_text,HIGH,Bowen 列出现单位/温度：3029  92°,Thermostat (unconfirmed),2,,,,,Sheet1,Sheet1!20S,DRAFT,no,yes,保持当前状态（已被 Phase 1 拦截）,no,HIGH：编号列混入尺寸/温度单位 → 请先核对原表整行，确认温度与尺寸属于哪个编号,yes,,
+bw-3033-z138-95-251,3033-z  138*95*251,3033-z  138*95*251,bowen_contains_two_numbers; bowen_contains_dimensions,HIGH,Bowen 列出现尺寸样式：3033-z  138*95*251 ｜ Bowen 列出现两个编号：3033-z  138*95*251,Thermostat (unconfirmed),2,,105,,Cruze / Excelle GT 1.6 1.6T 1.8(10-15) Epica 1.8 (10-15) New Regal / Malibu 1,Product Information,Product Information!20L,SEARCHABLE_BUT_NOINDEX,no,yes,保持当前状态（已被 Phase 1 拦截）,yes,HIGH：编号列混入尺寸/温度单位 → 请先核对原表整行，确认温度与尺寸属于哪个编号,yes,,
+bw-306477-,3064 77℃,"3064
+77℃",bowen_contains_unit_text,HIGH,"Bowen 列出现单位/温度：3064
+77℃",Thermostat (unconfirmed),2,,,,,Sheet1,Sheet1!59S,DRAFT,no,yes,保持当前状态（已被 Phase 1 拦截）,no,HIGH：编号列混入尺寸/温度单位 → 请先核对原表整行，确认温度与尺寸属于哪个编号,yes,,
+bw-3520120-85-90,3520  120*85*90,3520  120*85*90,bowen_contains_two_numbers; bowen_contains_dimensions,HIGH,Bowen 列出现尺寸样式：3520  120*85*90 ｜ Bowen 列出现两个编号：3520  120*85*90,Thermostat (unconfirmed),5,Buick | Opel | GMC,92 | 103,,"OPEL GMC ;; Buick Encore 1.4T, 2013 model",Product Information,Product Information!55R,SEARCHABLE_BUT_NOINDEX,no,yes,保持当前状态（已被 Phase 1 拦截）,yes,HIGH：编号列混入尺寸/温度单位 → 请先核对原表整行，确认温度与尺寸属于哪个编号,yes,,
+bw-352215-14-8-5,3522  15*14*8.5,3522  15*14*8.5,bowen_contains_dimensions,HIGH,Bowen 列出现尺寸样式：3522  15*14*8.5,Thermostat (unconfirmed),2,Volvo | Ford,89,,"Ford Kuga, 2013-2016 models ;; imported Volvo",Product Information,Product Information!56R,SEARCHABLE_BUT_NOINDEX,no,yes,保持当前状态（已被 Phase 1 拦截）,yes,HIGH：编号列混入尺寸/温度单位 → 请先核对原表整行，确认温度与尺寸属于哪个编号,yes,,
+bw-355677-,3556  77°,3556  77°,bowen_contains_unit_text,HIGH,Bowen 列出现单位/温度：3556  77°,Thermostat (unconfirmed),2,,,,,Sheet1,Sheet1!71S,DRAFT,no,yes,保持当前状态（已被 Phase 1 拦截）,no,HIGH：编号列混入尺寸/温度单位 → 请先核对原表整行，确认温度与尺寸属于哪个编号,yes,,
+bw-356588-,3565  88°,3565  88°,bowen_contains_unit_text,HIGH,Bowen 列出现单位/温度：3565  88°,Thermostat (unconfirmed),3,,,,,Sheet1,Sheet1!127S,DRAFT,no,yes,保持当前状态（已被 Phase 1 拦截）,no,HIGH：编号列混入尺寸/温度单位 → 请先核对原表整行，确认温度与尺寸属于哪个编号,yes,,
+bw-3665-188-,3665-1 88℃,"3665-1
+88℃",bowen_contains_unit_text,HIGH,"Bowen 列出现单位/温度：3665-1
+88℃",Thermostat (unconfirmed),8,,,,,Sheet1,Sheet1!30S,DRAFT,no,yes,保持当前状态（已被 Phase 1 拦截）,no,HIGH：编号列混入尺寸/温度单位 → 请先核对原表整行，确认温度与尺寸属于哪个编号,yes,,
+bw-3828288-,38282  88°,38282  88°,bowen_contains_unit_text,HIGH,Bowen 列出现单位/温度：38282  88°,Thermostat (unconfirmed),8,,,,,Sheet1,Sheet1!251S,DRAFT,no,yes,保持当前状态（已被 Phase 1 拦截）,no,HIGH：编号列混入尺寸/温度单位 → 请先核对原表整行，确认温度与尺寸属于哪个编号,yes,,
+bw-30302-3334sealingring-,30302(3334 Sealing ring),30302(3334 Sealing ring),bowen_contains_two_numbers; bowen_contains_parenthetical,MEDIUM,Bowen 列出现两个编号：30302(3334 Sealing ring) ｜ Bowen 列括号内是零件描述：30302(3334 Sealing ring),Thermostat (unconfirmed),2,Toyota,76,D1=54mm | d2=28mm | A=34mm,Chaoyang Diesel QD32 Toyota 4500,Product Information,Product Information!120L,PUBLISHED,yes,no,建议降级为 SEARCHABLE_BUT_NOINDEX（Phase 1 的错位规则未覆盖此写法，本阶段发现）,no,MEDIUM：编号列出现第二个编号 → 请确认是变体/替代号，还是录错,yes,,
+bw-3041-2-3003-sealingring,3041-2(3003) Sealing ring,3041-2(3003) Sealing ring,bowen_contains_two_numbers; bowen_contains_cross_reference,MEDIUM,Bowen 列出现两个编号：3041-2(3003) Sealing ring ｜ Bowen 列括号内是另一个编号：3041-2(3003) Sealing ring,Thermostat (unconfirmed),6,Toyota,88,D1=52mm | d2=30mm | A=33mm,Toyota,Product Information,Product Information!129L,PUBLISHED,yes,no,建议降级为 SEARCHABLE_BUT_NOINDEX（Phase 1 的错位规则未覆盖此写法，本阶段发现）,no,MEDIUM：编号列出现第二个编号 → 请确认是变体/替代号，还是录错,yes,,
+bw-3004-33503,3004--3  3503,3004--3  3503,bowen_contains_two_numbers,MEDIUM,Bowen 列出现两个编号：3004--3  3503,Thermostat (unconfirmed),0,Mitsubishi | Changfeng,82,D1=64mm | d2=30mm | A=43mm,Mitsubishi Pajero Changfeng Leopaard 4BH,Mitsubishi,Mitsubishi!6L,DRAFT,no,yes,保持当前状态（已被 Phase 1 拦截）,yes,MEDIUM：编号列出现第二个编号 → 请确认是变体/替代号，还是录错,yes,,
+bw-3011-23565,3011-2 3565,"3011-2
+3565",bowen_contains_two_numbers,MEDIUM,"Bowen 列出现两个编号：3011-2
+3565",Thermostat (unconfirmed),2,,,,,Sheet1,Sheet1!9S,DRAFT,no,yes,保持当前状态（已被 Phase 1 拦截）,yes,MEDIUM：编号列出现第二个编号 → 请确认是变体/替代号，还是录错,yes,,
+bw-3035-3403sealingring-,3035(3403 Sealing ring),3035(3403 Sealing ring),bowen_contains_two_numbers; bowen_contains_parenthetical,MEDIUM,Bowen 列出现两个编号：3035(3403 Sealing ring) ｜ Bowen 列括号内是零件描述：3035(3403 Sealing ring),Thermostat (unconfirmed),1,,,,,Sheet1,Sheet1!24S,DRAFT,no,yes,保持当前状态（已被 Phase 1 拦截）,no,MEDIUM：编号列出现第二个编号 → 请确认是变体/替代号，还是录错,yes,,
+bw-3069-3076-,3069（3076）,3069（3076）,bowen_contains_two_numbers; bowen_contains_cross_reference,MEDIUM,Bowen 列出现两个编号：3069（3076） ｜ Bowen 列括号内是另一个编号：3069（3076）,Thermostat (unconfirmed),6,Toyota,82,,Toyota,Japanese Vehicles,Japanese Vehicles!6L,SEARCHABLE_BUT_NOINDEX,no,yes,保持当前状态（已被 Phase 1 拦截）,yes,MEDIUM：编号列出现第二个编号 → 请确认是变体/替代号，还是录错,yes,,
+bw-3150-3086insert-,3150(3086 Insert),3150(3086 Insert),bowen_contains_two_numbers; bowen_contains_cross_reference,MEDIUM,Bowen 列出现两个编号：3150(3086 Insert) ｜ Bowen 列括号内是另一个编号：3150(3086 Insert),Thermostat Insert,1,,,,,Sheet1,Sheet1!176S,DRAFT,no,yes,保持当前状态（已被 Phase 1 拦截）,yes,MEDIUM：编号列出现第二个编号 → 请确认是变体/替代号，还是录错,yes,,
+bw-32748-132748-2,32748-1 32748-2,"32748-1
+32748-2",bowen_contains_two_numbers,MEDIUM,"Bowen 列出现两个编号：32748-1
+32748-2",Thermostat (unconfirmed),0,,,,,Sheet1,Sheet1!154S,DRAFT,no,yes,保持当前状态（已被 Phase 1 拦截）,yes,MEDIUM：编号列出现第二个编号 → 请确认是变体/替代号，还是录错,yes,,
+bw-33655a33655b,33655A 33655B,"33655A
+33655B",bowen_contains_two_numbers,MEDIUM,"Bowen 列出现两个编号：33655A
+33655B",Thermostat (unconfirmed),7,,89 | 95,,,Sheet1,Sheet1!84S,DRAFT,no,yes,保持当前状态（已被 Phase 1 拦截）,yes,MEDIUM：编号列出现第二个编号 → 请确认是变体/替代号，还是录错,yes,,
+bw-35059f059,35059  F059,"35059 
+F059",bowen_contains_two_numbers,MEDIUM,"Bowen 列出现两个编号：35059 
+F059",Thermostat (unconfirmed),3,Ford,82,,FORD,Product Information,Product Information!115R,SEARCHABLE_BUT_NOINDEX,no,yes,保持当前状态（已被 Phase 1 拦截）,yes,MEDIUM：编号列出现第二个编号 → 请确认是变体/替代号，还是录错,yes,,
+bw-3919-35401-,3919(35401),3919(35401),bowen_contains_two_numbers; bowen_contains_cross_reference,MEDIUM,Bowen 列出现两个编号：3919(35401) ｜ Bowen 列括号内是另一个编号：3919(35401),Thermostat (unconfirmed),5,Foton,,,Nanjing Iveco Foton 483,Product Information,Product Information!107R,SEARCHABLE_BUT_NOINDEX,no,yes,保持当前状态（已被 Phase 1 拦截）,yes,MEDIUM：编号列出现第二个编号 → 请确认是变体/替代号，还是录错,yes,,
+bw-3929-3019sealingring-,3929(3019 Sealing ring),3929(3019 Sealing ring),bowen_contains_two_numbers; bowen_contains_parenthetical,MEDIUM,Bowen 列出现两个编号：3929(3019 Sealing ring) ｜ Bowen 列括号内是零件描述：3929(3019 Sealing ring),Thermostat (unconfirmed),1,Nissan,,D1=52mm | d2=28mm | A=41mm,Zhengzhou Nissan Y24,Product Information,Product Information!122R,SEARCHABLE_BUT_NOINDEX,no,yes,保持当前状态（已被 Phase 1 拦截）,no,MEDIUM：编号列出现第二个编号 → 请确认是变体/替代号，还是录错,yes,,
+bw-35116-deben-,35116(Deben),35116(Deben),bowen_contains_parenthetical,LOW,Bowen 列括号内是零件描述：35116(Deben),Thermostat (unconfirmed),4,Isuzu,85,D1=64mm | d2=28mm | A=40mm,Isuzu D-MAX 4JJ11 1.9T,Product Information,Product Information!125R,PUBLISHED,yes,no,建议降级为 SEARCHABLE_BUT_NOINDEX（Phase 1 的错位规则未覆盖此写法，本阶段发现）,no,LOW：编号列括号内是零件描述 → 请确认是否移入产品名或备注,yes,,
+bw-3025-differentsealingring-,3025(Different sealing ring),3025(Different sealing ring),bowen_contains_parenthetical,LOW,Bowen 列括号内是零件描述：3025(Different sealing ring),Thermostat (unconfirmed),2,,,,,Sheet1,Sheet1!107S,DRAFT,no,yes,保持当前状态（已被 Phase 1 拦截）,no,LOW：编号列括号内是零件描述 → 请确认是否移入产品名或备注,yes,,
+bw-3094-sealingringwithoutlocatingprotrusions-,3094(Sealing ring without locating protrusions),3094(Sealing ring without locating protrusions),bowen_contains_parenthetical,LOW,Bowen 列括号内是零件描述：3094(Sealing ring without locating protrusions),Thermostat (unconfirmed),8,,,,,Sheet1,Sheet1!108S,DRAFT,no,yes,保持当前状态（已被 Phase 1 拦截）,no,LOW：编号列括号内是零件描述 → 请确认是否移入产品名或备注,yes,,
+bw-3528-borrowedpart-,3528 (borrowed part),3528 (borrowed part),bowen_contains_parenthetical,LOW,Bowen 列括号内是零件描述：3528 (borrowed part),Thermostat (unconfirmed),1,,,,,Sheet1,Sheet1!182S,DRAFT,no,yes,保持当前状态（已被 Phase 1 拦截）,no,LOW：编号列括号内是零件描述 → 请确认是否移入产品名或备注,yes,,
+bw-37603-tianbo-non-electronic,37603(Tianbo) Non-electronic,37603(Tianbo) Non-electronic,bowen_contains_parenthetical,LOW,Bowen 列括号内是零件描述：37603(Tianbo) Non-electronic,Electronic Thermostat,4,,,,,Sheet1,Sheet1!236S,DRAFT,no,yes,保持当前状态（已被 Phase 1 拦截）,no,LOW：编号列括号内是零件描述 → 请确认是否移入产品名或备注,yes,,
+bw-l907-insertonly-,L907(Insert only),L907(Insert only),bowen_contains_parenthetical,LOW,Bowen 列括号内是零件描述：L907(Insert only),Thermostat Insert,2,,,,,Sheet1,Sheet1!61S,DRAFT,no,yes,保持当前状态（已被 Phase 1 拦截）,no,LOW：编号列括号内是零件描述 → 请确认是否移入产品名或备注,yes,,

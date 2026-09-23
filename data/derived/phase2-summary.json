@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-09-23T09:26:17.744Z",
+  "data_version": "v2.0.0-phase2",
+  "first_batch_size": 72,
+  "products_total": 466,
+  "a_直接可确认_无阻塞性问题": 10,
+  "a_有阻塞性问题待处理": 62,
+  "b_需要确认product_type": 72,
+  "b_需要确认product_name_en": 72,
+  "c_涉及共享OE": 33,
+  "c_涉及共享OE_窄口径_仅首批内部": 19,
+  "d_存在编号变体": 13,
+  "e_存在疑似错位": 3,
+  "f_人工确认前可进入Published": 0,
+  "counts": {
+    "产品类型待确认": 72,
+    "英文产品名待补": 72,
+    "车型待补": 72,
+    "图片待补": 72,
+    "发动机代码待确认": 28,
+    "涉及共享OE_宽口径": 33,
+    "涉及共享OE_窄口径": 19,
+    "存在编号变体": 13,
+    "编号列含第二个编号": 2,
+    "编号列含尺寸": 0,
+    "编号列含单位或温度": 0,
+    "编号列括号含交叉引用": 1,
+    "编号列括号含零件描述": 2,
+    "跨表OE清单冲突": 0,
+    "空格推断拆分的OE": 51
+  },
+  "review_files": {
+    "first-72-products-review.csv": 72,
+    "shared-oe-review.csv": 136,
+    "bowen-variant-review.csv": 49,
+    "row-misalignment-review.csv": 29,
+    "phase2-review-flags.csv": 466
+  },
+  "shared_oe_detail": {
+    "total_shared_oe": 136,
+    "blocking_first_batch": 17,
+    "first_batch_products_involved_wide": 33,
+    "first_batch_products_involved_narrow": 19
+  },
+  "misalignment_detail": {
+    "total_flagged_products": 29,
+    "high": 11,
+    "medium": 12,
+    "low": 6,
+    "in_first_batch": 3,
+    "first_batch_bowens": [
+      "30302(3334 Sealing ring)",
+      "3041-2(3003) Sealing ring",
+      "35116(Deben)"
+    ],
+    "first_batch_by_severity": {
+      "HIGH": 0,
+      "MEDIUM": 2,
+      "LOW": 1
+    },
+    "published_but_should_downgrade": 3,
+    "published_but_should_downgrade_bowens": [
+      "30302(3334 Sealing ring)",
+      "3041-2(3003) Sealing ring",
+      "35116(Deben)"
+    ],
+    "phase1_warning_set_size": 11,
+    "newly_detected_by_phase2": 18
+  },
+  "guards": {
+    "indexable_yes_count": 0,
+    "fitment_exact_count": 0,
+    "product_type_filled_count": 0,
+    "product_name_filled_count": 0
+  }
+}
