@@ -1,0 +1,484 @@
+﻿type,key,detail,count,product_ids_or_variants
+raw_bowen_repeated,3001,同一 Bowen No. 在原表出现 5 次，分布在 3 个工作表（跨表重复）,5,Product Information!C4 | Volkswagen!C12 | Sheet1!B186 | Sheet1!B187 | Sheet1!B188
+raw_bowen_repeated,3002,同一 Bowen No. 在原表出现 4 次，分布在 3 个工作表（跨表重复）,4,Product Information!I4 | Volkswagen!I12 | Sheet1!B122 | Sheet1!B123
+raw_bowen_repeated,3003,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C5 | Chery!C3
+raw_bowen_repeated,3004,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I5 | Chery!I3
+raw_bowen_repeated,3005,同一 Bowen No. 在原表出现 9 次，分布在 6 个工作表（跨表重复）,9,Product Information!C6 | BYD!C3 | Geely and Haval!I3 | Great Wall and Haval!C7 | Mitsubishi!C3 | Sheet1!B87 | Sheet1!B88 | Sheet1!B89 | Sheet1!B90
+raw_bowen_repeated,3006,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I6 | Peugeot and Citroen!C4 | Sheet1!B168
+raw_bowen_repeated,3007,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C7 | Peugeot and Citroen!C3 | Sheet1!B166
+raw_bowen_repeated,300701,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I7 | Peugeot and Citroen!J3 | Sheet1!B167
+raw_bowen_repeated,3008,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C8 | GM!I9 | Sheet1!B241
+raw_bowen_repeated,3009,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I8 | GM!I6 | Sheet1!B104
+raw_bowen_repeated,3010,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C9 | GM!I7 | Sheet1!B173
+raw_bowen_repeated,3011,同一 Bowen No. 在原表出现 4 次，分布在 3 个工作表（跨表重复）,4,Product Information!I9 | Japanese Vehicles!J6 | Sheet1!B73 | Sheet1!B74
+raw_bowen_repeated,3012,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C10 | Chery!C4
+raw_bowen_repeated,3013,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I10 | Mitsubishi!C5 | Sheet1!B81
+raw_bowen_repeated,3014,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C11 | Sheet1!B244
+raw_bowen_repeated,3015,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I11 | Roewe and MG!C4 | Sheet1!B269
+raw_bowen_repeated,3016,同一 Bowen No. 在原表出现 5 次，分布在 3 个工作表（跨表重复）,5,Product Information!C12 | Ford!J3 | Sheet1!B220 | Sheet1!B221 | Sheet1!B222
+raw_bowen_repeated,3017,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I12 | Geely and Haval!C7 | Chery!C5
+raw_bowen_repeated,3019,同一 Bowen No. 在原表出现 5 次，分布在 5 个工作表（跨表重复）,5,Product Information!I13 | BYD!I3 | Geely and Haval!C3 | Chery!I4 | Sheet1!B106
+raw_bowen_repeated,3020,同一 Bowen No. 在原表出现 4 次，分布在 3 个工作表（跨表重复）,4,Product Information!C14 | Product Information!C23 | Ford!C3 | Sheet1!B208
+raw_bowen_repeated,3021,同一 Bowen No. 在原表出现 5 次，分布在 5 个工作表（跨表重复）,5,Product Information!I14 | Great Wall and Haval!C6 | Mitsubishi!I3 | Ford!C6 | Sheet1!B161
+raw_bowen_repeated,3022,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C15 | Changan!C3 | Mitsubishi!C4
+raw_bowen_repeated,3023,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I15 | Japanese Vehicles!J12 | Sheet1!B138
+raw_bowen_repeated,3024,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C16 | Changan!I3
+raw_bowen_repeated,3025,同一 Bowen No. 在原表出现 4 次，分布在 3 个工作表（跨表重复）,4,Product Information!I16 | Product Information!C70 | Japanese Vehicles!J11 | Sheet1!B21
+raw_bowen_repeated,3026,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C17 | GM!C8
+raw_bowen_repeated,3027,同一 Bowen No. 在原表出现 4 次，分布在 3 个工作表（跨表重复）,4,Product Information!I17 | Changan!C4 | Sheet1!B239 | Sheet1!B240
+raw_bowen_repeated,3028,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C18 | Sheet1!B116
+raw_bowen_repeated,3029,同一 Bowen No. 在原表出现 4 次，分布在 4 个工作表（跨表重复）,4,Product Information!I18 | Chery!I5 | GM!C9 | Sheet1!B19
+raw_bowen_repeated,3032,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C19 | GM!C7 | Sheet1!B163
+raw_bowen_repeated,3033,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I19 | Sheet1!B103
+raw_bowen_repeated,303317,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I20 | GM!I4 | Sheet1!B65
+raw_bowen_repeated,303401,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C21 | Volkswagen!C5 | Sheet1!B31
+raw_bowen_repeated,303402,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I21 | Volkswagen!I5 | Sheet1!B32
+raw_bowen_repeated,3035,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C22 | BMW and Mercedes-Benz!I3 | Sheet1!B23
+raw_bowen_repeated,3036,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I22 | Sheet1!B198
+raw_bowen_repeated,3037,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C24 | Volkswagen!I7
+raw_bowen_repeated,3038,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I24 | Volkswagen!C3 | Sheet1!B238
+raw_bowen_repeated,3040,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I25 | Roewe and MG!I4
+raw_bowen_repeated,3041,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C26 | Roewe and MG!C5
+raw_bowen_repeated,3048,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I27 | Changan!I4
+raw_bowen_repeated,3051,同一 Bowen No. 在原表出现 7 次，分布在 5 个工作表（跨表重复）,7,Product Information!C28 | Product Information!I28 | Geely and Haval!I7 | Great Wall and Haval!I6 | Japanese Vehicles!C7 | Sheet1!B25 | Sheet1!B26
+raw_bowen_repeated,3054,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C29 | Sheet1!B66
+raw_bowen_repeated,3056,同一 Bowen No. 在原表出现 3 次，分布在 2 个工作表（跨表重复）,3,Product Information!I29 | Trumpchi!C3 | Trumpchi!C5
+raw_bowen_repeated,3057,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C30 | Geely and Haval!C4 | Great Wall and Haval!C3
+raw_bowen_repeated,3059,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I30 | Roewe and MG!C3 | Trumpchi!J3
+raw_bowen_repeated,3067,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C31 | BYD!C4
+raw_bowen_repeated,3060,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I31 | BYD!I4
+raw_bowen_repeated,3061,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C32 | BYD!C5 | Japanese Vehicles!C8
+raw_bowen_repeated,3064,同一 Bowen No. 在原表出现 4 次，分布在 3 个工作表（跨表重复）,4,Product Information!I32 | Japanese Vehicles!J7 | Sheet1!B56 | Sheet1!B57
+raw_bowen_repeated,3065,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C33 | Japanese Vehicles!J8 | Sheet1!B117
+raw_bowen_repeated,3066,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I33 | GM!C11 | Sheet1!B80
+raw_bowen_repeated,3068,同一 Bowen No. 在原表出现 5 次，分布在 5 个工作表（跨表重复）,5,Product Information!C34 | Geely and Haval!I4 | Great Wall and Haval!I3 | Ford!C7 | Sheet1!B67
+raw_bowen_repeated,3069,同一 Bowen No. 在原表出现 4 次，分布在 4 个工作表（跨表重复）,4,Product Information!I34 | Geely and Haval!C5 | Great Wall and Haval!C4 | Sheet1!B112
+raw_bowen_repeated,3071,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C35 | Sheet1!B257
+raw_bowen_repeated,3072,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I35 | Japanese Vehicles!C4
+raw_bowen_repeated,3073,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C36 | Japanese Vehicles!J4 | Sheet1!B254
+raw_bowen_repeated,3074,同一 Bowen No. 在原表出现 4 次，分布在 3 个工作表（跨表重复）,4,Product Information!I36 | Mitsubishi!I4 | Sheet1!B125 | Sheet1!B126
+raw_bowen_repeated,3076,同一 Bowen No. 在原表出现 5 次，分布在 4 个工作表（跨表重复）,5,Product Information!C37 | Product Information!I95 | BMW and Mercedes-Benz!C3 | Japanese Vehicles!C9 | Sheet1!B201
+raw_bowen_repeated,3077,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I37 | Ford!J6 | Sheet1!B83
+raw_bowen_repeated,3082,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C38 | Volkswagen!C8
+raw_bowen_repeated,3081,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I38 | Volkswagen!I8
+raw_bowen_repeated,3083,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C39 | Volkswagen!I4
+raw_bowen_repeated,3084,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I39 | Volkswagen!I6 | Sheet1!B162
+raw_bowen_repeated,3085,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C40 | Volkswagen!C7 | Sheet1!B225
+raw_bowen_repeated,3086,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I40 | Volkswagen!C6 | Sheet1!B213
+raw_bowen_repeated,3087,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C41 | Volkswagen!I11
+raw_bowen_repeated,3094,同一 Bowen No. 在原表出现 4 次，分布在 3 个工作表（跨表重复）,4,Product Information!C42 | Ford!J7 | Sheet1!B54 | Sheet1!B55
+raw_bowen_repeated,3097,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I42 | GM!I3 | Roewe and MG!I3
+raw_bowen_repeated,31054,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C43 | BYD!I5 | Sheet1!B215
+raw_bowen_repeated,3147,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I43 | GM!I5
+raw_bowen_repeated,3251,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C44 | Peugeot and Citroen!C10
+raw_bowen_repeated,3252,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I44 | Peugeot and Citroen!J10 | Sheet1!B247
+raw_bowen_repeated,3252A,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C45 | Ford!C4 | Peugeot and Citroen!C11
+raw_bowen_repeated,3253,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I45 | Peugeot and Citroen!J11 | Sheet1!B224
+raw_bowen_repeated,3288,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C46 | Peugeot and Citroen!C12 | Sheet1!B210
+raw_bowen_repeated,3289,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I46 | Peugeot and Citroen!J12 | Sheet1!B243
+raw_bowen_repeated,3336,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C47 | Volkswagen!C4
+raw_bowen_repeated,3500,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I47 | Japanese Vehicles!J9 | Sheet1!B217
+raw_bowen_repeated,3503,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C48 | Japanese Vehicles!C12 | Sheet1!B209
+raw_bowen_repeated,35020,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C49 | Roewe and MG!I5
+raw_bowen_repeated,35065,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I49 | Chery!I6
+raw_bowen_repeated,35066,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C50 | Chery!C7
+raw_bowen_repeated,3507,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I50 | Japanese Vehicles!C3 | Sheet1!B218
+raw_bowen_repeated,3509,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I51 | Sheet1!B226
+raw_bowen_repeated,3511,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C52 | BMW and Mercedes-Benz!C4 | Sheet1!B229
+raw_bowen_repeated,3579,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C53 | BMW and Mercedes-Benz!C5 | Sheet1!B53
+raw_bowen_repeated,3588,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I53 | BMW and Mercedes-Benz!I5 | Sheet1!B271
+raw_bowen_repeated,35106,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C54 | Changan!C6 | Sheet1!B94
+raw_bowen_repeated,35126,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I54 | Changan!I6 | Sheet1!B278
+raw_bowen_repeated,3517,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C55 | Japanese Vehicles!J3
+raw_bowen_repeated,3524,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C57 | GM!C5 | Sheet1!B250
+raw_bowen_repeated,3525,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I57 | Roewe and MG!C6 | Sheet1!B27
+raw_bowen_repeated,3527,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C58 | Mitsubishi!I5
+raw_bowen_repeated,3536,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C59 | BYD!C6
+raw_bowen_repeated,3537,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I59 | BYD!C8
+raw_bowen_repeated,3541,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C61 | Trumpchi!C4
+raw_bowen_repeated,3550,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I61 | Japanese Vehicles!C10 | Sheet1!B183
+raw_bowen_repeated,3555,同一 Bowen No. 在原表出现 3 次，分布在 2 个工作表（跨表重复）,3,Product Information!C62 | Sheet1!B100 | Sheet1!B101
+raw_bowen_repeated,3556,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I62 | Sheet1!B72
+raw_bowen_repeated,3565,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I63 | Japanese Vehicles!J10
+raw_bowen_repeated,3598,同一 Bowen No. 在原表出现 4 次，分布在 3 个工作表（跨表重复）,4,Product Information!C64 | Japanese Vehicles!C11 | Sheet1!B82 | Sheet1!B128
+raw_bowen_repeated,3652,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I64 | GM!C10 | Sheet1!B78
+raw_bowen_repeated,3653,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C65 | GM!I10 | Sheet1!B69
+raw_bowen_repeated,3655,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C66 | Peugeot and Citroen!J8
+raw_bowen_repeated,3816,同一 Bowen No. 在原表出现 8 次，分布在 4 个工作表（跨表重复）,8,Product Information!I66 | Product Information!C67 | BYD!I6 | BYD!C7 | Volkswagen!C11 | Sheet1!B205 | Sheet1!B206 | Sheet1!B207
+raw_bowen_repeated,3831,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I67 | Geely and Haval!I8
+raw_bowen_repeated,3842,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C68 | Volkswagen!C10 | Sheet1!B214
+raw_bowen_repeated,3841,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I68 | Volkswagen!I10 | Sheet1!B211
+raw_bowen_repeated,3528,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C69 | Sheet1!B124
+raw_bowen_repeated,31604-1,同一 Bowen No. 在原表出现 3 次，分布在 2 个工作表（跨表重复）,3,Product Information!I70 | Sheet1!B120 | Sheet1!B121
+raw_bowen_repeated,3516,同一 Bowen No. 在原表出现 5 次，分布在 3 个工作表（跨表重复）,5,Product Information!I71 | Product Information!I72 | Volkswagen!I13 | Sheet1!B91 | Sheet1!B92
+raw_bowen_repeated,3665-1,同一 Bowen No. 在原表出现 3 次，分布在 2 个工作表（跨表重复）,3,Product Information!C72 | Product Information!I78 | Sheet1!B29
+raw_bowen_repeated,3080,同一 Bowen No. 在原表出现 10 次，分布在 3 个工作表（跨表重复）,10,Product Information!C73 | Volkswagen!C13 | Sheet1!B189 | Sheet1!B190 | Sheet1!B191 | Sheet1!B192 | Sheet1!B193 | Sheet1!B194 | Sheet1!B195 | Sheet1!B230
+raw_bowen_repeated,3004-4,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I73 | Sheet1!B18
+raw_bowen_repeated,3515,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C74 | Japanese Vehicles!C5 | Sheet1!B276
+raw_bowen_repeated,3843,同一 Bowen No. 在原表出现 4 次，分布在 4 个工作表（跨表重复）,4,Product Information!I74 | Volkswagen!C9 | Geely and Haval!I5 | Great Wall and Haval!I4
+raw_bowen_repeated,3055,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I75 | Trumpchi!J4
+raw_bowen_repeated,3058,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I76 | Trumpchi!J5
+raw_bowen_repeated,3831A,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C77 | Geely and Haval!C8
+raw_bowen_repeated,3098,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I77 | BMW and Mercedes-Benz!I6
+raw_bowen_repeated,3568,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C78 | BMW and Mercedes-Benz!C7 | Peugeot and Citroen!J13
+raw_bowen_repeated,3654,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C80 | BMW and Mercedes-Benz!C8 | Peugeot and Citroen!C5
+raw_bowen_repeated,3654-1,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I80 | BMW and Mercedes-Benz!I8 | Peugeot and Citroen!J5
+raw_bowen_repeated,3654--2,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C81 | Peugeot and Citroen!C6
+raw_bowen_repeated,3523,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I81 | GM!I8 | Peugeot and Citroen!J6
+raw_bowen_repeated,641034,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C82 | Peugeot and Citroen!C7
+raw_bowen_repeated,3757,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I82 | Peugeot and Citroen!J7
+raw_bowen_repeated,3310,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I83 | Volkswagen!C14 | Sheet1!B129
+raw_bowen_repeated,3666,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C84 | Peugeot and Citroen!J4 | Sheet1!B249
+raw_bowen_repeated,3535,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I84 | Volkswagen!I9
+raw_bowen_repeated,3584,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C85 | Geely and Haval!C6 | Great Wall and Haval!C5
+raw_bowen_repeated,3585,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I85 | Geely and Haval!I6 | Great Wall and Haval!I5
+raw_bowen_repeated,3526,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C86 | Sheet1!B184
+raw_bowen_repeated,30101,同一 Bowen No. 在原表出现 5 次，分布在 5 个工作表（跨表重复）,5,Product Information!I86 | Japanese Vehicles!C13 | Ford!C8 | Peugeot and Citroen!C9 | Sheet1!B37
+raw_bowen_repeated,35084,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C87 | BMW and Mercedes-Benz!C9
+raw_bowen_repeated,30102,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I87 | Peugeot and Citroen!J9 | Sheet1!B197
+raw_bowen_repeated,3569,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C88 | BMW and Mercedes-Benz!I9 | Peugeot and Citroen!C13
+raw_bowen_repeated,31510,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I88 | Ford!J8 | Sheet1!B204
+raw_bowen_repeated,3582,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C89 | Sheet1!B68
+raw_bowen_repeated,3583,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I89 | Sheet1!B76
+raw_bowen_repeated,35650,同一 Bowen No. 在原表出现 4 次，分布在 4 个工作表（跨表重复）,4,Product Information!C90 | BMW and Mercedes-Benz!C10 | Ford!J5 | Sheet1!B181
+raw_bowen_repeated,30116,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C91 | Volkswagen!I3 | Sheet1!B263
+raw_bowen_repeated,3340,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I91 | Sheet1!B49
+raw_bowen_repeated,33151,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C92 | BMW and Mercedes-Benz!I10 | Sheet1!B180
+raw_bowen_repeated,3334,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I92 | Sheet1!B11
+raw_bowen_repeated,3533,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C93 | Volkswagen!I14
+raw_bowen_repeated,3203,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I93 | Ford!C9 | Sheet1!B40
+raw_bowen_repeated,3255,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C94 | BMW and Mercedes-Benz!I12 | Sheet1!B52
+raw_bowen_repeated,30523,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I94 | Japanese Vehicles!J5 | Sheet1!B255
+raw_bowen_repeated,3150,同一 Bowen No. 在原表出现 3 次，分布在 2 个工作表（跨表重复）,3,Product Information!I96 | Sheet1!B174 | Sheet1!B175
+raw_bowen_repeated,3157,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I97 | BMW and Mercedes-Benz!C11
+raw_bowen_repeated,3004-3,同一 Bowen No. 在原表出现 4 次，分布在 2 个工作表（跨表重复）,4,Product Information!C98 | Sheet1!B62 | Sheet1!B63 | Sheet1!B64
+raw_bowen_repeated,3514,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I98 | Chery!C6
+raw_bowen_repeated,3545,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C99 | Changan!C7
+raw_bowen_repeated,35125,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I99 | Changan!I7
+raw_bowen_repeated,3546,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C100 | Changan!I5
+raw_bowen_repeated,3004-1,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I100 | Sheet1!B178
+raw_bowen_repeated,3576,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I101 | BYD!I7
+raw_bowen_repeated,3539,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C102 | BMW and Mercedes-Benz!I11
+raw_bowen_repeated,3041-1,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C103 | Sheet1!B170
+raw_bowen_repeated,33662,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I105 | Sheet1!B223
+raw_bowen_repeated,33663,同一 Bowen No. 在原表出现 3 次，分布在 2 个工作表（跨表重复）,3,Product Information!C106 | Product Information!C113 | Sheet1!B86
+raw_bowen_repeated,38278,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C107 | Sheet1!B159
+raw_bowen_repeated,3267,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C108 | BMW and Mercedes-Benz!C13
+raw_bowen_repeated,3245,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I108 | BMW and Mercedes-Benz!I13
+raw_bowen_repeated,38241,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C109 | Sheet1!B6
+raw_bowen_repeated,3241A,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I109 | BMW and Mercedes-Benz!I14
+raw_bowen_repeated,3003-1,同一 Bowen No. 在原表出现 4 次，分布在 2 个工作表（跨表重复）,4,Product Information!C111 | Product Information!C112 | Sheet1!B35 | Sheet1!B36
+raw_bowen_repeated,3061A,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I111 | Sheet1!B22
+raw_bowen_repeated,33119,同一 Bowen No. 在原表出现 4 次，分布在 2 个工作表（跨表重复）,4,Product Information!I113 | Sheet1!B113 | Sheet1!B114 | Sheet1!B115
+raw_bowen_repeated,3544,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C115 | Sheet1!B2
+raw_bowen_repeated,30189,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I116 | Sheet1!B242
+raw_bowen_repeated,3543,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I117 | Sheet1!B48
+raw_bowen_repeated,35098,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C118 | BMW and Mercedes-Benz!C14
+raw_bowen_repeated,31605,同一 Bowen No. 在原表出现 3 次，分布在 2 个工作表（跨表重复）,3,Product Information!I119 | Sheet1!B118 | Sheet1!B119
+raw_bowen_repeated,35006,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I120 | BMW and Mercedes-Benz!C12 | Sheet1!B50
+raw_bowen_repeated,31515,同一 Bowen No. 在原表出现 3 次，分布在 2 个工作表（跨表重复）,3,Product Information!C121 | Sheet1!B164 | Sheet1!B165
+raw_bowen_repeated,33075-2,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I121 | Sheet1!B60
+raw_bowen_repeated,3369,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C122 | Sheet1!B28
+raw_bowen_repeated,3385,同一 Bowen No. 在原表出现 3 次，分布在 2 个工作表（跨表重复）,3,Product Information!C123 | Sheet1!B85 | Sheet1!B102
+raw_bowen_repeated,31505,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I123 | Sheet1!B109
+raw_bowen_repeated,33910,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C124 | Ford!C5
+raw_bowen_repeated,33663-1,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I124 | Sheet1!B179
+raw_bowen_repeated,35013,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C125 | Sheet1!B95
+raw_bowen_repeated,35102,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I126 | Sheet1!B248
+raw_bowen_repeated,3589,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C127 | Sheet1!B277
+raw_bowen_repeated,3041-2,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C130 | Sheet1!B171
+raw_bowen_repeated,3597,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C131 | Sheet1!B256
+raw_bowen_repeated,31607,同一 Bowen No. 在原表出现 3 次，分布在 2 个工作表（跨表重复）,3,Product Information!C132 | Sheet1!B43 | Sheet1!B44
+raw_bowen_repeated,31602,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I132 | Sheet1!B142
+raw_bowen_repeated,3951,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I133 | Sheet1!B279
+raw_bowen_repeated,35091,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C134 | Sheet1!B266
+raw_bowen_repeated,35063,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C135 | Sheet1!B235
+raw_bowen_repeated,35062,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I135 | Sheet1!B237
+raw_bowen_repeated,38090,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C140 | Sheet1!B47
+raw_bowen_repeated,1001,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C143 | Volkswagen!C15
+raw_bowen_repeated,1002,同一 Bowen No. 在原表出现 4 次，分布在 4 个工作表（跨表重复）,4,Product Information!I143 | Volkswagen!I15 | Ford!J13 | Sheet1!B234
+raw_bowen_repeated,1003,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C144 | Volkswagen!C16
+raw_bowen_repeated,1004,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I144 | Volkswagen!I16
+raw_bowen_repeated,1013,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I145 | Volkswagen!I17 | Sheet1!B34
+raw_bowen_repeated,1015,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C146 | Chery!C8
+raw_bowen_repeated,1019,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I146 | Japanese Vehicles!J13 | Peugeot and Citroen!C14
+raw_bowen_repeated,1020,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C147 | Peugeot and Citroen!J14
+raw_bowen_repeated,1021,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I147 | GM!I11 | Sheet1!B272
+raw_bowen_repeated,1022,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C148 | GM!C12
+raw_bowen_repeated,1026,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I148 | Japanese Vehicles!C14
+raw_bowen_repeated,1027,同一 Bowen No. 在原表出现 4 次，分布在 4 个工作表（跨表重复）,4,Product Information!C149 | BYD!C9 | Mitsubishi!I6 | Chery!I8
+raw_bowen_repeated,1028,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I149 | Mitsubishi!C7 | Chery!C9
+raw_bowen_repeated,1030,同一 Bowen No. 在原表出现 4 次，分布在 4 个工作表（跨表重复）,4,Product Information!C150 | BYD!I9 | Mitsubishi!I7 | Chery!C10
+raw_bowen_repeated,1031,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I150 | BYD!C10
+raw_bowen_repeated,1034,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C151 | Changan!C8 | Chery!I9
+raw_bowen_repeated,1037,同一 Bowen No. 在原表出现 3 次，分布在 2 个工作表（跨表重复）,3,Product Information!I151 | Product Information!I152 | Roewe and MG!I6
+raw_bowen_repeated,1038,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C153 | Ford!C10
+raw_bowen_repeated,1039,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I153 | Ford!J10
+raw_bowen_repeated,1040,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C154 | Ford!C12
+raw_bowen_repeated,1041,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I154 | Changan!I8
+raw_bowen_repeated,1045,同一 Bowen No. 在原表出现 4 次，分布在 4 个工作表（跨表重复）,4,Product Information!C155 | Chery!I10 | GM!I12 | Sheet1!B252
+raw_bowen_repeated,1046,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I155 | Chery!C11 | Sheet1!B33
+raw_bowen_repeated,1047,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C156 | Ford!J12 | Peugeot and Citroen!C15
+raw_bowen_repeated,1049,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I156 | BYD!I10
+raw_bowen_repeated,1050A,同一 Bowen No. 在原表出现 4 次，分布在 4 个工作表（跨表重复）,4,Product Information!C157 | BYD!C11 | Chery!I11 | Sheet1!B262
+raw_bowen_repeated,1050B,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I157 | GM!C13
+raw_bowen_repeated,1051,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C158 | Mitsubishi!C8
+raw_bowen_repeated,1053,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I158 | Peugeot and Citroen!J15
+raw_bowen_repeated,1055,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C159 | GM!I13 | Sheet1!B203
+raw_bowen_repeated,1069,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I160 | Japanese Vehicles!J14
+raw_bowen_repeated,1070,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C161 | GM!C14 | Peugeot and Citroen!C16
+raw_bowen_repeated,1073,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I161 | GM!I14
+raw_bowen_repeated,1168,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I162 | BYD!I11
+raw_bowen_repeated,1052,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I163 | Peugeot and Citroen!J16
+raw_bowen_repeated,2003,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C166 | Volkswagen!C18
+raw_bowen_repeated,2004,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I166 | Volkswagen!I18
+raw_bowen_repeated,2005,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C167 | Volkswagen!C19
+raw_bowen_repeated,2006,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I167 | Volkswagen!I19
+raw_bowen_repeated,2007,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C168 | Volkswagen!C20
+raw_bowen_repeated,2008,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I168 | Volkswagen!I20
+raw_bowen_repeated,2009,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C169 | Chery!C12
+raw_bowen_repeated,2010,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I169 | Chery!I12
+raw_bowen_repeated,2011,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C170 | Chery!C13
+raw_bowen_repeated,2014,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I170 | Peugeot and Citroen!C17
+raw_bowen_repeated,2015,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C171 | Peugeot and Citroen!J17
+raw_bowen_repeated,2016,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I171 | GM!C15 | Sheet1!B267
+raw_bowen_repeated,2017,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C172 | GM!I15 | Sheet1!B202
+raw_bowen_repeated,2018,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I172 | Changan!C9 | Chery!I13
+raw_bowen_repeated,2019,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C173 | GM!C16
+raw_bowen_repeated,2020,同一 Bowen No. 在原表出现 4 次，分布在 4 个工作表（跨表重复）,4,Product Information!I173 | BYD!C12 | Mitsubishi!I8 | Chery!C14
+raw_bowen_repeated,2024,同一 Bowen No. 在原表出现 5 次，分布在 5 个工作表（跨表重复）,5,Product Information!C174 | Changan!I9 | Mitsubishi!C9 | Ford!C14 | Sheet1!B246
+raw_bowen_repeated,2028,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I174 | Ford!C11
+raw_bowen_repeated,2029,同一 Bowen No. 在原表出现 3 次，分布在 2 个工作表（跨表重复）,3,Product Information!C175 | Ford!J11 | Ford!C13
+raw_bowen_repeated,2032,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C176 | Volkswagen!C21
+raw_bowen_repeated,2033,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I176 | Ford!J14
+raw_bowen_repeated,2035,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C177 | Volkswagen!C22 | Sheet1!B233
+raw_bowen_repeated,2036,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I177 | Volkswagen!I22 | Sheet1!B232
+raw_bowen_repeated,2037,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C178 | Volkswagen!C23
+raw_bowen_repeated,2038,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I178 | BYD!I12
+raw_bowen_repeated,2041,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I179 | Roewe and MG!C7
+raw_bowen_repeated,2042,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C180 | GM!I16
+raw_bowen_repeated,2103,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I180 | Ford!C15
+raw_bowen_repeated,2147,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C181 | GM!C17
+raw_bowen_repeated,2148,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I181 | GM!I17
+raw_bowen_repeated,2191,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C182 | Ford!J15
+raw_bowen_repeated,2317,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I182 | Chery!I14
+raw_bowen_repeated,4002,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C185 | Volkswagen!C24
+raw_bowen_repeated,4005,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I186 | Volkswagen!I25
+raw_bowen_repeated,5001,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C188 | Volkswagen!C26
+raw_bowen_repeated,5002,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I188 | Volkswagen!I26
+raw_bowen_repeated,5003,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C189 | Volkswagen!I23
+raw_bowen_repeated,5006,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C190 | GM!C18
+raw_bowen_repeated,5007,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I190 | GM!I18
+raw_bowen_repeated,5009,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C191 | BYD!C13 | Changan!C10
+raw_bowen_repeated,5013,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I192 | Peugeot and Citroen!C18
+raw_bowen_repeated,5015,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I193 | GM!C19
+raw_bowen_repeated,5018,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I194 | Japanese Vehicles!J15
+raw_bowen_repeated,5020,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C195 | Peugeot and Citroen!J18
+raw_bowen_repeated,6001,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C198 | Volkswagen!C27
+raw_bowen_repeated,6003,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!C199 | Volkswagen!C28 | Chery!I15
+raw_bowen_repeated,6005,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C200 | Peugeot and Citroen!C19
+raw_bowen_repeated,6006,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I200 | Peugeot and Citroen!J19
+raw_bowen_repeated,6007,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C201 | Peugeot and Citroen!C20
+raw_bowen_repeated,6008,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I201 | Peugeot and Citroen!J20
+raw_bowen_repeated,6010,同一 Bowen No. 在原表出现 3 次，分布在 3 个工作表（跨表重复）,3,Product Information!I202 | Mitsubishi!I9 | Chery!C15
+raw_bowen_repeated,6012,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C203 | GM!I19
+raw_bowen_repeated,6015,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I203 | BYD!I13
+raw_bowen_repeated,6016,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C204 | GM!C20
+raw_bowen_repeated,6017,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!I204 | GM!I20
+raw_bowen_repeated,6018,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,Product Information!C205 | GM!C21
+raw_bowen_repeated,3654-2,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,BMW and Mercedes-Benz!I7 | Sheet1!B265
+raw_bowen_repeated,3033-Z,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,GM!C4 | Sheet1!B172
+raw_bowen_repeated,3520,同一 Bowen No. 在原表出现 2 次，分布在 2 个工作表（跨表重复）,2,GM!C6 | Sheet1!B169
+raw_bowen_repeated,3522,同一 Bowen No. 在原表出现 3 次，分布在 2 个工作表（跨表重复）,3,Ford!J4 | Sheet1!B227 | Sheet1!B228
+raw_bowen_repeated,3565-2,同一 Bowen No. 在原表出现 2 次，分布在 1 个工作表（同表重复）,2,Sheet1!B7 | Sheet1!B8
+raw_bowen_repeated,31182,同一 Bowen No. 在原表出现 2 次，分布在 1 个工作表（同表重复）,2,Sheet1!B10 | Sheet1!B148
+raw_bowen_repeated,31608,同一 Bowen No. 在原表出现 3 次，分布在 1 个工作表（同表重复）,3,Sheet1!B42 | Sheet1!B45 | Sheet1!B46
+raw_bowen_repeated,32588,同一 Bowen No. 在原表出现 3 次，分布在 1 个工作表（同表重复）,3,Sheet1!B132 | Sheet1!B156 | Sheet1!B274
+raw_bowen_repeated,3403,同一 Bowen No. 在原表出现 2 次，分布在 1 个工作表（同表重复）,2,Sheet1!B133 | Sheet1!B155
+raw_bowen_repeated,32289,同一 Bowen No. 在原表出现 2 次，分布在 1 个工作表（同表重复）,2,Sheet1!B134 | Sheet1!B153
+raw_bowen_repeated,32095,同一 Bowen No. 在原表出现 2 次，分布在 1 个工作表（同表重复）,2,Sheet1!B135 | Sheet1!B152
+raw_bowen_repeated,32269,同一 Bowen No. 在原表出现 2 次，分布在 1 个工作表（同表重复）,2,Sheet1!B136 | Sheet1!B150
+raw_bowen_repeated,32138,同一 Bowen No. 在原表出现 2 次，分布在 1 个工作表（同表重复）,2,Sheet1!B137 | Sheet1!B149
+raw_bowen_repeated,32899,同一 Bowen No. 在原表出现 2 次，分布在 1 个工作表（同表重复）,2,Sheet1!B139 | Sheet1!B147
+raw_bowen_repeated,32839,同一 Bowen No. 在原表出现 2 次，分布在 1 个工作表（同表重复）,2,Sheet1!B140 | Sheet1!B146
+raw_bowen_repeated,32849,同一 Bowen No. 在原表出现 2 次，分布在 1 个工作表（同表重复）,2,Sheet1!B141 | Sheet1!B144
+bowen_oe_conflict_across_sheets,3001,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 19 个）；Product Information 缺少 14 个；Volkswagen 缺少 14 个；Sheet1 缺少 5 个,3,Product Information | Volkswagen | Sheet1
+bowen_oe_conflict_across_sheets,3002,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 12 个）；Product Information 缺少 7 个；Volkswagen 缺少 7 个；Sheet1 缺少 5 个,3,Product Information | Volkswagen | Sheet1
+bowen_oe_conflict_across_sheets,3003,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 4 个）；Product Information 缺少 3 个,2,Product Information | Chery
+bowen_oe_conflict_across_sheets,3005,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 57 个）；Product Information 缺少 44 个；BYD 缺少 42 个；Geely and Haval 缺少 42 个；Great Wall and Haval 缺少 42 个；Mitsubishi 缺少 56 个；Sheet1 缺少 13 个,6,Product Information | BYD | Geely and Haval | Great Wall and Haval | Mitsubishi | Sheet1
+bowen_oe_conflict_across_sheets,3006,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 6 个）；Product Information 缺少 1 个；Peugeot and Citroen 缺少 1 个；Sheet1 缺少 5 个,3,Product Information | Peugeot and Citroen | Sheet1
+bowen_oe_conflict_across_sheets,3007,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 7 个）；Product Information 缺少 1 个；Peugeot and Citroen 缺少 2 个；Sheet1 缺少 6 个,3,Product Information | Peugeot and Citroen | Sheet1
+bowen_oe_conflict_across_sheets,300701,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 7 个）；Product Information 缺少 3 个；Peugeot and Citroen 缺少 3 个；Sheet1 缺少 4 个,3,Product Information | Peugeot and Citroen | Sheet1
+bowen_oe_conflict_across_sheets,3008,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 13 个）；Product Information 缺少 8 个；GM 缺少 8 个；Sheet1 缺少 5 个,3,Product Information | GM | Sheet1
+bowen_oe_conflict_across_sheets,3009,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；Product Information 缺少 1 个；GM 缺少 1 个；Sheet1 缺少 2 个,3,Product Information | GM | Sheet1
+bowen_oe_conflict_across_sheets,3010,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 6 个）；Product Information 缺少 1 个；GM 缺少 1 个；Sheet1 缺少 5 个,3,Product Information | GM | Sheet1
+bowen_oe_conflict_across_sheets,3011,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 14 个）；Product Information 缺少 10 个；Japanese Vehicles 缺少 14 个；Sheet1 缺少 4 个,3,Product Information | Japanese Vehicles | Sheet1
+bowen_oe_conflict_across_sheets,3013,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 2 个）；Product Information 缺少 1 个；Mitsubishi 缺少 1 个；Sheet1 缺少 1 个,3,Product Information | Mitsubishi | Sheet1
+bowen_oe_conflict_across_sheets,3014,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 2 个）；Product Information 缺少 1 个；Sheet1 缺少 1 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3015,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 6 个）；Roewe and MG 缺少 1 个；Sheet1 缺少 5 个,3,Product Information | Roewe and MG | Sheet1
+bowen_oe_conflict_across_sheets,3016,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 25 个）；Product Information 缺少 17 个；Ford 缺少 19 个；Sheet1 缺少 9 个,3,Product Information | Ford | Sheet1
+bowen_oe_conflict_across_sheets,3019,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 12 个）；Product Information 缺少 5 个；BYD 缺少 6 个；Geely and Haval 缺少 7 个；Chery 缺少 7 个；Sheet1 缺少 7 个,5,Product Information | BYD | Geely and Haval | Chery | Sheet1
+bowen_oe_conflict_across_sheets,3020,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 20 个）；Product Information 缺少 4 个；Ford 缺少 14 个；Sheet1 缺少 16 个,3,Product Information | Ford | Sheet1
+bowen_oe_conflict_across_sheets,3021,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 5 个）；Product Information 缺少 2 个；Great Wall and Haval 缺少 2 个；Mitsubishi 缺少 2 个；Ford 缺少 2 个；Sheet1 缺少 3 个,5,Product Information | Great Wall and Haval | Mitsubishi | Ford | Sheet1
+bowen_oe_conflict_across_sheets,3022,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；Product Information 缺少 1 个,3,Product Information | Changan | Mitsubishi
+bowen_oe_conflict_across_sheets,3023,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 11 个）；Product Information 缺少 5 个；Japanese Vehicles 缺少 5 个；Sheet1 缺少 6 个,3,Product Information | Japanese Vehicles | Sheet1
+bowen_oe_conflict_across_sheets,3025,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 30 个）；Product Information 缺少 23 个；Japanese Vehicles 缺少 23 个；Sheet1 缺少 5 个,3,Product Information | Japanese Vehicles | Sheet1
+bowen_oe_conflict_across_sheets,3027,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 15 个）；Product Information 缺少 11 个；Changan 缺少 4 个；Sheet1 缺少 10 个,3,Product Information | Changan | Sheet1
+bowen_oe_conflict_across_sheets,3028,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 12 个）；Product Information 缺少 6 个；Sheet1 缺少 5 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3029,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 19 个）；Product Information 缺少 12 个；Chery 缺少 12 个；GM 缺少 12 个；Sheet1 缺少 6 个,4,Product Information | Chery | GM | Sheet1
+bowen_oe_conflict_across_sheets,3032,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 5 个）；Product Information 缺少 2 个；GM 缺少 2 个；Sheet1 缺少 3 个,3,Product Information | GM | Sheet1
+bowen_oe_conflict_across_sheets,3033,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 16 个）；Product Information 缺少 11 个；Sheet1 缺少 5 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,303317,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 2 个）；Product Information 缺少 1 个；GM 缺少 1 个；Sheet1 缺少 1 个,3,Product Information | GM | Sheet1
+bowen_oe_conflict_across_sheets,303401,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 4 个）；Product Information 缺少 2 个；Volkswagen 缺少 2 个；Sheet1 缺少 2 个,3,Product Information | Volkswagen | Sheet1
+bowen_oe_conflict_across_sheets,303402,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 11 个）；Product Information 缺少 6 个；Volkswagen 缺少 7 个；Sheet1 缺少 4 个,3,Product Information | Volkswagen | Sheet1
+bowen_oe_conflict_across_sheets,3035,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 20 个）；Product Information 缺少 15 个；BMW and Mercedes-Benz 缺少 14 个；Sheet1 缺少 6 个,3,Product Information | BMW and Mercedes-Benz | Sheet1
+bowen_oe_conflict_across_sheets,3036,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；Product Information 缺少 1 个；Sheet1 缺少 2 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3037,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 2 个）；Product Information 缺少 1 个,2,Product Information | Volkswagen
+bowen_oe_conflict_across_sheets,3038,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 4 个）；Product Information 缺少 1 个；Volkswagen 缺少 1 个；Sheet1 缺少 3 个,3,Product Information | Volkswagen | Sheet1
+bowen_oe_conflict_across_sheets,3051,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 49 个）；Product Information 缺少 38 个；Geely and Haval 缺少 38 个；Great Wall and Haval 缺少 38 个；Japanese Vehicles 缺少 35 个；Sheet1 缺少 25 个,5,Product Information | Geely and Haval | Great Wall and Haval | Japanese Vehicles | Sheet1
+bowen_oe_conflict_across_sheets,3054,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；Product Information 缺少 1 个；Sheet1 缺少 2 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3059,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 2 个）；Product Information 缺少 1 个；Roewe and MG 缺少 1 个；Trumpchi 缺少 1 个,3,Product Information | Roewe and MG | Trumpchi
+bowen_oe_conflict_across_sheets,3061,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 20 个）；Product Information 缺少 19 个；Japanese Vehicles 缺少 12 个,3,Product Information | BYD | Japanese Vehicles
+bowen_oe_conflict_across_sheets,3064,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 52 个）；Product Information 缺少 30 个；Japanese Vehicles 缺少 30 个；Sheet1 缺少 20 个,3,Product Information | Japanese Vehicles | Sheet1
+bowen_oe_conflict_across_sheets,3065,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 14 个）；Product Information 缺少 10 个；Japanese Vehicles 缺少 10 个；Sheet1 缺少 3 个,3,Product Information | Japanese Vehicles | Sheet1
+bowen_oe_conflict_across_sheets,3066,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 8 个）；Product Information 缺少 4 个；GM 缺少 5 个；Sheet1 缺少 3 个,3,Product Information | GM | Sheet1
+bowen_oe_conflict_across_sheets,3068,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 13 个）；Product Information 缺少 7 个；Geely and Haval 缺少 6 个；Great Wall and Haval 缺少 6 个；Ford 缺少 6 个；Sheet1 缺少 7 个,5,Product Information | Geely and Haval | Great Wall and Haval | Ford | Sheet1
+bowen_oe_conflict_across_sheets,3069,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 20 个）；Product Information 缺少 6 个；Geely and Haval 缺少 5 个；Great Wall and Haval 缺少 5 个；Sheet1 缺少 15 个,4,Product Information | Geely and Haval | Great Wall and Haval | Sheet1
+bowen_oe_conflict_across_sheets,3071,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 5 个）；Product Information 缺少 3 个；Sheet1 缺少 2 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3073,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 7 个）；Product Information 缺少 1 个；Japanese Vehicles 缺少 2 个；Sheet1 缺少 6 个,3,Product Information | Japanese Vehicles | Sheet1
+bowen_oe_conflict_across_sheets,3074,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 12 个）；Product Information 缺少 2 个；Mitsubishi 缺少 3 个；Sheet1 缺少 9 个,3,Product Information | Mitsubishi | Sheet1
+bowen_oe_conflict_across_sheets,3076,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 20 个）；Product Information 缺少 6 个；BMW and Mercedes-Benz 缺少 11 个；Japanese Vehicles 缺少 12 个；Sheet1 缺少 12 个,4,Product Information | BMW and Mercedes-Benz | Japanese Vehicles | Sheet1
+bowen_oe_conflict_across_sheets,3077,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 31 个）；Product Information 缺少 12 个；Ford 缺少 13 个；Sheet1 缺少 17 个,3,Product Information | Ford | Sheet1
+bowen_oe_conflict_across_sheets,3084,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 6 个）；Product Information 缺少 4 个；Volkswagen 缺少 4 个；Sheet1 缺少 2 个,3,Product Information | Volkswagen | Sheet1
+bowen_oe_conflict_across_sheets,3085,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；Product Information 缺少 1 个；Volkswagen 缺少 1 个；Sheet1 缺少 2 个,3,Product Information | Volkswagen | Sheet1
+bowen_oe_conflict_across_sheets,3086,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 5 个）；Product Information 缺少 1 个；Volkswagen 缺少 2 个；Sheet1 缺少 4 个,3,Product Information | Volkswagen | Sheet1
+bowen_oe_conflict_across_sheets,3094,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 22 个）；Product Information 缺少 6 个；Ford 缺少 6 个；Sheet1 缺少 16 个,3,Product Information | Ford | Sheet1
+bowen_oe_conflict_across_sheets,3097,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 5 个）；GM 缺少 1 个；Roewe and MG 缺少 1 个,3,Product Information | GM | Roewe and MG
+bowen_oe_conflict_across_sheets,31054,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；Product Information 缺少 2 个；BYD 缺少 2 个；Sheet1 缺少 2 个,3,Product Information | BYD | Sheet1
+bowen_oe_conflict_across_sheets,3252,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 10 个）；Product Information 缺少 3 个；Peugeot and Citroen 缺少 3 个；Sheet1 缺少 7 个,3,Product Information | Peugeot and Citroen | Sheet1
+bowen_oe_conflict_across_sheets,3253,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 6 个）；Product Information 缺少 1 个；Peugeot and Citroen 缺少 1 个；Sheet1 缺少 5 个,3,Product Information | Peugeot and Citroen | Sheet1
+bowen_oe_conflict_across_sheets,3288,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；Product Information 缺少 1 个；Peugeot and Citroen 缺少 1 个；Sheet1 缺少 2 个,3,Product Information | Peugeot and Citroen | Sheet1
+bowen_oe_conflict_across_sheets,3289,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 4 个）；Product Information 缺少 1 个；Peugeot and Citroen 缺少 1 个；Sheet1 缺少 3 个,3,Product Information | Peugeot and Citroen | Sheet1
+bowen_oe_conflict_across_sheets,3500,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 4 个）；Product Information 缺少 1 个；Japanese Vehicles 缺少 1 个；Sheet1 缺少 3 个,3,Product Information | Japanese Vehicles | Sheet1
+bowen_oe_conflict_across_sheets,3503,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 8 个）；Product Information 缺少 6 个；Japanese Vehicles 缺少 6 个；Sheet1 缺少 2 个,3,Product Information | Japanese Vehicles | Sheet1
+bowen_oe_conflict_across_sheets,3507,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；Product Information 缺少 1 个；Japanese Vehicles 缺少 2 个；Sheet1 缺少 2 个,3,Product Information | Japanese Vehicles | Sheet1
+bowen_oe_conflict_across_sheets,3509,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 6 个）；Product Information 缺少 1 个；Sheet1 缺少 5 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3511,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 4 个）；Product Information 缺少 3 个；Sheet1 缺少 1 个,3,Product Information | BMW and Mercedes-Benz | Sheet1
+bowen_oe_conflict_across_sheets,3579,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；Sheet1 缺少 2 个,3,Product Information | BMW and Mercedes-Benz | Sheet1
+bowen_oe_conflict_across_sheets,3588,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；Product Information 缺少 1 个；BMW and Mercedes-Benz 缺少 1 个；Sheet1 缺少 2 个,3,Product Information | BMW and Mercedes-Benz | Sheet1
+bowen_oe_conflict_across_sheets,35106,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 7 个）；Product Information 缺少 3 个；Changan 缺少 6 个；Sheet1 缺少 3 个,3,Product Information | Changan | Sheet1
+bowen_oe_conflict_across_sheets,35126,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 5 个）；Product Information 缺少 4 个；Changan 缺少 2 个；Sheet1 缺少 3 个,3,Product Information | Changan | Sheet1
+bowen_oe_conflict_across_sheets,3524,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 4 个）；Product Information 缺少 1 个；GM 缺少 1 个；Sheet1 缺少 3 个,3,Product Information | GM | Sheet1
+bowen_oe_conflict_across_sheets,3525,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 2 个）；Product Information 缺少 1 个；Roewe and MG 缺少 1 个；Sheet1 缺少 1 个,3,Product Information | Roewe and MG | Sheet1
+bowen_oe_conflict_across_sheets,3550,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 8 个）；Product Information 缺少 1 个；Japanese Vehicles 缺少 1 个；Sheet1 缺少 8 个,3,Product Information | Japanese Vehicles | Sheet1
+bowen_oe_conflict_across_sheets,3555,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 4 个）；Product Information 缺少 2 个；Sheet1 缺少 2 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3556,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 2 个）；Product Information 缺少 1 个；Sheet1 缺少 1 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3598,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 6 个）；Product Information 缺少 4 个；Japanese Vehicles 缺少 5 个,3,Product Information | Japanese Vehicles | Sheet1
+bowen_oe_conflict_across_sheets,3652,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 17 个）；Product Information 缺少 3 个；GM 缺少 3 个；Sheet1 缺少 13 个,3,Product Information | GM | Sheet1
+bowen_oe_conflict_across_sheets,3653,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 11 个）；Product Information 缺少 7 个；GM 缺少 7 个；Sheet1 缺少 4 个,3,Product Information | GM | Sheet1
+bowen_oe_conflict_across_sheets,3816,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 6 个）；Product Information 缺少 3 个；BYD 缺少 3 个；Volkswagen 缺少 5 个；Sheet1 缺少 3 个,4,Product Information | BYD | Volkswagen | Sheet1
+bowen_oe_conflict_across_sheets,3842,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 4 个）；Product Information 缺少 1 个；Volkswagen 缺少 1 个；Sheet1 缺少 3 个,3,Product Information | Volkswagen | Sheet1
+bowen_oe_conflict_across_sheets,3841,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 5 个）；Product Information 缺少 3 个；Volkswagen 缺少 3 个；Sheet1 缺少 2 个,3,Product Information | Volkswagen | Sheet1
+bowen_oe_conflict_across_sheets,3528,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 4 个）；Product Information 缺少 3 个；Sheet1 缺少 1 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,31604-1,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 13 个）；Product Information 缺少 11 个；Sheet1 缺少 2 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3516,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 7 个）；Product Information 缺少 2 个；Volkswagen 缺少 4 个；Sheet1 缺少 4 个,3,Product Information | Volkswagen | Sheet1
+bowen_oe_conflict_across_sheets,3665-1,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 21 个）；Product Information 缺少 4 个；Sheet1 缺少 16 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3080,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 22 个）；Product Information 缺少 22 个；Volkswagen 缺少 20 个；Sheet1 缺少 2 个,3,Product Information | Volkswagen | Sheet1
+bowen_oe_conflict_across_sheets,3004-4,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 4 个）；Product Information 缺少 2 个；Sheet1 缺少 2 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3515,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 4 个）；Product Information 缺少 1 个；Japanese Vehicles 缺少 1 个；Sheet1 缺少 3 个,3,Product Information | Japanese Vehicles | Sheet1
+bowen_oe_conflict_across_sheets,3310,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 5 个）；Product Information 缺少 3 个；Volkswagen 缺少 3 个；Sheet1 缺少 2 个,3,Product Information | Volkswagen | Sheet1
+bowen_oe_conflict_across_sheets,3666,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 4 个）；Product Information 缺少 1 个；Peugeot and Citroen 缺少 1 个；Sheet1 缺少 3 个,3,Product Information | Peugeot and Citroen | Sheet1
+bowen_oe_conflict_across_sheets,3526,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 2 个）；Product Information 缺少 2 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,30101,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 28 个）；Product Information 缺少 15 个；Japanese Vehicles 缺少 15 个；Ford 缺少 15 个；Peugeot and Citroen 缺少 15 个；Sheet1 缺少 13 个,5,Product Information | Japanese Vehicles | Ford | Peugeot and Citroen | Sheet1
+bowen_oe_conflict_across_sheets,30102,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 17 个）；Product Information 缺少 5 个；Peugeot and Citroen 缺少 6 个；Sheet1 缺少 12 个,3,Product Information | Peugeot and Citroen | Sheet1
+bowen_oe_conflict_across_sheets,31510,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 19 个）；Product Information 缺少 12 个；Ford 缺少 12 个；Sheet1 缺少 7 个,3,Product Information | Ford | Sheet1
+bowen_oe_conflict_across_sheets,3582,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 11 个）；Product Information 缺少 10 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3583,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 10 个）；Product Information 缺少 8 个；Sheet1 缺少 2 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,35650,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 11 个）；Product Information 缺少 8 个；BMW and Mercedes-Benz 缺少 4 个；Ford 缺少 8 个；Sheet1 缺少 6 个,4,Product Information | BMW and Mercedes-Benz | Ford | Sheet1
+bowen_oe_conflict_across_sheets,30116,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 5 个）；Product Information 缺少 1 个；Volkswagen 缺少 1 个；Sheet1 缺少 4 个,3,Product Information | Volkswagen | Sheet1
+bowen_oe_conflict_across_sheets,3340,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 2 个）；Product Information 缺少 1 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,33151,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 5 个）；Product Information 缺少 2 个；BMW and Mercedes-Benz 缺少 2 个；Sheet1 缺少 3 个,3,Product Information | BMW and Mercedes-Benz | Sheet1
+bowen_oe_conflict_across_sheets,3334,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 6 个）；Product Information 缺少 5 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3203,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 19 个）；Product Information 缺少 12 个；Ford 缺少 14 个；Sheet1 缺少 7 个,3,Product Information | Ford | Sheet1
+bowen_oe_conflict_across_sheets,3255,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 6 个）；Product Information 缺少 3 个；Sheet1 缺少 5 个,3,Product Information | BMW and Mercedes-Benz | Sheet1
+bowen_oe_conflict_across_sheets,30523,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 5 个）；Product Information 缺少 1 个；Japanese Vehicles 缺少 1 个；Sheet1 缺少 4 个,3,Product Information | Japanese Vehicles | Sheet1
+bowen_oe_conflict_across_sheets,3150,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 22 个）；Product Information 缺少 14 个；Sheet1 缺少 7 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3004-3,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 49 个）；Product Information 缺少 31 个；Sheet1 缺少 15 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3004-1,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 4 个）；Product Information 缺少 1 个；Sheet1 缺少 3 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3539,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 7 个）；Product Information 缺少 3 个,2,Product Information | BMW and Mercedes-Benz
+bowen_oe_conflict_across_sheets,3041-1,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 1 个）；Product Information 缺少 1 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,33662,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 11 个）；Product Information 缺少 8 个；Sheet1 缺少 2 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,33663,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 14 个）；Product Information 缺少 4 个；Sheet1 缺少 10 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,38278,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 1 个）；Product Information 缺少 1 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,38241,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 4 个）；Product Information 缺少 1 个；Sheet1 缺少 2 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3003-1,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 19 个）；Product Information 缺少 7 个；Sheet1 缺少 8 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3061A,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 25 个）；Product Information 缺少 25 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,33119,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 12 个）；Product Information 缺少 6 个；Sheet1 缺少 6 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3544,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；Product Information 缺少 1 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,30189,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；Product Information 缺少 1 个；Sheet1 缺少 2 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3543,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 9 个）；Product Information 缺少 8 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,31605,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 24 个）；Product Information 缺少 22 个；Sheet1 缺少 2 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,35006,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；Product Information 缺少 1 个；BMW and Mercedes-Benz 缺少 2 个；Sheet1 缺少 1 个,3,Product Information | BMW and Mercedes-Benz | Sheet1
+bowen_oe_conflict_across_sheets,31515,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 22 个）；Product Information 缺少 14 个；Sheet1 缺少 8 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,33075-2,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 4 个）；Sheet1 缺少 3 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3385,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 6 个）；Product Information 缺少 3 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,31505,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；Product Information 缺少 1 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,33663-1,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 23 个）；Product Information 缺少 21 个；Sheet1 缺少 2 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,35013,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 2 个）；Product Information 缺少 1 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,35102,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 2 个）；Product Information 缺少 1 个；Sheet1 缺少 1 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3589,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 5 个）；Product Information 缺少 2 个；Sheet1 缺少 3 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3041-2,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 7 个）；Product Information 缺少 2 个；Sheet1 缺少 4 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3597,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 4 个）；Product Information 缺少 2 个；Sheet1 缺少 1 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,31607,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 8 个）；Product Information 缺少 5 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,31602,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 4 个）；Product Information 缺少 1 个；Sheet1 缺少 3 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,3951,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；Product Information 缺少 1 个；Sheet1 缺少 2 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,35091,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 2 个）；Product Information 缺少 1 个；Sheet1 缺少 1 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,38090,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；Sheet1 缺少 2 个,2,Product Information | Sheet1
+bowen_oe_conflict_across_sheets,1001,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 5 个）；Product Information 缺少 1 个,2,Product Information | Volkswagen
+bowen_oe_conflict_across_sheets,1002,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 6 个）；Product Information 缺少 1 个；Volkswagen 缺少 1 个；Ford 缺少 1 个；Sheet1 缺少 5 个,4,Product Information | Volkswagen | Ford | Sheet1
+bowen_oe_conflict_across_sheets,1013,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 2 个）；Product Information 缺少 1 个；Volkswagen 缺少 1 个,3,Product Information | Volkswagen | Sheet1
+bowen_oe_conflict_across_sheets,1019,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 7 个）；Product Information 缺少 7 个,3,Product Information | Japanese Vehicles | Peugeot and Citroen
+bowen_oe_conflict_across_sheets,1021,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 5 个）；Product Information 缺少 1 个；GM 缺少 1 个；Sheet1 缺少 4 个,3,Product Information | GM | Sheet1
+bowen_oe_conflict_across_sheets,1037,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 12 个）；Roewe and MG 缺少 1 个,2,Product Information | Roewe and MG
+bowen_oe_conflict_across_sheets,1041,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 1 个）；Changan 缺少 1 个,2,Product Information | Changan
+bowen_oe_conflict_across_sheets,1045,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 19 个）；Product Information 缺少 18 个；Chery 缺少 18 个；GM 缺少 18 个；Sheet1 缺少 1 个,4,Product Information | Chery | GM | Sheet1
+bowen_oe_conflict_across_sheets,1046,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；Product Information 缺少 2 个；Chery 缺少 2 个；Sheet1 缺少 1 个,3,Product Information | Chery | Sheet1
+bowen_oe_conflict_across_sheets,1049,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；BYD 缺少 1 个,2,Product Information | BYD
+bowen_oe_conflict_across_sheets,1050A,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 5 个）；Product Information 缺少 4 个；BYD 缺少 4 个；Chery 缺少 4 个；Sheet1 缺少 1 个,4,Product Information | BYD | Chery | Sheet1
+bowen_oe_conflict_across_sheets,1055,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 8 个）；Product Information 缺少 4 个；GM 缺少 4 个；Sheet1 缺少 4 个,3,Product Information | GM | Sheet1
+bowen_oe_conflict_across_sheets,2007,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 7 个）；Volkswagen 缺少 5 个,2,Product Information | Volkswagen
+bowen_oe_conflict_across_sheets,2008,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 5 个）；Volkswagen 缺少 1 个,2,Product Information | Volkswagen
+bowen_oe_conflict_across_sheets,2011,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 2 个）；Chery 缺少 1 个,2,Product Information | Chery
+bowen_oe_conflict_across_sheets,2016,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 5 个）；Product Information 缺少 1 个；GM 缺少 1 个；Sheet1 缺少 4 个,3,Product Information | GM | Sheet1
+bowen_oe_conflict_across_sheets,2017,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 6 个）；Product Information 缺少 1 个；GM 缺少 1 个；Sheet1 缺少 5 个,3,Product Information | GM | Sheet1
+bowen_oe_conflict_across_sheets,2024,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 13 个）；Product Information 缺少 2 个；Changan 缺少 2 个；Mitsubishi 缺少 2 个；Ford 缺少 2 个；Sheet1 缺少 11 个,5,Product Information | Changan | Mitsubishi | Ford | Sheet1
+bowen_oe_conflict_across_sheets,2035,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；Product Information 缺少 1 个；Volkswagen 缺少 2 个；Sheet1 缺少 2 个,3,Product Information | Volkswagen | Sheet1
+bowen_oe_conflict_across_sheets,2036,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 2 个）；Product Information 缺少 1 个；Volkswagen 缺少 1 个；Sheet1 缺少 1 个,3,Product Information | Volkswagen | Sheet1
+bowen_oe_conflict_across_sheets,2041,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 2 个）；Product Information 缺少 1 个；Roewe and MG 缺少 1 个,2,Product Information | Roewe and MG
+bowen_oe_conflict_across_sheets,5009,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 2 个）；Product Information 缺少 1 个,3,Product Information | BYD | Changan
+bowen_oe_conflict_across_sheets,5013,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 4 个）；Product Information 缺少 3 个；Peugeot and Citroen 缺少 1 个,2,Product Information | Peugeot and Citroen
+bowen_oe_conflict_across_sheets,5020,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 6 个）；Peugeot and Citroen 缺少 1 个,2,Product Information | Peugeot and Citroen
+bowen_oe_conflict_across_sheets,6003,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 7 个）；Product Information 缺少 1 个,3,Product Information | Volkswagen | Chery
+bowen_oe_conflict_across_sheets,6010,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；Product Information 缺少 1 个,3,Product Information | Mitsubishi | Chery
+bowen_oe_conflict_across_sheets,3654-2,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 3 个）；BMW and Mercedes-Benz 缺少 1 个；Sheet1 缺少 2 个,2,BMW and Mercedes-Benz | Sheet1
+bowen_oe_conflict_across_sheets,3033-Z,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 24 个）；GM 缺少 22 个；Sheet1 缺少 2 个,2,GM | Sheet1
+bowen_oe_conflict_across_sheets,3520,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 17 个）；GM 缺少 12 个；Sheet1 缺少 5 个,2,GM | Sheet1
+bowen_oe_conflict_across_sheets,3522,同一 Bowen No. 在不同工作表登记的 OE 不一致（并集 10 个）；Ford 缺少 8 个,2,Ford | Sheet1
+bowen_variant_family,3004,基础号相同但后缀不同，需确认是同一产品的变体还是不同产品,6,3004 | 3004--33503 | 3004-1 | 3004-3 | 3004-4 | 3004-5
+bowen_variant_family,3033,基础号相同但后缀不同，需确认是同一产品的变体还是不同产品,4,3033 | 3033--1 | 3033-Z | 3033-Z138*95*251
+bowen_variant_family,3041,基础号相同但后缀不同，需确认是同一产品的变体还是不同产品,4,3041 | 3041-1 | 3041-2 | 3041-2(3003)SEALINGRING
+bowen_variant_family,3654,基础号相同但后缀不同，需确认是同一产品的变体还是不同产品,4,3654 | 3654--2 | 3654-1 | 3654-3
+bowen_variant_family,3002,基础号相同但后缀不同，需确认是同一产品的变体还是不同产品,3,3002 | 3002-1 | 3002-DQ
+bowen_variant_family,3003,基础号相同但后缀不同，需确认是同一产品的变体还是不同产品,3,3003 | 3003-1 | 3003-3
+bowen_variant_family,3665,基础号相同但后缀不同，需确认是同一产品的变体还是不同产品,3,3665 | 3665-1 | 3665-188℃
+bowen_variant_family,3011,基础号相同但后缀不同，需确认是同一产品的变体还是不同产品,2,3011 | 3011-23565
+bowen_variant_family,3016,基础号相同但后缀不同，需确认是同一产品的变体还是不同产品,2,3016 | 3016-82
+bowen_variant_family,3021,基础号相同但后缀不同，需确认是同一产品的变体还是不同产品,2,3021 | 3021-1
+bowen_variant_family,3056,基础号相同但后缀不同，需确认是同一产品的变体还是不同产品,2,3056 | 3056-1
+bowen_variant_family,32748,基础号相同但后缀不同，需确认是同一产品的变体还是不同产品,2,32748-132748-2 | 32748-2
+bowen_variant_family,33561,基础号相同但后缀不同，需确认是同一产品的变体还是不同产品,2,33561 | 33561-1
+bowen_variant_family,33663,基础号相同但后缀不同，需确认是同一产品的变体还是不同产品,2,33663 | 33663-1
+bowen_variant_family,35063,基础号相同但后缀不同，需确认是同一产品的变体还是不同产品,2,35063 | 35063-1
+bowen_variant_family,3565,基础号相同但后缀不同，需确认是同一产品的变体还是不同产品,2,3565 | 3565-2
+bowen_variant_family,3655,基础号相同但后缀不同，需确认是同一产品的变体还是不同产品,2,3655 | 3655-2
+bowen_variant_family,3905,基础号相同但后缀不同，需确认是同一产品的变体还是不同产品,2,3905 | 3905-1

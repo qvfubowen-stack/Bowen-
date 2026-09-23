@@ -1,0 +1,193 @@
+{
+  "generated_at": "2026-09-23T08:57:25.146Z",
+  "data_version": "v1.0.0",
+  "sheets": [
+    {
+      "sheet": "Product Information",
+      "kind": "master",
+      "rows": 237,
+      "cols": 24,
+      "first_data_row": 4,
+      "blocks_extracted": 385,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "BYD",
+      "kind": "brand",
+      "rows": 26,
+      "cols": 12,
+      "first_data_row": 3,
+      "blocks_extracted": 21,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Volkswagen",
+      "kind": "brand",
+      "rows": 37,
+      "cols": 12,
+      "first_data_row": 3,
+      "blocks_extracted": 48,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Geely and Haval",
+      "kind": "brand",
+      "rows": 30,
+      "cols": 12,
+      "first_data_row": 3,
+      "blocks_extracted": 12,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Changan",
+      "kind": "brand",
+      "rows": 37,
+      "cols": 12,
+      "first_data_row": 3,
+      "blocks_extracted": 15,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Great Wall and Haval",
+      "kind": "brand",
+      "rows": 29,
+      "cols": 12,
+      "first_data_row": 3,
+      "blocks_extracted": 9,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "BMW and Mercedes-Benz",
+      "kind": "brand",
+      "rows": 15,
+      "cols": 12,
+      "first_data_row": 3,
+      "blocks_extracted": 24,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Mitsubishi",
+      "kind": "brand",
+      "rows": 24,
+      "cols": 12,
+      "first_data_row": 3,
+      "blocks_extracted": 14,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Chery",
+      "kind": "brand",
+      "rows": 25,
+      "cols": 12,
+      "first_data_row": 3,
+      "blocks_extracted": 25,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "GM",
+      "kind": "brand",
+      "rows": 41,
+      "cols": 12,
+      "first_data_row": 3,
+      "blocks_extracted": 37,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Roewe and MG",
+      "kind": "brand",
+      "rows": 42,
+      "cols": 12,
+      "first_data_row": 3,
+      "blocks_extracted": 10,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Japanese Vehicles",
+      "kind": "brand",
+      "rows": 42,
+      "cols": 14,
+      "first_data_row": 3,
+      "blocks_extracted": 26,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Ford",
+      "kind": "brand",
+      "rows": 42,
+      "cols": 14,
+      "first_data_row": 3,
+      "blocks_extracted": 25,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Trumpchi",
+      "kind": "brand",
+      "rows": 29,
+      "cols": 14,
+      "first_data_row": 3,
+      "blocks_extracted": 6,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Peugeot and Citroen",
+      "kind": "brand",
+      "rows": 28,
+      "cols": 14,
+      "first_data_row": 3,
+      "blocks_extracted": 36,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Sheet1",
+      "kind": "supplement",
+      "rows": 279,
+      "cols": 13,
+      "first_data_row": 2,
+      "blocks_extracted": 277,
+      "merges": 0,
+      "hyperlinks": 2,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Sheet2",
+      "kind": "brand",
+      "rows": 1,
+      "cols": 1,
+      "first_data_row": 3,
+      "blocks_extracted": 0,
+      "merges": 0,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    }
+  ]
+}

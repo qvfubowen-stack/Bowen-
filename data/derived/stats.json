@@ -1,0 +1,1068 @@
+{
+  "generated_at": "2026-09-23T08:57:25.146Z",
+  "data_version": "v1.0.0",
+  "summary": {
+    "原始文件数": 1,
+    "工作表数": 17,
+    "原始记录数": 970,
+    "产品数_按BowenNo聚合": 466,
+    "有BowenNo的产品数": 459,
+    "无BowenNo的产品数": 7,
+    "不重复BowenNo数": 459,
+    "OE明细行数": 2364,
+    "不重复OE号数": 2211,
+    "车型品牌数": 87,
+    "原始车型片段数": 509,
+    "第一批推荐上线数": 72
+  },
+  "raw_files": [
+    {
+      "name": "产品信息表1_英文版.xlsx",
+      "rel": "data/raw/产品信息表1_英文版.xlsx",
+      "size": 48680077,
+      "sha256": "22da11156fa4eb82a5b88c520263b06d56c39e0c291c3ed8952edccb1e8a062f",
+      "mtime": "2026-09-07T06:41:28.763Z"
+    }
+  ],
+  "sheets": [
+    {
+      "sheet": "Product Information",
+      "kind": "master",
+      "rows": 237,
+      "cols": 24,
+      "first_data_row": 4,
+      "blocks_extracted": 385,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "BYD",
+      "kind": "brand",
+      "rows": 26,
+      "cols": 12,
+      "first_data_row": 3,
+      "blocks_extracted": 21,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Volkswagen",
+      "kind": "brand",
+      "rows": 37,
+      "cols": 12,
+      "first_data_row": 3,
+      "blocks_extracted": 48,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Geely and Haval",
+      "kind": "brand",
+      "rows": 30,
+      "cols": 12,
+      "first_data_row": 3,
+      "blocks_extracted": 12,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Changan",
+      "kind": "brand",
+      "rows": 37,
+      "cols": 12,
+      "first_data_row": 3,
+      "blocks_extracted": 15,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Great Wall and Haval",
+      "kind": "brand",
+      "rows": 29,
+      "cols": 12,
+      "first_data_row": 3,
+      "blocks_extracted": 9,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "BMW and Mercedes-Benz",
+      "kind": "brand",
+      "rows": 15,
+      "cols": 12,
+      "first_data_row": 3,
+      "blocks_extracted": 24,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Mitsubishi",
+      "kind": "brand",
+      "rows": 24,
+      "cols": 12,
+      "first_data_row": 3,
+      "blocks_extracted": 14,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Chery",
+      "kind": "brand",
+      "rows": 25,
+      "cols": 12,
+      "first_data_row": 3,
+      "blocks_extracted": 25,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "GM",
+      "kind": "brand",
+      "rows": 41,
+      "cols": 12,
+      "first_data_row": 3,
+      "blocks_extracted": 37,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Roewe and MG",
+      "kind": "brand",
+      "rows": 42,
+      "cols": 12,
+      "first_data_row": 3,
+      "blocks_extracted": 10,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Japanese Vehicles",
+      "kind": "brand",
+      "rows": 42,
+      "cols": 14,
+      "first_data_row": 3,
+      "blocks_extracted": 26,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Ford",
+      "kind": "brand",
+      "rows": 42,
+      "cols": 14,
+      "first_data_row": 3,
+      "blocks_extracted": 25,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Trumpchi",
+      "kind": "brand",
+      "rows": 29,
+      "cols": 14,
+      "first_data_row": 3,
+      "blocks_extracted": 6,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Peugeot and Citroen",
+      "kind": "brand",
+      "rows": 28,
+      "cols": 14,
+      "first_data_row": 3,
+      "blocks_extracted": 36,
+      "merges": 1,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Sheet1",
+      "kind": "supplement",
+      "rows": 279,
+      "cols": 13,
+      "first_data_row": 2,
+      "blocks_extracted": 277,
+      "merges": 0,
+      "hyperlinks": 2,
+      "file": "产品信息表1_英文版.xlsx"
+    },
+    {
+      "sheet": "Sheet2",
+      "kind": "brand",
+      "rows": 1,
+      "cols": 1,
+      "first_data_row": 3,
+      "blocks_extracted": 0,
+      "merges": 0,
+      "hyperlinks": 0,
+      "file": "产品信息表1_英文版.xlsx"
+    }
+  ],
+  "status_distribution": {
+    "PUBLISHED": 72,
+    "SEARCHABLE_BUT_NOINDEX": 300,
+    "DRAFT": 94
+  },
+  "field_completeness": [
+    {
+      "field": "product_id",
+      "filled": 466,
+      "total": 466,
+      "rate": 1,
+      "note": ""
+    },
+    {
+      "field": "product_type",
+      "filled": 0,
+      "total": 466,
+      "rate": 0,
+      "note": "必须先人工确认/补录，本阶段不允许自动填充"
+    },
+    {
+      "field": "product_name_en",
+      "filled": 0,
+      "total": 466,
+      "rate": 0,
+      "note": "必须先人工确认/补录，本阶段不允许自动填充"
+    },
+    {
+      "field": "bowen_no",
+      "filled": 459,
+      "total": 466,
+      "rate": 0.985,
+      "note": ""
+    },
+    {
+      "field": "status",
+      "filled": 466,
+      "total": 466,
+      "rate": 1,
+      "note": ""
+    },
+    {
+      "field": "oe_number_raw",
+      "filled": 449,
+      "total": 466,
+      "rate": 0.9635,
+      "note": ""
+    },
+    {
+      "field": "oe_number_normalized",
+      "filled": 449,
+      "total": 466,
+      "rate": 0.9635,
+      "note": ""
+    },
+    {
+      "field": "vehicle_make",
+      "filled": 317,
+      "total": 466,
+      "rate": 0.6803,
+      "note": ""
+    },
+    {
+      "field": "vehicle_model",
+      "filled": 0,
+      "total": 466,
+      "rate": 0,
+      "note": "必须先人工确认/补录，本阶段不允许自动填充"
+    },
+    {
+      "field": "engine_code",
+      "filled": 142,
+      "total": 466,
+      "rate": 0.3047,
+      "note": ""
+    },
+    {
+      "field": "engine_displacement",
+      "filled": 114,
+      "total": 466,
+      "rate": 0.2446,
+      "note": ""
+    },
+    {
+      "field": "application_notes",
+      "filled": 384,
+      "total": 466,
+      "rate": 0.824,
+      "note": ""
+    },
+    {
+      "field": "opening_temperature_c",
+      "filled": 250,
+      "total": 466,
+      "rate": 0.5365,
+      "note": ""
+    },
+    {
+      "field": "dimensions",
+      "filled": 97,
+      "total": 466,
+      "rate": 0.2082,
+      "note": ""
+    },
+    {
+      "field": "housing_type",
+      "filled": 0,
+      "total": 466,
+      "rate": 0,
+      "note": "必须先人工确认/补录，本阶段不允许自动填充"
+    },
+    {
+      "field": "source_sheet",
+      "filled": 466,
+      "total": 466,
+      "rate": 1,
+      "note": ""
+    },
+    {
+      "field": "source_row",
+      "filled": 466,
+      "total": 466,
+      "rate": 1,
+      "note": ""
+    },
+    {
+      "field": "source_version",
+      "filled": 466,
+      "total": 466,
+      "rate": 1,
+      "note": ""
+    },
+    {
+      "field": "fitment_confidence",
+      "filled": 466,
+      "total": 466,
+      "rate": 1,
+      "note": ""
+    },
+    {
+      "field": "searchable",
+      "filled": 372,
+      "total": 466,
+      "rate": 0.7983,
+      "note": ""
+    },
+    {
+      "field": "indexable",
+      "filled": 0,
+      "total": 466,
+      "rate": 0,
+      "note": "必须先人工确认/补录，本阶段不允许自动填充"
+    },
+    {
+      "field": "last_verified_at",
+      "filled": 0,
+      "total": 466,
+      "rate": 0,
+      "note": "必须先人工确认/补录，本阶段不允许自动填充"
+    },
+    {
+      "field": "verified_by",
+      "filled": 0,
+      "total": 466,
+      "rate": 0,
+      "note": "必须先人工确认/补录，本阶段不允许自动填充"
+    }
+  ],
+  "averages": {
+    "core_field_completeness": 0.6061,
+    "enrichment_field_completeness": 0.1294,
+    "oe_per_product": 5.07
+  },
+  "oe_per_product_distribution": {
+    "0": 17,
+    "1": 126,
+    "2-3": 130,
+    "4-5": 63,
+    "6+": 130,
+    "max": 57
+  },
+  "vehicle_makes": [
+    "Audi",
+    "BMW",
+    "BYD",
+    "Beijing Hyundai",
+    "Brilliance",
+    "Buick",
+    "Cadillac",
+    "Changan",
+    "Changan Ford",
+    "Changfeng",
+    "Changhe Suzuki",
+    "Chery",
+    "Chevrolet",
+    "Chrysler",
+    "Citroen",
+    "Cowin",
+    "DFSK",
+    "Daewoo",
+    "Delphi",
+    "Dodge",
+    "Dongan",
+    "Dongan Mitsubishi",
+    "Dongfeng",
+    "Dongfeng Peugeot Citroen",
+    "FAW",
+    "FAW Mazda",
+    "FAW Toyota",
+    "Fiat",
+    "Ford",
+    "Foton",
+    "GAC FCA",
+    "GAC Toyota",
+    "GAC Trumpchi",
+    "GMC",
+    "Geely",
+    "Great Wall",
+    "Haima",
+    "Haval",
+    "Hawtai",
+    "Honda",
+    "Hongqi",
+    "Huaihai",
+    "Hyundai",
+    "Infiniti",
+    "Isuzu",
+    "JAC",
+    "Jeep",
+    "Jiangling",
+    "Kia",
+    "Lancia",
+    "Land Rover",
+    "Landwind",
+    "Lexus",
+    "Lifan",
+    "Lincoln",
+    "MG",
+    "Maxus",
+    "Mazda",
+    "Mercedes-Benz",
+    "Mianyang Xinchen",
+    "Mitsubishi",
+    "Nissan",
+    "Opel",
+    "Peugeot",
+    "Porsche",
+    "Renault",
+    "Roewe",
+    "SAIC",
+    "SAIC-GM",
+    "SAIC-GM-Wuling",
+    "SEAT",
+    "Shanghai Maple",
+    "Shenyang Mitsubishi",
+    "Shenyang Xinguang",
+    "Skoda",
+    "Soueast",
+    "SsangYong",
+    "Subaru",
+    "Suzuki",
+    "Toyota",
+    "UAES",
+    "Volkswagen",
+    "Volvo",
+    "WEY",
+    "Xiali",
+    "Zhejiang Gonow",
+    "Zotye"
+  ],
+  "duplicates": {
+    "raw_bowen_repeated": 303,
+    "raw_bowen_cross_sheet": 291,
+    "raw_oe_shared_across_bowen": 143,
+    "bowen_multi_record_aggregated": 303,
+    "bowen_oe_conflict_across_sheets": 162,
+    "bowen_variant_families": 18,
+    "oe_shared_across_products": 136,
+    "oe_shared_top": [
+      {
+        "oe_match_key": "LF7015170",
+        "oe_number_normalized": "LF7015170",
+        "oe_number_raw": "LF7015170",
+        "product_count": 3,
+        "products": "bw-3020 | bw-33910 | bw-3548",
+        "bowen_nos": "3020 | 33910 | 3548",
+        "severity": "review_required",
+        "note": "同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认"
+      },
+      {
+        "oe_match_key": "4M5G8575FC",
+        "oe_number_normalized": "4M5G8575FC",
+        "oe_number_raw": "4M5G8575FC",
+        "product_count": 3,
+        "products": "bw-3020 | bw-33910 | bw-3548",
+        "bowen_nos": "3020 | 33910 | 3548",
+        "severity": "review_required",
+        "note": "同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认"
+      },
+      {
+        "oe_match_key": "1302167",
+        "oe_number_normalized": "1302167",
+        "oe_number_raw": "1302167",
+        "product_count": 3,
+        "products": "bw-3020 | bw-33910 | bw-3548",
+        "bowen_nos": "3020 | 33910 | 3548",
+        "severity": "review_required",
+        "note": "同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认"
+      },
+      {
+        "oe_match_key": "1355791",
+        "oe_number_normalized": "1355791",
+        "oe_number_raw": "1355791",
+        "product_count": 3,
+        "products": "bw-3020 | bw-33910 | bw-3548",
+        "bowen_nos": "3020 | 33910 | 3548",
+        "severity": "review_required",
+        "note": "同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认"
+      },
+      {
+        "oe_match_key": "30711785",
+        "oe_number_normalized": "30711785",
+        "oe_number_raw": "30711785",
+        "product_count": 3,
+        "products": "bw-3020 | bw-33910 | bw-3548",
+        "bowen_nos": "3020 | 33910 | 3548",
+        "severity": "review_required",
+        "note": "同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认"
+      },
+      {
+        "oe_match_key": "31251245",
+        "oe_number_normalized": "31251245",
+        "oe_number_raw": "31251245",
+        "product_count": 3,
+        "products": "bw-3020 | bw-33910 | bw-3548",
+        "bowen_nos": "3020 | 33910 | 3548",
+        "severity": "review_required",
+        "note": "同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认"
+      },
+      {
+        "oe_match_key": "21200AA072",
+        "oe_number_normalized": "21200AA072",
+        "oe_number_raw": "21200AA072",
+        "product_count": 3,
+        "products": "bw-3023 | bw-3069 | bw-3828288-",
+        "bowen_nos": "3023 | 3069 | 38282  88°",
+        "severity": "review_required",
+        "note": "同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认"
+      },
+      {
+        "oe_match_key": "96984104",
+        "oe_number_normalized": "96984104",
+        "oe_number_raw": "96984104",
+        "product_count": 3,
+        "products": "bw-3033 | bw-3033-1 | bw-3033-z",
+        "bowen_nos": "3033 | 3033--1 | 3033-z",
+        "severity": "review_required",
+        "note": "同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认"
+      },
+      {
+        "oe_match_key": "55578419",
+        "oe_number_normalized": "55578419",
+        "oe_number_raw": "55578419",
+        "product_count": 3,
+        "products": "bw-3033 | bw-3033-1 | bw-3033-z",
+        "bowen_nos": "3033 | 3033--1 | 3033-z",
+        "severity": "review_required",
+        "note": "同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认"
+      },
+      {
+        "oe_match_key": "25199828",
+        "oe_number_normalized": "25199828",
+        "oe_number_raw": "25199828",
+        "product_count": 3,
+        "products": "bw-3033 | bw-3033-1 | bw-3033-z",
+        "bowen_nos": "3033 | 3033--1 | 3033-z",
+        "severity": "review_required",
+        "note": "同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认"
+      },
+      {
+        "oe_match_key": "2550035540",
+        "oe_number_normalized": "2550035540",
+        "oe_number_raw": "25500-35540 | 2550035540",
+        "product_count": 3,
+        "products": "bw-3004-3 | bw-3004-5 | bw-3503",
+        "bowen_nos": "3004-3 | 3004-5 | 3503",
+        "severity": "review_required",
+        "note": "同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认"
+      },
+      {
+        "oe_match_key": "2550035530",
+        "oe_number_normalized": "2550035530",
+        "oe_number_raw": "25500-35530 | 2550035530",
+        "product_count": 3,
+        "products": "bw-3004-3 | bw-3004-5 | bw-3503",
+        "bowen_nos": "3004-3 | 3004-5 | 3503",
+        "severity": "review_required",
+        "note": "同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认"
+      },
+      {
+        "oe_match_key": "1X4Z8575B",
+        "oe_number_normalized": "1X4Z8575B",
+        "oe_number_raw": "1X4Z8575B",
+        "product_count": 3,
+        "products": "bw-3203 | bw-32138 | bw-33663-1",
+        "bowen_nos": "3203 | 32138 | 33663-1",
+        "severity": "review_required",
+        "note": "同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认"
+      },
+      {
+        "oe_match_key": "8974357940",
+        "oe_number_normalized": "8974357940",
+        "oe_number_raw": "8974357940",
+        "product_count": 3,
+        "products": "bw-35116 | bw-35116-deben- | bw-403229",
+        "bowen_nos": "35116 | 35116(Deben) | 403229",
+        "severity": "review_required",
+        "note": "同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认"
+      },
+      {
+        "oe_match_key": "938103K000",
+        "oe_number_normalized": "938103K000",
+        "oe_number_raw": "938103K000",
+        "product_count": 3,
+        "products": "bw-5016 | bw-5016b | bw-5018",
+        "bowen_nos": "5016 | 5016B | 5018",
+        "severity": "review_required",
+        "note": "同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认"
+      }
+    ],
+    "bowen_variant_families_top": [
+      {
+        "base": "3004",
+        "variant_count": 6,
+        "variants": [
+          "3004",
+          "3004--33503",
+          "3004-1",
+          "3004-3",
+          "3004-4",
+          "3004-5"
+        ]
+      },
+      {
+        "base": "3033",
+        "variant_count": 4,
+        "variants": [
+          "3033",
+          "3033--1",
+          "3033-Z",
+          "3033-Z138*95*251"
+        ]
+      },
+      {
+        "base": "3041",
+        "variant_count": 4,
+        "variants": [
+          "3041",
+          "3041-1",
+          "3041-2",
+          "3041-2(3003)SEALINGRING"
+        ]
+      },
+      {
+        "base": "3654",
+        "variant_count": 4,
+        "variants": [
+          "3654",
+          "3654--2",
+          "3654-1",
+          "3654-3"
+        ]
+      },
+      {
+        "base": "3002",
+        "variant_count": 3,
+        "variants": [
+          "3002",
+          "3002-1",
+          "3002-DQ"
+        ]
+      },
+      {
+        "base": "3003",
+        "variant_count": 3,
+        "variants": [
+          "3003",
+          "3003-1",
+          "3003-3"
+        ]
+      },
+      {
+        "base": "3665",
+        "variant_count": 3,
+        "variants": [
+          "3665",
+          "3665-1",
+          "3665-188℃"
+        ]
+      },
+      {
+        "base": "3011",
+        "variant_count": 2,
+        "variants": [
+          "3011",
+          "3011-23565"
+        ]
+      },
+      {
+        "base": "3016",
+        "variant_count": 2,
+        "variants": [
+          "3016",
+          "3016-82"
+        ]
+      },
+      {
+        "base": "3021",
+        "variant_count": 2,
+        "variants": [
+          "3021",
+          "3021-1"
+        ]
+      },
+      {
+        "base": "3056",
+        "variant_count": 2,
+        "variants": [
+          "3056",
+          "3056-1"
+        ]
+      },
+      {
+        "base": "32748",
+        "variant_count": 2,
+        "variants": [
+          "32748-132748-2",
+          "32748-2"
+        ]
+      },
+      {
+        "base": "33561",
+        "variant_count": 2,
+        "variants": [
+          "33561",
+          "33561-1"
+        ]
+      },
+      {
+        "base": "33663",
+        "variant_count": 2,
+        "variants": [
+          "33663",
+          "33663-1"
+        ]
+      },
+      {
+        "base": "35063",
+        "variant_count": 2,
+        "variants": [
+          "35063",
+          "35063-1"
+        ]
+      },
+      {
+        "base": "3565",
+        "variant_count": 2,
+        "variants": [
+          "3565",
+          "3565-2"
+        ]
+      },
+      {
+        "base": "3655",
+        "variant_count": 2,
+        "variants": [
+          "3655",
+          "3655-2"
+        ]
+      },
+      {
+        "base": "3905",
+        "variant_count": 2,
+        "variants": [
+          "3905",
+          "3905-1"
+        ]
+      }
+    ],
+    "bowen_cross_sheet_top": [
+      {
+        "type": "raw_bowen_repeated",
+        "key": "3001",
+        "detail": "同一 Bowen No. 出现在 3 个工作表",
+        "count": 3,
+        "sheets": "Product Information | Volkswagen | Sheet1",
+        "product_ids_or_variants": "Product Information!4L | Volkswagen!12L | Sheet1!186S | Sheet1!187S | Sheet1!188S"
+      },
+      {
+        "type": "raw_bowen_repeated",
+        "key": "3002",
+        "detail": "同一 Bowen No. 出现在 3 个工作表",
+        "count": 3,
+        "sheets": "Product Information | Volkswagen | Sheet1",
+        "product_ids_or_variants": "Product Information!4R | Volkswagen!12R | Sheet1!122S | Sheet1!123S"
+      },
+      {
+        "type": "raw_bowen_repeated",
+        "key": "3003",
+        "detail": "同一 Bowen No. 出现在 2 个工作表",
+        "count": 2,
+        "sheets": "Product Information | Chery",
+        "product_ids_or_variants": "Product Information!5L | Chery!3L"
+      },
+      {
+        "type": "raw_bowen_repeated",
+        "key": "3004",
+        "detail": "同一 Bowen No. 出现在 2 个工作表",
+        "count": 2,
+        "sheets": "Product Information | Chery",
+        "product_ids_or_variants": "Product Information!5R | Chery!3R"
+      },
+      {
+        "type": "raw_bowen_repeated",
+        "key": "3005",
+        "detail": "同一 Bowen No. 出现在 6 个工作表",
+        "count": 6,
+        "sheets": "Product Information | BYD | Geely and Haval | Great Wall and Haval | Mitsubishi | Sheet1",
+        "product_ids_or_variants": "Product Information!6L | BYD!3L | Geely and Haval!3R | Great Wall and Haval!7L | Mitsubishi!3L | Sheet1!87S | Sheet1!88S | Sheet1!89S | Sheet1!90S"
+      },
+      {
+        "type": "raw_bowen_repeated",
+        "key": "3006",
+        "detail": "同一 Bowen No. 出现在 3 个工作表",
+        "count": 3,
+        "sheets": "Product Information | Peugeot and Citroen | Sheet1",
+        "product_ids_or_variants": "Product Information!6R | Peugeot and Citroen!4L | Sheet1!168S"
+      },
+      {
+        "type": "raw_bowen_repeated",
+        "key": "3007",
+        "detail": "同一 Bowen No. 出现在 3 个工作表",
+        "count": 3,
+        "sheets": "Product Information | Peugeot and Citroen | Sheet1",
+        "product_ids_or_variants": "Product Information!7L | Peugeot and Citroen!3L | Sheet1!166S"
+      },
+      {
+        "type": "raw_bowen_repeated",
+        "key": "300701",
+        "detail": "同一 Bowen No. 出现在 3 个工作表",
+        "count": 3,
+        "sheets": "Product Information | Peugeot and Citroen | Sheet1",
+        "product_ids_or_variants": "Product Information!7R | Peugeot and Citroen!3R | Sheet1!167S"
+      },
+      {
+        "type": "raw_bowen_repeated",
+        "key": "3008",
+        "detail": "同一 Bowen No. 出现在 3 个工作表",
+        "count": 3,
+        "sheets": "Product Information | GM | Sheet1",
+        "product_ids_or_variants": "Product Information!8L | GM!9R | Sheet1!241S"
+      },
+      {
+        "type": "raw_bowen_repeated",
+        "key": "3009",
+        "detail": "同一 Bowen No. 出现在 3 个工作表",
+        "count": 3,
+        "sheets": "Product Information | GM | Sheet1",
+        "product_ids_or_variants": "Product Information!8R | GM!6R | Sheet1!104S"
+      },
+      {
+        "type": "raw_bowen_repeated",
+        "key": "3010",
+        "detail": "同一 Bowen No. 出现在 3 个工作表",
+        "count": 3,
+        "sheets": "Product Information | GM | Sheet1",
+        "product_ids_or_variants": "Product Information!9L | GM!7R | Sheet1!173S"
+      },
+      {
+        "type": "raw_bowen_repeated",
+        "key": "3011",
+        "detail": "同一 Bowen No. 出现在 3 个工作表",
+        "count": 3,
+        "sheets": "Product Information | Japanese Vehicles | Sheet1",
+        "product_ids_or_variants": "Product Information!9R | Japanese Vehicles!6R | Sheet1!73S | Sheet1!74S"
+      },
+      {
+        "type": "raw_bowen_repeated",
+        "key": "3012",
+        "detail": "同一 Bowen No. 出现在 2 个工作表",
+        "count": 2,
+        "sheets": "Product Information | Chery",
+        "product_ids_or_variants": "Product Information!10L | Chery!4L"
+      },
+      {
+        "type": "raw_bowen_repeated",
+        "key": "3013",
+        "detail": "同一 Bowen No. 出现在 3 个工作表",
+        "count": 3,
+        "sheets": "Product Information | Mitsubishi | Sheet1",
+        "product_ids_or_variants": "Product Information!10R | Mitsubishi!5L | Sheet1!81S"
+      },
+      {
+        "type": "raw_bowen_repeated",
+        "key": "3014",
+        "detail": "同一 Bowen No. 出现在 2 个工作表",
+        "count": 2,
+        "sheets": "Product Information | Sheet1",
+        "product_ids_or_variants": "Product Information!11L | Sheet1!244S"
+      },
+      {
+        "type": "raw_bowen_repeated",
+        "key": "3015",
+        "detail": "同一 Bowen No. 出现在 3 个工作表",
+        "count": 3,
+        "sheets": "Product Information | Roewe and MG | Sheet1",
+        "product_ids_or_variants": "Product Information!11R | Roewe and MG!4L | Sheet1!269S"
+      },
+      {
+        "type": "raw_bowen_repeated",
+        "key": "3016",
+        "detail": "同一 Bowen No. 出现在 3 个工作表",
+        "count": 3,
+        "sheets": "Product Information | Ford | Sheet1",
+        "product_ids_or_variants": "Product Information!12L | Ford!3R | Sheet1!220S | Sheet1!221S | Sheet1!222S"
+      },
+      {
+        "type": "raw_bowen_repeated",
+        "key": "3017",
+        "detail": "同一 Bowen No. 出现在 3 个工作表",
+        "count": 3,
+        "sheets": "Product Information | Geely and Haval | Chery",
+        "product_ids_or_variants": "Product Information!12R | Geely and Haval!7L | Chery!5L"
+      },
+      {
+        "type": "raw_bowen_repeated",
+        "key": "3019",
+        "detail": "同一 Bowen No. 出现在 5 个工作表",
+        "count": 5,
+        "sheets": "Product Information | BYD | Geely and Haval | Chery | Sheet1",
+        "product_ids_or_variants": "Product Information!13R | BYD!3R | Geely and Haval!3L | Chery!4R | Sheet1!106S"
+      },
+      {
+        "type": "raw_bowen_repeated",
+        "key": "3020",
+        "detail": "同一 Bowen No. 出现在 3 个工作表",
+        "count": 3,
+        "sheets": "Product Information | Ford | Sheet1",
+        "product_ids_or_variants": "Product Information!14L | Product Information!23L | Ford!3L | Sheet1!208S"
+      }
+    ]
+  },
+  "issues": {
+    "ignored_garbage_cells": 0,
+    "duplicate_oe_cells_removed": 2,
+    "bowen_anomalies": 43,
+    "oe_ambiguous_splits": 1621,
+    "oe_kept_whole_needs_review": 45,
+    "oe_oversized_dropped": 26,
+    "oe_nonstandard_dropped": 24,
+    "supplement_app_column_is_oem": 39,
+    "tianbo_field_present": 73,
+    "records_with_oem_but_no_bowen": 6,
+    "records_with_bowen_but_no_oem": 19
+  },
+  "first_batch": {
+    "count": 72,
+    "target_range": [
+      50,
+      100
+    ],
+    "shortfall_below_target_min": 0,
+    "eligible_pool_size": 72,
+    "bowen_nos": [
+      "3005",
+      "3064",
+      "3061A",
+      "3069",
+      "3008",
+      "3066",
+      "3503",
+      "3051",
+      "3077",
+      "3025",
+      "3076",
+      "3027",
+      "3019",
+      "3074",
+      "3023",
+      "3583",
+      "3550",
+      "3094",
+      "31515",
+      "3061",
+      "3065",
+      "33663",
+      "3068",
+      "3004-3",
+      "30101",
+      "31605",
+      "3080",
+      "3150",
+      "3665-1",
+      "3035",
+      "3001",
+      "3029",
+      "31510",
+      "3203",
+      "30102",
+      "31604-1",
+      "3002",
+      "3028",
+      "33119",
+      "33662",
+      "3582",
+      "3041-2",
+      "3004-4",
+      "3021",
+      "3334",
+      "33910",
+      "3003",
+      "3004-1",
+      "3167--1",
+      "3555",
+      "3022",
+      "3310",
+      "3500",
+      "3041-2(3003) Sealing ring",
+      "3012",
+      "3024",
+      "3004",
+      "33075-2",
+      "38241",
+      "35116(Deben)",
+      "3054",
+      "3369",
+      "3556",
+      "30302(3334 Sealing ring)",
+      "3013",
+      "3014",
+      "3340",
+      "38282",
+      "3090",
+      "3905",
+      "3905-1",
+      "33743"
+    ],
+    "score_range": [
+      56,
+      86
+    ]
+  }
+}

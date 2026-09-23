@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-09-23T08:57:25.146Z",
+  "data_version": "v1.0.0",
+  "files": [
+    {
+      "name": "产品信息表1_英文版.xlsx",
+      "rel": "data/raw/产品信息表1_英文版.xlsx",
+      "size": 48680077,
+      "sha256": "22da11156fa4eb82a5b88c520263b06d56c39e0c291c3ed8952edccb1e8a062f",
+      "mtime": "2026-09-07T06:41:28.763Z"
+    }
+  ]
+}

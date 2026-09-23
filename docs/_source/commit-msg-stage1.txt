@@ -1,0 +1,43 @@
+阶段一：产品数据库清洗与标准化
+
+依据《博文外贸独立站规划 V1》第 10 节字段规范，把原始 Excel 转为可追溯的
+标准化产品数据库。本阶段不开发任何网页。
+
+数据来源
+- data/raw/产品信息表1_英文版.xlsx（SHA-256 冻结，只读，永不修改）
+- 17 个工作表：1 主目录 + 14 品牌目录 + 1 补充表 Sheet1 + 1 空白表
+
+产出规模
+- 原始记录 970 条（目录 693 + Sheet1 277）
+- 产品 466 个（按 Bowen No. 聚合），不重复 Bowen No. 459 个
+- OE 明细 2364 行，不重复 OE 号 2211 个
+- 车型品牌 87 个，原始车型片段 509 条
+
+已实现
+- 原始数据三层保全：SHA-256 冻结 + 逐字留档 + 抽样回表比对
+- 多 OE 拆分：换行 / 多空格 / 单空格（仅在每段都像 OE 号时拆）
+- OE 搜索标准化：忽略大小写、空格、各类短横线
+- vehicle make 标准化（87 标准名 + 别名表）
+- 重复识别：Bowen 重复 303 个、跨表 OE 冲突 162 个、Bowen 变体族 18 族、
+  OE 被多产品共用 136 个
+- 分层：PUBLISHED 72 / SEARCHABLE_BUT_NOINDEX 300 / DRAFT 94
+- 第一批上线推荐 72 个（落在 50-100 目标区间内）
+
+不猜数据（硬约束，验收测试强制检查）
+- product_type 全部 REVIEW_REQUIRED（原表无此列，420/466 无任何类型证据）
+- product_name_en / vehicle_model 全部留空
+- engine_code 仅作候选，一律 review_required
+- indexable 全部 no（product_type 未确认前不开放 Google 索引）
+- fitment_confidence 全部 review_required
+
+新增防护
+- 列错位风险检测：Bowen 单元格混入尺寸或双编号的产品禁止自动上线（11 个）
+- 压力规格（bar）不会被误当开启温度（混入数 0）
+
+交付
+- docs/product-database-report.md（数据质量报告）
+- data/derived/ 19 个文件（产品主表、OE 索引、治理清单、统计）
+- tools/ 自研纯 Node.js 工具链，零第三方依赖
+- tools/verify-db.mjs 验收测试 57 项全部通过
+
+状态：阶段一完成，等待业务方确认后进入阶段二（网页开发）

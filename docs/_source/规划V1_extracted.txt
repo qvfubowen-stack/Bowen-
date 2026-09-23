@@ -1,0 +1,448 @@
+博文外贸独立站规划 V1
+面向海外采购商的产品与询盘系统规划
+版本：V1    |    依据：产品信息表与公司宣传册    |    输出：网站定位、信息架构、产品数据库与上线路线
+## 目录
+0. 本版结论
+1. 文件盘点与证据边界
+2. 品牌定位
+3. 目标客户
+4. 网站信息架构
+5. 产品分类与筛选逻辑
+6. OE / 车型搜索设计
+7. 首页逐屏结构
+8. 核心页面规划
+9. SEO 关键词框架
+10. 产品数据库字段设计
+11. 询盘转化路径
+12. 第一阶段上线范围
+13. 后续迭代路线
+14. 上线前必须补齐的资料清单
+15. V1 成功标准
+## 0. 本版结论
+博文的网站不应先做成“公司介绍型官网”，而应做成一套围绕 Automotive Thermostat / OE Number / Vehicle Application / Request a Quote 运转的 B2B 产品与询盘系统。
+第一阶段的核心定位建议是：
+**Qufu Bowen Auto Parts Manufacturing Co., Ltd. —— automotive thermostat manufacturer and application-focused automotive parts supplier.**
+这句话中的“汽车节温器制造”有宣传册和 IATF 证书范围支持；“传感器、热敏开关及其他汽车开关”可以作为产品组合展示，但具体 SKU、认证范围、OEM/ODM 服务和海外交付能力仍需逐项确认后再写成承诺。
+本版优先解决四个问题：
+海外采购商能否按 OE 号、车型或博文编号找到产品。
+产品页能否让采购商判断适配关系，而不是只看一张图片。
+工厂、测试、认证和研发信息能否降低供应商风险。
+客户提交询盘时，能否一次带上 OE 号、车型、数量和技术要求。
+## 1. 文件盘点与证据边界
+## 1.1 本次使用的文件
+产品信息表1_英文版.xlsx
+博文公司宣传手册_中文版.pdf
+## 1.2 产品表盘点
+产品表包含 17 个工作表：1 个主产品目录、14 个按品牌/车型划分的目录、1 个补充表和 1 个空白/孤立编号表。
+对主目录和品牌目录按产品块重新识别后：
+约 696 条目录记录；
+约 432 个不重复的 Bowen No.；
+约 642 条记录有 OEM 号；
+约 693 条记录有车型/发动机应用；
+约 529 条记录有规格字段。
+这些数字只能作为本版规划基数，不能直接宣称为“432 个已验证产品”或“696 个适配关系”，因为目录之间有交叉、重复和同一产品多应用的情况。
+另有 Sheet1 约 277 条补充记录，但字段明显不完整：部分只有 Part No.，部分只有 OEM，车型和温度字段大量为空，并出现 Tianbo No. 等尚未解释的字段。V1 不建议把 Sheet1 直接公开为正式产品数据库，应先确认来源、品牌归属、编号规则和准确性。
+## 1.3 宣传册中已有、可以使用的信息
+宣传册明确提供了以下事实：
+公司成立于 2009 年，2014 年建设工厂并扩大经营规模；
+公司占地面积 10,000+ m²，生产车间 3,500 m²；
+厂区有 2,000+ m² 恒温车间；
+生产设备 100+ 台；
+产品系列包括节温器、温度传感器和汽车开关；
+展示的开关/传感器类别包括机油压力报警开关、倒车灯开关、制动灯开关和热敏开关；
+有机加工、零部件装配、自动装配、自动铆接、胶塞自动装配等制造环节；
+有 20、24、211 系列自动装配/调整测试设备，以及节温器寿命试验台；
+研发页写明 29 项自主研发项目、16 项专利、5 项软件著作权；
+面向制造商和经销商开展合作，并提供销售与技术服务；
+IATF 16949:2016 认证范围为“节温器制造”，且明确不包括 8.3 条款中的产品设计；
+ISO 14001:2015 和 ISO 45001:2018 覆盖与节温器加工相关的环境、职业健康安全管理活动；
+宣传册末页提供了 1688 网址、邮箱 qfbowen@126.com 和电话 18653750690。
+## 1.4 本版不直接当作事实的内容
+以下内容在当前两份文件中没有足够证据，需补充确认后再公开：
+具体出口国家、客户名称、海外市场份额；
+MOQ、交货期、月产能、年产能、包装尺寸和贸易条款；
+“OEM/ODM”或“private label”是否为正式服务；
+是否拥有完整产品设计能力；IATF 证书已明确认证范围不包含 8.3 产品设计；
+每一个 OEM 交叉号是否已逐条验证；
+所有产品的开阀温度、尺寸、公差、材料、寿命数据和测试标准；
+传感器、开关类产品是否属于当前 IATF 证书覆盖范围；
+任何客户 Logo、客户案例、质量通过率、零投诉、全球畅销等营销性表述。
+## 2. 品牌定位
+## 2.1 建议定位
+主定位： 汽车节温器制造商，提供基于 OE 号和车型应用的售后市场产品匹配及技术沟通服务。
+辅助定位： 温度传感器和汽车开关等热管理/车辆电气类零部件供应商。
+信任支柱： 自有生产基地、恒温车间、自动化装配、调整测试、寿命测试、汽车行业质量管理体系和应用数据积累。
+## 2.2 建议英文表达
+首页主标题可测试：
+Automotive Thermostat Manufacturer for OE-Matched Aftermarket Supply
+副标题：
+Thermostats, thermostat assemblies and related automotive temperature-control components, supported by OE references, vehicle applications and factory-based technical service.
+“OE-matched”建议解释为“按 OE 号/应用信息进行匹配”，不要写成原厂件或 OEM 原装件。
+## 2.3 不建议的定位
+“全球领先”“顶级供应商”“全品类汽配平台”；
+未经证明的“one-stop solution”；
+把所有产品都归入 IATF 16949 认证范围；
+把“自主研发设备”扩大成“所有产品均自主设计”；
+只写低价、现货或快速交货而没有内部数据支持。
+## 3. 目标客户
+## 3.1 第一优先级
+汽车后市场进口商和批发商：按 OE 号、车型和产品系列采购，重视目录完整度、包装、稳定供货和询价效率。
+区域经销商/汽配连锁采购团队：需要可检索的车型适配和多 SKU 询盘。
+发动机/冷却系统零部件分销商：更关注节温器总成、插入式节温器、开启温度和结构差异。
+## 3.2 第二优先级
+汽车零部件制造商的配套采购；
+有图纸、样件或技术要求的产品开发客户；
+传感器、热敏开关和汽车开关的专业采购商。
+## 3.3 网站不应优先服务的对象
+面向普通车主的零售购物体验；
+只询问单个零件、不提供车型/OE 号且要求即时零售价格的访客；
+需要完整原厂产品设计、认证和验证责任转移的项目，除非博文另有工程能力证明。
+## 4. 网站信息架构
+建议一级导航：
+Home
+Products
+  Thermostats
+  Thermostat Assemblies
+  Thermostat Inserts
+  Temperature Sensors
+  Thermal Switches
+  Oil Pressure Warning Switches
+  Reverse Light Switches
+  Brake Light Switches
+Applications
+  By Vehicle Make
+  By Engine / Application
+Factory
+Quality
+R&D and Engineering
+About Bowen
+Blog / Resources
+Request a Quote
+Contact
+其中 Thermostats、Products、Applications 和 Request a Quote 是第一阶段最重要的业务入口；Factory、Quality、R&D、About 用于建立信任，不应挤占首页首屏。
+## 5. 产品分类与筛选逻辑
+## 5.1 产品分类
+V1 采用“产品类型 + 应用关系”的双层分类：
+按产品类型：
+Thermostat；
+Thermostat Assembly；
+Thermostat Insert；
+Temperature Sensor；
+Thermal Switch；
+Oil Pressure Warning Switch；
+Reverse Light Switch；
+Brake Light Switch。
+按应用关系：
+Vehicle make；
+Vehicle model；
+Engine code；
+Model year/range；
+OE number；
+Bowen number；
+Opening temperature；
+Structure/connector/housing attributes。
+当前 Excel 对节温器的车型、发动机和 OEM 号信息较丰富，但产品类型、年份、发动机代码、结构和连接器字段没有统一成标准列。因此，上述分类中只有部分可以立即从现有表自动生成，其余必须补录或标记为待确认。
+## 5.2 筛选器
+产品列表建议使用：
+Product type；
+Vehicle make；
+Vehicle model；
+Engine/application；
+OE number；
+Bowen number；
+Opening temperature；
+With housing / insert / assembly；
+Connector or feature（仅在数据确认后开放）。
+不要把当前不完整的字段直接作为强筛选条件；没有数据的筛选器应隐藏或显示“信息待补充”，避免产生大量空结果。
+## 5.3 产品卡片
+每张产品卡至少显示：
+产品图片；
+Bowen No.；
+主 OEM Reference；
+产品类型；
+主要车型/发动机应用；
+开启温度或规格摘要；
+View Details；
+Add to RFQ。
+## 6. OE / 车型搜索设计
+## 6.1 首屏提供三种找货方式
+I know the OE number
+I know the vehicle
+I have a sourcing list
+第一阶段可先实现前两种，第三种用 RFQ 上传 Excel/PDF 或粘贴采购清单实现。
+## 6.2 OE 号搜索
+搜索时应自动处理：
+大小写；
+空格、短横线和斜线；
+多个 OEM 号换行分隔；
+常见后缀和前缀；
+完整号、部分号和精确号的区别。
+结果页需明确显示“Exact match”“Related reference”或“Needs confirmation”，不能把模糊命中伪装成确定适配。
+## 6.3 车型搜索
+推荐流程：
+Make → Model → Year → Engine → Product type
+但当前表中年份信息很少，V1 可以先采用：
+Make → Model / Engine → Product type
+年份作为后续数据补充项，不应一开始制造大量空的年份筛选。
+## 6.4 无结果处理
+无结果时不能只显示“0 products”。应给出：
+We could not confirm a match from the current catalog. Send us the OE number, vehicle, engine and required quantity, and our team will check it.
+同时保留 Request a Quote，并自动带入用户刚才输入的关键词。
+## 7. 首页逐屏结构
+## Screen 1：首屏找货
+标题：Automotive Thermostats Matched by OE Number and Vehicle Application
+内容：OE 搜索框、车型搜索入口、Browse Thermostats、Request a Quote。
+## Screen 2：制造商信任摘要
+展示 10,000+ m²、3,500 m²、100+ equipment、恒温车间等已核实数据，并链接到 Factory 和 Quality。
+## Screen 3：产品入口
+突出 Thermostats、Thermostat Assemblies、Thermostat Inserts；传感器和开关作为第二组产品入口。
+## Screen 4：按应用找产品
+展示 Volkswagen、BYD、GM、Ford、Peugeot/Citroen、Japanese Vehicles 等目录入口。品牌名称必须以已核实目录为基础，避免暗示品牌授权关系。
+## Screen 5：OE 交叉参考说明
+说明产品页提供 OE references、Bowen No.、Vehicle/Engine Applications 和规格摘要，并提醒最终适配需结合车型、零件号和技术要求确认。
+## Screen 6：工厂能力
+展示机加工、装配、自动装配、自动铆接、调整测试和寿命试验台，使用真实工厂图片。
+## Screen 7：质量与体系
+展示 IATF 16949、ISO 14001、ISO 45001，并准确写明证书范围，不延伸到未覆盖产品或产品设计。
+## Screen 8：研发与工程支持
+使用 29 项自主研发项目、16 项专利、5 项软件著作权等宣传册数字；将“可支持应用沟通”与“承担完整产品设计”分开。
+## Screen 9：询盘 CTA
+标题：Send Your OE Number or Sourcing List
+按钮：Request a Quote、Send Product List。
+## Screen 10：资源和页脚
+首批放 3-6 篇采购/选型文章，页脚放公司名称、邮箱、电话、联系表单和隐私政策。
+## 8. 核心页面规划
+## Products
+产品总览页采用分类卡片、OE/车型搜索和产品数量摘要。首页不要承诺“全部产品已在线”，除非数据清洗和审核完成。
+## Product Detail
+推荐字段：
+Product name；
+Bowen No.；
+Product type；
+OEM reference；
+Vehicle / engine application；
+Opening temperature；
+Dimensions；
+Housing/insert/assembly；
+Image gallery；
+Packaging；
+Technical documents；
+Add to RFQ。
+没有数据的字段不显示空白表格；使用“Available on request”前，需确认内部确实可以提供。
+## Factory
+按“工厂环境 → 机加工 → 自动化装配 → 设备 → 调整测试 → 仓储包装”的生产链组织，突出真实照片和可验证数字。
+## Quality
+展示质量流程、检验设备、节温器寿命试验台和认证文件。证书页面应有证书图片、编号、有效期和范围，并注明持续监督要求。
+## R&D / Engineering
+展示技术中心、设备自主研发、29 项项目、16 项专利、5 项软件著作权。明确文案边界：可写“support product development and application communication”，不写“certified product design capability”。
+## About
+用简洁时间线介绍 2009、2014、工厂建设和制造发展；避免把历史页写成没有采购价值的长篇公司介绍。
+## Blog / Resources
+首批内容建议：
+How to Choose an Automotive Thermostat for an Aftermarket Application
+Thermostat vs. Thermostat Assembly: What Is the Difference?
+How to Check a Thermostat by OE Number and Vehicle Application
+What Information Should You Send When Sourcing Thermostats?
+Automotive Thermostat Opening Temperature Explained
+How a Thermostat Manufacturer Tests Product Performance
+涉及具体寿命、材料、测试标准或失效数据时，必须先补充内部资料。
+## RFQ
+字段建议：
+Name；
+Company；
+Country/region；
+Email；
+WhatsApp/phone（可选）；
+Product type；
+OE number；
+Vehicle make/model/engine；
+Bowen No.（如果知道）；
+Quantity and frequency；
+Technical requirements；
+Packaging/label requirement；
+Target market；
+File upload；
+Message。
+从产品页或搜索结果进入时，应自动带入产品 ID、Bowen No.、OE 号和车型。
+## 9. SEO 关键词框架
+## 9.1 产品核心词
+automotive thermostat manufacturer
+car thermostat manufacturer
+automotive thermostat supplier
+engine thermostat supplier
+thermostat assembly manufacturer
+thermostat insert supplier
+automotive temperature sensor manufacturer
+automotive thermal switch supplier
+## 9.2 采购意图词
+buy automotive thermostats wholesale
+aftermarket thermostat supplier
+thermostat parts supplier
+thermostat manufacturer for distributors
+automotive parts sourcing manufacturer
+private label thermostat supplier（仅在服务确认后使用）
+## 9.3 OE/车型词
+[OE number] thermostat
+[OE number] thermostat replacement
+[vehicle model] thermostat supplier
+[engine code] thermostat
+[vehicle make] thermostat manufacturer
+这些页面必须由真实产品记录生成，不能用程序批量生成没有产品证据的薄内容。
+## 9.4 工厂和信任词
+thermostat manufacturing factory
+automotive thermostat production line
+thermostat quality testing
+IATF 16949 thermostat manufacturer
+thermostat life testing
+使用认证关键词时要在页面中同步显示证书范围；IATF 16949 manufacturer 不应被扩写为覆盖所有汽车开关产品。
+## 9.5 内容集群
+Automotive Thermostats
+├─ Product selection
+├─ OE cross-reference
+├─ Vehicle application
+├─ Opening temperature
+├─ Thermostat assembly vs insert
+├─ Quality and testing
+└─ Sourcing and RFQ guidance
+## 10. 产品数据库字段设计
+## 10.1 基础字段
+
+[TABLE 1]
+| 字段 | 用途 | V1要求 |
+| product_id | 内部稳定 ID | 必填，不因改名变化 |
+| product_type | 产品分类 | 必须人工确认 |
+| product_name_en | 英文产品名 | 统一术语 |
+| bowen_no | 博文编号 | 必填或标记待确认 |
+| status | draft/reviewed/published/archived | 必填 |
+| source_sheet/source_row | 可追溯来源 | 必填 |
+| source_version | 数据版本 | 必填 |
+[/TABLE 1]
+
+## 10.2 适配字段
+
+[TABLE 2]
+| 字段 | 用途 |
+| oe_number_raw | 原始 OEM 文本 |
+| oe_number_normalized | 搜索标准化值 |
+| oe_brand | OE 品牌/体系 |
+| vehicle_make | 车型品牌 |
+| vehicle_model | 车型 |
+| model_year_from/to | 年份范围 |
+| engine_code | 发动机代码 |
+| engine_displacement | 排量 |
+| application_notes | 应用说明 |
+| fitment_confidence | exact/related/review_required |
+[/TABLE 2]
+
+## 10.3 技术字段
+
+[TABLE 3]
+| 字段 | 用途 |
+| opening_temperature_c | 开启温度 |
+| dimensions | D1/d2/A 等尺寸 |
+| housing_type | insert/assembly/housing |
+| connector_type | 接口信息 |
+| material | 材料 |
+| test_standard | 测试标准 |
+| image_urls | 产品图 |
+| document_urls | 规格书/图纸 |
+[/TABLE 3]
+
+## 10.4 询盘与发布字段
+inquiry_enabled；
+downloadable_datasheet；
+searchable；
+indexable；
+last_verified_at；
+verified_by；
+internal_notes。
+建议将“是否可被 Google 索引”和“是否可在站内搜索”分开。未经审核的记录可以先用于内部询盘匹配，不应全部开放索引。
+## 11. 询盘转化路径
+## 路径 A：Google 产品页
+Google search → Product/fitment page → View OE/application → Add to RFQ → Submit
+## 路径 B：问题型文章
+Blog article → Related product family → Product list → Add to RFQ → Submit
+## 路径 C：采购清单
+Home / RFQ → Paste or upload list → Confirm products → Add missing requirements → Submit
+## 询盘后的自动确认
+提交后显示：
+We have received your request. Our team will review the OE number, vehicle application and technical requirements before replying.
+不要承诺固定回复时间，除非公司内部确认服务时限。
+## 12. 第一阶段上线范围
+## 必须上线
+英文首页；
+Thermostats 产品总览；
+OE 号搜索；
+车型/发动机应用搜索；
+产品详情页模板；
+RFQ 表单；
+Factory；
+Quality；
+About；
+Contact；
+3-6 篇基础 SEO 文章；
+隐私政策、询盘数据说明和基础 SEO 技术设置。
+## 数据上线策略
+建议先建立全部 432 个 Bowen No. 的内部数据库，但分三层发布：
+Published：OEM、应用和规格已复核的优先产品；
+Searchable but noindex：字段基本完整，但仍待业务确认；
+Draft：来自 Sheet1 或缺少关键适配信息的记录，不对外公开。
+第一批公开数量不以“越多越好”为目标，建议先选 50-100 个资料最完整、应用最清楚的产品做样板，跑通搜索、产品页、RFQ 和后台审核流程，再批量扩展。
+## 第一阶段暂不做
+在线支付和零售购物车；
+复杂会员系统；
+自动报价；
+没有数据支撑的年份级车型数据库；
+以客户品牌 Logo 为主的案例墙；
+直接把全部 Sheet1 内容导入并索引；
+多语言站点，除非英文内容和产品数据库已经稳定。
+## 13. 后续迭代路线
+## V1.1：数据清洗与转化优化
+统一 OEM 号格式；
+拆分多个 OEM reference；
+标准化车型和发动机名称；
+补充产品类型、结构、年份和温度；
+增加站内搜索日志、无结果词和 RFQ 来源；
+建立产品审核后台。
+## V1.2：SEO 扩展
+批量发布已审核的 OE 号页面；
+发布按品牌/车型/发动机的应用页；
+建立采购指南和技术文章集群；
+加入结构化数据、canonical、站内关联和 XML sitemap 优化。
+## V2：询盘和销售协同
+多产品 RFQ 清单；
+Excel/PDF 采购清单导入；
+询盘自动分配；
+产品资料下载；
+询盘来源、国家、产品和关键词统计；
+根据业务确认增加包装、标签、MOQ、交期等字段。
+## V3：更深的产品数据库
+年份级车型适配；
+发动机代码标准化；
+图片和技术文件管理；
+适配置信度与人工审核记录；
+供应商/客户专属目录或登录区；
+在获得证据后再扩展 OEM/ODM、private label 和项目开发页面。
+## 14. 上线前必须补齐的资料清单
+公司正式英文名、注册地址和工厂地址；
+英文邮箱、电话、WhatsApp 和联系人规则；
+产品图片与 Bowen No. 的一一对应关系；
+432 个 Bowen No. 的去重、合并和停产状态；
+OEM 号、车型、发动机和温度的复核规则；
+传感器及各类开关的正式产品清单；
+MOQ、包装、交期、付款和贸易条款；
+是否提供 OEM/ODM、样品、定制标签和图纸开发；
+质量检验项目、寿命试验条件和可公开的数据；
+认证证书的英文可公开版本和最新有效状态；
+可公开客户案例或应用案例；
+网站表单接收人、回复流程和数据隐私规则。
+## 15. V1 成功标准
+上线后不以页面数量作为唯一指标，而以以下结果判断：
+用户能通过 OE 号或车型进入有效产品结果；
+产品页能够清楚区分“已确认匹配”和“需要人工确认”；
+用户可以从产品页直接生成带上下文的 RFQ；
+每条公开产品都有来源、审核状态和最后复核时间；
+Factory、Quality、R&D 页面提供真实证据而不是泛化宣传；
+Google 能收录一批真实、有应用信息的产品页和采购文章；
+后台能区分产品浏览、搜索、无结果搜索和询盘来源。
+最终判断： 博文最适合先做“节温器制造能力 + OE/车型匹配 + B2B 询盘”的垂直独立站，再把传感器和汽车开关逐步纳入。网站的竞争力不在于把宣传册搬到网页上，而在于把现有的 OEM 号、车型应用和制造证据整理成海外采购商可以搜索、判断和询价的数据系统。

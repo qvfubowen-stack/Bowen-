@@ -1,0 +1,30 @@
+# =====================================================================
+# 博文外贸独立站 — .gitattributes
+# 目的：让 Git 对二进制资料一律按二进制处理，永不尝试做文本 diff / 换行转换。
+# =====================================================================
+
+# ---- 二进制资料：绝不转换、绝不文本 diff ----
+*.xlsx  binary
+*.xls   binary
+*.xlsm  binary
+*.pdf   binary
+*.docx  binary
+*.doc   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.zip   binary
+
+# ---- 派生数据 CSV：统一 LF，便于 diff 审阅 ----
+*.csv   text eol=lf
+
+# ---- 源码 / 文档：统一 LF ----
+*.mjs   text eol=lf
+*.js    text eol=lf
+*.ts    text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf

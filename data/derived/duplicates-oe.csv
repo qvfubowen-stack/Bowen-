@@ -1,0 +1,137 @@
+﻿type,oe_number_normalized,oe_number_raw,product_count,bowen_nos,products,severity,note
+oe_shared_across_products,F4TZ8575B,F4TZ8575B,2,3002 | 32839,bw-3002 | bw-32839,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,9004833078,9004833078,2,3003 | 3061A,bw-3003 | bw-3061a,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1014944100,1014944100,2,3005 | 3061,bw-3005 | bw-3061,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1723000,1723000,2,3007 | 3061,bw-3007 | bw-3061,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,12559575,12559575,2,3008 | 32899,bw-3008 | bw-32899,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1086000636,1086000636,2,3019 | 3051,bw-3019 | bw-3051,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,LF7015170,LF7015170,3,3020 | 33910 | 3548,bw-3020 | bw-33910 | bw-3548,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,4M5G8575FC,4M5G8575FC,3,3020 | 33910 | 3548,bw-3020 | bw-33910 | bw-3548,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1302167,1302167,3,3020 | 33910 | 3548,bw-3020 | bw-33910 | bw-3548,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1355791,1355791,3,3020 | 33910 | 3548,bw-3020 | bw-33910 | bw-3548,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,30711785,30711785,3,3020 | 33910 | 3548,bw-3020 | bw-33910 | bw-3548,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,31251245,31251245,3,3020 | 33910 | 3548,bw-3020 | bw-33910 | bw-3548,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,5157411,5 157 411 | 5157411,2,(无 Bowen No.) | 3020,bw-3020 | bwp-0007,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,21200AA071,21200AA071,2,3023 | 38282  88°,bw-3023 | bw-3828288-,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,21200AA072,21200AA072,3,3023 | 3069 | 38282  88°,bw-3023 | bw-3069 | bw-3828288-,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,21200AA070,21200AA070,2,3023 | 38282  88°,bw-3023 | bw-3828288-,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,94580182,94580182,2,3025 | 3027,bw-3025 | bw-3027,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1760082810,1760082810,2,3025 | 3027,bw-3025 | bw-3027,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1306010H01,1306010H01,2,3025 | 3027,bw-3025 | bw-3027,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,96610574,96610574,2,3025(Different sealing ring) | 3027,bw-3025-differentsealingring- | bw-3027,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,17670M83F00,17670-M83F00 | 17670M83F00,2,3025 88° | 3027,bw-302588- | bw-3027,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,6338018,6338018,2,3033 | 3033--1,bw-3033 | bw-3033-1,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,96984104,96984104,3,3033 | 3033--1 | 3033-z,bw-3033 | bw-3033-1 | bw-3033-z,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,55578419,55578419,3,3033 | 3033--1 | 3033-z,bw-3033 | bw-3033-1 | bw-3033-z,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,25193684,25193684,2,3033 | 3033--1,bw-3033 | bw-3033-1,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,25199828,25199828,3,3033 | 3033--1 | 3033-z,bw-3033 | bw-3033-1 | bw-3033-z,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,55597008,55597008,2,3033 | 3033-z,bw-3033 | bw-3033-z,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,25192228,25192228,2,3033-z | 3033-z  138*95*251,bw-3033-z | bw-3033-z138-95-251,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,96984103,96984103,2,3033-z | 3033-z  138*95*251,bw-3033-z | bw-3033-z138-95-251,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,03C121026AP,03C121026AP,2,303401 | 303403,bw-303401 | bw-303403,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,03C121111AK,03C121111AK,2,303401 | 303403,bw-303401 | bw-303403,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,03C121111T,03C121111T,2,303402 | 303404,bw-303402 | bw-303404,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,03C121111AM,03C121111AM,2,303402 | 303404,bw-303402 | bw-303404,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,03C121111P,03C121111P,2,303402 | 303404,bw-303402 | bw-303404,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,03C121026AR,03C121026AR,2,303402 | 303404,bw-303402 | bw-303404,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,06H121113B,06H121113B,2,3036 | 3136,bw-3036 | bw-3136,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,06H121121L,06H121121L,2,3036 | 3136,bw-3036 | bw-3136,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1306010A01,1306010A01,2,3004-4 | 3048,bw-3004-4 | bw-3048,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,10120201820000,10120201820000,2,3056 | 3056-1,bw-3056 | bw-3056-1,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,10548074,10548074,2,3059 | 3525,bw-3059 | bw-3525,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,0619359B306,0619359B306,2,3061 | 3061A,bw-3061 | bw-3061a,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,2120050K00,2120050K00,2,3064 | 3064 77℃,bw-3064 | bw-306477-,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,5257076,5257076,2,3068 | 31505,bw-3068 | bw-31505,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1041200GH030,1041200GH030,2,3074 | Same specifications as 3014 Different appearance and structure,bw-3074 | bw-samespecificationsas3014differentappearanceandstructure,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,9091603101,9091603101 | 9091603101 ,2,3069（3076） | 3076,bw-3069-3076- | bw-3076,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,9091603092,9091603092,2,3069（3076） | 3076,bw-3069-3076- | bw-3076,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,9091603093,9091603093,2,3069（3076） | 3076,bw-3069-3076- | bw-3076,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,9091603123,9091603123,2,3069（3076） | 3076,bw-3069-3076- | bw-3076,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,9091603143,9091603143,2,3069（3076） | 3076,bw-3069-3076- | bw-3076,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,9091603201,9091603201,2,3069（3076） | 3076,bw-3069-3076- | bw-3076,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,96MM8575BD,96MM8575BD,2,3094 | 3094(Sealing ring without locating protrusions),bw-3094 | bw-3094-sealingringwithoutlocatingprotrusions-,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,DM5G8575AA,DM5G8575AA,2,3094 | 3094(Sealing ring without locating protrusions),bw-3094 | bw-3094-sealingringwithoutlocatingprotrusions-,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,2550035540,25500-35540 | 2550035540,3,3004-3 | 3004-5 | 3503,bw-3004-3 | bw-3004-5 | bw-3503,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,2550035530,25500-35530 | 2550035530,3,3004-3 | 3004-5 | 3503,bw-3004-3 | bw-3004-5 | bw-3503,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,2742000015,2742000015,2,(无 Bowen No.),bwp-0001 | bwp-0005,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1338031,1338031,2,3520 | 3520  120*85*90,bw-3520 | bw-3520120-85-90,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1338251,1338251,2,3520 | 3520  120*85*90,bw-3520 | bw-3520120-85-90,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,55565336,55565336,2,3520 | 3520  120*85*90,bw-3520 | bw-3520120-85-90,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,55579010,55579010,2,3520 | 3520  120*85*90,bw-3520 | bw-3520120-85-90,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,55593034,55593034,2,3520 | 3520  120*85*90,bw-3520 | bw-3520120-85-90,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,BM5G9K478BB,BM5G9K478BB,2,3522 | 3522  15*14*8.5,bw-3522 | bw-352215-14-8-5,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1827900,1827900,2,3522 | 3522  15*14*8.5,bw-3522 | bw-352215-14-8-5,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1634054040,1634054040,2,3041-2 | 3550,bw-3041-2 | bw-3550,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,12651113,12651113,2,3653 | 3653 Assembly OE No.,bw-3653 | bw-3653assemblyoeno-,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,XL3Z8575AA,XL3Z8575AA,2,31520 | 3528,bw-31520 | bw-3528,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,078121113F,078121113F,2,3080 | 31604-1,bw-3080 | bw-31604-1,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,078121113G,078121113G,2,3080 | 31604-1,bw-3080 | bw-31604-1,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,078121113C,078121113C,2,31604-1 | 31605,bw-31604-1 | bw-31605,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1306010B05,1306010B05,2,3004-4 | 3545,bw-3004-4 | bw-3545,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,9804315380,9804315380,2,3568 | 3666,bw-3568 | bw-3666,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,9091603062,9091603062,2,30101 | 3041-2(3003) Sealing ring,bw-30101 | bw-3041-2-3003-sealingring,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,9091603099,9091603099,2,30101 | 3041-2(3003) Sealing ring,bw-30101 | bw-3041-2-3003-sealingring,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1634054010,1634054010,2,30101 | 3041-2(3003) Sealing ring,bw-30101 | bw-3041-2-3003-sealingring,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,06L121111G,06L121111G,2,30116 | 31016 Insert only,bw-30116 | bw-31016insertonly,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1X4Z8575A,1X4Z8575A,2,3203 | 33663-1,bw-3203 | bw-33663-1,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1X4Z8575B,1X4Z8575B,3,3203 | 32138 | 33663-1,bw-3203 | bw-32138 | bw-33663-1,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,F8RZ8575BA,F8RZ8575BA,2,3203 | 33663-1,bw-3203 | bw-33663-1,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,XW4Z8575AA,XW4Z8575AA,2,3203 | 33663-1,bw-3203 | bw-33663-1,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1X4E8575EA,1X4E8575EA,2,3203 | 33663-1,bw-3203 | bw-33663-1,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,9091603100,90916-03100 | 9091603100,2,3004-3 | 3004-5,bw-3004-3 | bw-3004-5,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,21200BN300,21200BN300,2,3004-3 | 3004-5,bw-3004-3 | bw-3004-5,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,21200AD201,21200-AD201 | 21200AD201,2,3004-3 | 3004-5,bw-3004-3 | bw-3004-5,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,21200BN301,21200-BN301,2,3004-3 | 3004-5,bw-3004-3 | bw-3004-5,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,212001AT1A,212001AT1A,2,3004-3 | 3004-5,bw-3004-3 | bw-3004-5,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,21200AD200,21200AD200,2,3004-3 | 3004-5,bw-3004-3 | bw-3004-5,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,21200AD21A,21200AD21A,2,3004-3 | 3004-5,bw-3004-3 | bw-3004-5,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,21200BN30A,21200BN30A,2,3004-3 | 3004-5,bw-3004-3 | bw-3004-5,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,2550035531,25500-35531,2,3004-3 | 3004-5,bw-3004-3 | bw-3004-5,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,212001LA0A,212001LA0A,2,3004-3 | 3004-5,bw-3004-3 | bw-3004-5,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,9091603142,90916-03142 | 9091603142,2,3041-1 | 3041-2(3003) Sealing ring,bw-3041-1 | bw-3041-2-3003-sealingring,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,BR3Z8575C,BR3Z8575C,2,32588 | 33663,bw-32588 | bw-33663,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,98463637,98463637,2,3919 | 3919(35401),bw-3919 | bw-3919-35401-,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,55111016AC,55111016AC,2,(无 Bowen No.) | 38241,bw-38241 | bwp-0006,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,68534176AA,68534176AA,2,31515 | 32289,bw-31515 | bw-32289,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,5086739AB,5086739AB,2,31515 | 32289,bw-31515 | bw-32289,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,8980170272,8980170272,2,35116 | 35116(Deben),bw-35116 | bw-35116-deben-,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,8974357940,8974357940,3,35116 | 35116(Deben) | 403229,bw-35116 | bw-35116-deben- | bw-403229,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,31474297,31474297,2,33561 | 33561-1,bw-33561 | bw-33561-1,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,04L121113C,04L121113C,2,35907 | L907(Insert only),bw-35907 | bw-l907-insertonly-,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1066029700,1066029700,2,35063-1 | 37603(Tianbo) Non-electronic,bw-35063-1 | bw-37603-tianbo-non-electronic,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,31686046,31686046,2,35063-1 | 37603(Tianbo) Non-electronic,bw-35063-1 | bw-37603-tianbo-non-electronic,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,5500001209,5500001209,2,35063-1 | 37603(Tianbo) Non-electronic,bw-35063-1 | bw-37603-tianbo-non-electronic,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,C00109635,C00109635,2,3566 | 3567,bw-3566 | bw-3567,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,06A919081A,06A919081A,2,2005 | 2006,bw-2005 | bw-2006,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,06A919081D,06A919081D,2,2005 | 2006,bw-2005 | bw-2006,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,06A919081E,06A919081E,2,2005 | 2006,bw-2005 | bw-2006,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,06A919081J,06A919081J,2,2005 | 2006,bw-2005 | bw-2006,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1094739,1094739,2,2005 | 2006,bw-2005 | bw-2006,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1M219278BA,1M219278BA,2,2005 | 2006,bw-2005 | bw-2006,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,95VW9278EA,95VW9278EA,2,2005 | 2006,bw-2005 | bw-2006,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,038919081H,038919081H,2,2008 | 2036,bw-2008 | bw-2036,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,038919081K,038919081K,2,2008 | 2036,bw-2008 | bw-2036,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1C0945511A,1C0945511A,2,5003 | 5011,bw-5003 | bw-5011,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,9670430580,9670430580,2,5013 | 5020,bw-5013 | bw-5020,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,453470,453470,2,5013 | 5020,bw-5013 | bw-5020,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,9804869480,9804869480,2,5013 | 5020,bw-5013 | bw-5020,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,938103K000,938103K000,3,5016 | 5016B | 5018,bw-5016 | bw-5016b | bw-5018,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,084941521,084941521 | 084941521 ,3,(无 Bowen No.) | 6001 | 6002,bw-6001 | bw-6002 | bwp-0003,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,014919361,014919361,3,(无 Bowen No.) | 6001 | 6002,bw-6001 | bw-6002 | bwp-0003,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,02T945415,02T945415 | 02T945415 ,2,(无 Bowen No.) | 6004,bw-6004 | bwp-0004,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,02K945415C,02K945415C | 02K945415C ,2,(无 Bowen No.) | 6004,bw-6004 | bwp-0004,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,02K945415D,02K945415D | 02K945415D ,2,(无 Bowen No.) | 6004,bw-6004 | bwp-0004,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,02K945415E,02K945415E | 02K945415E ,2,(无 Bowen No.) | 6004,bw-6004 | bwp-0004,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,02T945415D,02T945415D | 02T945415D ,2,(无 Bowen No.) | 6004,bw-6004 | bwp-0004,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1119746,1119746 | 1119746 ,2,(无 Bowen No.) | 6004,bw-6004 | bwp-0004,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1213353,1213353 | 1213353 ,2,(无 Bowen No.) | 6004,bw-6004 | bwp-0004,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,1M2115520AA,1M2115520AA,2,(无 Bowen No.) | 6004,bw-6004 | bwp-0004,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,255002A050,25500-2A050 | 255002A050,2,3011-2 3565 | 3565-2,bw-3011-23565 | bw-3565-2,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,8C3Z8575B,8C3Z8575B,2,33655 | 33655A 33655B,bw-33655 | bw-33655a33655b,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,455780,455780,2,33655 | 33655A 33655B,bw-33655 | bw-33655a33655b,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,39200,39200,2,33655 | 33655A 33655B,bw-33655 | bw-33655a33655b,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,49200,49200,2,33655 | 33655A 33655B,bw-33655 | bw-33655a33655b,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,34200,34200,2,33655 | 33655A 33655B,bw-33655 | bw-33655a33655b,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,716200,716200,2,33655 | 33655A 33655B,bw-33655 | bw-33655a33655b,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,55111016AE,55111016AE,2,(无 Bowen No.) | 32870,bw-32870 | bwp-0006,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
+oe_shared_across_products,12597583,12597583,2,32748-2 | 36583,bw-32748-2 | bw-36583,review_required,同一 OE 号被多个产品引用：可能是一号多型、替代关系或录错，必须业务确认
