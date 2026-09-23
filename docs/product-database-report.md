@@ -646,6 +646,22 @@ publish_ready = blocked_until_product_type_confirmed
 
 ---
 
+### 10.3 关于可复现性（重要）
+
+**经验证：使用固定时间戳时，全部 18 个派生文件的 SHA-256 在连续两次运行后完全相同 —— 即数据层面完全确定。**
+
+```powershell
+$env:BOWEN_NOW = "2026-09-23T09:00:00.000Z"   # 固定时间戳
+node tools/build-product-db.mjs
+node tools/verify-db.mjs
+```
+
+**不设置 `BOWEN_NOW` 时**，只有 3 个 JSON 文件里的 `generated_at` 时间戳会变（`stats.json`、`source-files.json`、`sheet-inventory.json`），**CSV 数据文件逐字节不变**。
+
+所以「数据是否变了」永远可以通过 CSV 判断，不会出现换行符或时间戳造成的假差异。这是刻意的设计——保留时间戳是为了知道数据是哪一次跑出来的。
+
+---
+
 ## 10. 产出文件清单
 
 全部派生产物在 `data/derived/`，**均可安全重跑生成**（原始文件不受影响）。
