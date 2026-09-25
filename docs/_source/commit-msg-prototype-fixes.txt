@@ -1,0 +1,82 @@
+Fix install flow, RFQ payload, Supabase boundary and category copy
+
+按业务方要求修复 5 项问题。全部修复均以自动测试为门禁。
+
+1) 全新环境安装流程
+- package.json 增加 packageManager: "pnpm@10.34.5"（Corepack 强制版本）、
+  engines.node >= 18.18.0 / engines.pnpm >= 10.16.0
+- 新增 website/.npmrc：engine-strict=true、auto-install-peers=true、
+  strict-peer-dependencies=false
+- 显式声明 sharp 决策：pnpm.ignoredBuiltDependencies = ["sharp"]，
+  消除 "Ignored build scripts" 警告。sharp 只是 next 的 optionalDependency，
+  项目全仓无 next/image 用法，因此其构建脚本不需要执行（已在文档中说明
+  以及将来启用 next/image 时该怎么改）
+- 修正一个曾经的错误做法：.npmrc 里不要写 package-lock=false，
+  pnpm 会理解为「禁止读写 lockfile」，导致 --frozen-lockfile 失去意义
+- 防止第二份锁文件：.gitignore 忽略 package-lock.json / yarn.lock
+- 安全升级：next 15.1.6 → 15.5.26（15.1.6 有 CVE-2025-66478 安全通告，
+  安装时会出现 deprecated 警告）。升级后告警消失，typecheck/build/全部测试通过
+- 05_how-to-run.md 重写：唯一推荐包管理器与版本、frozen-lockfile 排查表、
+  sharp 说明、干净目录验证结果、corepack 用法
+
+2) RFQ payload
+- 新增 src/lib/rfq-payload.ts：纯函数 buildRfqPayload() / readContactFromForm() /
+  validateRfq()，组件与测试共用同一口径
+- 成功页不再显示 "(from form)"：contact 的 name / company / country / email /
+  whatsapp_phone / website / message / consent 全部取用户实际填写值
+- 明细保留 product_id / application_id / bowen_no / matched_oe / vehicle /
+  engine / quantity / remark
+- 修掉一个真实缺陷：从 /rfq?product=... 快捷进入时 application_id 丢失
+  （RfqPage 没有把 first_application_id 传下去），已补上
+- 成功页新增「Contact details received」区块，把用户填写的值可视化展示
+- 新增 website/tools/verify-rfq-e2e.mjs：真实浏览器端到端测试（31 项），
+  自动起临时 dev 服务器，真实填表 → 提交 → 读回 payload 逐字段断言，
+  并验证空表单被拦下、payload 中不出现任何模板占位符
+- 仍然不真正发送邮件，payload 里明确标注 prototype_no_email_sent
+
+3) Supabase 接入边界
+- 新增 src/lib/repository.ts：定义 ProductRepository 接口，全部方法 async
+- 新增 src/lib/repositories/json-repository.ts：当前 JSON 实现，
+  是全项目唯一 import '@/data/*.json' 的地方
+- src/lib/db.ts 改为门面：注册实现 + 暴露 async API；页面全部改为 await
+- 删除「只要改 loadDataset() 就能接入」的错误说法，改为诚实说明：
+  页面层确实不用改（因为已经是 async），但分页 / 车型聚合 / OE 搜索
+  这三处仍是内存算法，必须用 SQL 重写；另需处理缓存失效、构建期渲染策略、
+  RFQ 落库与通知、鉴权限流、RLS 等
+- 新增 docs/supabase-migration-boundary.md 详述边界与迁移检查清单
+
+4) 产品分类文案
+- 分类描述不再把 insert / assembly 列为产品种类
+- 首页 Factory Screen 的「Thermostat assembly…」改为「Assembly uses…」，
+  避免读成产品名
+- Blog 计划选题改为「How the source data describes thermostat variants」，
+  定位为原始资料词汇
+- Factory 页 Assembly / Automated Assembly 作为制造工艺保留
+- 品牌定位「Automotive Thermostat Manufacturer」保留
+- 新增 website/tools/verify-category-copy.mjs（12 项）：同时守卫数据模型
+  （product_type 只能 canonical、无主次产品/OE 字段、subtype 全 null）
+  与页面文案（不得把 Insert/Assembly 做成分类或筛选项）
+
+5) 保留已通过的业务规则
+- 不创建 main/primary/secondary OE（守卫测试 + 数据库测试双重覆盖）
+- 保留 Bowen → OE → Vehicle/Engine 的 application 级关系（新增 E2E 断言
+  application_id 必须进入 RFQ payload）
+- 保留 OE raw 与 normalized 两种值
+- 不猜产品类型（自动猜 = 0）
+- 不修改原始 Excel（SHA-256 三重校验）
+- blocked / draft 不进入网站数据集
+- 原型保持 noindex（生产服务器逐页实测 X-Robots-Tag: noindex, nofollow）
+
+顺带修掉一个真实缺陷
+- OeSearchBox 自己渲染 <form>，而它被嵌在 RFQ 页的 <form> 里，
+  属于非法嵌套 HTML，导致整页 hydration 失败（RFQ 表单此前根本无法交互）。
+  改为 role="search" + 手动处理 Enter 键，语义与可访问性等价。
+
+验收结果（全部通过）
+- node tools/verify-product-db-v2.mjs        65 PASS / 0 FAIL
+- node tools/verify-product-images.mjs        39 PASS / 0 FAIL
+- node website/tools/verify-prototype-data.mjs 36 PASS / 0 FAIL
+- node website/tools/verify-category-copy.mjs  12 PASS / 0 FAIL
+- node website/tools/verify-rfq-e2e.mjs        31 PASS / 0 FAIL（dev 与 production 各跑一次）
+- find-overflow.mjs 5 个页面 390px 横向溢出均为 0px
+- tsc --noEmit 0 error；next build 成功，390 个路由

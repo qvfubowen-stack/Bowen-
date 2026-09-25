@@ -49,25 +49,36 @@ export function OeSearchBox({
         tone === 'light' ? styles.light : styles.dark,
       ].join(' ')}
     >
-      <form
-        className={styles.form}
-        onSubmit={(e) => { e.preventDefault(); go(value); }}
-        role="search"
-      >
+      {/*
+        注意：这里刻意不使用 <form>。
+        本组件会被嵌进别的表单里（例如 RFQ 页的「再查一个 OE」区块），
+        而 HTML 不允许 <form> 嵌套 <form> —— 嵌套会导致
+        "In HTML, <form> cannot be a descendant of <form>" 并让整页 hydration 失败。
+        因此改用 role="search" + 手动处理 Enter 键，语义与可访问性保持等价。
+      */}
+      <div className={styles.form} role="search">
         <label className="srOnly" htmlFor={`oe-input-${size}`}>OE Number</label>
         <input
           id={`oe-input-${size}`}
           className={styles.input}
           value={value}
           onChange={(e) => setValue(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              e.preventDefault();
+              go(value);
+            }
+          }}
           placeholder={placeholder}
           autoComplete="off"
           autoFocus={autoFocus}
           spellCheck={false}
           inputMode="search"
         />
-        <button type="submit" className={styles.button}>{submitLabel}</button>
-      </form>
+        <button type="button" className={styles.button} onClick={() => go(value)}>
+          {submitLabel}
+        </button>
+      </div>
 
       {size === 'large' && (
         <p className={styles.examples}>

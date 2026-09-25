@@ -32,7 +32,7 @@ export default async function ProductsPage({
   const sp = await searchParams;
   const page = Math.max(1, Number(sp.page ?? '1') || 1);
 
-  const result = listProducts({
+  const result = await listProducts({
     q: sp.q ?? '',
     type: sp.type ?? '',
     make: sp.make ?? '',
@@ -41,9 +41,9 @@ export default async function ProductsPage({
     pageSize: PAGE_SIZE,
   });
 
-  const typeOptions = getProductTypeOptions();
-  const categories = getCategorySummaries();
-  const makes = getMakeSummaries();
+  const typeOptions = await getProductTypeOptions();
+  const categories = await getCategorySummaries();
+  const makes = await getMakeSummaries();
 
   // category 与 sub 是展示层筛选（listProducts 只按 type/make/engine/q 过滤）
   let items = result.items;

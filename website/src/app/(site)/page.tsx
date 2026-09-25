@@ -11,12 +11,12 @@ import {
 } from '@/lib/db';
 import styles from './home.module.css';
 
-export default function HomePage() {
-  const facts = getSiteFacts();
-  const stats = getDatasetStats();
-  const categories = getCategorySummaries();
-  const makes = getMakeSummaries();
-  const featured = getPublishedProducts().filter((p) => p.prototype_rank).slice(0, 6);
+export default async function HomePage() {
+  const facts = await getSiteFacts();
+  const stats = await getDatasetStats();
+  const categories = await getCategorySummaries();
+  const makes = await getMakeSummaries();
+  const featured = (await getPublishedProducts()).filter((p) => p.prototype_rank).slice(0, 6);
   const thermostats = categories.find((c) => c.category === 'thermostats');
   const c = facts.company;
 
@@ -265,7 +265,7 @@ export default function HomePage() {
             <Process
               n="02"
               title="Assembly"
-              body="Thermostat assembly with controlled tooling and torque parameters on dedicated lines."
+              body="Assembly uses controlled tooling and torque parameters on dedicated stations."
             />
             <Process
               n="03"

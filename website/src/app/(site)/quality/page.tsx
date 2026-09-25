@@ -36,8 +36,8 @@ const CONTROLS = [
   { title: 'Traceability', body: 'Test results are linked to the production batch, so supplied parts can be traced back.' },
 ];
 
-export default function QualityPage() {
-  const c = getSiteFacts().company;
+export default async function QualityPage() {
+  const c = (await getSiteFacts()).company;
 
   return (
     <>

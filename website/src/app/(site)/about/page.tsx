@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   description: 'Bowen is an automotive thermostat manufacturer supplying importers, wholesalers and aftermarket distributors.',
 };
 
-export default function AboutPage() {
-  const c = getSiteFacts().company;
-  const stats = getDatasetStats();
+export default async function AboutPage() {
+  const c = (await getSiteFacts()).company;
+  const stats = await getDatasetStats();
 
   return (
     <>

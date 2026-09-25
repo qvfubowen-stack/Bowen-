@@ -19,7 +19,7 @@ export default async function OeSearchPage({
 }) {
   const sp = await searchParams;
   const query = (sp.q ?? '').trim();
-  const result = query ? getResult(query) : null;
+  const result = query ? await getResult(query) : null;
 
   return (
     <>

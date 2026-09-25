@@ -12,6 +12,12 @@ build/
 out/
 *.tsbuildinfo
 
+# ---- 只接受 pnpm-lock.yaml 一份锁文件 ----
+# 本项目唯一推荐的包管理器是 pnpm（版本见 website/package.json 的 packageManager）。
+# 用 npm / yarn 安装会生成第二份锁文件，导致依赖解析不一致，因此不入库。
+package-lock.json
+yarn.lock
+
 # ---- 包管理器本地缓存（本机沙箱要求缓存必须落在工作区内，绝不入库）----
 .pnpm-store/
 .pnpm-cache/

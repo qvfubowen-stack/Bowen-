@@ -20,7 +20,7 @@ const PLANNED = [
     status: 'Planned',
   },
   {
-    topic: 'Thermostat insert vs thermostat assembly: what to check before ordering',
+    topic: 'How the source data describes thermostat variants (insert, housing, assembly)',
     audience: 'Buyers comparing offers',
     status: 'Planned',
   },

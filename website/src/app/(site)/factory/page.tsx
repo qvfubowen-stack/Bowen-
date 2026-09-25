@@ -19,8 +19,8 @@ const STAGES = [
   {
     n: '02',
     title: 'Assembly',
-    body: 'Wax-element and insert assembly on dedicated stations, with the sealing and seating geometry controlled.',
-    points: ['Controlled torque and press parameters', 'Component traceability by batch', 'Separate lines for insert and assembly types'],
+    body: 'Wax-element assembly on dedicated stations, with the sealing and seating geometry controlled.',
+    points: ['Controlled torque and press parameters', 'Component traceability by batch', 'Dedicated stations for different housing designs'],
   },
   {
     n: '03',
@@ -36,8 +36,8 @@ const STAGES = [
   },
 ];
 
-export default function FactoryPage() {
-  const c = getSiteFacts().company;
+export default async function FactoryPage() {
+  const c = (await getSiteFacts()).company;
 
   return (
     <>

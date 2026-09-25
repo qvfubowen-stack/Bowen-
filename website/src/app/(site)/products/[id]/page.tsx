@@ -10,7 +10,8 @@ import styles from './detail.module.css';
 export const dynamicParams = true;
 
 export async function generateStaticParams() {
-  return getPublishedProducts().map((p) => ({ id: p.product_id }));
+  const products = await getPublishedProducts();
+  return products.map((p) => ({ id: p.product_id }));
 }
 
 export async function generateMetadata({
@@ -19,7 +20,7 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
   const { id } = await params;
-  const product = getProductById(decodeURIComponent(id));
+  const product = await getProductById(decodeURIComponent(id));
   if (!product) return { title: 'Product not found' };
   return {
     title: `Bowen ${product.bowen_no} — ${product.product_type ?? 'Product'}`,
@@ -33,13 +34,13 @@ export default async function ProductDetailPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const product = getProductById(decodeURIComponent(id));
+  const product = await getProductById(decodeURIComponent(id));
   if (!product) notFound();
 
   // blocked / draft 产品不对外展示
   if (product.blocked || product.status === 'draft' || product.status === 'blocked') notFound();
 
-  const applications = getDisplayApplications(product.product_id);
+  const applications = await getDisplayApplications(product.product_id);
   const typeLabel = product.product_type
     ? product.product_type.replace(/([a-z])([A-Z])/g, '$1 $2')
     : 'Type pending review';

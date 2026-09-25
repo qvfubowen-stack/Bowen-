@@ -4,6 +4,12 @@ import Link from 'next/link';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useRfq } from './rfq-context';
 import { OeSearchBox } from './OeSearchBox';
+import {
+  buildRfqPayload,
+  readContactFromForm,
+  validateRfq,
+  type RfqContact,
+} from '@/lib/rfq-payload';
 import styles from './RfqForm.module.css';
 
 interface ProductLite {
@@ -12,6 +18,8 @@ interface ProductLite {
   product_type: string | null;
   vehicle_application_raw: string;
   first_oe: string | null;
+  /** 该产品的第一条 application —— 从 URL 快捷进入时用来保留 application 级关联 */
+  first_application_id: string | null;
 }
 
 const COUNTRIES = [
@@ -20,6 +28,11 @@ const COUNTRIES = [
   'Brazil', 'Mexico', 'Chile', 'Argentina', 'Australia', 'India', 'Thailand', 'Vietnam',
   'Malaysia', 'Indonesia', 'Japan', 'South Korea', 'Other',
 ];
+
+const EMPTY_CONTACT: RfqContact = {
+  name: '', company: '', country: '', email: '',
+  whatsapp_phone: '', website: '', message: '', consent: true,
+};
 
 export function RfqForm({
   preselect,
@@ -32,7 +45,10 @@ export function RfqForm({
   const [submitted, setSubmitted] = useState(false);
   const [fileName, setFileName] = useState<string | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
+  /** 提交时从表单读出的真实联系信息 —— 成功页展示的就是它 */
+  const [submittedContact, setSubmittedContact] = useState<RfqContact | null>(null);
   const preselected = useRef(false);
+  const formRef = useRef<HTMLFormElement>(null);
 
   // 支持 /rfq?product=BW-3005 直接带入（产品卡片的「Add to RFQ」链接）
   useEffect(() => {
@@ -46,7 +62,7 @@ export function RfqForm({
         matched_oe: p.first_oe,
         vehicle: p.vehicle_application_raw || null,
         engine: p.vehicle_application_raw || null,
-        application_id: null,
+        application_id: p.first_application_id,
       });
     }
     preselected.current = true;
@@ -54,60 +70,29 @@ export function RfqForm({
 
   const totalItems = lines.length;
 
-  function validate(form: HTMLFormElement) {
-    const data = new FormData(form);
-    const next: Record<string, string> = {};
-    const name = String(data.get('name') ?? '').trim();
-    const company = String(data.get('company') ?? '').trim();
-    const country = String(data.get('country') ?? '').trim();
-    const email = String(data.get('email') ?? '').trim();
-    const message = String(data.get('message') ?? '').trim();
-
-    if (!name) next.name = 'Please enter your name.';
-    if (!company) next.company = 'Please enter your company name.';
-    if (!country) next.country = 'Please select your country.';
-    if (!email) next.email = 'Please enter your email address.';
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) next.email = 'That email address does not look valid.';
-    if (!message && totalItems === 0 && !fileName) {
-      next.message = 'Add at least one product, upload a sourcing list, or describe what you need.';
-    }
-    return next;
-  }
-
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const next = validate(e.currentTarget);
+    const form = e.currentTarget;
+    // 从表单读真实值（与自动测试用同一个函数）
+    const contact = readContactFromForm(form);
+    const next = validateRfq(contact, totalItems, fileName);
     setErrors(next);
     if (Object.keys(next).length > 0) {
       const firstKey = Object.keys(next)[0];
-      e.currentTarget.querySelector<HTMLElement>(`[name="${firstKey}"]`)?.focus();
+      form.querySelector<HTMLElement>(`[name="${firstKey}"]`)?.focus();
       return;
     }
-    // 原型阶段：不真正发送邮件，只把完整的数据流展示出来证明流程跑通
+    // 原型阶段：不真正发送邮件，只把完整 payload 展示出来证明数据流跑通
+    setSubmittedContact(contact);
     setSubmitted(true);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  const payloadPreview = useMemo(() => ({
-    contact: {
-      name: '(from form)',
-      company: '(from form)',
-      country: '(from form)',
-      email: '(from form)',
-      whatsapp_phone: '(from form)',
-    },
-    items: lines.map((l) => ({
-      product_id: l.product_id,
-      bowen_no: l.bowen_no,
-      product_type: l.product_type,
-      matched_oe: l.matched_oe,
-      vehicle: l.vehicle,
-      engine: l.engine,
-      application_id: l.application_id,
-      quantity: l.quantity || null,
-    })),
-    sourcing_list_file: fileName,
-  }), [lines, fileName]);
+  /** 展示用 payload：完全来自用户填写的值 + RFQ 明细 */
+  const payload = useMemo(
+    () => buildRfqPayload(submittedContact ?? EMPTY_CONTACT, lines, fileName),
+    [submittedContact, lines, fileName],
+  );
 
   if (submitted) {
     return (
@@ -115,23 +100,46 @@ export function RfqForm({
         <span className={styles.successIcon} aria-hidden="true">✓</span>
         <h2 className="h2">Request prepared</h2>
         <p className={styles.successLead}>
-          This is a prototype — nothing was emailed. On the production site this payload would be
-          sent to Bowen sales and a confirmation email returned to you.
+          This is a prototype — <strong>nothing was emailed</strong>. Below is the exact payload the
+          production site would POST to Bowen sales, built from what you just entered.
         </p>
 
+        <div className={styles.contactSummary}>
+          <h3 className="h4">Contact details received</h3>
+          <dl className={styles.contactList}>
+            <div><dt>Name</dt><dd>{payload.contact.name}</dd></div>
+            <div><dt>Company</dt><dd>{payload.contact.company}</dd></div>
+            <div><dt>Country</dt><dd>{payload.contact.country}</dd></div>
+            <div><dt>Email</dt><dd className="mono">{payload.contact.email}</dd></div>
+            <div><dt>WhatsApp / Phone</dt><dd className="mono">{payload.contact.whatsapp_phone}</dd></div>
+            <div><dt>Website</dt><dd className="mono">{payload.contact.website ?? '—'}</dd></div>
+          </dl>
+        </div>
+
         <div className={styles.payloadHead}>
-          <h3 className="h4">Data that would be transmitted</h3>
+          <h3 className="h4">
+            Data that would be transmitted{' '}
+            <span className={styles.payloadCount}>
+              {payload.items_count} {payload.items_count === 1 ? 'item' : 'items'}
+            </span>
+          </h3>
           <button type="button" className="btn btnGhost btnSm" onClick={() => { setSubmitted(false); }}>
             Back to the form
           </button>
         </div>
-        <pre className={styles.payload}>{JSON.stringify(payloadPreview, null, 2)}</pre>
+        <pre className={styles.payload} data-testid="rfq-payload">{JSON.stringify(payload, null, 2)}</pre>
 
         <div className={styles.successActions}>
           <button
             type="button"
             className="btn btnGhost"
-            onClick={() => { clear(); setFileName(null); setSubmitted(false); window.scrollTo({ top: 0 }); }}
+            onClick={() => {
+              clear();
+              setFileName(null);
+              setSubmittedContact(null);
+              setSubmitted(false);
+              window.scrollTo({ top: 0 });
+            }}
           >
             Start a new RFQ
           </button>
@@ -142,7 +150,7 @@ export function RfqForm({
   }
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit} noValidate>
+    <form className={styles.form} onSubmit={handleSubmit} noValidate ref={formRef} data-testid="rfq-form">
       {/* ---------- RFQ 明细 ---------- */}
       <section className={styles.block}>
         <header className={styles.blockHead}>
@@ -285,7 +293,7 @@ export function RfqForm({
             onChange={(e) => setFileName(e.target.files?.[0]?.name ?? null)}
           />
           <span className="hint">
-            Excel, CSV, PDF or Word. Up to 10 MB. {/* 原型阶段：文件不会被上传或存储 */}
+            Excel, CSV, PDF or Word. Up to 10 MB.{' '}
             Prototype only — the file is not uploaded or stored.
           </span>
           {fileName && <p className={styles.fileName}>Selected: {fileName}</p>}

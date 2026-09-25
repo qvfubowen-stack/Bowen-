@@ -16,17 +16,23 @@ export default async function RfqPage({
 }) {
   const sp = await searchParams;
 
-  // 只把必要字段传给客户端组件，避免把整个数据库发到浏览器
-  const products = getPublishedProducts().map((p) => {
-    const apps = getDisplayApplications(p.product_id);
-    return {
-      product_id: p.product_id,
-      bowen_no: p.bowen_no,
-      product_type: p.product_type,
-      vehicle_application_raw: apps[0]?.vehicle_application_raw ?? '',
-      first_oe: apps[0]?.oe_tokens?.[0] ?? null,
-    };
-  });
+  // 只把必要字段传给客户端组件，避免把整个数据库发到浏览器。
+  // first_application_id 必须带上：从 /rfq?product=... 进入时，
+  // 这条 application 关联会直接写进 RFQ payload（不能丢）。
+  const published = await getPublishedProducts();
+  const products = await Promise.all(
+    published.map(async (p) => {
+      const apps = await getDisplayApplications(p.product_id);
+      return {
+        product_id: p.product_id,
+        bowen_no: p.bowen_no,
+        product_type: p.product_type,
+        vehicle_application_raw: apps[0]?.vehicle_application_raw ?? '',
+        first_oe: apps[0]?.oe_tokens?.[0] ?? null,
+        first_application_id: apps[0]?.application_id ?? null,
+      };
+    }),
+  );
 
   return (
     <>
