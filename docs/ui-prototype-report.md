@@ -56,8 +56,12 @@
 网站数据分布：Thermostats 259 / Automotive Switches 75 / Temperature Sensors 41 /
 Related Cooling Parts 3 —— 每个分类都有真实产品，没有空分类。
 
-> Excel 的「图片」列是空的，页面统一用工程图占位符并标注 "Photo pending"，
-> **没有使用任何假图片**。
+> **产品图片（已于 Phase 2.6 更正）**：此前称「Excel 图片列为空」是**错误**的。
+> 工作簿内实际嵌有 681 个图片文件 / 798 个图片对象，已全部提取并映射到 398 个产品
+> （`exact` 767 / `review_required` 26 / `unresolved` 5）。
+> 图片不在单元格值里，而在 OOXML 绘图层，只读 `cell.value` 看不到。
+> 完整审计见 [`excel-image-audit.md`](excel-image-audit.md)。
+> **按业务方要求，本阶段暂未把图片接入网站**，页面仍显示 "Photo pending"。
 
 ### 4. 完成了哪些页面
 
@@ -110,7 +114,7 @@ http://localhost:3000/products/BW-3005 看详情页（85 个 OE、7 条 applicat
 
 ### 8. 哪些地方还是 placeholder
 
-产品图片（Photo pending）· RFQ 邮件（展示 payload）· 占位邮箱 ·
+产品图片（已提取映射，暂未接入）· RFQ 邮件（展示 payload）· 占位邮箱 ·
 公司注册信息与联系方式 · 产能/交期/MOQ/包装规范 · 认证证书编号与范围 ·
 检测设备清单 · 公司沿革 · Blog 正文 · 70 个待确认产品类型。
 

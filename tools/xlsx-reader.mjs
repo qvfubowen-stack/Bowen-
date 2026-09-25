@@ -90,6 +90,24 @@ export function numToCol(n) {
   return s;
 }
 
+/**
+ * 解析 OOXML 关系里的相对 Target。
+ * Target 相对于「拥有该关系的部件」所在目录，而不是相对于 .rels 文件。
+ *   baseDir 'xl/worksheets', target '../drawings/drawing1.xml'
+ *     → 'xl/drawings/drawing1.xml'
+ */
+export function normalizePartPath(baseDir, target) {
+  if (!target) return null;
+  const segs = `${baseDir}/${target}`.split('/');
+  const out = [];
+  for (const s of segs) {
+    if (!s || s === '.') continue;
+    if (s === '..') out.pop();
+    else out.push(s);
+  }
+  return out.join('/');
+}
+
 export class Workbook {
   constructor(filePath) {
     this.path = filePath;
@@ -242,12 +260,17 @@ export class Workbook {
 
   #parseComments(sheetPath) {
     const map = new Map();
-    const relPath = sheetPath.replace(/^xl\//, 'xl/_rels/') + '.rels';
+    // OOXML rels 路径规则：<dir>/<name> → <dir>/_rels/<name>.rels
+    // 注意：不是把 "xl/" 替换成 "xl/_rels/"。
+    const dir = sheetPath.includes('/') ? sheetPath.slice(0, sheetPath.lastIndexOf('/')) : '';
+    const base = sheetPath.slice(sheetPath.lastIndexOf('/') + 1);
+    const relPath = `${dir}/_rels/${base}.rels`;
     const rels = this.zip.text(relPath);
     if (!rels) return map;
+    // 关系里的 Target 基准是「拥有该关系的部件」所在目录，即 sheetPath 的目录
     const m = rels.match(/Target="([^"]*comments\d*\.xml)"/);
     if (!m) return map;
-    const cPath = 'xl/' + m[1].replace(/^\/?xl\//, '').replace(/^\//, '');
+    const cPath = normalizePartPath(dir, m[1]);
     const xml = this.zip.text(cPath);
     if (!xml) return map;
     const cRe = /<comment\s+ref="([A-Z]+\d+)"[\s\S]*?<text>([\s\S]*?)<\/text>/g;

@@ -25,6 +25,12 @@ data/derived/_sheets-v2/
 # 交付物本身仍然保留在工作区，只是不进 Git 历史。
 delivery/zips/
 
+# ---- 提取出的产品图片二进制（66.5 MB，可由原始 Excel 一条命令重新生成）----
+#   node tools/extract-product-images.mjs
+# 映射文件 product-image-map.json 仍然入库（体积小、需要 diff 审阅）。
+# 图片本身仍然保留在工作区，并且会打进交付 ZIP。
+data/processed/product-images/
+
 # ---- 运行日志与临时文件 ----
 *.log
 npm-debug.log*

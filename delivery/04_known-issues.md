@@ -41,7 +41,19 @@
 | 影响 | OE 搜索会把这几个产品都列出来，不会只显示一个 |
 | 是否需要现在处理 | **不需要**。不阻塞原型开发，仅供以后人工核对 |
 
-### 1.4 【待替换】占位邮箱
+### 1.5 【需确认】产品图片的 31 张待处理
+
+| 项目 | 内容 |
+|---|---|
+| 背景 | 此前「Excel 图片列为空」的判断**有误**。工作簿内实际有 **681 个图片文件 / 798 个图片对象**，已全部提取 |
+| 已映射 | `exact` **767** 张 → 398 个产品；其中 20 个 Prototype 产品 100% 有图 |
+| 待人工确认 | **26** 张（14 张锚点行 Bowen 读不出、7 张锚点行没填 Bowen、5 张编号不在数据库） |
+| 无法映射 | **5** 张（工作表1 的 3 张列位在记录区块外；工作表2 的 2 张该表没有产品表结构）→ 标 `unresolved`，**不猜** |
+| 需要你做 | ① 确认 5 个未入库编号（38169 / 38298 / 3932 / 32603 / 32748-1）是否补入产品库；② 人工看 5 张 unresolved 图；③ 确认主图选取规则；④ 确认带第三方水印（如 GXN）的图是否可用 |
+| 产物 | `data/processed/product-images/`（798 个文件）、`data/processed/product-image-map.json` |
+| 完整报告 | [`../docs/excel-image-audit.md`](../docs/excel-image-audit.md) |
+
+### 1.6 【待替换】占位邮箱
 
 `sales@bowen-thermostat.com` 和 `quality@bowen-thermostat.com` 是**占位地址**，
 上线前必须替换为真实邮箱（Contact 页已明确标注）。
@@ -52,7 +64,7 @@
 
 | # | 位置 | 内容 | 页面如何标注 |
 |---|---|---|---|
-| 2.1 | 产品图片 | Excel「图片」列为空，**所有产品都没有照片** | 工程图占位符 + "Photo pending" 角标；**没有用任何假图片** |
+| 2.1 | 产品图片 | **已更正**：图片其实存在（681 个文件 / 798 个对象），此前「图片列为空」的判断有误。图片已提取映射，但**按业务方要求暂未接入网站** | 页面仍显示工程图占位符 + "Photo pending" 角标；详见 [`../docs/excel-image-audit.md`](../docs/excel-image-audit.md) |
 | 2.2 | RFQ 邮件 | 不真正发送邮件 | 提交后展示将传输的完整 JSON payload，并写明 "This is a prototype — nothing was emailed" |
 | 2.3 | 公司信息 | 注册全称/地址、电话、WhatsApp、微信、营业时间、地图 | Contact 页 "Company details — pending" 清单 |
 | 2.4 | 产能与交期 | 年产能、标准交期、MOQ、包装装柜规范 | Factory 页 "Placeholder — pending confirmation from the production department" |

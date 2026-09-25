@@ -1,0 +1,48 @@
+Extract and map Excel embedded product images
+
+专项审计：业务方指出最新版 Excel 里实际存在产品图片。经查证，
+此前「Excel 图片列为空、没有产品照片」的结论是**错误的**。
+
+实际情况
+- xl/media/ 内 681 个图片文件，xl/drawings/ 17 个绘图部件
+- 解析出 798 个图片锚点，全部 oneCellAnchor
+- 0 个孤立 media，91 个 media 被多个锚点复用（一图多用）
+- 图片格式 JPEG 653 / PNG 145，导出后 66.5 MB
+
+为什么旧结论会错
+- 图片不是单元格的值，而是 OOXML 浮动绘图对象，只读 cell.value 结构性地看不到
+- 图片列（B/H/A 列）的单元格确实为 null，但该位置上方浮着图片
+- 当时把「读不到」当成了「不存在」，没有去检查 xl/media 与 xl/drawings
+
+映射结果（三级判定，绝不猜）
+- exact            767 张 → 398 个产品（与数据库 product_id 一一对应）
+- review_required   26 张（14 张锚点行 Bowen 读不出 / 7 张锚点行没填 Bowen /
+                            5 张编号不在数据库：38169 38298 3932 32603 32748-1）
+- unresolved         5 张（工作表1 的 3 张列位在记录区块外；工作表2 的 2 张该表无产品表结构）
+- 20 个 Prototype 候选产品 100% 有图；searchable_noindex 350/361；blocked 0 张（预期）
+- 267 个 Bowen 有多张图，最多的 Bowen 30101 有 6 张
+
+产物
+- data/processed/product-images/       798 个文件，命名 <bowen>_<sheet>_<idx>.<ext>
+- data/processed/product-image-map.json 含 image_id / image_file / source_sheet /
+                                        anchor_cell / source_row / bowen_no / product_id /
+                                        mapping_status 等字段，另附每表汇总
+- tools/extract-product-images.mjs      提取器（幂等，原始 Excel 只读）
+- tools/verify-product-images.mjs       39 项验收测试，全部 PASS
+- docs/excel-image-audit.md             审计报告（含旧结论成因分析）
+
+顺带修掉的两个真实解析缺陷
+- xlsx-reader.mjs 的 .rels 路径规则写错（应为 <dir>/_rels/<name>.rels），
+  批注解析一直读不到，已一并修正
+- OPC 关系 Target 的相对基准应是「拥有该关系的部件」目录而非 .rels 文件目录，
+  按错基准会把 drawing 路径解析成不存在的位置，导致锚点数恒为 0
+
+文档更正
+- delivery/02、delivery/04、docs/ui-prototype-report.md、delivery/prototype-info.txt
+  中「Excel 图片列为空 / 没有产品照片」的表述已更正为事实，并指向审计报告
+
+说明
+- 按业务方要求，本阶段**未改动网站图片**，页面仍显示 Photo pending 占位
+- 图片二进制不入 Git（66.5 MB 且可由一条命令重新生成），
+  映射 JSON 与脚本入库；图片仍保留在工作区并会打进交付 ZIP
+- 同时移除了项目根目录下一份误产生的 Excel 重复副本

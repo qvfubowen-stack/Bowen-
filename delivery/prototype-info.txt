@@ -133,8 +133,12 @@
     · 数据访问层已抽象在 website/src/lib/db.ts，未来换 PostgreSQL / Supabase 只改一个函数
 
 【哪些功能还只是 placeholder】
-  · 产品图片：Excel 的「图片」列是空的，页面统一显示工程图占位符并标注
-    "Photo pending"。没有用任何假图片。
+  · 产品图片：**此前结论有误，已于 Phase 2.6 更正**。工作簿内实际嵌有
+    681 个图片文件 / 798 个图片对象（图片不在单元格值里，而在 OOXML 绘图层）。
+    已全部提取到 data/processed/product-images/，并映射到 398 个产品
+    （exact 767 / review_required 26 / unresolved 5）。
+    完整审计见 docs/excel-image-audit.md。
+    按业务方要求，本阶段暂未把图片接入网站，页面仍显示 "Photo pending" 占位符。
   · 邮件发送：RFQ 提交不真的发邮件，改为展示将传输的 JSON payload。
   · 邮箱地址：sales@bowen-thermostat.com / quality@bowen-thermostat.com 是占位邮箱，
     上线前必须替换为真实邮箱。

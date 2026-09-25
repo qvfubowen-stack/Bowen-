@@ -33,6 +33,12 @@
 | [`prototype-info.txt`](delivery/prototype-info.txt) | 一页纸信息清单 |
 | `screenshots/` | 6 张真实截图（Desktop + Mobile） |
 
+**另有专项审计：**
+
+| 文档 | 内容 |
+|---|---|
+| [`docs/excel-image-audit.md`](docs/excel-image-audit.md) | **Excel 嵌入图片审计**（Phase 2.6）：681 个图片文件 / 798 个对象，映射到 398 个产品 |
+
 ---
 
 ## 二、30 秒启动网站
@@ -175,9 +181,15 @@ B2B外贸独立站/
 │       ├── section-labels.json         识别到的 7 个人工区段标签
 │       └── stats.json                  全部统计数字
 │
+├── data/processed/                 ✅ Phase 2.6：Excel 嵌入图片
+│   ├── product-images/                 798 个图片文件（66.5 MB）
+│   └── product-image-map.json          图片 → 工作表 → 行 → Bowen No. 映射
+│
 ├── tools/                          数据处理工具链（纯 Node.js，零第三方依赖）
 │   ├── build-product-db-v2.mjs     ⭐ 数据库重建程序
 │   ├── verify-product-db-v2.mjs    ⭐ 65 项验收测试
+│   ├── extract-product-images.mjs  ⭐ Excel 嵌入图片提取（读 OOXML 绘图层）
+│   ├── verify-product-images.mjs   ⭐ 39 项图片映射验收测试
 │   ├── build-review-lists-v2.mjs   生成 3 个人工参考 Excel
 │   ├── config/product-types.mjs    ⭐ 产品类型词典 + 全部人工裁决点
 │   ├── lib/v2-layout.mjs           Excel 版式识别
@@ -206,10 +218,14 @@ node tools/build-product-db-v2.mjs
 # 2) 数据库验收测试（65 项，含 SHA-256 校验）
 node tools/verify-product-db-v2.mjs
 
-# 3) 生成人工参考 Excel
+# 3) 提取 Excel 嵌入图片并建立映射（Phase 2.6）
+node tools/extract-product-images.mjs
+node tools/verify-product-images.mjs   # 39 项验收测试
+
+# 4) 生成人工参考 Excel
 node tools/build-review-lists-v2.mjs
 
-# 4) 网站数据集验收测试（36 项）
+# 5) 网站数据集验收测试（36 项）
 cd website && node tools/verify-prototype-data.mjs
 ```
 

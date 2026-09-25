@@ -130,9 +130,14 @@
 
 > 每个分类都有真实产品，没有强行展示空分类。
 
-> ⚠️ 产品图片：Excel 的「图片」列是**空的**，没有任何产品照片。
-> 因此页面统一使用工程图占位符并明确标注 **"Photo pending"**，
-> **没有使用任何假图片**。
+> ⚠️ **产品图片（已于 Phase 2.6 更正）**：此前报告称「Excel 图片列为空、没有产品照片」，
+> **该结论错误**。工作簿内实际嵌有 **681 个图片文件 / 798 个图片对象**，可关联到 **398 个产品**。
+> 图片不在单元格值里，而是 OOXML 浮动绘图对象（`xl/drawings` + `xl/media`），
+> 只读 `cell.value` 看不到。完整审计见 [`../docs/excel-image-audit.md`](../docs/excel-image-audit.md)。
+>
+> 图片来源已提取到 `data/processed/product-images/`，映射见
+> `data/processed/product-image-map.json`（`exact` 767 / `review_required` 26 / `unresolved` 5）。
+> **按业务方要求，本阶段暂未把图片接入网站**，页面仍显示 "Photo pending" 占位符。
 
 ---
 
@@ -316,7 +321,7 @@ RFQ 明细存在浏览器 localStorage（键名 `bowen.rfq.v1`），
 
 | 位置 | Placeholder 内容 | 页面如何标注 |
 |---|---|---|
-| 产品图片 | Excel 图片列为空，全部产品无照片 | 工程图占位符 + "Photo pending" 角标 |
+| 产品图片 | 占位符（**图片其实存在，见下方说明**） | 工程图占位符 + "Photo pending" 角标 |
 | RFQ 邮件 | 不真正发送 | 提交后展示 payload，并写明 "This is a prototype — nothing was emailed" |
 | 联系邮箱 | sales@ / quality@bowen-thermostat.com | Contact 页写明「占位邮箱，上线前必须替换」 |
 | 公司信息 | 注册全称/地址、电话、WhatsApp、微信、营业时间、地图 | Contact 页 "Company details — pending" 清单 |
@@ -454,7 +459,9 @@ Chrome / Edge 按 `F12` → 点左上角设备图标（Toggle device toolbar）�
 2. **确认错位判定口径** —— 当前口径是「编号可读就标 needs_review 不阻断」，
    如需从严（凡 Bowen 字段出现尺寸/温度一律 blocked），改一行重跑即可
 3. **人工核对 125 个共享 OE** —— `review/shared-oe-across-products.xlsx`
-4. **产品照片** —— Excel 图片列为空，需要真机拍摄或提供现有图片库
+4. **产品照片** —— ~~Excel 图片列为空~~ **已更正：图片存在**。
+   已提取 798 张并映射到 398 个产品（见 `docs/excel-image-audit.md`）。
+   仍需业务方：确认主图规则、处理 26 张待确认 + 5 张无法映射、确认水印可用性。
 5. **公司信息 + 认证证书** —— 注册全称/地址/电话/邮箱、证书编号与范围、
    产能/交期/MOQ/包装规范
 6. **真实邮箱地址** —— 替换两个占位邮箱
