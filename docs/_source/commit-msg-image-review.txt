@@ -1,0 +1,53 @@
+Add manual review package for 31 ambiguous product images
+
+按业务方要求补齐此前遗漏的图片人工复核包。本阶段**不修改 website/、不接入图片、
+不部署、不重建网站 ZIP**。
+
+产物
+- docs/product-image-review-needed.md（约 1140 行）
+  逐条列出 26 张 review_required + 5 张 unresolved，含业务方要求的 9 个字段
+  （image_id / 图片文件 / 工作表 / 锚点 / 行号 / Bowen No. / product_id / 状态 /
+  原因）+ 每条「需要业务方做的决定」
+- data/processed/product-image-review/
+  contact-sheet-all-31.png       全部 31 张缩略图（总览）
+  contact-sheet-review-required.png  需确认的 26 张
+  contact-sheet-unresolved.png       无法映射的 5 张
+  contact-sheet-*.html / index.html  可浏览版本
+  images/                        31 张图片副本，命名 <image_id>_<原文件名>（3.27 MB）
+- tools/build-image-review-package.mjs  复核包生成器（幂等）
+- tools/lib/static-server.mjs / cdp-render.mjs
+  零依赖的本地静态服务器与 CDP 截图（用 Chrome 渲染 HTML 生成联系表，
+  不引入任何图像处理库）
+
+关键做法
+- 每条记录附上**原表该行原文**（OE / 车型 / 该区块的 Bowen 单元格）与
+  **锚点所属记录区块**（起始列 + 该区块的编号列），便于人工直接在 Excel 定位判断
+- 26 张按原因分三类：编号读不出 14 / 该行未填编号 7 / 编号不在库 5
+- 5 张 unresolved **不猜**：Bowen No. 与 product_id 一律留空，
+  脚本内置硬校验，一旦发现 unresolved 带了这两个字段就直接 exit 2
+- 单独列出待入库决策的 5 个编号：38169 / 38298 / 3932 / 32603 / 32748-1
+
+本轮新发现的实质问题（已写入复核清单）
+- IMG-0723 不是产品照片，而是**内部系统产品页面截图**，图中含
+  **进价 15 / 售价 19.5** 等内部价格信息 → 标记为高风险，**绝不可对外发布**，
+  并新增决策项 D5 请业务方确认处理方式
+- IMG-0780 是**手机截图**（含状态栏与相册 UI），中间嵌一张带水印的产品照
+  → 新增决策项 D6（是否需要先裁剪去界面与水印）
+- 26 张 review_required 目视质量参差：多数棚拍照带第三方品牌水印「GXN」，
+  部分为随手拍（如 IMG-0793 是产品放在纸上、背景是键盘）
+  → 新增决策项 D7 / D8（水印处理方案、是否需要重拍）
+
+铁律遵守情况
+- product-image-map.json **只读**：脚本运行前后做 SHA-256 校验并断言一致
+  （7dd8a89c…c56a2），mapping_status / bowen_no / product_id 均未改动
+- node tools/verify-product-images.mjs → **39/39 PASS**（要求 9）
+- website/ **零改动**（git status 为空）
+- 未提交与本任务无关的文件（回退了因跑数据库测试而被动更新的两个
+  纯时间戳文件 data/derived/v2/stats.json 与 website/src/data/site-facts.json）
+
+附带发现（未在本轮修复，供下一轮参考）
+- tools/verify-product-db-v2.mjs 从 tools/build-product-db-v2.mjs import
+  oeSearchKey，而后者带顶层执行代码 —— 因此**导入即触发整库重建**。
+  后果：① 跑数据库验收测试会顺带改写 stats.json / site-facts.json 的时间戳；
+  ② 该验收测试实际上是"先重建再验证自己刚生成的结果"，属于循环验证，
+  保证强度被削弱。建议下一轮把 oeSearchKey 抽到独立模块后再修。
