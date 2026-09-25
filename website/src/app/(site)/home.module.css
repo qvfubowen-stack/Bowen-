@@ -1,0 +1,356 @@
+/* ===========================================================================
+   首页 — 10 个 Screen
+   =========================================================================== */
+
+/* ---- SCREEN 1: HERO ---- */
+.hero {
+  background:
+    radial-gradient(1100px 480px at 12% -8%, rgba(37, 99, 160, 0.35) 0%, transparent 62%),
+    linear-gradient(168deg, var(--navy-900) 0%, var(--navy-800) 58%, #0e2438 100%);
+  color: rgba(255, 255, 255, 0.8);
+  padding-block: 76px 68px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.heroInner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+  gap: 56px;
+  align-items: start;
+}
+
+.heroEyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 650;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: #8dc0e6;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.heroTitle {
+  color: var(--white);
+  font-size: clamp(34px, 5.2vw, 58px);
+  font-weight: 700;
+  letter-spacing: -0.026em;
+  line-height: 1.08;
+  margin-bottom: 20px;
+}
+
+.heroLead {
+  font-size: clamp(16px, 1.7vw, 18.5px);
+  line-height: 1.66;
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 620px;
+  margin-bottom: 30px;
+}
+
+.heroSearch { margin-bottom: 30px; }
+
+.heroCtas { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* 右侧事实栏 */
+.heroFacts {
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.045);
+  backdrop-filter: blur(2px);
+}
+.heroFactGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 18px; }
+.fact { display: flex; flex-direction: column; gap: 3px; }
+.fact strong {
+  color: var(--white);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+.fact span { font-size: 12.5px; color: rgba(255, 255, 255, 0.6); line-height: 1.4; }
+.heroNote {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ---- SCREEN 2: MANUFACTURING FACTS ---- */
+.factGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--ink-200);
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.factCard {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 26px 22px;
+  background: var(--white);
+}
+.factCard strong {
+  font-size: clamp(22px, 2.4vw, 30px);
+  font-weight: 700;
+  color: var(--navy-800);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+.factCard span { font-size: 13px; color: var(--ink-600); line-height: 1.45; }
+.factCardBig strong { font-size: clamp(38px, 5vw, 56px); }
+
+/* ---- SCREEN 3: CATEGORIES ---- */
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.categoryCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  background: var(--white);
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius-lg);
+}
+.categoryPrimary {
+  border-color: var(--navy-500);
+  box-shadow: 0 0 0 1px var(--navy-500) inset;
+}
+.categoryHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.categoryCount {
+  font-size: 12.5px;
+  font-weight: 650;
+  color: var(--navy-600);
+  background: var(--navy-50);
+  border: 1px solid var(--navy-100);
+  padding: 3px 9px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.categoryDesc { font-size: 14.5px; color: var(--ink-600); line-height: 1.6; }
+
+.subList { display: flex; flex-direction: column; border-top: 1px solid var(--ink-100); }
+.subList a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 2px;
+  border-bottom: 1px solid var(--ink-100);
+  font-size: 14px;
+  color: var(--ink-700);
+}
+.subList a:hover { color: var(--navy-600); }
+.subList a span { font-weight: 650; color: var(--ink-500); }
+
+.categoryActions { margin-top: auto; padding-top: 6px; }
+.categoryFootnote {
+  margin-top: 22px;
+  font-size: 14px;
+  color: var(--ink-600);
+}
+
+/* ---- SCREEN 5: OE EXPLANATION ---- */
+.explainGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 52px;
+  align-items: start;
+}
+.wayList { margin-top: 28px; display: flex; flex-direction: column; gap: 20px; }
+.way { display: flex; gap: 16px; }
+.wayNum {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius);
+  background: var(--navy-700);
+  color: var(--white);
+  font-size: 13.5px;
+  font-weight: 700;
+  margin-top: 2px;
+}
+.way h3 { margin-bottom: 4px; }
+.way p { font-size: 14.5px; color: var(--ink-600); line-height: 1.62; }
+
+.explainAside { display: flex; flex-direction: column; gap: 16px; }
+.explainCard {
+  padding: 22px;
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius-lg);
+  background: var(--ink-50);
+}
+.explainCard h3 { margin-bottom: 14px; }
+.answerList { display: flex; flex-direction: column; }
+.answerList > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 9px 0;
+  border-bottom: 1px dashed var(--ink-200);
+}
+.answerList > div:last-child { border-bottom: none; }
+.answerList dt { font-size: 12.5px; color: var(--ink-500); text-transform: uppercase; letter-spacing: 0.03em; }
+.answerList dd { margin: 0; font-size: 14px; font-weight: 650; color: var(--ink-900); text-align: right; }
+.explainNote { margin-top: 12px; font-size: 12.5px; color: var(--ink-500); }
+
+.explainStat {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 16px 20px;
+  border-radius: var(--radius-lg);
+  background: var(--navy-800);
+  color: rgba(255, 255, 255, 0.75);
+}
+.explainStat strong { color: var(--white); font-size: 24px; font-weight: 700; letter-spacing: -0.02em; }
+.explainStat span { font-size: 12.5px; line-height: 1.45; }
+
+/* ---- SCREEN 6: FACTORY ---- */
+.processList {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  counter-reset: step;
+}
+.process {
+  padding: 26px 22px;
+  background: rgba(255, 255, 255, 0.035);
+}
+.processNum {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: #7db3dd;
+  margin-bottom: 12px;
+  letter-spacing: 0.08em;
+}
+.process h3 { margin-bottom: 8px; }
+.process p { font-size: 14px; line-height: 1.62; color: rgba(255, 255, 255, 0.7); }
+.processCta { margin-top: 28px; }
+
+/* ---- SCREEN 7: QUALITY ---- */
+.qualityGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: 52px;
+  align-items: start;
+}
+.certList { margin-top: 26px; display: flex; flex-direction: column; gap: 12px; }
+.certList li { display: flex; align-items: flex-start; gap: 12px; }
+.certMark {
+  display: grid;
+  place-items: center;
+  width: 24px; height: 24px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--ok-50);
+  color: var(--ok-600);
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 1px;
+}
+.certList strong { display: block; font-size: 15.5px; color: var(--ink-900); }
+.certList small { font-size: 12.5px; color: var(--ink-500); }
+.qualityNote { margin-top: 22px; font-size: 13px; color: var(--ink-500); line-height: 1.6; }
+
+.qualityCards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.qualityCard {
+  padding: 20px;
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+}
+.qualityCard h3 { margin-bottom: 7px; }
+.qualityCard p { font-size: 14px; color: var(--ink-600); line-height: 1.6; }
+.qualityCta { margin-top: 28px; }
+
+/* ---- SCREEN 8: R&D ---- */
+.rdGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--ink-200);
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  max-width: 900px;
+  margin-inline: auto;
+}
+.rdGrid .factCard { align-items: center; text-align: center; padding: 34px 22px; }
+.rdNote {
+  margin-top: 22px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--ink-500);
+}
+
+/* ---- SCREEN 9: FEATURED ---- */
+.featuredCta { margin-top: 30px; display: flex; justify-content: center; }
+
+/* ---- SCREEN 9b: RFQ CTA ---- */
+.rfqCta {
+  background: linear-gradient(120deg, var(--navy-800) 0%, var(--navy-700) 100%);
+  color: rgba(255, 255, 255, 0.8);
+  padding-block: 62px;
+}
+.rfqCtaInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.rfqCta h2 { color: var(--white); margin-bottom: 10px; }
+.rfqCtaLead { font-size: 15.5px; line-height: 1.62; color: rgba(255, 255, 255, 0.76); max-width: 620px; }
+.rfqCtaActions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* ---- 响应式 ---- */
+@media (max-width: 1080px) {
+  .heroInner { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .heroFacts { max-width: 560px; }
+  .factGrid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .processList { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .explainGrid, .qualityGrid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+}
+
+@media (max-width: 760px) {
+  .hero { padding-block: 52px 46px; }
+  .factGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .categoryGrid { grid-template-columns: minmax(0, 1fr); }
+  .qualityCards { grid-template-columns: minmax(0, 1fr); }
+  .rdGrid { grid-template-columns: minmax(0, 1fr); }
+  .rfqCta { padding-block: 46px; }
+  .rfqCtaInner { gap: 26px; }
+  .heroCtas .btn { flex: 1 1 auto; }
+}
+
+@media (max-width: 520px) {
+  .heroFactGrid { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .fact strong { font-size: 22px; }
+  .processList { grid-template-columns: minmax(0, 1fr); }
+  .factCard { padding: 20px 18px; }
+  .rdGrid .factCard { padding: 26px 18px; }
+}

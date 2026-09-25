@@ -1,0 +1,2 @@
+.btn { white-space: nowrap; }
+.btn[data-added] { background: var(--ok-600); border-color: var(--ok-600); }

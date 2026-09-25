@@ -1,0 +1,50 @@
+Build Bowen B2B website UI prototype
+
+Phase 3：用 Next.js 15 + React 19 + TypeScript（App Router）搭建 B2B 网站原型，
+数据全部来自 Phase 2.5 重建的产品数据库，未接入 Supabase，未上线。
+
+页面（10 个 + 404）
+- Home：按需求实现 10 个 Screen —— Hero（含 OE 搜索 + 两个 CTA）、
+  Manufacturing Facts（2009 / 10,000m² / 3,500m² / 2,000m² / 100+ 真实数字）、
+  Product Categories（Thermostats 为主）、Find by Application（73 个真实 vehicle make）、
+  OE Search Explanation、Factory（Machining / Assembly / Automated Assembly / Testing）、
+  Quality（IATF 16949 / ISO 14001 / ISO 45001，范围不夸大）、
+  R&D（29 / 16 / 5）、RFQ CTA、Footer
+- Products：OE 搜索 + Bowen 搜索 + 产品类型 + 分类 + 车型 + 发动机筛选 + 分页
+- Product Detail：Product Type + Bowen No. + OE References & Vehicle Applications 表格
+  （OE / 车型原文 / 文本中的发动机代号 / 开启温度 / 来源工作表+行号），
+  不显示 Main OE / Secondary OE，Add to RFQ + Request a Quote
+- OE Search：Exact OE Match、Matched OE、Bowen No.、Vehicle、Engine、来源行
+- RFQ：Add to RFQ 自动带入 product_id / Bowen No. / Matched OE / Vehicle / Engine，
+  完整表单 + Upload Sourcing List，提交后展示将传输的 JSON payload（原型不发邮件）
+- Factory / Quality / About Bowen / Contact；Blog 仅页面框架
+- 站点级 noindex（原型不上线）
+
+架构
+- src/lib/db.ts 是唯一数据入口，loadDataset() 是未来换 PostgreSQL / Supabase 的唯一替换点
+- 全部手写 CSS Modules，无第三方 UI 库 / 图表库 / 状态管理库
+- 数据范围：378 个可展示产品（20 个 prototype_candidate + 358 个 searchable_noindex）、
+  711 条 application、2,787 条 OE 索引；blocked 与 draft 一律不进网站数据集
+
+过程中修掉的问题
+- oe_tokens 在写 application 行时被解构掉，导致网站拿不到逐 token 的 OE
+- 网站数据集只含 20 个原型产品，分类链接与车型筛选指向空结果
+- 网站数据集的 application_ids 指向被过滤掉的记录（16 个产品 / 55 条索引悬空）
+- 空壳 application（既无 OE 也无车型）进入网站数据集
+
+验证
+- verify-prototype-data.mjs：36 / 36 PASS
+- find-overflow.mjs（CDP 真实 390px 视口）：首页 / Products / OE Search /
+  Product Detail / RFQ 横向溢出均为 0px
+- npm run typecheck：0 error
+- npm run build：成功，32 个页面（20 个产品详情页预渲染）
+
+工程化
+- 一条命令启动：npm run dev（本机无全局 npm，附 npm.cmd + tools/npm-run.mjs 兼容层）
+- 新增 website/tools/：verify-prototype-data.mjs、find-overflow.mjs、screenshot.mjs
+
+交付物
+- delivery/ 交付包：数据库报告、UI Prototype 报告、测试结果、已知问题、
+  运行指南、prototype-info.txt、6 张真实截图
+- docs/ui-prototype-report.md Phase 3 报告（简版）
+- README.md 全面更新

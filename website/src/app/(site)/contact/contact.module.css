@@ -1,0 +1,74 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.card {
+  padding: 26px;
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+}
+.cardWide { grid-column: 1 / -1; }
+.cardPlaceholder {
+  grid-column: 1 / -1;
+  border-style: dashed;
+  border-color: var(--warn-600);
+  background: var(--warn-50);
+}
+.card h2 { margin-bottom: 10px; }
+.cardBody { font-size: 14.5px; color: var(--ink-600); line-height: 1.65; max-width: 640px; }
+
+.details { margin: 18px 0 0; display: flex; flex-direction: column; }
+.details > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--ink-100);
+}
+.details > div:last-child { border-bottom: none; }
+.details dt { font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-500); flex-shrink: 0; }
+.details dd { margin: 0; font-size: 14.5px; color: var(--ink-900); text-align: right; word-break: break-word; }
+
+.quickLinks { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+
+.pendingList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 22px;
+  margin-top: 18px;
+}
+.pendingList li { font-size: 14px; color: var(--ink-700); padding-left: 16px; position: relative; }
+.pendingList li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 8px;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--warn-600);
+}
+.pendingNote { margin-top: 18px; font-size: 13px; color: var(--ink-600); font-style: italic; }
+
+.cta {
+  background: linear-gradient(120deg, var(--navy-800) 0%, var(--navy-700) 100%);
+  color: rgba(255, 255, 255, 0.8);
+  padding-block: 52px;
+}
+.ctaInner { display: flex; align-items: center; justify-content: space-between; gap: 34px; flex-wrap: wrap; }
+.cta h2 { color: var(--white); margin-bottom: 8px; }
+.cta p { font-size: 15px; color: rgba(255, 255, 255, 0.76); max-width: 560px; }
+.ctaActions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+@media (max-width: 820px) {
+  .grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 560px) {
+  .pendingList { grid-template-columns: minmax(0, 1fr); }
+  .details > div { flex-direction: column; gap: 3px; }
+  .details dd { text-align: left; }
+  .ctaInner { gap: 22px; }
+  .ctaActions { width: 100%; }
+  .ctaActions .btn { flex: 1 1 auto; }
+}

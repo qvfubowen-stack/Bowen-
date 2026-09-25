@@ -1,0 +1,51 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 22px;
+  border: 1px solid var(--navy-100);
+  border-radius: var(--radius-lg);
+  background: var(--navy-50);
+  position: sticky;
+  top: 130px;
+}
+
+.title { font-size: 18px; }
+.sub { font-size: 13.5px; color: var(--ink-600); line-height: 1.55; margin-top: -6px; }
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius);
+  background: var(--white);
+  overflow: hidden;
+}
+.preview > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 13px;
+  border-bottom: 1px solid var(--ink-100);
+}
+.preview > div:last-child { border-bottom: none; }
+.preview span { font-size: 12px; text-transform: uppercase; letter-spacing: 0.03em; color: var(--ink-500); flex-shrink: 0; }
+.preview strong { font-size: 13.5px; color: var(--ink-900); text-align: right; word-break: break-word; }
+
+.or {
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-400);
+  margin-block: -4px;
+}
+
+/* OeSearchBox 在浅色背景里的提示文字颜色 */
+.box :global(.mono) { color: var(--ink-700); }
+
+@media (max-width: 980px) {
+  .box { position: static; }
+}

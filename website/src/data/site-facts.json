@@ -14,6 +14,30 @@
    "ISO 45001"
   ]
  },
+ "prototype_product_ids": [
+  "BW-3005",
+  "BW-3051",
+  "BW-3080",
+  "BW-3004-3",
+  "BW-3061A",
+  "BW-30101",
+  "BW-3077",
+  "BW-3016",
+  "BW-3076",
+  "BW-3001",
+  "BW-3020",
+  "BW-3069",
+  "BW-3019",
+  "BW-3061",
+  "BW-3094",
+  "BW-3035",
+  "BW-3203",
+  "BW-3068",
+  "BW-31605",
+  "BW-3003-1"
+ ],
+ "prototype_product_count": 20,
+ "site_product_count": 378,
  "generated_from": "data/derived/v2/stats.json",
- "generated_at": "2026-09-25T03:56:08.038Z"
+ "generated_at": "2026-09-25T04:05:32.764Z"
 }

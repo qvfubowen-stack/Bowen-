@@ -1,0 +1,137 @@
+.twoCol {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
+}
+.prose { display: flex; flex-direction: column; gap: 14px; margin-top: 18px; }
+.prose p { font-size: 15.5px; color: var(--ink-600); line-height: 1.72; }
+
+.audienceNote {
+  margin-top: 28px;
+  padding: 22px 24px;
+  border: 1px solid var(--navy-100);
+  border-radius: var(--radius-lg);
+  background: var(--navy-50);
+}
+.audienceNote strong {
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--navy-700);
+  margin-bottom: 12px;
+}
+.audienceNote ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 18px;
+  margin-bottom: 14px;
+}
+.audienceNote li { font-size: 14px; color: var(--ink-700); padding-left: 16px; position: relative; }
+.audienceNote li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 8px;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--navy-500);
+}
+.audienceNote p { font-size: 13.5px; color: var(--ink-600); line-height: 1.62; }
+
+.side { display: flex; flex-direction: column; gap: 18px; }
+.figures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--ink-200);
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.figure { padding: 20px 18px; background: var(--white); display: flex; flex-direction: column; gap: 4px; }
+.figure strong {
+  font-size: clamp(22px, 2.6vw, 30px);
+  font-weight: 700;
+  color: var(--navy-800);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+.figure span { font-size: 12.5px; color: var(--ink-600); line-height: 1.45; }
+
+.dbCard {
+  padding: 22px;
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+}
+.dbCard h3 { margin-bottom: 10px; }
+.dbCard > p { font-size: 13.5px; color: var(--ink-600); line-height: 1.62; margin-bottom: 16px; }
+.dbStats { display: flex; flex-direction: column; margin: 0; }
+.dbStats > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--ink-100);
+}
+.dbStats > div:last-child { border-bottom: none; }
+.dbStats dt { font-size: 13px; color: var(--ink-600); }
+.dbStats dd { margin: 0; font-size: 15px; font-weight: 650; color: var(--ink-900); }
+
+/* ---- 价值观 ---- */
+.valueGrid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.value {
+  padding: 22px;
+  background: var(--white);
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius-lg);
+}
+.value h3 { margin-bottom: 9px; }
+.value p { font-size: 14px; color: var(--ink-600); line-height: 1.65; }
+
+/* ---- 占位 ---- */
+.placeholderBlock {
+  padding: 28px 30px;
+  border: 1px dashed var(--warn-600);
+  border-radius: var(--radius-lg);
+  background: var(--warn-50);
+}
+.placeholderBlock h2 { margin-bottom: 12px; }
+.placeholderBlock > p { font-size: 14.5px; color: var(--ink-600); line-height: 1.65; margin-bottom: 18px; max-width: 720px; }
+.placeholderBlock ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 22px; }
+.placeholderBlock li { font-size: 14px; color: var(--ink-700); padding-left: 16px; position: relative; }
+.placeholderBlock li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 8px;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--warn-600);
+}
+
+/* ---- CTA ---- */
+.cta {
+  background: linear-gradient(120deg, var(--navy-800) 0%, var(--navy-700) 100%);
+  color: rgba(255, 255, 255, 0.8);
+  padding-block: 52px;
+}
+.ctaInner { display: flex; align-items: center; justify-content: space-between; gap: 34px; flex-wrap: wrap; }
+.cta h2 { color: var(--white); margin-bottom: 8px; }
+.cta p { font-size: 15px; color: rgba(255, 255, 255, 0.76); max-width: 560px; }
+.ctaActions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+@media (max-width: 1080px) {
+  .twoCol { grid-template-columns: minmax(0, 1fr); gap: 34px; }
+  .valueGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .valueGrid { grid-template-columns: minmax(0, 1fr); }
+  .audienceNote ul { grid-template-columns: minmax(0, 1fr); }
+  .placeholderBlock { padding: 20px; }
+  .placeholderBlock ul { grid-template-columns: minmax(0, 1fr); }
+  .ctaInner { gap: 22px; }
+  .ctaActions { width: 100%; }
+  .ctaActions .btn { flex: 1 1 auto; }
+}

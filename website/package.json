@@ -1,0 +1,26 @@
+{
+  "name": "bowen-website",
+  "version": "0.1.0",
+  "private": true,
+  "description": "博文外贸独立站 — B2B UI Prototype（Phase 3）。本阶段为原型，未正式上线。",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "dev:host": "next dev -p 3000 -H 0.0.0.0",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "start:host": "next start -p 3000 -H 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "data:refresh": "node ../tools/build-product-db-v2.mjs && node ../tools/verify-product-db-v2.mjs"
+  },
+  "dependencies": {
+    "next": "15.1.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "@types/react": "19.0.2",
+    "@types/react-dom": "19.0.2",
+    "typescript": "5.7.2"
+  }
+}

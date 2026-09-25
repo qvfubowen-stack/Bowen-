@@ -814,14 +814,15 @@ const productRows = [...products.values()]
 
 const applicationRows = allApplications
   .map((a) => {
-    const { merged_source_records, source_sheets, blocked_reasons, oe_tokens_not_oe_like, oe_tokens, ...rest } = a;
+    // 注意：oe_tokens 必须保留 —— 网站与 OE 索引都依赖它逐个展示/匹配 OE。
+    const { merged_source_records, source_sheets, blocked_reasons, oe_tokens_not_oe_like, ...rest } = a;
     return {
       ...rest,
       merged_source_record_count: merged_source_records.length,
       merged_source_records,
       source_sheets,
       blocked_reasons,
-      oe_token_count: oe_tokens.length,
+      oe_token_count: rest.oe_tokens?.length ?? 0,
       oe_tokens_not_oe_like_count: oe_tokens_not_oe_like.length,
     };
   });
@@ -937,16 +938,47 @@ writeJson(path.join(OUT, 'rejected-label-candidates.json'), rejectedLabelCandida
 writeJson(path.join(OUT, 'auxiliary-excluded-rows.json'), auxiliaryLabelRows);
 writeJson(path.join(OUT, 'stats.json'), stats);
 
-// 网站原型直接消费的裁剪数据集
+// 网站原型直接消费的数据集。
+// 范围：全部「可对外」产品 —— prototype_candidate（首页/原型重点展示的 20 个）
+//       + searchable_noindex（数据完整、可搜索、暂不收录）。
+// draft 与 blocked 一律不进网站数据集。
 const prototypeIds = new Set(prototype.map((p) => p.product_id));
-const siteProducts = productRows.filter((p) => prototypeIds.has(p.product_id));
-const siteApps = applicationRows.filter((a) => prototypeIds.has(a.product_id) && !a.blocked);
-const siteOe = oeIndexRows.filter((e) => prototypeIds.has(e.product_id));
+const siteStatuses = new Set([STATUS.PROTOTYPE_CANDIDATE, STATUS.SEARCHABLE_NOINDEX]);
+const siteProducts = productRows
+  .filter((p) => siteStatuses.has(p.status) && !p.blocked)
+  .map((p) => {
+    // 网站数据集里只保留真正会展示的 application 引用，避免出现悬空 id。
+    // 完整引用仍在 data/derived/v2/products.json 里（包含 blocked / needs_review）。
+    const visibleApps = applicationRows.filter(
+      (a) => a.product_id === p.product_id && !a.blocked && !a.needs_review
+        // 既没有 OE 也没有车型的空壳行不在网站上展示（完整记录仍留在 data/derived/v2）
+        && (a.oe_numbers_raw || a.vehicle_application_raw),
+    );
+    return {
+      ...p,
+      application_ids: visibleApps.map((a) => a.application_id),
+      application_count: visibleApps.length,
+      searchable_application_count: visibleApps.length,
+    };
+  })
+  .filter((p) => p.application_count > 0);
+const siteProductIdSet = new Set(siteProducts.map((p) => p.product_id));
+const siteAppIds = new Set(
+  applicationRows
+    .filter((a) => siteProductIdSet.has(a.product_id) && !a.blocked && !a.needs_review
+      && (a.oe_numbers_raw || a.vehicle_application_raw))
+    .map((a) => a.application_id),
+);
+const siteApps = applicationRows.filter((a) => siteAppIds.has(a.application_id));
+const siteOe = oeIndexRows.filter((e) => siteAppIds.has(e.application_id));
 writeJson(path.join(WEBSITE_DATA, 'products.json'), siteProducts);
 writeJson(path.join(WEBSITE_DATA, 'applications.json'), siteApps);
 writeJson(path.join(WEBSITE_DATA, 'oe-index.json'), siteOe);
 writeJson(path.join(WEBSITE_DATA, 'site-facts.json'), {
   company: COMPANY_FACTS,
+  prototype_product_ids: [...prototypeIds],
+  prototype_product_count: prototypeIds.size,
+  site_product_count: siteProducts.length,
   generated_from: 'data/derived/v2/stats.json',
   generated_at: NOW,
 });
@@ -962,7 +994,7 @@ if (after !== before) {
 
 log('\n输出：');
 for (const f of fs.readdirSync(OUT)) log(`  data/derived/v2/${f}`);
-log(`  website/src/data/*.json（${siteProducts.length} 个原型产品）`);
+log(`  website/src/data/*.json（可展示产品 ${siteProducts.length} 个，其中原型重点 ${prototypeIds.size} 个）`);
 log(`\n原始记录 ${stats.raw_record_count} | 聚合产品 ${stats.product_count} | applications ${stats.application_count}`);
 log(`干净记录 ${stats.clean_application_count} | 待人工复核(错位但编号可读) ${stats.needs_review_application_count} | blocked(编号不可读) ${stats.blocked_application_count}`);
 log(`真阻断产品 ${stats.blocked_product_count} | 含部分阻断记录的产品 ${stats.products_with_blocked_applications}`);

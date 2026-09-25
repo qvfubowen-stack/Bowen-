@@ -1,0 +1,88 @@
+.wrap { width: 100%; }
+
+.form {
+  display: flex;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.large .form { max-width: 660px; }
+.compact .form { max-width: 100%; box-shadow: none; border: 1px solid var(--ink-200); border-radius: var(--radius); }
+
+.input {
+  flex: 1 1 auto;
+  min-width: 0;
+  border: none;
+  background: var(--white);
+  color: var(--ink-900);
+  font-family: var(--font-mono);
+  letter-spacing: 0.01em;
+}
+.large .input { padding: 17px 20px; font-size: 16.5px; }
+.compact .input { padding: 11px 13px; font-size: 15px; }
+.input:focus { outline: none; }
+.input::placeholder { color: var(--ink-400); font-family: var(--font-sans); }
+
+.button {
+  flex-shrink: 0;
+  border: none;
+  background: var(--accent-500);
+  color: var(--white);
+  font-weight: 650;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+.large .button { padding: 17px 30px; font-size: 16px; }
+.compact .button { padding: 11px 20px; font-size: 14.5px; }
+.button:hover { background: var(--accent-600); }
+
+.examples {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+  font-size: 13px;
+}
+.examplesLabel { color: rgba(255, 255, 255, 0.62); }
+.light .examplesLabel { color: var(--ink-500); }
+
+.example {
+  padding: 4px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--white);
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+.example:hover { background: rgba(255, 255, 255, 0.18); border-color: rgba(255, 255, 255, 0.5); }
+
+.light .example {
+  border-color: var(--ink-200);
+  background: var(--white);
+  color: var(--navy-700);
+}
+.light .example:hover { background: var(--navy-50); border-color: var(--navy-500); }
+
+.hint {
+  margin-top: 12px;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.65);
+  max-width: 620px;
+  line-height: 1.6;
+}
+.hint :global(.mono) { color: rgba(255, 255, 255, 0.92); }
+
+/* 浅色背景（Products 页头部以外的侧栏 / 卡片内） */
+.light .hint { color: var(--ink-500); }
+.light .hint :global(.mono) { color: var(--ink-900); }
+
+@media (max-width: 560px) {
+  .form { flex-direction: column; }
+  .large .button { padding: 14px 20px; }
+  .input, .button { border-radius: 0; }
+}

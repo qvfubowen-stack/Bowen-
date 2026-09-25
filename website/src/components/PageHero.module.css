@@ -1,0 +1,48 @@
+.hero {
+  background:
+    radial-gradient(900px 380px at 8% -25%, rgba(37, 99, 160, 0.3) 0%, transparent 60%),
+    var(--navy-900);
+  color: rgba(255, 255, 255, 0.78);
+  padding-block: 42px 48px;
+}
+.crumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 14px;
+}
+.crumbItem { display: inline-flex; align-items: center; gap: 8px; }
+.crumbs a { color: rgba(255, 255, 255, 0.7); }
+.crumbs a:hover { color: var(--white); }
+.sep { color: rgba(255, 255, 255, 0.3); }
+
+.eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8dc0e6;
+  margin-bottom: 12px;
+}
+.title {
+  color: var(--white);
+  font-size: clamp(28px, 4.2vw, 46px);
+  letter-spacing: -0.022em;
+  margin-bottom: 14px;
+  max-width: 900px;
+}
+.lead {
+  font-size: clamp(15px, 1.6vw, 17px);
+  line-height: 1.66;
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.74);
+}
+.cta { margin-top: 26px; display: flex; gap: 12px; flex-wrap: wrap; }
+
+@media (max-width: 620px) {
+  .hero { padding-block: 28px 34px; }
+}

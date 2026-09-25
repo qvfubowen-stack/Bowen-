@@ -1,0 +1,203 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  background: var(--white);
+  border-bottom: 1px solid var(--ink-200);
+}
+
+/* ---- 顶部信息条 ---- */
+.topbar {
+  background: var(--navy-900);
+}
+.utility {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 34px;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.72);
+  letter-spacing: 0.02em;
+}
+.utility a { color: rgba(255, 255, 255, 0.9); }
+.utility a:hover { color: var(--white); }
+.utilityRight { white-space: nowrap; }
+
+/* ---- 主条 ---- */
+.mainbarInner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-height: 70px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.brandMark {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  background: var(--navy-800);
+  color: var(--white);
+  border-radius: var(--radius);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+}
+.brandText { display: flex; flex-direction: column; line-height: 1.15; }
+.brandText strong {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--ink-900);
+}
+.brandText small {
+  font-size: 10.5px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-500);
+}
+
+/* ---- 头部搜索 ---- */
+.headerSearch {
+  display: flex;
+  flex: 1 1 auto;
+  max-width: 460px;
+  margin-left: auto;
+}
+.headerSearchInput {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 10px 13px;
+  border: 1px solid var(--ink-200);
+  border-right: none;
+  border-radius: var(--radius) 0 0 var(--radius);
+  font-size: 14.5px;
+  background: var(--ink-50);
+}
+.headerSearchInput:focus {
+  outline: none;
+  background: var(--white);
+  border-color: var(--navy-500);
+  box-shadow: inset 0 0 0 1px var(--navy-500);
+}
+.headerSearchBtn {
+  padding: 10px 18px;
+  border: 1px solid var(--navy-700);
+  background: var(--navy-700);
+  color: var(--white);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 14.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.headerSearchBtn:hover { background: var(--navy-600); border-color: var(--navy-600); }
+
+.actions { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+
+/* ---- 汉堡按钮 ---- */
+.burger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius);
+  background: var(--white);
+  cursor: pointer;
+  position: relative;
+}
+.burgerLines,
+.burgerLines::before,
+.burgerLines::after {
+  position: absolute;
+  left: 50%;
+  width: 18px;
+  height: 2px;
+  background: var(--ink-700);
+  transform: translateX(-50%);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.burgerLines { top: 50%; margin-top: -1px; }
+.burgerLines::before { content: ''; top: -6px; }
+.burgerLines::after { content: ''; top: 6px; }
+.burgerOpen { background: transparent; }
+.burgerOpen::before { transform: translateX(-50%) rotate(45deg); top: 0; }
+.burgerOpen::after { transform: translateX(-50%) rotate(-45deg); top: 0; }
+
+/* ---- 导航条 ---- */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid var(--ink-100);
+}
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.navList a {
+  display: block;
+  padding: 12px 14px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--ink-700);
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+.navList a:hover { color: var(--navy-600); }
+.navActive { color: var(--navy-700) !important; border-bottom-color: var(--accent-500) !important; }
+
+.navCta {
+  font-size: 13.5px;
+  font-weight: 650;
+  color: var(--navy-600);
+  white-space: nowrap;
+}
+
+/* ---- 移动端菜单 ---- */
+.mobileNav {
+  border-top: 1px solid var(--ink-200);
+  background: var(--white);
+  padding: 14px var(--gutter) 20px;
+}
+.mobileSearch { display: flex; margin-bottom: 14px; }
+.mobileSearch .headerSearchInput { border-right: none; }
+.mobileNav ul { display: flex; flex-direction: column; }
+.mobileNav li a {
+  display: block;
+  padding: 12px 4px;
+  border-bottom: 1px solid var(--ink-100);
+  font-size: 15.5px;
+  font-weight: 600;
+  color: var(--ink-900);
+}
+
+@media (max-width: 1080px) {
+  .headerSearch { max-width: 320px; }
+  .navCta { display: none; }
+}
+
+@media (max-width: 860px) {
+  .mainbarInner { min-height: 62px; gap: 12px; }
+  .headerSearch { display: none; }
+  .burger { display: block; }
+  .rfqBtn { padding: 8px 12px; font-size: 13.5px; }
+  .nav { display: none; }
+  .utility { font-size: 11.5px; }
+  .utility span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+}
+
+@media (max-width: 420px) {
+  .brandText small { display: none; }
+  .rfqBtn { display: none; }
+}

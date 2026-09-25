@@ -1,0 +1,156 @@
+博文外贸独立站 — Bowen B2B Website Prototype V1
+信息清单（prototype-info.txt）
+================================================================================
+
+【项目当前版本】
+  Bowen-Website-Prototype-V1
+  阶段：Phase 2.5（产品数据库重建）+ Phase 3（网站 UI Prototype）
+  状态：原型已完成，等待业务方验收。**尚未正式上线**，未接正式域名，未接 Supabase。
+
+【Git commit hash】
+  9f5d193adf0e78fa8628c330a4ca18f9f42b99db   (short: 9f5d193)
+  分支：main
+  说明：这是 Phase 2.5 完成时的提交（"Rebuild product database with application-level OE mapping"）。
+        Phase 3 的提交在本次交付时紧随其后创建，提交信息为
+        "Build Bowen B2B website UI prototype"。
+        用 `git log --oneline -3` 可以看到两个提交。
+
+【使用的最新版 Excel 文件名】
+  data/raw/产品信息表1(1).xlsx
+  SHA-256: 79d5995d437ea5a4393faba87f237ea59f1361f51f22d6d5b28eb34bcd144a12
+  大小:    51,576,159 字节
+  工作表:  17 个（综合产品信息表 + 15 个车型系列表 + 工作表1/工作表2 辅助表）
+
+  原始文件只读，程序绝不写入。每次运行都会校验 SHA-256，不一致就直接中止。
+
+【本地启动命令】
+  方式一（推荐，一条命令）：
+      cd website
+      npm run dev
+
+  方式二（本机没装 npm 时同样可用）：
+      cd website
+      node tools/npm-run.mjs dev
+
+  方式三（已装 pnpm）：
+      cd website
+      pnpm run dev
+
+  手机端在局域网内访问：
+      cd website
+      npm run dev:host
+      然后用手机浏览器打开 http://<你电脑的局域网IP>:3000
+
+  生产模式（可选，验证构建产物）：
+      cd website
+      npm run build
+      npm start
+
+  注意：首次运行前需要安装依赖（仓库不含 node_modules）：
+      cd website
+      npm install          （或 pnpm install）
+
+【本地访问地址】
+  http://localhost:3000
+  开发服务器默认端口 3000（package.json 里固定 -p 3000）。
+
+【用于演示 OE Search 的真实 OE Number（全部来自真实数据）】
+  1) 25500-35540  →  Bowen 3503 / 3004-5 / 3004-3     （4 条精确命中，3 个产品）
+  2) 2550035540   →  Bowen 3503 / 3004-5 / 3004-3     （与上一条结果完全相同，用来演示「忽略短横线」）
+  3) 4711306950   →  Bowen 3005                       （3 条精确命中，1 个产品）
+  4) 056121113D   →  Bowen 3001                       （2 条精确命中）
+  5) 9091603092   →  Bowen 3076                       （1 条精确命中）
+  6) S13069010-37K → Bowen 3016                       （2 条精确命中）
+
+  推荐演示顺序：
+    先搜 25500-35540，再搜 2550035540 —— 两次结果完全一致，
+    证明「忽略大小写 / 空格 / 短横线 / 斜线」的标准化检索生效。
+    然后搜 4711306950，展示一个 OE 命中多个 application（带车型与发动机上下文）。
+
+  直接在地址栏访问：
+    http://localhost:3000/oe-search?q=4711306950
+    http://localhost:3000/oe-search?q=25500-35540
+
+【对应 Bowen No.】
+  2550035540 / 25500-35540 → 3503、3004-5、3004-3
+  4711306950               → 3005
+  056121113D               → 3001
+  9091603092               → 3076
+  S13069010-37K            → 3016
+
+  产品详情页可直接打开：
+    http://localhost:3000/products/BW-3005     （Bowen 3005，85 个 OE，7 条 application）
+
+【当前 Prototype 使用了多少个真实产品】
+  · 网站可搜索 / 可浏览的真实产品：378 个（全部来自真实数据，涵盖 4 个产品分类）
+      其中 20 个为 prototype_candidate（首页重点展示），358 个为 searchable_noindex
+  · 网站数据集构成：711 条 application / 2,787 条 OE 索引 / 277 个产品有多个 OE
+  · 完整产品数据库（含未上线状态）：451 个产品 / 802 条 application / 3,024 条 OE 索引
+
+  按网站产品架构分布（全部为真实产品，无空分类）：
+      Thermostats（核心）      259 个
+      Automotive Switches       75 个（热敏 4 / 机油压力 37 / 刹车灯 17 / 倒车灯 17）
+      Temperature Sensors       41 个
+      Related Cooling Parts      3 个
+
+  为什么首页重点展示 20 个：需求要求从信息最完整的数据里挑 15–20 个真实产品作为
+  prototype_candidate。这 20 个产品合计 81 条 application、758 条 OE 索引记录。
+  23 个疑似字段错位的产品 blocked，47 个数据不足的产品 draft，
+  这两类**完全不对外展示**，也没有出现在网站数据集里。
+
+【哪些功能已经完成】
+  数据库层
+    · 两层结构：Products（451）+ Product Applications（802）+ OE Search Index（3,024）
+    · 一条 Excel 记录 = 一条 application，OE 与车型/发动机的行级关系完整保留
+    · product_type 全部来自人工标注（区段标签 / 审核表确认 / 变体继承），自动猜 = 0
+    · Thermostat 四种写法统一，product_subtype = null 且不阻止上线
+    · 同一 Bowen 多 OE 视为正常（321 个产品），无 main/primary/secondary OE 概念
+    · 一个 OE 对多个 Bowen 全部保留，只生成人工参考清单（125 个 OE）
+    · blocked 数据隔离，保留原始来源
+    · 验收测试 65 项全部通过
+
+  网站层（Next.js 15 + TypeScript，App Router）
+    · 首页 10 个 Screen 全部完成（Hero / Manufacturing Facts / Product Categories /
+      Find by Application / OE Search Explanation / Factory / Quality / R&D /
+      RFQ CTA / Footer）
+    · Products 列表页：OE 或 Bowen 搜索 + 产品类型筛选 + 分类筛选 + 车型筛选 +
+      发动机筛选 + 分页
+    · Product Detail：产品图占位、Product Type、Bowen No.、
+      OE References & Vehicle Applications 表格（OE / 车型 / 文本中的发动机代号 /
+      开启温度 / 来源工作表+行号）、Add to RFQ、Request a Quote
+    · OE Search 结果页：Exact OE Match 标记、Matched OE、Bowen No.、Vehicle、Engine、
+      Product Type、来源行、跳转详情页、直接加入 RFQ
+    · RFQ 流程：Add to RFQ 自动带入 product_id / Bowen No. / Matched OE / Vehicle / Engine，
+      表单含 Name / Company / Country / Email / WhatsApp·Phone / Quantity / Message /
+      Upload Sourcing List，提交后展示将传输的完整数据 payload
+      （原型不发邮件，但数据流全程可验证）
+    · Factory / Quality / About Bowen / Contact 页面完成
+    · Blog 仅页面框架（按需求，本阶段不批量生成 SEO 内容）
+    · 响应式：Desktop / Tablet / Mobile 三种宽度实测无横向溢出
+    · 站点级 noindex（原型不上线、不被爬虫收录）
+    · 数据访问层已抽象在 website/src/lib/db.ts，未来换 PostgreSQL / Supabase 只改一个函数
+
+【哪些功能还只是 placeholder】
+  · 产品图片：Excel 的「图片」列是空的，页面统一显示工程图占位符并标注
+    "Photo pending"。没有用任何假图片。
+  · 邮件发送：RFQ 提交不真的发邮件，改为展示将传输的 JSON payload。
+  · 邮箱地址：sales@bowen-thermostat.com / quality@bowen-thermostat.com 是占位邮箱，
+    上线前必须替换为真实邮箱。
+  · 公司详细信息：注册全称/地址、电话与 WhatsApp、微信、营业时间、地图位置
+    均未发布，Contact 页明确列出待补清单。
+  · 产能与交期：年产能、标准交期、MOQ、包装与装柜规范未发布，
+    Factory 页明确列为待生产部门确认。
+  · 认证范围：只写三个体系名称（IATF 16949 / ISO 14001 / ISO 45001），
+    证书编号与认证范围待质量部提供，页面明确说明不夸大范围。
+  · 检测设备清单：Quality 页列出待补项，未编造设备型号。
+  · About 公司沿革、员工人数、出口市场、客户见证：列为待补，未编造。
+  · Blog：只有 6 个计划选题，没有文章正文。
+  · 70 个产品类型待业务方确认（已生成 review/product-type-unconfirmed.xlsx）。
+
+【本阶段严格遵守的禁令】
+  未购买域名 · 未绑定正式域名 · 未正式发布 · 未接 Supabase · 无支付系统 ·
+  无购物车 · 无用户注册 · 未批量生成 SEO 页面 · 未生成 AI Blog ·
+  无自动报价 · 未修改原始 Excel · 未删除任何 OE · 未选择 Main OE ·
+  未猜 product_type
+
+================================================================================
