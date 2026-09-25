@@ -1,0 +1,35 @@
+Rebuild product database with application-level OE mapping
+
+把产品数据库从「一个产品一行、OE 与车型被拍平」的旧结构，重建为两层结构：
+Products（451）+ Product Applications（802）+ OE Search Index（3024）。
+
+数据源换成业务方最新版《产品信息表1(1).xlsx》（SHA-256 冻结，只读）。
+
+核心裁决
+- 每条 Excel 记录 = 一条 application，同时保留该行的 OE 整格原文与车型/发动机整格原文。
+  最新版 Excel 没有行级 OE↔Engine 对应，因此不做任何 1:1 配对，避免凭空造关系。
+- product_type 只认人工标注：综合产品信息表的 7 个区段标签（按行向下连续适用）、
+  业务方在 Phase 2 审核表逐行确认的 3 个产品、变体编号继承基础编号的分类。
+  自动猜 product_type = 0；70 个无人工证据的产品保持 null + review_required。
+- Thermostat / Automotive Thermostat / Thermostat Insert / Thermostat Assembly 统一为
+  Thermostat，product_subtype = null 且不阻止上线；原始写法保留在 product_type_raw_labels。
+- 同一 Bowen 多个 OE 不再是冲突（321 个产品），全库无 main/primary/secondary OE 字段。
+- 125 个 OE 对应多个 Bowen，全部保留，只生成人工参考清单，不阻塞 Prototype。
+- 错位数据两级处理：编号可读 → needs_review（错位原文原样保留、不阻断）；
+  编号不可读 → blocked（23 条，隔离于产品列表 / OE 搜索 / Prototype 之外）。
+
+过程中修掉的 4 个真实缺陷
+1. 区段标签只作用于自己所在的列块，漏掉综合表右半区 141 个产品
+2. ensureProduct 被调用两次，产生 60 个空壳重复产品
+3. blocked 记录被 continue 静默丢弃，没有入库
+4. 辅助表编号列里的天博编号被误当成产品类型标签
+
+验收
+- tools/verify-product-db-v2.mjs：65 项测试全部 PASS（含业务方指定的 TEST 1–7）
+- 原始 Excel SHA-256 运行前后一致
+- 状态模型 prototype_candidate 20 / searchable_noindex 361 / draft 47 / blocked 23 / published 0
+
+产物
+- data/derived/v2/*.json、website/src/data/*.json（Prototype 20 个产品）
+- review/shared-oe-across-products.xlsx、product-type-unconfirmed.xlsx、row-misalignment-v2.xlsx
+- docs/database-v2-migration-report.md（中文迁移报告）

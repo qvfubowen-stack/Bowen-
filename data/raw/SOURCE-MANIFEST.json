@@ -1,0 +1,20 @@
+{
+  "note": "冻结清单：data/raw 下的原始资料只读，程序绝不写入。任何字节变化都会让自动测试失败。",
+  "frozen_at": "2026-01-01",
+  "sources": {
+    "product_excel_v2": {
+      "path": "data/raw/产品信息表1(1).xlsx",
+      "sha256": "79d5995d437ea5a4393faba87f237ea59f1361f51f22d6d5b28eb34bcd144a12",
+      "bytes": 51576159,
+      "role": "当前产品分类的 Source of Truth（业务方最新版）",
+      "received_from_user_at": "本阶段（Phase 2.5）"
+    },
+    "product_excel_v1": {
+      "path": "data/raw/产品信息表1_英文版.xlsx",
+      "sha256": "22da11156fa4eb82a5b88c520263b06d56c39e0c291c3ed8952edccb1e8a062f",
+      "bytes": 48679954,
+      "role": "历史版本（Phase 1/2 使用），仅作追溯，不再作为分类依据",
+      "superseded_by": "product_excel_v2"
+    }
+  }
+}

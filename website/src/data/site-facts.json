@@ -1,0 +1,19 @@
+{
+ "company": {
+  "since_year": 2009,
+  "manufacturing_base_m2": 10000,
+  "production_workshop_m2": 3500,
+  "temperature_controlled_workshop_m2": 2000,
+  "production_equipment_count": 100,
+  "rd_projects": 29,
+  "patents": 16,
+  "software_copyrights": 5,
+  "certifications": [
+   "IATF 16949",
+   "ISO 14001",
+   "ISO 45001"
+  ]
+ },
+ "generated_from": "data/derived/v2/stats.json",
+ "generated_at": "2026-09-25T03:56:08.038Z"
+}

@@ -1,0 +1,4095 @@
+[
+ {
+  "oe_search_key": "014919361",
+  "product_count": 3,
+  "product_ids": [
+   "BW-6001",
+   "BW-6002",
+   "BW-UNRESOLVED-0008"
+  ],
+  "bowen_nos": [
+   "6001",
+   "6002",
+   "UNRESOLVED-0008"
+  ],
+  "oe_numbers_raw": [
+   "014919361"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00371",
+    "product_id": "BW-6001",
+    "source_sheet": "综合产品信息表",
+    "source_row": 198
+   },
+   {
+    "application_id": "APP-00372",
+    "product_id": "BW-6002",
+    "source_sheet": "综合产品信息表",
+    "source_row": 198
+   },
+   {
+    "application_id": "APP-00423",
+    "product_id": "BW-UNRESOLVED-0008",
+    "source_sheet": "大众系列",
+    "source_row": 27
+   }
+  ]
+ },
+ {
+  "oe_search_key": "084941521",
+  "product_count": 3,
+  "product_ids": [
+   "BW-6001",
+   "BW-6002",
+   "BW-UNRESOLVED-0008"
+  ],
+  "bowen_nos": [
+   "6001",
+   "6002",
+   "UNRESOLVED-0008"
+  ],
+  "oe_numbers_raw": [
+   "084941521"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00371",
+    "product_id": "BW-6001",
+    "source_sheet": "综合产品信息表",
+    "source_row": 198
+   },
+   {
+    "application_id": "APP-00372",
+    "product_id": "BW-6002",
+    "source_sheet": "综合产品信息表",
+    "source_row": 198
+   },
+   {
+    "application_id": "APP-00423",
+    "product_id": "BW-UNRESOLVED-0008",
+    "source_sheet": "大众系列",
+    "source_row": 27
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1014944100",
+  "product_count": 3,
+  "product_ids": [
+   "BW-3005",
+   "BW-3061",
+   "BW-3061A"
+  ],
+  "bowen_nos": [
+   "3005",
+   "3061",
+   "3061A"
+  ],
+  "oe_numbers_raw": [
+   "1014944100"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00005",
+    "product_id": "BW-3005",
+    "source_sheet": "综合产品信息表",
+    "source_row": 6
+   },
+   {
+    "application_id": "APP-00216",
+    "product_id": "BW-3061A",
+    "source_sheet": "综合产品信息表",
+    "source_row": 111
+   },
+   {
+    "application_id": "APP-00388",
+    "product_id": "BW-3005",
+    "source_sheet": "比亚迪系列",
+    "source_row": 3
+   },
+   {
+    "application_id": "APP-00391",
+    "product_id": "BW-3061",
+    "source_sheet": "比亚迪系列",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00458",
+    "product_id": "BW-3005",
+    "source_sheet": "三菱系列",
+    "source_row": 3
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1302167",
+  "product_count": 3,
+  "product_ids": [
+   "BW-3020",
+   "BW-33910",
+   "BW-3548"
+  ],
+  "bowen_nos": [
+   "3020",
+   "33910",
+   "3548"
+  ],
+  "oe_numbers_raw": [
+   "1302167"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00021",
+    "product_id": "BW-3020",
+    "source_sheet": "综合产品信息表",
+    "source_row": 14
+   },
+   {
+    "application_id": "APP-00124",
+    "product_id": "BW-3548",
+    "source_sheet": "综合产品信息表",
+    "source_row": 65
+   },
+   {
+    "application_id": "APP-00240",
+    "product_id": "BW-33910",
+    "source_sheet": "综合产品信息表",
+    "source_row": 124
+   },
+   {
+    "application_id": "APP-00513",
+    "product_id": "BW-3020",
+    "source_sheet": "福特系列",
+    "source_row": 3
+   },
+   {
+    "application_id": "APP-00517",
+    "product_id": "BW-33910",
+    "source_sheet": "福特系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1306010A01",
+  "product_count": 3,
+  "product_ids": [
+   "BW-3004--4",
+   "BW-3004-4",
+   "BW-3048"
+  ],
+  "bowen_nos": [
+   "3004--4",
+   "3004-4",
+   "3048"
+  ],
+  "oe_numbers_raw": [
+   "1306010A01"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00048",
+    "product_id": "BW-3048",
+    "source_sheet": "综合产品信息表",
+    "source_row": 27
+   },
+   {
+    "application_id": "APP-00140",
+    "product_id": "BW-3004-4",
+    "source_sheet": "综合产品信息表",
+    "source_row": 73
+   },
+   {
+    "application_id": "APP-00435",
+    "product_id": "BW-3004--4",
+    "source_sheet": "长安系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1355791",
+  "product_count": 3,
+  "product_ids": [
+   "BW-3020",
+   "BW-33910",
+   "BW-3548"
+  ],
+  "bowen_nos": [
+   "3020",
+   "33910",
+   "3548"
+  ],
+  "oe_numbers_raw": [
+   "1355791"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00021",
+    "product_id": "BW-3020",
+    "source_sheet": "综合产品信息表",
+    "source_row": 14
+   },
+   {
+    "application_id": "APP-00124",
+    "product_id": "BW-3548",
+    "source_sheet": "综合产品信息表",
+    "source_row": 65
+   },
+   {
+    "application_id": "APP-00240",
+    "product_id": "BW-33910",
+    "source_sheet": "综合产品信息表",
+    "source_row": 124
+   },
+   {
+    "application_id": "APP-00513",
+    "product_id": "BW-3020",
+    "source_sheet": "福特系列",
+    "source_row": 3
+   },
+   {
+    "application_id": "APP-00517",
+    "product_id": "BW-33910",
+    "source_sheet": "福特系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1723001",
+  "product_count": 3,
+  "product_ids": [
+   "BW-3061",
+   "BW-3061A",
+   "BW-3521"
+  ],
+  "bowen_nos": [
+   "3061",
+   "3061A",
+   "3521"
+  ],
+  "oe_numbers_raw": [
+   "1723001"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00105",
+    "product_id": "BW-3521",
+    "source_sheet": "综合产品信息表",
+    "source_row": 56
+   },
+   {
+    "application_id": "APP-00216",
+    "product_id": "BW-3061A",
+    "source_sheet": "综合产品信息表",
+    "source_row": 111
+   },
+   {
+    "application_id": "APP-00391",
+    "product_id": "BW-3061",
+    "source_sheet": "比亚迪系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1723006",
+  "product_count": 3,
+  "product_ids": [
+   "BW-3061",
+   "BW-3061A",
+   "BW-3521"
+  ],
+  "bowen_nos": [
+   "3061",
+   "3061A",
+   "3521"
+  ],
+  "oe_numbers_raw": [
+   "1723006"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00105",
+    "product_id": "BW-3521",
+    "source_sheet": "综合产品信息表",
+    "source_row": 56
+   },
+   {
+    "application_id": "APP-00216",
+    "product_id": "BW-3061A",
+    "source_sheet": "综合产品信息表",
+    "source_row": 111
+   },
+   {
+    "application_id": "APP-00391",
+    "product_id": "BW-3061",
+    "source_sheet": "比亚迪系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1X4Z8575B",
+  "product_count": 3,
+  "product_ids": [
+   "BW-3203",
+   "BW-32138",
+   "BW-33663-1"
+  ],
+  "bowen_nos": [
+   "3203",
+   "32138",
+   "33663-1"
+  ],
+  "oe_numbers_raw": [
+   "1X4Z8575B"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00180",
+    "product_id": "BW-3203",
+    "source_sheet": "综合产品信息表",
+    "source_row": 93
+   },
+   {
+    "application_id": "APP-00672",
+    "product_id": "BW-32138",
+    "source_sheet": "工作表1",
+    "source_row": 137
+   },
+   {
+    "application_id": "APP-00704",
+    "product_id": "BW-33663-1",
+    "source_sheet": "工作表1",
+    "source_row": 179
+   }
+  ]
+ },
+ {
+  "oe_search_key": "21200AA072",
+  "product_count": 3,
+  "product_ids": [
+   "BW-3023",
+   "BW-3069",
+   "BW-38282"
+  ],
+  "bowen_nos": [
+   "3023",
+   "3069",
+   "38282"
+  ],
+  "oe_numbers_raw": [
+   "21200AA072"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00024",
+    "product_id": "BW-3023",
+    "source_sheet": "综合产品信息表",
+    "source_row": 15
+   },
+   {
+    "application_id": "APP-00062",
+    "product_id": "BW-3069",
+    "source_sheet": "综合产品信息表",
+    "source_row": 34
+   },
+   {
+    "application_id": "APP-00428",
+    "product_id": "BW-3069",
+    "source_sheet": "吉利哈弗系列",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00776",
+    "product_id": "BW-38282",
+    "source_sheet": "工作表1",
+    "source_row": 251
+   }
+  ]
+ },
+ {
+  "oe_search_key": "25199828",
+  "product_count": 3,
+  "product_ids": [
+   "BW-3033",
+   "BW-3033--1",
+   "BW-3033-Z"
+  ],
+  "bowen_nos": [
+   "3033",
+   "3033--1",
+   "3033-Z"
+  ],
+  "oe_numbers_raw": [
+   "25199828"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00032",
+    "product_id": "BW-3033",
+    "source_sheet": "综合产品信息表",
+    "source_row": 19
+   },
+   {
+    "application_id": "APP-00474",
+    "product_id": "BW-3033--1",
+    "source_sheet": "通用系列",
+    "source_row": 3
+   },
+   {
+    "application_id": "APP-00697",
+    "product_id": "BW-3033-Z",
+    "source_sheet": "工作表1",
+    "source_row": 172
+   }
+  ]
+ },
+ {
+  "oe_search_key": "2550035530",
+  "product_count": 3,
+  "product_ids": [
+   "BW-3004-3",
+   "BW-3004-5",
+   "BW-3503"
+  ],
+  "bowen_nos": [
+   "3004-3",
+   "3004-5",
+   "3503"
+  ],
+  "oe_numbers_raw": [
+   "25500-35530",
+   "2550035530"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00548",
+    "product_id": "BW-3004-5",
+    "source_sheet": "工作表1",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00597",
+    "product_id": "BW-3004-3",
+    "source_sheet": "工作表1",
+    "source_row": 62
+   },
+   {
+    "application_id": "APP-00734",
+    "product_id": "BW-3503",
+    "source_sheet": "工作表1",
+    "source_row": 209
+   }
+  ]
+ },
+ {
+  "oe_search_key": "2550035540",
+  "product_count": 3,
+  "product_ids": [
+   "BW-3004-3",
+   "BW-3004-5",
+   "BW-3503"
+  ],
+  "bowen_nos": [
+   "3004-3",
+   "3004-5",
+   "3503"
+  ],
+  "oe_numbers_raw": [
+   "2550035540",
+   "25500-35540"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00089",
+    "product_id": "BW-3503",
+    "source_sheet": "综合产品信息表",
+    "source_row": 48
+   },
+   {
+    "application_id": "APP-00510",
+    "product_id": "BW-3503",
+    "source_sheet": "日系",
+    "source_row": 12
+   },
+   {
+    "application_id": "APP-00548",
+    "product_id": "BW-3004-5",
+    "source_sheet": "工作表1",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00597",
+    "product_id": "BW-3004-3",
+    "source_sheet": "工作表1",
+    "source_row": 62
+   }
+  ]
+ },
+ {
+  "oe_search_key": "30711785",
+  "product_count": 3,
+  "product_ids": [
+   "BW-3020",
+   "BW-33910",
+   "BW-3548"
+  ],
+  "bowen_nos": [
+   "3020",
+   "33910",
+   "3548"
+  ],
+  "oe_numbers_raw": [
+   "30711785"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00021",
+    "product_id": "BW-3020",
+    "source_sheet": "综合产品信息表",
+    "source_row": 14
+   },
+   {
+    "application_id": "APP-00124",
+    "product_id": "BW-3548",
+    "source_sheet": "综合产品信息表",
+    "source_row": 65
+   },
+   {
+    "application_id": "APP-00240",
+    "product_id": "BW-33910",
+    "source_sheet": "综合产品信息表",
+    "source_row": 124
+   },
+   {
+    "application_id": "APP-00513",
+    "product_id": "BW-3020",
+    "source_sheet": "福特系列",
+    "source_row": 3
+   },
+   {
+    "application_id": "APP-00517",
+    "product_id": "BW-33910",
+    "source_sheet": "福特系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "31251245",
+  "product_count": 3,
+  "product_ids": [
+   "BW-3020",
+   "BW-33910",
+   "BW-3548"
+  ],
+  "bowen_nos": [
+   "3020",
+   "33910",
+   "3548"
+  ],
+  "oe_numbers_raw": [
+   "31251245"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00021",
+    "product_id": "BW-3020",
+    "source_sheet": "综合产品信息表",
+    "source_row": 14
+   },
+   {
+    "application_id": "APP-00124",
+    "product_id": "BW-3548",
+    "source_sheet": "综合产品信息表",
+    "source_row": 65
+   },
+   {
+    "application_id": "APP-00240",
+    "product_id": "BW-33910",
+    "source_sheet": "综合产品信息表",
+    "source_row": 124
+   },
+   {
+    "application_id": "APP-00513",
+    "product_id": "BW-3020",
+    "source_sheet": "福特系列",
+    "source_row": 3
+   },
+   {
+    "application_id": "APP-00517",
+    "product_id": "BW-33910",
+    "source_sheet": "福特系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "4M5G8575FC",
+  "product_count": 3,
+  "product_ids": [
+   "BW-3020",
+   "BW-33910",
+   "BW-3548"
+  ],
+  "bowen_nos": [
+   "3020",
+   "33910",
+   "3548"
+  ],
+  "oe_numbers_raw": [
+   "4M5G8575FC"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00021",
+    "product_id": "BW-3020",
+    "source_sheet": "综合产品信息表",
+    "source_row": 14
+   },
+   {
+    "application_id": "APP-00124",
+    "product_id": "BW-3548",
+    "source_sheet": "综合产品信息表",
+    "source_row": 65
+   },
+   {
+    "application_id": "APP-00240",
+    "product_id": "BW-33910",
+    "source_sheet": "综合产品信息表",
+    "source_row": 124
+   },
+   {
+    "application_id": "APP-00513",
+    "product_id": "BW-3020",
+    "source_sheet": "福特系列",
+    "source_row": 3
+   },
+   {
+    "application_id": "APP-00517",
+    "product_id": "BW-33910",
+    "source_sheet": "福特系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "55578419",
+  "product_count": 3,
+  "product_ids": [
+   "BW-3033",
+   "BW-3033--1",
+   "BW-3033-Z"
+  ],
+  "bowen_nos": [
+   "3033",
+   "3033--1",
+   "3033-Z"
+  ],
+  "oe_numbers_raw": [
+   "55578419"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00032",
+    "product_id": "BW-3033",
+    "source_sheet": "综合产品信息表",
+    "source_row": 19
+   },
+   {
+    "application_id": "APP-00474",
+    "product_id": "BW-3033--1",
+    "source_sheet": "通用系列",
+    "source_row": 3
+   },
+   {
+    "application_id": "APP-00697",
+    "product_id": "BW-3033-Z",
+    "source_sheet": "工作表1",
+    "source_row": 172
+   }
+  ]
+ },
+ {
+  "oe_search_key": "938103K000",
+  "product_count": 3,
+  "product_ids": [
+   "BW-5016",
+   "BW-5016B",
+   "BW-5018"
+  ],
+  "bowen_nos": [
+   "5016",
+   "5016B",
+   "5018"
+  ],
+  "oe_numbers_raw": [
+   "938103K000"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00366",
+    "product_id": "BW-5016B",
+    "source_sheet": "综合产品信息表",
+    "source_row": 194
+   },
+   {
+    "application_id": "APP-00367",
+    "product_id": "BW-5018",
+    "source_sheet": "综合产品信息表",
+    "source_row": 194
+   },
+   {
+    "application_id": "APP-00512",
+    "product_id": "BW-5016",
+    "source_sheet": "日系",
+    "source_row": 15
+   }
+  ]
+ },
+ {
+  "oe_search_key": "96984104",
+  "product_count": 3,
+  "product_ids": [
+   "BW-3033",
+   "BW-3033--1",
+   "BW-3033-Z"
+  ],
+  "bowen_nos": [
+   "3033",
+   "3033--1",
+   "3033-Z"
+  ],
+  "oe_numbers_raw": [
+   "96984104"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00032",
+    "product_id": "BW-3033",
+    "source_sheet": "综合产品信息表",
+    "source_row": 19
+   },
+   {
+    "application_id": "APP-00474",
+    "product_id": "BW-3033--1",
+    "source_sheet": "通用系列",
+    "source_row": 3
+   },
+   {
+    "application_id": "APP-00697",
+    "product_id": "BW-3033-Z",
+    "source_sheet": "工作表1",
+    "source_row": 172
+   }
+  ]
+ },
+ {
+  "oe_search_key": "LF7015170",
+  "product_count": 3,
+  "product_ids": [
+   "BW-3020",
+   "BW-33910",
+   "BW-3548"
+  ],
+  "bowen_nos": [
+   "3020",
+   "33910",
+   "3548"
+  ],
+  "oe_numbers_raw": [
+   "LF7015170",
+   "LF70-15-170"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00021",
+    "product_id": "BW-3020",
+    "source_sheet": "综合产品信息表",
+    "source_row": 14
+   },
+   {
+    "application_id": "APP-00039",
+    "product_id": "BW-3020",
+    "source_sheet": "综合产品信息表",
+    "source_row": 23
+   },
+   {
+    "application_id": "APP-00124",
+    "product_id": "BW-3548",
+    "source_sheet": "综合产品信息表",
+    "source_row": 65
+   },
+   {
+    "application_id": "APP-00240",
+    "product_id": "BW-33910",
+    "source_sheet": "综合产品信息表",
+    "source_row": 124
+   },
+   {
+    "application_id": "APP-00513",
+    "product_id": "BW-3020",
+    "source_sheet": "福特系列",
+    "source_row": 3
+   },
+   {
+    "application_id": "APP-00517",
+    "product_id": "BW-33910",
+    "source_sheet": "福特系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "02K945415C",
+  "product_count": 2,
+  "product_ids": [
+   "BW-6004",
+   "BW-UNRESOLVED-0009"
+  ],
+  "bowen_nos": [
+   "6004",
+   "UNRESOLVED-0009"
+  ],
+  "oe_numbers_raw": [
+   "02K945415C"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00374",
+    "product_id": "BW-6004",
+    "source_sheet": "综合产品信息表",
+    "source_row": 199
+   },
+   {
+    "application_id": "APP-00425",
+    "product_id": "BW-UNRESOLVED-0009",
+    "source_sheet": "大众系列",
+    "source_row": 28
+   }
+  ]
+ },
+ {
+  "oe_search_key": "02K945415D",
+  "product_count": 2,
+  "product_ids": [
+   "BW-6004",
+   "BW-UNRESOLVED-0009"
+  ],
+  "bowen_nos": [
+   "6004",
+   "UNRESOLVED-0009"
+  ],
+  "oe_numbers_raw": [
+   "02K945415D"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00374",
+    "product_id": "BW-6004",
+    "source_sheet": "综合产品信息表",
+    "source_row": 199
+   },
+   {
+    "application_id": "APP-00425",
+    "product_id": "BW-UNRESOLVED-0009",
+    "source_sheet": "大众系列",
+    "source_row": 28
+   }
+  ]
+ },
+ {
+  "oe_search_key": "02K945415E",
+  "product_count": 2,
+  "product_ids": [
+   "BW-6004",
+   "BW-UNRESOLVED-0009"
+  ],
+  "bowen_nos": [
+   "6004",
+   "UNRESOLVED-0009"
+  ],
+  "oe_numbers_raw": [
+   "02K945415E"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00374",
+    "product_id": "BW-6004",
+    "source_sheet": "综合产品信息表",
+    "source_row": 199
+   },
+   {
+    "application_id": "APP-00425",
+    "product_id": "BW-UNRESOLVED-0009",
+    "source_sheet": "大众系列",
+    "source_row": 28
+   }
+  ]
+ },
+ {
+  "oe_search_key": "02T945415",
+  "product_count": 2,
+  "product_ids": [
+   "BW-6004",
+   "BW-UNRESOLVED-0009"
+  ],
+  "bowen_nos": [
+   "6004",
+   "UNRESOLVED-0009"
+  ],
+  "oe_numbers_raw": [
+   "02T945415"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00374",
+    "product_id": "BW-6004",
+    "source_sheet": "综合产品信息表",
+    "source_row": 199
+   },
+   {
+    "application_id": "APP-00425",
+    "product_id": "BW-UNRESOLVED-0009",
+    "source_sheet": "大众系列",
+    "source_row": 28
+   }
+  ]
+ },
+ {
+  "oe_search_key": "02T945415D",
+  "product_count": 2,
+  "product_ids": [
+   "BW-6004",
+   "BW-UNRESOLVED-0009"
+  ],
+  "bowen_nos": [
+   "6004",
+   "UNRESOLVED-0009"
+  ],
+  "oe_numbers_raw": [
+   "02T945415D"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00374",
+    "product_id": "BW-6004",
+    "source_sheet": "综合产品信息表",
+    "source_row": 199
+   },
+   {
+    "application_id": "APP-00425",
+    "product_id": "BW-UNRESOLVED-0009",
+    "source_sheet": "大众系列",
+    "source_row": 28
+   }
+  ]
+ },
+ {
+  "oe_search_key": "038919081H",
+  "product_count": 2,
+  "product_ids": [
+   "BW-2008",
+   "BW-2036"
+  ],
+  "bowen_nos": [
+   "2008",
+   "2036"
+  ],
+  "oe_numbers_raw": [
+   "038919081H"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00320",
+    "product_id": "BW-2008",
+    "source_sheet": "综合产品信息表",
+    "source_row": 168
+   },
+   {
+    "application_id": "APP-00338",
+    "product_id": "BW-2036",
+    "source_sheet": "综合产品信息表",
+    "source_row": 177
+   },
+   {
+    "application_id": "APP-00421",
+    "product_id": "BW-2008",
+    "source_sheet": "大众系列",
+    "source_row": 20
+   }
+  ]
+ },
+ {
+  "oe_search_key": "038919081K",
+  "product_count": 2,
+  "product_ids": [
+   "BW-2008",
+   "BW-2036"
+  ],
+  "bowen_nos": [
+   "2008",
+   "2036"
+  ],
+  "oe_numbers_raw": [
+   "038919081K"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00320",
+    "product_id": "BW-2008",
+    "source_sheet": "综合产品信息表",
+    "source_row": 168
+   },
+   {
+    "application_id": "APP-00421",
+    "product_id": "BW-2008",
+    "source_sheet": "大众系列",
+    "source_row": 20
+   },
+   {
+    "application_id": "APP-00757",
+    "product_id": "BW-2036",
+    "source_sheet": "工作表1",
+    "source_row": 232
+   }
+  ]
+ },
+ {
+  "oe_search_key": "03C121026AP",
+  "product_count": 2,
+  "product_ids": [
+   "BW-303401",
+   "BW-303403"
+  ],
+  "bowen_nos": [
+   "303401",
+   "303403"
+  ],
+  "oe_numbers_raw": [
+   "03C121026AP"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00035",
+    "product_id": "BW-303401",
+    "source_sheet": "综合产品信息表",
+    "source_row": 21
+   },
+   {
+    "application_id": "APP-00213",
+    "product_id": "BW-303403",
+    "source_sheet": "综合产品信息表",
+    "source_row": 110
+   },
+   {
+    "application_id": "APP-00403",
+    "product_id": "BW-303401",
+    "source_sheet": "大众系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "03C121026AR",
+  "product_count": 2,
+  "product_ids": [
+   "BW-303402",
+   "BW-303404"
+  ],
+  "bowen_nos": [
+   "303402",
+   "303404"
+  ],
+  "oe_numbers_raw": [
+   "03C121026AR"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00036",
+    "product_id": "BW-303402",
+    "source_sheet": "综合产品信息表",
+    "source_row": 21
+   },
+   {
+    "application_id": "APP-00214",
+    "product_id": "BW-303404",
+    "source_sheet": "综合产品信息表",
+    "source_row": 110
+   },
+   {
+    "application_id": "APP-00404",
+    "product_id": "BW-303402",
+    "source_sheet": "大众系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "03C121111AK",
+  "product_count": 2,
+  "product_ids": [
+   "BW-303401",
+   "BW-303403"
+  ],
+  "bowen_nos": [
+   "303401",
+   "303403"
+  ],
+  "oe_numbers_raw": [
+   "03C121111AK"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00035",
+    "product_id": "BW-303401",
+    "source_sheet": "综合产品信息表",
+    "source_row": 21
+   },
+   {
+    "application_id": "APP-00213",
+    "product_id": "BW-303403",
+    "source_sheet": "综合产品信息表",
+    "source_row": 110
+   },
+   {
+    "application_id": "APP-00403",
+    "product_id": "BW-303401",
+    "source_sheet": "大众系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "03C121111AM",
+  "product_count": 2,
+  "product_ids": [
+   "BW-303402",
+   "BW-303404"
+  ],
+  "bowen_nos": [
+   "303402",
+   "303404"
+  ],
+  "oe_numbers_raw": [
+   "03C121111AM"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00036",
+    "product_id": "BW-303402",
+    "source_sheet": "综合产品信息表",
+    "source_row": 21
+   },
+   {
+    "application_id": "APP-00214",
+    "product_id": "BW-303404",
+    "source_sheet": "综合产品信息表",
+    "source_row": 110
+   },
+   {
+    "application_id": "APP-00404",
+    "product_id": "BW-303402",
+    "source_sheet": "大众系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "03C121111P",
+  "product_count": 2,
+  "product_ids": [
+   "BW-303402",
+   "BW-303404"
+  ],
+  "bowen_nos": [
+   "303402",
+   "303404"
+  ],
+  "oe_numbers_raw": [
+   "03C121111P"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00036",
+    "product_id": "BW-303402",
+    "source_sheet": "综合产品信息表",
+    "source_row": 21
+   },
+   {
+    "application_id": "APP-00214",
+    "product_id": "BW-303404",
+    "source_sheet": "综合产品信息表",
+    "source_row": 110
+   },
+   {
+    "application_id": "APP-00404",
+    "product_id": "BW-303402",
+    "source_sheet": "大众系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "03C121111T",
+  "product_count": 2,
+  "product_ids": [
+   "BW-303402",
+   "BW-303404"
+  ],
+  "bowen_nos": [
+   "303402",
+   "303404"
+  ],
+  "oe_numbers_raw": [
+   "03C121111T"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00036",
+    "product_id": "BW-303402",
+    "source_sheet": "综合产品信息表",
+    "source_row": 21
+   },
+   {
+    "application_id": "APP-00214",
+    "product_id": "BW-303404",
+    "source_sheet": "综合产品信息表",
+    "source_row": 110
+   },
+   {
+    "application_id": "APP-00404",
+    "product_id": "BW-303402",
+    "source_sheet": "大众系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "0619359B306",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3061",
+   "BW-3061A"
+  ],
+  "bowen_nos": [
+   "3061",
+   "3061A"
+  ],
+  "oe_numbers_raw": [
+   "0619359B306"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00216",
+    "product_id": "BW-3061A",
+    "source_sheet": "综合产品信息表",
+    "source_row": 111
+   },
+   {
+    "application_id": "APP-00391",
+    "product_id": "BW-3061",
+    "source_sheet": "比亚迪系列",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00503",
+    "product_id": "BW-3061",
+    "source_sheet": "日系",
+    "source_row": 8
+   },
+   {
+    "application_id": "APP-00559",
+    "product_id": "BW-3061A",
+    "source_sheet": "工作表1",
+    "source_row": 22
+   }
+  ]
+ },
+ {
+  "oe_search_key": "06A919081A",
+  "product_count": 2,
+  "product_ids": [
+   "BW-2005",
+   "BW-2006"
+  ],
+  "bowen_nos": [
+   "2005",
+   "2006"
+  ],
+  "oe_numbers_raw": [
+   "06A919081A"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00317",
+    "product_id": "BW-2005",
+    "source_sheet": "综合产品信息表",
+    "source_row": 167
+   },
+   {
+    "application_id": "APP-00318",
+    "product_id": "BW-2006",
+    "source_sheet": "综合产品信息表",
+    "source_row": 167
+   }
+  ]
+ },
+ {
+  "oe_search_key": "06A919081D",
+  "product_count": 2,
+  "product_ids": [
+   "BW-2005",
+   "BW-2006"
+  ],
+  "bowen_nos": [
+   "2005",
+   "2006"
+  ],
+  "oe_numbers_raw": [
+   "06A919081D"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00317",
+    "product_id": "BW-2005",
+    "source_sheet": "综合产品信息表",
+    "source_row": 167
+   },
+   {
+    "application_id": "APP-00318",
+    "product_id": "BW-2006",
+    "source_sheet": "综合产品信息表",
+    "source_row": 167
+   }
+  ]
+ },
+ {
+  "oe_search_key": "06A919081E",
+  "product_count": 2,
+  "product_ids": [
+   "BW-2005",
+   "BW-2006"
+  ],
+  "bowen_nos": [
+   "2005",
+   "2006"
+  ],
+  "oe_numbers_raw": [
+   "06A919081E"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00317",
+    "product_id": "BW-2005",
+    "source_sheet": "综合产品信息表",
+    "source_row": 167
+   },
+   {
+    "application_id": "APP-00318",
+    "product_id": "BW-2006",
+    "source_sheet": "综合产品信息表",
+    "source_row": 167
+   }
+  ]
+ },
+ {
+  "oe_search_key": "06A919081J",
+  "product_count": 2,
+  "product_ids": [
+   "BW-2005",
+   "BW-2006"
+  ],
+  "bowen_nos": [
+   "2005",
+   "2006"
+  ],
+  "oe_numbers_raw": [
+   "06A919081J"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00317",
+    "product_id": "BW-2005",
+    "source_sheet": "综合产品信息表",
+    "source_row": 167
+   },
+   {
+    "application_id": "APP-00318",
+    "product_id": "BW-2006",
+    "source_sheet": "综合产品信息表",
+    "source_row": 167
+   }
+  ]
+ },
+ {
+  "oe_search_key": "06H121113B",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3036",
+   "BW-3136"
+  ],
+  "bowen_nos": [
+   "3036",
+   "3136"
+  ],
+  "oe_numbers_raw": [
+   "06H121113B"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00038",
+    "product_id": "BW-3036",
+    "source_sheet": "综合产品信息表",
+    "source_row": 22
+   },
+   {
+    "application_id": "APP-00040",
+    "product_id": "BW-3136",
+    "source_sheet": "综合产品信息表",
+    "source_row": 23
+   }
+  ]
+ },
+ {
+  "oe_search_key": "06H121121L",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3036",
+   "BW-3136"
+  ],
+  "bowen_nos": [
+   "3036",
+   "3136"
+  ],
+  "oe_numbers_raw": [
+   "06H121121L"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00038",
+    "product_id": "BW-3036",
+    "source_sheet": "综合产品信息表",
+    "source_row": 22
+   },
+   {
+    "application_id": "APP-00040",
+    "product_id": "BW-3136",
+    "source_sheet": "综合产品信息表",
+    "source_row": 23
+   }
+  ]
+ },
+ {
+  "oe_search_key": "06L121111G",
+  "product_count": 2,
+  "product_ids": [
+   "BW-30116",
+   "BW-31016"
+  ],
+  "bowen_nos": [
+   "30116",
+   "31016"
+  ],
+  "oe_numbers_raw": [
+   "06L121111G"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00175",
+    "product_id": "BW-30116",
+    "source_sheet": "综合产品信息表",
+    "source_row": 91
+   },
+   {
+    "application_id": "APP-00400",
+    "product_id": "BW-30116",
+    "source_sheet": "大众系列",
+    "source_row": 3
+   },
+   {
+    "application_id": "APP-00665",
+    "product_id": "BW-31016",
+    "source_sheet": "工作表1",
+    "source_row": 130
+   }
+  ]
+ },
+ {
+  "oe_search_key": "078121113C",
+  "product_count": 2,
+  "product_ids": [
+   "BW-31604-1",
+   "BW-31605"
+  ],
+  "bowen_nos": [
+   "31604-1",
+   "31605"
+  ],
+  "oe_numbers_raw": [
+   "078121113C"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00653",
+    "product_id": "BW-31605",
+    "source_sheet": "工作表1",
+    "source_row": 118
+   },
+   {
+    "application_id": "APP-00655",
+    "product_id": "BW-31604-1",
+    "source_sheet": "工作表1",
+    "source_row": 120
+   }
+  ]
+ },
+ {
+  "oe_search_key": "078121113F",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3080",
+   "BW-31604-1"
+  ],
+  "bowen_nos": [
+   "3080",
+   "31604-1"
+  ],
+  "oe_numbers_raw": [
+   "078121113F"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00134",
+    "product_id": "BW-31604-1",
+    "source_sheet": "综合产品信息表",
+    "source_row": 70
+   },
+   {
+    "application_id": "APP-00416",
+    "product_id": "BW-3080",
+    "source_sheet": "大众系列",
+    "source_row": 13
+   }
+  ]
+ },
+ {
+  "oe_search_key": "078121113G",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3080",
+   "BW-31604-1"
+  ],
+  "bowen_nos": [
+   "3080",
+   "31604-1"
+  ],
+  "oe_numbers_raw": [
+   "078121113G"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00134",
+    "product_id": "BW-31604-1",
+    "source_sheet": "综合产品信息表",
+    "source_row": 70
+   },
+   {
+    "application_id": "APP-00416",
+    "product_id": "BW-3080",
+    "source_sheet": "大众系列",
+    "source_row": 13
+   }
+  ]
+ },
+ {
+  "oe_search_key": "10120201820000",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3056",
+   "BW-3056-1"
+  ],
+  "bowen_nos": [
+   "3056",
+   "3056-1"
+  ],
+  "oe_numbers_raw": [
+   "10120201820000"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00052",
+    "product_id": "BW-3056",
+    "source_sheet": "综合产品信息表",
+    "source_row": 29
+   },
+   {
+    "application_id": "APP-00145",
+    "product_id": "BW-3056-1",
+    "source_sheet": "综合产品信息表",
+    "source_row": 76
+   },
+   {
+    "application_id": "APP-00526",
+    "product_id": "BW-3056",
+    "source_sheet": "传祺系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "10548074",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3059",
+   "BW-3525"
+  ],
+  "bowen_nos": [
+   "3059",
+   "3525"
+  ],
+  "oe_numbers_raw": [
+   "10548074"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00108",
+    "product_id": "BW-3525",
+    "source_sheet": "综合产品信息表",
+    "source_row": 57
+   },
+   {
+    "application_id": "APP-00487",
+    "product_id": "BW-3059",
+    "source_sheet": "荣威名爵系列",
+    "source_row": 3
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1086000636",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3019",
+   "BW-3051"
+  ],
+  "bowen_nos": [
+   "3019",
+   "3051"
+  ],
+  "oe_numbers_raw": [
+   "1086000636"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00389",
+    "product_id": "BW-3019",
+    "source_sheet": "比亚迪系列",
+    "source_row": 3
+   },
+   {
+    "application_id": "APP-00562",
+    "product_id": "BW-3051",
+    "source_sheet": "工作表1",
+    "source_row": 25
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1094739",
+  "product_count": 2,
+  "product_ids": [
+   "BW-2005",
+   "BW-2006"
+  ],
+  "bowen_nos": [
+   "2005",
+   "2006"
+  ],
+  "oe_numbers_raw": [
+   "1094739"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00317",
+    "product_id": "BW-2005",
+    "source_sheet": "综合产品信息表",
+    "source_row": 167
+   },
+   {
+    "application_id": "APP-00318",
+    "product_id": "BW-2006",
+    "source_sheet": "综合产品信息表",
+    "source_row": 167
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1119746",
+  "product_count": 2,
+  "product_ids": [
+   "BW-6004",
+   "BW-UNRESOLVED-0009"
+  ],
+  "bowen_nos": [
+   "6004",
+   "UNRESOLVED-0009"
+  ],
+  "oe_numbers_raw": [
+   "1119746"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00374",
+    "product_id": "BW-6004",
+    "source_sheet": "综合产品信息表",
+    "source_row": 199
+   },
+   {
+    "application_id": "APP-00425",
+    "product_id": "BW-UNRESOLVED-0009",
+    "source_sheet": "大众系列",
+    "source_row": 28
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1213353",
+  "product_count": 2,
+  "product_ids": [
+   "BW-6004",
+   "BW-UNRESOLVED-0009"
+  ],
+  "bowen_nos": [
+   "6004",
+   "UNRESOLVED-0009"
+  ],
+  "oe_numbers_raw": [
+   "1213353"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00374",
+    "product_id": "BW-6004",
+    "source_sheet": "综合产品信息表",
+    "source_row": 199
+   },
+   {
+    "application_id": "APP-00425",
+    "product_id": "BW-UNRESOLVED-0009",
+    "source_sheet": "大众系列",
+    "source_row": 28
+   }
+  ]
+ },
+ {
+  "oe_search_key": "12559575",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3008",
+   "BW-32899"
+  ],
+  "bowen_nos": [
+   "3008",
+   "32899"
+  ],
+  "oe_numbers_raw": [
+   "12559575"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00009",
+    "product_id": "BW-3008",
+    "source_sheet": "综合产品信息表",
+    "source_row": 8
+   },
+   {
+    "application_id": "APP-00484",
+    "product_id": "BW-3008",
+    "source_sheet": "通用系列",
+    "source_row": 9
+   },
+   {
+    "application_id": "APP-00674",
+    "product_id": "BW-32899",
+    "source_sheet": "工作表1",
+    "source_row": 139
+   }
+  ]
+ },
+ {
+  "oe_search_key": "12597583",
+  "product_count": 2,
+  "product_ids": [
+   "BW-32748-2",
+   "BW-36583"
+  ],
+  "bowen_nos": [
+   "32748-2",
+   "36583"
+  ],
+  "oe_numbers_raw": [
+   "12597583"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00785",
+    "product_id": "BW-32748-2",
+    "source_sheet": "工作表1",
+    "source_row": 260
+   },
+   {
+    "application_id": "APP-00786",
+    "product_id": "BW-36583",
+    "source_sheet": "工作表1",
+    "source_row": 261
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1306010B01",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3004--4",
+   "BW-3004-4"
+  ],
+  "bowen_nos": [
+   "3004--4",
+   "3004-4"
+  ],
+  "oe_numbers_raw": [
+   "1306010B01"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00140",
+    "product_id": "BW-3004-4",
+    "source_sheet": "综合产品信息表",
+    "source_row": 73
+   },
+   {
+    "application_id": "APP-00435",
+    "product_id": "BW-3004--4",
+    "source_sheet": "长安系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1306010B05",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3004--4",
+   "BW-3545"
+  ],
+  "bowen_nos": [
+   "3004--4",
+   "3545"
+  ],
+  "oe_numbers_raw": [
+   "1306010B05"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00191",
+    "product_id": "BW-3545",
+    "source_sheet": "综合产品信息表",
+    "source_row": 99
+   },
+   {
+    "application_id": "APP-00435",
+    "product_id": "BW-3004--4",
+    "source_sheet": "长安系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1306010H01",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3025",
+   "BW-3027"
+  ],
+  "bowen_nos": [
+   "3025",
+   "3027"
+  ],
+  "oe_numbers_raw": [
+   "1306010H01"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00028",
+    "product_id": "BW-3027",
+    "source_sheet": "综合产品信息表",
+    "source_row": 17
+   },
+   {
+    "application_id": "APP-00434",
+    "product_id": "BW-3027",
+    "source_sheet": "长安系列",
+    "source_row": 4
+   },
+   {
+    "application_id": "APP-00558",
+    "product_id": "BW-3025",
+    "source_sheet": "工作表1",
+    "source_row": 21
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1634054040",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3041-2",
+   "BW-3550"
+  ],
+  "bowen_nos": [
+   "3041-2",
+   "3550"
+  ],
+  "oe_numbers_raw": [
+   "1634054040"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00252",
+    "product_id": "BW-3041-2",
+    "source_sheet": "综合产品信息表",
+    "source_row": 130
+   },
+   {
+    "application_id": "APP-00506",
+    "product_id": "BW-3550",
+    "source_sheet": "日系",
+    "source_row": 10
+   }
+  ]
+ },
+ {
+  "oe_search_key": "17210000",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3061",
+   "BW-3061A"
+  ],
+  "bowen_nos": [
+   "3061",
+   "3061A"
+  ],
+  "oe_numbers_raw": [
+   "17210000"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00216",
+    "product_id": "BW-3061A",
+    "source_sheet": "综合产品信息表",
+    "source_row": 111
+   },
+   {
+    "application_id": "APP-00391",
+    "product_id": "BW-3061",
+    "source_sheet": "比亚迪系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1723000",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3007",
+   "BW-3061"
+  ],
+  "bowen_nos": [
+   "3007",
+   "3061"
+  ],
+  "oe_numbers_raw": [
+   "1723000"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00007",
+    "product_id": "BW-3007",
+    "source_sheet": "综合产品信息表",
+    "source_row": 7
+   },
+   {
+    "application_id": "APP-00391",
+    "product_id": "BW-3061",
+    "source_sheet": "比亚迪系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1760082810",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3025",
+   "BW-3027"
+  ],
+  "bowen_nos": [
+   "3025",
+   "3027"
+  ],
+  "oe_numbers_raw": [
+   "1760082810"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00434",
+    "product_id": "BW-3027",
+    "source_sheet": "长安系列",
+    "source_row": 4
+   },
+   {
+    "application_id": "APP-00558",
+    "product_id": "BW-3025",
+    "source_sheet": "工作表1",
+    "source_row": 21
+   }
+  ]
+ },
+ {
+  "oe_search_key": "17670M83F00",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3025",
+   "BW-3027"
+  ],
+  "bowen_nos": [
+   "3025",
+   "3027"
+  ],
+  "oe_numbers_raw": [
+   "17670M83F00",
+   "17670-M83F00"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00645",
+    "product_id": "BW-3025",
+    "source_sheet": "工作表1",
+    "source_row": 110
+   },
+   {
+    "application_id": "APP-00764",
+    "product_id": "BW-3027",
+    "source_sheet": "工作表1",
+    "source_row": 239
+   }
+  ]
+ },
+ {
+  "oe_search_key": "19300PJ7004",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3061",
+   "BW-3061A"
+  ],
+  "bowen_nos": [
+   "3061",
+   "3061A"
+  ],
+  "oe_numbers_raw": [
+   "19300PJ7004"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00216",
+    "product_id": "BW-3061A",
+    "source_sheet": "综合产品信息表",
+    "source_row": 111
+   },
+   {
+    "application_id": "APP-00391",
+    "product_id": "BW-3061",
+    "source_sheet": "比亚迪系列",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00503",
+    "product_id": "BW-3061",
+    "source_sheet": "日系",
+    "source_row": 8
+   }
+  ]
+ },
+ {
+  "oe_search_key": "19300PM3003",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3061",
+   "BW-3061A"
+  ],
+  "bowen_nos": [
+   "3061",
+   "3061A"
+  ],
+  "oe_numbers_raw": [
+   "19300PM3003"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00216",
+    "product_id": "BW-3061A",
+    "source_sheet": "综合产品信息表",
+    "source_row": 111
+   },
+   {
+    "application_id": "APP-00391",
+    "product_id": "BW-3061",
+    "source_sheet": "比亚迪系列",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00503",
+    "product_id": "BW-3061",
+    "source_sheet": "日系",
+    "source_row": 8
+   }
+  ]
+ },
+ {
+  "oe_search_key": "19301PZA305",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3061",
+   "BW-3061A"
+  ],
+  "bowen_nos": [
+   "3061",
+   "3061A"
+  ],
+  "oe_numbers_raw": [
+   "19301PZA305"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00216",
+    "product_id": "BW-3061A",
+    "source_sheet": "综合产品信息表",
+    "source_row": 111
+   },
+   {
+    "application_id": "APP-00391",
+    "product_id": "BW-3061",
+    "source_sheet": "比亚迪系列",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00503",
+    "product_id": "BW-3061",
+    "source_sheet": "日系",
+    "source_row": 8
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1C0945511A",
+  "product_count": 2,
+  "product_ids": [
+   "BW-5003",
+   "BW-5011"
+  ],
+  "bowen_nos": [
+   "5003",
+   "5011"
+  ],
+  "oe_numbers_raw": [
+   "1C0945511A"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00356",
+    "product_id": "BW-5003",
+    "source_sheet": "综合产品信息表",
+    "source_row": 189
+   },
+   {
+    "application_id": "APP-00362",
+    "product_id": "BW-5011",
+    "source_sheet": "综合产品信息表",
+    "source_row": 192
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1M2115520AA",
+  "product_count": 2,
+  "product_ids": [
+   "BW-6004",
+   "BW-UNRESOLVED-0009"
+  ],
+  "bowen_nos": [
+   "6004",
+   "UNRESOLVED-0009"
+  ],
+  "oe_numbers_raw": [
+   "1M2115520AA"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00374",
+    "product_id": "BW-6004",
+    "source_sheet": "综合产品信息表",
+    "source_row": 199
+   },
+   {
+    "application_id": "APP-00425",
+    "product_id": "BW-UNRESOLVED-0009",
+    "source_sheet": "大众系列",
+    "source_row": 28
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1M219278BA",
+  "product_count": 2,
+  "product_ids": [
+   "BW-2005",
+   "BW-2006"
+  ],
+  "bowen_nos": [
+   "2005",
+   "2006"
+  ],
+  "oe_numbers_raw": [
+   "1M219278BA"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00317",
+    "product_id": "BW-2005",
+    "source_sheet": "综合产品信息表",
+    "source_row": 167
+   },
+   {
+    "application_id": "APP-00318",
+    "product_id": "BW-2006",
+    "source_sheet": "综合产品信息表",
+    "source_row": 167
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1X4E8575EA",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3203",
+   "BW-33663-1"
+  ],
+  "bowen_nos": [
+   "3203",
+   "33663-1"
+  ],
+  "oe_numbers_raw": [
+   "1X4E8575EA"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00576",
+    "product_id": "BW-3203",
+    "source_sheet": "工作表1",
+    "source_row": 40
+   },
+   {
+    "application_id": "APP-00704",
+    "product_id": "BW-33663-1",
+    "source_sheet": "工作表1",
+    "source_row": 179
+   }
+  ]
+ },
+ {
+  "oe_search_key": "1X4Z8575A",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3203",
+   "BW-33663-1"
+  ],
+  "bowen_nos": [
+   "3203",
+   "33663-1"
+  ],
+  "oe_numbers_raw": [
+   "1X4Z8575A"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00180",
+    "product_id": "BW-3203",
+    "source_sheet": "综合产品信息表",
+    "source_row": 93
+   },
+   {
+    "application_id": "APP-00704",
+    "product_id": "BW-33663-1",
+    "source_sheet": "工作表1",
+    "source_row": 179
+   }
+  ]
+ },
+ {
+  "oe_search_key": "212001AT1A",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3004-3",
+   "BW-3004-5"
+  ],
+  "bowen_nos": [
+   "3004-3",
+   "3004-5"
+  ],
+  "oe_numbers_raw": [
+   "212001AT1A"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00548",
+    "product_id": "BW-3004-5",
+    "source_sheet": "工作表1",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00597",
+    "product_id": "BW-3004-3",
+    "source_sheet": "工作表1",
+    "source_row": 62
+   }
+  ]
+ },
+ {
+  "oe_search_key": "212001LA0A",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3004-3",
+   "BW-3004-5"
+  ],
+  "bowen_nos": [
+   "3004-3",
+   "3004-5"
+  ],
+  "oe_numbers_raw": [
+   "212001LA0A"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00548",
+    "product_id": "BW-3004-5",
+    "source_sheet": "工作表1",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00597",
+    "product_id": "BW-3004-3",
+    "source_sheet": "工作表1",
+    "source_row": 62
+   }
+  ]
+ },
+ {
+  "oe_search_key": "21200AA070",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3023",
+   "BW-38282"
+  ],
+  "bowen_nos": [
+   "3023",
+   "38282"
+  ],
+  "oe_numbers_raw": [
+   "21200AA070"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00673",
+    "product_id": "BW-3023",
+    "source_sheet": "工作表1",
+    "source_row": 138
+   },
+   {
+    "application_id": "APP-00776",
+    "product_id": "BW-38282",
+    "source_sheet": "工作表1",
+    "source_row": 251
+   }
+  ]
+ },
+ {
+  "oe_search_key": "21200AA071",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3023",
+   "BW-38282"
+  ],
+  "bowen_nos": [
+   "3023",
+   "38282"
+  ],
+  "oe_numbers_raw": [
+   "21200AA071"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00024",
+    "product_id": "BW-3023",
+    "source_sheet": "综合产品信息表",
+    "source_row": 15
+   },
+   {
+    "application_id": "APP-00776",
+    "product_id": "BW-38282",
+    "source_sheet": "工作表1",
+    "source_row": 251
+   }
+  ]
+ },
+ {
+  "oe_search_key": "21200AD200",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3004-3",
+   "BW-3004-5"
+  ],
+  "bowen_nos": [
+   "3004-3",
+   "3004-5"
+  ],
+  "oe_numbers_raw": [
+   "21200AD200"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00548",
+    "product_id": "BW-3004-5",
+    "source_sheet": "工作表1",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00597",
+    "product_id": "BW-3004-3",
+    "source_sheet": "工作表1",
+    "source_row": 62
+   }
+  ]
+ },
+ {
+  "oe_search_key": "21200AD201",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3004-3",
+   "BW-3004-5"
+  ],
+  "bowen_nos": [
+   "3004-3",
+   "3004-5"
+  ],
+  "oe_numbers_raw": [
+   "21200-AD201",
+   "21200AD201"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00548",
+    "product_id": "BW-3004-5",
+    "source_sheet": "工作表1",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00597",
+    "product_id": "BW-3004-3",
+    "source_sheet": "工作表1",
+    "source_row": 62
+   }
+  ]
+ },
+ {
+  "oe_search_key": "21200AD21A",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3004-3",
+   "BW-3004-5"
+  ],
+  "bowen_nos": [
+   "3004-3",
+   "3004-5"
+  ],
+  "oe_numbers_raw": [
+   "21200AD21A"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00548",
+    "product_id": "BW-3004-5",
+    "source_sheet": "工作表1",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00597",
+    "product_id": "BW-3004-3",
+    "source_sheet": "工作表1",
+    "source_row": 62
+   }
+  ]
+ },
+ {
+  "oe_search_key": "21200BN300",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3004-3",
+   "BW-3004-5"
+  ],
+  "bowen_nos": [
+   "3004-3",
+   "3004-5"
+  ],
+  "oe_numbers_raw": [
+   "21200BN300"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00189",
+    "product_id": "BW-3004-3",
+    "source_sheet": "综合产品信息表",
+    "source_row": 98
+   },
+   {
+    "application_id": "APP-00548",
+    "product_id": "BW-3004-5",
+    "source_sheet": "工作表1",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00597",
+    "product_id": "BW-3004-3",
+    "source_sheet": "工作表1",
+    "source_row": 62
+   }
+  ]
+ },
+ {
+  "oe_search_key": "21200BN301",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3004-3",
+   "BW-3004-5"
+  ],
+  "bowen_nos": [
+   "3004-3",
+   "3004-5"
+  ],
+  "oe_numbers_raw": [
+   "21200-BN301",
+   "21200BN301"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00548",
+    "product_id": "BW-3004-5",
+    "source_sheet": "工作表1",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00597",
+    "product_id": "BW-3004-3",
+    "source_sheet": "工作表1",
+    "source_row": 62
+   },
+   {
+    "application_id": "APP-00598",
+    "product_id": "BW-3004-3",
+    "source_sheet": "工作表1",
+    "source_row": 63
+   }
+  ]
+ },
+ {
+  "oe_search_key": "21200BN30A",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3004-3",
+   "BW-3004-5"
+  ],
+  "bowen_nos": [
+   "3004-3",
+   "3004-5"
+  ],
+  "oe_numbers_raw": [
+   "21200BN30A"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00548",
+    "product_id": "BW-3004-5",
+    "source_sheet": "工作表1",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00597",
+    "product_id": "BW-3004-3",
+    "source_sheet": "工作表1",
+    "source_row": 62
+   }
+  ]
+ },
+ {
+  "oe_search_key": "21200SE100",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3061",
+   "BW-3061A"
+  ],
+  "bowen_nos": [
+   "3061",
+   "3061A"
+  ],
+  "oe_numbers_raw": [
+   "21200SE100"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00216",
+    "product_id": "BW-3061A",
+    "source_sheet": "综合产品信息表",
+    "source_row": 111
+   },
+   {
+    "application_id": "APP-00391",
+    "product_id": "BW-3061",
+    "source_sheet": "比亚迪系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "25193684",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3033",
+   "BW-3033--1"
+  ],
+  "bowen_nos": [
+   "3033",
+   "3033--1"
+  ],
+  "oe_numbers_raw": [
+   "25193684"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00032",
+    "product_id": "BW-3033",
+    "source_sheet": "综合产品信息表",
+    "source_row": 19
+   },
+   {
+    "application_id": "APP-00474",
+    "product_id": "BW-3033--1",
+    "source_sheet": "通用系列",
+    "source_row": 3
+   }
+  ]
+ },
+ {
+  "oe_search_key": "255002A050",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3011-2",
+   "BW-3565-2"
+  ],
+  "bowen_nos": [
+   "3011-2",
+   "3565-2"
+  ],
+  "oe_numbers_raw": [
+   "255002A050",
+   "25500-2A050"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00551",
+    "product_id": "BW-3565-2",
+    "source_sheet": "工作表1",
+    "source_row": 8
+   },
+   {
+    "application_id": "APP-00552",
+    "product_id": "BW-3011-2",
+    "source_sheet": "工作表1",
+    "source_row": 9
+   }
+  ]
+ },
+ {
+  "oe_search_key": "2550035531",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3004-3",
+   "BW-3004-5"
+  ],
+  "bowen_nos": [
+   "3004-3",
+   "3004-5"
+  ],
+  "oe_numbers_raw": [
+   "25500-35531"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00548",
+    "product_id": "BW-3004-5",
+    "source_sheet": "工作表1",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00597",
+    "product_id": "BW-3004-3",
+    "source_sheet": "工作表1",
+    "source_row": 62
+   }
+  ]
+ },
+ {
+  "oe_search_key": "31474297",
+  "product_count": 2,
+  "product_ids": [
+   "BW-33561",
+   "BW-33561-1"
+  ],
+  "bowen_nos": [
+   "33561",
+   "33561-1"
+  ],
+  "oe_numbers_raw": [
+   "31474297"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00247",
+    "product_id": "BW-33561-1",
+    "source_sheet": "综合产品信息表",
+    "source_row": 127
+   },
+   {
+    "application_id": "APP-00721",
+    "product_id": "BW-33561",
+    "source_sheet": "工作表1",
+    "source_row": 196
+   }
+  ]
+ },
+ {
+  "oe_search_key": "34200",
+  "product_count": 2,
+  "product_ids": [
+   "BW-33655",
+   "BW-33655A"
+  ],
+  "bowen_nos": [
+   "33655",
+   "33655A"
+  ],
+  "oe_numbers_raw": [
+   "34200"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00619",
+    "product_id": "BW-33655A",
+    "source_sheet": "工作表1",
+    "source_row": 84
+   },
+   {
+    "application_id": "APP-00783",
+    "product_id": "BW-33655",
+    "source_sheet": "工作表1",
+    "source_row": 258
+   }
+  ]
+ },
+ {
+  "oe_search_key": "39200",
+  "product_count": 2,
+  "product_ids": [
+   "BW-33655",
+   "BW-33655A"
+  ],
+  "bowen_nos": [
+   "33655",
+   "33655A"
+  ],
+  "oe_numbers_raw": [
+   "39200"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00619",
+    "product_id": "BW-33655A",
+    "source_sheet": "工作表1",
+    "source_row": 84
+   },
+   {
+    "application_id": "APP-00783",
+    "product_id": "BW-33655",
+    "source_sheet": "工作表1",
+    "source_row": 258
+   }
+  ]
+ },
+ {
+  "oe_search_key": "453470",
+  "product_count": 2,
+  "product_ids": [
+   "BW-5013",
+   "BW-5020"
+  ],
+  "bowen_nos": [
+   "5013",
+   "5020"
+  ],
+  "oe_numbers_raw": [
+   "453470"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00368",
+    "product_id": "BW-5020",
+    "source_sheet": "综合产品信息表",
+    "source_row": 195
+   },
+   {
+    "application_id": "APP-00543",
+    "product_id": "BW-5013",
+    "source_sheet": "标志雪铁龙系列",
+    "source_row": 18
+   },
+   {
+    "application_id": "APP-00544",
+    "product_id": "BW-5020",
+    "source_sheet": "标志雪铁龙系列",
+    "source_row": 18
+   }
+  ]
+ },
+ {
+  "oe_search_key": "455780",
+  "product_count": 2,
+  "product_ids": [
+   "BW-33655",
+   "BW-33655A"
+  ],
+  "bowen_nos": [
+   "33655",
+   "33655A"
+  ],
+  "oe_numbers_raw": [
+   "455780"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00619",
+    "product_id": "BW-33655A",
+    "source_sheet": "工作表1",
+    "source_row": 84
+   },
+   {
+    "application_id": "APP-00783",
+    "product_id": "BW-33655",
+    "source_sheet": "工作表1",
+    "source_row": 258
+   }
+  ]
+ },
+ {
+  "oe_search_key": "473QA1306020",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3061",
+   "BW-3061A"
+  ],
+  "bowen_nos": [
+   "3061",
+   "3061A"
+  ],
+  "oe_numbers_raw": [
+   "473QA1306020"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00057",
+    "product_id": "BW-3061",
+    "source_sheet": "综合产品信息表",
+    "source_row": 32
+   },
+   {
+    "application_id": "APP-00216",
+    "product_id": "BW-3061A",
+    "source_sheet": "综合产品信息表",
+    "source_row": 111
+   },
+   {
+    "application_id": "APP-00391",
+    "product_id": "BW-3061",
+    "source_sheet": "比亚迪系列",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00503",
+    "product_id": "BW-3061",
+    "source_sheet": "日系",
+    "source_row": 8
+   }
+  ]
+ },
+ {
+  "oe_search_key": "49200",
+  "product_count": 2,
+  "product_ids": [
+   "BW-33655",
+   "BW-33655A"
+  ],
+  "bowen_nos": [
+   "33655",
+   "33655A"
+  ],
+  "oe_numbers_raw": [
+   "49200"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00619",
+    "product_id": "BW-33655A",
+    "source_sheet": "工作表1",
+    "source_row": 84
+   },
+   {
+    "application_id": "APP-00783",
+    "product_id": "BW-33655",
+    "source_sheet": "工作表1",
+    "source_row": 258
+   }
+  ]
+ },
+ {
+  "oe_search_key": "5086739AB",
+  "product_count": 2,
+  "product_ids": [
+   "BW-31515",
+   "BW-32289"
+  ],
+  "bowen_nos": [
+   "31515",
+   "32289"
+  ],
+  "oe_numbers_raw": [
+   "5086739AB"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00669",
+    "product_id": "BW-32289",
+    "source_sheet": "工作表1",
+    "source_row": 134
+   },
+   {
+    "application_id": "APP-00689",
+    "product_id": "BW-31515",
+    "source_sheet": "工作表1",
+    "source_row": 164
+   }
+  ]
+ },
+ {
+  "oe_search_key": "5257076",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3068",
+   "BW-31505"
+  ],
+  "bowen_nos": [
+   "3068",
+   "31505"
+  ],
+  "oe_numbers_raw": [
+   "5257076"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00239",
+    "product_id": "BW-31505",
+    "source_sheet": "综合产品信息表",
+    "source_row": 123
+   },
+   {
+    "application_id": "APP-00427",
+    "product_id": "BW-3068",
+    "source_sheet": "吉利哈弗系列",
+    "source_row": 4
+   },
+   {
+    "application_id": "APP-00644",
+    "product_id": "BW-31505",
+    "source_sheet": "工作表1",
+    "source_row": 109
+   }
+  ]
+ },
+ {
+  "oe_search_key": "55111016AC",
+  "product_count": 2,
+  "product_ids": [
+   "BW-38241",
+   "BW-UNRESOLVED-0024"
+  ],
+  "bowen_nos": [
+   "38241",
+   "UNRESOLVED-0024"
+  ],
+  "oe_numbers_raw": [
+   "55111016AC"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00211",
+    "product_id": "BW-38241",
+    "source_sheet": "综合产品信息表",
+    "source_row": 109
+   },
+   {
+    "application_id": "APP-00549",
+    "product_id": "BW-38241",
+    "source_sheet": "工作表1",
+    "source_row": 6
+   },
+   {
+    "application_id": "APP-00683",
+    "product_id": "BW-UNRESOLVED-0024",
+    "source_sheet": "工作表1",
+    "source_row": 158
+   }
+  ]
+ },
+ {
+  "oe_search_key": "55111016AE",
+  "product_count": 2,
+  "product_ids": [
+   "BW-32870",
+   "BW-UNRESOLVED-0024"
+  ],
+  "bowen_nos": [
+   "32870",
+   "UNRESOLVED-0024"
+  ],
+  "oe_numbers_raw": [
+   "55111016AE"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00666",
+    "product_id": "BW-32870",
+    "source_sheet": "工作表1",
+    "source_row": 131
+   },
+   {
+    "application_id": "APP-00683",
+    "product_id": "BW-UNRESOLVED-0024",
+    "source_sheet": "工作表1",
+    "source_row": 158
+   }
+  ]
+ },
+ {
+  "oe_search_key": "55597008",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3033",
+   "BW-3033-Z"
+  ],
+  "bowen_nos": [
+   "3033",
+   "3033-Z"
+  ],
+  "oe_numbers_raw": [
+   "55597008"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00638",
+    "product_id": "BW-3033",
+    "source_sheet": "工作表1",
+    "source_row": 103
+   },
+   {
+    "application_id": "APP-00697",
+    "product_id": "BW-3033-Z",
+    "source_sheet": "工作表1",
+    "source_row": 172
+   }
+  ]
+ },
+ {
+  "oe_search_key": "5860003490",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3061",
+   "BW-3061A"
+  ],
+  "bowen_nos": [
+   "3061",
+   "3061A"
+  ],
+  "oe_numbers_raw": [
+   "5860003490"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00216",
+    "product_id": "BW-3061A",
+    "source_sheet": "综合产品信息表",
+    "source_row": 111
+   },
+   {
+    "application_id": "APP-00391",
+    "product_id": "BW-3061",
+    "source_sheet": "比亚迪系列",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00503",
+    "product_id": "BW-3061",
+    "source_sheet": "日系",
+    "source_row": 8
+   }
+  ]
+ },
+ {
+  "oe_search_key": "6338018",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3033",
+   "BW-3033--1"
+  ],
+  "bowen_nos": [
+   "3033",
+   "3033--1"
+  ],
+  "oe_numbers_raw": [
+   "6338018"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00032",
+    "product_id": "BW-3033",
+    "source_sheet": "综合产品信息表",
+    "source_row": 19
+   },
+   {
+    "application_id": "APP-00474",
+    "product_id": "BW-3033--1",
+    "source_sheet": "通用系列",
+    "source_row": 3
+   }
+  ]
+ },
+ {
+  "oe_search_key": "68534176AA",
+  "product_count": 2,
+  "product_ids": [
+   "BW-31515",
+   "BW-32289"
+  ],
+  "bowen_nos": [
+   "31515",
+   "32289"
+  ],
+  "oe_numbers_raw": [
+   "68534176AA"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00669",
+    "product_id": "BW-32289",
+    "source_sheet": "工作表1",
+    "source_row": 134
+   },
+   {
+    "application_id": "APP-00689",
+    "product_id": "BW-31515",
+    "source_sheet": "工作表1",
+    "source_row": 164
+   }
+  ]
+ },
+ {
+  "oe_search_key": "716200",
+  "product_count": 2,
+  "product_ids": [
+   "BW-33655",
+   "BW-33655A"
+  ],
+  "bowen_nos": [
+   "33655",
+   "33655A"
+  ],
+  "oe_numbers_raw": [
+   "716200"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00619",
+    "product_id": "BW-33655A",
+    "source_sheet": "工作表1",
+    "source_row": 84
+   },
+   {
+    "application_id": "APP-00783",
+    "product_id": "BW-33655",
+    "source_sheet": "工作表1",
+    "source_row": 258
+   }
+  ]
+ },
+ {
+  "oe_search_key": "8974357940",
+  "product_count": 2,
+  "product_ids": [
+   "BW-35116",
+   "BW-403229"
+  ],
+  "bowen_nos": [
+   "35116",
+   "403229"
+  ],
+  "oe_numbers_raw": [
+   "8974357940"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00628",
+    "product_id": "BW-403229",
+    "source_sheet": "工作表1",
+    "source_row": 93
+   },
+   {
+    "application_id": "APP-00640",
+    "product_id": "BW-35116",
+    "source_sheet": "工作表1",
+    "source_row": 105
+   }
+  ]
+ },
+ {
+  "oe_search_key": "8AF315171",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3061",
+   "BW-3061A"
+  ],
+  "bowen_nos": [
+   "3061",
+   "3061A"
+  ],
+  "oe_numbers_raw": [
+   "8AF315171"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00216",
+    "product_id": "BW-3061A",
+    "source_sheet": "综合产品信息表",
+    "source_row": 111
+   },
+   {
+    "application_id": "APP-00391",
+    "product_id": "BW-3061",
+    "source_sheet": "比亚迪系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "8AF615171",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3061",
+   "BW-3061A"
+  ],
+  "bowen_nos": [
+   "3061",
+   "3061A"
+  ],
+  "oe_numbers_raw": [
+   "8AF615171"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00216",
+    "product_id": "BW-3061A",
+    "source_sheet": "综合产品信息表",
+    "source_row": 111
+   },
+   {
+    "application_id": "APP-00391",
+    "product_id": "BW-3061",
+    "source_sheet": "比亚迪系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "8C3Z8575B",
+  "product_count": 2,
+  "product_ids": [
+   "BW-33655",
+   "BW-33655A"
+  ],
+  "bowen_nos": [
+   "33655",
+   "33655A"
+  ],
+  "oe_numbers_raw": [
+   "8C3Z8575B"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00619",
+    "product_id": "BW-33655A",
+    "source_sheet": "工作表1",
+    "source_row": 84
+   },
+   {
+    "application_id": "APP-00783",
+    "product_id": "BW-33655",
+    "source_sheet": "工作表1",
+    "source_row": 258
+   }
+  ]
+ },
+ {
+  "oe_search_key": "9004833078",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3003",
+   "BW-3061A"
+  ],
+  "bowen_nos": [
+   "3003",
+   "3061A"
+  ],
+  "oe_numbers_raw": [
+   "9004833078"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00466",
+    "product_id": "BW-3003",
+    "source_sheet": "奇瑞系列",
+    "source_row": 3
+   },
+   {
+    "application_id": "APP-00559",
+    "product_id": "BW-3061A",
+    "source_sheet": "工作表1",
+    "source_row": 22
+   }
+  ]
+ },
+ {
+  "oe_search_key": "9091603100",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3004-3",
+   "BW-3004-5"
+  ],
+  "bowen_nos": [
+   "3004-3",
+   "3004-5"
+  ],
+  "oe_numbers_raw": [
+   "9091603100",
+   "90916-03100"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00189",
+    "product_id": "BW-3004-3",
+    "source_sheet": "综合产品信息表",
+    "source_row": 98
+   },
+   {
+    "application_id": "APP-00548",
+    "product_id": "BW-3004-5",
+    "source_sheet": "工作表1",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00597",
+    "product_id": "BW-3004-3",
+    "source_sheet": "工作表1",
+    "source_row": 62
+   }
+  ]
+ },
+ {
+  "oe_search_key": "94580182",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3025",
+   "BW-3027"
+  ],
+  "bowen_nos": [
+   "3025",
+   "3027"
+  ],
+  "oe_numbers_raw": [
+   "94580182"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00434",
+    "product_id": "BW-3027",
+    "source_sheet": "长安系列",
+    "source_row": 4
+   },
+   {
+    "application_id": "APP-00558",
+    "product_id": "BW-3025",
+    "source_sheet": "工作表1",
+    "source_row": 21
+   }
+  ]
+ },
+ {
+  "oe_search_key": "95VW9278EA",
+  "product_count": 2,
+  "product_ids": [
+   "BW-2005",
+   "BW-2006"
+  ],
+  "bowen_nos": [
+   "2005",
+   "2006"
+  ],
+  "oe_numbers_raw": [
+   "95VW9278EA"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00317",
+    "product_id": "BW-2005",
+    "source_sheet": "综合产品信息表",
+    "source_row": 167
+   },
+   {
+    "application_id": "APP-00318",
+    "product_id": "BW-2006",
+    "source_sheet": "综合产品信息表",
+    "source_row": 167
+   }
+  ]
+ },
+ {
+  "oe_search_key": "9670430580",
+  "product_count": 2,
+  "product_ids": [
+   "BW-5013",
+   "BW-5020"
+  ],
+  "bowen_nos": [
+   "5013",
+   "5020"
+  ],
+  "oe_numbers_raw": [
+   "9670430580"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00368",
+    "product_id": "BW-5020",
+    "source_sheet": "综合产品信息表",
+    "source_row": 195
+   },
+   {
+    "application_id": "APP-00543",
+    "product_id": "BW-5013",
+    "source_sheet": "标志雪铁龙系列",
+    "source_row": 18
+   },
+   {
+    "application_id": "APP-00544",
+    "product_id": "BW-5020",
+    "source_sheet": "标志雪铁龙系列",
+    "source_row": 18
+   }
+  ]
+ },
+ {
+  "oe_search_key": "9804315380",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3568",
+   "BW-3666"
+  ],
+  "bowen_nos": [
+   "3568",
+   "3666"
+  ],
+  "oe_numbers_raw": [
+   "9804315380"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00149",
+    "product_id": "BW-3568",
+    "source_sheet": "综合产品信息表",
+    "source_row": 78
+   },
+   {
+    "application_id": "APP-00161",
+    "product_id": "BW-3666",
+    "source_sheet": "综合产品信息表",
+    "source_row": 84
+   },
+   {
+    "application_id": "APP-00448",
+    "product_id": "BW-3568",
+    "source_sheet": "宝马奔驰系列",
+    "source_row": 7
+   },
+   {
+    "application_id": "APP-00531",
+    "product_id": "BW-3666",
+    "source_sheet": "标志雪铁龙系列",
+    "source_row": 4
+   }
+  ]
+ },
+ {
+  "oe_search_key": "9804869480",
+  "product_count": 2,
+  "product_ids": [
+   "BW-5013",
+   "BW-5020"
+  ],
+  "bowen_nos": [
+   "5013",
+   "5020"
+  ],
+  "oe_numbers_raw": [
+   "9804869480"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00368",
+    "product_id": "BW-5020",
+    "source_sheet": "综合产品信息表",
+    "source_row": 195
+   },
+   {
+    "application_id": "APP-00543",
+    "product_id": "BW-5013",
+    "source_sheet": "标志雪铁龙系列",
+    "source_row": 18
+   }
+  ]
+ },
+ {
+  "oe_search_key": "9808647180",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3654--2",
+   "BW-3654-2"
+  ],
+  "bowen_nos": [
+   "3654--2",
+   "3654-2"
+  ],
+  "oe_numbers_raw": [
+   "9808647180"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00155",
+    "product_id": "BW-3654--2",
+    "source_sheet": "综合产品信息表",
+    "source_row": 81
+   },
+   {
+    "application_id": "APP-00449",
+    "product_id": "BW-3654-2",
+    "source_sheet": "宝马奔驰系列",
+    "source_row": 7
+   },
+   {
+    "application_id": "APP-00534",
+    "product_id": "BW-3654--2",
+    "source_sheet": "标志雪铁龙系列",
+    "source_row": 6
+   }
+  ]
+ },
+ {
+  "oe_search_key": "9810916980",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3654--3",
+   "BW-3654-3"
+  ],
+  "bowen_nos": [
+   "3654--3",
+   "3654-3"
+  ],
+  "oe_numbers_raw": [
+   "9810916980"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00187",
+    "product_id": "BW-3654-3",
+    "source_sheet": "综合产品信息表",
+    "source_row": 97
+   },
+   {
+    "application_id": "APP-00537",
+    "product_id": "BW-3654--3",
+    "source_sheet": "标志雪铁龙系列",
+    "source_row": 8
+   }
+  ]
+ },
+ {
+  "oe_search_key": "BR3Z8575C",
+  "product_count": 2,
+  "product_ids": [
+   "BW-32588",
+   "BW-33663"
+  ],
+  "bowen_nos": [
+   "32588",
+   "33663"
+  ],
+  "oe_numbers_raw": [
+   "BR3Z8575C"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00205",
+    "product_id": "BW-33663",
+    "source_sheet": "综合产品信息表",
+    "source_row": 106
+   },
+   {
+    "application_id": "APP-00218",
+    "product_id": "BW-33663",
+    "source_sheet": "综合产品信息表",
+    "source_row": 113
+   },
+   {
+    "application_id": "APP-00667",
+    "product_id": "BW-32588",
+    "source_sheet": "工作表1",
+    "source_row": 132
+   }
+  ]
+ },
+ {
+  "oe_search_key": "C00109635",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3566",
+   "BW-3567"
+  ],
+  "bowen_nos": [
+   "3566",
+   "3567"
+  ],
+  "oe_numbers_raw": [
+   "C00109635"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00265",
+    "product_id": "BW-3566",
+    "source_sheet": "综合产品信息表",
+    "source_row": 137
+   },
+   {
+    "application_id": "APP-00266",
+    "product_id": "BW-3567",
+    "source_sheet": "综合产品信息表",
+    "source_row": 137
+   }
+  ]
+ },
+ {
+  "oe_search_key": "F4TZ8575B",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3002",
+   "BW-32839"
+  ],
+  "bowen_nos": [
+   "3002",
+   "32839"
+  ],
+  "oe_numbers_raw": [
+   "F4TZ8575B"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00657",
+    "product_id": "BW-3002",
+    "source_sheet": "工作表1",
+    "source_row": 122
+   },
+   {
+    "application_id": "APP-00675",
+    "product_id": "BW-32839",
+    "source_sheet": "工作表1",
+    "source_row": 140
+   }
+  ]
+ },
+ {
+  "oe_search_key": "F8RZ8575BA",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3203",
+   "BW-33663-1"
+  ],
+  "bowen_nos": [
+   "3203",
+   "33663-1"
+  ],
+  "oe_numbers_raw": [
+   "F8RZ8575BA"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00576",
+    "product_id": "BW-3203",
+    "source_sheet": "工作表1",
+    "source_row": 40
+   },
+   {
+    "application_id": "APP-00704",
+    "product_id": "BW-33663-1",
+    "source_sheet": "工作表1",
+    "source_row": 179
+   }
+  ]
+ },
+ {
+  "oe_search_key": "GTS275",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3061",
+   "BW-3061A"
+  ],
+  "bowen_nos": [
+   "3061",
+   "3061A"
+  ],
+  "oe_numbers_raw": [
+   "GTS275"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00216",
+    "product_id": "BW-3061A",
+    "source_sheet": "综合产品信息表",
+    "source_row": 111
+   },
+   {
+    "application_id": "APP-00391",
+    "product_id": "BW-3061",
+    "source_sheet": "比亚迪系列",
+    "source_row": 5
+   }
+  ]
+ },
+ {
+  "oe_search_key": "H150131000",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3004--4",
+   "BW-3004-4"
+  ],
+  "bowen_nos": [
+   "3004--4",
+   "3004-4"
+  ],
+  "oe_numbers_raw": [
+   "H150131000"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00435",
+    "product_id": "BW-3004--4",
+    "source_sheet": "长安系列",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00555",
+    "product_id": "BW-3004-4",
+    "source_sheet": "工作表1",
+    "source_row": 18
+   }
+  ]
+ },
+ {
+  "oe_search_key": "LR003341",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3167--1",
+   "BW-3167-1"
+  ],
+  "bowen_nos": [
+   "3167--1",
+   "3167-1"
+  ],
+  "oe_numbers_raw": [
+   "LR003341"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00143",
+    "product_id": "BW-3167--1",
+    "source_sheet": "综合产品信息表",
+    "source_row": 75
+   },
+   {
+    "application_id": "APP-00446",
+    "product_id": "BW-3167-1",
+    "source_sheet": "宝马奔驰系列",
+    "source_row": 6
+   }
+  ]
+ },
+ {
+  "oe_search_key": "LR003520",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3167--1",
+   "BW-3167-1"
+  ],
+  "bowen_nos": [
+   "3167--1",
+   "3167-1"
+  ],
+  "oe_numbers_raw": [
+   "LR003520"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00143",
+    "product_id": "BW-3167--1",
+    "source_sheet": "综合产品信息表",
+    "source_row": 75
+   },
+   {
+    "application_id": "APP-00446",
+    "product_id": "BW-3167-1",
+    "source_sheet": "宝马奔驰系列",
+    "source_row": 6
+   }
+  ]
+ },
+ {
+  "oe_search_key": "MD335170",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3005",
+   "BW-3013"
+  ],
+  "bowen_nos": [
+   "3005",
+   "3013"
+  ],
+  "oe_numbers_raw": [
+   "MD335170"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00458",
+    "product_id": "BW-3005",
+    "source_sheet": "三菱系列",
+    "source_row": 3
+   },
+   {
+    "application_id": "APP-00616",
+    "product_id": "BW-3013",
+    "source_sheet": "工作表1",
+    "source_row": 81
+   }
+  ]
+ },
+ {
+  "oe_search_key": "S00012485",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3004--1",
+   "BW-3004-1"
+  ],
+  "bowen_nos": [
+   "3004--1",
+   "3004-1"
+  ],
+  "oe_numbers_raw": [
+   "S00012485"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00194",
+    "product_id": "BW-3004-1",
+    "source_sheet": "综合产品信息表",
+    "source_row": 100
+   },
+   {
+    "application_id": "APP-00494",
+    "product_id": "BW-3004--1",
+    "source_sheet": "荣威名爵系列",
+    "source_row": 7
+   }
+  ]
+ },
+ {
+  "oe_search_key": "V763471180",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3654--2",
+   "BW-3654-2"
+  ],
+  "bowen_nos": [
+   "3654--2",
+   "3654-2"
+  ],
+  "oe_numbers_raw": [
+   "V763471180"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00155",
+    "product_id": "BW-3654--2",
+    "source_sheet": "综合产品信息表",
+    "source_row": 81
+   },
+   {
+    "application_id": "APP-00449",
+    "product_id": "BW-3654-2",
+    "source_sheet": "宝马奔驰系列",
+    "source_row": 7
+   },
+   {
+    "application_id": "APP-00534",
+    "product_id": "BW-3654--2",
+    "source_sheet": "标志雪铁龙系列",
+    "source_row": 6
+   }
+  ]
+ },
+ {
+  "oe_search_key": "WV52BC",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3061",
+   "BW-3061A"
+  ],
+  "bowen_nos": [
+   "3061",
+   "3061A"
+  ],
+  "oe_numbers_raw": [
+   "WV52BC"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00216",
+    "product_id": "BW-3061A",
+    "source_sheet": "综合产品信息表",
+    "source_row": 111
+   },
+   {
+    "application_id": "APP-00391",
+    "product_id": "BW-3061",
+    "source_sheet": "比亚迪系列",
+    "source_row": 5
+   },
+   {
+    "application_id": "APP-00503",
+    "product_id": "BW-3061",
+    "source_sheet": "日系",
+    "source_row": 8
+   }
+  ]
+ },
+ {
+  "oe_search_key": "XL3Z8575AA",
+  "product_count": 2,
+  "product_ids": [
+   "BW-31520",
+   "BW-3528"
+  ],
+  "bowen_nos": [
+   "31520",
+   "3528"
+  ],
+  "oe_numbers_raw": [
+   "XL3Z8575AA"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00659",
+    "product_id": "BW-3528",
+    "source_sheet": "工作表1",
+    "source_row": 124
+   },
+   {
+    "application_id": "APP-00679",
+    "product_id": "BW-31520",
+    "source_sheet": "工作表1",
+    "source_row": 145
+   }
+  ]
+ },
+ {
+  "oe_search_key": "XW4Z8575AA",
+  "product_count": 2,
+  "product_ids": [
+   "BW-3203",
+   "BW-33663-1"
+  ],
+  "bowen_nos": [
+   "3203",
+   "33663-1"
+  ],
+  "oe_numbers_raw": [
+   "XW4Z8575AA"
+  ],
+  "applications": [
+   {
+    "application_id": "APP-00576",
+    "product_id": "BW-3203",
+    "source_sheet": "工作表1",
+    "source_row": 40
+   },
+   {
+    "application_id": "APP-00704",
+    "product_id": "BW-33663-1",
+    "source_sheet": "工作表1",
+    "source_row": 179
+   }
+  ]
+ }
+]

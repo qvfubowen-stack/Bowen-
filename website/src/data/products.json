@@ -1,0 +1,1279 @@
+[
+ {
+  "product_id": "BW-3001",
+  "bowen_no": "3001",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3001",
+  "product_name_zh": "节温器 3001",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "prototype_candidate",
+  "product_type_source": "human_section_label",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_section_label",
+   "raw_label": "节温器",
+   "source_sheet": "综合产品信息表",
+   "source_row": 4,
+   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
+  },
+  "product_type_raw_labels": [
+   "节温器"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "大众系列",
+   "工作表1",
+   "综合产品信息表"
+  ],
+  "source_sheet_count": 3,
+  "source_record_ids": [
+   "SRC-00001",
+   "SRC-00427",
+   "SRC-00880",
+   "SRC-00881",
+   "SRC-00882"
+  ],
+  "application_ids": [
+   "APP-00001",
+   "APP-00414",
+   "APP-00711",
+   "APP-00712",
+   "APP-00713"
+  ],
+  "application_count": 5,
+  "searchable_application_count": 5,
+  "oe_token_count": 25,
+  "distinct_oe_count": 20,
+  "opening_temperatures_c": [
+   79,
+   81
+  ],
+  "prototype_rank": 10,
+  "completeness_score": 43,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3003-1",
+  "bowen_no": "3003-1",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3003-1",
+  "product_name_zh": "节温器 3003-1",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "prototype_candidate",
+  "product_type_source": "human_section_label",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_section_label",
+   "raw_label": "节温器",
+   "source_sheet": "综合产品信息表",
+   "source_row": 111,
+   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
+  },
+  "product_type_raw_labels": [
+   "节温器"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1",
+   "综合产品信息表"
+  ],
+  "source_sheet_count": 2,
+  "source_record_ids": [
+   "SRC-00215",
+   "SRC-00217",
+   "SRC-00730",
+   "SRC-00731"
+  ],
+  "application_ids": [
+   "APP-00215",
+   "APP-00217",
+   "APP-00572",
+   "APP-00573"
+  ],
+  "application_count": 4,
+  "searchable_application_count": 4,
+  "oe_token_count": 27,
+  "distinct_oe_count": 21,
+  "opening_temperatures_c": [
+   82
+  ],
+  "prototype_rank": 20,
+  "completeness_score": 37.5,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3004-3",
+  "bowen_no": "3004-3",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3004-3",
+  "product_name_zh": "节温器 3004-3",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "prototype_candidate",
+  "product_type_source": "human_section_label",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_section_label",
+   "raw_label": "节温器",
+   "source_sheet": "综合产品信息表",
+   "source_row": 98,
+   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
+  },
+  "product_type_raw_labels": [
+   "节温器"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1",
+   "综合产品信息表"
+  ],
+  "source_sheet_count": 2,
+  "source_record_ids": [
+   "SRC-00189",
+   "SRC-00756",
+   "SRC-00757",
+   "SRC-00758"
+  ],
+  "application_ids": [
+   "APP-00189",
+   "APP-00597",
+   "APP-00598",
+   "APP-00599"
+  ],
+  "application_count": 4,
+  "searchable_application_count": 4,
+  "oe_token_count": 54,
+  "distinct_oe_count": 49,
+  "opening_temperatures_c": [
+   82
+  ],
+  "prototype_rank": 4,
+  "completeness_score": 56,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3005",
+  "bowen_no": "3005",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3005",
+  "product_name_zh": "节温器 3005",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "prototype_candidate",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Automotive Thermostat",
+   "source_file": "review/first-batch-business-review.xlsx",
+   "source_sheet": "第一批产品审核表",
+   "source_row": 6,
+   "note": "业务方逐行人工确认；按 V1 规则统一为 Thermostat"
+  },
+  "product_type_raw_labels": [
+   "Automotive Thermostat",
+   "节温器"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "三菱系列",
+   "吉利哈弗系列",
+   "工作表1",
+   "比亚迪系列",
+   "综合产品信息表",
+   "长城哈弗系列"
+  ],
+  "source_sheet_count": 6,
+  "source_record_ids": [
+   "SRC-00005",
+   "SRC-00388",
+   "SRC-00458",
+   "SRC-00492",
+   "SRC-00517",
+   "SRC-00781",
+   "SRC-00782",
+   "SRC-00783",
+   "SRC-00784"
+  ],
+  "application_ids": [
+   "APP-00005",
+   "APP-00388",
+   "APP-00458",
+   "APP-00622",
+   "APP-00623",
+   "APP-00624",
+   "APP-00625"
+  ],
+  "application_count": 7,
+  "searchable_application_count": 7,
+  "oe_token_count": 136,
+  "distinct_oe_count": 85,
+  "opening_temperatures_c": [
+   76.5,
+   82
+  ],
+  "prototype_rank": 1,
+  "completeness_score": 75.5,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3016",
+  "bowen_no": "3016",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3016",
+  "product_name_zh": "节温器 3016",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "prototype_candidate",
+  "product_type_source": "human_section_label",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_section_label",
+   "raw_label": "节温器",
+   "source_sheet": "综合产品信息表",
+   "source_row": 12,
+   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
+  },
+  "product_type_raw_labels": [
+   "节温器"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1",
+   "福特系列",
+   "综合产品信息表"
+  ],
+  "source_sheet_count": 3,
+  "source_record_ids": [
+   "SRC-00017",
+   "SRC-00630",
+   "SRC-00914",
+   "SRC-00915",
+   "SRC-00916"
+  ],
+  "application_ids": [
+   "APP-00017",
+   "APP-00514",
+   "APP-00745",
+   "APP-00746",
+   "APP-00747"
+  ],
+  "application_count": 5,
+  "searchable_application_count": 5,
+  "oe_token_count": 30,
+  "distinct_oe_count": 25,
+  "opening_temperatures_c": [
+   82,
+   91
+  ],
+  "prototype_rank": 8,
+  "completeness_score": 49.5,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3019",
+  "bowen_no": "3019",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3019",
+  "product_name_zh": "节温器 3019",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "prototype_candidate",
+  "product_type_source": "human_section_label",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_section_label",
+   "raw_label": "节温器",
+   "source_sheet": "综合产品信息表",
+   "source_row": 13,
+   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
+  },
+  "product_type_raw_labels": [
+   "节温器"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "吉利哈弗系列",
+   "奇瑞系列",
+   "工作表1",
+   "比亚迪系列",
+   "综合产品信息表"
+  ],
+  "source_sheet_count": 5,
+  "source_record_ids": [
+   "SRC-00020",
+   "SRC-00389",
+   "SRC-00457",
+   "SRC-00534",
+   "SRC-00800"
+  ],
+  "application_ids": [
+   "APP-00020",
+   "APP-00389",
+   "APP-00426",
+   "APP-00641"
+  ],
+  "application_count": 4,
+  "searchable_application_count": 4,
+  "oe_token_count": 23,
+  "distinct_oe_count": 12,
+  "opening_temperatures_c": [
+   82
+  ],
+  "prototype_rank": 13,
+  "completeness_score": 41.5,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3020",
+  "bowen_no": "3020",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3020",
+  "product_name_zh": "节温器 3020",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "prototype_candidate",
+  "product_type_source": "human_section_label",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_section_label",
+   "raw_label": "节温器",
+   "source_sheet": "综合产品信息表",
+   "source_row": 14,
+   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
+  },
+  "product_type_raw_labels": [
+   "节温器"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1",
+   "福特系列",
+   "综合产品信息表"
+  ],
+  "source_sheet_count": 3,
+  "source_record_ids": [
+   "SRC-00021",
+   "SRC-00039",
+   "SRC-00629",
+   "SRC-00902"
+  ],
+  "application_ids": [
+   "APP-00021",
+   "APP-00039",
+   "APP-00513",
+   "APP-00733"
+  ],
+  "application_count": 4,
+  "searchable_application_count": 4,
+  "oe_token_count": 28,
+  "distinct_oe_count": 20,
+  "opening_temperatures_c": [
+   82,
+   89
+  ],
+  "prototype_rank": 11,
+  "completeness_score": 43,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3035",
+  "bowen_no": "3035",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3035",
+  "product_name_zh": "节温器 3035",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "prototype_candidate",
+  "product_type_source": "human_section_label",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_section_label",
+   "raw_label": "节温器",
+   "source_sheet": "综合产品信息表",
+   "source_row": 22,
+   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
+  },
+  "product_type_raw_labels": [
+   "节温器"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "宝马奔驰系列",
+   "工作表1",
+   "综合产品信息表"
+  ],
+  "source_sheet_count": 3,
+  "source_record_ids": [
+   "SRC-00037",
+   "SRC-00494",
+   "SRC-00718"
+  ],
+  "application_ids": [
+   "APP-00037",
+   "APP-00442",
+   "APP-00560"
+  ],
+  "application_count": 3,
+  "searchable_application_count": 3,
+  "oe_token_count": 25,
+  "distinct_oe_count": 20,
+  "opening_temperatures_c": [
+   91
+  ],
+  "prototype_rank": 16,
+  "completeness_score": 39,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3051",
+  "bowen_no": "3051",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3051",
+  "product_name_zh": "节温器 3051",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "prototype_candidate",
+  "product_type_source": "human_section_label",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_section_label",
+   "raw_label": "节温器",
+   "source_sheet": "综合产品信息表",
+   "source_row": 28,
+   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
+  },
+  "product_type_raw_labels": [
+   "节温器"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "吉利哈弗系列",
+   "工作表1",
+   "日系",
+   "综合产品信息表",
+   "长城哈弗系列"
+  ],
+  "source_sheet_count": 5,
+  "source_record_ids": [
+   "SRC-00049",
+   "SRC-00050",
+   "SRC-00466",
+   "SRC-00491",
+   "SRC-00611",
+   "SRC-00720",
+   "SRC-00721"
+  ],
+  "application_ids": [
+   "APP-00049",
+   "APP-00050",
+   "APP-00429",
+   "APP-00502",
+   "APP-00562",
+   "APP-00563"
+  ],
+  "application_count": 6,
+  "searchable_application_count": 6,
+  "oe_token_count": 118,
+  "distinct_oe_count": 54,
+  "opening_temperatures_c": [
+   76.5,
+   82
+  ],
+  "prototype_rank": 2,
+  "completeness_score": 75,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3061",
+  "bowen_no": "3061",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3061",
+  "product_name_zh": "节温器 3061",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "prototype_candidate",
+  "product_type_source": "human_section_label",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_section_label",
+   "raw_label": "节温器",
+   "source_sheet": "综合产品信息表",
+   "source_row": 32,
+   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
+  },
+  "product_type_raw_labels": [
+   "节温器"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "日系",
+   "比亚迪系列",
+   "综合产品信息表"
+  ],
+  "source_sheet_count": 3,
+  "source_record_ids": [
+   "SRC-00057",
+   "SRC-00392",
+   "SRC-00613"
+  ],
+  "application_ids": [
+   "APP-00057",
+   "APP-00391",
+   "APP-00503"
+  ],
+  "application_count": 3,
+  "searchable_application_count": 3,
+  "oe_token_count": 29,
+  "distinct_oe_count": 20,
+  "opening_temperatures_c": [
+   78,
+   82
+  ],
+  "prototype_rank": 14,
+  "completeness_score": 41,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3061A",
+  "bowen_no": "3061A",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3061A",
+  "product_name_zh": "节温器 3061A",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "prototype_candidate",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat Assembly",
+   "source_file": "review/first-batch-business-review.xlsx",
+   "source_sheet": "第一批产品审核表",
+   "source_row": 8,
+   "note": "业务方逐行人工确认；按 V1 规则统一为 Thermostat"
+  },
+  "product_type_raw_labels": [
+   "Thermostat Assembly",
+   "节温器"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1",
+   "综合产品信息表"
+  ],
+  "source_sheet_count": 2,
+  "source_record_ids": [
+   "SRC-00216",
+   "SRC-00717"
+  ],
+  "application_ids": [
+   "APP-00216",
+   "APP-00559"
+  ],
+  "application_count": 2,
+  "searchable_application_count": 2,
+  "oe_token_count": 64,
+  "distinct_oe_count": 59,
+  "opening_temperatures_c": [
+   78
+  ],
+  "prototype_rank": 5,
+  "completeness_score": 52,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3068",
+  "bowen_no": "3068",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3068",
+  "product_name_zh": "节温器 3068",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "prototype_candidate",
+  "product_type_source": "human_section_label",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_section_label",
+   "raw_label": "节温器",
+   "source_sheet": "综合产品信息表",
+   "source_row": 34,
+   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
+  },
+  "product_type_raw_labels": [
+   "节温器"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "吉利哈弗系列",
+   "工作表1",
+   "福特系列",
+   "综合产品信息表",
+   "长城哈弗系列"
+  ],
+  "source_sheet_count": 5,
+  "source_record_ids": [
+   "SRC-00061",
+   "SRC-00460",
+   "SRC-00485",
+   "SRC-00637",
+   "SRC-00761"
+  ],
+  "application_ids": [
+   "APP-00061",
+   "APP-00427",
+   "APP-00602"
+  ],
+  "application_count": 3,
+  "searchable_application_count": 3,
+  "oe_token_count": 19,
+  "distinct_oe_count": 13,
+  "opening_temperatures_c": [
+   76,
+   82
+  ],
+  "prototype_rank": 18,
+  "completeness_score": 38,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3069",
+  "bowen_no": "3069",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3069",
+  "product_name_zh": "节温器 3069",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "prototype_candidate",
+  "product_type_source": "human_section_label",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_section_label",
+   "raw_label": "节温器",
+   "source_sheet": "综合产品信息表",
+   "source_row": 34,
+   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
+  },
+  "product_type_raw_labels": [
+   "节温器"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "吉利哈弗系列",
+   "工作表1",
+   "综合产品信息表",
+   "长城哈弗系列"
+  ],
+  "source_sheet_count": 4,
+  "source_record_ids": [
+   "SRC-00062",
+   "SRC-00461",
+   "SRC-00486",
+   "SRC-00806"
+  ],
+  "application_ids": [
+   "APP-00062",
+   "APP-00428",
+   "APP-00647"
+  ],
+  "application_count": 3,
+  "searchable_application_count": 3,
+  "oe_token_count": 36,
+  "distinct_oe_count": 20,
+  "opening_temperatures_c": [
+   76.5,
+   82
+  ],
+  "prototype_rank": 12,
+  "completeness_score": 42,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3076",
+  "bowen_no": "3076",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3076",
+  "product_name_zh": "节温器 3076",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "prototype_candidate",
+  "product_type_source": "human_section_label",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_section_label",
+   "raw_label": "节温器",
+   "source_sheet": "综合产品信息表",
+   "source_row": 37,
+   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
+  },
+  "product_type_raw_labels": [
+   "节温器"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "宝马奔驰系列",
+   "工作表1",
+   "日系",
+   "综合产品信息表"
+  ],
+  "source_sheet_count": 4,
+  "source_record_ids": [
+   "SRC-00067",
+   "SRC-00184",
+   "SRC-00493",
+   "SRC-00615",
+   "SRC-00895"
+  ],
+  "application_ids": [
+   "APP-00067",
+   "APP-00184",
+   "APP-00441",
+   "APP-00726"
+  ],
+  "application_count": 4,
+  "searchable_application_count": 4,
+  "oe_token_count": 33,
+  "distinct_oe_count": 20,
+  "opening_temperatures_c": [
+   76.5,
+   82
+  ],
+  "prototype_rank": 9,
+  "completeness_score": 46,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3077",
+  "bowen_no": "3077",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3077",
+  "product_name_zh": "节温器 3077",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "prototype_candidate",
+  "product_type_source": "human_section_label",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_section_label",
+   "raw_label": "节温器",
+   "source_sheet": "综合产品信息表",
+   "source_row": 37,
+   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
+  },
+  "product_type_raw_labels": [
+   "节温器"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1",
+   "福特系列",
+   "综合产品信息表"
+  ],
+  "source_sheet_count": 3,
+  "source_record_ids": [
+   "SRC-00068",
+   "SRC-00636",
+   "SRC-00777"
+  ],
+  "application_ids": [
+   "APP-00068",
+   "APP-00520",
+   "APP-00618"
+  ],
+  "application_count": 3,
+  "searchable_application_count": 3,
+  "oe_token_count": 52,
+  "distinct_oe_count": 31,
+  "opening_temperatures_c": [
+   82
+  ],
+  "prototype_rank": 7,
+  "completeness_score": 50,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3080",
+  "bowen_no": "3080",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3080",
+  "product_name_zh": "节温器 3080",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "prototype_candidate",
+  "product_type_source": "human_section_label",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_section_label",
+   "raw_label": "节温器",
+   "source_sheet": "综合产品信息表",
+   "source_row": 73,
+   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
+  },
+  "product_type_raw_labels": [
+   "节温器"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "大众系列",
+   "工作表1",
+   "综合产品信息表"
+  ],
+  "source_sheet_count": 3,
+  "source_record_ids": [
+   "SRC-00139",
+   "SRC-00429",
+   "SRC-00883",
+   "SRC-00884",
+   "SRC-00885",
+   "SRC-00886",
+   "SRC-00887",
+   "SRC-00888",
+   "SRC-00889",
+   "SRC-00924"
+  ],
+  "application_ids": [
+   "APP-00139",
+   "APP-00416",
+   "APP-00714",
+   "APP-00715",
+   "APP-00716",
+   "APP-00717",
+   "APP-00718",
+   "APP-00719",
+   "APP-00720",
+   "APP-00755"
+  ],
+  "application_count": 10,
+  "searchable_application_count": 10,
+  "oe_token_count": 32,
+  "distinct_oe_count": 32,
+  "opening_temperatures_c": [
+   82,
+   88
+  ],
+  "prototype_rank": 3,
+  "completeness_score": 65,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3094",
+  "bowen_no": "3094",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3094",
+  "product_name_zh": "节温器 3094",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "prototype_candidate",
+  "product_type_source": "human_section_label",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_section_label",
+   "raw_label": "节温器",
+   "source_sheet": "综合产品信息表",
+   "source_row": 42,
+   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
+  },
+  "product_type_raw_labels": [
+   "节温器"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1",
+   "福特系列",
+   "综合产品信息表"
+  ],
+  "source_sheet_count": 3,
+  "source_record_ids": [
+   "SRC-00077",
+   "SRC-00638",
+   "SRC-00748",
+   "SRC-00749"
+  ],
+  "application_ids": [
+   "APP-00077",
+   "APP-00589",
+   "APP-00590"
+  ],
+  "application_count": 3,
+  "searchable_application_count": 3,
+  "oe_token_count": 23,
+  "distinct_oe_count": 22,
+  "opening_temperatures_c": [
+   82
+  ],
+  "prototype_rank": 15,
+  "completeness_score": 40.5,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3203",
+  "bowen_no": "3203",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3203",
+  "product_name_zh": "节温器 3203",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "prototype_candidate",
+  "product_type_source": "human_section_label",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_section_label",
+   "raw_label": "节温器",
+   "source_sheet": "综合产品信息表",
+   "source_row": 93,
+   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
+  },
+  "product_type_raw_labels": [
+   "节温器"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1",
+   "福特系列",
+   "综合产品信息表"
+  ],
+  "source_sheet_count": 3,
+  "source_record_ids": [
+   "SRC-00180",
+   "SRC-00641",
+   "SRC-00734"
+  ],
+  "application_ids": [
+   "APP-00180",
+   "APP-00521",
+   "APP-00576"
+  ],
+  "application_count": 3,
+  "searchable_application_count": 3,
+  "oe_token_count": 25,
+  "distinct_oe_count": 20,
+  "opening_temperatures_c": [
+   82
+  ],
+  "prototype_rank": 17,
+  "completeness_score": 39,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-30101",
+  "bowen_no": "30101",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 30101",
+  "product_name_zh": "节温器 30101",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "prototype_candidate",
+  "product_type_source": "human_section_label",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_section_label",
+   "raw_label": "节温器",
+   "source_sheet": "综合产品信息表",
+   "source_row": 86,
+   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
+  },
+  "product_type_raw_labels": [
+   "节温器"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1",
+   "日系",
+   "标志雪铁龙系列",
+   "福特系列",
+   "综合产品信息表"
+  ],
+  "source_sheet_count": 5,
+  "source_record_ids": [
+   "SRC-00166",
+   "SRC-00623",
+   "SRC-00639",
+   "SRC-00673",
+   "SRC-00732"
+  ],
+  "application_ids": [
+   "APP-00166",
+   "APP-00574"
+  ],
+  "application_count": 2,
+  "searchable_application_count": 2,
+  "oe_token_count": 29,
+  "distinct_oe_count": 29,
+  "opening_temperatures_c": [
+   88
+  ],
+  "prototype_rank": 6,
+  "completeness_score": 50,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-31605",
+  "bowen_no": "31605",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 31605",
+  "product_name_zh": "节温器 31605",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "prototype_candidate",
+  "product_type_source": "human_section_label",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_section_label",
+   "raw_label": "节温器",
+   "source_sheet": "综合产品信息表",
+   "source_row": 119,
+   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
+  },
+  "product_type_raw_labels": [
+   "节温器"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1",
+   "综合产品信息表"
+  ],
+  "source_sheet_count": 2,
+  "source_record_ids": [
+   "SRC-00231",
+   "SRC-00812",
+   "SRC-00813"
+  ],
+  "application_ids": [
+   "APP-00231",
+   "APP-00653",
+   "APP-00654"
+  ],
+  "application_count": 3,
+  "searchable_application_count": 3,
+  "oe_token_count": 25,
+  "distinct_oe_count": 24,
+  "opening_temperatures_c": [
+   80
+  ],
+  "prototype_rank": 19,
+  "completeness_score": 38,
+  "created_from": "Phase 2.5 产品数据库重建"
+ }
+]

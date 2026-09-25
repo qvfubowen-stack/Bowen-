@@ -1,0 +1,72 @@
+[
+ {
+  "sheet_name": "综合产品信息表",
+  "sheet_row": 3,
+  "column": 1,
+  "text": "节温器",
+  "governs_block_starts": [
+   1,
+   7
+  ]
+ },
+ {
+  "sheet_name": "综合产品信息表",
+  "sheet_row": 139,
+  "column": 2,
+  "text": "冷却水管",
+  "governs_block_starts": [
+   1,
+   7
+  ]
+ },
+ {
+  "sheet_name": "综合产品信息表",
+  "sheet_row": 142,
+  "column": 2,
+  "text": "温度传感器",
+  "governs_block_starts": [
+   1,
+   7
+  ]
+ },
+ {
+  "sheet_name": "综合产品信息表",
+  "sheet_row": 164,
+  "column": 2,
+  "text": "机油压力报警器",
+  "governs_block_starts": [
+   1,
+   7
+  ]
+ },
+ {
+  "sheet_name": "综合产品信息表",
+  "sheet_row": 184,
+  "column": 2,
+  "text": "热敏开关",
+  "governs_block_starts": [
+   1,
+   7
+  ]
+ },
+ {
+  "sheet_name": "综合产品信息表",
+  "sheet_row": 187,
+  "column": 2,
+  "text": "刹车灯开关",
+  "governs_block_starts": [
+   1,
+   7
+  ]
+ },
+ {
+  "sheet_name": "综合产品信息表",
+  "sheet_row": 197,
+  "column": 2,
+  "text": "倒车灯开关",
+  "governs_block_starts": [
+   1,
+   7
+  ]
+ }
+]

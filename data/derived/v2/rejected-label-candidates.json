@@ -1,0 +1,22 @@
+[
+ {
+  "sheet_name": "工作表1",
+  "sheet_row": 177,
+  "column": 2,
+  "text": "5 157 411",
+  "governs_block_starts": [
+   1
+  ],
+  "reason": "not_a_known_product_type_label"
+ },
+ {
+  "sheet_name": "工作表1",
+  "sheet_row": 274,
+  "column": 4,
+  "text": "32588",
+  "governs_block_starts": [
+   1
+  ],
+  "reason": "candidate_in_data_column"
+ }
+]

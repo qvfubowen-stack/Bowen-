@@ -1,0 +1,30 @@
+{
+  "note": "业务方在 Phase 2 审核表 review/first-batch-business-review.xlsx 里逐行手填的确认结果。用户人工标注优先于程序推断。",
+  "source_file": "review/first-batch-business-review.xlsx",
+  "source_sheet": "第一批产品审核表",
+  "read_rules": [
+    "只读取 Confirmed Product Type 列非空的行；空行表示业务方尚未确认，程序不得推断。",
+    "确认值先按 canonical 归一化（Automotive Thermostat / Thermostat Insert / Thermostat Assembly → Thermostat）。",
+    "原始填写值保留在 raw_label，写入 product_type_raw_labels。"
+  ],
+  "confirmations": [
+    {
+      "bowen_no": "3005",
+      "confirmed_product_type": "Automotive Thermostat",
+      "raw_label": "Automotive Thermostat",
+      "source_row": 6
+    },
+    {
+      "bowen_no": "3064",
+      "confirmed_product_type": "Thermostat Insert",
+      "raw_label": "Thermostat Insert",
+      "source_row": 7
+    },
+    {
+      "bowen_no": "3061A",
+      "confirmed_product_type": "Thermostat Assembly",
+      "raw_label": "Thermostat Assembly",
+      "source_row": 8
+    }
+  ]
+}

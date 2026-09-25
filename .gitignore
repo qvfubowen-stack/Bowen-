@@ -12,6 +12,15 @@ build/
 out/
 *.tsbuildinfo
 
+# ---- 包管理器本地缓存（本机沙箱要求缓存必须落在工作区内，绝不入库）----
+.pnpm-store/
+.pnpm-cache/
+.pnpm-state/
+_tooltest/
+
+# ---- 探针/临时输出（可重新生成）----
+data/derived/_sheets-v2/
+
 # ---- 运行日志与临时文件 ----
 *.log
 npm-debug.log*

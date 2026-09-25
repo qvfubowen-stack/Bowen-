@@ -1,0 +1,649 @@
+{
+ "generated_at": "2026-09-25T03:56:08.038Z",
+ "source_excel": {
+  "path": "data/raw/产品信息表1(1).xlsx",
+  "sha256_before": "79d5995d437ea5a4393faba87f237ea59f1361f51f22d6d5b28eb34bcd144a12",
+  "sha256_after": "79d5995d437ea5a4393faba87f237ea59f1361f51f22d6d5b28eb34bcd144a12",
+  "bytes": 51576159
+ },
+ "sheets": [
+  {
+   "sheet_index": 0,
+   "sheet_name": "综合产品信息表",
+   "role": "master",
+   "header_row": 2,
+   "blocks": 2,
+   "records": 387,
+   "section_labels": [
+    "节温器",
+    "冷却水管",
+    "温度传感器",
+    "机油压力报警器",
+    "热敏开关",
+    "刹车灯开关",
+    "倒车灯开关"
+   ]
+  },
+  {
+   "sheet_index": 1,
+   "sheet_name": "比亚迪系列",
+   "role": "series",
+   "header_row": 2,
+   "blocks": 2,
+   "records": 21,
+   "section_labels": []
+  },
+  {
+   "sheet_index": 2,
+   "sheet_name": "大众系列",
+   "role": "series",
+   "header_row": 2,
+   "blocks": 2,
+   "records": 48,
+   "section_labels": []
+  },
+  {
+   "sheet_index": 3,
+   "sheet_name": "吉利哈弗系列",
+   "role": "series",
+   "header_row": 2,
+   "blocks": 2,
+   "records": 12,
+   "section_labels": []
+  },
+  {
+   "sheet_index": 4,
+   "sheet_name": "长安系列",
+   "role": "series",
+   "header_row": 2,
+   "blocks": 2,
+   "records": 15,
+   "section_labels": []
+  },
+  {
+   "sheet_index": 5,
+   "sheet_name": "长城哈弗系列",
+   "role": "series",
+   "header_row": 2,
+   "blocks": 2,
+   "records": 9,
+   "section_labels": []
+  },
+  {
+   "sheet_index": 6,
+   "sheet_name": "宝马奔驰系列",
+   "role": "series",
+   "header_row": 2,
+   "blocks": 2,
+   "records": 24,
+   "section_labels": []
+  },
+  {
+   "sheet_index": 7,
+   "sheet_name": "三菱系列",
+   "role": "series",
+   "header_row": 2,
+   "blocks": 2,
+   "records": 14,
+   "section_labels": []
+  },
+  {
+   "sheet_index": 8,
+   "sheet_name": "奇瑞系列",
+   "role": "series",
+   "header_row": 2,
+   "blocks": 2,
+   "records": 25,
+   "section_labels": []
+  },
+  {
+   "sheet_index": 9,
+   "sheet_name": "通用系列",
+   "role": "series",
+   "header_row": 2,
+   "blocks": 2,
+   "records": 37,
+   "section_labels": []
+  },
+  {
+   "sheet_index": 10,
+   "sheet_name": "荣威名爵系列",
+   "role": "series",
+   "header_row": 2,
+   "blocks": 2,
+   "records": 10,
+   "section_labels": []
+  },
+  {
+   "sheet_index": 11,
+   "sheet_name": "日系",
+   "role": "series",
+   "header_row": 2,
+   "blocks": 2,
+   "records": 26,
+   "section_labels": []
+  },
+  {
+   "sheet_index": 12,
+   "sheet_name": "福特系列",
+   "role": "series",
+   "header_row": 2,
+   "blocks": 2,
+   "records": 26,
+   "section_labels": []
+  },
+  {
+   "sheet_index": 13,
+   "sheet_name": "传祺系列",
+   "role": "series",
+   "header_row": 2,
+   "blocks": 2,
+   "records": 6,
+   "section_labels": []
+  },
+  {
+   "sheet_index": 14,
+   "sheet_name": "标志雪铁龙系列",
+   "role": "series",
+   "header_row": 2,
+   "blocks": 2,
+   "records": 36,
+   "section_labels": []
+  },
+  {
+   "sheet_index": 15,
+   "sheet_name": "工作表1",
+   "role": "auxiliary_not_ingested",
+   "header_row": 1,
+   "blocks": 1,
+   "records": 277,
+   "section_labels": []
+  },
+  {
+   "sheet_index": 16,
+   "sheet_name": "工作表2",
+   "role": "no_product_table",
+   "header_row": null,
+   "blocks": 0,
+   "records": 0,
+   "section_labels": []
+  }
+ ],
+ "section_labels": [
+  {
+   "sheet_name": "综合产品信息表",
+   "sheet_row": 3,
+   "column": 1,
+   "text": "节温器",
+   "governs_block_starts": [
+    1,
+    7
+   ]
+  },
+  {
+   "sheet_name": "综合产品信息表",
+   "sheet_row": 139,
+   "column": 2,
+   "text": "冷却水管",
+   "governs_block_starts": [
+    1,
+    7
+   ]
+  },
+  {
+   "sheet_name": "综合产品信息表",
+   "sheet_row": 142,
+   "column": 2,
+   "text": "温度传感器",
+   "governs_block_starts": [
+    1,
+    7
+   ]
+  },
+  {
+   "sheet_name": "综合产品信息表",
+   "sheet_row": 164,
+   "column": 2,
+   "text": "机油压力报警器",
+   "governs_block_starts": [
+    1,
+    7
+   ]
+  },
+  {
+   "sheet_name": "综合产品信息表",
+   "sheet_row": 184,
+   "column": 2,
+   "text": "热敏开关",
+   "governs_block_starts": [
+    1,
+    7
+   ]
+  },
+  {
+   "sheet_name": "综合产品信息表",
+   "sheet_row": 187,
+   "column": 2,
+   "text": "刹车灯开关",
+   "governs_block_starts": [
+    1,
+    7
+   ]
+  },
+  {
+   "sheet_name": "综合产品信息表",
+   "sheet_row": 197,
+   "column": 2,
+   "text": "倒车灯开关",
+   "governs_block_starts": [
+    1,
+    7
+   ]
+  }
+ ],
+ "raw_record_count": 962,
+ "auxiliary_excluded_row_count": 11,
+ "product_count": 451,
+ "application_count": 802,
+ "searchable_application_count": 779,
+ "clean_application_count": 761,
+ "needs_review_application_count": 18,
+ "blocked_application_count": 23,
+ "blocked_product_count": 23,
+ "blocked_product_reasons": {
+  "parenthetical_note:": 2,
+  "descriptive_text:": 21
+ },
+ "products_missing_bowen_no": 7,
+ "products_with_blocked_applications": 23,
+ "products_with_needs_review_applications": 19,
+ "misalignment_hit_records": 38,
+ "misalignment_unreadable_records": 23,
+ "misalignment_recovered_records": 19,
+ "oe_index_count": 3024,
+ "oe_token_total": 3247,
+ "distinct_normalized_oe_count": 2242,
+ "avg_oe_per_product": 7.2,
+ "avg_application_per_product": 1.778,
+ "shared_oe_across_products_count": 125,
+ "shared_oe_review_rows": 125,
+ "product_type_counts": {
+  "TemperatureSensor": 41,
+  "OilPressureWarningSwitch": 37,
+  "Thermostat": 262,
+  "(null 未确认)": 70,
+  "ThermalSwitch": 4,
+  "BrakeLightSwitch": 17,
+  "ReverseLightSwitch": 17,
+  "RelatedCoolingPart": 3
+ },
+ "product_type_source_counts": {
+  "human_section_label": 365,
+  "inherited_from_bowen": 13,
+  "human_review_confirmed": 3,
+  "review_required": 70
+ },
+ "status_counts": {
+  "searchable_noindex": 361,
+  "prototype_candidate": 20,
+  "draft": 47,
+  "blocked": 23
+ },
+ "unknown_product_type_count": 70,
+ "auto_guessed_product_type_count": 0,
+ "prototype_products": [
+  {
+   "rank": 1,
+   "product_id": "BW-3005",
+   "bowen_no": "3005",
+   "product_type": "Thermostat",
+   "status": "prototype_candidate",
+   "application_count": 7,
+   "searchable_application_count": 7,
+   "distinct_oe_count": 85,
+   "source_sheets": [
+    "三菱系列",
+    "吉利哈弗系列",
+    "工作表1",
+    "比亚迪系列",
+    "综合产品信息表",
+    "长城哈弗系列"
+   ],
+   "completeness_score": 75.5
+  },
+  {
+   "rank": 2,
+   "product_id": "BW-3051",
+   "bowen_no": "3051",
+   "product_type": "Thermostat",
+   "status": "prototype_candidate",
+   "application_count": 6,
+   "searchable_application_count": 6,
+   "distinct_oe_count": 54,
+   "source_sheets": [
+    "吉利哈弗系列",
+    "工作表1",
+    "日系",
+    "综合产品信息表",
+    "长城哈弗系列"
+   ],
+   "completeness_score": 75
+  },
+  {
+   "rank": 3,
+   "product_id": "BW-3080",
+   "bowen_no": "3080",
+   "product_type": "Thermostat",
+   "status": "prototype_candidate",
+   "application_count": 10,
+   "searchable_application_count": 10,
+   "distinct_oe_count": 32,
+   "source_sheets": [
+    "大众系列",
+    "工作表1",
+    "综合产品信息表"
+   ],
+   "completeness_score": 65
+  },
+  {
+   "rank": 4,
+   "product_id": "BW-3004-3",
+   "bowen_no": "3004-3",
+   "product_type": "Thermostat",
+   "status": "prototype_candidate",
+   "application_count": 4,
+   "searchable_application_count": 4,
+   "distinct_oe_count": 49,
+   "source_sheets": [
+    "工作表1",
+    "综合产品信息表"
+   ],
+   "completeness_score": 56
+  },
+  {
+   "rank": 5,
+   "product_id": "BW-3061A",
+   "bowen_no": "3061A",
+   "product_type": "Thermostat",
+   "status": "prototype_candidate",
+   "application_count": 2,
+   "searchable_application_count": 2,
+   "distinct_oe_count": 59,
+   "source_sheets": [
+    "工作表1",
+    "综合产品信息表"
+   ],
+   "completeness_score": 52
+  },
+  {
+   "rank": 6,
+   "product_id": "BW-30101",
+   "bowen_no": "30101",
+   "product_type": "Thermostat",
+   "status": "prototype_candidate",
+   "application_count": 2,
+   "searchable_application_count": 2,
+   "distinct_oe_count": 29,
+   "source_sheets": [
+    "工作表1",
+    "日系",
+    "标志雪铁龙系列",
+    "福特系列",
+    "综合产品信息表"
+   ],
+   "completeness_score": 50
+  },
+  {
+   "rank": 7,
+   "product_id": "BW-3077",
+   "bowen_no": "3077",
+   "product_type": "Thermostat",
+   "status": "prototype_candidate",
+   "application_count": 3,
+   "searchable_application_count": 3,
+   "distinct_oe_count": 31,
+   "source_sheets": [
+    "工作表1",
+    "福特系列",
+    "综合产品信息表"
+   ],
+   "completeness_score": 50
+  },
+  {
+   "rank": 8,
+   "product_id": "BW-3016",
+   "bowen_no": "3016",
+   "product_type": "Thermostat",
+   "status": "prototype_candidate",
+   "application_count": 5,
+   "searchable_application_count": 5,
+   "distinct_oe_count": 25,
+   "source_sheets": [
+    "工作表1",
+    "福特系列",
+    "综合产品信息表"
+   ],
+   "completeness_score": 49.5
+  },
+  {
+   "rank": 9,
+   "product_id": "BW-3076",
+   "bowen_no": "3076",
+   "product_type": "Thermostat",
+   "status": "prototype_candidate",
+   "application_count": 4,
+   "searchable_application_count": 4,
+   "distinct_oe_count": 20,
+   "source_sheets": [
+    "宝马奔驰系列",
+    "工作表1",
+    "日系",
+    "综合产品信息表"
+   ],
+   "completeness_score": 46
+  },
+  {
+   "rank": 10,
+   "product_id": "BW-3001",
+   "bowen_no": "3001",
+   "product_type": "Thermostat",
+   "status": "prototype_candidate",
+   "application_count": 5,
+   "searchable_application_count": 5,
+   "distinct_oe_count": 20,
+   "source_sheets": [
+    "大众系列",
+    "工作表1",
+    "综合产品信息表"
+   ],
+   "completeness_score": 43
+  },
+  {
+   "rank": 11,
+   "product_id": "BW-3020",
+   "bowen_no": "3020",
+   "product_type": "Thermostat",
+   "status": "prototype_candidate",
+   "application_count": 4,
+   "searchable_application_count": 4,
+   "distinct_oe_count": 20,
+   "source_sheets": [
+    "工作表1",
+    "福特系列",
+    "综合产品信息表"
+   ],
+   "completeness_score": 43
+  },
+  {
+   "rank": 12,
+   "product_id": "BW-3069",
+   "bowen_no": "3069",
+   "product_type": "Thermostat",
+   "status": "prototype_candidate",
+   "application_count": 3,
+   "searchable_application_count": 3,
+   "distinct_oe_count": 20,
+   "source_sheets": [
+    "吉利哈弗系列",
+    "工作表1",
+    "综合产品信息表",
+    "长城哈弗系列"
+   ],
+   "completeness_score": 42
+  },
+  {
+   "rank": 13,
+   "product_id": "BW-3019",
+   "bowen_no": "3019",
+   "product_type": "Thermostat",
+   "status": "prototype_candidate",
+   "application_count": 4,
+   "searchable_application_count": 4,
+   "distinct_oe_count": 12,
+   "source_sheets": [
+    "吉利哈弗系列",
+    "奇瑞系列",
+    "工作表1",
+    "比亚迪系列",
+    "综合产品信息表"
+   ],
+   "completeness_score": 41.5
+  },
+  {
+   "rank": 14,
+   "product_id": "BW-3061",
+   "bowen_no": "3061",
+   "product_type": "Thermostat",
+   "status": "prototype_candidate",
+   "application_count": 3,
+   "searchable_application_count": 3,
+   "distinct_oe_count": 20,
+   "source_sheets": [
+    "日系",
+    "比亚迪系列",
+    "综合产品信息表"
+   ],
+   "completeness_score": 41
+  },
+  {
+   "rank": 15,
+   "product_id": "BW-3094",
+   "bowen_no": "3094",
+   "product_type": "Thermostat",
+   "status": "prototype_candidate",
+   "application_count": 3,
+   "searchable_application_count": 3,
+   "distinct_oe_count": 22,
+   "source_sheets": [
+    "工作表1",
+    "福特系列",
+    "综合产品信息表"
+   ],
+   "completeness_score": 40.5
+  },
+  {
+   "rank": 16,
+   "product_id": "BW-3035",
+   "bowen_no": "3035",
+   "product_type": "Thermostat",
+   "status": "prototype_candidate",
+   "application_count": 3,
+   "searchable_application_count": 3,
+   "distinct_oe_count": 20,
+   "source_sheets": [
+    "宝马奔驰系列",
+    "工作表1",
+    "综合产品信息表"
+   ],
+   "completeness_score": 39
+  },
+  {
+   "rank": 17,
+   "product_id": "BW-3203",
+   "bowen_no": "3203",
+   "product_type": "Thermostat",
+   "status": "prototype_candidate",
+   "application_count": 3,
+   "searchable_application_count": 3,
+   "distinct_oe_count": 20,
+   "source_sheets": [
+    "工作表1",
+    "福特系列",
+    "综合产品信息表"
+   ],
+   "completeness_score": 39
+  },
+  {
+   "rank": 18,
+   "product_id": "BW-3068",
+   "bowen_no": "3068",
+   "product_type": "Thermostat",
+   "status": "prototype_candidate",
+   "application_count": 3,
+   "searchable_application_count": 3,
+   "distinct_oe_count": 13,
+   "source_sheets": [
+    "吉利哈弗系列",
+    "工作表1",
+    "福特系列",
+    "综合产品信息表",
+    "长城哈弗系列"
+   ],
+   "completeness_score": 38
+  },
+  {
+   "rank": 19,
+   "product_id": "BW-31605",
+   "bowen_no": "31605",
+   "product_type": "Thermostat",
+   "status": "prototype_candidate",
+   "application_count": 3,
+   "searchable_application_count": 3,
+   "distinct_oe_count": 24,
+   "source_sheets": [
+    "工作表1",
+    "综合产品信息表"
+   ],
+   "completeness_score": 38
+  },
+  {
+   "rank": 20,
+   "product_id": "BW-3003-1",
+   "bowen_no": "3003-1",
+   "product_type": "Thermostat",
+   "status": "prototype_candidate",
+   "application_count": 4,
+   "searchable_application_count": 4,
+   "distinct_oe_count": 21,
+   "source_sheets": [
+    "工作表1",
+    "综合产品信息表"
+   ],
+   "completeness_score": 37.5
+  }
+ ],
+ "oe_engine_relation": {
+  "applications_total": 802,
+  "applications_with_both_oe_and_engine_cell": 562,
+  "applications_oe_but_no_engine_cell": 208,
+  "applications_engine_but_no_oe_cell": 8,
+  "oe_tokens_split_into_standalone_arrays": false,
+  "relation_preserved": true,
+  "explanation": "每条 application 同时保留 oe_numbers_raw（整格原文）与 vehicle_application_raw（整格原文），两者来自同一 Excel 行的同一记录块。OE 没有被抽成脱离 application 的独立数组，因此 OE 与 Engine 的行级对应关系没有丢失。"
+ },
+ "company_facts": {
+  "since_year": 2009,
+  "manufacturing_base_m2": 10000,
+  "production_workshop_m2": 3500,
+  "temperature_controlled_workshop_m2": 2000,
+  "production_equipment_count": 100,
+  "rd_projects": 29,
+  "patents": 16,
+  "software_copyrights": 5,
+  "certifications": [
+   "IATF 16949",
+   "ISO 14001",
+   "ISO 45001"
+  ]
+ }
+}
