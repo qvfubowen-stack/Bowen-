@@ -47,6 +47,26 @@ for (const f of [MAP]) {
   }
 }
 
+/**
+ * 预检：图片二进制本身不入 Git（66.5 MB，且可由原始 Excel 一条命令重新生成），
+ * 所以全新 clone 出来的目录里没有 data/processed/product-images/。
+ * 这种情况给出可执行的指引，而不是抛出一堆看不懂的失败项。
+ */
+const preflightMap = JSON.parse(fs.readFileSync(MAP, 'utf8'));
+const expectedImages = preflightMap.totals.images_extracted;
+const onDisk = fs.existsSync(IMG_DIR) ? fs.readdirSync(IMG_DIR).length : 0;
+if (onDisk === 0 && expectedImages > 0) {
+  console.error(
+    '\n图片文件尚未生成。\n'
+    + '  原因：提取出的图片二进制体积较大（约 66.5 MB）且可由原始 Excel 完整重新生成，\n'
+    + '        因此没有纳入 Git；映射文件 product-image-map.json 已入库。\n'
+    + '  解决：在项目根目录执行一次（约 30 秒）：\n'
+    + '        node tools/extract-product-images.mjs\n'
+    + '        然后重新运行本测试。\n',
+  );
+  process.exit(2);
+}
+
 const map = JSON.parse(fs.readFileSync(MAP, 'utf8'));
 const manifest = JSON.parse(fs.readFileSync(MANIFEST, 'utf8'));
 const dbProducts = JSON.parse(fs.readFileSync(DB_PRODUCTS, 'utf8'));

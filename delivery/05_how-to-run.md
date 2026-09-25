@@ -329,12 +329,30 @@ pnpm run dev
 #    http://localhost:3000
 ```
 
-### 如果依赖已经装好，只想重新生成数据
+### 7.1 全新 clone 后必须多做一步：生成产品图片
+
+产品图片的**二进制**没有纳入 Git（约 66.5 MB，且可由冻结的原始 Excel 完整重新生成），
+但**映射文件已入库**。所以全新 clone 出来的目录里：
+
+- ✅ 网站可以正常 `install` / `typecheck` / `build` / `start`（图片不是构建依赖）
+- ✅ 数据测试与文案守卫测试可以直接跑
+- ⚠️ 只有 `tools/verify-product-images.mjs` 会因为图片文件缺失而提示先执行提取
+
+```bash
+# 在项目根目录执行一次（约 30 秒）
+node tools/extract-product-images.mjs
+```
+
+完成后 `data/processed/product-images/` 会有 798 个文件与映射完全对应。
+如果忘了这一步直接跑图片验收测试，脚本会打印上面这段指引并以 exit code 2 退出，
+不会给出一堆看不懂的失败项。
+
+### 7.2 如果依赖已经装好，只想重新生成数据
 
 ```bash
 # 在项目根目录
-node tools/build-product-db-v2.mjs
-node tools/verify-product-db-v2.mjs
+node tools/build-product-db-v2.mjs      # 重建数据库 + 网站数据集
+node tools/verify-product-db-v2.mjs     # 65 项验收
 
 # 网站会自动读取新生成的数据（开发服务器热更新）
 ```
