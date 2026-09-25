@@ -2,7 +2,7 @@
 
 **项目版本：Bowen-Website-Prototype-V1**
 **阶段：Phase 2.5（数据库重建）+ Phase 3（UI Prototype）**
-**技术栈：Next.js 15.1.6 + React 19 + TypeScript 5.7（App Router）**
+**技术栈：Next.js 15.5.26 + React 19 + TypeScript 5.7（App Router）**
 **Git commit：`4551b72`（Build Bowen B2B website UI prototype）／`9f5d193`（数据库重建）／`e12cc24`（交付整理）**
 **当前状态：原型已完成，未上线，等待验收**
 
@@ -279,12 +279,28 @@ http://localhost:3000/products?category=automotive-switches
 
 ### 提交后会发生什么
 
-**原型阶段不真的发邮件。** 提交后页面展示
-**「Data that would be transmitted」** 的完整 JSON payload，包含：
+**原型阶段不真的发邮件。** 提交后页面展示两块内容：
+
+1. **「Contact details received」** —— 把用户在表单里填写的姓名、公司、国家、
+   邮箱、WhatsApp/电话、网站再列一遍，方便肉眼核对；
+2. **「Data that would be transmitted」** —— 完整 JSON payload。
+
+**payload 里的联系信息是用户实际填写的值，不是占位符。**
+（早期版本这里硬编码了 `(from form)`，已修复，并加了自动断言禁止再出现占位符。）
 
 ```json
 {
-  "contact": { "name": "...", "company": "...", "country": "...", "email": "...", "whatsapp_phone": "..." },
+  "submitted_at": "2026-09-25T…Z",
+  "contact": {
+    "name": "Zhang Wei (E2E)",
+    "company": "E2E Auto Parts Import GmbH",
+    "country": "Germany",
+    "email": "e2e.buyer@example.com",
+    "whatsapp_phone": "+49 151 2345678",
+    "website": "https://e2e-buyer.example.com",
+    "message": "Sourcing list:\n2550035540 x 300\n4711306950 x 500",
+    "consent": true
+  },
   "items": [
     {
       "product_id": "BW-3005",
@@ -292,16 +308,35 @@ http://localhost:3000/products?category=automotive-switches
       "product_type": "Thermostat",
       "matched_oe": "4711306950",
       "vehicle": "三菱4G6 471Q 菱帅 比亚迪F3 …",
-      "engine": "…",
-      "application_id": "APP-00005",
-      "quantity": "500 pcs"
+      "engine": "三菱4G6 471Q 菱帅 比亚迪F3 …",
+      "application_id": "APP-00388",
+      "quantity": "500 pcs",
+      "remark": null
     }
   ],
-  "sourcing_list_file": "my-list.xlsx"
+  "items_count": 1,
+  "sourcing_list_file": "my-list.xlsx",
+  "delivery": { "transport": "prototype_no_email_sent", "note": "…" }
 }
 ```
 
-这样可以在不发邮件的前提下，**验证整条数据传递链路是通的**。
+字段为空时统一显示 `(not provided)`，**不会出现 `(from form)` 这类模板文字**。
+
+### 自动化测试
+
+`node tools/verify-rfq-e2e.mjs` —— **31 项断言，全部 PASS**。
+用真实 Chrome（CDP）跑：自动起临时服务器 → 真实填表 → 提交 → 读回 payload
+→ 逐字段比对。覆盖：
+
+- 空表单提交被拦下、显示校验提示、不生成 payload
+- 7 个联系字段必须等于测试填入的值
+- payload 中不得出现 `(from form)` / `(not provided)` / `{{ }}` / `<% %>` 等占位符
+- items 必须保留 product_id / application_id / Bowen No. / Matched OE / Vehicle / Engine / Quantity
+- payload 必须标注原型不发送邮件
+
+**这一套测试发现了一个真实缺陷**：`OeSearchBox` 自己渲染 `<form>`，
+被嵌在 RFQ 页的 `<form>` 里，属于非法嵌套 HTML，导致整页 hydration 失败、
+表单完全无法交互。该问题已修复（改为 `role="search"` + 手动处理 Enter）。
 
 ### 快捷测试入口
 
@@ -341,7 +376,7 @@ RFQ 明细存在浏览器 localStorage（键名 `bowen.rfq.v1`），
 ### 前置条件
 
 - Node.js 18+（本项目用 **v24.9.0** 验证）
-- 首次运行需装依赖：`cd website && npm install`
+- 首次运行需装依赖：`cd website && pnpm install --frozen-lockfile`（唯一推荐包管理器：pnpm 10.34.5，见 `05_how-to-run.md`）
 
 ### 一条命令启动
 
@@ -468,8 +503,12 @@ Chrome / Edge 按 `F12` → 点左上角设备图标（Toggle device toolbar）�
 
 ### 第二优先：把原型变成可上线站点
 
-7. **接入真实数据库** —— 把 `website/src/lib/db.ts` 的 `loadDataset()`
-   换成 PostgreSQL / Supabase 查询（接口签名已设计好，页面代码不用改）
+7. **接入真实数据库** —— 新增 `SupabaseProductRepository` 实现
+   `src/lib/repository.ts` 的接口。**页面层不用改**（API 已经是 async 且页面已 await），
+   但**不只是换一个实现类**：`listProducts()` / `getMakeSummaries()` / `searchByOe()`
+   三处仍是内存算法，必须用 SQL 重写，另有缓存失效、构建期渲染策略、
+   RFQ 落库、鉴权限流、RLS 等 8 项配套工作。
+   完整边界见 [`../docs/supabase-migration-boundary.md`](../docs/supabase-migration-boundary.md)
 8. **RFQ 真正发信** —— 服务端接收 payload → 写入数据库 → 发邮件给销售 →
    回执邮件给客户
 9. **站点级 SEO** —— metadata、sitemap、robots、结构化数据（当前是 noindex）
@@ -537,6 +576,6 @@ website/
 
 ```bash
 cd website
-npm install     # 首次
-npm run dev     # → http://localhost:3000
+pnpm install --frozen-lockfile   # 首次（唯一推荐 pnpm 10.34.5）
+pnpm run dev                     # → http://localhost:3000
 ```

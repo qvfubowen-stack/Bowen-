@@ -33,11 +33,12 @@
 | [`prototype-info.txt`](delivery/prototype-info.txt) | 一页纸信息清单 |
 | `screenshots/` | 6 张真实截图（Desktop + Mobile） |
 
-**另有专项审计：**
+**另有专项文档：**
 
 | 文档 | 内容 |
 |---|---|
 | [`docs/excel-image-audit.md`](docs/excel-image-audit.md) | **Excel 嵌入图片审计**（Phase 2.6）：681 个图片文件 / 798 个对象，映射到 398 个产品 |
+| [`docs/supabase-migration-boundary.md`](docs/supabase-migration-boundary.md) | **Supabase 接入边界**：说明"换实现类"之外还必须做的 8 项工作 |
 
 ---
 
@@ -45,14 +46,19 @@
 
 ```bash
 cd website
-npm install      # 首次需要
-npm run dev      # 一条命令启动
+pnpm install --frozen-lockfile   # 首次（约 6 秒）
+pnpm run dev                     # 一条命令启动
 ```
 
 打开 **http://localhost:3000**
 
-> 本机没装全局 npm？用 `node tools/npm-run.mjs dev`（项目自带兼容层）。
-> 已装 pnpm？用 `pnpm run dev`。
+**环境要求（唯一推荐）**：Node.js **>= 18.18.0**，pnpm **>= 10.16.0（推荐 10.34.5）**。
+版本已由 `website/package.json` 的 `packageManager` 字段 + `.npmrc` 的
+`engine-strict=true` 强制，装错版本会直接报错。
+
+> 本机没有 pnpm？`corepack enable`（Node 自带，会按 `packageManager` 自动拉取）。
+> 原开发机没有全局 npm 时的备选：`npm run dev` 或 `node tools/npm-run.mjs dev`
+> （兼容层，**不支持 `npm install`**）。
 
 **马上试这几个真实 OE 号**（在首页搜索框输入）：
 
@@ -219,6 +225,7 @@ node tools/build-product-db-v2.mjs
 node tools/verify-product-db-v2.mjs
 
 # 3) 提取 Excel 嵌入图片并建立映射（Phase 2.6）
+#    图片二进制不入 Git，全新 clone 需先跑这一步（约 30 秒）
 node tools/extract-product-images.mjs
 node tools/verify-product-images.mjs   # 39 项验收测试
 
@@ -227,6 +234,12 @@ node tools/build-review-lists-v2.mjs
 
 # 5) 网站数据集验收测试（36 项）
 cd website && node tools/verify-prototype-data.mjs
+
+# 6) 分类模型与文案守卫（12 项）
+node tools/verify-category-copy.mjs
+
+# 7) RFQ 表单 → payload 端到端（31 项，自动起临时服务器）
+node tools/verify-rfq-e2e.mjs
 ```
 
 **验证原始文件有没有被人改过**（最重要的一条）：

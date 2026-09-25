@@ -4,44 +4,53 @@
 
 【项目当前版本】
   Bowen-Website-Prototype-V1
-  阶段：Phase 2.5（产品数据库重建）+ Phase 3（网站 UI Prototype）
-  状态：原型已完成，等待业务方验收。**尚未正式上线**，未接正式域名，未接 Supabase。
+  阶段：Phase 2.5（产品数据库重建）+ Phase 2.6（图片提取映射）+ Phase 3（网站 UI Prototype）
+        + 第二次修复轮（安装流程 / RFQ payload / Supabase 边界 / 分类文案）
+  状态：原型已完成并通过全部 188 项自动断言，等待业务方验收。
+        **尚未正式上线**，未接正式域名，未接 Supabase。
 
 【Git commit hash】
-  HEAD（交付整理）   :  e12cc242ec49ccb460d7d7d7251e83442ab864b3   (short: e12cc24)
-                        "Finalize delivery package and fix npm compatibility layer"
+  最新提交（修复轮）:  "Fix install flow, RFQ payload, Supabase boundary and category copy"
+                        "Add actionable preflight for missing product images on fresh clone"
+  Phase 2.6（图片）  :  "Extract and map Excel embedded product images"
   Phase 3（网站原型）:  4551b72e16995369e0f09f677a824aca40605c83   (short: 4551b72)
                         "Build Bowen B2B website UI prototype"
   Phase 2.5（数据库）:  9f5d193adf0e78fa8628c330a4ca18f9f42b99db   (short: 9f5d193)
                         "Rebuild product database with application-level OE mapping"
   分支：main
-  用 `git log --oneline -4` 可以看到全部提交。
+  用 `git log --oneline -8` 可以看到全部提交（以仓库实际 HEAD 为准）。
 
 【使用的最新版 Excel 文件名】
   data/raw/产品信息表1(1).xlsx
   SHA-256: 79d5995d437ea5a4393faba87f237ea59f1361f51f22d6d5b28eb34bcd144a12
   大小:    51,576,159 字节
   工作表:  17 个（综合产品信息表 + 15 个车型系列表 + 工作表1/工作表2 辅助表）
+  嵌入图片: 681 个图片文件 / 798 个图片对象（见 docs/excel-image-audit.md）
 
   原始文件只读，程序绝不写入。每次运行都会校验 SHA-256，不一致就直接中止。
 
 【本地启动命令】
-  方式一（推荐，一条命令）：
-      cd website
-      npm run dev
+  唯一推荐的包管理器：pnpm 10.34.5（版本由 package.json 的 packageManager 字段锁定）
+  环境要求：Node >= 18.18.0，pnpm >= 10.16.0（推荐 10.34.5）
 
-  方式二（本机没装 npm 时同样可用）：
+  推荐路径：
       cd website
-      node tools/npm-run.mjs dev
+      pnpm install --frozen-lockfile     # 首次，约 6 秒，无任何警告
+      pnpm run dev                       # 一条命令启动
 
-  方式三（已装 pnpm）：
+  本机没有 pnpm 时：corepack enable（Node 自带，会按 packageManager 自动拉取）
+
+  原开发机没有全局 npm 时的备选（兼容层，不支持 install）：
       cd website
-      pnpm run dev
+      npm run dev           或           node tools/npm-run.mjs dev
 
   手机端在局域网内访问：
       cd website
-      npm run dev:host
+      pnpm run dev:host
       然后用手机浏览器打开 http://<你电脑的局域网IP>:3000
+
+  全新 clone 后如需跑图片验收测试，先执行一次（约 30 秒）：
+      node tools/extract-product-images.mjs
 
   生产模式（可选，验证构建产物）：
       cd website
@@ -122,15 +131,33 @@
       开启温度 / 来源工作表+行号）、Add to RFQ、Request a Quote
     · OE Search 结果页：Exact OE Match 标记、Matched OE、Bowen No.、Vehicle、Engine、
       Product Type、来源行、跳转详情页、直接加入 RFQ
-    · RFQ 流程：Add to RFQ 自动带入 product_id / Bowen No. / Matched OE / Vehicle / Engine，
-      表单含 Name / Company / Country / Email / WhatsApp·Phone / Quantity / Message /
-      Upload Sourcing List，提交后展示将传输的完整数据 payload
-      （原型不发邮件，但数据流全程可验证）
+  RFQ 流程：Add to RFQ 自动带入 product_id / application_id / Bowen No. / Matched OE /
+      Vehicle / Engine，表单含 Name / Company / Country / Email / WhatsApp·Phone /
+      Website / Quantity / Remark / Message / Upload Sourcing List。
+      提交后展示「Contact details received」+ 完整 JSON payload，
+      **联系信息是用户实际填写的值**（不再有 (from form) 占位符）。
+      原型仍不发送邮件，payload 里明确标注 prototype_no_email_sent。
     · Factory / Quality / About Bowen / Contact 页面完成
     · Blog 仅页面框架（按需求，本阶段不批量生成 SEO 内容）
-    · 响应式：Desktop / Tablet / Mobile 三种宽度实测无横向溢出
+    · 响应式：Desktop / Tablet / Mobile 三种宽度实测无横向溢出（390px 逐页探针）
     · 站点级 noindex（原型不上线、不被爬虫收录）
-    · 数据访问层已抽象在 website/src/lib/db.ts，未来换 PostgreSQL / Supabase 只改一个函数
+    · 数据访问层已分层：src/lib/db.ts（async API）→ repository.ts（接口）
+      → repositories/json-repository.ts（唯一 import JSON 的实现）。
+      页面层不依赖 JSON 结构。**但接入 Supabase 不止换实现类**，
+      分页/车型聚合/OE 搜索三处需用 SQL 重写，详见
+      docs/supabase-migration-boundary.md
+
+  工程化（第二次修复轮）
+    · 唯一推荐包管理器 pnpm 10.34.5，已用 packageManager 字段锁定
+    · pnpm install --frozen-lockfile 在干净目录实测通过，零警告
+    · sharp 构建脚本不需要执行（全站无 next/image 用法），已在 package.json
+      用 pnpm.ignoredBuiltDependencies 显式声明
+    · Next.js 从 15.1.6 升级到 15.5.26（修复 CVE-2025-66478 安全通告）
+    · 新增两个测试套件：verify-category-copy.mjs（12 项）、verify-rfq-e2e.mjs（31 项）
+
+  自动验收：188 项断言全部 PASS
+    · 数据库 65 · 图片映射 39 · 网站数据 36 · 分类守卫 12 · RFQ 端到端 31
+    · 响应式 5 页 · typecheck 0 error · build 390 路由
 
 【哪些功能还只是 placeholder】
   · 产品图片：**此前结论有误，已于 Phase 2.6 更正**。工作簿内实际嵌有
@@ -139,7 +166,8 @@
     （exact 767 / review_required 26 / unresolved 5）。
     完整审计见 docs/excel-image-audit.md。
     按业务方要求，本阶段暂未把图片接入网站，页面仍显示 "Photo pending" 占位符。
-  · 邮件发送：RFQ 提交不真的发邮件，改为展示将传输的 JSON payload。
+  · 邮件发送：RFQ 提交不真的发邮件，改为展示将传输的 JSON payload
+    （联系信息已修复为真实填写值）。
   · 邮箱地址：sales@bowen-thermostat.com / quality@bowen-thermostat.com 是占位邮箱，
     上线前必须替换为真实邮箱。
   · 公司详细信息：注册全称/地址、电话与 WhatsApp、微信、营业时间、地图位置
@@ -152,6 +180,24 @@
   · About 公司沿革、员工人数、出口市场、客户见证：列为待补，未编造。
   · Blog：只有 6 个计划选题，没有文章正文。
   · 70 个产品类型待业务方确认（已生成 review/product-type-unconfirmed.xlsx）。
+  · 真实数据库（PostgreSQL / Supabase）：未接入，且不止"换一个实现类"
+    （详见 docs/supabase-migration-boundary.md）。
+  · 站点 SEO：全站 noindex（刻意的），未生成 sitemap / robots / 结构化数据。
+  · 跨浏览器测试、无障碍完整审计、性能基线：未做。
+
+【上线阻塞项（必须逐项清掉才能上线）】
+  B1  70 个产品类型待业务方确认
+  B2  字段错位判定口径待业务方确认
+  B3  真实邮箱地址
+  B4  产品图片接入网站（依赖 B5）
+  B5  31 张待定图片：5 个未入库编号 + 5 张 unresolved + 主图规则 + 水印可用性
+  B6  接入 PostgreSQL / Supabase（3 处查询重写 + 7 项配套）
+  B7  RFQ 真正发信 + 落库 + 限流
+  B8  站点 SEO（sitemap / robots / 结构化数据）
+  B9  部署方案与域名（业务方决策）
+  B10 跨浏览器测试 + 无障碍审计 + 性能基线
+  B11 公司注册信息、证书编号与范围、产能/交期/MOQ/包装规范
+  详见 delivery/04_known-issues.md 第〇节。
 
 【本阶段严格遵守的禁令】
   未购买域名 · 未绑定正式域名 · 未正式发布 · 未接 Supabase · 无支付系统 ·

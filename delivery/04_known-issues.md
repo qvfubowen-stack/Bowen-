@@ -1,10 +1,31 @@
 # 已知问题清单（Known Issues）
 
 **项目版本：Bowen-Website-Prototype-V1**
-**整理时间：2026-09-25**
+**最后更新：2026-09-25（第二次修复轮后）**
 
-> 这份清单是**诚实声明**：哪些东西还没做完、哪些口径需要业务方拍板、哪些是已知的
-> 技术限制。没有隐瞒的缺陷，也没有把 placeholder 说成已完成。
+> **本轮已修复的问题不再列在下面**（清单见
+> [`03_test-results.md`](03_test-results.md) 第八节，共 19 项）。
+> 本文只保留**仍然存在的**问题与待确认事项。
+
+---
+
+## 〇、上线阻塞项清单（一句话版）
+
+下面这些**没做完就不能正式上线**。按优先级排列：
+
+| # | 阻塞项 | 谁来做 | 说明 |
+|---|---|---|---|
+| B1 | 70 个产品类型待确认 | **业务方** | 填 `review/product-type-unconfirmed.xlsx` |
+| B2 | 字段错位判定口径待确认 | **业务方** | 当前是"编号可读就不阻断"；如需从严改一行重跑 |
+| B3 | 真实邮箱地址 | **业务方** | 现在是占位邮箱 |
+| B4 | 产品图片接入网站 | 开发 | 图片已提取映射完毕，等业务方确认主图规则与可用性 |
+| B5 | 31 张图片待处理（26 待确认 + 5 无法映射） | **业务方** | 详见 `docs/excel-image-audit.md` |
+| B6 | 接入 PostgreSQL / Supabase | 开发 | 需按 `docs/supabase-migration-boundary.md` 重写 3 处查询 + 7 项配套 |
+| B7 | RFQ 真正发信 + 落库 | 开发 | 现在只展示 payload，不发送 |
+| B8 | 站点 SEO（sitemap / robots / 结构化数据） | 开发 | 当前全站 `noindex`，是刻意的 |
+| B9 | 部署与域名 | **业务方决策** | 本阶段禁令 |
+| B10 | 跨浏览器测试 + 无障碍审计 + 性能基线 | 开发 | 上线前建议补 |
+| B11 | 公司注册信息、证书编号与范围、产能/交期/MOQ | **业务方** | 页面上已列为待补 |
 
 ---
 
@@ -86,11 +107,31 @@
 | 影响 | 构建期全量载入内存；产品量再翻几倍时构建时间和内存会明显上升 |
 | 为什么这样做 | 本阶段明确禁止接入 Supabase；原型用静态数据最稳、最可复现 |
 | 何时需要处理 | 产品量超过约 2,000 个，或需要实时库存/价格时 |
-| 迁移成本 | **低**。`website/src/lib/db.ts` 的 `loadDataset()` 是唯一替换点，页面代码不用改 |
+| 迁移成本 | **页面层低，查询层不低**。页面层已全部 `await`（因为 API 已经是 async），但 `listProducts()` / `getMakeSummaries()` / `searchByOe()` 三处仍是内存算法，接入时必须用 SQL 重写。详见 3.2 |
 
-### 3.2 未接入真实数据库
+### 3.2 未接入真实数据库（边界已明确，但工作量不小）
 
-本阶段禁止接入 Supabase / PostgreSQL。数据访问层已按可替换方式设计（见 3.1）。
+本阶段禁止接入 Supabase / PostgreSQL。已完成的解耦：
+
+- `src/lib/repository.ts` 定义 `ProductRepository` 接口，**所有方法都是 async**
+- `src/lib/repositories/json-repository.ts` 是**唯一** import `@/data/*.json` 的地方
+- 页面层只调用 `src/lib/db.ts` 的 async API，已确认**没有任何页面直接 import JSON**
+- 因此换实现时页面层不用改
+
+**但以下 8 项必须同时处理**（早期文档说"只改一个函数"是不准确的，已更正）：
+
+| # | 事项 | 不改的后果 |
+|---|---|---|
+| 1 | 新增 `SupabaseProductRepository` + 行→领域类型映射 | 无法接入 |
+| 2 | `listProducts()` 改为 SQL `WHERE` + `LIMIT/OFFSET` + `COUNT` | 每次翻页把全表拉到应用层 |
+| 3 | `getMakeSummaries()` 改为聚合视图 / 物化视图 | 首页每次请求扫描全表 |
+| 4 | `searchByOe()` 改为索引精确匹配 + 前缀匹配 | OE 搜索随库增长线性变慢 |
+| 5 | `getSiteFacts()` 换数据源（settings 表或环境配置） | 公司对外声明没有受控的存放位置 |
+| 6 | 明确缓存与失效策略（`fetch` 缓存 / `unstable_cache` / `revalidate`） | 后台改价后前台不知何时生效 |
+| 7 | 明确构建期渲染策略（ISR / 按需渲染） | 构建时间随产品量线性增长 |
+| 8 | 新增 RFQ 写路径、文件上传、通知、回执、鉴权、限流、RLS | RFQ 收不到、被刷、越权读到 blocked 数据 |
+
+完整清单见 [`../docs/supabase-migration-boundary.md`](../docs/supabase-migration-boundary.md)。
 
 ### 3.3 页面预渲染
 
@@ -106,17 +147,20 @@
 用到的 CSS 特性（Grid、Flexbox、`clamp()`、`aspect-ratio`、CSS Modules）
 都是广泛支持的，但**未做跨浏览器回归**。
 
-### 3.5 无端到端浏览器自动化测试
+### 3.5 端到端测试：已补 RFQ，其余仍缺
 
-未引入 Playwright / Puppeteer（避免为原型增加重量依赖）。当前验证手段：
+**本轮已补**：`website/tools/verify-rfq-e2e.mjs` 用真实 Chrome（CDP）
+跑「填表 → 提交 → 读回 payload」全流程，31 项断言。这一套正是靠它发现
+"RFQ 页 hydration 失败、表单无法交互"的真实缺陷。
 
-- 数据库层：65 项断言测试
-- 网站数据层：36 项断言测试
-- HTTP 层：对真实 URL 发请求并断言返回内容
-- 响应式：CDP 探针实测 390px 视口无横向溢出
-- 视觉：6 张真实截图 + 人工目视检查
+**仍然缺**（未引入 Playwright / Puppeteer，避免为原型增加重量依赖）：
 
-**缺少**：真实的「点击 → 填表 → 提交」浏览器自动化回归。
+- 其他页面的交互回归：Products 筛选器、分页、OE 搜索框的键盘操作
+- 多浏览器 E2E
+- 视觉回归（截图对比）
+
+当前验证手段汇总：数据库 65 项 + 图片映射 39 项 + 网站数据 36 项 +
+分类守卫 12 项 + RFQ E2E 31 项 + 响应式探针 5 页 + 生产服务器逐页 HTTP 断言。
 
 ### 3.6 未做性能基线
 
@@ -126,24 +170,36 @@
 ### 3.7 无障碍只做了基础项
 
 已做：skip link、语义化标签（`header`/`nav`/`main`/`footer`/`table`/`caption`）、
-`:focus-visible` 焦点样式、`aria-label`、`aria-expanded`、表单 label 关联、
-`aria-invalid` + `aria-describedby`、`prefers-reduced-motion`。
+`role="search"`、`:focus-visible` 焦点样式、`aria-label`、`aria-expanded`、
+表单 label 关联、`aria-invalid` + `aria-describedby`、`prefers-reduced-motion`。
 **未做**：完整 WCAG 2.1 AA 审计、屏幕阅读器实测、色彩对比度全量校验。
 
-### 3.8 本机 npm 兼容层
+### 3.8 npm 兼容层（范围刻意受限）
 
-本机只装了 Node.js，没有全局 npm。项目自带 `website/npm.cmd` +
+原开发机只装了 Node.js，没有全局 npm / pnpm。项目自带 `website/npm.cmd` +
 `website/tools/npm-run.mjs` 作为 `npm run` 的最小兼容层。
-**这不影响在装有标准 npm 的机器上运行** —— 在那些机器上直接用真实 npm 即可。
+**唯一推荐的包管理器仍是 pnpm**（版本锁定见 `package.json` 的 `packageManager`）。
+在装有标准 pnpm 的机器上直接用 pnpm 即可，兼容层不会被触发。
 
-已知限制（都已在兼容层里规避，记录在此供参考）：
+已知限制：
 
 | 限制 | 说明 |
 |---|---|
-| 只支持 `npm run <script>` 与 `npm start` | **不支持 `npm install`**，装依赖请用标准 npm 或 pnpm |
+| 只支持 `npm run <script>` 与 `npm start` | **不支持 `npm install`**，装依赖请用 `pnpm install` |
 | 不能做 `where npm` 检查 | cmd.exe 会把 `npm` 解析回 `npm.cmd` 自身，导致 `Maximum setlocal recursion level reached` |
 | `npm.cmd` 必须纯 ASCII | cmd.exe 用 OEM 代码页解析 .cmd，写非 ASCII 字符会导致命令解析失败 |
 | 需要把 Node 目录放进 PATH | 通过包装脚本调用时 cmd.exe 继承的 PATH 可能没有 `node`，兼容层已自动补上 |
+
+### 3.9 产品图片二进制不入 Git
+
+提取出的 798 张图片（66.5 MB）**没有纳入 Git**，因为它们可由冻结的原始 Excel
+用一条命令完整重新生成。映射文件 `product-image-map.json` 已入库。
+
+- 网站构建**不依赖**这些图片，所以全新 clone 可以直接 install / build / start
+- 只有 `tools/verify-product-images.mjs` 需要图片存在；缺失时它会打印可执行指引
+  并以 exit code 2 退出（不会给出难懂的失败项）
+- 解决：`node tools/extract-product-images.mjs`（约 30 秒）
+- 交付 ZIP 里**包含**这些图片
 
 ---
 
@@ -182,18 +238,22 @@
 
 ---
 
-## 六、优先级建议
+## 六、优先级建议（与第〇节阻塞清单对应）
 
-| 优先级 | 事项 | 阻塞什么 |
-|---|---|---|
-| P0 | 确认 70 个产品类型 | 阻塞这些产品上线 |
-| P0 | 确认错位判定口径 | 阻塞 18 条 needs_review 记录的最终归属 |
-| P0 | 提供真实邮箱地址 | 阻塞 Contact / RFQ 上线 |
-| P0 | 提供产品照片 | 阻塞产品页「完整」 |
-| P1 | 提供证书编号与认证范围 | 阻塞 Quality 页可信度 |
-| P1 | 提供产能 / 交期 / MOQ / 包装规范 | 阻塞 Factory 页完整 |
-| P1 | 提供公司注册信息与联系方式 | 阻塞 Contact 页完整 |
-| P2 | 核对 125 个共享 OE | 不阻塞，长期数据质量 |
-| P2 | Blog 内容 + 技术审稿人 | 不阻塞 |
-| P2 | 接入 PostgreSQL / Supabase | 上线前需要 |
-| P3 | 跨浏览器测试、无障碍审计、性能基线 | 上线前建议 |
+| 优先级 | 事项 | 谁来做 | 阻塞什么 |
+|---|---|---|---|
+| P0 | 确认 70 个产品类型（B1） | 业务方 | 阻塞这些产品上线 |
+| P0 | 确认错位判定口径（B2） | 业务方 | 阻塞 18 条 needs_review 记录的最终归属 |
+| P0 | 提供真实邮箱地址（B3） | 业务方 | 阻塞 Contact / RFQ 上线 |
+| P0 | **处理 31 张待定图片**（B5）：确认 5 个未入库编号、人工看 5 张 unresolved、定主图规则、确认水印可用性 | 业务方 | 阻塞产品图接入（B4） |
+| P1 | 提供证书编号与认证范围（B11） | 业务方 | 阻塞 Quality 页可信度 |
+| P1 | 提供产能 / 交期 / MOQ / 包装规范（B11） | 业务方 | 阻塞 Factory 页完整 |
+| P1 | 提供公司注册信息与联系方式（B11） | 业务方 | 阻塞 Contact 页完整 |
+| P1 | 接入 PostgreSQL / Supabase（B6）：3 处查询重写 + 7 项配套 | 开发 | 上线前必须 |
+| P1 | RFQ 真正发信 + 落库 + 限流（B7） | 开发 | 上线前必须 |
+| P1 | 站点 SEO：sitemap / robots / 结构化数据（B8） | 开发 | 上线前必须 |
+| P1 | 部署方案与域名（B9） | 业务方决策 | 上线前必须 |
+| P2 | 产品图片接入网站（B4） | 开发 | 依赖 B5 完成 |
+| P2 | 核对 125 个共享 OE | 业务方 | 不阻塞，长期数据质量 |
+| P2 | Blog 内容 + 技术审稿人 | 业务方 | 不阻塞 |
+| P3 | 跨浏览器测试、无障碍审计、性能基线（B10） | 开发 | 上线前建议 |

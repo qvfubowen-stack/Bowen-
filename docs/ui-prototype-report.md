@@ -108,7 +108,7 @@ http://localhost:3000/products/BW-3005 看详情页（85 个 OE、7 条 applicat
 5. 明细已自动带入 product_id / Bowen No. / Matched OE / Vehicle / Engine
 6. 填 Name / Company / Country / Email / WhatsApp·Phone / Quantity / Message
 7. 可 **Upload Sourcing List**（原型不上传不存储）
-8. 提交 → **不发邮件**，但展示将传输的完整 JSON payload，证明数据流跑通
+8. 提交 → **不发邮件**，但展示将传输的完整 JSON payload：联系信息是**用户实际填写的值**（name / company / country / email / whatsapp_phone / website / message），明细保留 product_id / application_id / Bowen No. / Matched OE / Vehicle / Engine / Quantity
 
 表单校验可测：留空必填项、填非法邮箱、不选产品也不写需求 → 均有明确报错。
 
@@ -125,12 +125,15 @@ http://localhost:3000/products/BW-3005 看详情页（85 个 OE、7 条 applicat
 
 ```bash
 cd website
-npm install     # 首次
-npm run dev     # 一条命令启动
+pnpm install --frozen-lockfile   # 首次（唯一推荐：pnpm 10.34.5）
+pnpm run dev                     # 一条命令启动
 ```
 
-本机没有全局 npm 时：`node tools/npm-run.mjs dev`（项目自带兼容层）。
-用 pnpm 时：`pnpm run dev`。
+环境要求：**Node >= 18.18.0**，**pnpm >= 10.16.0（推荐 10.34.5）**。
+版本已通过 `package.json` 的 `packageManager` 字段与 `.npmrc` 的 `engine-strict=true` 强制。
+
+本机没有 pnpm 时：`corepack enable`（Node 自带，会按 packageManager 自动拉取）。
+原开发机没有全局 npm 时的备选：`npm run dev` 或 `node tools/npm-run.mjs dev`。
 
 ### 10. 本地访问地址
 
@@ -143,7 +146,7 @@ npm run dev     # 一条命令启动
 
 ```bash
 cd website
-npm run dev:host
+pnpm run dev:host
 ipconfig | findstr IPv4      # 查电脑局域网 IP
 ```
 

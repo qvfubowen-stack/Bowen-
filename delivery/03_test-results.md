@@ -1,43 +1,163 @@
-# 测试结果（Test Results）
+﻿# 测试结果（Test Results）
 
 **项目版本：Bowen-Website-Prototype-V1**
-**测试时间：2026-09-25**
-**总体结果：数据库 65/65 PASS，网站数据 36/36 PASS，响应式 5/5 PASS，共 106 项，0 FAIL**
+**最后更新：2026-09-25（第二次修复轮）**
+**总体结果：188 项自动断言全部 PASS，0 FAIL**
+（数据库 65 + 图片映射 39 + 原型数据 36 + 分类文案守卫 12 + RFQ 端到端 31）
+
+---
+
+## 〇、第二次修复轮的验证总览
+
+| 测试套件 | 命令 | 结果 |
+|---|---|---|
+| 数据库验收 | `node tools/verify-product-db-v2.mjs` | **65 / 65 PASS** |
+| 图片映射验收 | `node tools/verify-product-images.mjs` | **39 / 39 PASS** |
+| 原型数据验收 | `cd website && node tools/verify-prototype-data.mjs` | **36 / 36 PASS** |
+| **分类文案与模型守卫（新增）** | `cd website && node tools/verify-category-copy.mjs` | **12 / 12 PASS** |
+| **RFQ 端到端（新增）** | `cd website && node tools/verify-rfq-e2e.mjs` | **31 / 31 PASS** |
+| 响应式 390px | `cd website && node tools/find-overflow.mjs <url> 390` | **5 / 5 PASS** |
+| 类型检查 | `cd website && pnpm run typecheck` | **0 error** |
+| 生产构建 | `cd website && pnpm run build` | **成功，390 个路由** |
+
+### 干净环境全流程验证（从 `git archive HEAD` 导出，无 node_modules / .next）
+
+| 步骤 | 命令 | 结果 |
+|---|---|---|
+| 1 | `pnpm install --frozen-lockfile` | ✅ 成功，6.3 秒，**零警告**（无 lockfile 警告、无 sharp 警告） |
+| 2 | `pnpm run typecheck` | ✅ 0 error |
+| 3 | `pnpm run build` | ✅ 成功，390 个路由 |
+| 4 | `pnpm start` | ✅ 启动成功 |
+| 5 | 逐页 HTTP（12 个页面） | ✅ 全部 200，均带 `X-Robots-Tag: noindex, nofollow` |
+| 6 | `node tools/verify-product-db-v2.mjs` | ✅ 65 / 65 |
+| 7 | `node tools/verify-prototype-images.mjs`（图片未生成时） | ✅ 给出可执行指引，exit 2（不是一堆看不懂的失败） |
+| 8 | `node tools/extract-product-images.mjs` → 再验收 | ✅ 798 个文件生成，39 / 39 PASS |
+| 9 | `node tools/verify-prototype-data.mjs` | ✅ 36 / 36 |
+| 10 | `node tools/verify-category-copy.mjs` | ✅ 12 / 12 |
+| 11 | `node tools/verify-rfq-e2e.mjs`（对 production server） | ✅ 31 / 31 |
+| 12 | `find-overflow.mjs` 5 个页面 390px | ✅ 横向溢出均为 0px |
+
+> 这一步是本次修复的重点：**证明全新环境真的能装起来、跑起来、测通过**，
+> 而不是只在原开发机上能跑。
 
 ---
 
 ## 一、如何复现全部测试
 
 ```bash
-# 1) 重建数据库与网站数据集（幂等，可重复运行）
+# 0) 环境（唯一推荐：pnpm 10.34.5 + Node >= 18.18.0）
+node --version
+pnpm --version
+
+# 1) 安装
+cd website
+pnpm install --frozen-lockfile
+
+# 2) 数据库与图片（项目根目录）
+cd ..
 node tools/build-product-db-v2.mjs
-
-# 2) 数据库验收测试（65 项，含需求指定的 TEST 1–7）
-node tools/verify-product-db-v2.mjs
-
-# 3) 生成人工参考清单
+node tools/verify-product-db-v2.mjs          # 65 项
+node tools/extract-product-images.mjs
+node tools/verify-product-images.mjs         # 39 项
 node tools/build-review-lists-v2.mjs
 
-# 4) 网站数据集验收测试（36 项）
+# 3) 网站（website 目录）
 cd website
-node tools/verify-prototype-data.mjs
+node tools/verify-prototype-data.mjs         # 36 项
+node tools/verify-category-copy.mjs          # 12 项
+node tools/verify-rfq-e2e.mjs                # 31 项（自动起临时服务器）
 
-# 5) 响应式（横向溢出）检查 —— 需先 npm run dev
+# 4) 类型检查与构建
+node node_modules/typescript/bin/tsc --noEmit
+node node_modules/next/dist/bin/next build
+
+# 5) 响应式（需先 pnpm start 或 pnpm run dev）
 node tools/find-overflow.mjs http://127.0.0.1:3000/ 390
 node tools/find-overflow.mjs http://127.0.0.1:3000/products 390
 node tools/find-overflow.mjs http://127.0.0.1:3000/oe-search?q=4711306950 390
 node tools/find-overflow.mjs http://127.0.0.1:3000/products/BW-3005 390
 node tools/find-overflow.mjs http://127.0.0.1:3000/rfq 390
-
-# 6) 构建与类型检查
-cd website
-npm run typecheck
-npm run build
 ```
 
 ---
 
-## 二、数据库验收测试（65 项 PASS）
+## 二、本轮新增的两个测试套件
+
+### 2.1 `verify-category-copy.mjs`（12 项 PASS）— 分类模型与文案守卫
+
+需求：V1 产品分类统一使用 Thermostat；Insert / Assembly 只能作为制造工艺或原始资料词汇；
+不得生成独立分类、筛选项或主次产品逻辑。
+
+| 组 | 覆盖内容 | 结果 |
+|---|---|---|
+| A | product_type 只能是 canonical 值；不存在 Thermostat Insert / Assembly / Automotive Thermostat 作为类型；分类里不出现 insert/assembly；开关之外没有子分类；subtype 全为 null | 5/5 PASS |
+| B | 产品数据里没有主/次产品字段，也没有主/次 OE 字段 | 2/2 PASS |
+| C | 源码 57 个文件里没有把 Insert/Assembly 当产品分类或筛选项的文案；没有写进筛选项数组；分类描述不再列举它们 | 3/3 PASS |
+| D | 允许的用法仍然保留：品牌定位「Automotive Thermostat Manufacturer」；Factory 页的 Machining / Assembly / Automated Assembly / Testing 四步 | 2/2 PASS |
+
+这一套测试同时守两件事：**不许把它们变成分类**，也**不许把合法的工艺用词误删**。
+
+### 2.2 `verify-rfq-e2e.mjs`（31 项 PASS）— RFQ 表单 → payload 端到端
+
+用**真实浏览器**（Chrome DevTools Protocol）跑，因为只有真填表、真提交、真读回，
+才能证明"表单控件 → FormData → React state → 渲染"这条链路是通的。
+
+| 场景 | 覆盖内容 | 结果 |
+|---|---|---|
+| A | 空表单提交被拦下、不生成 payload、显示必填校验提示 | 4/4 PASS |
+| B | URL 带 product 参数自动带入明细、全部字段写入成功、提交后渲染 payload、payload 是合法 JSON | 4/4 PASS |
+| B | **联系信息 7 项**：name / company / country / email / whatsapp_phone / website / message 必须等于用户实际填写的值 | 7/7 PASS |
+| B | **不得残留占位符**：不出现 `(from form)`、不出现 `(not provided)`、不出现 `{{ }}` `<% %>` `FROM_FORM` `PLACEHOLDER` | 3/3 PASS |
+| B | **业务字段保留**：items 非空、product_id、application_id、bowen_no、matched_oe、vehicle、engine、quantity、items_count 一致 | 9/9 PASS |
+| B | **不发送邮件**：payload 明确标注 `prototype_no_email_sent` | 1/1 PASS |
+| B | 成功页正文能看到用户填写的姓名与邮箱；整页文本没有 `(from form)` | 3/3 PASS |
+
+测试数据（自动填写）：
+
+```
+name     = Zhang Wei (E2E)
+company  = E2E Auto Parts Import GmbH
+country  = Germany
+email    = e2e.buyer@example.com
+whatsapp = +49 151 2345678
+website  = https://e2e-buyer.example.com
+message  = Sourcing list:\n2550035540 x 300\n4711306950 x 500
+quantity = 500 pcs
+```
+
+实测回读的 payload 片段：
+
+```json
+{
+  "contact": {
+    "name": "Zhang Wei (E2E)",
+    "company": "E2E Auto Parts Import GmbH",
+    "country": "Germany",
+    "email": "e2e.buyer@example.com",
+    "whatsapp_phone": "+49 151 2345678",
+    "website": "https://e2e-buyer.example.com",
+    "message": "Sourcing list:\n2550035540 x 300\n4711306950 x 500",
+    "consent": true
+  },
+  "items": [{
+    "product_id": "BW-3005",
+    "bowen_no": "3005",
+    "product_type": "Thermostat",
+    "matched_oe": "4711306950",
+    "vehicle": "三菱4G6 471Q 菱帅 比亚迪F3 …",
+    "engine": "三菱4G6 471Q 菱帅 比亚迪F3 …",
+    "application_id": "APP-00388",
+    "quantity": "500 pcs"
+  }],
+  "items_count": 1,
+  "sourcing_list_file": null,
+  "delivery": { "transport": "prototype_no_email_sent", "note": "…" }
+}
+```
+
+---
+
+## 三、数据库验收测试（65 项 PASS）
 
 命令：`node tools/verify-product-db-v2.mjs`
 
@@ -152,7 +272,7 @@ npm run build
 
 ---
 
-## 三、网站数据集验收测试（36 项 PASS）
+## 四、网站数据集验收测试（36 项 PASS）
 
 命令：`cd website && node tools/verify-prototype-data.mjs`
 数据集：**378 products / 711 applications / 2,787 OE rows**（最终交付版本实测）
@@ -213,7 +333,7 @@ npm run build
 
 ---
 
-## 四、响应式测试（5 个页面 PASS）
+## 五、响应式测试（5 个页面 PASS）
 
 命令：`node tools/find-overflow.mjs <url> 390`
 方法：Chrome DevTools Protocol + `Emulation.setDeviceMetricsOverride` 真实 390px 视口，
@@ -232,7 +352,7 @@ OE Search ✅ / Products ✅ / Application Table ✅（表格容器可横向滑�
 
 ---
 
-## 五、类型检查与构建（PASS）
+## 六、类型检查与构建（PASS）
 
 | 项目 | 命令 | 结果 |
 |---|---|---|
@@ -320,7 +440,7 @@ Route (app)                              Size     First Load JS
 
 ---
 
-## 六、端到端 HTTP 验证
+## 七、端到端 HTTP 验证
 
 在开发服务器上对真实 URL 发起请求，验证页面确实返回了正确数据：
 
@@ -336,7 +456,7 @@ Route (app)                              Size     First Load JS
 
 ---
 
-## 七、测试过程中发现并修掉的真实缺陷
+## 八、测试过程中发现并修掉的真实缺陷
 
 重建与原型开发不是一次就对的。以下是**通过审计与测试发现**并已修复的缺陷
 （全部有测试兜底，不会回归）：
@@ -356,30 +476,50 @@ Route (app)                              Size     First Load JS
 | 11 | cmd.exe 继承的 PATH 里没有 `node` | 报 "'node' is not recognized"，脚本命令全部失败 | 兼容层自动把 Node 自身所在目录加进 PATH |
 | 12 | 自研 ZIP 写出器的 external attributes 溢出 | `0o100644 << 16` 超出有符号 32 位，报 `ERR_OUT_OF_RANGE` | 改为无符号写入 `>>> 0`；同时补上 ZIP64 支持（源 Excel 超 4 GiB 需要） |
 
+### 第二次修复轮（本轮）新发现并修掉的缺陷
+
+| # | 缺陷 | 影响 | 修复 |
+|---|---|---|---|
+| 13 | **`OeSearchBox` 渲染自己的 `<form>`，被嵌在 RFQ 页的 `<form>` 里** | **非法嵌套 HTML，导致 RFQ 页整页 hydration 失败 —— 表单根本无法交互**，用户点提交没有任何反应。这是一个此前"测试通过"却实际坏掉的功能 | 改为 `role="search"` + 手动处理 Enter 键；语义与可访问性等价。浏览器 E2E 复测已可交互 |
+| 14 | RFQ 成功页的 contact 字段是硬编码 `'(from form)'` | 用户看不到自己填的内容，payload 无法作为"将传输的数据"凭证 | 新增纯函数 `buildRfqPayload()` / `readContactFromForm()`，7 个联系字段全部取真实值；并加 E2E 断言禁止占位符 |
+| 15 | 从 `/rfq?product=...` 快捷进入时 `application_id` 丢失 | 破坏"保留 Bowen → OE → Vehicle/Engine 的 application 级关系" | `RfqPage` 补传 `first_application_id`，E2E 断言 `application_id` 必须非空 |
+| 16 | `.npmrc` 里写了 `package-lock=false` | pnpm 把它理解为"禁止读写 lockfile"，出现 `The current configuration prohibits to read or write a lockfile` 警告，`--frozen-lockfile` 失去意义 | 删除该行；改为 `.gitignore` 忽略 `package-lock.json` / `yarn.lock` |
+| 17 | `verify-product-images.mjs` 在全新 clone 里给出 3 个看不懂的失败项 | 图片二进制不入 Git，但测试没有预检 | 增加预检：图片缺失时打印可执行指引并以 exit 2 退出 |
+| 18 | Next.js 15.1.6 存在安全通告（CVE-2025-66478） | 安装时 `deprecated` 警告；上线后是安全风险 | 升级到 15.5.26（15.x 最新补丁），告警消失，全部测试仍通过 |
+| 19 | 我自己的 E2E 测试脚本用了裸 `document.querySelector('form')` | 命中的是**页头搜索表单**而不是 RFQ 表单，导致反复点击无效、测试假失败 | 给 RFQ 表单加 `data-testid="rfq-form"`，测试选择器全部限定到它 |
+
+> 第 13 项值得单独强调：它说明**"HTTP 200 + 页面能渲染"不等于功能可用**。
+> 之前的验收只做了 GET 请求断言，没有做真实交互，所以漏掉了整页 hydration 失败。
+> 现在 RFQ 有 31 项真实浏览器交互断言兜底。
+
 ---
 
-## 八、已知未通过 / 未覆盖的部分（诚实声明）
+## 九、已知未通过 / 未覆盖的部分（诚实声明）
 
 | 项目 | 状态 | 说明 |
 |---|---|---|
-| 邮件真实发送 | **未实现** | 原型按需求不发送邮件，改为展示将传输的 payload |
-| 真实数据库（PostgreSQL / Supabase） | **未接入** | 本阶段明确禁止；数据访问层已抽象好，换实现只改一个函数 |
-| 端到端浏览器自动化测试 | **未做** | 未引入 Playwright 等依赖；改为用 CDP 探针 + 生产服务器 HTTP 断言 + 真实截图 + 人工看图 |
+| 邮件真实发送 | **未实现** | 原型按需求不发送邮件，改为展示将传输的完整 payload（联系信息为真实填写值） |
+| 真实数据库（PostgreSQL / Supabase） | **未接入** | 本阶段明确禁止。页面层已与数据源解耦（全部 async），但**分页 / 车型聚合 / OE 搜索**三处仍是内存算法，接入时必须用 SQL 重写。详见 [`../docs/supabase-migration-boundary.md`](../docs/supabase-migration-boundary.md) |
+| **产品图片未接入网站** | **未做（按业务方要求）** | 图片已提取并映射（798 张 / 398 个产品），但本阶段按要求不改网站，页面仍显示占位符 |
 | Lighthouse / 性能评分 | **未测** | 原型阶段未做性能基线 |
 | Safari / Firefox 实测 | **未做** | 只用 Chromium 内核（Chrome）验证 |
-| 无障碍（WCAG）审计 | **部分** | 已做：skip link、语义标签、focus-visible、aria-label、表格 caption、表单 label；未做完整审计 |
-| 真实邮件发送 | **未做** | 原型按需求不发邮件，改为展示将传输的 payload |
+| 无障碍（WCAG）审计 | **部分** | 已做：skip link、语义标签、`role="search"`、focus-visible、aria-label、表格 caption、表单 label 与 `aria-invalid`；未做完整审计 |
+| 跨进程并发压测 | **未做** | 未验证多实例部署下的缓存一致性（当前是进程内 memo） |
+| `npm` 兼容层只支持 `run` | **已知限制** | 不支持 `npm install`；装依赖请用 pnpm。这不是缺陷，是刻意的范围限制 |
 
 ---
 
-## 九、结论
+## 十、结论
 
 | 测试套件 | 结果 |
 |---|---|
 | 数据库验收（`verify-product-db-v2.mjs`） | **65 / 65 PASS** |
+| 图片映射验收（`verify-product-images.mjs`） | **39 / 39 PASS** |
 | 网站数据集验收（`verify-prototype-data.mjs`） | **36 / 36 PASS** |
-| 响应式（`find-overflow.mjs`） | **5 / 5 PASS** |
-| 类型检查 + 构建 | **PASS** |
-| **合计** | **106 项 PASS，0 FAIL** |
+| 分类文案与模型守卫（`verify-category-copy.mjs`） | **12 / 12 PASS** |
+| RFQ 端到端（`verify-rfq-e2e.mjs`） | **31 / 31 PASS** |
+| 响应式（`find-overflow.mjs`，5 个页面） | **5 / 5 PASS** |
+| 类型检查 + 生产构建 | **PASS**（0 error，390 个路由） |
+| **合计** | **188 项 PASS，0 FAIL** |
 
-**数据库迁移通过，原型验证通过，可以进入验收。**
+**数据库迁移通过，原型验证通过，全新环境可安装可运行可测试。可以进入验收。**
