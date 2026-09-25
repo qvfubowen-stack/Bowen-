@@ -8,12 +8,14 @@
   状态：原型已完成，等待业务方验收。**尚未正式上线**，未接正式域名，未接 Supabase。
 
 【Git commit hash】
+  HEAD（交付整理）   :  e12cc242ec49ccb460d7d7d7251e83442ab864b3   (short: e12cc24)
+                        "Finalize delivery package and fix npm compatibility layer"
   Phase 3（网站原型）:  4551b72e16995369e0f09f677a824aca40605c83   (short: 4551b72)
                         "Build Bowen B2B website UI prototype"
   Phase 2.5（数据库）:  9f5d193adf0e78fa8628c330a4ca18f9f42b99db   (short: 9f5d193)
                         "Rebuild product database with application-level OE mapping"
   分支：main
-  用 `git log --oneline -3` 可以看到这两个提交。
+  用 `git log --oneline -4` 可以看到全部提交。
 
 【使用的最新版 Excel 文件名】
   data/raw/产品信息表1(1).xlsx
