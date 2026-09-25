@@ -124,22 +124,24 @@ npm run typecheck
 
 ```
 website/npm.cmd              Windows 批处理入口
-website/tools/npm-run.mjs    实际实现（零依赖，约 70 行）
+website/tools/npm-run.mjs    实际实现（零依赖，约 100 行）
 ```
 
 它做的事：读 `package.json` 的 `scripts`，用系统 shell 执行对应命令，
-并把 `node_modules/.bin` 放进 PATH。
+并把 `node_modules/.bin` 和 Node 自身所在目录放进 PATH。
 
 **使用方式完全一样**（在 `website/` 目录下）：
 
 ```bash
-npm run dev            # npm.cmd 会优先找真实 npm，找不到就用兼容层
+npm run dev            # 走 npm.cmd → tools/npm-run.mjs
 ```
 
-或者直接绕过它：
+或者直接调用：
 
 ```bash
 node tools/npm-run.mjs dev
+node tools/npm-run.mjs run build      # "run" 前缀可省略也可保留
+node tools/npm-run.mjs --list         # 列出所有可用脚本
 ```
 
 **如果用 pnpm**：
@@ -148,8 +150,16 @@ node tools/npm-run.mjs dev
 pnpm run dev
 ```
 
-**兼容层的局限**：只支持 `npm run <script>`。
-`npm install` 请用标准 npm 或 `pnpm install`（本机用 pnpm 安装依赖已验证可用）。
+**兼容层的局限**：
+
+- 只支持 `npm run <script>` 与 `npm start`；**不支持 `npm install`**
+  （装依赖请用标准 npm 或 `pnpm install`）
+- `npm.cmd` 里**故意不做 "where npm" 检查**：cmd.exe 会把 `npm` 解析回这个文件本身，
+  造成无限递归。想改回用真实 npm，请用全路径调用真实 npm。
+- `npm.cmd` 必须是纯 ASCII：cmd.exe 用 OEM 代码页解析 .cmd，
+  写中文注释会导致解析错误。
+
+> 在装有标准 npm 的机器上，直接用 `npm run dev` 即可，不需要这个兼容层。
 
 ---
 

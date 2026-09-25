@@ -237,27 +237,86 @@ OE Search ✅ / Products ✅ / Application Table ✅（表格容器可横向滑�
 | 项目 | 命令 | 结果 |
 |---|---|---|
 | TypeScript 类型检查 | `npm run typecheck`（tsc --noEmit） | **0 error** |
-| 生产构建 | `npm run build` | **成功，32 个页面** |
+| 生产构建 | `npm run build` | **成功，390 个路由** |
 
 构建输出摘要：
 
 ```
 Route (app)                              Size     First Load JS
-┌ ○ /                                    2.84 kB         112 kB
+┌ ○ /                                    2.87 kB         112 kB
 ├ ○ /_not-found                          977 B           106 kB
-├ ○ /about                               548 B           110 kB
+├ ○ /about                               547 B           110 kB
 ├ ○ /blog                                500 B           110 kB
 ├ ○ /contact                             526 B           110 kB
 ├ ○ /factory                             545 B           110 kB
-├ ƒ /oe-search                           2.49 kB         112 kB
-├ ƒ /products                            2.73 kB         112 kB
-├ ● /products/[id]                       3.31 kB         112 kB
-├   └ 20 个产品详情页（全部预渲染）
+├ ƒ /oe-search                           2.52 kB         112 kB
+├ ƒ /products                            2.76 kB         112 kB
+├ ● /products/[id]                       3.36 kB         112 kB
+├   ├ /products/BW-3005
+├   ├ /products/BW-3051
+├   ├ /products/BW-3080
+├   └ [+375 more paths]        ← 全部 378 个可展示产品页均在构建时预渲染
 ├ ○ /quality                             603 B           110 kB
-└ ƒ /rfq                                 5.31 kB         114 kB
+└ ƒ /rfq                                 5.34 kB         114 kB
++ First Load JS shared by all            105 kB
 ```
 
 `○ Static` 静态预渲染 · `● SSG` 静态生成 · `ƒ Dynamic` 按需服务端渲染
+
+### 通过 `next start` 生产模式实测全部页面
+
+在**从交付 ZIP 解压出来的干净副本**上安装依赖、构建、启动生产服务器，
+逐个页面请求验证：
+
+| 路径 | 状态 | 响应大小 |
+|---|---|---|
+| `/` | 200 | 113,603 B |
+| `/products` | 200 | 132,975 B |
+| `/oe-search?q=4711306950` | 200 | 32,134 B |
+| `/oe-search?q=25500-35540` | 200 | 33,514 B |
+| `/oe-search?q=2550035540` | 200 | 33,508 B |
+| `/products/BW-3005` | 200 | 65,595 B |
+| `/rfq?product=BW-3005` | 200 | 92,713 B |
+| `/factory` | 200 | 30,074 B |
+| `/quality` | 200 | 31,899 B |
+| `/about` | 200 | 29,330 B |
+| `/contact` | 200 | 24,870 B |
+| `/blog` | 200 | 26,697 B |
+
+生产构建上的 OE 搜索正确性：
+
+```
+25500-35540  → Bowen 3503, 3004-5, 3004-3
+2550035540   → Bowen 3503, 3004-5, 3004-3     ← 结果完全一致
+```
+
+### 从交付 ZIP 的完整复现验证
+
+| 步骤 | 结果 |
+|---|---|
+| 解压 `Bowen-Website-Prototype-V1.zip` | 成功，226 个条目 |
+| `node tools/verify-product-db-v2.mjs`（干净副本） | **65 / 65 PASS** |
+| `node website/tools/verify-prototype-data.mjs`（干净副本） | **36 / 36 PASS** |
+| `pnpm install --frozen-lockfile` | 成功（5.1 秒） |
+| `tsc --noEmit` | **0 error** |
+| `next build` | **成功，390 个路由** |
+| `next start` + 逐页请求 | **12 个页面全部 200** |
+| ZIP 泄漏检查 | node_modules / .next / .git / 缓存 / 密钥 / 日志 **均为 0** |
+
+### 文档里承诺的启动命令实测
+
+需求要求「项目能够一条命令启动，例如 npm run dev」。已在 `website/` 目录实测：
+
+| 命令 | 结果 |
+|---|---|
+| `npm run dev`（走 `npm.cmd` → `tools/npm-run.mjs`） | **成功，http://localhost:3000/ 返回 200，160,493 字节，页面含预期标题** |
+| `node tools/npm-run.mjs dev` | 成功 |
+| `node tools/npm-run.mjs run build` | 成功（`run` 前缀可省略也可保留） |
+| `next start`（生产模式） | 成功，12 个页面全部 200 |
+
+> 修复记录：兼容层在实测中发现并修掉了 3 个真实缺陷 ——
+> `where npm` 自引用导致的无限递归、`npm run dev` 里的 `run` token 未被剥离、
+> cmd.exe 继承的 PATH 里没有 `node`。详见第七节。
 
 ---
 
@@ -291,6 +350,11 @@ Route (app)                              Size     First Load JS
 | 5 | `oe_tokens` 在写 application 行时被解构掉 | 网站拿不到逐 token 的 OE，OE 索引上下文不完整 | 保留 `oe_tokens` 字段 |
 | 6 | 网站数据集只含 20 个原型产品 | 分类链接与车型筛选指向空结果，381 个可搜索产品无法浏览 | 扩展为全部可展示产品（378 个），原型候选仍单独标记 |
 | 7 | 网站数据集的 `application_ids` 指向被过滤掉的记录 | 16 个产品、55 条 OE 索引出现悬空引用 | 生成网站数据集时同步裁剪引用 |
+| 8 | `npm.cmd` 里的 `where npm` 自引用 | cmd.exe 把 `npm` 解析回 `npm.cmd` 自身，报 `Maximum setlocal recursion level reached` | 去掉 PATH 查找；调用真实 npm 请用全路径 |
+| 9 | `npm.cmd` 用 UTF-8 写中文注释 | cmd.exe 按 OEM 代码页解析 .cmd，注释被当成命令执行，报 "'��机只装了' is not recognized" | `npm.cmd` 改为纯 ASCII |
+| 10 | 兼容层不认 `npm run dev` 的 `run` token | 报「未知脚本: run」 | 剥离开头的 `run` / `run-script`，并支持 `--list` |
+| 11 | cmd.exe 继承的 PATH 里没有 `node` | 报 "'node' is not recognized"，脚本命令全部失败 | 兼容层自动把 Node 自身所在目录加进 PATH |
+| 12 | 自研 ZIP 写出器的 external attributes 溢出 | `0o100644 << 16` 超出有符号 32 位，报 `ERR_OUT_OF_RANGE` | 改为无符号写入 `>>> 0`；同时补上 ZIP64 支持（源 Excel 超 4 GiB 需要） |
 
 ---
 
@@ -300,11 +364,11 @@ Route (app)                              Size     First Load JS
 |---|---|---|
 | 邮件真实发送 | **未实现** | 原型按需求不发送邮件，改为展示将传输的 payload |
 | 真实数据库（PostgreSQL / Supabase） | **未接入** | 本阶段明确禁止；数据访问层已抽象好，换实现只改一个函数 |
-| 端到端浏览器自动化测试 | **未做** | 未引入 Playwright 等依赖；改为用 CDP 探针 + HTTP 断言 + 人工看图 |
+| 端到端浏览器自动化测试 | **未做** | 未引入 Playwright 等依赖；改为用 CDP 探针 + 生产服务器 HTTP 断言 + 真实截图 + 人工看图 |
 | Lighthouse / 性能评分 | **未测** | 原型阶段未做性能基线 |
 | Safari / Firefox 实测 | **未做** | 只用 Chromium 内核（Chrome）验证 |
 | 无障碍（WCAG）审计 | **部分** | 已做：skip link、语义标签、focus-visible、aria-label、表格 caption、表单 label；未做完整审计 |
-| 20 个产品详情页之外的产品页 | **动态渲染** | 378 个可展示产品中 20 个预渲染，其余按需服务端渲染（已验证可访问） |
+| 真实邮件发送 | **未做** | 原型按需求不发邮件，改为展示将传输的 payload |
 
 ---
 

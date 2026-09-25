@@ -21,6 +21,10 @@ _tooltest/
 # ---- 探针/临时输出（可重新生成）----
 data/derived/_sheets-v2/
 
+# ---- 交付 ZIP（体积大、可由 node tools/make-delivery-zips.mjs 重新生成）----
+# 交付物本身仍然保留在工作区，只是不进 Git 历史。
+delivery/zips/
+
 # ---- 运行日志与临时文件 ----
 *.log
 npm-debug.log*

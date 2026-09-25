@@ -1,0 +1,34 @@
+Finalize delivery package and fix npm compatibility layer
+
+交付整理（按用户最终交付要求）
+- 新增 tools/make-delivery-zips.mjs：自研零依赖 ZIP 打包器（支持 ZIP64、
+  UTF-8 文件名），产出两个包并自检排除项：
+    Bowen-Website-Prototype-V1.zip          业务方验收包
+    Bowen-Website-Prototype-V1-SOURCE.zip   源码审查包（额外附 FILE-MANIFEST.txt）
+  两者都排除 node_modules / .next / .git / 缓存 / 临时文件 / .env / 密钥，
+  并保留 README.md、package.json、pnpm-lock.yaml、tools/、website/src/data/、
+  docs/、delivery/、data/。
+- delivery/ 补齐并更新：01 数据库报告、02 UI Prototype 报告、03 测试结果、
+  04 已知问题、05 运行指南、prototype-info.txt、6 张真实截图。
+- .gitignore 排除 delivery/zips/（交付物保留在工作区，不进 Git 历史）。
+
+修复 npm 兼容层的 3 个真实缺陷（均在实测「npm run dev」时暴露）
+- npm.cmd 里的 "where npm" 会解析回 npm.cmd 自身，导致
+  "Maximum setlocal recursion level reached" 无限递归 → 去掉该检查
+- npm.cmd 用 UTF-8 写中文注释，cmd.exe 按 OEM 代码页解析导致注释被当命令执行
+  → 改为纯 ASCII，并在文件里写明原因
+- 兼容层不认 "npm run dev" 的 run token（报「未知脚本: run」），
+  且 cmd.exe 继承的 PATH 里没有 node → 剥离开头的 run/run-script，
+  并把 Node 自身所在目录与 node_modules/.bin 一起放进 PATH
+- npm-run.mjs 增加 --list，并改进用法提示
+
+实测验证
+- npm run dev → http://localhost:3000/ 返回 200，页面内容正确
+- 从交付 ZIP 解压出的干净副本：65/65 数据库测试 + 36/36 网站数据测试通过，
+  pnpm install --frozen-lockfile 成功，tsc 0 error，next build 成功（390 路由），
+  next start 下 12 个页面全部 200，ZIP 泄漏检查为 0
+- 文档同步更新：所有 378 个产品页现在都在构建时预渲染（原为 20 个）
+
+说明：review/first-batch-business-review.xlsx 是业务方人工填写的工作文件，
+本次一并纳入版本控制以便追溯（其填写的 3 个产品类型已固化在
+data/raw/review-overrides-v2.json）。

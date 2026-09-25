@@ -3,6 +3,7 @@
 **项目版本：Bowen-Website-Prototype-V1**
 **阶段：Phase 2.5（数据库重建）+ Phase 3（UI Prototype）**
 **技术栈：Next.js 15.1.6 + React 19 + TypeScript 5.7（App Router）**
+**Git commit：`4551b72`（Build Bowen B2B website UI prototype）／`9f5d193`（数据库重建）**
 **当前状态：原型已完成，未上线，等待验收**
 
 > 本报告按需求逐条回答 12 个问题。所有数字都可在项目里复现。
@@ -365,9 +366,9 @@ pnpm run dev
 |---|---|
 | `npm run dev` | 启动开发服务器（端口 3000） |
 | `npm run dev:host` | 监听 0.0.0.0，供手机/局域网访问 |
-| `npm run build` | 生产构建（32 个页面） |
+| `npm run build` | 生产构建（390 个路由，378 个产品页全部预渲染） |
 | `npm start` | 启动生产服务器 |
-| `npm run typecheck` | TypeScript 类型检查 |
+| `npm run typecheck` | TypeScript 类型检查（0 error） |
 | `npm run data:refresh` | 重新生成并校验产品数据库 |
 
 ### 重新生成数据库（可选）
