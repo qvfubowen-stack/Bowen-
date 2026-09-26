@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-09-26T01:36:06.741Z",
+  "origin": "http://www.qfbowen.com",
+  "endpoints": {
+    "/robots.txt": {
+      "status": 404,
+      "bytes": 1231,
+      "error": null
+    },
+    "/sitemap.xml": {
+      "status": 404,
+      "bytes": 1231,
+      "error": null
+    },
+    "/Sitemap.xml": {
+      "status": 404,
+      "bytes": 1231,
+      "error": null
+    }
+  },
+  "homeHeaders": {
+    "status": 200,
+    "contentType": "text/html; Charset=utf-8",
+    "bytes": 24343,
+    "error": null
+  }
+}

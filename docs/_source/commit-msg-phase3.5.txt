@@ -1,0 +1,55 @@
+Phase 3.5：审计 qfbowen.com 现有官网并提取可复用真实素材
+
+目标：从公司现有国内展示站 www.qfbowen.com 中提取真实素材，用于海外 B2B 独立站。
+本次只做审计与素材抽取，不修改任何现有 Prototype 文件，不用旧站代码替换 Next.js 项目。
+
+A. 抓取（tools/legacy/crawl-legacy-site.mjs）
+- 遍历站内公开页面 943 个（队列排空，crawl_complete=true）
+- 记录 URL / Title / Description / Keywords / H1-H3 / 正文 / 图片 / 视频 / 附件 /
+  canonical / robots meta / 引用资源 / 外链 / 国内站特征信标
+- 支持 BOWEN_CRAWL_RESUME=1 断点续抓，避免重复请求旧站
+- 合规：只发 GET，不带 Cookie，不提交表单，不触碰 /admin 登录后台，
+  验证码图片（/inc/checkcode.asp）主动排除不下载
+
+B. 素材下载（download-legacy-assets.mjs）
+- 875 个素材 URL → 成功下载 870 张（64.7 MB）
+- 4 个是旧站自身的 404 死链；1 个是验证码图片
+- 分类归档 images/{products,factory,certificates,company,other}/ 与 documents/
+- 保留原始文件名与原始 URL；同名不同 URL 加 URL 哈希前缀
+- 内置"就地迁移缓存"，分类规则调整后重跑不重复请求旧站
+
+C. 资产清单 data/legacy-site/assets.json
+- 875 条，含需求书要求的 9 个字段（source_url / asset_url / local_file /
+  asset_type / page_title / page_category / possible_bowen_no /
+  possible_product_name / reuse_status）
+- reuse_status：auto_match 274 / review_required 567 / not_recommended 29
+
+D. 产品图片匹配（lib/match.mjs + match-legacy-product-images.mjs）
+- 旧站产品详情页 813 个；其中 552 个有规格表、550 个写明「博文编号」
+- 546 个页面有编号可直接对应到当前数据库 → 去重后 274 张不同图片 / 223 个不同产品
+- 520 张因旧站页面没有任何编号信息 → review_required，绝不自动绑定
+- 红线：禁止只根据图片外观猜产品；auto_match 只认两类证据
+  （① 页面写明的博文编号唯一命中 ② OEM 号码唯一命中，非共享 OE）
+- 生成 review/legacy-product-image-mapping.xlsx（4 个工作表，带下拉菜单）
+
+E/F/G/H. 综合审计（audit-legacy-site.mjs）
+- E 公司素材映射建议：Home / Factory / Quality / About Bowen / Contact，只给建议不替换
+- F 内容质量审核：采用两遍法剔除"全站页脚样板"，否则页脚模板会把 ICP 备案、
+  国内固话、留言入口注入每一页，导致 943 页得到同一个无意义判定
+  结论：可直接复用（规格表数据）552 / 需英文重写 390 / 不可使用 1
+- G 技术审计：943 页全部无 viewport（无移动端）、73 个重复 Title、0 canonical、
+  robots.txt 与 sitemap.xml 均 404、HTTPS 握手被重置、1640 个"每页一个"的
+  访问计数脚本（无法利用浏览器缓存）
+- H 多语言规划：/en 先做，/zh /es 预留；禁止机翻直接上线
+
+I. 报告 docs/qfbowen-legacy-site-audit.md
+- 逐条回答需求书的 12 个问题，所有数字由 JSON 产物生成，不手写
+
+验收
+- tools/legacy/verify-legacy-audit.mjs：60/60 PASS
+- 含两条红线测试：TEST 4 无证据不得自动绑定；TEST 7 未修改 Prototype
+  （以 data/legacy-site/phase-state.json 的时间戳比对 website/ 全目录 mtime）
+
+产物不入库说明
+- data/legacy-site/images/、documents/、.relocate-cache/ 已加入 .gitignore
+  （体积大、可由 tools/legacy 脚本重新生成）；清单与抓取 HTML 入库以便 diff 审阅

@@ -37,6 +37,15 @@ delivery/zips/
 # 图片本身仍然保留在工作区，并且会打进交付 ZIP。
 data/processed/product-images/
 
+# ---- Phase 3.5：从旧站 www.qfbowen.com 下载的媒体素材二进制（体积大，可重新下载）----
+#   node tools/legacy/download-legacy-assets.mjs
+# 说明：assets.json / downloads.json / product-image-matching.json 等清单文件仍然入库
+#       （体积小、需要 diff 审阅）；抓取的 HTML 也入库（体积小，是审计证据）。
+data/legacy-site/images/
+data/legacy-site/documents/
+# 下载器的临时"就地迁移缓存"（分类规则调整时用于避免重复请求旧站，运行结束会自删）
+data/legacy-site/.relocate-cache/
+
 # ---- 运行日志与临时文件 ----
 *.log
 npm-debug.log*

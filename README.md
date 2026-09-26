@@ -2,8 +2,33 @@
 
 面向海外汽车零部件采购商的 B2B 独立站项目。
 
-**当前进度：Phase 2.5（产品数据库重建）+ Phase 3（网站 UI Prototype）已完成，等待业务方验收。**
+**当前进度：Phase 2.5（产品数据库重建）+ Phase 3（网站 UI Prototype）+ Phase 3.5（旧站资产迁移审计）已完成，等待业务方验收。**
 **网站原型可本地启动，尚未正式上线，未绑定域名，未接入 Supabase。**
+
+---
+
+## 〇、Phase 3.5：旧站资产迁移审计（最新）
+
+已审计公司现有国内站 `www.qfbowen.com`，抽取**可复用的真实素材**。
+
+> ### 📄 [`docs/qfbowen-legacy-site-audit.md`](docs/qfbowen-legacy-site-audit.md)
+> **主报告**：逐条回答需求书的 12 个问题（抓了多少页、多少图、匹配了多少产品、哪些能用、哪些不能用……）。
+>
+> ### 📊 [`review/legacy-product-image-mapping.xlsx`](review/legacy-product-image-mapping.xlsx)
+> **需要业务方填写的确认表**：520 张产品图因旧站页面没写编号，必须人工对应产品。
+
+| 结论 | 数字 |
+|---|---|
+| 抓取旧站公开页面 | **943 个**（站内遍历完整，队列已排空） |
+| 下载真实素材 | **870 张图片 / 64.7 MB** |
+| 产品图 / 工厂图 / 证书图 / 公司图 | **783 / 9 / 6 / 2** |
+| 有编号证据、可自动对应产品 | **274 张**（覆盖 223 个当前产品） |
+| 需人工确认 | **520 张** |
+| 旧站代码是否复用 | **不复用**（IIS + AspCms、无移动端、0 viewport、HTTPS 不可用） |
+
+**本阶段的硬性边界（已遵守）**：不修改任何 Prototype 文件、不用旧站代码替换 Next.js、
+不自动把中文内容上线、不绕验证码、不提交表单、无编号证据绝不自动绑定产品图。
+验收测试 `tools/legacy/verify-legacy-audit.mjs` **60/60 PASS**。
 
 ---
 
@@ -191,6 +216,28 @@ B2B外贸独立站/
 │   ├── product-images/                 798 个图片文件（66.5 MB）
 │   └── product-image-map.json          图片 → 工作表 → 行 → Bowen No. 映射
 │
+├── data/legacy-site/               ✅ Phase 3.5：旧站 www.qfbowen.com 抓取与素材
+│   ├── crawl/                         943 个页面的 HTML + pages.json + probes.json
+│   ├── images/{products,factory,certificates,company,other}/  870 张实拍素材
+│   ├── documents/                     旧站无任何 PDF/文档（0 个）
+│   ├── legacy-products.json           旧站产品页规格表解析结果（552 页有博文编号）
+│   ├── product-image-matching.json    图片 → Bowen No. → product_id 匹配结论 + 证据链
+│   ├── assets.json                    ⭐ 需求书要求的资产清单（875 条）
+│   ├── downloads.json                 每个文件的下载结果 / 尺寸 / SHA-256
+│   ├── legacy-site-audit.json         技术审计 + 内容审核 + 映射建议 + 多语言规划
+│   └── phase-state.json               阶段起始时间戳（用于证明未改动 Prototype）
+│
+├── tools/legacy/                   ✅ Phase 3.5：旧站审计工具链（纯 Node.js，零依赖）
+│   ├── lib/{http,html,classify,media,match}.mjs   抓取/解析/分类/匹配规则
+│   ├── crawl-legacy-site.mjs       A：抓取公开页面（支持断点续抓）
+│   ├── download-legacy-assets.mjs  B：下载公开素材（本地复用缓存）
+│   ├── build-legacy-asset-manifest.mjs  C：生成 assets.json
+│   ├── extract-legacy-products.mjs      D 前置：解析产品规格表
+│   ├── match-legacy-product-images.mjs  D：匹配 + 生成人工审核 XLSX
+│   ├── audit-legacy-site.mjs       E/F/G/H：综合审计
+│   ├── build-legacy-audit-report.mjs    I：生成报告
+│   └── verify-legacy-audit.mjs     ⭐ 60 项验收测试
+│
 ├── tools/                          数据处理工具链（纯 Node.js，零第三方依赖）
 │   ├── build-product-db-v2.mjs     ⭐ 数据库重建程序
 │   ├── verify-product-db-v2.mjs    ⭐ 65 项验收测试
@@ -240,6 +287,17 @@ node tools/verify-category-copy.mjs
 
 # 7) RFQ 表单 → payload 端到端（31 项，自动起临时服务器）
 node tools/verify-rfq-e2e.mjs
+
+# 8) Phase 3.5：旧站资产迁移审计（需联网访问 www.qfbowen.com）
+#    只抓公开页面；旧站较慢，完整抓取约 20 分钟。已有结果时可用 BOWEN_CRAWL_RESUME=1 续抓。
+node tools/legacy/crawl-legacy-site.mjs            # A 抓取 943 个公开页面
+node tools/legacy/download-legacy-assets.mjs       # B 下载 870 张素材
+node tools/legacy/extract-legacy-products.mjs      # 解析产品规格表（博文编号 / OEM）
+node tools/legacy/match-legacy-product-images.mjs  # D 匹配 + 生成 review/*.xlsx
+node tools/legacy/build-legacy-asset-manifest.mjs  # C 生成 assets.json
+node tools/legacy/audit-legacy-site.mjs            # E/F/G/H 综合审计
+node tools/legacy/build-legacy-audit-report.mjs    # I 生成 docs/qfbowen-legacy-site-audit.md
+node tools/legacy/verify-legacy-audit.mjs          # 60 项验收测试
 ```
 
 **验证原始文件有没有被人改过**（最重要的一条）：
@@ -295,6 +353,9 @@ BOWEN_NOW="2026-09-25T09:00:00.000Z" node tools/build-product-db-v2.mjs
    （详见 [`delivery/04_known-issues.md`](delivery/04_known-issues.md) 第 1.2 节）
 3. **提供真实数据** —— 产品照片、公司注册信息与联系方式、证书编号与范围、
    产能/交期/MOQ/包装规范、真实邮箱地址
+4. **填写 [`review/legacy-product-image-mapping.xlsx`](review/legacy-product-image-mapping.xlsx)**
+   —— Phase 3.5：520 张来自旧站的产品图需要人工对应到 Bowen No.
+   （旧站只有 552 个页面写了博文编号，其余页面没有任何编号信息，程序按铁律不猜）
 
 `review/shared-oe-across-products.xlsx`（125 个共享 OE）供以后核对，**不阻塞**开发。
 
@@ -337,4 +398,11 @@ git log --oneline -5
 - [x] Blog 仅框架
 - [x] 响应式 Desktop / Tablet / Mobile 无横向溢出
 - [x] `npm run dev` 一条命令启动
+- [x] **Phase 3.5**：旧站 943 个公开页面抓取完整（队列排空）
+- [x] **Phase 3.5**：870 张真实素材下载并分类归档，保留原始 URL 与文件名
+- [x] **Phase 3.5**：`assets.json` 资产清单（875 条，含需求书要求的 9 个字段）
+- [x] **Phase 3.5**：274 张产品图有编号证据可自动匹配，520 张交人工确认
+- [x] **Phase 3.5**：`review/legacy-product-image-mapping.xlsx` 人工审核表
+- [x] **Phase 3.5**：技术审计 / 内容质量审核 / 公司素材映射建议 / 多语言规划
+- [x] **Phase 3.5**：60/60 验收测试通过（含"未修改 Prototype"与"无证据不绑定"红线）
 - [ ] **等待业务方验收**

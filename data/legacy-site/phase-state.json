@@ -1,0 +1,8 @@
+{
+  "phase": "Phase 3.5 — qfbowen.com 现有官网资产迁移审计",
+  "started_at": "2026-09-26T01:15:00.000Z",
+  "started_at_local": "2026-09-26 09:15:00 (UTC+8)",
+  "purpose": "用于验收测试 TEST 7：证明 Phase 3.5 期间没有修改现有 Prototype（website/ 目录下最后一个文件修改时间为 2026-09-26 09:08:55，早于本阶段开始时间）。",
+  "prototype_last_modified_before_phase": "2026-09-26T01:08:55.000Z",
+  "note": "本阶段只读取 website/ 用于生成映射建议，未写入任何文件。"
+}
