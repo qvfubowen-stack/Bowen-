@@ -6,7 +6,7 @@
 
 .inner {
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr;
   gap: 36px;
   padding-block: 52px 40px;
 }
@@ -37,6 +37,14 @@
   color: rgba(255, 255, 255, 0.55);
 }
 .blurb { font-size: 13.5px; line-height: 1.65; }
+/* 已确认可公开的公司地址（页脚简要展示） */
+.address {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.66);
+  max-width: 34ch;
+}
 
 .col h3 {
   color: var(--white);
@@ -62,6 +70,22 @@
 }
 .phase { color: rgba(255, 255, 255, 0.45); }
 
+/* 中文正式名称：跟英文全称同一行，字号小一点，窄屏自动换行 */
+.legalZh {
+  display: inline-block;
+  margin-left: 8px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* 国内平台说明条 —— 次要位置，明确标注不是海外官网 */
+.marketNote {
+  padding-bottom: 26px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.45);
+}
+.marketNote p { line-height: 1.6; }
+.marketNote span { color: rgba(255, 255, 255, 0.72); }
+
 @media (max-width: 900px) {
   .inner { grid-template-columns: 1fr 1fr; gap: 28px; padding-block: 40px 30px; }
   .brandCol { grid-column: 1 / -1; max-width: none; }
@@ -69,4 +93,5 @@
 @media (max-width: 520px) {
   .inner { grid-template-columns: 1fr; }
   .bottom { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .legalZh { margin-left: 0; display: block; }
 }

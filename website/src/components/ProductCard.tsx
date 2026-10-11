@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Product } from '@/lib/types';
+import { productImageAlt, productImageSrc } from '@/lib/media';
 import { ProductVisual } from './ProductVisual';
 import styles from './ProductCard.module.css';
 
@@ -8,18 +9,22 @@ export function ProductCard({ product }: { product: Product }) {
     ? product.product_type.replace(/([a-z])([A-Z])/g, '$1 $2')
     : null;
 
+  // 公开产品一定有可靠主图（准入规则保证）；没有时走纯图形兜底，不显示占位文案
+  const imageSrc = productImageSrc(product.product_id);
+
   return (
     <article className={styles.card}>
       <Link href={`/products/${encodeURIComponent(product.product_id)}`} className={styles.visualLink}>
-        <ProductVisual label={product.product_name_en} />
+        <ProductVisual
+          src={imageSrc}
+          alt={productImageAlt(product.bowen_no, product.product_name_en)}
+          label={product.product_name_en}
+        />
       </Link>
 
       <div className={styles.body}>
         <div className={styles.badges}>
           {typeLabel && <span className="badge badgeType">{typeLabel}</span>}
-          {product.prototype_rank && (
-            <span className="badge badgeOk">Prototype #{product.prototype_rank}</span>
-          )}
         </div>
 
         <h3 className={styles.title}>
@@ -36,10 +41,6 @@ export function ProductCard({ product }: { product: Product }) {
           <div>
             <dt>Applications</dt>
             <dd>{product.searchable_application_count}</dd>
-          </div>
-          <div>
-            <dt>Source sheets</dt>
-            <dd>{product.source_sheet_count}</dd>
           </div>
         </dl>
 

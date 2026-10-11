@@ -6,6 +6,8 @@ import styles from './blog.module.css';
 export const metadata: Metadata = {
   title: 'Blog',
   description: 'Technical notes and sourcing guidance for thermostat buyers. Content planned for a later phase.',
+  // 尚无正式文章的栏目不作 SEO 入口，也不进入 sitemap
+  robots: { index: false, follow: false },
 };
 
 /**

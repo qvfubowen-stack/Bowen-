@@ -102,7 +102,7 @@
   ],
   "application_ids": [
    "APP-00272",
-   "APP-00759"
+   "APP-00764"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -319,7 +319,7 @@
   ],
   "application_ids": [
    "APP-00276",
-   "APP-00571"
+   "APP-00573"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -541,7 +541,7 @@
   ],
   "application_ids": [
    "APP-00280",
-   "APP-00797"
+   "APP-00802"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -1317,7 +1317,7 @@
   ],
   "application_ids": [
    "APP-00295",
-   "APP-00777"
+   "APP-00782"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -1374,7 +1374,7 @@
   ],
   "application_ids": [
    "APP-00296",
-   "APP-00570"
+   "APP-00572"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -1544,7 +1544,7 @@
   ],
   "application_ids": [
    "APP-00299",
-   "APP-00787"
+   "APP-00792"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -1819,7 +1819,7 @@
   ],
   "application_ids": [
    "APP-00303",
-   "APP-00728"
+   "APP-00733"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -3003,7 +3003,7 @@
   ],
   "application_ids": [
    "APP-00326",
-   "APP-00792"
+   "APP-00797"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -3060,7 +3060,7 @@
   ],
   "application_ids": [
    "APP-00327",
-   "APP-00727"
+   "APP-00732"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -3289,7 +3289,7 @@
   ],
   "application_ids": [
    "APP-00331",
-   "APP-00771"
+   "APP-00776"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -3617,7 +3617,7 @@
   "application_ids": [
    "APP-00337",
    "APP-00422",
-   "APP-00758"
+   "APP-00763"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -3674,7 +3674,7 @@
   ],
   "application_ids": [
    "APP-00338",
-   "APP-00757"
+   "APP-00762"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -3949,58 +3949,6 @@
   "searchable_application_count": 1,
   "oe_token_count": 1,
   "distinct_oe_count": 1,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-2043",
-  "bowen_no": "2043",
-  "has_resolvable_bowen_no": true,
-  "unresolved_bowen_cell_raw": null,
-  "variant_of_bowen_no": null,
-  "product_type": "OilPressureWarningSwitch",
-  "product_subtype": null,
-  "product_name_en": "Oil Pressure Warning Switch 2043",
-  "product_name_zh": "机油压力报警器 2043",
-  "website_category": "automotive-switches",
-  "switch_subcategory": "oil-pressure-warning-switches",
-  "image": null,
-  "status": "searchable_noindex",
-  "product_type_source": "human_section_label",
-  "product_type_verified": true,
-  "product_type_evidence": {
-   "kind": "human_section_label",
-   "raw_label": "机油压力报警器",
-   "source_sheet": "综合产品信息表",
-   "source_row": 183,
-   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
-  },
-  "product_type_raw_labels": [
-   "机油压力报警器"
-  ],
-  "product_type_conflict": null,
-  "blocked": false,
-  "blocked_reasons": [],
-  "blocked_application_count": 0,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "ok",
-  "source_sheets": [
-   "综合产品信息表"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00349"
-  ],
-  "application_ids": [
-   "APP-00349"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 1,
-  "oe_token_count": 2,
-  "distinct_oe_count": 2,
   "opening_temperatures_c": [],
   "prototype_rank": null,
   "completeness_score": null,
@@ -4325,9 +4273,9 @@
   "application_ids": [
    "APP-00001",
    "APP-00414",
-   "APP-00711",
-   "APP-00712",
-   "APP-00713"
+   "APP-00716",
+   "APP-00717",
+   "APP-00718"
   ],
   "application_count": 5,
   "searchable_application_count": 5,
@@ -4389,8 +4337,8 @@
   "application_ids": [
    "APP-00002",
    "APP-00415",
-   "APP-00657",
-   "APP-00658"
+   "APP-00660",
+   "APP-00661"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -4446,7 +4394,7 @@
    "SRC-00837"
   ],
   "application_ids": [
-   "APP-00678"
+   "APP-00681"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -4615,8 +4563,8 @@
   "application_ids": [
    "APP-00215",
    "APP-00217",
-   "APP-00572",
-   "APP-00573"
+   "APP-00574",
+   "APP-00575"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -4627,59 +4575,6 @@
   ],
   "prototype_rank": 20,
   "completeness_score": 37.5,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-3003-3",
-  "bowen_no": "3003-3",
-  "has_resolvable_bowen_no": true,
-  "unresolved_bowen_cell_raw": null,
-  "variant_of_bowen_no": "3003",
-  "product_type": "Thermostat",
-  "product_subtype": null,
-  "product_name_en": "Thermostat 3003-3",
-  "product_name_zh": "节温器 3003-3",
-  "website_category": "thermostats",
-  "switch_subcategory": null,
-  "image": null,
-  "status": "searchable_noindex",
-  "product_type_source": "inherited_from_bowen",
-  "product_type_verified": true,
-  "product_type_evidence": {
-   "kind": "inherited_from_bowen",
-   "raw_label": "节温器",
-   "inherited_from_sheet": "综合产品信息表",
-   "inherited_from_row": 5,
-   "inherited_from_bowen_no": "3003",
-   "note": "本编号是 3003 的变体（后缀差异），继承综合产品信息表中 3003 的人工分类"
-  },
-  "product_type_raw_labels": [
-   "节温器"
-  ],
-  "product_type_conflict": null,
-  "blocked": false,
-  "blocked_reasons": [],
-  "blocked_application_count": 0,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "ok",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00962"
-  ],
-  "application_ids": [
-   "APP-00793"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 1,
-  "oe_token_count": 1,
-  "distinct_oe_count": 1,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
   "created_from": "Phase 2.5 产品数据库重建"
  },
  {
@@ -4894,7 +4789,7 @@
   ],
   "application_ids": [
    "APP-00194",
-   "APP-00703"
+   "APP-00708"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -4953,9 +4848,9 @@
   ],
   "application_ids": [
    "APP-00189",
-   "APP-00597",
-   "APP-00598",
-   "APP-00599"
+   "APP-00600",
+   "APP-00601",
+   "APP-00602"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -5012,7 +4907,7 @@
   ],
   "application_ids": [
    "APP-00140",
-   "APP-00555"
+   "APP-00557"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -5022,59 +4917,6 @@
    78,
    88
   ],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-3004-5",
-  "bowen_no": "3004-5",
-  "has_resolvable_bowen_no": true,
-  "unresolved_bowen_cell_raw": null,
-  "variant_of_bowen_no": "3004",
-  "product_type": "Thermostat",
-  "product_subtype": null,
-  "product_name_en": "Thermostat 3004-5",
-  "product_name_zh": "节温器 3004-5",
-  "website_category": "thermostats",
-  "switch_subcategory": null,
-  "image": null,
-  "status": "searchable_noindex",
-  "product_type_source": "inherited_from_bowen",
-  "product_type_verified": true,
-  "product_type_evidence": {
-   "kind": "inherited_from_bowen",
-   "raw_label": "节温器",
-   "inherited_from_sheet": "综合产品信息表",
-   "inherited_from_row": 5,
-   "inherited_from_bowen_no": "3004",
-   "note": "本编号是 3004 的变体（后缀差异），继承综合产品信息表中 3004 的人工分类"
-  },
-  "product_type_raw_labels": [
-   "节温器"
-  ],
-  "product_type_conflict": null,
-  "blocked": false,
-  "blocked_reasons": [],
-  "blocked_application_count": 0,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "ok",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00700"
-  ],
-  "application_ids": [
-   "APP-00548"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 1,
-  "oe_token_count": 12,
-  "distinct_oe_count": 12,
-  "opening_temperatures_c": [],
   "prototype_rank": null,
   "completeness_score": null,
   "created_from": "Phase 2.5 产品数据库重建"
@@ -5138,10 +4980,10 @@
    "APP-00005",
    "APP-00388",
    "APP-00458",
-   "APP-00622",
-   "APP-00623",
-   "APP-00624",
-   "APP-00625"
+   "APP-00625",
+   "APP-00626",
+   "APP-00627",
+   "APP-00628"
   ],
   "application_count": 7,
   "searchable_application_count": 7,
@@ -5202,7 +5044,7 @@
   "application_ids": [
    "APP-00006",
    "APP-00530",
-   "APP-00693"
+   "APP-00698"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -5262,7 +5104,7 @@
   "application_ids": [
    "APP-00007",
    "APP-00528",
-   "APP-00691"
+   "APP-00696"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -5323,7 +5165,7 @@
   "application_ids": [
    "APP-00009",
    "APP-00484",
-   "APP-00766"
+   "APP-00771"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -5383,7 +5225,7 @@
   "application_ids": [
    "APP-00010",
    "APP-00479",
-   "APP-00639"
+   "APP-00642"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -5443,7 +5285,7 @@
   "application_ids": [
    "APP-00011",
    "APP-00481",
-   "APP-00698"
+   "APP-00703"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -5507,8 +5349,8 @@
   "application_ids": [
    "APP-00012",
    "APP-00501",
-   "APP-00608",
-   "APP-00609"
+   "APP-00611",
+   "APP-00612"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -5625,7 +5467,7 @@
   "application_ids": [
    "APP-00014",
    "APP-00461",
-   "APP-00616"
+   "APP-00619"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -5682,7 +5524,7 @@
   ],
   "application_ids": [
    "APP-00015",
-   "APP-00769"
+   "APP-00774"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -5742,7 +5584,7 @@
   "application_ids": [
    "APP-00016",
    "APP-00489",
-   "APP-00794"
+   "APP-00799"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -5804,9 +5646,9 @@
   "application_ids": [
    "APP-00017",
    "APP-00514",
-   "APP-00745",
-   "APP-00746",
-   "APP-00747"
+   "APP-00750",
+   "APP-00751",
+   "APP-00752"
   ],
   "application_count": 5,
   "searchable_application_count": 5,
@@ -6040,7 +5882,7 @@
    "APP-00020",
    "APP-00389",
    "APP-00426",
-   "APP-00641"
+   "APP-00644"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -6102,7 +5944,7 @@
    "APP-00021",
    "APP-00039",
    "APP-00513",
-   "APP-00733"
+   "APP-00738"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -6168,7 +6010,7 @@
    "APP-00022",
    "APP-00440",
    "APP-00519",
-   "APP-00686"
+   "APP-00691"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -6178,59 +6020,6 @@
    82,
    88
   ],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-3021-1",
-  "bowen_no": "3021-1",
-  "has_resolvable_bowen_no": true,
-  "unresolved_bowen_cell_raw": null,
-  "variant_of_bowen_no": "3021",
-  "product_type": "Thermostat",
-  "product_subtype": null,
-  "product_name_en": "Thermostat 3021-1",
-  "product_name_zh": "节温器 3021-1",
-  "website_category": "thermostats",
-  "switch_subcategory": null,
-  "image": null,
-  "status": "searchable_noindex",
-  "product_type_source": "inherited_from_bowen",
-  "product_type_verified": true,
-  "product_type_evidence": {
-   "kind": "inherited_from_bowen",
-   "raw_label": "节温器",
-   "inherited_from_sheet": "综合产品信息表",
-   "inherited_from_row": 14,
-   "inherited_from_bowen_no": "3021",
-   "note": "本编号是 3021 的变体（后缀差异），继承综合产品信息表中 3021 的人工分类"
-  },
-  "product_type_raw_labels": [
-   "节温器"
-  ],
-  "product_type_conflict": null,
-  "blocked": false,
-  "blocked_reasons": [],
-  "blocked_application_count": 0,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "ok",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00854"
-  ],
-  "application_ids": [
-   "APP-00685"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 1,
-  "oe_token_count": 2,
-  "distinct_oe_count": 2,
-  "opening_temperatures_c": [],
   "prototype_rank": null,
   "completeness_score": null,
   "created_from": "Phase 2.5 产品数据库重建"
@@ -6343,7 +6132,7 @@
   ],
   "application_ids": [
    "APP-00024",
-   "APP-00673"
+   "APP-00676"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -6467,7 +6256,7 @@
    "APP-00026",
    "APP-00133",
    "APP-00509",
-   "APP-00558"
+   "APP-00560"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -6585,8 +6374,8 @@
   "application_ids": [
    "APP-00028",
    "APP-00434",
-   "APP-00764",
-   "APP-00765"
+   "APP-00769",
+   "APP-00770"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -6646,7 +6435,7 @@
   ],
   "application_ids": [
    "APP-00029",
-   "APP-00651"
+   "APP-00654"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -6712,7 +6501,7 @@
    "APP-00030",
    "APP-00470",
    "APP-00483",
-   "APP-00556"
+   "APP-00558"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -6826,7 +6615,7 @@
   "application_ids": [
    "APP-00031",
    "APP-00480",
-   "APP-00688"
+   "APP-00693"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -6883,7 +6672,7 @@
   ],
   "application_ids": [
    "APP-00032",
-   "APP-00638"
+   "APP-00641"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -6999,7 +6788,7 @@
   ],
   "application_ids": [
    "APP-00476",
-   "APP-00697"
+   "APP-00702"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -7059,7 +6848,7 @@
   "application_ids": [
    "APP-00037",
    "APP-00442",
-   "APP-00560"
+   "APP-00562"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -7116,7 +6905,7 @@
   ],
   "application_ids": [
    "APP-00038",
-   "APP-00723"
+   "APP-00728"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -7235,7 +7024,7 @@
   "application_ids": [
    "APP-00042",
    "APP-00399",
-   "APP-00763"
+   "APP-00768"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -7459,7 +7248,7 @@
    "SRC-00864"
   ],
   "application_ids": [
-   "APP-00695"
+   "APP-00700"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -7516,7 +7305,7 @@
   ],
   "application_ids": [
    "APP-00252",
-   "APP-00696"
+   "APP-00701"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -7798,8 +7587,8 @@
    "APP-00050",
    "APP-00429",
    "APP-00502",
-   "APP-00562",
-   "APP-00563"
+   "APP-00564",
+   "APP-00565"
   ],
   "application_count": 6,
   "searchable_application_count": 6,
@@ -7857,7 +7646,7 @@
   ],
   "application_ids": [
    "APP-00051",
-   "APP-00601"
+   "APP-00604"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -8377,7 +8166,7 @@
   ],
   "application_ids": [
    "APP-00216",
-   "APP-00559"
+   "APP-00561"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -8442,8 +8231,8 @@
   ],
   "application_ids": [
    "APP-00058",
-   "APP-00591",
-   "APP-00592"
+   "APP-00594",
+   "APP-00595"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -8503,7 +8292,7 @@
   "application_ids": [
    "APP-00059",
    "APP-00504",
-   "APP-00652"
+   "APP-00655"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -8563,7 +8352,7 @@
   "application_ids": [
    "APP-00060",
    "APP-00486",
-   "APP-00615"
+   "APP-00618"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -8685,7 +8474,7 @@
   "application_ids": [
    "APP-00061",
    "APP-00427",
-   "APP-00602"
+   "APP-00605"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -8748,7 +8537,7 @@
   "application_ids": [
    "APP-00062",
    "APP-00428",
-   "APP-00647"
+   "APP-00650"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -8806,7 +8595,7 @@
   ],
   "application_ids": [
    "APP-00063",
-   "APP-00782"
+   "APP-00787"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -8923,7 +8712,7 @@
   "application_ids": [
    "APP-00065",
    "APP-00497",
-   "APP-00779"
+   "APP-00784"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -8984,8 +8773,8 @@
   "application_ids": [
    "APP-00066",
    "APP-00460",
-   "APP-00660",
-   "APP-00661"
+   "APP-00663",
+   "APP-00664"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -9050,7 +8839,7 @@
    "APP-00067",
    "APP-00184",
    "APP-00441",
-   "APP-00726"
+   "APP-00731"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -9111,7 +8900,7 @@
   "application_ids": [
    "APP-00068",
    "APP-00520",
-   "APP-00618"
+   "APP-00621"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -9178,14 +8967,14 @@
   "application_ids": [
    "APP-00139",
    "APP-00416",
-   "APP-00714",
-   "APP-00715",
-   "APP-00716",
-   "APP-00717",
-   "APP-00718",
    "APP-00719",
    "APP-00720",
-   "APP-00755"
+   "APP-00721",
+   "APP-00722",
+   "APP-00723",
+   "APP-00724",
+   "APP-00725",
+   "APP-00760"
   ],
   "application_count": 10,
   "searchable_application_count": 10,
@@ -9417,7 +9206,7 @@
   "application_ids": [
    "APP-00072",
    "APP-00406",
-   "APP-00687"
+   "APP-00692"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -9477,7 +9266,7 @@
   "application_ids": [
    "APP-00073",
    "APP-00407",
-   "APP-00750"
+   "APP-00755"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -9537,7 +9326,7 @@
   "application_ids": [
    "APP-00074",
    "APP-00405",
-   "APP-00738"
+   "APP-00743"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -9706,8 +9495,8 @@
   ],
   "application_ids": [
    "APP-00077",
-   "APP-00589",
-   "APP-00590"
+   "APP-00592",
+   "APP-00593"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -9833,6 +9622,60 @@
   "opening_temperatures_c": [
    95
   ],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3127",
+  "bowen_no": "3127",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3127",
+  "product_name_zh": "节温器 3127",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 4,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00733"
+  ],
+  "application_ids": [
+   "APP-00577"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 2,
+  "distinct_oe_count": 2,
+  "opening_temperatures_c": [],
   "prototype_rank": null,
   "completeness_score": null,
   "created_from": "Phase 2.5 产品数据库重建"
@@ -9994,8 +9837,8 @@
   ],
   "application_ids": [
    "APP-00186",
-   "APP-00699",
-   "APP-00700"
+   "APP-00704",
+   "APP-00705"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -10120,6 +9963,62 @@
   "created_from": "Phase 2.5 产品数据库重建"
  },
  {
+  "product_id": "BW-3167-1",
+  "bowen_no": "3167-1",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3167-1",
+  "product_name_zh": "节温器 3167-1",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 5,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "宝马奔驰系列"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00499"
+  ],
+  "application_ids": [
+   "APP-00446"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 4,
+  "distinct_oe_count": 4,
+  "opening_temperatures_c": [
+   88
+  ],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
   "product_id": "BW-3203",
   "bowen_no": "3203",
   "has_resolvable_bowen_no": true,
@@ -10166,7 +10065,7 @@
   "application_ids": [
    "APP-00180",
    "APP-00521",
-   "APP-00576"
+   "APP-00578"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -10394,7 +10293,7 @@
   ],
   "application_ids": [
    "APP-00082",
-   "APP-00772"
+   "APP-00777"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -10512,7 +10411,7 @@
   ],
   "application_ids": [
    "APP-00084",
-   "APP-00749"
+   "APP-00754"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -10572,7 +10471,7 @@
   "application_ids": [
    "APP-00181",
    "APP-00457",
-   "APP-00587"
+   "APP-00590"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -10642,6 +10541,62 @@
   "created_from": "Phase 2.5 产品数据库重建"
  },
  {
+  "product_id": "BW-3268",
+  "bowen_no": "3268",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3268",
+  "product_name_zh": "节温器 3268",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 7,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00913"
+  ],
+  "application_ids": [
+   "APP-00749"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 1,
+  "distinct_oe_count": 1,
+  "opening_temperatures_c": [
+   97
+  ],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
   "product_id": "BW-3288",
   "bowen_no": "3288",
   "has_resolvable_bowen_no": true,
@@ -10688,7 +10643,7 @@
   "application_ids": [
    "APP-00085",
    "APP-00540",
-   "APP-00735"
+   "APP-00740"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -10747,7 +10702,7 @@
   ],
   "application_ids": [
    "APP-00086",
-   "APP-00768"
+   "APP-00773"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -10807,7 +10762,7 @@
   "application_ids": [
    "APP-00160",
    "APP-00418",
-   "APP-00664"
+   "APP-00667"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -10816,6 +10771,60 @@
   "opening_temperatures_c": [
    95
   ],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3312",
+  "bowen_no": "3312",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3312",
+  "product_name_zh": "节温器 3312",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 8,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00698"
+  ],
+  "application_ids": [
+   "APP-00546"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 10,
+  "distinct_oe_count": 10,
+  "opening_temperatures_c": [],
   "prototype_rank": null,
   "completeness_score": null,
   "created_from": "Phase 2.5 产品数据库重建"
@@ -10979,7 +10988,7 @@
   ],
   "application_ids": [
    "APP-00176",
-   "APP-00585"
+   "APP-00587"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -10988,6 +10997,60 @@
   "opening_temperatures_c": [
    82
   ],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3353",
+  "bowen_no": "3353",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3353",
+  "product_name_zh": "节温器 3353",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 9,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00735"
+  ],
+  "application_ids": [
+   "APP-00579"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 17,
+  "distinct_oe_count": 17,
+  "opening_temperatures_c": [],
   "prototype_rank": null,
   "completeness_score": null,
   "created_from": "Phase 2.5 产品数据库重建"
@@ -11036,7 +11099,7 @@
   ],
   "application_ids": [
    "APP-00236",
-   "APP-00565"
+   "APP-00567"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -11094,13 +11157,68 @@
   ],
   "application_ids": [
    "APP-00238",
-   "APP-00620",
-   "APP-00637"
+   "APP-00623",
+   "APP-00640"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
   "oe_token_count": 9,
   "distinct_oe_count": 6,
+  "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3403",
+  "bowen_no": "3403",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3403",
+  "product_name_zh": "节温器 3403",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 10,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00827",
+   "SRC-00849"
+  ],
+  "application_ids": [
+   "APP-00671"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 1,
+  "distinct_oe_count": 1,
   "opening_temperatures_c": [],
   "prototype_rank": null,
   "completeness_score": null,
@@ -11153,7 +11271,7 @@
   "application_ids": [
    "APP-00088",
    "APP-00505",
-   "APP-00742"
+   "APP-00747"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -11213,7 +11331,7 @@
   "application_ids": [
    "APP-00089",
    "APP-00510",
-   "APP-00734"
+   "APP-00739"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -11328,7 +11446,7 @@
   "application_ids": [
    "APP-00094",
    "APP-00495",
-   "APP-00743"
+   "APP-00748"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -11337,58 +11455,6 @@
   "opening_temperatures_c": [
    82
   ],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-3508",
-  "bowen_no": "3508",
-  "has_resolvable_bowen_no": true,
-  "unresolved_bowen_cell_raw": null,
-  "variant_of_bowen_no": null,
-  "product_type": "Thermostat",
-  "product_subtype": null,
-  "product_name_en": "Thermostat 3508",
-  "product_name_zh": "节温器 3508",
-  "website_category": "thermostats",
-  "switch_subcategory": null,
-  "image": null,
-  "status": "searchable_noindex",
-  "product_type_source": "human_section_label",
-  "product_type_verified": true,
-  "product_type_evidence": {
-   "kind": "human_section_label",
-   "raw_label": "节温器",
-   "source_sheet": "综合产品信息表",
-   "source_row": 51,
-   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
-  },
-  "product_type_raw_labels": [
-   "节温器"
-  ],
-  "product_type_conflict": null,
-  "blocked": false,
-  "blocked_reasons": [],
-  "blocked_application_count": 0,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "ok",
-  "source_sheets": [
-   "综合产品信息表"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00095"
-  ],
-  "application_ids": [
-   "APP-00095"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 1,
-  "oe_token_count": 0,
-  "distinct_oe_count": 0,
-  "opening_temperatures_c": [],
   "prototype_rank": null,
   "completeness_score": null,
   "created_from": "Phase 2.5 产品数据库重建"
@@ -11437,7 +11503,7 @@
   ],
   "application_ids": [
    "APP-00096",
-   "APP-00751"
+   "APP-00756"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -11552,7 +11618,7 @@
   ],
   "application_ids": [
    "APP-00097",
-   "APP-00754"
+   "APP-00759"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -11668,7 +11734,7 @@
   "application_ids": [
    "APP-00141",
    "APP-00498",
-   "APP-00799"
+   "APP-00804"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -11731,8 +11797,8 @@
    "APP-00136",
    "APP-00138",
    "APP-00417",
-   "APP-00626",
-   "APP-00627"
+   "APP-00629",
+   "APP-00630"
   ],
   "application_count": 5,
   "searchable_application_count": 5,
@@ -11850,7 +11916,7 @@
   ],
   "application_ids": [
    "APP-00478",
-   "APP-00694"
+   "APP-00699"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -11967,8 +12033,8 @@
   ],
   "application_ids": [
    "APP-00516",
-   "APP-00752",
-   "APP-00753"
+   "APP-00757",
+   "APP-00758"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -12088,7 +12154,7 @@
   "application_ids": [
    "APP-00107",
    "APP-00477",
-   "APP-00775"
+   "APP-00780"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -12147,7 +12213,7 @@
   ],
   "application_ids": [
    "APP-00108",
-   "APP-00564"
+   "APP-00566"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -12204,7 +12270,7 @@
   ],
   "application_ids": [
    "APP-00165",
-   "APP-00709"
+   "APP-00714"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -12318,7 +12384,7 @@
   ],
   "application_ids": [
    "APP-00131",
-   "APP-00659"
+   "APP-00662"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -12988,7 +13054,7 @@
   ],
   "application_ids": [
    "APP-00227",
-   "APP-00584"
+   "APP-00586"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -13324,7 +13390,7 @@
   "application_ids": [
    "APP-00116",
    "APP-00506",
-   "APP-00708"
+   "APP-00713"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -13382,8 +13448,8 @@
   ],
   "application_ids": [
    "APP-00117",
-   "APP-00635",
-   "APP-00636"
+   "APP-00638",
+   "APP-00639"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -13443,7 +13509,7 @@
   ],
   "application_ids": [
    "APP-00118",
-   "APP-00607"
+   "APP-00610"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -13566,169 +13632,6 @@
   "distinct_oe_count": 6,
   "opening_temperatures_c": [
    82
-  ],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-3565-2",
-  "bowen_no": "3565-2",
-  "has_resolvable_bowen_no": true,
-  "unresolved_bowen_cell_raw": null,
-  "variant_of_bowen_no": "3565",
-  "product_type": "Thermostat",
-  "product_subtype": null,
-  "product_name_en": "Thermostat 3565-2",
-  "product_name_zh": "节温器 3565-2",
-  "website_category": "thermostats",
-  "switch_subcategory": null,
-  "image": null,
-  "status": "searchable_noindex",
-  "product_type_source": "inherited_from_bowen",
-  "product_type_verified": true,
-  "product_type_evidence": {
-   "kind": "inherited_from_bowen",
-   "raw_label": "节温器",
-   "inherited_from_sheet": "综合产品信息表",
-   "inherited_from_row": 63,
-   "inherited_from_bowen_no": "3565",
-   "note": "本编号是 3565 的变体（后缀差异），继承综合产品信息表中 3565 的人工分类"
-  },
-  "product_type_raw_labels": [
-   "节温器"
-  ],
-  "product_type_conflict": null,
-  "blocked": false,
-  "blocked_reasons": [],
-  "blocked_application_count": 0,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "ok",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00702",
-   "SRC-00703"
-  ],
-  "application_ids": [
-   "APP-00550",
-   "APP-00551"
-  ],
-  "application_count": 2,
-  "searchable_application_count": 2,
-  "oe_token_count": 5,
-  "distinct_oe_count": 5,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-3566",
-  "bowen_no": "3566",
-  "has_resolvable_bowen_no": true,
-  "unresolved_bowen_cell_raw": null,
-  "variant_of_bowen_no": null,
-  "product_type": "Thermostat",
-  "product_subtype": null,
-  "product_name_en": "Thermostat 3566",
-  "product_name_zh": "节温器 3566",
-  "website_category": "thermostats",
-  "switch_subcategory": null,
-  "image": null,
-  "status": "searchable_noindex",
-  "product_type_source": "human_section_label",
-  "product_type_verified": true,
-  "product_type_evidence": {
-   "kind": "human_section_label",
-   "raw_label": "节温器",
-   "source_sheet": "综合产品信息表",
-   "source_row": 137,
-   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
-  },
-  "product_type_raw_labels": [
-   "节温器"
-  ],
-  "product_type_conflict": null,
-  "blocked": false,
-  "blocked_reasons": [],
-  "blocked_application_count": 0,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "ok",
-  "source_sheets": [
-   "综合产品信息表"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00265"
-  ],
-  "application_ids": [
-   "APP-00265"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 1,
-  "oe_token_count": 1,
-  "distinct_oe_count": 1,
-  "opening_temperatures_c": [
-   90
-  ],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-3567",
-  "bowen_no": "3567",
-  "has_resolvable_bowen_no": true,
-  "unresolved_bowen_cell_raw": null,
-  "variant_of_bowen_no": null,
-  "product_type": "Thermostat",
-  "product_subtype": null,
-  "product_name_en": "Thermostat 3567",
-  "product_name_zh": "节温器 3567",
-  "website_category": "thermostats",
-  "switch_subcategory": null,
-  "image": null,
-  "status": "searchable_noindex",
-  "product_type_source": "human_section_label",
-  "product_type_verified": true,
-  "product_type_evidence": {
-   "kind": "human_section_label",
-   "raw_label": "节温器",
-   "source_sheet": "综合产品信息表",
-   "source_row": 137,
-   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
-  },
-  "product_type_raw_labels": [
-   "节温器"
-  ],
-  "product_type_conflict": null,
-  "blocked": false,
-  "blocked_reasons": [],
-  "blocked_application_count": 0,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "ok",
-  "source_sheets": [
-   "综合产品信息表"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00266"
-  ],
-  "application_ids": [
-   "APP-00266"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 1,
-  "oe_token_count": 1,
-  "distinct_oe_count": 1,
-  "opening_temperatures_c": [
-   90
   ],
   "prototype_rank": null,
   "completeness_score": null,
@@ -13952,7 +13855,7 @@
   ],
   "application_ids": [
    "APP-00099",
-   "APP-00588"
+   "APP-00591"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -14009,7 +13912,7 @@
   ],
   "application_ids": [
    "APP-00171",
-   "APP-00603"
+   "APP-00606"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -14066,7 +13969,7 @@
   ],
   "application_ids": [
    "APP-00172",
-   "APP-00611"
+   "APP-00614"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -14243,7 +14146,7 @@
   ],
   "application_ids": [
    "APP-00100",
-   "APP-00796"
+   "APP-00801"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -14300,7 +14203,7 @@
   ],
   "application_ids": [
    "APP-00246",
-   "APP-00800"
+   "APP-00805"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -14357,7 +14260,7 @@
   ],
   "application_ids": [
    "APP-00253",
-   "APP-00781"
+   "APP-00786"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -14418,8 +14321,8 @@
   "application_ids": [
    "APP-00121",
    "APP-00508",
-   "APP-00617",
-   "APP-00663"
+   "APP-00620",
+   "APP-00666"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -14478,7 +14381,7 @@
   ],
   "application_ids": [
    "APP-00122",
-   "APP-00613"
+   "APP-00616"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -14538,7 +14441,7 @@
   "application_ids": [
    "APP-00123",
    "APP-00485",
-   "APP-00604"
+   "APP-00607"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -14828,7 +14731,7 @@
   ],
   "application_ids": [
    "APP-00449",
-   "APP-00790"
+   "APP-00795"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -14950,59 +14853,6 @@
   "created_from": "Phase 2.5 产品数据库重建"
  },
  {
-  "product_id": "BW-3655-2",
-  "bowen_no": "3655-2",
-  "has_resolvable_bowen_no": true,
-  "unresolved_bowen_cell_raw": null,
-  "variant_of_bowen_no": "3655",
-  "product_type": "Thermostat",
-  "product_subtype": null,
-  "product_name_en": "Thermostat 3655-2",
-  "product_name_zh": "节温器 3655-2",
-  "website_category": "thermostats",
-  "switch_subcategory": null,
-  "image": null,
-  "status": "searchable_noindex",
-  "product_type_source": "inherited_from_bowen",
-  "product_type_verified": true,
-  "product_type_evidence": {
-   "kind": "inherited_from_bowen",
-   "raw_label": "节温器",
-   "inherited_from_sheet": "综合产品信息表",
-   "inherited_from_row": 66,
-   "inherited_from_bowen_no": "3655",
-   "note": "本编号是 3655 的变体（后缀差异），继承综合产品信息表中 3655 的人工分类"
-  },
-  "product_type_raw_labels": [
-   "节温器"
-  ],
-  "product_type_conflict": null,
-  "blocked": false,
-  "blocked_reasons": [],
-  "blocked_application_count": 0,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "ok",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00958"
-  ],
-  "application_ids": [
-   "APP-00789"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 1,
-  "oe_token_count": 1,
-  "distinct_oe_count": 1,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
   "product_id": "BW-3665-1",
   "bowen_no": "3665-1",
   "has_resolvable_bowen_no": true,
@@ -15051,7 +14901,7 @@
   "application_ids": [
    "APP-00137",
    "APP-00150",
-   "APP-00566"
+   "APP-00568"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -15112,7 +14962,7 @@
   "application_ids": [
    "APP-00161",
    "APP-00531",
-   "APP-00774"
+   "APP-00779"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -15234,6 +15084,60 @@
   "created_from": "Phase 2.5 产品数据库重建"
  },
  {
+  "product_id": "BW-3753",
+  "bowen_no": "3753",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3753",
+  "product_name_zh": "节温器 3753",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 12,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00791"
+  ],
+  "application_ids": [
+   "APP-00635"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 1,
+  "distinct_oe_count": 1,
+  "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
   "product_id": "BW-3757",
   "bowen_no": "3757",
   "has_resolvable_bowen_no": true,
@@ -15342,9 +15246,9 @@
    "APP-00126",
    "APP-00127",
    "APP-00394",
-   "APP-00730",
-   "APP-00731",
-   "APP-00732"
+   "APP-00735",
+   "APP-00736",
+   "APP-00737"
   ],
   "application_count": 6,
   "searchable_application_count": 6,
@@ -15515,7 +15419,7 @@
   "application_ids": [
    "APP-00130",
    "APP-00412",
-   "APP-00736"
+   "APP-00741"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -15575,7 +15479,7 @@
   "application_ids": [
    "APP-00129",
    "APP-00411",
-   "APP-00739"
+   "APP-00744"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -15866,6 +15770,60 @@
   "created_from": "Phase 2.5 产品数据库重建"
  },
  {
+  "product_id": "BW-3920",
+  "bowen_no": "3920",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3920",
+  "product_name_zh": "节温器 3920",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 15,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00893"
+  ],
+  "application_ids": [
+   "APP-00729"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 1,
+  "distinct_oe_count": 1,
+  "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
   "product_id": "BW-3951",
   "bowen_no": "3951",
   "has_resolvable_bowen_no": true,
@@ -15909,7 +15867,7 @@
   ],
   "application_ids": [
    "APP-00258",
-   "APP-00802"
+   "APP-00807"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -15923,30 +15881,32 @@
   "created_from": "Phase 2.5 产品数据库重建"
  },
  {
-  "product_id": "BW-3964",
-  "bowen_no": "3964",
+  "product_id": "BW-3957",
+  "bowen_no": "3957",
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
   "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Thermostat 3964",
-  "product_name_zh": "节温器 3964",
+  "product_name_en": "Thermostat 3957",
+  "product_name_zh": "节温器 3957",
   "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
   "status": "searchable_noindex",
-  "product_type_source": "human_section_label",
+  "product_type_source": "human_review_confirmed",
   "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "human_section_label",
-   "raw_label": "节温器",
-   "source_sheet": "综合产品信息表",
-   "source_row": 138,
-   "note": "业务方在综合产品信息表写下的产品区段标签，向下连续适用"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 16,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
   "product_type_raw_labels": [
-   "节温器"
+   "Thermostat"
   ],
   "product_type_conflict": null,
   "blocked": false,
@@ -15956,22 +15916,20 @@
   "review_notes": [],
   "data_status": "ok",
   "source_sheets": [
-   "综合产品信息表"
+   "工作表1"
   ],
   "source_sheet_count": 1,
   "source_record_ids": [
-   "SRC-00267"
+   "SRC-00947"
   ],
   "application_ids": [
-   "APP-00267"
+   "APP-00783"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
-  "oe_token_count": 5,
-  "distinct_oe_count": 5,
-  "opening_temperatures_c": [
-   80
-  ],
+  "oe_token_count": 8,
+  "distinct_oe_count": 8,
+  "opening_temperatures_c": [],
   "prototype_rank": null,
   "completeness_score": null,
   "created_from": "Phase 2.5 产品数据库重建"
@@ -16943,6 +16901,60 @@
   "searchable_application_count": 1,
   "oe_token_count": 2,
   "distinct_oe_count": 2,
+  "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-5016",
+  "bowen_no": "5016",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 5016",
+  "product_name_zh": "节温器 5016",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 17,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "日系"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00627"
+  ],
+  "application_ids": [
+   "APP-00512"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 1,
+  "distinct_oe_count": 1,
   "opening_temperatures_c": [],
   "prototype_rank": null,
   "completeness_score": null,
@@ -18127,7 +18139,7 @@
   ],
   "application_ids": [
    "APP-00166",
-   "APP-00574"
+   "APP-00576"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -18187,7 +18199,7 @@
   "application_ids": [
    "APP-00168",
    "APP-00538",
-   "APP-00722"
+   "APP-00727"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -18247,7 +18259,7 @@
   "application_ids": [
    "APP-00175",
    "APP-00400",
-   "APP-00788"
+   "APP-00793"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -18412,7 +18424,7 @@
   ],
   "application_ids": [
    "APP-00225",
-   "APP-00767"
+   "APP-00772"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -18472,7 +18484,7 @@
   "application_ids": [
    "APP-00182",
    "APP-00499",
-   "APP-00780"
+   "APP-00785"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -18538,6 +18550,60 @@
   "created_from": "Phase 2.5 产品数据库重建"
  },
  {
+  "product_id": "BW-31005",
+  "bowen_no": "31005",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 31005",
+  "product_name_zh": "节温器 31005",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 19,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00879"
+  ],
+  "application_ids": [
+   "APP-00715"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 1,
+  "distinct_oe_count": 1,
+  "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
   "product_id": "BW-31054",
   "bowen_no": "31054",
   "has_resolvable_bowen_no": true,
@@ -18584,7 +18650,7 @@
   "application_ids": [
    "APP-00079",
    "APP-00392",
-   "APP-00740"
+   "APP-00745"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -18594,6 +18660,170 @@
    70,
    97
   ],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-31105",
+  "bowen_no": "31105",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 31105",
+  "product_name_zh": "节温器 31105",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 21,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00894"
+  ],
+  "application_ids": [
+   "APP-00730"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 4,
+  "distinct_oe_count": 4,
+  "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-31182",
+  "bowen_no": "31182",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 31182",
+  "product_name_zh": "节温器 31182",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 22,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00705",
+   "SRC-00842"
+  ],
+  "application_ids": [
+   "APP-00553",
+   "APP-00683"
+  ],
+  "application_count": 2,
+  "searchable_application_count": 2,
+  "oe_token_count": 14,
+  "distinct_oe_count": 11,
+  "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-31403",
+  "bowen_no": "31403",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 31403",
+  "product_name_zh": "节温器 31403",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 23,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00910"
+  ],
+  "application_ids": [
+   "APP-00746"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 13,
+  "distinct_oe_count": 13,
+  "opening_temperatures_c": [],
   "prototype_rank": null,
   "completeness_score": null,
   "created_from": "Phase 2.5 产品数据库重建"
@@ -18642,7 +18872,7 @@
   ],
   "application_ids": [
    "APP-00239",
-   "APP-00644"
+   "APP-00647"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -18699,7 +18929,7 @@
   ],
   "application_ids": [
    "APP-00170",
-   "APP-00729"
+   "APP-00734"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -18757,8 +18987,8 @@
   ],
   "application_ids": [
    "APP-00234",
-   "APP-00689",
-   "APP-00690"
+   "APP-00694",
+   "APP-00695"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -18767,6 +18997,60 @@
   "opening_temperatures_c": [
    82
   ],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-31520",
+  "bowen_no": "31520",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 31520",
+  "product_name_zh": "节温器 31520",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 24,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00839"
+  ],
+  "application_ids": [
+   "APP-00682"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 2,
+  "distinct_oe_count": 2,
+  "opening_temperatures_c": [],
   "prototype_rank": null,
   "completeness_score": null,
   "created_from": "Phase 2.5 产品数据库重建"
@@ -18815,7 +19099,7 @@
   ],
   "application_ids": [
    "APP-00256",
-   "APP-00677"
+   "APP-00680"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -18873,8 +19157,8 @@
   ],
   "application_ids": [
    "APP-00134",
-   "APP-00655",
-   "APP-00656"
+   "APP-00658",
+   "APP-00659"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -18932,8 +19216,8 @@
   ],
   "application_ids": [
    "APP-00231",
-   "APP-00653",
-   "APP-00654"
+   "APP-00656",
+   "APP-00657"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -18991,8 +19275,8 @@
   ],
   "application_ids": [
    "APP-00255",
-   "APP-00579",
-   "APP-00580"
+   "APP-00581",
+   "APP-00582"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -19001,6 +19285,613 @@
   "opening_temperatures_c": [
    85
   ],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-31608",
+  "bowen_no": "31608",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 31608",
+  "product_name_zh": "节温器 31608",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 25,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00736",
+   "SRC-00739",
+   "SRC-00740"
+  ],
+  "application_ids": [
+   "APP-00580",
+   "APP-00583",
+   "APP-00584"
+  ],
+  "application_count": 3,
+  "searchable_application_count": 3,
+  "oe_token_count": 9,
+  "distinct_oe_count": 9,
+  "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-32095",
+  "bowen_no": "32095",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 32095",
+  "product_name_zh": "节温器 32095",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 26,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00829",
+   "SRC-00846"
+  ],
+  "application_ids": [
+   "APP-00673",
+   "APP-00685"
+  ],
+  "application_count": 2,
+  "searchable_application_count": 2,
+  "oe_token_count": 15,
+  "distinct_oe_count": 11,
+  "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-32138",
+  "bowen_no": "32138",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 32138",
+  "product_name_zh": "节温器 32138",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 27,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00831",
+   "SRC-00843"
+  ],
+  "application_ids": [
+   "APP-00675"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 3,
+  "distinct_oe_count": 3,
+  "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-32269",
+  "bowen_no": "32269",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 32269",
+  "product_name_zh": "节温器 32269",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 28,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00830",
+   "SRC-00844"
+  ],
+  "application_ids": [
+   "APP-00674"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 2,
+  "distinct_oe_count": 2,
+  "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-32289",
+  "bowen_no": "32289",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 32289",
+  "product_name_zh": "节温器 32289",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 29,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00828",
+   "SRC-00847"
+  ],
+  "application_ids": [
+   "APP-00672"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 2,
+  "distinct_oe_count": 2,
+  "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-32588",
+  "bowen_no": "32588",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 32588",
+  "product_name_zh": "节温器 32588",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 30,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00826",
+   "SRC-00850"
+  ],
+  "application_ids": [
+   "APP-00670"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 1,
+  "distinct_oe_count": 1,
+  "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-32703",
+  "bowen_no": "32703",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 32703",
+  "product_name_zh": "节温器 32703",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 31,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00851"
+  ],
+  "application_ids": [
+   "APP-00687"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 5,
+  "distinct_oe_count": 5,
+  "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-32839",
+  "bowen_no": "32839",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 32839",
+  "product_name_zh": "节温器 32839",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 33,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00834",
+   "SRC-00840"
+  ],
+  "application_ids": [
+   "APP-00678"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 1,
+  "distinct_oe_count": 1,
+  "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-32849",
+  "bowen_no": "32849",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 32849",
+  "product_name_zh": "节温器 32849",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 34,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00835",
+   "SRC-00838"
+  ],
+  "application_ids": [
+   "APP-00679"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 1,
+  "distinct_oe_count": 1,
+  "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-32870",
+  "bowen_no": "32870",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 32870",
+  "product_name_zh": "节温器 32870",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 35,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00825"
+  ],
+  "application_ids": [
+   "APP-00669"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 1,
+  "distinct_oe_count": 1,
+  "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-32899",
+  "bowen_no": "32899",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 32899",
+  "product_name_zh": "节温器 32899",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 36,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00833",
+   "SRC-00841"
+  ],
+  "application_ids": [
+   "APP-00677"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 1,
+  "distinct_oe_count": 1,
+  "opening_temperatures_c": [],
   "prototype_rank": null,
   "completeness_score": null,
   "created_from": "Phase 2.5 产品数据库重建"
@@ -19049,7 +19940,7 @@
   ],
   "application_ids": [
    "APP-00235",
-   "APP-00595"
+   "APP-00598"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -19108,9 +19999,9 @@
   ],
   "application_ids": [
    "APP-00219",
-   "APP-00648",
-   "APP-00649",
-   "APP-00650"
+   "APP-00651",
+   "APP-00652",
+   "APP-00653"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -19169,7 +20060,7 @@
   ],
   "application_ids": [
    "APP-00177",
-   "APP-00705"
+   "APP-00710"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -19280,7 +20171,7 @@
   ],
   "application_ids": [
    "APP-00204",
-   "APP-00748"
+   "APP-00753"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -19339,7 +20230,7 @@
   "application_ids": [
    "APP-00205",
    "APP-00218",
-   "APP-00621"
+   "APP-00624"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -19397,7 +20288,7 @@
   ],
   "application_ids": [
    "APP-00241",
-   "APP-00704"
+   "APP-00709"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -19567,7 +20458,7 @@
   "application_ids": [
    "APP-00233",
    "APP-00456",
-   "APP-00586"
+   "APP-00588"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -19624,7 +20515,7 @@
   ],
   "application_ids": [
    "APP-00242",
-   "APP-00630"
+   "APP-00633"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -19793,7 +20684,7 @@
   ],
   "application_ids": [
    "APP-00262",
-   "APP-00762"
+   "APP-00767"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -19850,7 +20741,7 @@
   ],
   "application_ids": [
    "APP-00261",
-   "APP-00760"
+   "APP-00765"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -20132,7 +21023,7 @@
   ],
   "application_ids": [
    "APP-00259",
-   "APP-00791"
+   "APP-00796"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -20245,7 +21136,7 @@
   ],
   "application_ids": [
    "APP-00245",
-   "APP-00773"
+   "APP-00778"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -20305,7 +21196,7 @@
   "application_ids": [
    "APP-00101",
    "APP-00437",
-   "APP-00629"
+   "APP-00632"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -20529,7 +21420,7 @@
   "application_ids": [
    "APP-00102",
    "APP-00438",
-   "APP-00801"
+   "APP-00806"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -20700,7 +21591,7 @@
    "APP-00173",
    "APP-00453",
    "APP-00518",
-   "APP-00706"
+   "APP-00711"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -20812,7 +21703,7 @@
   ],
   "application_ids": [
    "APP-00268",
-   "APP-00583"
+   "APP-00585"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -20924,7 +21815,7 @@
   ],
   "application_ids": [
    "APP-00207",
-   "APP-00684"
+   "APP-00689"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -21147,7 +22038,7 @@
   "application_ids": [
    "APP-00008",
    "APP-00529",
-   "APP-00692"
+   "APP-00697"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -21206,7 +22097,7 @@
   ],
   "application_ids": [
    "APP-00034",
-   "APP-00600"
+   "APP-00603"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -21264,7 +22155,7 @@
   "application_ids": [
    "APP-00035",
    "APP-00403",
-   "APP-00568"
+   "APP-00570"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -21324,7 +22215,7 @@
   "application_ids": [
    "APP-00036",
    "APP-00404",
-   "APP-00569"
+   "APP-00571"
   ],
   "application_count": 3,
   "searchable_application_count": 3,

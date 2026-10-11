@@ -1,0 +1,39 @@
+/* 法务页面（Privacy / Terms）共用排版。只做阅读体验，不含任何客户可见文案。 */
+.legal { max-width: 780px; }
+.updated {
+  font-size: 13px;
+  color: var(--ink-500);
+  margin: 0 0 26px;
+}
+.legal h2 { margin: 34px 0 12px; }
+.legal h3 { margin: 24px 0 8px; }
+.legal p { line-height: 1.75; margin: 0 0 12px; }
+.legal ul { margin: 0 0 14px; padding-left: 22px; }
+.legal li { line-height: 1.75; margin-bottom: 6px; }
+.summary {
+  padding: 18px 20px;
+  border: 1px solid var(--navy-100);
+  border-radius: var(--radius-lg);
+  background: var(--navy-50);
+  margin-bottom: 26px;
+}
+.summary p:last-child { margin-bottom: 0; }
+.note {
+  padding: 16px 18px;
+  border: 1px solid var(--ink-200);
+  border-left: 3px solid var(--navy-500);
+  border-radius: var(--radius);
+  background: var(--ink-50);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.note p:last-child { margin-bottom: 0; }
+.contactBlock {
+  margin-top: 10px;
+  padding: 18px 20px;
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+}
+.contactBlock p { margin: 0 0 6px; font-size: 14.5px; }
+.contactBlock p:last-child { margin-bottom: 0; }

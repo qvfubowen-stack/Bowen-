@@ -1,14 +1,21 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { PageHero } from '@/components/PageHero';
+import { getSiteFacts } from '@/lib/db';
+import { absoluteUrl, canonicalFor } from '@/lib/site-url';
 import styles from './contact.module.css';
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Contact Bowen for thermostat enquiries, quotations and supplier documentation.',
+  description:
+    'Contact Qufu Bowen Auto Parts Manufacturing Co., Ltd. for thermostat enquiries, quotations and supplier documentation.',
+  alternates: canonicalFor('/contact'),
+  openGraph: { url: absoluteUrl('/contact'), title: 'Contact | Bowen', type: 'website' },
 };
 
-export default function ContactPage() {
+export default async function ContactPage() {
+  const c = (await getSiteFacts()).company;
+
   return (
     <>
       <PageHero
@@ -21,23 +28,49 @@ export default function ContactPage() {
       <section className="section">
         <div className="container">
           <div className={styles.grid}>
+            {/* 公司主体信息：名称 / 邮箱 / 电话 —— 全部来自宣传手册封底 */}
+            <article className={`${styles.card} ${styles.cardWide} ${styles.companyCard}`}>
+              <span className="eyebrow">Company</span>
+              <h2 className="h2">{c.legal_name_en}</h2>
+              <p className={styles.legalZh}>{c.legal_name_zh}</p>
+
+              <dl className={styles.details}>
+                <div>
+                  <dt>Address</dt>
+                  <dd className={styles.address}>{c.address_en}</dd>
+                </div>
+                <div>
+                  <dt>Email</dt>
+                  <dd><a href={`mailto:${c.email}`}>{c.email}</a></dd>
+                </div>
+                <div>
+                  <dt>Tel</dt>
+                  <dd><a href={`tel:${c.tel_href}`}>{c.tel_display}</a></dd>
+                </div>
+                <div>
+                  <dt>Best route</dt>
+                  <dd><Link href="/rfq">RFQ form — send your sourcing list</Link></dd>
+                </div>
+              </dl>
+            </article>
+
             <article className={styles.card}>
               <h2 className="h3">Sales &amp; quotations</h2>
               <p className={styles.cardBody}>
-                OE numbers, sourcing lists, price and lead-time enquiries.
+                OE numbers, sourcing lists, price and availability enquiries.
               </p>
               <dl className={styles.details}>
                 <div>
                   <dt>Email</dt>
-                  <dd><a href="mailto:sales@bowen-thermostat.com">sales@bowen-thermostat.com</a></dd>
+                  <dd><a href={`mailto:${c.email}`}>{c.email}</a></dd>
+                </div>
+                <div>
+                  <dt>Tel</dt>
+                  <dd><a href={`tel:${c.tel_href}`}>{c.tel_display}</a></dd>
                 </div>
                 <div>
                   <dt>Best route</dt>
-                  <dd><Link href="/rfq">RFQ form — attach your list</Link></dd>
-                </div>
-                <div>
-                  <dt>Response time</dt>
-                  <dd>Normally within one working day</dd>
+                  <dd><Link href="/rfq">RFQ form — send your list</Link></dd>
                 </div>
               </dl>
             </article>
@@ -50,7 +83,7 @@ export default function ContactPage() {
               <dl className={styles.details}>
                 <div>
                   <dt>Email</dt>
-                  <dd><a href="mailto:quality@bowen-thermostat.com">quality@bowen-thermostat.com</a></dd>
+                  <dd><a href={`mailto:${c.email}`}>{c.email}</a></dd>
                 </div>
                 <div>
                   <dt>Documents</dt>
@@ -58,7 +91,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <dt>Factory visits</dt>
-                  <dd><Link href="/contact">Arrange via sales</Link></dd>
+                  <dd><Link href="/factory">Factory &amp; audits</Link></dd>
                 </div>
               </dl>
             </article>
@@ -67,7 +100,7 @@ export default function ContactPage() {
               <h2 className="h3">Find a part before you write</h2>
               <p className={styles.cardBody}>
                 Most enquiries can be answered faster by looking the part up yourself. Search by OE
-                number, Bowen number, vehicle make or engine and you will see the application behind
+                number, Bowen number or vehicle make and you will see the application recorded behind
                 each match.
               </p>
               <div className={styles.quickLinks}>
@@ -77,22 +110,16 @@ export default function ContactPage() {
               </div>
             </article>
 
-            <article className={`${styles.card} ${styles.cardPlaceholder}`}>
-              <h2 className="h3">Company details — pending</h2>
+            {/* 国内平台：次要位置 + 明确标注，绝不当作海外官网域名 */}
+            <article className={`${styles.card} ${styles.cardWide} ${styles.marketCard}`}>
+              <h2 className="h3">Domestic marketplace</h2>
               <p className={styles.cardBody}>
-                The following are not published yet because they have not been confirmed from Bowen
-                company records. They will be added before the site goes live.
+                Bowen also maintains a storefront on 1688, a China domestic marketplace:
               </p>
-              <ul className={styles.pendingList}>
-                <li>Full registered company name and address</li>
-                <li>Telephone and WhatsApp business numbers</li>
-                <li>WeChat / alternative messaging IDs</li>
-                <li>Business hours and time zone</li>
-                <li>Map and factory location details</li>
-              </ul>
-              <p className={styles.pendingNote}>
-                The email addresses shown above are placeholders used by this prototype and must be
-                replaced with the real mailboxes before launch.
+              <p className={styles.marketUrl}>{c.domestic_marketplace_label}</p>
+              <p className={styles.marketNote}>
+                {c.domestic_marketplace_note} It is listed here for reference only and is not the
+                website of Bowen&apos;s export business.
               </p>
             </article>
           </div>

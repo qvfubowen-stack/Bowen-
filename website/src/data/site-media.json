@@ -1,0 +1,229 @@
+{
+ "generated_at": "2026-09-26T06:35:43.671Z",
+ "source": {
+  "primary_evidence": "宣传手册最终PDF/博文公司宣传手册-英文版.pdf",
+  "extraction": "zero-dependency PDF object/xref scan (tools/p4-build-site-assets.mjs)",
+  "legacy_site_assets_excluded": "data/legacy-site/assets.json 中 page_category = factory(10) / company(9) / certificate(7) 共 26 条素材，reuse_status 全部为 review_required 或 not_recommended，本阶段一条未用。"
+ },
+ "company": [
+  {
+   "src": "/assets/company/factory-buildings.jpg",
+   "alt": "Bowen manufacturing site — Factory buildings at the Bowen manufacturing site",
+   "caption": "Factory buildings at the Bowen manufacturing site",
+   "brochure_page": 3,
+   "source_object": "IM26",
+   "width": 2300,
+   "height": 869,
+   "source_sha256": "0ab445cc7b134def57418e5149b702c6f68c8e12a15a4bb61425d15e1ff2f9ce",
+   "source_evidence": "宣传手册-英文版 P3"
+  },
+  {
+   "src": "/assets/company/assembly-workshop.jpg",
+   "alt": "Bowen manufacturing site — Assembly workshop at the Bowen factory",
+   "caption": "Assembly workshop at the Bowen factory",
+   "brochure_page": 11,
+   "source_object": "IM66",
+   "width": 2300,
+   "height": 869,
+   "source_sha256": "5bedc50abb028dc73c0e760a99e0ce0fd53f7aea63009ca912aa91b95e0d9347",
+   "source_evidence": "宣传手册-英文版 P11"
+  }
+ ],
+ "factory": [
+  {
+   "src": "/assets/factory/production-workshop.jpg",
+   "alt": "Bowen factory — Production workshop with defined aisles and workstations",
+   "caption": "Production workshop with defined aisles and workstations",
+   "brochure_page": 5,
+   "source_object": "IM37",
+   "width": 2300,
+   "height": 1113,
+   "source_sha256": "9a1137693863025b244b8f337d9706fa2e6c94e301a26dcb76f688b866405982",
+   "source_evidence": "宣传手册-英文版 P5"
+  },
+  {
+   "src": "/assets/factory/machining-workshop.jpg",
+   "alt": "Bowen factory — Machining workshop",
+   "caption": "Machining workshop",
+   "brochure_page": 5,
+   "source_object": "IM38",
+   "width": 2040,
+   "height": 1350,
+   "source_sha256": "d649c90d41cc9008f4351a4236f47221fe1b5d469100e6822cb7c12396c812d8",
+   "source_evidence": "宣传手册-英文版 P5"
+  },
+  {
+   "src": "/assets/factory/component-assembly-workshop.jpg",
+   "alt": "Bowen factory — Component assembly workshop",
+   "caption": "Component assembly workshop",
+   "brochure_page": 5,
+   "source_object": "IM39",
+   "width": 2040,
+   "height": 1350,
+   "source_sha256": "ba49438213f512cc1cc809267377487ee1567b52ff3b4f73266e6dcf27b285e9",
+   "source_evidence": "宣传手册-英文版 P5"
+  },
+  {
+   "src": "/assets/factory/automatic-assembly-area.jpg",
+   "alt": "Bowen factory — Automatic assembly area",
+   "caption": "Automatic assembly area",
+   "brochure_page": 6,
+   "source_object": "IM42",
+   "width": 2300,
+   "height": 1065,
+   "source_sha256": "ea0d72e3548e93518bb5d88b64c18ccf2eeb8caddcdb18118764704bbab9f404",
+   "source_evidence": "宣传手册-英文版 P6"
+  },
+  {
+   "src": "/assets/factory/automatic-assembly-machine-20-series.jpg",
+   "alt": "Bowen factory — 20 series automatic assembly machine",
+   "caption": "20 series automatic assembly machine",
+   "brochure_page": 6,
+   "source_object": "IM43",
+   "width": 2040,
+   "height": 1290,
+   "source_sha256": "9e23c8731c03d083ac5547388fcf8ba315489179d57ad2be673ec53222201d88",
+   "source_evidence": "宣传手册-英文版 P6"
+  },
+  {
+   "src": "/assets/factory/automatic-assembly-machine-211-series.jpg",
+   "alt": "Bowen factory — 211 series automatic assembly machine",
+   "caption": "211 series automatic assembly machine",
+   "brochure_page": 6,
+   "source_object": "IM44",
+   "width": 2040,
+   "height": 1290,
+   "source_sha256": "b7678f388ae887277becc15084f2d8ed00ee2a853919c05f14670f9daf230a98",
+   "source_evidence": "宣传手册-英文版 P6"
+  },
+  {
+   "src": "/assets/factory/cnc-machining-equipment.jpg",
+   "alt": "Bowen factory — CNC machining equipment",
+   "caption": "CNC machining equipment",
+   "brochure_page": 7,
+   "source_object": "IM47",
+   "width": 2040,
+   "height": 1410,
+   "source_sha256": "681a1cd12c0a298e79c30cf8cf5fbc249c877280d570cc4cdb7d10e115c64ab7",
+   "source_evidence": "宣传手册-英文版 P7"
+  },
+  {
+   "src": "/assets/factory/automatic-assembly-machine-24-series.jpg",
+   "alt": "Bowen factory — 24 series automatic assembly machine",
+   "caption": "24 series automatic assembly machine",
+   "brochure_page": 7,
+   "source_object": "IM48",
+   "width": 2040,
+   "height": 1410,
+   "source_sha256": "5914989bc2375b1eb6d06df08e483ffe882fc4e7a48797437fa1d75b6ee8ef44",
+   "source_evidence": "宣传手册-英文版 P7"
+  },
+  {
+   "src": "/assets/factory/rubber-plug-assembly-machine.jpg",
+   "alt": "Bowen factory — Rubber plug automatic assembly machine",
+   "caption": "Rubber plug automatic assembly machine",
+   "brochure_page": 7,
+   "source_object": "IM49",
+   "width": 2040,
+   "height": 1410,
+   "source_sha256": "0d247a501478f4d1a98dd50014577de669e6361a8d60592a3c6ee56bb151fcbe",
+   "source_evidence": "宣传手册-英文版 P7"
+  },
+  {
+   "src": "/assets/factory/automatic-riveting-machine.jpg",
+   "alt": "Bowen factory — Automatic riveting machine",
+   "caption": "Automatic riveting machine",
+   "brochure_page": 7,
+   "source_object": "IM50",
+   "width": 2040,
+   "height": 1410,
+   "source_sha256": "6679646d78327f2558bad11273789fde8d273fe1195393cc702f91aea548482f",
+   "source_evidence": "宣传手册-英文版 P7"
+  },
+  {
+   "src": "/assets/factory/sensing-element-test-machine-211-series.jpg",
+   "alt": "Bowen factory — 211 series sensing element adjustment and testing machine",
+   "caption": "211 series sensing element adjustment and testing machine",
+   "brochure_page": 8,
+   "source_object": "IM53",
+   "width": 2300,
+   "height": 1015,
+   "source_sha256": "7d6d6af185cfd5fa80138954e81fb7ceb446bf980cecae3b88903ee7dfd26cd8",
+   "source_evidence": "宣传手册-英文版 P8"
+  },
+  {
+   "src": "/assets/factory/sensing-element-test-machine-20-24-series.jpg",
+   "alt": "Bowen factory — 20 and 24 series sensing element adjustment and testing machine",
+   "caption": "20 and 24 series sensing element adjustment and testing machine",
+   "brochure_page": 8,
+   "source_object": "IM54",
+   "width": 2040,
+   "height": 1410,
+   "source_sha256": "450fdf8c14698c43950814cdff91772f66425c15b808c7ec37119f6989f1f4e4",
+   "source_evidence": "宣传手册-英文版 P8"
+  },
+  {
+   "src": "/assets/factory/thermostat-life-test-bench.jpg",
+   "alt": "Bowen factory — Thermostat life test bench",
+   "caption": "Thermostat life test bench",
+   "brochure_page": 8,
+   "source_object": "IM55",
+   "width": 2040,
+   "height": 1410,
+   "source_sha256": "902d70dc7a6c0aac311120822f61e5b4223a51d37c5e789dfd7ccb0bab5b8f66",
+   "source_evidence": "宣传手册-英文版 P8"
+  }
+ ],
+ "certificates": [
+  {
+   "src": "/assets/certificates/iatf-16949-certificate.jpg",
+   "alt": "Bowen certificate — IATF 16949:2016 certificate, issued by NQA",
+   "caption": "IATF 16949:2016 certificate, issued by NQA",
+   "brochure_page": 12,
+   "source_object": "IM69",
+   "width": 1059,
+   "height": 1500,
+   "source_sha256": "2df06a9d8c48313ceb784051d3d21f58c3fd004049c5655582a58389335217c7",
+   "source_evidence": "宣传手册-英文版 P12"
+  },
+  {
+   "src": "/assets/certificates/high-tech-enterprise-certificate.jpg",
+   "alt": "Bowen certificate — High-tech Enterprise Certificate",
+   "caption": "High-tech Enterprise Certificate",
+   "brochure_page": 13,
+   "source_object": "IM72",
+   "width": 1992,
+   "height": 1344,
+   "source_sha256": "0eb3c05f0dc7e78814503c4bd3a111fa925e00f32fd6a89cd18d2de016efeb61",
+   "source_evidence": "宣传手册-英文版 P13"
+  },
+  {
+   "src": "/assets/certificates/work-safety-standardization-certificate.jpg",
+   "alt": "Bowen certificate — Work Safety Standardization Certificate",
+   "caption": "Work Safety Standardization Certificate",
+   "brochure_page": 13,
+   "source_object": "IM73",
+   "width": 898,
+   "height": 1280,
+   "source_sha256": "4175ed82b292aa9801282a3dd80c6da082506b72bdbe10e9447a7c8014c194ee",
+   "source_evidence": "宣传手册-英文版 P13"
+  },
+  {
+   "src": "/assets/certificates/innovative-sme-2026-public-list.jpg",
+   "alt": "Bowen certificate — Shandong Province 2026 Innovative SME public list — entry No. 3380",
+   "caption": "Shandong Province 2026 Innovative SME public list — entry No. 3380",
+   "brochure_page": 13,
+   "source_object": "IM74",
+   "width": 2395,
+   "height": 520,
+   "source_sha256": "5fd09edef9c2abe4181197b37d7157a0a4c5fe12fc4c371a67d63b349496e74d",
+   "source_evidence": "宣传手册-英文版 P13"
+  }
+ ],
+ "counts": {
+  "company": 2,
+  "factory": 13,
+  "certificates": 4,
+  "total": 19
+ }
+}

@@ -22,7 +22,19 @@
 }
 .utility a { color: rgba(255, 255, 255, 0.9); }
 .utility a:hover { color: var(--white); }
-.utilityRight { white-space: nowrap; }
+.utilityRight {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+.utilitySep { opacity: 0.45; }
+/* 正式公司全称较长：窄屏下省略号收尾，避免把电话/邮箱挤出视口 */
+.utilityName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 /* ---- 主条 ---- */
 .mainbarInner {
@@ -193,8 +205,16 @@
   .burger { display: block; }
   .rfqBtn { padding: 8px 12px; font-size: 13.5px; }
   .nav { display: none; }
-  .utility { font-size: 11.5px; }
-  .utility span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  /* 窄屏：公司全称与联系方式各占一行，避免被压成一行后互相挤爆 */
+  .utility {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 3px;
+    padding: 5px 0;
+    font-size: 11.5px;
+    text-align: center;
+  }
+  .utilityName { white-space: normal; }
 }
 
 @media (max-width: 420px) {

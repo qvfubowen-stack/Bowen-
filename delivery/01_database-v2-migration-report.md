@@ -98,17 +98,26 @@ Products (451)
 
 ## 四、产品类型是怎么定的（这是本阶段最关键的部分）
 
+> **⚠️ 本节数字已按 Phase 2.7 更新。** 业务方审阅了类型待确认表并给出结论：
+> **未标黄 40 个类型均为 `Thermostat`**，**标黄 30 个整体舍弃**（连同其 application 移出产品库）。
+> 因此 `human_review_confirmed` 从 3 增到 **43**，`review_required` 从 70 降到 **5**，
+> 产品总数从 451 变为 **426**。
+
 ### 4.1 四条合法来源，一条都没有多
 
 | `product_type_source` | 产品数 | 含义 |
 |---|---|---|
 | `human_section_label` | **365** | 业务方在《综合产品信息表》里写下的产品区段标签 |
-| `human_review_confirmed` | **3** | 业务方在 Phase 2 审核表里逐行手填的确认值 |
+| `human_review_confirmed` | **43** | Phase 2 审核表逐行确认 3 个 + Phase 2.7 类型表确认 40 个（证据含审核表行号） |
 | `inherited_from_bowen` | **13** | 变体编号继承其基础编号在综合表里的分类 |
-| `review_required` | **70** | 无人工证据，程序不做任何推断 |
-| **合计** | **451** | |
+| `review_required` | **5** | 无人工证据，程序不做任何推断（业务方 D3 要求补入库的 5 个编号） |
+| **合计** | **426** | Phase 2.7 按业务方要求舍弃的 30 个已不在其中 |
 
 **自动猜 product_type = 0。**
+
+> 被舍弃的 30 个：`product_type_review.discarded`（`data/raw/business-decisions-v3.json`），
+> 原表里这 30 行的编号单元格都是 `(编号无法读出)`，业务方用黄色填充（`#FFFF00`）标出要求舍弃。
+> 程序按 Map key 删除并做原文交叉校验（不一致即退出码 6），不是"隐藏"而是**不生成**。
 
 ### 4.2 识别到的 7 个人工区段标签
 
@@ -155,15 +164,26 @@ Thermostat Assembly    ┘
 因此标 `inherited_from_bowen`，并在证据里写清继承自哪个编号、哪一行。
 程序只做了「去掉尾部 - 后缀」这一纯字符串操作，**没有**用 OE、车型、发动机、温度、尺寸做过任何推断。
 
-### 4.5 70 个仍然未知的类型
+### 4.5 类型待确认的产品：70 → 5（Phase 2.7 结案）
 
-这 70 个产品**已入库、可搜索**，只是 `product_type = null`、`product_type_source = "review_required"`：
+**Phase 2.7 之前**：70 个产品已入库、可搜索，但 `product_type = null`、`product_type_source = "review_required"`：
 
 - 40 个只在车型系列表或辅助表《工作表1》出现，综合表里没有它们的分类；
 - 30 个 Bowen No. 单元格为空或无编号。
 
+**业务方审阅 `review/product-type-unconfirmed.xlsx` 后的结论：**
+
+| 部分 | 数量 | 业务方结论 | 程序处理 |
+|---|---|---|---|
+| 未标黄（表单第 4–43 行） | **40** | 类型都是**节温器** | 写入 `product_type = Thermostat`、`product_type_source = human_review_confirmed`，证据带审核表文件名与行号 |
+| 标黄（`#FFFF00`，表单第 44–73 行） | **30** | **舍弃，不要再出现在产品库里** | 连同其 application 一并移出产品库（按 Map key 删除 + 原文交叉校验） |
+
+**现在 `review_required` 只剩 5 个**：业务方在 D3 里要求补入库的
+`38169 / 38298 / 3932 / 32603 / 32748-1`。它们的类型没有任何人工标签，
+所以保持 `product_type = null` + `review_required`（**不猜**），但仍然入库、可搜索、有图片。
+
 **没有强行分类、没有为凑数而填、没有为了好看而合并。**
-已导出 `review/product-type-unconfirmed.xlsx`（带下拉菜单），等业务方批量确认后回填。
+业务方的每一次人工标注都被写成带行号的证据，可逐条回溯。
 
 ---
 

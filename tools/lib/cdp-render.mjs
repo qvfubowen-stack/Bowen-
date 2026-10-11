@@ -36,6 +36,87 @@ async function findChrome() {
 }
 
 /**
+ * 通用 CDP 会话：把一个 Chrome 实例交给回调，回调里可以任意 evaluate / 截图。
+ * 与 renderUrlToPng 共用 findChrome，但独立起进程，互不影响。
+ *
+ * 用法：
+ *   await withChrome(async ({ rpc, navigate, sleep }) => { ... }, { extraFlags: ['--allow-file-access-from-files'] })
+ */
+export async function withChrome(fn, opts = {}) {
+  const { extraFlags = [], width = 1200, height = 900 } = opts;
+  const chromePath = await findChrome();
+  const port = 9200 + Math.floor(Math.random() * 500);
+  const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'bowen-cdp-'));
+  const chrome = spawn(chromePath, [
+    '--headless=new',
+    '--disable-gpu',
+    '--no-sandbox',
+    '--hide-scrollbars',
+    '--force-device-scale-factor=1',
+    ...extraFlags,
+    `--remote-debugging-port=${port}`,
+    `--user-data-dir=${profile}`,
+    'about:blank',
+  ], { stdio: 'ignore' });
+
+  let ws;
+  try {
+    let wsUrl = null;
+    for (let i = 0; i < 80 && !wsUrl; i++) {
+      try {
+        const list = await (await fetch(`http://127.0.0.1:${port}/json/list`)).json();
+        wsUrl = list.find((t) => t.type === 'page')?.webSocketDebuggerUrl ?? null;
+      } catch { /* 还没起来 */ }
+      if (!wsUrl) await sleep(250);
+    }
+    if (!wsUrl) throw new Error('无法连接 Chrome 调试端口');
+
+    ws = new WebSocket(wsUrl);
+    await new Promise((res, rej) => {
+      ws.addEventListener('open', res, { once: true });
+      ws.addEventListener('error', rej, { once: true });
+    });
+
+    let msgId = 0;
+    const rpc = (method, params = {}) => new Promise((resolve, reject) => {
+      const id = ++msgId;
+      const onMsg = (ev) => {
+        let d; try { d = JSON.parse(ev.data); } catch { return; }
+        if (d.id !== id) return;
+        ws.removeEventListener('message', onMsg);
+        if (d.error) reject(new Error(`${method}: ${d.error.message}`));
+        else resolve(d.result);
+      };
+      ws.addEventListener('message', onMsg);
+      ws.send(JSON.stringify({ id, method, params }));
+    });
+
+    await rpc('Page.enable');
+    await rpc('Emulation.setDeviceMetricsOverride', {
+      width, height, deviceScaleFactor: 1, mobile: false,
+    });
+
+    const evaluate = async (expression) => {
+      const { result, exceptionDetails } = await rpc('Runtime.evaluate', {
+        expression, returnByValue: true, awaitPromise: true,
+      });
+      if (exceptionDetails) throw new Error(`页面内脚本出错: ${exceptionDetails.text}`);
+      return result.value;
+    };
+
+    const navigate = async (url, settleMs = 900) => {
+      await rpc('Page.navigate', { url });
+      await sleep(settleMs);
+    };
+
+    return await fn({ rpc, evaluate, navigate, sleep });
+  } finally {
+    try { ws?.close(); } catch { /* ignore */ }
+    try { chrome.kill(); } catch { /* ignore */ }
+  }
+}
+
+/**
  * 渲染一个 URL 并截图。
  * @param {string} url
  * @param {{ width?: number, maxHeight?: number, scale?: number, settleMs?: number }} opts

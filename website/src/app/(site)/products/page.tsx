@@ -5,11 +5,20 @@ import { ProductCard } from '@/components/ProductCard';
 import { ProductFilters } from '@/components/ProductFilters';
 import { OeSearchBox } from '@/components/OeSearchBox';
 import { getCategorySummaries, getMakeSummaries, getProductTypeOptions, listProducts } from '@/lib/db';
+import { absoluteUrl, canonicalFor } from '@/lib/site-url';
 import styles from './products.module.css';
 
 export const metadata: Metadata = {
   title: 'Products',
-  description: 'Search Bowen thermostats and cooling parts by OE number, Bowen No., product type, vehicle make or engine.',
+  description: 'Search Bowen thermostats and cooling parts by OE number, Bowen No., product type, vehicle make or the application text recorded in the product data.',
+  // 筛选/搜索参数的组合不单独收录，统一 canonical 到列表页本身，避免重复内容
+  alternates: canonicalFor('/products'),
+  openGraph: {
+    url: absoluteUrl('/products'),
+    title: 'Products | Bowen',
+    description: 'Search Bowen thermostats and cooling parts by OE number, Bowen No., product type or vehicle make.',
+    type: 'website',
+  },
 };
 
 const PAGE_SIZE = 12;
@@ -45,7 +54,7 @@ export default async function ProductsPage({
   const categories = await getCategorySummaries();
   const makes = await getMakeSummaries();
 
-  // category 与 sub 是展示层筛选（listProducts 只按 type/make/engine/q 过滤）
+  // category 与 sub 是展示层筛选（listProducts 只按 type/make/application 文本/q 过滤）
   let items = result.items;
   if (sp.category) {
     const cat = categories.find((c) => c.category === sp.category);
@@ -67,8 +76,9 @@ export default async function ProductsPage({
           </nav>
           <h1 className="h1">Products</h1>
           <p className={styles.lead}>
-            Search by OE number or Bowen No., then narrow by product type, vehicle make or engine
-            application. Every result is a real record from the Bowen product database.
+            Search by OE number or Bowen No., then narrow by product type, vehicle make or the
+            application text recorded in our product data. Every result is a real record from the
+            Bowen product database, and every product shown here has a verified product photograph.
           </p>
           <div className={styles.headSearch}>
             <OeSearchBox size="compact" placeholder="Search OE Number or Bowen No." submitLabel="Search" mode="products" />

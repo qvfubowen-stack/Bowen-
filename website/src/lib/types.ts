@@ -168,8 +168,15 @@ export interface CategorySummary {
 }
 
 export interface MakeSummary {
+  /** canonical 品牌名（显示用；中英文写法已合并到同一个品牌） */
   make: string;
+  /** 该品牌在原始 application 文本里的所有别名（匹配用） */
+  aliases: string[];
   productCount: number;
   applicationCount: number;
-  sampleEngines: string[];
+  /**
+   * ⚠️ Phase 4.1：已删除 sampleEngines。
+   * 自动从原文里提取的发动机/机型标签没有人工复核，
+   * 不能作为「已确认发动机代号」公开展示（见 src/lib/engine-code.ts 顶部说明）。
+   */
 }

@@ -27,10 +27,13 @@ import { fileURLToPath } from 'node:url';
 import { readZip } from './xlsx-reader.mjs';
 import { findHeaderRow, buildBlocks, groupByRow } from './lib/v2-layout.mjs';
 import { Workbook } from './xlsx-reader.mjs';
+import { cropToContent } from './lib/image-crop.mjs';
+import { removeTree } from './lib/fsx.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const RAW_EXCEL = path.join(ROOT, 'data/raw/产品信息表1(1).xlsx');
 const MANIFEST = path.join(ROOT, 'data/raw/SOURCE-MANIFEST.json');
+const DECISIONS = path.join(ROOT, 'data/raw/business-decisions-v3.json');
 const IMG_DIR = path.join(ROOT, 'data/processed/product-images');
 const OUT_JSON = path.join(ROOT, 'data/processed/product-image-map.json');
 const DB_PRODUCTS = path.join(ROOT, 'data/derived/v2/products.json');
@@ -49,6 +52,50 @@ if (before !== expected) {
   process.exit(2);
 }
 log(`原始 Excel SHA-256 校验通过 ${before.slice(0, 16)}…`);
+
+// ---------------------------------------------------------------- 业务方决定（Phase 2.7）
+/**
+ * 业务方对本轮 9 个图片问题的逐条回答。程序只执行这里写明的决定，不做任何补充推断。
+ * 见 data/raw/business-decisions-v3.json 的 image_review 段。
+ */
+if (!fs.existsSync(DECISIONS)) {
+  console.error(`FATAL 找不到业务方决定文件 ${path.relative(ROOT, DECISIONS)}`);
+  process.exit(3);
+}
+const decisions = JSON.parse(fs.readFileSync(DECISIONS, 'utf8'));
+const D = decisions.image_review ?? {};
+
+/** D4/D5：确认删除的图片（IMG-0780 依 D6 例外，裁剪后保留） */
+const EXCLUDED_IMAGES = new Map();
+for (const id of (D.D4_unresolved_5?.effective_exclusions ?? [])) {
+  EXCLUDED_IMAGES.set(id, { decided_by: 'D4_unresolved_5', reason: '业务方确认删除（确认删除）' });
+}
+{
+  const d5 = D.D5_IMG_0723;
+  if (d5?.decision === 'exclude_from_library') {
+    const prev = EXCLUDED_IMAGES.get('IMG-0723');
+    EXCLUDED_IMAGES.set('IMG-0723', {
+      decided_by: prev ? 'D4_unresolved_5+D5_IMG_0723' : 'D5_IMG_0723',
+      reason: '原图是内部系统页面截图（含内部进价/售价），业务方决定忽略该产品',
+    });
+  }
+}
+
+/** D6：先裁剪再保留的图片 */
+const CROP_RULES = new Map();
+if (D.D6_IMG_0780?.decision === 'crop_then_keep') {
+  CROP_RULES.set('IMG-0780', {
+    decided_by: 'D6_IMG_0780',
+    mode: D.D6_IMG_0780.crop?.mode ?? 'trim_ui_frame',
+    note: '手机截图：裁掉系统状态栏、纯黑信筒区与相册底栏，只留产品图',
+  });
+}
+
+/** D9：主图选择规则（确定性、可复现） */
+const PRIMARY_RULE = D.D9_main_image?.rule?.priority ?? [];
+
+log(`业务方图片决定：删除 ${EXCLUDED_IMAGES.size} 张（${[...EXCLUDED_IMAGES.keys()].join(', ')}），`
+  + `裁剪 ${CROP_RULES.size} 张（${[...CROP_RULES.keys()].join(', ')}）`);
 
 // ---------------------------------------------------------------- zip 层
 const buf = fs.readFileSync(RAW_EXCEL);
@@ -266,7 +313,13 @@ function colLetter(n) {
 
 const safeName = (s) => String(s).replace(/[\\/:*?"<>|]/g, '_').replace(/\s+/g, '');
 
+// 每次都从零生成：先清空目录，避免上一轮导出的图片（含本轮决定删除的）残留。
+// 注意：本环境里 fs.rmSync 会静默失效，必须用 removeTree（见 tools/lib/fsx.mjs）。
+removeTree(IMG_DIR);
 fs.mkdirSync(IMG_DIR, { recursive: true });
+
+/** 主目录工作表名（D9 主图规则的优先级 1） */
+const MASTER_SHEET = '综合产品信息表';
 
 const images = [];
 const perSheetCount = new Map();
@@ -384,9 +437,16 @@ for (const [sheetName, info] of sheetDrawing) {
       }
     }
 
+    // ---- 业务方决定：确认删除的图片不导出、也不进入任何产品 ----
+    const exclusion = EXCLUDED_IMAGES.get(imageId) ?? null;
+    const cropRule = CROP_RULES.get(imageId) ?? null;
+
     // ---- 写出图片文件 ----
     let imageFile = null;
-    if (mediaPath && zip.has(mediaPath)) {
+    if (exclusion) {
+      // 业务方明确要求删除：不写文件（不猜、也不保留副本）
+      matchKind = matchKind ?? 'excluded_by_business_decision';
+    } else if (mediaPath && zip.has(mediaPath)) {
       const ext = (path.posix.extname(mediaPath) || '.bin').toLowerCase();
       const bowenPart = bowenNo ? safeName(bowenNo) : 'unresolved';
       const sheetPart = safeName(sheetName);
@@ -432,9 +492,89 @@ for (const [sheetName, info] of sheetDrawing) {
       media_part: mediaPath,
       media_bytes: mediaPath && zip.has(mediaPath) ? zip.read(mediaPath).length : null,
       external_link_only: externalOnly,
+
+      // ---- 业务方决定（Phase 2.7）----
+      business_excluded: !!exclusion,
+      business_exclusion: exclusion,
+      business_crop: cropRule,
+      business_note: exclusion
+        ? exclusion.reason
+        : (cropRule ? cropRule.note : null),
     });
   }
 }
+
+// ---------------------------------------------------------------- D6 裁剪（确定性，可用 Chrome 测像素）
+let cropOutcome = { status: 'not_required', items: [] };
+{
+  const targets = images.filter((i) => i.business_crop && i.image_file && !i.business_excluded);
+  if (targets.length) {
+    const items = [];
+    for (const im of targets) {
+      const srcAbs = path.join(ROOT, 'data/processed', im.image_file);
+      const croppedName = im.image_file.replace(/\.(jpe?g|png|gif|webp)$/i, '') + '_cropped.png';
+      const dstAbs = path.join(ROOT, 'data/processed', croppedName);
+      try {
+        const r = await cropToContent(srcAbs, dstAbs);
+        im.crop_status = 'done';
+        im.cropped_image_file = croppedName;
+        im.crop_measure = r;
+        im.crop_source_bytes = fs.statSync(srcAbs).size;
+        im.cropped_image_bytes = fs.statSync(dstAbs).size;
+        items.push({ image_id: im.image_id, status: 'done', ...r });
+        log(`D6 裁剪完成 ${im.image_id} → ${croppedName}  (${r.width}×${r.height}，方法 ${r.measure.method})`);
+      } catch (e) {
+        // 不静默：记录失败原因，验收测试会因此 FAIL，避免「以为裁好了」
+        im.crop_status = 'failed';
+        im.crop_error = String(e.message ?? e);
+        items.push({ image_id: im.image_id, status: 'failed', error: im.crop_error });
+        log(`D6 裁剪失败 ${im.image_id}: ${im.crop_error}`);
+      }
+    }
+    cropOutcome = {
+      status: items.every((i) => i.status === 'done') ? 'done' : 'failed',
+      method: 'Chrome canvas 像素测量 + CDP clip 截图（零第三方依赖）',
+      items,
+    };
+  }
+}
+
+// ---------------------------------------------------------------- D9 主图（确定性规则）
+/**
+ * 同一 Bowen 有多张图时选主图。规则来自业务方 D9「主图你自己选择」，实现为可复现的优先级：
+ *   1. 来源工作表 = 综合产品信息表
+ *   2. sheet_index 升序
+ *   3. anchor_row 升序
+ *   4. media_part 字典序
+ */
+const primaryGroups = new Map();
+for (const im of images) {
+  if (!im.product_id || im.business_excluded || !im.image_file) continue;
+  const k = im.product_id;
+  if (!primaryGroups.has(k)) primaryGroups.set(k, []);
+  primaryGroups.get(k).push(im);
+}
+let primaryCount = 0;
+for (const [, list] of primaryGroups) {
+  const sorted = [...list].sort((a, b) => {
+    const am = a.source_sheet === MASTER_SHEET ? 0 : 1;
+    const bm = b.source_sheet === MASTER_SHEET ? 0 : 1;
+    if (am !== bm) return am - bm;
+    if (a.source_sheet_index !== b.source_sheet_index) return a.source_sheet_index - b.source_sheet_index;
+    if ((a.anchor_row ?? 1e9) !== (b.anchor_row ?? 1e9)) return (a.anchor_row ?? 1e9) - (b.anchor_row ?? 1e9);
+    return String(a.media_part).localeCompare(String(b.media_part));
+  });
+  sorted.forEach((im, i) => {
+    im.is_primary_image = i === 0;
+    im.primary_rank = i + 1;
+    im.primary_image_rule = 'D9: master_sheet > sheet_index > anchor_row > media_part';
+  });
+  primaryCount += 1;
+}
+for (const im of images) {
+  if (im.is_primary_image === undefined) { im.is_primary_image = false; im.primary_rank = null; im.primary_image_rule = null; }
+}
+log(`D9 主图：为 ${primaryCount} 个产品选出主图`);
 
 // ---------------------------------------------------------------- 统计
 const statusCounts = {};
@@ -453,6 +593,7 @@ const perSheet = [...perSheetCount.entries()].map(([sheet, count]) => ({
   exact: images.filter((i) => i.source_sheet === sheet && i.mapping_status === 'exact').length,
   review_required: images.filter((i) => i.source_sheet === sheet && i.mapping_status === 'review_required').length,
   unresolved: images.filter((i) => i.source_sheet === sheet && i.mapping_status === 'unresolved').length,
+  business_excluded: images.filter((i) => i.source_sheet === sheet && i.business_excluded).length,
 }));
 
 const map = {
@@ -465,11 +606,65 @@ const map = {
   correction_note:
     '之前的报告称「Excel 图片列为空，没有产品图片」，该结论不正确。图片不在单元格值里，' +
     '而是以 OOXML 浮动绘图对象（xl/drawings + xl/media）嵌入。本文件从绘图层提取。',
+  business_decisions: {
+    decisions_file: 'data/raw/business-decisions-v3.json',
+    schema: decisions.schema,
+    decided_at: decisions.decided_at,
+    D1_bowen_unreadable_14: {
+      decision: D.D1_bowen_unreadable_14?.decision ?? null,
+      effect: D.D1_bowen_unreadable_14?.effect ?? null,
+      applied: '这 14 张图片本轮不动，归属仍为空；未做任何推断',
+    },
+    D2_row_without_bowen_7: {
+      decision: D.D2_row_without_bowen_7?.decision ?? null,
+      product_type_per_business: 'Thermostat',
+      applied: '仅记录品类；因仍无 Bowen No.，不生成产品、不做归属',
+    },
+    D3_not_in_database_5: {
+      decision: D.D3_not_in_database_5?.decision ?? null,
+      bowen_nos: D.D3_not_in_database_5?.bowen_nos ?? [],
+      applied: '这 5 个编号已补入产品库（见 products.json），其图片因此可归位',
+    },
+    D4_unresolved_5: {
+      decision: D.D4_unresolved_5?.decision ?? null,
+      excluded: D.D4_unresolved_5?.effective_exclusions ?? [],
+      applied: '这 4 张不再导出、不出现在任何产品下',
+    },
+    D5_IMG_0723: {
+      decision: D.D5_IMG_0723?.decision ?? null,
+      applied: 'IMG-0723 已被删除（与 D4 一致）',
+    },
+    D6_IMG_0780: {
+      decision: D.D6_IMG_0780?.decision ?? null,
+      applied: `裁剪状态：${cropOutcome.status}`,
+    },
+    D7_watermark: {
+      decision: D.D7_watermark?.decision ?? null,
+      note:
+        '**重要更正**：图片上的「GXN」水印是**本公司（博文）自有商标**，'
+        + '此前工具把它误记为外部品牌水印，该描述作废。'
+        + '业务方要求保留，程序不做任何去除处理，水印也不构成风险项。',
+      applied: '水印原样保留；未做任何去水印处理',
+    },
+    D8_casual_photos: {
+      decision: D.D8_casual_photos?.decision ?? null,
+      applied: '随手拍照片保留，不要求重拍',
+    },
+    D9_main_image: {
+      decision: D.D9_main_image?.decision ?? null,
+      rule_priority: PRIMARY_RULE,
+      applied: `已为 ${primaryCount} 个产品标出 is_primary_image`,
+    },
+  },
+  crop_outcome: cropOutcome,
   totals: {
     media_files_in_package: mediaEntries.length,
     drawing_parts: zipNames.filter((n) => /^xl\/drawings\/drawing\d+\.xml$/.test(n)).length,
     anchors_found: images.length,
     images_extracted: images.filter((i) => i.image_file).length,
+    business_excluded: images.filter((i) => i.business_excluded).length,
+    images_cropped: images.filter((i) => i.crop_status === 'done').length,
+    products_with_primary_image: primaryCount,
     media_files_referenced: mediaUsed.size,
     media_files_unreferenced: mediaEntries.filter((n) => !mediaUsed.has(n)).length,
     exact: statusCounts.exact ?? 0,
@@ -490,16 +685,19 @@ log(`\n包内 media 文件：${mediaEntries.length} 个`);
 log(`drawing 部件：${map.totals.drawing_parts} 个`);
 log(`发现锚点（图片对象）：${images.length} 个`);
 log(`成功导出图片文件：${map.totals.images_extracted} 个 → data/processed/product-images/`);
+log(`业务方决定删除：${map.totals.business_excluded} 个（未导出）`);
+log(`业务方决定裁剪：${map.totals.images_cropped} 个`);
 log(`被引用的 media：${mediaUsed.size} 个，未被引用：${map.totals.media_files_unreferenced} 个`);
 log(`\n映射结果：`);
 log(`  exact            ${map.totals.exact}`);
 log(`  review_required  ${map.totals.review_required}`);
 log(`  unresolved       ${map.totals.unresolved}`);
 log(`  关联到 Bowen No. ${map.totals.distinct_bowen_mapped} 个编号 / ${map.totals.distinct_products_mapped} 个产品`);
+log(`  主图已选出       ${map.totals.products_with_primary_image} 个产品`);
 
 log(`\n各工作表图片数：`);
 for (const s of perSheet) {
-  log(`  ${s.sheet_name.padEnd(16)} ${String(s.image_count).padStart(4)} 张  (exact ${s.exact} / review ${s.review_required} / unresolved ${s.unresolved})`);
+  log(`  ${s.sheet_name.padEnd(16)} ${String(s.image_count).padStart(4)} 张  (exact ${s.exact} / review ${s.review_required} / unresolved ${s.unresolved} / 删除 ${s.business_excluded})`);
 }
 
 log(`\n输出：`);

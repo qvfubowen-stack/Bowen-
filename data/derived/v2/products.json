@@ -102,7 +102,7 @@
   ],
   "application_ids": [
    "APP-00272",
-   "APP-00759"
+   "APP-00764"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -319,7 +319,7 @@
   ],
   "application_ids": [
    "APP-00276",
-   "APP-00571"
+   "APP-00573"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -541,7 +541,7 @@
   ],
   "application_ids": [
    "APP-00280",
-   "APP-00797"
+   "APP-00802"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -1317,7 +1317,7 @@
   ],
   "application_ids": [
    "APP-00295",
-   "APP-00777"
+   "APP-00782"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -1374,7 +1374,7 @@
   ],
   "application_ids": [
    "APP-00296",
-   "APP-00570"
+   "APP-00572"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -1544,7 +1544,7 @@
   ],
   "application_ids": [
    "APP-00299",
-   "APP-00787"
+   "APP-00792"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -1819,7 +1819,7 @@
   ],
   "application_ids": [
    "APP-00303",
-   "APP-00728"
+   "APP-00733"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -3003,7 +3003,7 @@
   ],
   "application_ids": [
    "APP-00326",
-   "APP-00792"
+   "APP-00797"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -3060,7 +3060,7 @@
   ],
   "application_ids": [
    "APP-00327",
-   "APP-00727"
+   "APP-00732"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -3289,7 +3289,7 @@
   ],
   "application_ids": [
    "APP-00331",
-   "APP-00771"
+   "APP-00776"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -3617,7 +3617,7 @@
   "application_ids": [
    "APP-00337",
    "APP-00422",
-   "APP-00758"
+   "APP-00763"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -3674,7 +3674,7 @@
   ],
   "application_ids": [
    "APP-00338",
-   "APP-00757"
+   "APP-00762"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -4325,9 +4325,9 @@
   "application_ids": [
    "APP-00001",
    "APP-00414",
-   "APP-00711",
-   "APP-00712",
-   "APP-00713"
+   "APP-00716",
+   "APP-00717",
+   "APP-00718"
   ],
   "application_count": 5,
   "searchable_application_count": 5,
@@ -4389,8 +4389,8 @@
   "application_ids": [
    "APP-00002",
    "APP-00415",
-   "APP-00657",
-   "APP-00658"
+   "APP-00660",
+   "APP-00661"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -4446,7 +4446,7 @@
    "SRC-00837"
   ],
   "application_ids": [
-   "APP-00678"
+   "APP-00681"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -4615,8 +4615,8 @@
   "application_ids": [
    "APP-00215",
    "APP-00217",
-   "APP-00572",
-   "APP-00573"
+   "APP-00574",
+   "APP-00575"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -4671,7 +4671,7 @@
    "SRC-00962"
   ],
   "application_ids": [
-   "APP-00793"
+   "APP-00798"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -4949,7 +4949,7 @@
   ],
   "application_ids": [
    "APP-00194",
-   "APP-00703"
+   "APP-00708"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -5008,9 +5008,9 @@
   ],
   "application_ids": [
    "APP-00189",
-   "APP-00597",
-   "APP-00598",
-   "APP-00599"
+   "APP-00600",
+   "APP-00601",
+   "APP-00602"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -5067,7 +5067,7 @@
   ],
   "application_ids": [
    "APP-00140",
-   "APP-00555"
+   "APP-00557"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -5193,10 +5193,10 @@
    "APP-00005",
    "APP-00388",
    "APP-00458",
-   "APP-00622",
-   "APP-00623",
-   "APP-00624",
-   "APP-00625"
+   "APP-00625",
+   "APP-00626",
+   "APP-00627",
+   "APP-00628"
   ],
   "application_count": 7,
   "searchable_application_count": 7,
@@ -5257,7 +5257,7 @@
   "application_ids": [
    "APP-00006",
    "APP-00530",
-   "APP-00693"
+   "APP-00698"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -5317,7 +5317,7 @@
   "application_ids": [
    "APP-00007",
    "APP-00528",
-   "APP-00691"
+   "APP-00696"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -5378,7 +5378,7 @@
   "application_ids": [
    "APP-00009",
    "APP-00484",
-   "APP-00766"
+   "APP-00771"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -5438,7 +5438,7 @@
   "application_ids": [
    "APP-00010",
    "APP-00479",
-   "APP-00639"
+   "APP-00642"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -5498,7 +5498,7 @@
   "application_ids": [
    "APP-00011",
    "APP-00481",
-   "APP-00698"
+   "APP-00703"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -5562,9 +5562,9 @@
   "application_ids": [
    "APP-00012",
    "APP-00501",
-   "APP-00608",
-   "APP-00609",
-   "APP-00610"
+   "APP-00611",
+   "APP-00612",
+   "APP-00613"
   ],
   "application_count": 5,
   "searchable_application_count": 5,
@@ -5734,7 +5734,7 @@
   "application_ids": [
    "APP-00014",
    "APP-00461",
-   "APP-00616"
+   "APP-00619"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -5791,7 +5791,7 @@
   ],
   "application_ids": [
    "APP-00015",
-   "APP-00769"
+   "APP-00774"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -5851,7 +5851,7 @@
   "application_ids": [
    "APP-00016",
    "APP-00489",
-   "APP-00794"
+   "APP-00799"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -5913,9 +5913,9 @@
   "application_ids": [
    "APP-00017",
    "APP-00514",
-   "APP-00745",
-   "APP-00746",
-   "APP-00747"
+   "APP-00750",
+   "APP-00751",
+   "APP-00752"
   ],
   "application_count": 5,
   "searchable_application_count": 5,
@@ -6149,7 +6149,7 @@
    "APP-00020",
    "APP-00389",
    "APP-00426",
-   "APP-00641"
+   "APP-00644"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -6211,7 +6211,7 @@
    "APP-00021",
    "APP-00039",
    "APP-00513",
-   "APP-00733"
+   "APP-00738"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -6277,7 +6277,7 @@
    "APP-00022",
    "APP-00440",
    "APP-00519",
-   "APP-00686"
+   "APP-00691"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -6333,7 +6333,7 @@
    "SRC-00854"
   ],
   "application_ids": [
-   "APP-00685"
+   "APP-00690"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -6452,7 +6452,7 @@
   ],
   "application_ids": [
    "APP-00024",
-   "APP-00673"
+   "APP-00676"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -6576,8 +6576,8 @@
    "APP-00026",
    "APP-00133",
    "APP-00509",
-   "APP-00558",
-   "APP-00645"
+   "APP-00560",
+   "APP-00648"
   ],
   "application_count": 5,
   "searchable_application_count": 5,
@@ -6695,8 +6695,8 @@
   "application_ids": [
    "APP-00028",
    "APP-00434",
-   "APP-00764",
-   "APP-00765"
+   "APP-00769",
+   "APP-00770"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -6756,7 +6756,7 @@
   ],
   "application_ids": [
    "APP-00029",
-   "APP-00651"
+   "APP-00654"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -6822,8 +6822,8 @@
    "APP-00030",
    "APP-00470",
    "APP-00483",
-   "APP-00556",
-   "APP-00557"
+   "APP-00558",
+   "APP-00559"
   ],
   "application_count": 5,
   "searchable_application_count": 5,
@@ -6937,7 +6937,7 @@
   "application_ids": [
    "APP-00031",
    "APP-00480",
-   "APP-00688"
+   "APP-00693"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -6994,7 +6994,7 @@
   ],
   "application_ids": [
    "APP-00032",
-   "APP-00638"
+   "APP-00641"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -7111,7 +7111,7 @@
   "application_ids": [
    "APP-00033",
    "APP-00476",
-   "APP-00697"
+   "APP-00702"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -7171,7 +7171,7 @@
   "application_ids": [
    "APP-00037",
    "APP-00442",
-   "APP-00560"
+   "APP-00562"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -7228,7 +7228,7 @@
   ],
   "application_ids": [
    "APP-00038",
-   "APP-00723"
+   "APP-00728"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -7347,7 +7347,7 @@
   "application_ids": [
    "APP-00042",
    "APP-00399",
-   "APP-00763"
+   "APP-00768"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -7572,7 +7572,7 @@
   ],
   "application_ids": [
    "APP-00199",
-   "APP-00695"
+   "APP-00700"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -7629,7 +7629,7 @@
   ],
   "application_ids": [
    "APP-00252",
-   "APP-00696"
+   "APP-00701"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -7911,8 +7911,8 @@
    "APP-00050",
    "APP-00429",
    "APP-00502",
-   "APP-00562",
-   "APP-00563"
+   "APP-00564",
+   "APP-00565"
   ],
   "application_count": 6,
   "searchable_application_count": 6,
@@ -7970,7 +7970,7 @@
   ],
   "application_ids": [
    "APP-00051",
-   "APP-00601"
+   "APP-00604"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -8490,7 +8490,7 @@
   ],
   "application_ids": [
    "APP-00216",
-   "APP-00559"
+   "APP-00561"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -8555,9 +8555,9 @@
   ],
   "application_ids": [
    "APP-00058",
-   "APP-00591",
-   "APP-00592",
-   "APP-00594"
+   "APP-00594",
+   "APP-00595",
+   "APP-00597"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -8617,7 +8617,7 @@
   "application_ids": [
    "APP-00059",
    "APP-00504",
-   "APP-00652"
+   "APP-00655"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -8677,7 +8677,7 @@
   "application_ids": [
    "APP-00060",
    "APP-00486",
-   "APP-00615"
+   "APP-00618"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -8799,7 +8799,7 @@
   "application_ids": [
    "APP-00061",
    "APP-00427",
-   "APP-00602"
+   "APP-00605"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -8862,7 +8862,7 @@
   "application_ids": [
    "APP-00062",
    "APP-00428",
-   "APP-00647"
+   "APP-00650"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -8920,7 +8920,7 @@
   ],
   "application_ids": [
    "APP-00063",
-   "APP-00782"
+   "APP-00787"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -9037,7 +9037,7 @@
   "application_ids": [
    "APP-00065",
    "APP-00497",
-   "APP-00779"
+   "APP-00784"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -9098,8 +9098,8 @@
   "application_ids": [
    "APP-00066",
    "APP-00460",
-   "APP-00660",
-   "APP-00661"
+   "APP-00663",
+   "APP-00664"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -9164,7 +9164,7 @@
    "APP-00067",
    "APP-00184",
    "APP-00441",
-   "APP-00726"
+   "APP-00731"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -9225,7 +9225,7 @@
   "application_ids": [
    "APP-00068",
    "APP-00520",
-   "APP-00618"
+   "APP-00621"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -9292,14 +9292,14 @@
   "application_ids": [
    "APP-00139",
    "APP-00416",
-   "APP-00714",
-   "APP-00715",
-   "APP-00716",
-   "APP-00717",
-   "APP-00718",
    "APP-00719",
    "APP-00720",
-   "APP-00755"
+   "APP-00721",
+   "APP-00722",
+   "APP-00723",
+   "APP-00724",
+   "APP-00725",
+   "APP-00760"
   ],
   "application_count": 10,
   "searchable_application_count": 10,
@@ -9531,7 +9531,7 @@
   "application_ids": [
    "APP-00072",
    "APP-00406",
-   "APP-00687"
+   "APP-00692"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -9591,7 +9591,7 @@
   "application_ids": [
    "APP-00073",
    "APP-00407",
-   "APP-00750"
+   "APP-00755"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -9651,7 +9651,7 @@
   "application_ids": [
    "APP-00074",
    "APP-00405",
-   "APP-00738"
+   "APP-00743"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -9820,8 +9820,8 @@
   ],
   "application_ids": [
    "APP-00077",
-   "APP-00589",
-   "APP-00590"
+   "APP-00592",
+   "APP-00593"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -9957,21 +9957,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 3127",
-  "product_name_zh": "博文 3127",
-  "website_category": null,
+  "product_name_en": "Thermostat 3127",
+  "product_name_zh": "节温器 3127",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 4,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -9987,7 +9994,7 @@
    "SRC-00733"
   ],
   "application_ids": [
-   "APP-00575"
+   "APP-00577"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -10155,8 +10162,8 @@
   ],
   "application_ids": [
    "APP-00186",
-   "APP-00699",
-   "APP-00700"
+   "APP-00704",
+   "APP-00705"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -10286,21 +10293,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 3167-1",
-  "product_name_zh": "博文 3167-1",
-  "website_category": null,
+  "product_name_en": "Thermostat 3167-1",
+  "product_name_zh": "节温器 3167-1",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No.（含其基础编号 3167）的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 5,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -10335,21 +10349,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 3192",
-  "product_name_zh": "博文 3192",
-  "website_category": null,
+  "product_name_en": "Thermostat 3192",
+  "product_name_zh": "节温器 3192",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 6,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -10365,7 +10386,7 @@
    "SRC-00925"
   ],
   "application_ids": [
-   "APP-00756"
+   "APP-00761"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -10423,7 +10444,7 @@
   "application_ids": [
    "APP-00180",
    "APP-00521",
-   "APP-00576"
+   "APP-00578"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -10651,7 +10672,7 @@
   ],
   "application_ids": [
    "APP-00082",
-   "APP-00772"
+   "APP-00777"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -10769,7 +10790,7 @@
   ],
   "application_ids": [
    "APP-00084",
-   "APP-00749"
+   "APP-00754"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -10829,7 +10850,7 @@
   "application_ids": [
    "APP-00181",
    "APP-00457",
-   "APP-00587"
+   "APP-00590"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -10904,21 +10925,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 3268",
-  "product_name_zh": "博文 3268",
-  "website_category": null,
+  "product_name_en": "Thermostat 3268",
+  "product_name_zh": "节温器 3268",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 7,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -10934,7 +10962,7 @@
    "SRC-00913"
   ],
   "application_ids": [
-   "APP-00744"
+   "APP-00749"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -10994,7 +11022,7 @@
   "application_ids": [
    "APP-00085",
    "APP-00540",
-   "APP-00735"
+   "APP-00740"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -11053,7 +11081,7 @@
   ],
   "application_ids": [
    "APP-00086",
-   "APP-00768"
+   "APP-00773"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -11113,7 +11141,7 @@
   "application_ids": [
    "APP-00160",
    "APP-00418",
-   "APP-00664"
+   "APP-00667"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -11132,21 +11160,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 3312",
-  "product_name_zh": "博文 3312",
-  "website_category": null,
+  "product_name_en": "Thermostat 3312",
+  "product_name_zh": "节温器 3312",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 8,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -11332,7 +11367,7 @@
   ],
   "application_ids": [
    "APP-00176",
-   "APP-00585"
+   "APP-00587"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -11351,21 +11386,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 3353",
-  "product_name_zh": "博文 3353",
-  "website_category": null,
+  "product_name_en": "Thermostat 3353",
+  "product_name_zh": "节温器 3353",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 9,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -11381,7 +11423,7 @@
    "SRC-00735"
   ],
   "application_ids": [
-   "APP-00577"
+   "APP-00579"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -11436,7 +11478,7 @@
   ],
   "application_ids": [
    "APP-00236",
-   "APP-00565"
+   "APP-00567"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -11494,8 +11536,8 @@
   ],
   "application_ids": [
    "APP-00238",
-   "APP-00620",
-   "APP-00637"
+   "APP-00623",
+   "APP-00640"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -11512,21 +11554,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 3403",
-  "product_name_zh": "博文 3403",
-  "website_category": null,
+  "product_name_en": "Thermostat 3403",
+  "product_name_zh": "节温器 3403",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 10,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -11543,7 +11592,7 @@
    "SRC-00849"
   ],
   "application_ids": [
-   "APP-00668"
+   "APP-00671"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -11601,7 +11650,7 @@
   "application_ids": [
    "APP-00088",
    "APP-00505",
-   "APP-00742"
+   "APP-00747"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -11661,7 +11710,7 @@
   "application_ids": [
    "APP-00089",
    "APP-00510",
-   "APP-00734"
+   "APP-00739"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -11776,7 +11825,7 @@
   "application_ids": [
    "APP-00094",
    "APP-00495",
-   "APP-00743"
+   "APP-00748"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -11885,7 +11934,7 @@
   ],
   "application_ids": [
    "APP-00096",
-   "APP-00751"
+   "APP-00756"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -12001,7 +12050,7 @@
   "application_ids": [
    "APP-00097",
    "APP-00443",
-   "APP-00754"
+   "APP-00759"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -12117,7 +12166,7 @@
   "application_ids": [
    "APP-00141",
    "APP-00498",
-   "APP-00799"
+   "APP-00804"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -12180,8 +12229,8 @@
    "APP-00136",
    "APP-00138",
    "APP-00417",
-   "APP-00626",
-   "APP-00627"
+   "APP-00629",
+   "APP-00630"
   ],
   "application_count": 5,
   "searchable_application_count": 5,
@@ -12300,7 +12349,7 @@
   "application_ids": [
    "APP-00104",
    "APP-00478",
-   "APP-00694"
+   "APP-00699"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -12418,8 +12467,8 @@
   "application_ids": [
    "APP-00106",
    "APP-00516",
-   "APP-00752",
-   "APP-00753"
+   "APP-00757",
+   "APP-00758"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -12539,7 +12588,7 @@
   "application_ids": [
    "APP-00107",
    "APP-00477",
-   "APP-00775"
+   "APP-00780"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -12598,7 +12647,7 @@
   ],
   "application_ids": [
    "APP-00108",
-   "APP-00564"
+   "APP-00566"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -12655,7 +12704,7 @@
   ],
   "application_ids": [
    "APP-00165",
-   "APP-00709"
+   "APP-00714"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -12769,7 +12818,7 @@
   ],
   "application_ids": [
    "APP-00131",
-   "APP-00659"
+   "APP-00662"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -13439,7 +13488,7 @@
   ],
   "application_ids": [
    "APP-00227",
-   "APP-00584"
+   "APP-00586"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -13775,7 +13824,7 @@
   "application_ids": [
    "APP-00116",
    "APP-00506",
-   "APP-00708"
+   "APP-00713"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -13833,8 +13882,8 @@
   ],
   "application_ids": [
    "APP-00117",
-   "APP-00635",
-   "APP-00636"
+   "APP-00638",
+   "APP-00639"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -13894,8 +13943,8 @@
   ],
   "application_ids": [
    "APP-00118",
-   "APP-00606",
-   "APP-00607"
+   "APP-00609",
+   "APP-00610"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -14011,7 +14060,7 @@
   "application_ids": [
    "APP-00120",
    "APP-00507",
-   "APP-00662"
+   "APP-00665"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -14405,7 +14454,7 @@
   ],
   "application_ids": [
    "APP-00099",
-   "APP-00588"
+   "APP-00591"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -14462,7 +14511,7 @@
   ],
   "application_ids": [
    "APP-00171",
-   "APP-00603"
+   "APP-00606"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -14519,7 +14568,7 @@
   ],
   "application_ids": [
    "APP-00172",
-   "APP-00611"
+   "APP-00614"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -14697,7 +14746,7 @@
   "application_ids": [
    "APP-00100",
    "APP-00445",
-   "APP-00796"
+   "APP-00801"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -14754,7 +14803,7 @@
   ],
   "application_ids": [
    "APP-00246",
-   "APP-00800"
+   "APP-00805"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -14811,7 +14860,7 @@
   ],
   "application_ids": [
    "APP-00253",
-   "APP-00781"
+   "APP-00786"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -14872,8 +14921,8 @@
   "application_ids": [
    "APP-00121",
    "APP-00508",
-   "APP-00617",
-   "APP-00663"
+   "APP-00620",
+   "APP-00666"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -14932,7 +14981,7 @@
   ],
   "application_ids": [
    "APP-00122",
-   "APP-00613"
+   "APP-00616"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -14992,7 +15041,7 @@
   "application_ids": [
    "APP-00123",
    "APP-00485",
-   "APP-00604"
+   "APP-00607"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -15282,7 +15331,7 @@
   ],
   "application_ids": [
    "APP-00449",
-   "APP-00790"
+   "APP-00795"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -15445,7 +15494,7 @@
    "SRC-00958"
   ],
   "application_ids": [
-   "APP-00789"
+   "APP-00794"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -15462,21 +15511,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 3665",
-  "product_name_zh": "博文 3665",
-  "website_category": null,
+  "product_name_en": "Thermostat 3665",
+  "product_name_zh": "节温器 3665",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 11,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -15552,8 +15608,8 @@
   "application_ids": [
    "APP-00137",
    "APP-00150",
-   "APP-00566",
-   "APP-00567"
+   "APP-00568",
+   "APP-00569"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -15614,7 +15670,7 @@
   "application_ids": [
    "APP-00161",
    "APP-00531",
-   "APP-00774"
+   "APP-00779"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -15741,21 +15797,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 3753",
-  "product_name_zh": "博文 3753",
-  "website_category": null,
+  "product_name_en": "Thermostat 3753",
+  "product_name_zh": "节温器 3753",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 12,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -15771,7 +15834,7 @@
    "SRC-00791"
   ],
   "application_ids": [
-   "APP-00632"
+   "APP-00635"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -15891,9 +15954,9 @@
    "APP-00126",
    "APP-00127",
    "APP-00394",
-   "APP-00730",
-   "APP-00731",
-   "APP-00732"
+   "APP-00735",
+   "APP-00736",
+   "APP-00737"
   ],
   "application_count": 6,
   "searchable_application_count": 6,
@@ -16064,7 +16127,7 @@
   "application_ids": [
    "APP-00130",
    "APP-00412",
-   "APP-00736"
+   "APP-00741"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -16124,7 +16187,7 @@
   "application_ids": [
    "APP-00129",
    "APP-00411",
-   "APP-00739"
+   "APP-00744"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -16203,21 +16266,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 3902",
-  "product_name_zh": "博文 3902",
-  "website_category": null,
+  "product_name_en": "Thermostat 3902",
+  "product_name_zh": "节温器 3902",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 13,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -16233,7 +16303,7 @@
    "SRC-00805"
   ],
   "application_ids": [
-   "APP-00646"
+   "APP-00649"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -16467,21 +16537,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 3919",
-  "product_name_zh": "博文 3919",
-  "website_category": null,
+  "product_name_en": "Thermostat 3919",
+  "product_name_zh": "节温器 3919",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 14,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -16497,7 +16574,7 @@
    "SRC-00906"
   ],
   "application_ids": [
-   "APP-00737"
+   "APP-00742"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -16514,10 +16591,64 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 3920",
+  "product_name_zh": "节温器 3920",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 15,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00893"
+  ],
+  "application_ids": [
+   "APP-00729"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 1,
+  "distinct_oe_count": 1,
+  "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-3932",
+  "bowen_no": "3932",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
   "product_type": null,
   "product_subtype": null,
-  "product_name_en": "Bowen 3920",
-  "product_name_zh": "博文 3920",
+  "product_name_en": "Bowen 3932",
+  "product_name_zh": "博文 3932",
   "website_category": null,
   "switch_subcategory": null,
   "image": null,
@@ -16541,16 +16672,18 @@
   ],
   "source_sheet_count": 1,
   "source_record_ids": [
-   "SRC-00893"
+   "SRC-00745"
   ],
   "application_ids": [
-   "APP-00724"
+   "APP-00589"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
-  "oe_token_count": 1,
-  "distinct_oe_count": 1,
-  "opening_temperatures_c": [],
+  "oe_token_count": 0,
+  "distinct_oe_count": 0,
+  "opening_temperatures_c": [
+   82
+  ],
   "prototype_rank": null,
   "completeness_score": null,
   "created_from": "Phase 2.5 产品数据库重建"
@@ -16599,7 +16732,7 @@
   ],
   "application_ids": [
    "APP-00258",
-   "APP-00802"
+   "APP-00807"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -16618,21 +16751,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 3957",
-  "product_name_zh": "博文 3957",
-  "website_category": null,
+  "product_name_en": "Thermostat 3957",
+  "product_name_zh": "节温器 3957",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 16,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -16648,7 +16788,7 @@
    "SRC-00947"
   ],
   "application_ids": [
-   "APP-00778"
+   "APP-00783"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -17691,21 +17831,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 5016",
-  "product_name_zh": "博文 5016",
-  "website_category": null,
+  "product_name_en": "Thermostat 5016",
+  "product_name_zh": "节温器 5016",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 17,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -18911,7 +19058,7 @@
   ],
   "application_ids": [
    "APP-00166",
-   "APP-00574"
+   "APP-00576"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -18971,7 +19118,7 @@
   "application_ids": [
    "APP-00168",
    "APP-00538",
-   "APP-00722"
+   "APP-00727"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -19031,7 +19178,7 @@
   "application_ids": [
    "APP-00175",
    "APP-00400",
-   "APP-00788"
+   "APP-00793"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -19196,7 +19343,7 @@
   ],
   "application_ids": [
    "APP-00225",
-   "APP-00767"
+   "APP-00772"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -19256,7 +19403,7 @@
   "application_ids": [
    "APP-00182",
    "APP-00499",
-   "APP-00780"
+   "APP-00785"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -19327,21 +19474,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 31002",
-  "product_name_zh": "博文 31002",
-  "website_category": null,
+  "product_name_en": "Thermostat 31002",
+  "product_name_zh": "节温器 31002",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 18,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -19357,7 +19511,7 @@
    "SRC-00953"
   ],
   "application_ids": [
-   "APP-00784"
+   "APP-00789"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -19374,21 +19528,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 31005",
-  "product_name_zh": "博文 31005",
-  "website_category": null,
+  "product_name_en": "Thermostat 31005",
+  "product_name_zh": "节温器 31005",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 19,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -19404,7 +19565,7 @@
    "SRC-00879"
   ],
   "application_ids": [
-   "APP-00710"
+   "APP-00715"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -19421,21 +19582,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 31016",
-  "product_name_zh": "博文 31016",
-  "website_category": null,
+  "product_name_en": "Thermostat 31016",
+  "product_name_zh": "节温器 31016",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 20,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -19453,7 +19621,7 @@
    "SRC-00824"
   ],
   "application_ids": [
-   "APP-00665"
+   "APP-00668"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -19511,7 +19679,7 @@
   "application_ids": [
    "APP-00079",
    "APP-00392",
-   "APP-00740"
+   "APP-00745"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -19531,21 +19699,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 31105",
-  "product_name_zh": "博文 31105",
-  "website_category": null,
+  "product_name_en": "Thermostat 31105",
+  "product_name_zh": "节温器 31105",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 21,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -19561,7 +19736,7 @@
    "SRC-00894"
   ],
   "application_ids": [
-   "APP-00725"
+   "APP-00730"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -19578,21 +19753,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 31182",
-  "product_name_zh": "博文 31182",
-  "website_category": null,
+  "product_name_en": "Thermostat 31182",
+  "product_name_zh": "节温器 31182",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 22,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -19610,7 +19792,7 @@
   ],
   "application_ids": [
    "APP-00553",
-   "APP-00680"
+   "APP-00683"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -19627,21 +19809,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 31403",
-  "product_name_zh": "博文 31403",
-  "website_category": null,
+  "product_name_en": "Thermostat 31403",
+  "product_name_zh": "节温器 31403",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 23,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -19657,7 +19846,7 @@
    "SRC-00910"
   ],
   "application_ids": [
-   "APP-00741"
+   "APP-00746"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -19712,7 +19901,7 @@
   ],
   "application_ids": [
    "APP-00239",
-   "APP-00644"
+   "APP-00647"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -19769,7 +19958,7 @@
   ],
   "application_ids": [
    "APP-00170",
-   "APP-00729"
+   "APP-00734"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -19827,8 +20016,8 @@
   ],
   "application_ids": [
    "APP-00234",
-   "APP-00689",
-   "APP-00690"
+   "APP-00694",
+   "APP-00695"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -19847,21 +20036,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 31520",
-  "product_name_zh": "博文 31520",
-  "website_category": null,
+  "product_name_en": "Thermostat 31520",
+  "product_name_zh": "节温器 31520",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 24,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -19877,7 +20073,7 @@
    "SRC-00839"
   ],
   "application_ids": [
-   "APP-00679"
+   "APP-00682"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -19932,7 +20128,7 @@
   ],
   "application_ids": [
    "APP-00256",
-   "APP-00677"
+   "APP-00680"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -19990,8 +20186,8 @@
   ],
   "application_ids": [
    "APP-00134",
-   "APP-00655",
-   "APP-00656"
+   "APP-00658",
+   "APP-00659"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -20049,8 +20245,8 @@
   ],
   "application_ids": [
    "APP-00231",
-   "APP-00653",
-   "APP-00654"
+   "APP-00656",
+   "APP-00657"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -20108,8 +20304,8 @@
   ],
   "application_ids": [
    "APP-00255",
-   "APP-00579",
-   "APP-00580"
+   "APP-00581",
+   "APP-00582"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -20128,21 +20324,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 31608",
-  "product_name_zh": "博文 31608",
-  "website_category": null,
+  "product_name_en": "Thermostat 31608",
+  "product_name_zh": "节温器 31608",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 25,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -20160,9 +20363,9 @@
    "SRC-00740"
   ],
   "application_ids": [
-   "APP-00578",
-   "APP-00581",
-   "APP-00582"
+   "APP-00580",
+   "APP-00583",
+   "APP-00584"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -20179,21 +20382,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 32095",
-  "product_name_zh": "博文 32095",
-  "website_category": null,
+  "product_name_en": "Thermostat 32095",
+  "product_name_zh": "节温器 32095",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 26,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -20210,8 +20420,8 @@
    "SRC-00846"
   ],
   "application_ids": [
-   "APP-00670",
-   "APP-00681"
+   "APP-00673",
+   "APP-00685"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -20228,21 +20438,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 32138",
-  "product_name_zh": "博文 32138",
-  "website_category": null,
+  "product_name_en": "Thermostat 32138",
+  "product_name_zh": "节温器 32138",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 27,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -20259,7 +20476,7 @@
    "SRC-00843"
   ],
   "application_ids": [
-   "APP-00672"
+   "APP-00675"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -20276,21 +20493,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 32269",
-  "product_name_zh": "博文 32269",
-  "website_category": null,
+  "product_name_en": "Thermostat 32269",
+  "product_name_zh": "节温器 32269",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 28,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -20307,7 +20531,7 @@
    "SRC-00844"
   ],
   "application_ids": [
-   "APP-00671"
+   "APP-00674"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -20324,21 +20548,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 32289",
-  "product_name_zh": "博文 32289",
-  "website_category": null,
+  "product_name_en": "Thermostat 32289",
+  "product_name_zh": "节温器 32289",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 29,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -20355,7 +20586,7 @@
    "SRC-00847"
   ],
   "application_ids": [
-   "APP-00669"
+   "APP-00672"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -20372,21 +20603,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 32588",
-  "product_name_zh": "博文 32588",
-  "website_category": null,
+  "product_name_en": "Thermostat 32588",
+  "product_name_zh": "节温器 32588",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 30,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -20403,7 +20641,7 @@
    "SRC-00850"
   ],
   "application_ids": [
-   "APP-00667"
+   "APP-00670"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -20415,15 +20653,15 @@
   "created_from": "Phase 2.5 产品数据库重建"
  },
  {
-  "product_id": "BW-32703",
-  "bowen_no": "32703",
+  "product_id": "BW-32603",
+  "bowen_no": "32603",
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
   "product_type": null,
   "product_subtype": null,
-  "product_name_en": "Bowen 32703",
-  "product_name_zh": "博文 32703",
+  "product_name_en": "Bowen 32603",
+  "product_name_zh": "博文 32603",
   "website_category": null,
   "switch_subcategory": null,
   "image": null,
@@ -20447,10 +20685,64 @@
   ],
   "source_sheet_count": 1,
   "source_record_ids": [
+   "SRC-00845"
+  ],
+  "application_ids": [
+   "APP-00684"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 0,
+  "distinct_oe_count": 0,
+  "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-32703",
+  "bowen_no": "32703",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 32703",
+  "product_name_zh": "节温器 32703",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 31,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
    "SRC-00851"
   ],
   "application_ids": [
-   "APP-00682"
+   "APP-00687"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -20462,15 +20754,15 @@
   "created_from": "Phase 2.5 产品数据库重建"
  },
  {
-  "product_id": "BW-32748-2",
-  "bowen_no": "32748-2",
+  "product_id": "BW-32748-1",
+  "bowen_no": "32748-1",
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
   "product_type": null,
   "product_subtype": null,
-  "product_name_en": "Bowen 32748-2",
-  "product_name_zh": "博文 32748-2",
+  "product_name_en": "Bowen 32748-1",
+  "product_name_zh": "博文 32748-1",
   "website_category": null,
   "switch_subcategory": null,
   "image": null,
@@ -20486,6 +20778,60 @@
   "blocked": false,
   "blocked_reasons": [],
   "blocked_application_count": 0,
+  "needs_review_application_count": 1,
+  "review_notes": [],
+  "data_status": "needs_review",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00848"
+  ],
+  "application_ids": [
+   "APP-00686"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 0,
+  "distinct_oe_count": 0,
+  "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-32748-2",
+  "bowen_no": "32748-2",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": "Thermostat",
+  "product_subtype": null,
+  "product_name_en": "Thermostat 32748-2",
+  "product_name_zh": "节温器 32748-2",
+  "website_category": "thermostats",
+  "switch_subcategory": null,
+  "image": null,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
+  "product_type_evidence": {
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 32,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
+  },
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
   "needs_review_application_count": 0,
   "review_notes": [],
   "data_status": "ok",
@@ -20497,7 +20843,7 @@
    "SRC-00954"
   ],
   "application_ids": [
-   "APP-00785"
+   "APP-00790"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -20514,21 +20860,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 32839",
-  "product_name_zh": "博文 32839",
-  "website_category": null,
+  "product_name_en": "Thermostat 32839",
+  "product_name_zh": "节温器 32839",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 33,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -20545,7 +20898,7 @@
    "SRC-00840"
   ],
   "application_ids": [
-   "APP-00675"
+   "APP-00678"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -20562,21 +20915,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 32849",
-  "product_name_zh": "博文 32849",
-  "website_category": null,
+  "product_name_en": "Thermostat 32849",
+  "product_name_zh": "节温器 32849",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 34,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -20593,7 +20953,7 @@
    "SRC-00838"
   ],
   "application_ids": [
-   "APP-00676"
+   "APP-00679"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -20610,21 +20970,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 32870",
-  "product_name_zh": "博文 32870",
-  "website_category": null,
+  "product_name_en": "Thermostat 32870",
+  "product_name_zh": "节温器 32870",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 35,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -20640,7 +21007,7 @@
    "SRC-00825"
   ],
   "application_ids": [
-   "APP-00666"
+   "APP-00669"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -20657,21 +21024,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 32899",
-  "product_name_zh": "博文 32899",
-  "website_category": null,
+  "product_name_en": "Thermostat 32899",
+  "product_name_zh": "节温器 32899",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 36,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -20688,7 +21062,7 @@
    "SRC-00841"
   ],
   "application_ids": [
-   "APP-00674"
+   "APP-00677"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -20743,7 +21117,7 @@
   ],
   "application_ids": [
    "APP-00235",
-   "APP-00595"
+   "APP-00598"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -20762,21 +21136,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 33111",
-  "product_name_zh": "博文 33111",
-  "website_category": null,
+  "product_name_en": "Thermostat 33111",
+  "product_name_zh": "节温器 33111",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 37,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -20792,7 +21173,7 @@
    "SRC-00964"
   ],
   "application_ids": [
-   "APP-00795"
+   "APP-00800"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -20849,9 +21230,9 @@
   ],
   "application_ids": [
    "APP-00219",
-   "APP-00648",
-   "APP-00649",
-   "APP-00650"
+   "APP-00651",
+   "APP-00652",
+   "APP-00653"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -20910,7 +21291,7 @@
   ],
   "application_ids": [
    "APP-00177",
-   "APP-00705"
+   "APP-00710"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -20929,21 +21310,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 33561",
-  "product_name_zh": "博文 33561",
-  "website_category": null,
+  "product_name_en": "Thermostat 33561",
+  "product_name_zh": "节温器 33561",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 38,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -20959,7 +21347,7 @@
    "SRC-00890"
   ],
   "application_ids": [
-   "APP-00721"
+   "APP-00726"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -21030,21 +21418,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 33655",
-  "product_name_zh": "博文 33655",
-  "website_category": null,
+  "product_name_en": "Thermostat 33655",
+  "product_name_zh": "节温器 33655",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 39,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -21060,7 +21455,7 @@
    "SRC-00952"
   ],
   "application_ids": [
-   "APP-00783"
+   "APP-00788"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -21077,21 +21472,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 33655A",
-  "product_name_zh": "博文 33655A",
-  "website_category": null,
+  "product_name_en": "Thermostat 33655A",
+  "product_name_zh": "节温器 33655A",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 40,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -21107,7 +21509,7 @@
    "SRC-00778"
   ],
   "application_ids": [
-   "APP-00619"
+   "APP-00622"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -21162,7 +21564,7 @@
   ],
   "application_ids": [
    "APP-00204",
-   "APP-00748"
+   "APP-00753"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -21221,7 +21623,7 @@
   "application_ids": [
    "APP-00205",
    "APP-00218",
-   "APP-00621"
+   "APP-00624"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -21279,7 +21681,7 @@
   ],
   "application_ids": [
    "APP-00241",
-   "APP-00704"
+   "APP-00709"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -21449,7 +21851,7 @@
   "application_ids": [
    "APP-00233",
    "APP-00456",
-   "APP-00586"
+   "APP-00588"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -21506,7 +21908,7 @@
   ],
   "application_ids": [
    "APP-00242",
-   "APP-00630"
+   "APP-00633"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -21729,7 +22131,7 @@
   ],
   "application_ids": [
    "APP-00262",
-   "APP-00762"
+   "APP-00767"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -21786,7 +22188,7 @@
   ],
   "application_ids": [
    "APP-00261",
-   "APP-00760"
+   "APP-00765"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -22068,7 +22470,7 @@
   ],
   "application_ids": [
    "APP-00259",
-   "APP-00791"
+   "APP-00796"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -22181,7 +22583,7 @@
   ],
   "application_ids": [
    "APP-00245",
-   "APP-00773"
+   "APP-00778"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -22241,7 +22643,7 @@
   "application_ids": [
    "APP-00101",
    "APP-00437",
-   "APP-00629"
+   "APP-00632"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -22314,21 +22716,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 35116",
-  "product_name_zh": "博文 35116",
-  "website_category": null,
+  "product_name_en": "Thermostat 35116",
+  "product_name_zh": "节温器 35116",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 41,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -22344,7 +22753,7 @@
    "SRC-00799"
   ],
   "application_ids": [
-   "APP-00640"
+   "APP-00643"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -22512,7 +22921,7 @@
   "application_ids": [
    "APP-00102",
    "APP-00438",
-   "APP-00801"
+   "APP-00806"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -22683,7 +23092,7 @@
    "APP-00173",
    "APP-00453",
    "APP-00518",
-   "APP-00706"
+   "APP-00711"
   ],
   "application_count": 4,
   "searchable_application_count": 4,
@@ -22757,21 +23166,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 36583",
-  "product_name_zh": "博文 36583",
-  "website_category": null,
+  "product_name_en": "Thermostat 36583",
+  "product_name_zh": "节温器 36583",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 42,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -22787,7 +23203,7 @@
    "SRC-00955"
   ],
   "application_ids": [
-   "APP-00786"
+   "APP-00791"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -22844,13 +23260,63 @@
   ],
   "application_ids": [
    "APP-00268",
-   "APP-00583"
+   "APP-00585"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
   "oe_token_count": 4,
   "distinct_oe_count": 3,
   "opening_temperatures_c": [],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-38169",
+  "bowen_no": "38169",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": null,
+  "product_subtype": null,
+  "product_name_en": "Bowen 38169",
+  "product_name_zh": "博文 38169",
+  "website_category": null,
+  "switch_subcategory": null,
+  "image": null,
+  "status": "draft",
+  "product_type_source": "review_required",
+  "product_type_verified": false,
+  "product_type_evidence": {
+   "kind": "review_required",
+   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+  },
+  "product_type_raw_labels": [],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00707"
+  ],
+  "application_ids": [
+   "APP-00555"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 0,
+  "distinct_oe_count": 0,
+  "opening_temperatures_c": [
+   77,
+   91
+  ],
   "prototype_rank": null,
   "completeness_score": null,
   "created_from": "Phase 2.5 产品数据库重建"
@@ -22956,7 +23422,7 @@
   ],
   "application_ids": [
    "APP-00207",
-   "APP-00684"
+   "APP-00689"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -23015,7 +23481,7 @@
   ],
   "application_ids": [
    "APP-00206",
-   "APP-00776"
+   "APP-00781"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -23024,6 +23490,56 @@
   "opening_temperatures_c": [
    77,
    88
+  ],
+  "prototype_rank": null,
+  "completeness_score": null,
+  "created_from": "Phase 2.5 产品数据库重建"
+ },
+ {
+  "product_id": "BW-38298",
+  "bowen_no": "38298",
+  "has_resolvable_bowen_no": true,
+  "unresolved_bowen_cell_raw": null,
+  "variant_of_bowen_no": null,
+  "product_type": null,
+  "product_subtype": null,
+  "product_name_en": "Bowen 38298",
+  "product_name_zh": "博文 38298",
+  "website_category": null,
+  "switch_subcategory": null,
+  "image": null,
+  "status": "draft",
+  "product_type_source": "review_required",
+  "product_type_verified": false,
+  "product_type_evidence": {
+   "kind": "review_required",
+   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+  },
+  "product_type_raw_labels": [],
+  "product_type_conflict": null,
+  "blocked": false,
+  "blocked_reasons": [],
+  "blocked_application_count": 0,
+  "needs_review_application_count": 0,
+  "review_notes": [],
+  "data_status": "ok",
+  "source_sheets": [
+   "工作表1"
+  ],
+  "source_sheet_count": 1,
+  "source_record_ids": [
+   "SRC-00708"
+  ],
+  "application_ids": [
+   "APP-00556"
+  ],
+  "application_count": 1,
+  "searchable_application_count": 1,
+  "oe_token_count": 0,
+  "distinct_oe_count": 0,
+  "opening_temperatures_c": [
+   82,
+   91
   ],
   "prototype_rank": null,
   "completeness_score": null,
@@ -23180,7 +23696,7 @@
   "application_ids": [
    "APP-00008",
    "APP-00529",
-   "APP-00692"
+   "APP-00697"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -23239,7 +23755,7 @@
   ],
   "application_ids": [
    "APP-00034",
-   "APP-00600"
+   "APP-00603"
   ],
   "application_count": 2,
   "searchable_application_count": 2,
@@ -23297,7 +23813,7 @@
   "application_ids": [
    "APP-00035",
    "APP-00403",
-   "APP-00568"
+   "APP-00570"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -23357,7 +23873,7 @@
   "application_ids": [
    "APP-00036",
    "APP-00404",
-   "APP-00569"
+   "APP-00571"
   ],
   "application_count": 3,
   "searchable_application_count": 3,
@@ -23486,21 +24002,28 @@
   "has_resolvable_bowen_no": true,
   "unresolved_bowen_cell_raw": null,
   "variant_of_bowen_no": null,
-  "product_type": null,
+  "product_type": "Thermostat",
   "product_subtype": null,
-  "product_name_en": "Bowen 403229",
-  "product_name_zh": "博文 403229",
-  "website_category": null,
+  "product_name_en": "Thermostat 403229",
+  "product_name_zh": "节温器 403229",
+  "website_category": "thermostats",
   "switch_subcategory": null,
   "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
+  "status": "searchable_noindex",
+  "product_type_source": "human_review_confirmed",
+  "product_type_verified": true,
   "product_type_evidence": {
-   "kind": "review_required",
-   "note": "本工作表与综合产品信息表均无该 Bowen No. 的人工类型标签，程序不做任何推断"
+   "kind": "human_review_confirmed",
+   "raw_label": "Thermostat",
+   "source_file": "review/product-type-unconfirmed.xlsx",
+   "source_sheet": "review/product-type-unconfirmed.xlsx",
+   "source_row": 43,
+   "note": "业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat",
+   "reviewed_at": "2026-09-25"
   },
-  "product_type_raw_labels": [],
+  "product_type_raw_labels": [
+   "Thermostat"
+  ],
   "product_type_conflict": null,
   "blocked": false,
   "blocked_reasons": [],
@@ -23516,7 +24039,7 @@
    "SRC-00787"
   ],
   "application_ids": [
-   "APP-00628"
+   "APP-00631"
   ],
   "application_count": 1,
   "searchable_application_count": 1,
@@ -23580,1513 +24103,6 @@
   "opening_temperatures_c": [
    97
   ],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0001",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": false,
-  "blocked_reasons": [],
-  "blocked_application_count": 0,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "ok",
-  "source_sheets": [
-   "综合产品信息表"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00098"
-  ],
-  "application_ids": [
-   "APP-00098"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 1,
-  "oe_token_count": 1,
-  "distinct_oe_count": 1,
-  "opening_temperatures_c": [
-   97
-  ],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0002",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": false,
-  "blocked_reasons": [],
-  "blocked_application_count": 0,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "ok",
-  "source_sheets": [
-   "综合产品信息表"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00132"
-  ],
-  "application_ids": [
-   "APP-00132"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 1,
-  "oe_token_count": 6,
-  "distinct_oe_count": 6,
-  "opening_temperatures_c": [
-   82,
-   90
-  ],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0003",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "3919(35401)",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "综合产品信息表!K107 parenthetical_note: Bowen 字段出现括号备注",
-   "综合产品信息表!K107 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "综合产品信息表"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00208"
-  ],
-  "application_ids": [
-   "APP-00208"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 5,
-  "distinct_oe_count": 5,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0004",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "30302（3334胶圈）",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "综合产品信息表!E120 descriptive_text: Bowen 字段出现中文说明文字",
-   "综合产品信息表!E120 parenthetical_note: Bowen 字段出现括号备注",
-   "综合产品信息表!E120 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "综合产品信息表"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00232"
-  ],
-  "application_ids": [
-   "APP-00232"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 2,
-  "distinct_oe_count": 2,
-  "opening_temperatures_c": [
-   76
-  ],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0005",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "3929(3019胶圈)",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "综合产品信息表!K122 descriptive_text: Bowen 字段出现中文说明文字",
-   "综合产品信息表!K122 parenthetical_note: Bowen 字段出现括号备注",
-   "综合产品信息表!K122 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "综合产品信息表"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00237"
-  ],
-  "application_ids": [
-   "APP-00237"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 1,
-  "distinct_oe_count": 1,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0006",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "35116（德本）",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "综合产品信息表!K125 descriptive_text: Bowen 字段出现中文说明文字",
-   "综合产品信息表!K125 parenthetical_note: Bowen 字段出现括号备注",
-   "综合产品信息表!K125 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "综合产品信息表"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00243"
-  ],
-  "application_ids": [
-   "APP-00243"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 6,
-  "distinct_oe_count": 4,
-  "opening_temperatures_c": [
-   85
-  ],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0007",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "3041-2（3003）胶圈",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "综合产品信息表!E129 descriptive_text: Bowen 字段出现中文说明文字",
-   "综合产品信息表!E129 parenthetical_note: Bowen 字段出现括号备注",
-   "综合产品信息表!E129 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "综合产品信息表"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00250"
-  ],
-  "application_ids": [
-   "APP-00250"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 6,
-  "distinct_oe_count": 6,
-  "opening_temperatures_c": [
-   88
-  ],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0008",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": false,
-  "blocked_reasons": [],
-  "blocked_application_count": 0,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "ok",
-  "source_sheets": [
-   "大众系列"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00454"
-  ],
-  "application_ids": [
-   "APP-00423"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 1,
-  "oe_token_count": 2,
-  "distinct_oe_count": 2,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0009",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": false,
-  "blocked_reasons": [],
-  "blocked_application_count": 0,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "ok",
-  "source_sheets": [
-   "大众系列"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00456"
-  ],
-  "application_ids": [
-   "APP-00425"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 1,
-  "oe_token_count": 8,
-  "distinct_oe_count": 8,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0010",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "无小管",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "宝马奔驰系列!K4 descriptive_text: Bowen 字段出现中文说明文字",
-   "宝马奔驰系列!K4 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "宝马奔驰系列"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00496"
-  ],
-  "application_ids": [
-   "APP-00444"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 1,
-  "distinct_oe_count": 1,
-  "opening_temperatures_c": [
-   97
-  ],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0011",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "3069（3076）",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "日系!E6 parenthetical_note: Bowen 字段出现括号备注",
-   "日系!E6 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "日系"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00609"
-  ],
-  "application_ids": [
-   "APP-00500"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 7,
-  "distinct_oe_count": 6,
-  "opening_temperatures_c": [
-   82
-  ],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0012",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": false,
-  "blocked_reasons": [],
-  "blocked_application_count": 0,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "ok",
-  "source_sheets": [
-   "福特系列"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00642"
-  ],
-  "application_ids": [
-   "APP-00522"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 1,
-  "oe_token_count": 0,
-  "distinct_oe_count": 0,
-  "opening_temperatures_c": [
-   82
-  ],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0013",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "3035(3403胶圈)",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "工作表1!D24 descriptive_text: Bowen 字段出现中文说明文字",
-   "工作表1!D24 parenthetical_note: Bowen 字段出现括号备注",
-   "工作表1!D24 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00719"
-  ],
-  "application_ids": [
-   "APP-00561"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 1,
-  "distinct_oe_count": 1,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0014",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "3064塑料外壳",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "工作表1!D58 descriptive_text: Bowen 字段出现中文说明文字",
-   "工作表1!D58 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00752"
-  ],
-  "application_ids": [
-   "APP-00593"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 1,
-  "distinct_oe_count": 1,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0015",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "L907(只有芯子)",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "工作表1!D61 descriptive_text: Bowen 字段出现中文说明文字",
-   "工作表1!D61 parenthetical_note: Bowen 字段出现括号备注",
-   "工作表1!D61 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00755"
-  ],
-  "application_ids": [
-   "APP-00596"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 2,
-  "distinct_oe_count": 2,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0016",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "3653总成OE",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "工作表1!D70 descriptive_text: Bowen 字段出现中文说明文字",
-   "工作表1!D70 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00764"
-  ],
-  "application_ids": [
-   "APP-00605"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 6,
-  "distinct_oe_count": 6,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0017",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "3583铝外壳",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "工作表1!D77 descriptive_text: Bowen 字段出现中文说明文字",
-   "工作表1!D77 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00771"
-  ],
-  "application_ids": [
-   "APP-00612"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 1,
-  "distinct_oe_count": 1,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0018",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "同3025尺寸相同，原件阀座有3处豁口，胶圈内圈有3处定位，外圈有定位",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "工作表1!D79 descriptive_text: Bowen 字段出现中文说明文字",
-   "工作表1!D79 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00773"
-  ],
-  "application_ids": [
-   "APP-00614"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 1,
-  "distinct_oe_count": 1,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0019",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "芯子编号：31052",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "工作表1!D96 descriptive_text: Bowen 字段出现中文说明文字",
-   "工作表1!D96 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00790"
-  ],
-  "application_ids": [
-   "APP-00631"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 1,
-  "distinct_oe_count": 1,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0020",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "芯子编号：3130",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "工作表1!D98 descriptive_text: Bowen 字段出现中文说明文字",
-   "工作表1!D98 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00792"
-  ],
-  "application_ids": [
-   "APP-00633"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 4,
-  "distinct_oe_count": 4,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0021",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "芯子：211芯子",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "工作表1!D99 descriptive_text: Bowen 字段出现中文说明文字",
-   "工作表1!D99 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00793"
-  ],
-  "application_ids": [
-   "APP-00634"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 2,
-  "distinct_oe_count": 2,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0022",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "3025（胶圈不同）",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "工作表1!D107 descriptive_text: Bowen 字段出现中文说明文字",
-   "工作表1!D107 parenthetical_note: Bowen 字段出现括号备注",
-   "工作表1!D107 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00801"
-  ],
-  "application_ids": [
-   "APP-00642"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 2,
-  "distinct_oe_count": 2,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0023",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "3094（胶圈不带凸点）",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "工作表1!D108 descriptive_text: Bowen 字段出现中文说明文字",
-   "工作表1!D108 parenthetical_note: Bowen 字段出现括号备注",
-   "工作表1!D108 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00802"
-  ],
-  "application_ids": [
-   "APP-00643"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 8,
-  "distinct_oe_count": 8,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0024",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": false,
-  "blocked_reasons": [],
-  "blocked_application_count": 0,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "ok",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00852"
-  ],
-  "application_ids": [
-   "APP-00683"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 1,
-  "oe_token_count": 2,
-  "distinct_oe_count": 2,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0025",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "3150（3086芯）",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "工作表1!D176 descriptive_text: Bowen 字段出现中文说明文字",
-   "工作表1!D176 parenthetical_note: Bowen 字段出现括号备注",
-   "工作表1!D176 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00870"
-  ],
-  "application_ids": [
-   "APP-00701"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 1,
-  "distinct_oe_count": 1,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0026",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "draft",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": false,
-  "blocked_reasons": [],
-  "blocked_application_count": 0,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "ok",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00871"
-  ],
-  "application_ids": [
-   "APP-00702"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 1,
-  "oe_token_count": 3,
-  "distinct_oe_count": 3,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0027",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "3528（借用）",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "工作表1!D182 descriptive_text: Bowen 字段出现中文说明文字",
-   "工作表1!D182 parenthetical_note: Bowen 字段出现括号备注",
-   "工作表1!D182 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00876"
-  ],
-  "application_ids": [
-   "APP-00707"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 1,
-  "distinct_oe_count": 1,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0028",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "37603（天博）非电子",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "工作表1!D236 descriptive_text: Bowen 字段出现中文说明文字",
-   "工作表1!D236 parenthetical_note: Bowen 字段出现括号备注",
-   "工作表1!D236 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00930"
-  ],
-  "application_ids": [
-   "APP-00761"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 4,
-  "distinct_oe_count": 4,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0029",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "3014数据一样\n外观结构不同",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "工作表1!D245 descriptive_text: Bowen 字段出现中文说明文字",
-   "工作表1!D245 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00939"
-  ],
-  "application_ids": [
-   "APP-00770"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 1,
-  "distinct_oe_count": 1,
-  "opening_temperatures_c": [],
-  "prototype_rank": null,
-  "completeness_score": null,
-  "created_from": "Phase 2.5 产品数据库重建"
- },
- {
-  "product_id": "BW-UNRESOLVED-0030",
-  "bowen_no": null,
-  "has_resolvable_bowen_no": false,
-  "unresolved_bowen_cell_raw": "3033胶圈",
-  "variant_of_bowen_no": null,
-  "product_type": null,
-  "product_subtype": null,
-  "product_name_en": "Bowen null",
-  "product_name_zh": "博文 null",
-  "website_category": null,
-  "switch_subcategory": null,
-  "image": null,
-  "status": "blocked",
-  "product_type_source": "review_required",
-  "product_type_verified": false,
-  "product_type_evidence": {
-   "kind": "review_required",
-   "note": "Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类"
-  },
-  "product_type_raw_labels": [],
-  "product_type_conflict": null,
-  "blocked": true,
-  "blocked_reasons": [
-   "工作表1!D273 descriptive_text: Bowen 字段出现中文说明文字",
-   "工作表1!D273 bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "blocked_application_count": 1,
-  "needs_review_application_count": 0,
-  "review_notes": [],
-  "data_status": "blocked",
-  "source_sheets": [
-   "工作表1"
-  ],
-  "source_sheet_count": 1,
-  "source_record_ids": [
-   "SRC-00967"
-  ],
-  "application_ids": [
-   "APP-00798"
-  ],
-  "application_count": 1,
-  "searchable_application_count": 0,
-  "oe_token_count": 1,
-  "distinct_oe_count": 1,
-  "opening_temperatures_c": [],
   "prototype_rank": null,
   "completeness_score": null,
   "created_from": "Phase 2.5 产品数据库重建"

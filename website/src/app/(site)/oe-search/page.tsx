@@ -4,10 +4,13 @@ import { OeSearchBox } from '@/components/OeSearchBox';
 import { AddOeResultToRfq } from '@/components/AddOeResultToRfq';
 import { searchByOe } from '@/lib/db';
 import styles from './oe-search.module.css';
+import { applicationOeTokens, applicationTextEn } from '@/lib/application-display';
 
 export const metadata = {
   title: 'OE Number Search',
   description: 'Search Bowen products by OE number. Case, spaces, dashes and slashes are ignored.',
+  // 功能页 + 查询结果页：始终不参与索引，也不给出 canonical 指向具体查询组合
+  robots: { index: false, follow: false },
 };
 
 const getResult = cache(searchByOe);
@@ -56,8 +59,8 @@ export default async function OeSearchPage({
                   <h3 className="h4">What you get back</h3>
                   <p>
                     Each hit is a <strong>product + the specific application row</strong> that carries
-                    your OE number — including its vehicle and engine text, so you can judge fitment
-                    yourself.
+                    your OE number — including an English vehicle/application summary,
+                    so you can judge fitment yourself.
                   </p>
                 </div>
                 <div className={styles.introCard}>
@@ -128,12 +131,14 @@ export default async function OeSearchPage({
               {(result.exactHits.length > 0 || result.partialHits.length > 0) && (
                 <>
                   <ul className={styles.hitList}>
-                    {result.hits.map((hit, i) => (
+                    {result.hits.map((hit, i) => {
+                      const publicOe = applicationOeTokens([hit.oe_number_raw])[0] ?? hit.oe_search_key;
+                      return (
                       <li key={`${hit.application.application_id}-${hit.oe_search_key}-${i}`} className={styles.hit}>
                         <div className={styles.hitMain}>
                           <div className={styles.hitOe}>
                             <span className={styles.hitLabel}>Matched OE</span>
-                            <span className={styles.hitOeValue}>{hit.oe_number_raw}</span>
+                            <span className={styles.hitOeValue}>{publicOe}</span>
                           </div>
 
                           <dl className={styles.hitData}>
@@ -153,17 +158,10 @@ export default async function OeSearchPage({
                               <dd>{hit.product.product_type ?? 'Pending review'}</dd>
                             </div>
                             <div className={styles.wide}>
-                              <dt>Vehicle</dt>
+                              <dt>Vehicle / Application</dt>
                               <dd>
-                                {hit.application.vehicle_application_raw
-                                  || <span className="muted">Not recorded in this source row — see the product page for other rows</span>}
-                              </dd>
-                            </div>
-                            <div className={styles.wide}>
-                              <dt>Engine / Application</dt>
-                              <dd>
-                                {hit.application.engine_application
-                                  || <span className="muted">Not recorded in this source row</span>}
+                                {applicationTextEn(hit.application.vehicle_application_raw)
+                                  || <span className="muted">Not recorded for this entry — see the product page for other entries</span>}
                               </dd>
                             </div>
                             {hit.application.opening_temperature_c?.length ? (
@@ -172,10 +170,6 @@ export default async function OeSearchPage({
                                 <dd>{hit.application.opening_temperature_c.map((t) => `${t} °C`).join(' / ')}</dd>
                               </div>
                             ) : null}
-                            <div>
-                              <dt>Source</dt>
-                              <dd className={styles.source}>{hit.application.source_sheet} · row {hit.application.source_row}</dd>
-                            </div>
                           </dl>
                         </div>
 
@@ -190,14 +184,15 @@ export default async function OeSearchPage({
                             productId={hit.product.product_id}
                             bowenNo={hit.product.bowen_no ?? ''}
                             productType={hit.product.product_type}
-                            matchedOe={hit.oe_number_raw}
-                            vehicle={hit.application.vehicle_application_raw}
-                            engine={hit.application.vehicle_application_raw}
+                            matchedOe={publicOe}
+                            vehicle={applicationTextEn(hit.application.vehicle_application_raw)}
+                            engine={null}
                             applicationId={hit.application.application_id}
                           />
                         </div>
                       </li>
-                    ))}
+                      );
+                    })}
                   </ul>
 
                   {result.exactHits.length > 0 && (

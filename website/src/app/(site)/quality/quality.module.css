@@ -24,7 +24,157 @@
 .systemFull { font-size: 13px; color: var(--ink-500); line-height: 1.5; }
 .systemBody { font-size: 14px; color: var(--ink-600); line-height: 1.65; }
 
-.scopeNote { margin-top: 24px; font-size: 13.5px; line-height: 1.7; }
+/* ---- 证书字段表 ---- */
+.certMeta { display: flex; flex-direction: column; margin: 0; }
+.certMeta > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--ink-100);
+}
+.certMeta > div:last-child { border-bottom: none; }
+.certMeta dt {
+  flex-shrink: 0;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-500);
+}
+.certMeta dd {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--ink-900);
+  text-align: right;
+  line-height: 1.55;
+  word-break: break-word;
+}
+.exclusion { color: var(--warn-600, var(--ink-900)); font-weight: 600; }
+.surveillance {
+  margin-top: 12px;
+  font-size: 12.5px;
+  color: var(--ink-500);
+  font-style: italic;
+  line-height: 1.55;
+}
+
+/* ---- IATF 证书原件 ---- */
+.certRow {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 44px;
+  align-items: start;
+}
+.certFigure {
+  margin: 0;
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--white);
+}
+.certImg { display: block; width: 100%; height: auto; }
+.certFigure figcaption {
+  padding: 12px 16px 14px;
+  font-size: 13px;
+  color: var(--ink-600);
+  line-height: 1.55;
+  border-top: 1px solid var(--ink-100);
+}
+.credit { display: block; margin-top: 3px; font-size: 11.5px; color: var(--ink-500); }
+.certCopy .lead { margin-top: 10px; }
+.certPoints { display: flex; flex-direction: column; gap: 10px; margin-top: 18px; }
+.certPoints li { font-size: 14.5px; color: var(--ink-600); line-height: 1.65; padding-left: 16px; position: relative; }
+.certPoints li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 9px;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--navy-500);
+}
+.certPoints strong { color: var(--ink-900); }
+.certNote {
+  margin-top: 20px;
+  padding: 16px 18px;
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius);
+  background: var(--white);
+  font-size: 13px;
+  color: var(--ink-600);
+  line-height: 1.65;
+}
+
+/* ---- 测试设备 ---- */
+.testGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.testCard {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.testFigure { margin: 0; background: var(--ink-50); }
+.testImg { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
+.testBody { padding: 15px 17px 17px; }
+.testBody h3 { margin-bottom: 6px; font-size: 15px; }
+
+/* ---- 资质荣誉 ---- */
+.honorGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.honorCard {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.honorFigure {
+  margin: 0;
+  background: var(--ink-50);
+  display: grid;
+  place-items: center;
+  padding: 14px;
+}
+.honorImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 240px;
+  object-fit: contain;
+}
+.honorBody { padding: 15px 17px 17px; }
+/* 明确标注是「证书」还是「公示名单」——公示名单不能被称为管理体系认证证书 */
+.honorKind {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-500);
+  border: 1px solid var(--ink-100);
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+.honorBody h3 { margin-bottom: 4px; font-size: 15px; }
+.honorZh { font-size: 12.5px; color: var(--ink-500); margin-bottom: 10px; }
+.honorMeta { display: flex; flex-direction: column; margin: 0; }
+.honorMeta > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--ink-100);
+}
+.honorMeta > div:last-child { border-bottom: none; }
+.honorMeta dt { flex-shrink: 0; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-500); }
+.honorMeta dd { margin: 0; font-size: 13px; color: var(--ink-900); text-align: right; word-break: break-word; }
+
+/* ---- 文件包 ---- */
+.docRow { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.docNote { font-size: 13px; color: var(--ink-500); }
 
 /* ---- 检验环节 ---- */
 .controlGrid {
@@ -48,40 +198,7 @@
 .control h3 { margin-bottom: 7px; }
 .control p { font-size: 13.5px; color: var(--ink-600); line-height: 1.62; }
 
-/* ---- 两栏 ---- */
-.twoCol {
-  display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
-  gap: 48px;
-  align-items: start;
-}
-.placeholderNote {
-  margin-top: 26px;
-  padding: 20px 22px;
-  border: 1px dashed var(--warn-600);
-  border-radius: var(--radius-lg);
-  background: var(--warn-50);
-}
-.placeholderNote strong {
-  display: block;
-  font-size: 13.5px;
-  color: var(--warn-600);
-  margin-bottom: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
-.placeholderNote ul { display: flex; flex-direction: column; gap: 7px; margin-bottom: 14px; }
-.placeholderNote li { font-size: 14px; color: var(--ink-700); padding-left: 16px; position: relative; }
-.placeholderNote li::before {
-  content: '';
-  position: absolute;
-  left: 0; top: 8px;
-  width: 5px; height: 5px;
-  border-radius: 50%;
-  background: var(--warn-600);
-}
-.placeholderNote p { font-size: 13px; color: var(--ink-600); line-height: 1.6; }
-
+/* ---- 文件包 / 说明 ---- */
 .sideBox {
   padding: 24px;
   border: 1px solid var(--ink-200);
@@ -128,10 +245,17 @@
 @media (max-width: 1080px) {
   .systemGrid { grid-template-columns: minmax(0, 1fr); }
   .controlGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .twoCol { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .certRow { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+  .testGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .honorGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 640px) {
   .controlGrid { grid-template-columns: minmax(0, 1fr); }
+  .testGrid { grid-template-columns: minmax(0, 1fr); }
+  .honorGrid { grid-template-columns: minmax(0, 1fr); }
+  .docRow { grid-template-columns: minmax(0, 1fr); }
+  .certMeta > div, .honorMeta > div { flex-direction: column; gap: 3px; }
+  .certMeta dd, .honorMeta dd { text-align: left; }
   .ctaInner { gap: 22px; }
   .ctaActions { width: 100%; }
   .ctaActions .btn { flex: 1 1 auto; }

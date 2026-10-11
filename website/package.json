@@ -2,7 +2,7 @@
   "name": "bowen-website",
   "version": "0.1.0",
   "private": true,
-  "description": "博文外贸独立站 — B2B UI Prototype（Phase 3）。本阶段为原型，未正式上线。",
+  "description": "博文外贸独立站 — B2B 英文站（低成本上线版：RFQ 先落库、邮件单次发送、无定时重试。仍是 noindex 预览，未部署、未绑定域名）。",
   "packageManager": "pnpm@10.34.5",
   "engines": {
     "node": ">=18.18.0",
@@ -16,9 +16,19 @@
     "start:host": "next start -p 3000 -H 0.0.0.0",
     "typecheck": "tsc --noEmit",
     "verify:data": "node tools/verify-prototype-data.mjs",
+    "verify:surface": "node tools/verify-public-surface.mjs",
+    "verify:english": "node tools/verify-english-product-surface.mjs",
+    "verify:engine": "node tools/verify-engine-code.mjs",
+    "verify:category": "node tools/verify-category-copy.mjs",
     "verify:rfq": "node tools/verify-rfq-e2e.mjs",
+    "verify:rfq:production": "node tools/verify-rfq-production.mjs",
+    "verify:seo": "node tools/verify-seo-readiness.mjs",
+    "verify:headers": "node tools/verify-security-headers.mjs",
+    "verify:launch-hardening": "node tools/verify-launch-hardening.mjs",
+    "verify:production-guards": "node tools/verify-production-guards.mjs",
     "verify:overflow": "node tools/find-overflow.mjs http://127.0.0.1:3000/ 390",
-    "data:refresh": "node ../tools/build-product-db-v2.mjs && node ../tools/verify-product-db-v2.mjs"
+    "assets:brand": "node tools/build-brand-assets.mjs",
+    "data:refresh": "node ../tools/refresh-site-data.mjs"
   },
   "dependencies": {
     "next": "15.5.26",

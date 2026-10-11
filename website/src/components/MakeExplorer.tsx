@@ -48,15 +48,6 @@ export function MakeExplorer({ makes }: { makes: MakeSummary[] }) {
                 <span className={styles.makeName}>{m.make}</span>
                 <span className={styles.makeMeta}>{m.productCount} products</span>
               </Link>
-              {m.sampleEngines.length > 0 && (
-                <p className={styles.engines}>
-                  {m.sampleEngines.slice(0, 4).map((e) => (
-                    <Link key={e} href={`/products?engine=${encodeURIComponent(e)}`} className={styles.engine}>
-                      {e}
-                    </Link>
-                  ))}
-                </p>
-              )}
             </li>
           ))}
         </ul>

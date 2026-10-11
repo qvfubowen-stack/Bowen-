@@ -1,0 +1,54 @@
+/* Turnstile 验证区（RFQ 表单）。只做布局与可读性，视觉风格与表单其它区块一致。 */
+
+.wrap {
+  margin-top: 20px;
+  padding: 16px 18px;
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius);
+  background: var(--ink-50);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-500);
+  margin: 0;
+}
+
+.widget { min-height: 65px; }
+
+.status {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink-600);
+  line-height: 1.5;
+}
+
+.retry {
+  border: 1px solid var(--navy-500);
+  background: var(--white);
+  color: var(--navy-600);
+  border-radius: var(--radius);
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.retry:hover { background: var(--navy-50); }
+
+.error {
+  margin: 0;
+  font-size: 12.5px;
+  color: var(--danger-600);
+}
+
+@media (max-width: 680px) {
+  .wrap { padding: 14px; }
+}

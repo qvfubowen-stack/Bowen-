@@ -130,6 +130,7 @@ section('C. 源码：不得把 Insert / Assembly 做成分类或筛选项');
  *   - 制造工艺：Assembly / Automated Assembly / machining, assembly and testing
  *   - 品牌定位：Automotive Thermostat Manufacturer / automotive thermostat
  *   - 本守卫测试自己的禁用词清单（本文件不在扫描范围内）
+ *   - 术语翻译词典里的**成对字面量**（见下面 isExemptTermEntry 的说明）
  * 禁止出现的场景：把它们当产品分类/筛选项/产品名称的一部分。
  */
 const FORBIDDEN_COPY = [
@@ -140,23 +141,61 @@ const FORBIDDEN_COPY = [
   { re: /sub-?categor(?:y|ies)\s*[:=]\s*\[[^\]]*insert/i, why: '把 insert 做成子分类' },
 ];
 
+/**
+ * 例外：术语翻译词典（中文原文 → 英文展示词）
+ * ---------------------------------------------------------------------------
+ * Phase 5 接手时本检查是**失败**的，命中 3 行，全部来自
+ * src/lib/application-display.ts 的 TERMS 词典：
+ *     ['节温器总成', 'Thermostat assembly'],
+ *     ['节温器芯三件套', 'Thermostat insert kit'],
+ * 这些是"把源工作簿里的中文零件名翻成英文"的术语映射，
+ * 客户页面上并不会出现「Thermostat assembly」这样的产品分类或筛选项
+ * （产品分类只有 tools/config/product-types.mjs 里的 canonical 值，已由 A 段校验）。
+ *
+ * 因此这里把例外限定到最小范围：
+ *   1. 只豁免 src/lib/application-display.ts 这一个词典文件；
+ *   2. 只豁免形如 ['中文', 'English'], 的成对字面量行（一行可以有多对，但整行
+ *      必须全部是这种字面量，不能夹带其它代码）；
+ *   3. app/ 与 components/ 下的页面文案**永不**豁免（下方有专门断言）。
+ * 这样既修掉了误报，也没有放宽"页面不得把 insert/assembly 当分类"这条真规则。
+ */
+const TERM_TABLE_FILE = path.join('src', 'lib', 'application-display.ts');
+const TERM_ENTRY_LINE = /^\s*(?:\[['"][^'"]+['"]\s*,\s*['"][^'"]+['"]\]\s*,?\s*)+$/;
+
+function isExemptTermEntry(file, line) {
+  if (path.relative(ROOT, file) !== TERM_TABLE_FILE) return false;
+  return TERM_ENTRY_LINE.test(line);
+}
+
 check('源码里没有把 Insert / Assembly 当产品分类或筛选项的文案', () => {
   const hits = [];
+  let exempted = 0;
   for (const file of SOURCE_FILES) {
     const text = fs.readFileSync(file, 'utf8');
     const lines = text.split(/\r?\n/);
     for (const rule of FORBIDDEN_COPY) {
       lines.forEach((line, i) => {
-        if (rule.re.test(line)) {
-          hits.push(`${path.relative(ROOT, file)}:${i + 1} [${rule.why}] ${line.trim().slice(0, 100)}`);
-        }
+        if (!rule.re.test(line)) return;
+        if (isExemptTermEntry(file, line)) { exempted += 1; return; }
+        hits.push(`${path.relative(ROOT, file)}:${i + 1} [${rule.why}] ${line.trim().slice(0, 100)}`);
       });
     }
   }
   return hits.length === 0
-    ? { ok: true, detail: `扫描 ${SOURCE_FILES.length} 个文件，0 命中` }
+    ? { ok: true, detail: `扫描 ${SOURCE_FILES.length} 个文件，0 命中（术语词典豁免 ${exempted} 行）` }
     : `${hits.length} 处:\n      ` + hits.join('\n      ');
 });
+
+check('术语词典例外不适用于页面文件（app / components 永不豁免）', () => {
+  const pageFiles = SOURCE_FILES.filter((f) => /[\\/]src[\\/](app|components)[\\/]/.test(f));
+  const bad = pageFiles.filter((f) => fs.readFileSync(f, 'utf8')
+    .split(/\r?\n/)
+    .some((line) => isExemptTermEntry(f, line)));
+  return bad.length === 0
+    ? { ok: true, detail: `页面文件 ${pageFiles.length} 个，0 个命中例外` }
+    : bad.map((f) => path.relative(ROOT, f)).join(', ');
+});
+
 
 check('不存在把 Insert/Assembly 写进筛选项数组的代码', () => {
   const hits = [];

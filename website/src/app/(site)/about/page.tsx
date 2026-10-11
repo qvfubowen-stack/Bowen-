@@ -2,23 +2,32 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { PageHero } from '@/components/PageHero';
 import { getDatasetStats, getSiteFacts } from '@/lib/db';
+import { companyImage } from '@/lib/media';
+import { absoluteUrl, canonicalFor } from '@/lib/site-url';
 import styles from './about.module.css';
 
 export const metadata: Metadata = {
   title: 'About Bowen',
-  description: 'Bowen is an automotive thermostat manufacturer supplying importers, wholesalers and aftermarket distributors.',
+  description:
+    'Qufu Bowen Auto Parts Manufacturing Co., Ltd. develops, manufactures and supplies automotive components: thermostats, temperature sensors and vehicle switches.',
+  alternates: canonicalFor('/about'),
+  openGraph: { url: absoluteUrl('/about'), title: 'About Bowen | Bowen', type: 'website' },
 };
 
 export default async function AboutPage() {
-  const c = (await getSiteFacts()).company;
+  const facts = await getSiteFacts();
+  const c = facts.company;
   const stats = await getDatasetStats();
+
+  const factoryBuildings = companyImage('factory-buildings.jpg');
+  const assemblyWorkshop = companyImage('assembly-workshop.jpg');
 
   return (
     <>
       <PageHero
         eyebrow="About"
         title="A thermostat factory, not a trading catalogue"
-        lead="Bowen manufactures automotive thermostats and supplies the aftermarket through importers, wholesalers and distributors. Our customers buy in volume for resale — not single units."
+        lead={`${c.legal_name_en} develops, manufactures and supplies automotive components, combining product research with in-house production and technical service.`}
         crumbs={[{ label: 'Home', href: '/' }, { label: 'About Bowen' }]}
         cta={
           <>
@@ -33,64 +42,171 @@ export default async function AboutPage() {
           <div className={styles.twoCol}>
             <div>
               <span className="eyebrow">Who we are</span>
-              <h2 className="h2">Manufacturing thermostats since {c.since_year}</h2>
+              <h2 className="h2">Manufacturing automotive components since {c.since_year}</h2>
+              <p className={styles.legalName}>
+                {c.legal_name_en} <span>· {c.legal_name_zh}</span>
+              </p>
+
               <div className={styles.prose}>
                 <p>
-                  Bowen has been producing automotive thermostats since {c.since_year}. The plant
-                  covers a {c.manufacturing_base_m2.toLocaleString('en-US')} m² manufacturing base,
-                  including a {c.production_workshop_m2.toLocaleString('en-US')} m² production
-                  workshop and a {c.temperature_controlled_workshop_m2.toLocaleString('en-US')} m²
-                  temperature-controlled workshop with {c.production_equipment_count}+ production
-                  equipment.
+                  {c.legal_name_en} was established in {c.since_year} and expanded its operations
+                  with the construction of a factory in {c.factory_built_year}. The site covers a{' '}
+                  {c.manufacturing_base_m2.toLocaleString('en-US')} m² company site area, including a{' '}
+                  {c.production_workshop_m2.toLocaleString('en-US')} m² production workshop and more
+                  than {c.temperature_controlled_workshop_m2.toLocaleString('en-US')} m² of
+                  temperature-controlled workshop space.
                 </p>
                 <p>
-                  Engineering work is ongoing rather than one-off: {c.rd_projects} R&amp;D projects,{' '}
-                  {c.patents} patents and {c.software_copyrights} software copyrights are recorded in
-                  Bowen company materials.
+                  Our technology centre and dedicated R&amp;D team support a product range serving a
+                  wide variety of vehicle models. Production equipment includes automated assembly
+                  systems designed and developed in house, across{' '}
+                  {c.production_equipment_count}+ pieces of production equipment.
                 </p>
                 <p>
-                  Certification covers three management systems — {c.certifications.join(', ')} — each
-                  with a defined scope that we publish rather than stretch.
+                  Development work is ongoing rather than one-off: {c.rd_projects} independently
+                  developed projects, {c.patents} patents and {c.software_copyrights} software
+                  copyrights are recorded in Bowen company materials. Development covers automotive
+                  components as well as automated production equipment.
                 </p>
               </div>
 
+              {factoryBuildings && (
+                <figure className={styles.media}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={factoryBuildings.src}
+                    alt={factoryBuildings.alt}
+                    className={styles.mediaImg}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption>
+                    {factoryBuildings.caption}
+                    <span className={styles.credit}>
+                      Source: Bowen company profile
+                    </span>
+                  </figcaption>
+                </figure>
+              )}
+
               <div className={styles.audienceNote}>
-                <strong>Who we supply</strong>
+                <strong>Who we work with</strong>
                 <ul>
-                  <li>Aftermarket importers</li>
-                  <li>Wholesale distributors</li>
-                  <li>Parts dealers and buying groups</li>
-                  <li>Programme and private-label buyers</li>
+                  <li>Manufacturers</li>
+                  <li>Distributors</li>
                 </ul>
                 <p>
-                  We do not sell to end consumers, and we do not run a retail checkout. If you buy in
-                  containers or pallet quantities, you are in the right place.
+                  Bowen works with manufacturers and distributors, supported by professional sales and
+                  technical service teams. Product selection is application-specific: tell our team the
+                  vehicle model, part reference and technical requirements.
                 </p>
               </div>
             </div>
 
             <aside className={styles.side}>
               <div className={styles.figures}>
-                <Figure value={String(c.since_year)} label="Manufacturing since" />
+                <Figure value={String(c.since_year)} label="Established" />
+                <Figure value={String(c.factory_built_year)} label="Factory built" />
                 <Figure value={`${c.rd_projects}`} label="R&D projects" />
                 <Figure value={`${c.patents}`} label="Patents" />
-                <Figure value={`${c.software_copyrights}`} label="Software copyrights" />
               </div>
 
               <div className={styles.dbCard}>
                 <h3 className="h4">Our product data</h3>
                 <p>
                   The product database behind this site is built from the company product tables, row
-                  by row. Nothing on a product page is invented.
+                  by row. Only products with a verified product photograph are published here; the
+                  rest stay in the internal database until a photograph is confirmed.
                 </p>
                 <dl className={styles.dbStats}>
-                  <div><dt>Products recorded</dt><dd>{stats.productCount}</dd></div>
+                  <div><dt>Products published</dt><dd>{stats.productCount}</dd></div>
                   <div><dt>Application rows</dt><dd>{stats.applicationCount.toLocaleString('en-US')}</dd></div>
                   <div><dt>Normalized OE numbers</dt><dd>{stats.distinctOeCount.toLocaleString('en-US')}</dd></div>
                   <div><dt>Searchable products</dt><dd>{stats.publishedCount}</dd></div>
                 </dl>
               </div>
             </aside>
+          </div>
+        </div>
+      </section>
+
+      <section className="section sectionAlt">
+        <div className="container">
+          <div className="sectionHead">
+            <span className="eyebrow">Product range</span>
+            <h2 className="h2">What Bowen makes</h2>
+            <p className="lead">
+              The product portfolio covers thermostats, temperature sensors and vehicle switches for a
+              wide range of vehicle models.
+            </p>
+          </div>
+
+          <ul className={styles.rangeGrid}>
+            {c.product_range.map((item) => (
+              <li key={item} className={styles.rangeItem}>
+                <span className={styles.rangeMark} aria-hidden="true">&#10003;</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+
+          <p className={styles.rangeNote}>
+            Product selection is application-specific. Discuss the vehicle model, part reference and
+            technical requirements with our team.
+          </p>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className={styles.twoCol}>
+            <div>
+              <span className="eyebrow">Manufacturing</span>
+              <h2 className="h2">Research and production under one roof</h2>
+              <div className={styles.prose}>
+                <p>
+                  The production site brings together machining, component assembly and dedicated work
+                  areas for automotive parts production, alongside supporting storage areas. Automated
+                  assembly is an important part of the manufacturing capability, and the equipment
+                  includes assembly systems developed in house.
+                </p>
+                <p>
+                  Machining, assembly, adjustment and testing equipment support automotive component
+                  production. Dedicated stations bring adjustment and testing into the production
+                  environment, and the factory also uses automatic riveting and rubber plug assembly
+                  equipment.
+                </p>
+                <p>
+                  Management system certification covers thermostat manufacturing. The IATF
+                  16949:2016 certificate has a stated scope ({c.public_certification_standards.join(', ')}
+                  ), which we publish in full rather than stretch.
+                </p>
+              </div>
+
+              <div className={styles.linkRow}>
+                <Link href="/factory" className="btn btnNavy btnSm">See the factory</Link>
+                <Link href="/quality" className="btn btnGhost btnSm">Quality &amp; certificates</Link>
+              </div>
+            </div>
+
+            {assemblyWorkshop && (
+              <figure className={styles.media}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={assemblyWorkshop.src}
+                  alt={assemblyWorkshop.alt}
+                  className={styles.mediaImg}
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>
+                  {assemblyWorkshop.caption}
+                  <span className={styles.credit}>
+                    Source: Bowen company profile
+                  </span>
+                </figcaption>
+              </figure>
+            )}
           </div>
         </div>
       </section>
@@ -105,40 +221,20 @@ export default async function AboutPage() {
           <div className={styles.valueGrid}>
             <Value
               title="Data before adjectives"
-              body="We publish what our records actually say. Where a figure is not confirmed, the page says so instead of filling the gap."
+              body="We publish what our records actually say. Where a figure is not confirmed, the page omits it instead of filling the gap."
             />
             <Value
               title="OE references kept as found"
               body="OE numbers are stored exactly as recorded and matched on a normalized key. We never rank them into main or secondary references."
             />
             <Value
-              title="Applications, not just part numbers"
-              body="Every OE reference is tied to the application row it came from, so you can judge fitment before you quote your own customer."
+              title="Fixed scope, stated plainly"
+              body="The IATF 16949 certificate excludes clause 8.3 product design. We print that exclusion rather than describe the certificate as covering design."
             />
             <Value
               title="Quotations on request"
-              body="Price, MOQ and lead time depend on the product family and order mix, so they are quoted per enquiry rather than guessed at."
+              body="Price and availability depend on the product family and order mix, so they are quoted per enquiry rather than guessed at."
             />
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <div className={styles.placeholderBlock}>
-            <span className="eyebrow">Placeholder</span>
-            <h2 className="h2">Company story details still to be supplied</h2>
-            <p>
-              The following sections are intentionally left out until Bowen supplies the facts. Writing
-              them from assumption would be worse than leaving the page shorter.
-            </p>
-            <ul>
-              <li>Company history and milestones</li>
-              <li>Number of employees by function</li>
-              <li>Export markets served and years of export experience</li>
-              <li>Named customer references (only with written permission)</li>
-              <li>Factory and team photography</li>
-            </ul>
           </div>
         </div>
       </section>
@@ -147,7 +243,7 @@ export default async function AboutPage() {
         <div className={`container ${styles.ctaInner}`}>
           <div>
             <h2 className="h2">Talk to us about your thermostat programme</h2>
-            <p>Send an OE number or a full sourcing list — whichever is easier.</p>
+            <p>Send an OE number or a full sourcing list, whichever is easier.</p>
           </div>
           <div className={styles.ctaActions}>
             <Link href="/rfq" className="btn btnPrimary btnLg">Request a Quote</Link>

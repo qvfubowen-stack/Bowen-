@@ -38,7 +38,35 @@ const products = read(path.join(SITE, 'products.json'));
 const applications = read(path.join(SITE, 'applications.json'));
 const oeIndex = read(path.join(SITE, 'oe-index.json'));
 const facts = read(path.join(SITE, 'site-facts.json'));
+const productImages = read(path.join(SITE, 'product-images.json'));
 const fullProducts = read(path.join(DB, 'products.json'));
+const fullApplications = read(path.join(DB, 'product-applications.json'));
+const imageMap = read(path.join(ROOT, '..', 'data/processed/product-image-map.json'));
+
+// ---- Phase 4.1 发布集合（与 tools/lib/publication-gate.mjs 同一规则，独立实现用于交叉验证） ----
+const publishableStatuses = new Set(['prototype_candidate', 'searchable_noindex']);
+const reliablePrimaryByProduct = new Set(
+  imageMap.images
+    .filter((r) => r.mapping_status === 'exact' && r.is_primary_image === true && r.product_id)
+    .map((r) => r.product_id),
+);
+const displayableAppsByProduct = new Map();
+for (const a of fullApplications) {
+  if (a.blocked || a.needs_review) continue;
+  if (!a.oe_numbers_raw && !a.vehicle_application_raw) continue;
+  if (!displayableAppsByProduct.has(a.product_id)) displayableAppsByProduct.set(a.product_id, []);
+  displayableAppsByProduct.get(a.product_id).push(a);
+}
+const independentlyComputedPublic = fullProducts.filter(
+  (p) => publishableStatuses.has(p.status) && !p.blocked
+    && reliablePrimaryByProduct.has(p.product_id)
+    && (displayableAppsByProduct.get(p.product_id) ?? []).length > 0,
+).map((p) => p.product_id);
+const independentlyComputedExcludedNoImage = fullProducts.filter(
+  (p) => publishableStatuses.has(p.status) && !p.blocked
+    && !reliablePrimaryByProduct.has(p.product_id)
+    && (displayableAppsByProduct.get(p.product_id) ?? []).length > 0,
+).map((p) => p.product_id);
 
 // 与 src/lib/db.ts 保持一致的归一化实现
 const normalizeOeInput = (raw) => String(raw ?? '')
@@ -210,7 +238,7 @@ check('每条 application 至少有 OE 或车型内容之一（不存在空壳�
   const empty = applications.filter((a) => !a.oe_numbers_raw && !a.vehicle_application_raw);
   return empty.length === 0 ? true : `${empty.length} 条空壳`;
 });
-check('产品详情页表格的每一行都能查到来源工作表与行号', () => {
+check('产品详情页表格的每一行都有来源工作表与行号（内部审计字段，不再上页面）', () => {
   const bad = applications.filter((a) => !a.source_sheet || !Number.isFinite(a.source_row) || a.source_row < 1);
   return bad.length === 0 ? true : `${bad.length} 条缺来源`;
 });
@@ -255,7 +283,7 @@ check('汽车开关的四个子分类都各自有产品', () => {
 });
 check('product_subtype 全为 null（V1 不区分 Insert/Assembly）', () =>
   products.filter((p) => p.product_subtype !== null).length === 0);
-check('每个产品都有分类证据对象（页面上要展示来源）', () => {
+check('每个产品都有分类证据对象（内部审计用，客户页面不再展示）', () => {
   const bad = products.filter((p) => !p.product_type_evidence);
   return bad.length === 0 ? true : `${bad.length} 个缺证据`;
 });
@@ -278,21 +306,51 @@ check('site-facts.json 的公司数字与项目资料一致', () => {
   const bad = Object.entries(expect).filter(([k, v]) => c[k] !== v);
   return bad.length === 0 ? { ok: true, detail: '全部一致' } : bad.map(([k, v]) => `${k}: ${c[k]} ≠ ${v}`).join(', ');
 });
-check('认证只有 IATF 16949 / ISO 14001 / ISO 45001 三项', () => {
-  const c = facts.company.certifications;
-  return c.length === 3 && c.includes('IATF 16949') && c.includes('ISO 14001') && c.includes('ISO 45001')
-    ? { ok: true, detail: c.join(', ') } : c.join(', ');
+check('公开认证只有有证书图片的 IATF 16949（ISO 两项只留内部证据）', () => {
+  const c = facts.company;
+  const pub = c.public_certifications ?? [];
+  const pubStandards = c.public_certification_standards ?? [];
+  if (pub.length !== 1 || pub[0] !== 'IATF 16949') return `public_certifications = ${JSON.stringify(pub)}`;
+  if (pubStandards.length !== 1 || !pubStandards[0].startsWith('IATF')) {
+    return `public_certification_standards = ${JSON.stringify(pubStandards)}`;
+  }
+  const leaked = [...pub, ...pubStandards].filter((x) => /ISO\s*14001|ISO\s*45001/i.test(x));
+  if (leaked.length) return `公开认证里仍有 ISO: ${leaked.join(', ')}`;
+  // 内部证据必须完整保留
+  const detail = facts.certifications_detail ?? [];
+  const internal = detail.filter((x) => x.is_public === false).map((x) => x.standard);
+  if (internal.length !== 2) return `内部记录缺失: ${JSON.stringify(internal)}`;
+  return {
+    ok: true,
+    detail: `公开 ${pub.join(', ')}；内部保留 ${internal.join(', ')}（无证书图片，不公开）`,
+  };
 });
 
 // =====================================================================
 section('客户可见范围（blocked / draft 绝不外露）');
 // =====================================================================
-check('完整数据库里有 blocked 产品，但一个都没进网站数据集', () => {
-  const blockedCount = fullProducts.filter((p) => p.status === 'blocked').length;
-  const leaked = products.filter((p) => p.status === 'blocked' || p.blocked);
-  return blockedCount > 0 && leaked.length === 0
-    ? { ok: true, detail: `完整库 ${blockedCount} 个 blocked，网站数据集 0 个` }
-    : `blocked=${blockedCount} leaked=${leaked.length}`;
+check('完整数据库里的不可发布状态（blocked / draft）一个都没进网站数据集', () => {
+  // Phase 4 说明：原断言写成「blockedCount > 0 && 无泄漏」。
+  // 但 data/derived/v2/products.json 当前已经没有 blocked 产品（blocked=0，draft=5），
+  // 所以 blockedCount > 0 这个**前提**已经过时 —— 断言失败的原因是数据形态变了，
+  // 不是网站数据集泄漏。业务规则本身没变：任何 blocked / draft 都不得对外可见。
+  // 下面把「前提」泛化为「全量库里确实存在至少一种不可发布状态」，
+  // 这样守卫仍然有实际约束力（当前由 draft=5 真实行使），泄漏检查一条都没删。
+  const blockedCount = fullProducts.filter((p) => p.status === 'blocked' || p.blocked).length;
+  const draftCount = fullProducts.filter((p) => p.status === 'draft').length;
+  const leakedBlocked = products.filter((p) => p.status === 'blocked' || p.blocked);
+  const leakedDraft = products.filter((p) => p.status === 'draft');
+
+  if (blockedCount + draftCount === 0) {
+    return '全量库里既没有 blocked 也没有 draft，这条守卫已失去约束力，请检查数据构建';
+  }
+  if (leakedBlocked.length || leakedDraft.length) {
+    return `泄漏：blocked=${leakedBlocked.length} draft=${leakedDraft.length}`;
+  }
+  return {
+    ok: true,
+    detail: `全量库 blocked=${blockedCount} draft=${draftCount}，网站数据集 0 泄漏`,
+  };
 });
 check('完整数据库里的 draft 产品没进网站数据集', () => {
   const draftCount = fullProducts.filter((p) => p.status === 'draft').length;
@@ -301,6 +359,117 @@ check('完整数据库里的 draft 产品没进网站数据集', () => {
     : 'draft 泄漏';
 });
 check('网站数据集里没有 published 状态', () => products.filter((p) => p.status === 'published').length === 0);
+
+// =====================================================================
+section('Phase 4.1 — 公开产品准入（有可靠主图才进网站）');
+// =====================================================================
+check('网站产品集合 == 从内部状态与源图片映射独立算出的公开集合', () => {
+  const site = new Set(products.map((p) => p.product_id));
+  const expected = new Set(independentlyComputedPublic);
+  const missing = [...expected].filter((id) => !site.has(id));
+  const extra = [...site].filter((id) => !expected.has(id));
+  return missing.length === 0 && extra.length === 0
+    ? { ok: true, detail: `${site.size} 个产品两侧完全一致` }
+    : `缺失 ${missing.length}（${missing.slice(0, 5).join(', ')}）越界 ${extra.length}（${extra.slice(0, 5).join(', ')}）`;
+});
+check('每个网站产品都有可靠主图（product-images.json 覆盖全部产品）', () => {
+  const imgs = new Set(Object.keys(productImages.images));
+  const noImage = products.filter((p) => !imgs.has(p.product_id)).map((p) => p.product_id);
+  return noImage.length === 0
+    ? { ok: true, detail: `${products.length}/${products.length} 都有图` }
+    : `${noImage.length} 个无图: ${noImage.slice(0, 8).join(', ')}`;
+});
+check('product-images.json 没有指向网站数据集之外的产品', () => {
+  const site = new Set(products.map((p) => p.product_id));
+  const extra = Object.keys(productImages.images).filter((id) => !site.has(id));
+  return extra.length === 0 ? { ok: true, detail: `${productImages.count} 条映射` } : extra.slice(0, 8).join(', ');
+});
+check('无可靠主图的产品一个都没进网站数据集', () => {
+  const site = new Set(products.map((p) => p.product_id));
+  const leaked = independentlyComputedExcludedNoImage.filter((id) => site.has(id));
+  return leaked.length === 0
+    ? { ok: true, detail: `${independentlyComputedExcludedNoImage.length} 个无图产品全部排除` }
+    : `泄漏: ${leaked.join(', ')}`;
+});
+check('业务方给出的 22 个无图产品与实际排除清单一致', () => {
+  const business = [
+    'BW-2043', 'BW-3003-3', 'BW-3004-5', 'BW-3021-1', 'BW-3192', 'BW-3508',
+    'BW-3565-2', 'BW-3566', 'BW-3567', 'BW-3655-2', 'BW-3665', 'BW-3902', 'BW-3919',
+    'BW-3964', 'BW-31002', 'BW-32748-2', 'BW-33111', 'BW-33561', 'BW-33655',
+    'BW-35116', 'BW-36583', 'BW-403229',
+  ];
+  const actual = [...independentlyComputedExcludedNoImage].sort();
+  const want = [...business].sort();
+  const missing = want.filter((x) => !actual.includes(x));
+  const extra = actual.filter((x) => !want.includes(x));
+  return missing.length === 0 && extra.length === 0
+    ? { ok: true, detail: `两侧都是 ${actual.length} 个，完全一致` }
+    : `少 ${missing.join(', ')} 多 ${extra.join(', ')}`;
+});
+check('无图产品没有任何 application 或 OE 索引行进入网站数据', () => {
+  const excluded = new Set(independentlyComputedExcludedNoImage);
+  const badApp = applications.filter((a) => excluded.has(a.product_id)).length;
+  const badOe = oeIndex.filter((e) => excluded.has(e.product_id)).length;
+  return badApp === 0 && badOe === 0
+    ? { ok: true, detail: '0 条 application / 0 条 OE 索引行' }
+    : `application ${badApp} 条、OE 索引 ${badOe} 条泄漏`;
+});
+check('无图产品的详情页数据不可达（getProductById 会返回 null）', () => {
+  const site = new Set(products.map((p) => p.product_id));
+  return site.has('BW-3004-5') ? 'BW-3004-5 仍在网站数据集里' : { ok: true, detail: 'BW-3004-5 不在网站数据集 → 详情页 404' };
+});
+check('示例 OE 2550035540 / 25500-35540 命中 3 条 application、2 个产品（BW-3503 / BW-3004-3）', () => {
+  const a = searchByOe('2550035540');
+  const b = searchByOe('25500-35540');
+  const bowens = [...new Set(a.exact.map((h) => h.product.bowen_no))].sort();
+  const ok = a.exact.length === 3 && b.exact.length === 3
+    && new Set(a.exact.map((h) => h.product.product_id)).size === 2
+    && bowens.join(',') === '3004-3,3503';
+  return ok
+    ? { ok: true, detail: `两种写法各 ${a.exact.length} 条 → Bowen ${bowens.join(', ')}` }
+    : `实际：2550035540=${a.exact.length} 条 / 25500-35540=${b.exact.length} 条 / Bowen ${bowens.join(', ')}`;
+});
+check('示例 OE 结果里不再出现无图产品 BW-3004-5', () => {
+  const r = searchByOe('2550035540');
+  const bad = r.exact.filter((h) => h.product.product_id === 'BW-3004-5');
+  return bad.length === 0 ? { ok: true, detail: `${r.exact.length} 条命中，无 BW-3004-5` } : 'BW-3004-5 仍然命中';
+});
+check('首页统计口径与列表/分类/OE 数量一致', () => {
+  const cats = {};
+  for (const p of products) cats[p.website_category ?? '(none)'] = (cats[p.website_category ?? '(none)'] ?? 0) + 1;
+  const catTotal = Object.values(cats).reduce((a, b) => a + b, 0);
+  const published = products.filter((p) => p.status === 'prototype_candidate' || p.status === 'searchable_noindex');
+  const distinctOe = new Set(oeIndex.map((e) => e.oe_search_key)).size;
+  return catTotal === products.length && published.length === products.length
+    ? {
+      ok: true,
+      detail: `${products.length} 产品 / ${applications.length} application / ${oeIndex.length} OE 行 / ${distinctOe} 个不同 OE`,
+    }
+    : `分类合计 ${catTotal} vs 产品 ${products.length}`;
+});
+check('公开地址字段与业务方确认的地址一致', () => {
+  const c = facts.company;
+  const want = 'No. 3, Duzhi Road, Qufu Electronic Information Industrial Park, '
+    + 'Jining City, Shandong Province, 273100, China';
+  return c.address_en === want && c.postal_code === '273100' && c.country === 'China'
+    ? { ok: true, detail: c.address_en }
+    : `实际 ${JSON.stringify({ address_en: c.address_en, postal_code: c.postal_code, country: c.country })}`;
+});
+check('site-facts 不再包含「没有地址」的旧字段/旧说法', () => {
+  const c = facts.company;
+  const blob = JSON.stringify(c);
+  const bad = /address_note|address pending|no street address|不展示地址|地址未确认/.test(blob);
+  return !bad && c.address_evidence ? { ok: true, detail: '已替换为 address_evidence（内部说明）' } : '仍残留旧地址说明';
+});
+check('荣誉/公示材料的 document_kind 正确（公示名单不是管理体系证书）', () => {
+  const honors = facts.honors ?? [];
+  const list = honors.filter((h) => h.document_kind === 'public_list').map((h) => h.name);
+  const bad = honors.filter((h) => !h.document_kind).length;
+  if (bad) return `${bad} 项缺 document_kind`;
+  return list.length === 1 && /public list/i.test(list[0])
+    ? { ok: true, detail: `${honors.length} 项，其中公示名单 ${list.length} 项：${list[0]}` }
+    : `公示名单标注异常: ${JSON.stringify(list)}`;
+});
 
 // =====================================================================
 console.log(`\n${'='.repeat(72)}`);

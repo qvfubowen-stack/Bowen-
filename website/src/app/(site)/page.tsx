@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import { OeSearchBox } from '@/components/OeSearchBox';
 import { ProductCard } from '@/components/ProductCard';
 import { MakeExplorer } from '@/components/MakeExplorer';
@@ -9,7 +10,24 @@ import {
   getPublishedProducts,
   getSiteFacts,
 } from '@/lib/db';
+import { companyImage, factoryImage } from '@/lib/media';
+import { absoluteUrl, canonicalFor } from '@/lib/site-url';
 import styles from './home.module.css';
+
+export const metadata: Metadata = {
+  title: 'Automotive Thermostat Manufacturer',
+  description:
+    'Bowen manufactures automotive thermostats, temperature sensors and vehicle switches in Qufu, '
+    + 'Shandong. Search by OE number or Bowen No., review recorded vehicle applications and send a '
+    + 'request for quotation.',
+  alternates: canonicalFor('/'),
+  openGraph: {
+    url: absoluteUrl('/'),
+    title: 'Bowen — Automotive Thermostat Manufacturer',
+    description: 'Search by OE number or Bowen No., review recorded vehicle applications and request a quotation.',
+    type: 'website',
+  },
+};
 
 export default async function HomePage() {
   const facts = await getSiteFacts();
@@ -20,6 +38,15 @@ export default async function HomePage() {
   const thermostats = categories.find((c) => c.category === 'thermostats');
   const c = facts.company;
 
+  // 真实工厂照片（来源：宣传手册）
+  const factoryHero = companyImage('factory-buildings.jpg');
+  const floorPhotos = [
+    factoryImage('production-workshop.jpg'),
+    factoryImage('machining-workshop.jpg'),
+    factoryImage('automatic-assembly-machine-24-series.jpg'),
+    factoryImage('thermostat-life-test-bench.jpg'),
+  ].filter((x): x is NonNullable<typeof x> => Boolean(x));
+
   return (
     <>
       {/* ============================================================
@@ -28,16 +55,17 @@ export default async function HomePage() {
       <section className={styles.hero}>
         <div className={`container ${styles.heroInner}`}>
           <div className={styles.heroCopy}>
-            <span className={styles.heroEyebrow}>
-              Since {c.since_year} · IATF 16949 · ISO 14001 · ISO 45001
+            <span className={styles.heroCompany}>
+              {c.legal_name_en}
             </span>
             <h1 className={styles.heroTitle}>
               Automotive Thermostat<br />Manufacturer
             </h1>
             <p className={styles.heroLead}>
-              Bowen engineers and manufactures thermostats for passenger cars and light commercial
-              vehicles. We supply importers, wholesalers and aftermarket distributors — not end
-              consumers.
+              Bowen develops, manufactures and supplies automotive components — thermostats,
+              temperature sensors and vehicle switches. Established in {c.since_year}, with a factory
+              built and expanded in {c.factory_built_year}. We work with manufacturers and
+              distributors, not end consumers.
             </p>
 
             <div className={styles.heroSearch}>
@@ -62,8 +90,8 @@ export default async function HomePage() {
               <Fact value={`${c.rd_projects}`} label="R&D projects" />
             </div>
             <p className={styles.heroNote}>
-              Search by OE number, Bowen No., vehicle or engine application. Every result shows the
-              exact matching application, not just a part number.
+              Search by OE number, Bowen No. or the vehicle/application text recorded in our product
+              data. Every result shows the exact matching application, not just a part number.
             </p>
           </div>
         </div>
@@ -83,15 +111,32 @@ export default async function HomePage() {
           </div>
 
           <ul className={styles.factGrid}>
-            <FactCard value={`${c.manufacturing_base_m2.toLocaleString('en-US')} m²`} label="Manufacturing base" />
+            <FactCard value={`${c.manufacturing_base_m2.toLocaleString('en-US')} m²`} label="Company site area" />
             <FactCard value={`${c.production_workshop_m2.toLocaleString('en-US')} m²`} label="Production workshop" />
             <FactCard
-              value={`${c.temperature_controlled_workshop_m2.toLocaleString('en-US')} m²`}
+              value={`${c.temperature_controlled_workshop_m2.toLocaleString('en-US')} m²+`}
               label="Temperature-controlled workshop"
             />
             <FactCard value={`${c.production_equipment_count}+`} label="Production equipment" />
-            <FactCard value={String(c.since_year)} label="Manufacturing since" />
+            <FactCard value={String(c.since_year)} label="Established" />
           </ul>
+
+          {factoryHero && (
+            <figure className={styles.factoryFigure}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={factoryHero.src}
+                alt={factoryHero.alt}
+                className={styles.factoryFigureImg}
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>
+                {factoryHero.caption}
+                <span className={styles.credit}>Source: Bowen company profile</span>
+              </figcaption>
+            </figure>
+          )}
         </div>
       </section>
 
@@ -152,7 +197,7 @@ export default async function HomePage() {
           {thermostats && (
             <p className={styles.categoryFootnote}>
               Thermostat line: <strong>{thermostats.productCount}</strong> products, each with OE
-              references and vehicle/engine applications recorded at row level.
+              references and vehicle/application records kept at row level.
             </p>
           )}
         </div>
@@ -165,10 +210,11 @@ export default async function HomePage() {
         <div className="container">
           <div className="sectionHead">
             <span className="eyebrow">Find by application</span>
-            <h2 className="h2">Find the right thermostat by vehicle make or engine</h2>
+            <h2 className="h2">Find the right thermostat by vehicle make</h2>
             <p className="lead">
-              Vehicle makes and engines below are taken from the applications recorded in our
-              product database — the same rows that power OE search.
+              The vehicle makes below are taken from the applications recorded in our product
+              database — the same rows that power OE search. Chinese and English spellings of the
+              same brand are counted once.
             </p>
           </div>
 
@@ -184,10 +230,11 @@ export default async function HomePage() {
           <div className={styles.explainGrid}>
             <div>
               <span className="eyebrow">OE search</span>
-              <h2 className="h2">Four ways to find a Bowen part</h2>
+              <h2 className="h2">Three ways to find a Bowen part</h2>
               <p className="lead">
                 Send us your sourcing list or look it up yourself. Either way you get the matched
-                application — OE, vehicle and engine together — not an isolated part number.
+                application — the OE reference together with the vehicle/application text — not an
+                isolated part number.
               </p>
 
               <ul className={styles.wayList}>
@@ -203,13 +250,8 @@ export default async function HomePage() {
                 />
                 <Way
                   n="3"
-                  title="By Vehicle"
-                  body="Filter products by vehicle make and model to see everything we make for that platform."
-                />
-                <Way
-                  n="4"
-                  title="By Engine"
-                  body="Engine codes such as EA111, 4G6 or 476ZQA are recorded per application row and are searchable."
+                  title="By Vehicle Make or Application Text"
+                  body="Filter by vehicle make, or search the vehicle/application field exactly as it is recorded in our product data."
                 />
               </ul>
             </div>
@@ -220,8 +262,7 @@ export default async function HomePage() {
                 <dl className={styles.answerList}>
                   <div><dt>Matched OE</dt><dd className="mono">2550035540</dd></div>
                   <div><dt>Bowen No.</dt><dd className="mono">3503</dd></div>
-                  <div><dt>Vehicle</dt><dd>Hyundai NF Sonata 2.7</dd></div>
-                  <div><dt>Engine</dt><dd>G6EA</dd></div>
+                  <div><dt>Application (as recorded)</dt><dd>Hyundai NF Sonata 2.7</dd></div>
                   <div><dt>Product type</dt><dd>Thermostat</dd></div>
                 </dl>
                 <p className={styles.explainNote}>
@@ -235,7 +276,7 @@ export default async function HomePage() {
               </div>
               <div className={styles.explainStat}>
                 <strong>{stats.applicationCount.toLocaleString('en-US')}</strong>
-                <span>application records, each keeping its own OE ↔ engine row</span>
+                <span>application records, each keeping its own OE ↔ application row</span>
               </div>
             </aside>
           </div>
@@ -260,24 +301,38 @@ export default async function HomePage() {
             <Process
               n="01"
               title="Machining"
-              body={`${c.production_equipment_count}+ production equipment across the ${c.production_workshop_m2.toLocaleString('en-US')} m² production workshop.`}
+              body={`CNC machining equipment in the ${c.production_workshop_m2.toLocaleString('en-US')} m² production workshop, part of a ${c.production_equipment_count}+ piece equipment base.`}
             />
             <Process
               n="02"
               title="Assembly"
-              body="Assembly uses controlled tooling and torque parameters on dedicated stations."
+              body="Component assembly in a dedicated assembly workshop, alongside dedicated work areas for automotive parts production."
             />
             <Process
               n="03"
               title="Automated Assembly"
-              body={`Automated assembly cells in the ${c.temperature_controlled_workshop_m2.toLocaleString('en-US')} m² temperature-controlled workshop.`}
+              body={`In-house developed assembly systems, including 20, 211 and 24 series automatic assembly machines, in the ${c.temperature_controlled_workshop_m2.toLocaleString('en-US')} m²+ temperature-controlled workshop.`}
             />
             <Process
               n="04"
               title="Testing"
-              body="Opening-temperature and sealing verification before packing, with results traceable to the production batch."
+              body="Integrated adjustment and testing machines plus a dedicated thermostat life test bench bring testing into the production environment."
             />
           </ol>
+
+          {floorPhotos.length > 0 && (
+            <ul className={styles.floorGrid}>
+              {floorPhotos.map((img) => (
+                <li key={img.src} className={styles.floorItem}>
+                  <figure className={styles.floorFigure}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={img.src} alt={img.alt} className={styles.floorImg} loading="lazy" decoding="async" />
+                  </figure>
+                  <span className={styles.floorCaption}>{img.caption}</span>
+                </li>
+              ))}
+            </ul>
+          )}
 
           <div className={styles.processCta}>
             <Link href="/factory" className="btn btnOutline">See the factory</Link>
@@ -293,14 +348,15 @@ export default async function HomePage() {
           <div className={styles.qualityGrid}>
             <div>
               <span className="eyebrow">Quality</span>
-              <h2 className="h2">Certified management systems, defined scope</h2>
+              <h2 className="h2">Certified management system, defined scope</h2>
               <p className="lead">
-                Bowen operates under three management systems. Each certificate has a stated scope;
-                we do not extend a certificate to products it does not cover.
+                Bowen manufactures thermostats under a certified automotive quality management system.
+                The certificate states a scope, and we publish that scope in full rather than
+                extending it to products it does not cover.
               </p>
 
               <ul className={styles.certList}>
-                {c.certifications.map((cert) => (
+                {c.public_certification_standards.map((cert) => (
                   <li key={cert}>
                     <span className={styles.certMark} aria-hidden="true">✓</span>
                     <div>
@@ -312,27 +368,28 @@ export default async function HomePage() {
               </ul>
 
               <p className={styles.qualityNote}>
-                Certificate scope and registration numbers are being collected from Bowen&apos;s
-                quality department and will be published with the certificate copies.
+                Certificate number, scope and dates are published in full on the{' '}
+                <Link href="/quality">quality page</Link>, together with the certificate original and
+                the clause 8.3 product design exclusion.
               </p>
             </div>
 
             <div className={styles.qualityCards}>
               <QualityCard
-                title="Incoming inspection"
-                body="Critical purchased components are checked against drawing before they enter the production line."
+                title="Certificate scope"
+                body="The IATF 16949:2016 certificate covers the manufacture of thermostats. Clause 8.3 product design is excluded from that scope, and we state the exclusion wherever the certificate is described."
               />
               <QualityCard
-                title="Opening-temperature testing"
-                body="Every thermostat type is verified at its rated opening temperature before release."
+                title="Adjustment and testing equipment"
+                body="The factory equipment includes integrated adjustment and testing machines for the sensing elements, shown on the quality page with the equipment photographs."
               />
               <QualityCard
-                title="Traceability"
-                body="Production batch and test result are linked, so a supplied part can be traced back."
+                title="Thermostat life test bench"
+                body="A dedicated thermostat life test bench is part of the in-house testing equipment recorded in the company materials."
               />
               <QualityCard
-                title="In-house metrology"
-                body="Dimensional checks with calibrated instruments in the temperature-controlled workshop."
+                title="Document pack on request"
+                body="Certificate copies, inspection report formats and packaging specifications are prepared on request for importers and distributors."
               />
             </div>
           </div>
@@ -374,8 +431,8 @@ export default async function HomePage() {
             <span className="eyebrow">Product database</span>
             <h2 className="h2">Real products from the current Bowen database</h2>
             <p className="lead">
-              These are live records from our product data — every OE reference and vehicle
-              application is traceable to a source row.
+              These are live records from our product data — each OE reference and
+              vehicle/application text is published exactly as it is recorded.
             </p>
           </div>
 
@@ -397,8 +454,8 @@ export default async function HomePage() {
           <div>
             <h2 className="h2">Send Your OE Number or Sourcing List</h2>
             <p className={styles.rfqCtaLead}>
-              Paste a single OE number or upload your full sourcing list. We reply with Bowen
-              numbers, applications and availability — normally within one working day.
+              Paste a single OE number or your full sourcing list. We reply with Bowen numbers,
+              applications and availability.
             </p>
           </div>
           <div className={styles.rfqCtaActions}>

@@ -93,21 +93,29 @@
 
 .error { font-size: 12.5px; color: var(--danger-600); }
 
-.upload { margin-top: 20px; display: flex; flex-direction: column; gap: 6px; }
-.file {
-  padding: 10px;
-  border: 1px dashed var(--ink-200);
+/*
+  Phase 5.1：原来的 .upload / .file / .fileName 三组样式随文件选择框一起删除
+  （那条流程既不上传也不进邮件，已确认无法完成）。
+  替换为一条纯文本提示：长清单请粘贴 OE 号或直接发邮件。
+*/
+.longListHint {
+  margin: 14px 0 0;
+  padding: 12px 14px;
+  border: 1px solid var(--navy-100);
+  border-left: 3px solid var(--navy-500);
   border-radius: var(--radius);
-  background: var(--ink-50);
-  font-size: 14px;
+  background: var(--navy-50);
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--navy-800);
 }
-.fileName { font-size: 13px; color: var(--ok-600); font-weight: 600; }
+.longListHint a { font-weight: 600; }
 
 .consent {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 0;
   font-size: 14px;
   color: var(--ink-600);
 }
@@ -137,6 +145,33 @@
 .altSearch > span { font-size: 14px; color: var(--ink-600); }
 .altSearch > div { flex: 1 1 320px; min-width: 0; }
 
+/* ---- 服务端返回的整表错误 ---- */
+.formNotice { margin-bottom: 4px; }
+.listErrors {
+  margin: 0;
+  padding: 14px 18px 14px 34px;
+  border: 1px solid var(--danger-600);
+  border-radius: var(--radius);
+  background: var(--danger-50, #fef2f2);
+  color: var(--danger-600);
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+.listErrors li + li { margin-top: 6px; }
+
+/* ---- 反垃圾 honeypot：真实用户不可见、不可聚焦 ---- */
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* ---- 隐私同意 ---- */
+.consentBlock { margin-top: 20px; display: flex; flex-direction: column; gap: 6px; }
+.consentLinks { font-size: 13px; color: var(--ink-500); margin: 0; }
+
 /* ---- 提交成功 ---- */
 .success {
   padding: 34px 30px;
@@ -156,27 +191,30 @@
   margin-bottom: 18px;
 }
 .success h2 { margin-bottom: 12px; }
-.successLead { font-size: 15px; color: var(--ink-600); line-height: 1.65; max-width: 680px; margin-bottom: 26px; }
+.successLead { font-size: 15px; color: var(--ink-600); line-height: 1.65; max-width: 680px; margin-bottom: 22px; }
 
-.payloadHead {
+/* 成功页展示的询价号（客户唯一需要留存的编号） */
+.inquiryNumber {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
+  align-items: baseline;
+  gap: 12px;
   flex-wrap: wrap;
-  margin-bottom: 12px;
-}
-.payloadCount {
-  font-size: 12.5px;
-  font-weight: 600;
-  color: var(--ok-600);
+  margin: 0 0 22px;
+  padding: 14px 18px;
+  border-radius: var(--radius);
   background: var(--white);
   border: 1px solid var(--ok-600);
-  border-radius: 999px;
-  padding: 2px 10px;
-  margin-left: 8px;
-  vertical-align: middle;
 }
+.inquiryNumber span {
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-500);
+}
+.inquiryNumber strong { font-size: 19px; color: var(--ink-900); }
+
+.successNotice { margin-bottom: 22px; }
+.contactHint { margin: 14px 0 0; font-size: 13px; color: var(--ink-500); line-height: 1.6; }
 
 /* 成功页：把用户真实填写的联系信息单独列出来，便于肉眼核对 */
 .contactSummary {
@@ -223,18 +261,6 @@
   .contactList { grid-template-columns: minmax(0, 1fr); }
   .contactList > div { flex-direction: column; align-items: flex-start; gap: 2px; }
   .contactList dd { text-align: left; }
-}
-.payload {
-  margin: 0;
-  padding: 18px;
-  border-radius: var(--radius);
-  background: var(--navy-900);
-  color: #b8e0ff;
-  font-family: var(--font-mono);
-  font-size: 12.5px;
-  line-height: 1.6;
-  overflow-x: auto;
-  max-height: 460px;
 }
 .successActions { display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
 

@@ -32,23 +32,38 @@ import {
   TOKEN_SPLIT_RE,
 } from './lib/v2-layout.mjs';
 import {
+  isBlank,
+  clean,
+  tokensOf,
+  oeSearchKey,
+  oeDisplayNormalized,
+  looksLikeOeToken,
+  parseBowenCell,
+  detectMisalignment,
+  extractTemperatures,
+} from './lib/oe-keys.mjs';
+import {
   PRODUCT_TYPES,
   LABEL_LOOKUP,
   normalizeLabel,
   STATUS,
-  MISALIGNMENT_RULES,
-  BOWEN_ALLOWED_RE,
-  BOWEN_MAX_LEN,
-  NON_OE_ANNOTATIONS,
   PROTOTYPE_RULES,
   COMPANY_FACTS,
+  CERTIFICATIONS_DETAIL,
+  HONORS,
   SHEET_ROLES,
 } from './config/product-types.mjs';
+import {
+  computePublicationGate,
+  publicationGateAudit,
+} from './lib/publication-gate.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const RAW_EXCEL = path.join(ROOT, 'data/raw/产品信息表1(1).xlsx');
 const MANIFEST = path.join(ROOT, 'data/raw/SOURCE-MANIFEST.json');
 const OVERRIDES = path.join(ROOT, 'data/raw/review-overrides-v2.json');
+const DECISIONS_PATH = path.join(ROOT, 'data/raw/business-decisions-v3.json');
+const PRODUCT_IMAGE_MAP = path.join(ROOT, 'data/processed/product-image-map.json');
 const OUT = path.join(ROOT, 'data/derived/v2');
 const REVIEW_OUT = path.join(ROOT, 'review');
 const WEBSITE_DATA = path.join(ROOT, 'website/src/data');
@@ -59,100 +74,18 @@ const log = (...a) => console.log(...a);
 // ---------------------------------------------------------------- helpers
 const sha256 = (p) => crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 
-/** OE 检索键：忽略大小写、空格、短横线、斜线 */
-export function oeSearchKey(raw) {
-  return String(raw ?? '')
-    .toUpperCase()
-    .replace(/[\u3000\s]/g, '')
-    .replace(/[-‐‑‒–—―]/g, '')
-    .replace(/[/\\]/g, '')
-    .replace(/[^A-Z0-9.]/g, '');
-}
+// 纯函数（oeSearchKey / oeDisplayNormalized / looksLikeOeToken / parseBowenCell /
+// detectMisalignment / extractTemperatures / tokensOf / clean / isBlank）已移入
+// tools/lib/oe-keys.mjs —— 这样 tools/verify-product-db-v2.mjs 只 import 纯函数，
+// 不会再因为 import 本构建脚本而触发写文件。
 
-/** OE 展示归一化：保留原文里的分隔符信息，只去空格与大小写差异 */
-export function oeDisplayNormalized(raw) {
-  return String(raw ?? '').trim().toUpperCase().replace(/[\u3000\s]+/g, '');
-}
-
-const isBlank = (v) => v == null || String(v).replace(/[\u3000\s]/g, '') === '';
-const clean = (v) => String(v ?? '').replace(/\u00a0/g, ' ').trim();
-
-function tokensOf(text) {
-  return clean(text).split(TOKEN_SPLIT_RE).map((t) => t.trim()).filter(Boolean);
-}
-
-/** 一个 token 像不像 OE 号（保守判定，用于 OE 索引列，不用于改写原文） */
-export function looksLikeOeToken(t) {
-  const s = String(t ?? '').trim();
-  if (!s) return false;
-  if (NON_OE_ANNOTATIONS.includes(s)) return false;
-  if (/[\u4e00-\u9fff]/.test(s)) return false; // 含中文的 token 是说明文字，不是 OE
-  if (!/[0-9]/.test(s)) return false;
-  if (!/^[A-Za-z0-9][A-Za-z0-9\-./+*_()]*$/.test(s)) return false;
-  const k = oeSearchKey(s);
-  if (k.length < 5 || k.length > 25) return false;
-  return true;
-}
-
+// ---------------------------------------------------------------- main
 /**
- * Bowen No. 单元格解析。
- * 关键裁决（依据最新版 Excel 实测）：
- *   - 字段里出现尺寸/温度/中文说明/括号备注 = 错位痕迹 → 记录 anomaly
- *   - 若首 token 仍是合法 Bowen No.（例如 "3029  92°" → 3029）：
- *         bowen_no 可读，溢出原文进 bowen_overflow_raw，记录标 needs_review
- *   - 若首 token 不是合法 Bowen No.（例如 "无小管" / "芯子编号：31052"）：
- *         bowen_no = null，记录必须 blocked
- * 绝不做自动修复、自动合并或删除。
+ * 全部构建逻辑都在 main() 里。
+ * 只有**直接执行本脚本**时才会调用（见文件末尾的入口守卫）；
+ * 其他脚本 import 本模块不会再触发写文件。
  */
-export function parseBowenCell(raw) {
-  const text = clean(raw).replace(/[\r\n]+/g, ' ');
-  const out = {
-    bowen_no_raw: text, bowen_no: '', bowen_note: '', bowen_overflow_raw: '',
-    tokens: [], anomalies: [], bowen_parse_status: 'empty',
-  };
-  if (!text) { out.bowen_parse_status = 'empty'; return out; }
-  out.tokens = tokensOf(text);
-  const first = out.tokens[0] ?? '';
-  const firstOk = BOWEN_ALLOWED_RE.test(first) && first.length <= BOWEN_MAX_LEN;
-  if (!firstOk) {
-    out.bowen_no = '';
-    out.bowen_note = text;
-    out.bowen_overflow_raw = text;
-    out.anomalies.push('bowen_unreadable_leading_token');
-    out.bowen_parse_status = 'unreadable';
-    return out;
-  }
-  out.bowen_no = first;
-  out.bowen_overflow_raw = out.tokens.slice(1).join(' ');
-  out.bowen_note = out.bowen_overflow_raw;
-  out.bowen_parse_status = out.bowen_overflow_raw ? 'recovered_with_overflow' : 'clean';
-  return out;
-}
-
-/** 错位检测：只看格式特征，不涉及任何产品知识 */
-export function detectMisalignment(bowenCellRaw) {
-  const text = clean(bowenCellRaw);
-  const hits = [];
-  for (const rule of MISALIGNMENT_RULES) {
-    if (rule.re.test(text)) hits.push({ rule: rule.id, note: rule.note });
-  }
-  return hits;
-}
-
-/** 温度（摄氏，必须带单位） */
-export function extractTemperatures(specs) {
-  const out = [];
-  if (!specs) return out;
-  const re = /([0-9]+(?:\.[0-9]+)?)\s*(?:℃|°\s*C|C°|摄氏|度)/g;
-  let m;
-  while ((m = re.exec(String(specs))) !== null) {
-    const v = Number(m[1]);
-    if (v > -60 && v < 250) out.push(v);
-  }
-  return [...new Set(out)];
-}
-
-// ---------------------------------------------------------------- guards
+export function main() {
 log('=== Phase 2.5 产品数据库重建 ===');
 const manifest = JSON.parse(fs.readFileSync(MANIFEST, 'utf8'));
 const expected = manifest.sources.product_excel_v2.sha256;
@@ -164,6 +97,30 @@ if (before !== expected) {
 log(`原始 Excel SHA-256 校验通过 ${before.slice(0, 16)}…`);
 
 const overrides = JSON.parse(fs.readFileSync(OVERRIDES, 'utf8'));
+
+// ---------------------------------------------------------------------------
+// 业务方人工决定（Phase 2.7）
+// 来源：data/raw/business-decisions-v3.json
+// 只执行文件里写明的决定，不做任何补充推断；product_type 仍然只来自人工。
+// ---------------------------------------------------------------------------
+const decisions = fs.existsSync(DECISIONS_PATH)
+  ? JSON.parse(fs.readFileSync(DECISIONS_PATH, 'utf8'))
+  : null;
+const typeReview = decisions?.product_type_review ?? null;
+/** 业务方确认类型的产品（未标黄部分） */
+const confirmedTypeSet = new Set(
+  (typeReview?.confirmed_bowen_nos ?? []).map((n) => String(n).toUpperCase()),
+);
+/** 业务方标黄要求舍弃的产品（不再出现在产品库） */
+const discardIdSet = new Set((typeReview?.discarded ?? []).map((d) => String(d.product_id)));
+/** 业务方要求补入库、需解除「辅助表孤立行」排除的单元格 */
+const unexcludeCells = new Set(
+  (decisions?.image_review?.D3_not_in_database_5?.unexclude_cell_refs ?? []).map(String),
+);
+const unexcludeSplit = decisions?.image_review?.D3_not_in_database_5?.unexclude_split_from_cell ?? null;
+if (typeReview) {
+  log(`业务方决定：确认类型 ${confirmedTypeSet.size} 个 / 舍弃 ${discardIdSet.size} 个 / 补入库 ${unexcludeCells.size + (unexcludeSplit ? 1 : 0)} 个`);
+}
 
 // ---------------------------------------------------------------- extract
 const wb = new Workbook(RAW_EXCEL);
@@ -271,17 +228,35 @@ for (let si = 0; si < wb.sheets.length; si++) {
         blocked,
       };
 
-      // 辅助表（工作表1）里整行没有 OE 也没有车型的孤立数字 = 天博编号，不是产品记录
+      // 辅助表（工作表1）里整行没有 OE 也没有车型的孤立数字 = 天博编号，不是产品记录。
+      // 例外：业务方在 business-decisions-v3 里明确要求补入库的编号（D3），
+      // 这些单元格解除排除，作为产品记录进入产品库。
       if (isAuxiliaryLabelRow(record, SHEET_ROLES.AUX)) {
-        auxiliaryLabelRows.push({
-          source_record_id: record.source_record_id,
-          source_sheet: record.source_sheet,
-          source_row: record.source_row,
-          cell_ref: record.source_cell_refs.bowen,
-          cell_raw: record.bowen_cell_raw,
-        });
-        count += 1;
-        continue;
+        const ref = `${record.source_sheet}!${record.source_cell_refs.bowen}`;
+        const tokens = record.bowen_cell_raw ? record.bowen_cell_raw.split(TOKEN_SPLIT_RE) : [];
+        const wantedByDecision = unexcludeCells.has(ref)
+          || (unexcludeSplit && unexcludeSplit.cell_ref === ref
+            && tokens.includes(unexcludeSplit.take_token));
+        if (!wantedByDecision) {
+          auxiliaryLabelRows.push({
+            source_record_id: record.source_record_id,
+            source_sheet: record.source_sheet,
+            source_row: record.source_row,
+            cell_ref: record.source_cell_refs.bowen,
+            cell_raw: record.bowen_cell_raw,
+          });
+          count += 1;
+          continue;
+        }
+        // 解除排除：若该单元格含多个编号，只取业务方指定的那一个
+        let keepRaw = record.bowen_cell_raw;
+        if (unexcludeSplit && unexcludeSplit.cell_ref === ref) {
+          keepRaw = unexcludeSplit.take_token;
+          record.bowen_no = unexcludeSplit.take_token;
+          record.bowen_cell_raw = keepRaw;
+        }
+        record.business_decision = 'included_by_D3';
+        log(`  D3 补入库：${ref} → Bowen ${record.bowen_no}`);
       }
 
       staging.push(record);
@@ -540,6 +515,23 @@ for (const p of products.values()) {
       kind: 'review_required',
       note: 'Bowen No. 单元格无法读出合法编号，程序不做任何推断；该产品被阻断，等待人工补充编号后再分类',
     };
+  } else if (confirmedTypeSet.has(String(p.bowen_no ?? '').toUpperCase())) {
+    // 业务方在 review/product-type-unconfirmed.xlsx 里逐行审阅后确认的类型
+    //（未标黄部分；标黄部分已由 discardIdSet 整体舍弃，走不到这里）
+    p.product_type = typeReview.confirmed_product_type;
+    p.product_type_source = 'human_review_confirmed';
+    p.product_type_verified = true;
+    p.product_type_subtype = null;
+    p.product_type_evidence = {
+      kind: 'human_review_confirmed',
+      raw_label: typeReview.confirmed_product_type,
+      source_file: typeReview.source_form,
+      source_sheet: 'review/product-type-unconfirmed.xlsx',
+      source_row: typeReview.confirmed_form_rows?.[String(p.bowen_no)] ?? null,
+      note: '业务方审阅类型待确认表后确认：未标黄部分类型均为 Thermostat',
+      reviewed_at: typeReview.reviewed_at,
+    };
+    p.product_type_raw_labels = [typeReview.confirmed_product_type];
   } else if (review) {
     p.product_type = review.type;
     p.product_type_source = review.source;
@@ -757,6 +749,50 @@ for (const p of prototype) {
 }
 log(`选出 Prototype 产品 ${prototype.length} 个（要求 ≥${PROTOTYPE_RULES.min} 且 ≤${PROTOTYPE_RULES.max}）`);
 
+// ---------------------------------------------------------------- 业务方舍弃
+/**
+ * 业务方在 review/product-type-unconfirmed.xlsx 里用黄色（#FFFF00）标出的 30 个产品
+ * 要求整体舍弃，不再出现在产品库。
+ * 安全性：按 product_id 匹配，并交叉校验 bowen_cell_raw，不一致就报错（避免误删）。
+ */
+let discardedProducts = [];
+if (discardIdSet.size) {
+  const discardByRaw = new Map(
+    (typeReview.discarded ?? []).map((d) => [String(d.product_id), d.bowen_cell_raw]),
+  );
+  for (const p of products.values()) {
+    if (!discardIdSet.has(p.product_id)) continue;
+    const expectRaw = discardByRaw.get(p.product_id);
+    const actualRaw = p.bowen_cell_raw_first_seen;
+    if (expectRaw != null && actualRaw != null
+      && String(expectRaw).trim() !== String(actualRaw).trim()) {
+      console.error(
+        `FATAL 舍弃校验失败：${p.product_id} 的 bowen 原文与决定文件不一致\n`
+        + `  决定文件: ${JSON.stringify(expectRaw)}\n  实际抽取: ${JSON.stringify(actualRaw)}`,
+      );
+      process.exit(6);
+    }
+    discardedProducts.push({
+      product_id: p.product_id,
+      bowen_cell_raw: actualRaw,
+      application_count: p.working.apps.size,
+      reason: typeReview.discard_reason,
+    });
+  }
+  if (discardedProducts.length !== discardIdSet.size) {
+    console.error(
+      `FATAL 舍弃数量不符：决定文件 ${discardIdSet.size} 个，实际匹配到 ${discardedProducts.length} 个`,
+    );
+    process.exit(6);
+  }
+  for (const [key, p] of [...products.entries()]) {
+    if (discardIdSet.has(p.product_id)) products.delete(key);
+  }
+  log(`按业务方标黄舍弃 ${discardedProducts.length} 个产品（及其 application），已移出产品库`);
+}
+/** 被舍弃产品的 product_id 集合，用于一并过滤 application 与 OE 索引 */
+const discardedProductIds = new Set(discardedProducts.map((d) => d.product_id));
+
 // ---------------------------------------------------------------- finalize product rows
 const productRows = [...products.values()]
   .map((p) => {
@@ -813,6 +849,8 @@ const productRows = [...products.values()]
   });
 
 const applicationRows = allApplications
+  // 被业务方舍弃的产品，其 application 一并移出产品库
+  .filter((a) => !discardedProductIds.has(a.product_id))
   .map((a) => {
     // 注意：oe_tokens 必须保留 —— 网站与 OE 索引都依赖它逐个展示/匹配 OE。
     const { merged_source_records, source_sheets, blocked_reasons, oe_tokens_not_oe_like, ...rest } = a;
@@ -827,7 +865,8 @@ const applicationRows = allApplications
     };
   });
 
-const oeIndexRows = oeIndex;
+const keptAppIds = new Set(applicationRows.map((a) => a.application_id));
+const oeIndexRows = oeIndex.filter((e) => keptAppIds.has(e.application_id) && !discardedProductIds.has(e.product_id));
 
 // ---------------------------------------------------------------- stats
 const typeCounts = {};
@@ -938,44 +977,46 @@ writeJson(path.join(OUT, 'rejected-label-candidates.json'), rejectedLabelCandida
 writeJson(path.join(OUT, 'auxiliary-excluded-rows.json'), auxiliaryLabelRows);
 writeJson(path.join(OUT, 'stats.json'), stats);
 
-// 网站原型直接消费的数据集。
-// 范围：全部「可对外」产品 —— prototype_candidate（首页/原型重点展示的 20 个）
-//       + searchable_noindex（数据完整、可搜索、暂不收录）。
-// draft 与 blocked 一律不进网站数据集。
+// ---------------------------------------------------------------------------
+// 网站数据集（Phase 4.1 准入规则）
+// ---------------------------------------------------------------------------
+// 公开产品必须同时满足：
+//   1. 状态属于 prototype_candidate / searchable_noindex（draft / blocked 一律不进）；
+//   2. 未 blocked；
+//   3. 在源图片映射里有可靠主图（mapping_status === 'exact' 且 is_primary_image === true，
+//      且每个 product_id 只有一张选定主图）；
+//   4. 至少有 1 条可对外展示的 application。
+// 判定集中在 tools/lib/publication-gate.mjs —— 与 tools/p4-build-site-assets.mjs 共用同一函数，
+// 因此「网站产品集合」与「网站产品图集合」必然一致，不需要互相读对方的产物。
+// 被排除的产品（含 22 个无可靠主图的产品）在 data/derived/v2 与 data/processed 里完整保留。
 const prototypeIds = new Set(prototype.map((p) => p.product_id));
-const siteStatuses = new Set([STATUS.PROTOTYPE_CANDIDATE, STATUS.SEARCHABLE_NOINDEX]);
-const siteProducts = productRows
-  .filter((p) => siteStatuses.has(p.status) && !p.blocked)
-  .map((p) => {
-    // 网站数据集里只保留真正会展示的 application 引用，避免出现悬空 id。
-    // 完整引用仍在 data/derived/v2/products.json 里（包含 blocked / needs_review）。
-    const visibleApps = applicationRows.filter(
-      (a) => a.product_id === p.product_id && !a.blocked && !a.needs_review
-        // 既没有 OE 也没有车型的空壳行不在网站上展示（完整记录仍留在 data/derived/v2）
-        && (a.oe_numbers_raw || a.vehicle_application_raw),
-    );
-    return {
-      ...p,
-      application_ids: visibleApps.map((a) => a.application_id),
-      application_count: visibleApps.length,
-      searchable_application_count: visibleApps.length,
-    };
-  })
-  .filter((p) => p.application_count > 0);
-const siteProductIdSet = new Set(siteProducts.map((p) => p.product_id));
-const siteAppIds = new Set(
-  applicationRows
-    .filter((a) => siteProductIdSet.has(a.product_id) && !a.blocked && !a.needs_review
-      && (a.oe_numbers_raw || a.vehicle_application_raw))
-    .map((a) => a.application_id),
-);
+const publicationGate = computePublicationGate({
+  products: productRows,
+  applications: applicationRows,
+  imageMap: JSON.parse(fs.readFileSync(PRODUCT_IMAGE_MAP, 'utf8')),
+});
+const siteProducts = publicationGate.publicProducts.map((p) => {
+  // 网站数据集里只保留真正会展示的 application 引用，避免出现悬空 id。
+  // 完整引用仍在 data/derived/v2/products.json 里（包含 blocked / needs_review）。
+  const ids = publicationGate.visibleApplicationIdsByProduct.get(p.product_id) ?? [];
+  return {
+    ...p,
+    application_ids: ids,
+    application_count: ids.length,
+    searchable_application_count: ids.length,
+  };
+});
+const siteAppIds = publicationGate.publishedApplicationIds;
 const siteApps = applicationRows.filter((a) => siteAppIds.has(a.application_id));
 const siteOe = oeIndexRows.filter((e) => siteAppIds.has(e.application_id));
 writeJson(path.join(WEBSITE_DATA, 'products.json'), siteProducts);
 writeJson(path.join(WEBSITE_DATA, 'applications.json'), siteApps);
 writeJson(path.join(WEBSITE_DATA, 'oe-index.json'), siteOe);
+writeJson(path.join(OUT, 'publication-gate.json'), publicationGateAudit(publicationGate, { now: NOW }));
 writeJson(path.join(WEBSITE_DATA, 'site-facts.json'), {
   company: COMPANY_FACTS,
+  certifications_detail: CERTIFICATIONS_DETAIL,
+  honors: HONORS,
   prototype_product_ids: [...prototypeIds],
   prototype_product_count: prototypeIds.size,
   site_product_count: siteProducts.length,
@@ -1002,3 +1043,12 @@ log(`Thermostat ${typeCounts.Thermostat ?? 0} | 类型未确认 ${stats.unknown_
 log(`OE 索引 ${stats.oe_index_count} 条 / 去重后 ${stats.distinct_normalized_oe_count} 个`);
 log(`状态：${JSON.stringify(statusCounts)}`);
 log(`原始 Excel SHA-256 运行后一致：${after === before}`);
+}
+
+// ---------------------------------------------------------------- 入口守卫
+// 只有 `node tools/build-product-db-v2.mjs` 才会执行构建；
+// 被其他脚本 import（例如校验脚本）时不会产生任何写文件副作用。
+const invokedDirectly = process.argv[1]
+  && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+
+if (invokedDirectly) main();

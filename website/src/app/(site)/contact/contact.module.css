@@ -10,14 +10,52 @@
   background: var(--white);
 }
 .cardWide { grid-column: 1 / -1; }
-.cardPlaceholder {
-  grid-column: 1 / -1;
-  border-style: dashed;
-  border-color: var(--warn-600);
-  background: var(--warn-50);
-}
 .card h2 { margin-bottom: 10px; }
 .cardBody { font-size: 14.5px; color: var(--ink-600); line-height: 1.65; max-width: 640px; }
+
+/* ---- 公司主体卡片 ---- */
+.companyCard {
+  background: linear-gradient(180deg, var(--ink-50) 0%, var(--white) 60%);
+  border-color: var(--navy-100, var(--ink-200));
+}
+.companyCard h2 { margin-bottom: 4px; }
+.companyCard .details { max-width: 560px; }
+/* 地址较长，左对齐并允许换行（其它字段维持右对齐） */
+.companyCard .details dd.address {
+  text-align: left;
+  max-width: 340px;
+  line-height: 1.6;
+}
+.legalZh {
+  font-size: 15px;
+  color: var(--ink-600);
+  letter-spacing: 0.02em;
+  margin-bottom: 4px;
+}
+.companyNote {
+  margin-top: 16px;
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--ink-500);
+  max-width: 640px;
+}
+
+/* ---- 国内平台（次要） ---- */
+.marketCard { background: var(--ink-50); border-style: dashed; }
+.marketUrl {
+  margin-top: 12px;
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 15px;
+  color: var(--ink-900);
+  word-break: break-all;
+}
+.marketNote {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ink-500);
+  max-width: 640px;
+}
 
 .details { margin: 18px 0 0; display: flex; flex-direction: column; }
 .details > div {
@@ -34,23 +72,6 @@
 
 .quickLinks { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
 
-.pendingList {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px 22px;
-  margin-top: 18px;
-}
-.pendingList li { font-size: 14px; color: var(--ink-700); padding-left: 16px; position: relative; }
-.pendingList li::before {
-  content: '';
-  position: absolute;
-  left: 0; top: 8px;
-  width: 5px; height: 5px;
-  border-radius: 50%;
-  background: var(--warn-600);
-}
-.pendingNote { margin-top: 18px; font-size: 13px; color: var(--ink-600); font-style: italic; }
-
 .cta {
   background: linear-gradient(120deg, var(--navy-800) 0%, var(--navy-700) 100%);
   color: rgba(255, 255, 255, 0.8);
@@ -65,7 +86,6 @@
   .grid { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 560px) {
-  .pendingList { grid-template-columns: minmax(0, 1fr); }
   .details > div { flex-direction: column; gap: 3px; }
   .details dd { text-align: left; }
   .ctaInner { gap: 22px; }

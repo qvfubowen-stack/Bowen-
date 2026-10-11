@@ -6444,61 +6444,6 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00098",
-  "product_id": "BW-UNRESOLVED-0001",
-  "bowen_no": null,
-  "oe_numbers_raw": "2742000015",
-  "oe_numbers_normalized": [
-   "2742000015"
-  ],
-  "oe_number_raw": "2742000015",
-  "oe_number_normalized": [
-   "2742000015"
-  ],
-  "oe_tokens": [
-   "2742000015"
-  ],
-  "vehicle_application_raw": "奔驰 C200 E200 GLA200 GLC200  CLA200 C180 C260 E200 E260L GLC260 GLK200 GLK260",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": "奔驰 C200 E200 GLA200 GLC200  CLA200 C180 C260 E200 E260L GLC260 GLK200 GLK260",
-  "opening_temperature_c": [
-   97
-  ],
-  "application_notes": null,
-  "source_sheet": "综合产品信息表",
-  "source_row": 52,
-  "source_record_id": "SRC-00098",
-  "source_cell_refs": {
-   "oe": "I52",
-   "vehicle": "J52",
-   "bowen": "K52",
-   "specs": "L52",
-   "seq": "G52"
-  },
-  "section_label_raw": "节温器",
-  "verification_status": "unverified",
-  "blocked": false,
-  "needs_review": false,
-  "data_status": "ok",
-  "misalignment_notes": [],
-  "bowen_cell_raw": "",
-  "bowen_overflow_raw": null,
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00098"
-  ],
-  "source_sheets": [
-   "综合产品信息表"
-  ],
-  "blocked_reasons": [],
-  "oe_token_count": 1,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
   "application_id": "APP-00099",
   "product_id": "BW-3579",
   "bowen_no": "3579",
@@ -8503,77 +8448,6 @@
   ],
   "blocked_reasons": [],
   "oe_token_count": 1,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00132",
-  "product_id": "BW-UNRESOLVED-0002",
-  "bowen_no": null,
-  "oe_numbers_raw": "271664  7431397947  7436842409  7439180811  271417  9180811",
-  "oe_numbers_normalized": [
-   "271664",
-   "7431397947",
-   "7436842409",
-   "7439180811",
-   "271417",
-   "9180811"
-  ],
-  "oe_number_raw": "271664  7431397947  7436842409  7439180811  271417  9180811",
-  "oe_number_normalized": [
-   "271664",
-   "7431397947",
-   "7436842409",
-   "7439180811",
-   "271417",
-   "9180811"
-  ],
-  "oe_tokens": [
-   "271664",
-   "7431397947",
-   "7436842409",
-   "7439180811",
-   "271417",
-   "9180811"
-  ],
-  "vehicle_application_raw": "沃尔沃",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": "沃尔沃",
-  "opening_temperature_c": [
-   90,
-   82
-  ],
-  "application_notes": null,
-  "source_sheet": "综合产品信息表",
-  "source_row": 69,
-  "source_record_id": "SRC-00132",
-  "source_cell_refs": {
-   "oe": "I69",
-   "vehicle": "J69",
-   "bowen": "K69",
-   "specs": "L69",
-   "seq": "G69"
-  },
-  "section_label_raw": "节温器",
-  "verification_status": "unverified",
-  "blocked": false,
-  "needs_review": false,
-  "data_status": "ok",
-  "misalignment_notes": [],
-  "bowen_cell_raw": "",
-  "bowen_overflow_raw": null,
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00132"
-  ],
-  "source_sheets": [
-   "综合产品信息表"
-  ],
-  "blocked_reasons": [],
-  "oe_token_count": 6,
   "oe_tokens_not_oe_like_count": 0
  },
  {
@@ -13236,77 +13110,6 @@
   "oe_tokens_not_oe_like_count": 1
  },
  {
-  "application_id": "APP-00208",
-  "product_id": "BW-UNRESOLVED-0003",
-  "bowen_no": null,
-  "oe_numbers_raw": "4837166SE 98463637 97210294 500329622 98463647",
-  "oe_numbers_normalized": [
-   "4837166SE",
-   "98463637",
-   "97210294",
-   "500329622",
-   "98463647"
-  ],
-  "oe_number_raw": "4837166SE 98463637 97210294 500329622 98463647",
-  "oe_number_normalized": [
-   "4837166SE",
-   "98463637",
-   "97210294",
-   "500329622",
-   "98463647"
-  ],
-  "oe_tokens": [
-   "4837166SE",
-   "98463637",
-   "97210294",
-   "500329622",
-   "98463647"
-  ],
-  "vehicle_application_raw": "南京依维柯 福田483",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": "南京依维柯 福田483",
-  "opening_temperature_c": null,
-  "application_notes": "Bowen No. 单元格原文为 \"3919(35401)\"，错位内容原样保留于此：3919(35401)",
-  "source_sheet": "综合产品信息表",
-  "source_row": 107,
-  "source_record_id": "SRC-00208",
-  "source_cell_refs": {
-   "oe": "I107",
-   "vehicle": "J107",
-   "bowen": "K107",
-   "specs": "L107",
-   "seq": "G107"
-  },
-  "section_label_raw": "节温器",
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "parenthetical_note: Bowen 字段出现括号备注",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "3919(35401)",
-  "bowen_overflow_raw": "3919(35401)",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00208"
-  ],
-  "source_sheets": [
-   "综合产品信息表"
-  ],
-  "blocked_reasons": [
-   "parenthetical_note",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 5,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
   "application_id": "APP-00209",
   "product_id": "BW-3267",
   "bowen_no": "3267",
@@ -14859,72 +14662,6 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00232",
-  "product_id": "BW-UNRESOLVED-0004",
-  "bowen_no": null,
-  "oe_numbers_raw": "2120058G04 21200C1201",
-  "oe_numbers_normalized": [
-   "2120058G04",
-   "21200C1201"
-  ],
-  "oe_number_raw": "2120058G04 21200C1201",
-  "oe_number_normalized": [
-   "2120058G04",
-   "21200C1201"
-  ],
-  "oe_tokens": [
-   "2120058G04",
-   "21200C1201"
-  ],
-  "vehicle_application_raw": "朝柴QD32 丰田4500",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": "朝柴QD32 丰田4500",
-  "opening_temperature_c": [
-   76
-  ],
-  "application_notes": "Bowen No. 单元格原文为 \"30302（3334胶圈）\"，错位内容原样保留于此：30302（3334胶圈）",
-  "source_sheet": "综合产品信息表",
-  "source_row": 120,
-  "source_record_id": "SRC-00232",
-  "source_cell_refs": {
-   "oe": "C120",
-   "vehicle": "D120",
-   "bowen": "E120",
-   "specs": "F120",
-   "seq": "A120"
-  },
-  "section_label_raw": "节温器",
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "parenthetical_note: Bowen 字段出现括号备注",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "30302（3334胶圈）",
-  "bowen_overflow_raw": "30302（3334胶圈）",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00232"
-  ],
-  "source_sheets": [
-   "综合产品信息表"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "parenthetical_note",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 2,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
   "application_id": "APP-00233",
   "product_id": "BW-35006",
   "bowen_no": "35006",
@@ -15181,67 +14918,6 @@
   ],
   "blocked_reasons": [],
   "oe_token_count": 3,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00237",
-  "product_id": "BW-UNRESOLVED-0005",
-  "bowen_no": null,
-  "oe_numbers_raw": "21200-2HB0B",
-  "oe_numbers_normalized": [
-   "21200-2HB0B"
-  ],
-  "oe_number_raw": "21200-2HB0B",
-  "oe_number_normalized": [
-   "212002HB0B"
-  ],
-  "oe_tokens": [
-   "21200-2HB0B"
-  ],
-  "vehicle_application_raw": "郑州日产  Y24",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": "郑州日产  Y24",
-  "opening_temperature_c": null,
-  "application_notes": "Bowen No. 单元格原文为 \"3929(3019胶圈)\"，错位内容原样保留于此：3929(3019胶圈)",
-  "source_sheet": "综合产品信息表",
-  "source_row": 122,
-  "source_record_id": "SRC-00237",
-  "source_cell_refs": {
-   "oe": "I122",
-   "vehicle": "J122",
-   "bowen": "K122",
-   "specs": "L122",
-   "seq": "G122"
-  },
-  "section_label_raw": "节温器",
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "parenthetical_note: Bowen 字段出现括号备注",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "3929(3019胶圈)",
-  "bowen_overflow_raw": "3929(3019胶圈)",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00237"
-  ],
-  "source_sheets": [
-   "综合产品信息表"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "parenthetical_note",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 1,
   "oe_tokens_not_oe_like_count": 0
  },
  {
@@ -15538,84 +15214,6 @@
   ],
   "blocked_reasons": [],
   "oe_token_count": 1,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00243",
-  "product_id": "BW-UNRESOLVED-0006",
-  "bowen_no": null,
-  "oe_numbers_raw": "8980170272 8974357940 8980170271       8-98017-027-2    8-98017027-1    8-98017-027-0",
-  "oe_numbers_normalized": [
-   "8980170272",
-   "8974357940",
-   "8980170271",
-   "8-98017-027-2",
-   "8-98017027-1",
-   "8-98017-027-0"
-  ],
-  "oe_number_raw": "8980170272 8974357940 8980170271       8-98017-027-2    8-98017027-1    8-98017-027-0",
-  "oe_number_normalized": [
-   "8980170272",
-   "8974357940",
-   "8980170271",
-   "8980170272",
-   "8980170271",
-   "8980170270"
-  ],
-  "oe_tokens": [
-   "8980170272",
-   "8974357940",
-   "8980170271",
-   "8-98017-027-2",
-   "8-98017027-1",
-   "8-98017-027-0"
-  ],
-  "vehicle_application_raw": "五十铃D-MAX 4JJ11 1.9T",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": "五十铃D-MAX 4JJ11 1.9T",
-  "opening_temperature_c": [
-   85
-  ],
-  "application_notes": "Bowen No. 单元格原文为 \"35116（德本）\"，错位内容原样保留于此：35116（德本）",
-  "source_sheet": "综合产品信息表",
-  "source_row": 125,
-  "source_record_id": "SRC-00243",
-  "source_cell_refs": {
-   "oe": "I125",
-   "vehicle": "J125",
-   "bowen": "K125",
-   "specs": "L125",
-   "seq": "G125"
-  },
-  "section_label_raw": "节温器",
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "parenthetical_note: Bowen 字段出现括号备注",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "35116（德本）",
-  "bowen_overflow_raw": "35116（德本）",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00243"
-  ],
-  "source_sheets": [
-   "综合产品信息表"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "parenthetical_note",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 6,
   "oe_tokens_not_oe_like_count": 0
  },
  {
@@ -15959,84 +15557,6 @@
   ],
   "blocked_reasons": [],
   "oe_token_count": 4,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00250",
-  "product_id": "BW-UNRESOLVED-0007",
-  "bowen_no": null,
-  "oe_numbers_raw": "1634054010 9091603062 9091603072 9091603099 9091603106 9091603142",
-  "oe_numbers_normalized": [
-   "1634054010",
-   "9091603062",
-   "9091603072",
-   "9091603099",
-   "9091603106",
-   "9091603142"
-  ],
-  "oe_number_raw": "1634054010 9091603062 9091603072 9091603099 9091603106 9091603142",
-  "oe_number_normalized": [
-   "1634054010",
-   "9091603062",
-   "9091603072",
-   "9091603099",
-   "9091603106",
-   "9091603142"
-  ],
-  "oe_tokens": [
-   "1634054010",
-   "9091603062",
-   "9091603072",
-   "9091603099",
-   "9091603106",
-   "9091603142"
-  ],
-  "vehicle_application_raw": "丰田",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": "丰田",
-  "opening_temperature_c": [
-   88
-  ],
-  "application_notes": "Bowen No. 单元格原文为 \"3041-2（3003）胶圈\"，错位内容原样保留于此：3041-2（3003）胶圈",
-  "source_sheet": "综合产品信息表",
-  "source_row": 129,
-  "source_record_id": "SRC-00250",
-  "source_cell_refs": {
-   "oe": "C129",
-   "vehicle": "D129",
-   "bowen": "E129",
-   "specs": "F129",
-   "seq": "A129"
-  },
-  "section_label_raw": "节温器",
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "parenthetical_note: Bowen 字段出现括号备注",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "3041-2（3003）胶圈",
-  "bowen_overflow_raw": "3041-2（3003）胶圈",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00250"
-  ],
-  "source_sheets": [
-   "综合产品信息表"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "parenthetical_note",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 6,
   "oe_tokens_not_oe_like_count": 0
  },
  {
@@ -26659,62 +26179,6 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00423",
-  "product_id": "BW-UNRESOLVED-0008",
-  "bowen_no": null,
-  "oe_numbers_raw": "084941521  014919361",
-  "oe_numbers_normalized": [
-   "084941521",
-   "014919361"
-  ],
-  "oe_number_raw": "084941521  014919361",
-  "oe_number_normalized": [
-   "084941521",
-   "014919361"
-  ],
-  "oe_tokens": [
-   "084941521",
-   "014919361"
-  ],
-  "vehicle_application_raw": "桑塔纳 长杆",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": "桑塔纳 长杆",
-  "opening_temperature_c": null,
-  "application_notes": null,
-  "source_sheet": "大众系列",
-  "source_row": 27,
-  "source_record_id": "SRC-00454",
-  "source_cell_refs": {
-   "oe": "I27",
-   "vehicle": "J27",
-   "bowen": "K27",
-   "specs": "L27",
-   "seq": "G27"
-  },
-  "section_label_raw": null,
-  "verification_status": "unverified",
-  "blocked": false,
-  "needs_review": false,
-  "data_status": "ok",
-  "misalignment_notes": [],
-  "bowen_cell_raw": "",
-  "bowen_overflow_raw": null,
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00454"
-  ],
-  "source_sheets": [
-   "大众系列"
-  ],
-  "blocked_reasons": [],
-  "oe_token_count": 2,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
   "application_id": "APP-00424",
   "product_id": "BW-6003",
   "bowen_no": "6003",
@@ -26785,80 +26249,6 @@
   ],
   "blocked_reasons": [],
   "oe_token_count": 7,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00425",
-  "product_id": "BW-UNRESOLVED-0009",
-  "bowen_no": null,
-  "oe_numbers_raw": "02T945415  02K945415C  02K945415D  02K945415E  02T945415D  1119746  1213353  1M2115520AA",
-  "oe_numbers_normalized": [
-   "02T945415",
-   "02K945415C",
-   "02K945415D",
-   "02K945415E",
-   "02T945415D",
-   "1119746",
-   "1213353",
-   "1M2115520AA"
-  ],
-  "oe_number_raw": "02T945415  02K945415C  02K945415D  02K945415E  02T945415D  1119746  1213353  1M2115520AA",
-  "oe_number_normalized": [
-   "02T945415",
-   "02K945415C",
-   "02K945415D",
-   "02K945415E",
-   "02T945415D",
-   "1119746",
-   "1213353",
-   "1M2115520AA"
-  ],
-  "oe_tokens": [
-   "02T945415",
-   "02K945415C",
-   "02K945415D",
-   "02K945415E",
-   "02T945415D",
-   "1119746",
-   "1213353",
-   "1M2115520AA"
-  ],
-  "vehicle_application_raw": "宝来、波罗.新桑塔纳新捷达 途观 斯柯达系列",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": "宝来、波罗.新桑塔纳新捷达 途观 斯柯达系列",
-  "opening_temperature_c": null,
-  "application_notes": null,
-  "source_sheet": "大众系列",
-  "source_row": 28,
-  "source_record_id": "SRC-00456",
-  "source_cell_refs": {
-   "oe": "I28",
-   "vehicle": "J28",
-   "bowen": "K28",
-   "specs": "L28",
-   "seq": "G28"
-  },
-  "section_label_raw": null,
-  "verification_status": "unverified",
-  "blocked": false,
-  "needs_review": false,
-  "data_status": "ok",
-  "misalignment_notes": [],
-  "bowen_cell_raw": "",
-  "bowen_overflow_raw": null,
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00456"
-  ],
-  "source_sheets": [
-   "大众系列"
-  ],
-  "blocked_reasons": [],
-  "oe_token_count": 8,
   "oe_tokens_not_oe_like_count": 0
  },
  {
@@ -28085,67 +27475,6 @@
    "descriptive_text"
   ],
   "oe_token_count": 4,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00444",
-  "product_id": "BW-UNRESOLVED-0010",
-  "bowen_no": null,
-  "oe_numbers_raw": "2742000015",
-  "oe_numbers_normalized": [
-   "2742000015"
-  ],
-  "oe_number_raw": "2742000015",
-  "oe_number_normalized": [
-   "2742000015"
-  ],
-  "oe_tokens": [
-   "2742000015"
-  ],
-  "vehicle_application_raw": "奔驰 C200 E200 GLA200 GLC200  CLA200 C180 C260 E200 E260L GLC260 GLK200 GLK260",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": "奔驰 C200 E200 GLA200 GLC200  CLA200 C180 C260 E200 E260L GLC260 GLK200 GLK260",
-  "opening_temperature_c": [
-   97
-  ],
-  "application_notes": "Bowen No. 单元格原文为 \"无小管\"，错位内容原样保留于此：无小管",
-  "source_sheet": "宝马奔驰系列",
-  "source_row": 4,
-  "source_record_id": "SRC-00496",
-  "source_cell_refs": {
-   "oe": "I4",
-   "vehicle": "J4",
-   "bowen": "K4",
-   "specs": "L4",
-   "seq": "G4"
-  },
-  "section_label_raw": null,
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "无小管",
-  "bowen_overflow_raw": "无小管",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00496"
-  ],
-  "source_sheets": [
-   "宝马奔驰系列"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 1,
   "oe_tokens_not_oe_like_count": 0
  },
  {
@@ -31746,85 +31075,6 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00500",
-  "product_id": "BW-UNRESOLVED-0011",
-  "bowen_no": null,
-  "oe_numbers_raw": "9091603092 9091603093  9091603123 9091603101 9091603123 9091603143 9091603201",
-  "oe_numbers_normalized": [
-   "9091603092",
-   "9091603093",
-   "9091603123",
-   "9091603101",
-   "9091603123",
-   "9091603143",
-   "9091603201"
-  ],
-  "oe_number_raw": "9091603092 9091603093  9091603123 9091603101 9091603123 9091603143 9091603201",
-  "oe_number_normalized": [
-   "9091603092",
-   "9091603093",
-   "9091603123",
-   "9091603101",
-   "9091603123",
-   "9091603143",
-   "9091603201"
-  ],
-  "oe_tokens": [
-   "9091603092",
-   "9091603093",
-   "9091603123",
-   "9091603101",
-   "9091603123",
-   "9091603143",
-   "9091603201"
-  ],
-  "vehicle_application_raw": "丰田",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": "丰田",
-  "opening_temperature_c": [
-   82
-  ],
-  "application_notes": "Bowen No. 单元格原文为 \"3069（3076）\"，错位内容原样保留于此：3069（3076）",
-  "source_sheet": "日系",
-  "source_row": 6,
-  "source_record_id": "SRC-00609",
-  "source_cell_refs": {
-   "oe": "C6",
-   "vehicle": "D6",
-   "bowen": "E6",
-   "specs": "G6",
-   "seq": "A6"
-  },
-  "section_label_raw": null,
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "parenthetical_note: Bowen 字段出现括号备注",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "3069（3076）",
-  "bowen_overflow_raw": "3069（3076）",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00609"
-  ],
-  "source_sheets": [
-   "日系"
-  ],
-  "blocked_reasons": [
-   "parenthetical_note",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 7,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
   "application_id": "APP-00501",
   "product_id": "BW-3011",
   "bowen_no": "3011",
@@ -33322,55 +32572,6 @@
   ],
   "blocked_reasons": [],
   "oe_token_count": 5,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00522",
-  "product_id": "BW-UNRESOLVED-0012",
-  "bowen_no": null,
-  "oe_numbers_raw": "",
-  "oe_numbers_normalized": [],
-  "oe_number_raw": "",
-  "oe_number_normalized": [],
-  "oe_tokens": [],
-  "vehicle_application_raw": "一汽ET3(马自达6芯子）",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": "一汽ET3(马自达6芯子）",
-  "opening_temperature_c": [
-   82
-  ],
-  "application_notes": null,
-  "source_sheet": "福特系列",
-  "source_row": 9,
-  "source_record_id": "SRC-00642",
-  "source_cell_refs": {
-   "oe": "J9",
-   "vehicle": "K9",
-   "bowen": "L9",
-   "specs": "N9",
-   "seq": "H9"
-  },
-  "section_label_raw": null,
-  "verification_status": "unverified",
-  "blocked": false,
-  "needs_review": false,
-  "data_status": "ok",
-  "misalignment_notes": [],
-  "bowen_cell_raw": "",
-  "bowen_overflow_raw": null,
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00642"
-  ],
-  "source_sheets": [
-   "福特系列"
-  ],
-  "blocked_reasons": [],
-  "oe_token_count": 0,
   "oe_tokens_not_oe_like_count": 0
  },
  {
@@ -35392,6 +34593,106 @@
  },
  {
   "application_id": "APP-00555",
+  "product_id": "BW-38169",
+  "bowen_no": "38169",
+  "oe_numbers_raw": "",
+  "oe_numbers_normalized": [],
+  "oe_number_raw": "",
+  "oe_number_normalized": [],
+  "oe_tokens": [],
+  "vehicle_application_raw": "",
+  "vehicle_make": null,
+  "vehicle_make_raw": null,
+  "vehicle_model": null,
+  "engine_code": null,
+  "engine_displacement": null,
+  "engine_application": null,
+  "opening_temperature_c": [
+   77,
+   91
+  ],
+  "application_notes": null,
+  "source_sheet": "工作表1",
+  "source_row": 12,
+  "source_record_id": "SRC-00707",
+  "source_cell_refs": {
+   "oe": "B12",
+   "vehicle": "C12",
+   "bowen": "D12",
+   "specs": "F12",
+   "seq": null
+  },
+  "section_label_raw": null,
+  "verification_status": "unverified",
+  "blocked": false,
+  "needs_review": false,
+  "data_status": "ok",
+  "misalignment_notes": [],
+  "bowen_cell_raw": "38169",
+  "bowen_overflow_raw": null,
+  "merged_source_record_count": 1,
+  "merged_source_records": [
+   "SRC-00707"
+  ],
+  "source_sheets": [
+   "工作表1"
+  ],
+  "blocked_reasons": [],
+  "oe_token_count": 0,
+  "oe_tokens_not_oe_like_count": 0
+ },
+ {
+  "application_id": "APP-00556",
+  "product_id": "BW-38298",
+  "bowen_no": "38298",
+  "oe_numbers_raw": "",
+  "oe_numbers_normalized": [],
+  "oe_number_raw": "",
+  "oe_number_normalized": [],
+  "oe_tokens": [],
+  "vehicle_application_raw": "",
+  "vehicle_make": null,
+  "vehicle_make_raw": null,
+  "vehicle_model": null,
+  "engine_code": null,
+  "engine_displacement": null,
+  "engine_application": null,
+  "opening_temperature_c": [
+   82,
+   91
+  ],
+  "application_notes": null,
+  "source_sheet": "工作表1",
+  "source_row": 13,
+  "source_record_id": "SRC-00708",
+  "source_cell_refs": {
+   "oe": "B13",
+   "vehicle": "C13",
+   "bowen": "D13",
+   "specs": "F13",
+   "seq": null
+  },
+  "section_label_raw": null,
+  "verification_status": "unverified",
+  "blocked": false,
+  "needs_review": false,
+  "data_status": "ok",
+  "misalignment_notes": [],
+  "bowen_cell_raw": "38298",
+  "bowen_overflow_raw": null,
+  "merged_source_record_count": 1,
+  "merged_source_records": [
+   "SRC-00708"
+  ],
+  "source_sheets": [
+   "工作表1"
+  ],
+  "blocked_reasons": [],
+  "oe_token_count": 0,
+  "oe_tokens_not_oe_like_count": 0
+ },
+ {
+  "application_id": "APP-00557",
   "product_id": "BW-3004-4",
   "bowen_no": "3004-4",
   "oe_numbers_raw": "H150131000\nH15013-1000A",
@@ -35450,7 +34751,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00556",
+  "application_id": "APP-00558",
   "product_id": "BW-3029",
   "bowen_no": "3029",
   "oe_numbers_raw": "13H\n96143533\n8814659\n1497689\n3038094\n81SF8575EA\n1635905\n1338870\n1571880\n84HF8575AA\n138870\n3043066\n4425620\n83500813",
@@ -35542,7 +34843,7 @@
   "oe_tokens_not_oe_like_count": 1
  },
  {
-  "application_id": "APP-00557",
+  "application_id": "APP-00559",
   "product_id": "BW-3029",
   "bowen_no": "3029",
   "oe_numbers_raw": "90200836\n68027789AA",
@@ -35602,7 +34903,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00558",
+  "application_id": "APP-00560",
   "product_id": "BW-3025",
   "bowen_no": "3025",
   "oe_numbers_raw": "1760060813\n94580182\n1760082860\n1760082810\n17670A78B01000\n1634187585000\n9004833091(胶圈不同)\n1767050G00\n24521479\nLJ4690E21300004\n24575984\n3037745\n63418778500\n96067938\nCH11809\n465Q-2/D-1306950\n1306010H01 \n94590182\n1760085811\n1767076A01\n1767076G00\n1767077G00\n130601005\n1767082810\n1634187785000\n018715171",
@@ -35730,7 +35031,7 @@
   "oe_tokens_not_oe_like_count": 1
  },
  {
-  "application_id": "APP-00559",
+  "application_id": "APP-00561",
   "product_id": "BW-3061A",
   "bowen_no": "3061A",
   "oe_numbers_raw": "9004833078\n19301P07A00\n19300PH7024\n061935R0000\n0619359B305\n626782\n19300PEO013 \n19301P07306\n19300P08014\nWV52DC84C\nWV52DC84\n215180JV\n0619359B306\n061935R0000\n19301REA305\n19301PE0024\n19300PR3004\n19301RMX307\n19300PM0003\n19301RNA306\n19300PE0024\n19300PL2004\n19300PE0013\n19300PH7004\n             19301PDAE01            \n19300PE0002",
@@ -35858,7 +35159,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00560",
+  "application_id": "APP-00562",
   "product_id": "BW-3035",
   "bowen_no": "3035",
   "oe_numbers_raw": "11537829959（）\n4573560AB\n68210220AA\n5278144AA\n53010552AA\n53010552AC\n55224855\n04693119AB\n4666140AA\n4573560AC\nK04693119AB\n68273161AA\nMU56595\n68210217AA",
@@ -35950,68 +35251,7 @@
   "oe_tokens_not_oe_like_count": 1
  },
  {
-  "application_id": "APP-00561",
-  "product_id": "BW-UNRESOLVED-0013",
-  "bowen_no": null,
-  "oe_numbers_raw": "656-195",
-  "oe_numbers_normalized": [
-   "656-195"
-  ],
-  "oe_number_raw": "656-195",
-  "oe_number_normalized": [
-   "656195"
-  ],
-  "oe_tokens": [
-   "656-195"
-  ],
-  "vehicle_application_raw": "",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": null,
-  "opening_temperature_c": null,
-  "application_notes": "Bowen No. 单元格原文为 \"3035(3403胶圈)\"，错位内容原样保留于此：3035(3403胶圈)",
-  "source_sheet": "工作表1",
-  "source_row": 24,
-  "source_record_id": "SRC-00719",
-  "source_cell_refs": {
-   "oe": "B24",
-   "vehicle": "C24",
-   "bowen": "D24",
-   "specs": "F24",
-   "seq": null
-  },
-  "section_label_raw": null,
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "parenthetical_note: Bowen 字段出现括号备注",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "3035(3403胶圈)",
-  "bowen_overflow_raw": "3035(3403胶圈)",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00719"
-  ],
-  "source_sheets": [
-   "工作表1"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "parenthetical_note",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 1,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00562",
+  "application_id": "APP-00564",
   "product_id": "BW-3051",
   "bowen_no": "3051",
   "oe_numbers_raw": "1086000636\nF060020005\n1632563010\n1360100B01000\nLF479Q5-1306100A\n16304T2A00\nTH507982J\nWV48B-82\n212004M510\n2120077A05\n212004M53A\n94840251\n94844416\n94844616\n12302516\nJ9091603046 \n2120077A61\n9008023002\n9008023003",
@@ -36118,7 +35358,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00563",
+  "application_id": "APP-00565",
   "product_id": "BW-3051",
   "bowen_no": "3051",
   "oe_numbers_raw": "2120077A00\n2120077A63\n212006M43A\n212006M400\n212004Z010",
@@ -36183,7 +35423,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00564",
+  "application_id": "APP-00566",
   "product_id": "BW-3525",
   "bowen_no": "3525",
   "oe_numbers_raw": "10208530",
@@ -36236,7 +35476,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00565",
+  "application_id": "APP-00567",
   "product_id": "BW-3369",
   "bowen_no": "3369",
   "oe_numbers_raw": "25500-02800\n25500-02500",
@@ -36292,7 +35532,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00566",
+  "application_id": "APP-00568",
   "product_id": "BW-3665-1",
   "bowen_no": "3665-1",
   "oe_numbers_raw": "2550022600\n2120041B00\n417537000\n417537100\n4138769",
@@ -36357,7 +35597,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00567",
+  "application_id": "APP-00569",
   "product_id": "BW-3665-1",
   "bowen_no": "3665-1",
   "oe_numbers_raw": "2120085G06\n21200BX000\n610830\n1338035\n1338055\n0K05415171\nM474877\n13H7604",
@@ -36435,7 +35675,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00568",
+  "application_id": "APP-00570",
   "product_id": "BW-303401",
   "bowen_no": "303401",
   "oe_numbers_raw": "12302011B\n03C121111Q",
@@ -36491,7 +35731,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00569",
+  "application_id": "APP-00571",
   "product_id": "BW-303402",
   "bowen_no": "303402",
   "oe_numbers_raw": "03C121111AE\n03C121111H\n03C121111M\n03C121026AT\n03C121111G\n03C121118F\n03C121026M",
@@ -36562,7 +35802,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00570",
+  "application_id": "APP-00572",
   "product_id": "BW-1046",
   "bowen_no": "1046",
   "oe_numbers_raw": "1066001348\nS113808013CA",
@@ -36618,7 +35858,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00571",
+  "application_id": "APP-00573",
   "product_id": "BW-1013",
   "bowen_no": "1013",
   "oe_numbers_raw": "6R0820535\n8Z0820535",
@@ -36674,7 +35914,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00572",
+  "application_id": "APP-00574",
   "product_id": "BW-3003-1",
   "bowen_no": "3003-1",
   "oe_numbers_raw": "OK30E15171\n1767066D00\n21200HC430\n1767066D01\n1767066D00\n0K2C015171A\n2550021210\n1767085C00/1634187180/9091603029/9091603034/8AG415171\nTH705088/0K01315171/0K01C1517YA/0K1315171/0K20115171A/0K24715171/0K2C015171\nB6BF15171A\n21200HC400",
@@ -36757,7 +35997,7 @@
   "oe_tokens_not_oe_like_count": 2
  },
  {
-  "application_id": "APP-00573",
+  "application_id": "APP-00575",
   "product_id": "BW-3003-1",
   "bowen_no": "3003-1",
   "oe_numbers_raw": "91174505\n91176890\n1760060814",
@@ -36816,7 +36056,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00574",
+  "application_id": "APP-00576",
   "product_id": "BW-30101",
   "bowen_no": "30101",
   "oe_numbers_raw": "BK3Q8A586AA\n总成OE号\nU20215171\n1432394\n8134146\nXS7Z8575A\nBK3Q8A586AB \nXL3Z8575BA\n9091603099\n1634054010\nRT1234/RT1254\nF6AZ8575AA\n507788J\n J9091654010                       1760083851\nRT1254",
@@ -36914,7 +36154,7 @@
   "oe_tokens_not_oe_like_count": 1
  },
  {
-  "application_id": "APP-00575",
+  "application_id": "APP-00577",
   "product_id": "BW-3127",
   "bowen_no": "3127",
   "oe_numbers_raw": "2S6G9K478BD\n总成OE号",
@@ -36970,7 +36210,7 @@
   "oe_tokens_not_oe_like_count": 1
  },
  {
-  "application_id": "APP-00576",
+  "application_id": "APP-00578",
   "product_id": "BW-3203",
   "bowen_no": "3203",
   "oe_numbers_raw": "M2S6G8A586D1C\n2S6G8A586B2A\n总成OE号\nF8RZ8575BA\nXW4Z8575AA\n1X4E8575EA\nXS6E8575AC\nXS6E8575AE\n356G8575A2A\n354180\nRT1228/RT1253\n3952532\nBG4A8A590AA",
@@ -37059,7 +36299,7 @@
   "oe_tokens_not_oe_like_count": 1
  },
  {
-  "application_id": "APP-00577",
+  "application_id": "APP-00579",
   "product_id": "BW-3353",
   "bowen_no": "3353",
   "oe_numbers_raw": "F1CZ8575B\nF87Z8575BA\nF8CZ8575AA\nYS4Z8575AA\nZZM615171\nZZM015171\nZZP015171A\nZZP315171\n6535178\n3312430\nF57E8575AB\nF6TZ8575AC\nF57Z8575A\nKU2Z8575A\nF4PZ8575AA\nF8CE8575AA\n207192",
@@ -37160,7 +36400,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00578",
+  "application_id": "APP-00580",
   "product_id": "BW-31608",
   "bowen_no": "31608",
   "oe_numbers_raw": "0022037775\n7701349415\n98492868",
@@ -37219,7 +36459,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00579",
+  "application_id": "APP-00581",
   "product_id": "BW-31607",
   "bowen_no": "31607",
   "oe_numbers_raw": "6062030275\n6012000015",
@@ -37275,7 +36515,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00580",
+  "application_id": "APP-00582",
   "product_id": "BW-31607",
   "bowen_no": "31607",
   "oe_numbers_raw": "6012000115\n6022000015\nA6022000015\n6062030475\n6062030175\n6032000015",
@@ -37343,7 +36583,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00581",
+  "application_id": "APP-00583",
   "product_id": "BW-31608",
   "bowen_no": "31608",
   "oe_numbers_raw": "1102000515\n1112000515\n0022037675\nF7TZ8575A\n0012039175",
@@ -37408,7 +36648,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00582",
+  "application_id": "APP-00584",
   "product_id": "BW-31608",
   "bowen_no": "31608",
   "oe_numbers_raw": "2L2Z8575AA",
@@ -37461,7 +36701,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00583",
+  "application_id": "APP-00585",
   "product_id": "BW-38090",
   "bowen_no": "38090",
   "oe_numbers_raw": "1W7Z8592AB",
@@ -37514,7 +36754,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00584",
+  "application_id": "APP-00586",
   "product_id": "BW-3543",
   "bowen_no": "3543",
   "oe_numbers_raw": "5184651AD\n5184651AF\n5184651AG\n5184651AH\n5184655AD\n05184651AG \n05184651AH\n5184570AJ\n05184651AF/05184655AD/902852/SK902852/DG0714525/823203/34774\n902852",
@@ -37594,7 +36834,7 @@
   "oe_tokens_not_oe_like_count": 1
  },
  {
-  "application_id": "APP-00585",
+  "application_id": "APP-00587",
   "product_id": "BW-3340",
   "bowen_no": "3340",
   "oe_numbers_raw": "8982959210\n8-98295921-0\n1K0115171",
@@ -37655,7 +36895,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00586",
+  "application_id": "APP-00588",
   "product_id": "BW-35006",
   "bowen_no": "35006",
   "oe_numbers_raw": "94810603401\n94810603404",
@@ -37713,7 +36953,56 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00587",
+  "application_id": "APP-00589",
+  "product_id": "BW-3932",
+  "bowen_no": "3932",
+  "oe_numbers_raw": "",
+  "oe_numbers_normalized": [],
+  "oe_number_raw": "",
+  "oe_number_normalized": [],
+  "oe_tokens": [],
+  "vehicle_application_raw": "",
+  "vehicle_make": null,
+  "vehicle_make_raw": null,
+  "vehicle_model": null,
+  "engine_code": null,
+  "engine_displacement": null,
+  "engine_application": null,
+  "opening_temperature_c": [
+   82
+  ],
+  "application_notes": null,
+  "source_sheet": "工作表1",
+  "source_row": 51,
+  "source_record_id": "SRC-00745",
+  "source_cell_refs": {
+   "oe": "B51",
+   "vehicle": "C51",
+   "bowen": "D51",
+   "specs": "F51",
+   "seq": null
+  },
+  "section_label_raw": null,
+  "verification_status": "unverified",
+  "blocked": false,
+  "needs_review": false,
+  "data_status": "ok",
+  "misalignment_notes": [],
+  "bowen_cell_raw": "3932",
+  "bowen_overflow_raw": null,
+  "merged_source_record_count": 1,
+  "merged_source_records": [
+   "SRC-00745"
+  ],
+  "source_sheets": [
+   "工作表1"
+  ],
+  "blocked_reasons": [],
+  "oe_token_count": 0,
+  "oe_tokens_not_oe_like_count": 0
+ },
+ {
+  "application_id": "APP-00590",
   "product_id": "BW-3255",
   "bowen_no": "3255",
   "oe_numbers_raw": "2702002200",
@@ -37768,7 +37057,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00588",
+  "application_id": "APP-00591",
   "product_id": "BW-3579",
   "bowen_no": "3579",
   "oe_numbers_raw": "2742003100",
@@ -37823,7 +37112,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00589",
+  "application_id": "APP-00592",
   "product_id": "BW-3094",
   "bowen_no": "3094",
   "oe_numbers_raw": "DM5G8575AA \n1820864 \n1712228\n1E0515171",
@@ -37887,7 +37176,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00590",
+  "application_id": "APP-00593",
   "product_id": "BW-3094",
   "bowen_no": "3094",
   "oe_numbers_raw": "1306001\n96MM8575CA",
@@ -37943,7 +37232,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00591",
+  "application_id": "APP-00594",
   "product_id": "BW-3064",
   "bowen_no": "3064",
   "oe_numbers_raw": "1507638\n125915171A\nMD997606\n3050922\nE6HZ8575A\nMD997222\n212006N210\n2TA121113A\nMD005131\n7656567\nMD015299 \n2120058G03\n7615235\nMD050470\nMD094120\nMD997224\nME999295\n3164602702\n1962230\n2120005D00\n2120096012\nGTS108\n5950116\n22006N20\n1767082Z10\n96868335\n2120016A05\n2120060J10\n MD015292",
@@ -38080,7 +37369,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00592",
+  "application_id": "APP-00595",
   "product_id": "BW-3064",
   "bowen_no": "3064",
   "oe_numbers_raw": "212000C82A\n1961674\n2120050K00",
@@ -38139,66 +37428,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00593",
-  "product_id": "BW-UNRESOLVED-0014",
-  "bowen_no": null,
-  "oe_numbers_raw": "12557563",
-  "oe_numbers_normalized": [
-   "12557563"
-  ],
-  "oe_number_raw": "12557563",
-  "oe_number_normalized": [
-   "12557563"
-  ],
-  "oe_tokens": [
-   "12557563"
-  ],
-  "vehicle_application_raw": "",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": null,
-  "opening_temperature_c": null,
-  "application_notes": "Bowen No. 单元格原文为 \"3064塑料外壳\"，错位内容原样保留于此：3064塑料外壳",
-  "source_sheet": "工作表1",
-  "source_row": 58,
-  "source_record_id": "SRC-00752",
-  "source_cell_refs": {
-   "oe": "B58",
-   "vehicle": "C58",
-   "bowen": "D58",
-   "specs": "F58",
-   "seq": null
-  },
-  "section_label_raw": null,
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "3064塑料外壳",
-  "bowen_overflow_raw": "3064塑料外壳",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00752"
-  ],
-  "source_sheets": [
-   "工作表1"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 1,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00594",
+  "application_id": "APP-00597",
   "product_id": "BW-3064",
   "bowen_no": "3064",
   "oe_numbers_raw": "2120093J01\n2120050K00",
@@ -38258,7 +37488,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00595",
+  "application_id": "APP-00598",
   "product_id": "BW-33075-2",
   "bowen_no": "33075-2",
   "oe_numbers_raw": "2223707",
@@ -38311,71 +37541,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00596",
-  "product_id": "BW-UNRESOLVED-0015",
-  "bowen_no": null,
-  "oe_numbers_raw": "04L121113C\n04L121113",
-  "oe_numbers_normalized": [
-   "04L121113C",
-   "04L121113"
-  ],
-  "oe_number_raw": "04L121113C\n04L121113",
-  "oe_number_normalized": [
-   "04L121113C",
-   "04L121113"
-  ],
-  "oe_tokens": [
-   "04L121113C",
-   "04L121113"
-  ],
-  "vehicle_application_raw": "",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": null,
-  "opening_temperature_c": null,
-  "application_notes": "Bowen No. 单元格原文为 \"L907(只有芯子)\"，错位内容原样保留于此：L907(只有芯子)",
-  "source_sheet": "工作表1",
-  "source_row": 61,
-  "source_record_id": "SRC-00755",
-  "source_cell_refs": {
-   "oe": "B61",
-   "vehicle": "C61",
-   "bowen": "D61",
-   "specs": "F61",
-   "seq": null
-  },
-  "section_label_raw": null,
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "parenthetical_note: Bowen 字段出现括号备注",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "L907(只有芯子)",
-  "bowen_overflow_raw": "L907(只有芯子)",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00755"
-  ],
-  "source_sheets": [
-   "工作表1"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "parenthetical_note",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 2,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00597",
+  "application_id": "APP-00600",
   "product_id": "BW-3004-3",
   "bowen_no": "3004-3",
   "oe_numbers_raw": "1305A237\n8972469730\n19301P13305\n19301P13306\n19301P8CA10\n19301P8FA11\n19300PR7A02\n2550035540\n21200AD201\n1305A601\n1305A192\n    1305A102    \n  21200-BN301  212001AT1A  21200AD200  21200AD21A  21200BN300  21200BN30A  25500-35530  25500-35531  25500-35540  90916-03100\n212001LA0A\nWV64TA-82A\n1305A191\n12581519\n255002F000\n212001LA1A",
@@ -38509,7 +37675,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00598",
+  "application_id": "APP-00601",
   "product_id": "BW-3004-3",
   "bowen_no": "3004-3",
   "oe_numbers_raw": "TH726188J\n19300R3LG01\n255002F100\n19301R3L305\n21200BN301\nMD351861",
@@ -38577,7 +37743,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00599",
+  "application_id": "APP-00602",
   "product_id": "BW-3004-3",
   "bowen_no": "3004-3",
   "oe_numbers_raw": "19301P8E305\nTHH017",
@@ -38633,7 +37799,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00600",
+  "application_id": "APP-00603",
   "product_id": "BW-303317",
   "bowen_no": "303317",
   "oe_numbers_raw": "96817255",
@@ -38686,7 +37852,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00601",
+  "application_id": "APP-00604",
   "product_id": "BW-3054",
   "bowen_no": "3054",
   "oe_numbers_raw": "1041200GA",
@@ -38739,7 +37905,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00602",
+  "application_id": "APP-00605",
   "product_id": "BW-3068",
   "bowen_no": "3068",
   "oe_numbers_raw": "1307210FA\n1306100E02B1\n8944822770\n8973617700\nWV54I-82\n1338074",
@@ -38807,7 +37973,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00603",
+  "application_id": "APP-00606",
   "product_id": "BW-3582",
   "bowen_no": "3582",
   "oe_numbers_raw": "12581595\n12581594\n131143\n12600171\n12568911\n12600172\n12600178\n33963\n524190\n12570358\n456-187",
@@ -38890,7 +38056,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00604",
+  "application_id": "APP-00607",
   "product_id": "BW-3653",
   "bowen_no": "3653",
   "oe_numbers_raw": "719-180\n1265113\n12599235\n34163\n462180\n34734\n12570247",
@@ -38961,81 +38127,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00605",
-  "product_id": "BW-UNRESOLVED-0016",
-  "bowen_no": null,
-  "oe_numbers_raw": "12651113 \n12638836 \n12603830 \n12631889\n12681132\n15148",
-  "oe_numbers_normalized": [
-   "12651113",
-   "12638836",
-   "12603830",
-   "12631889",
-   "12681132",
-   "15148"
-  ],
-  "oe_number_raw": "12651113 \n12638836 \n12603830 \n12631889\n12681132\n15148",
-  "oe_number_normalized": [
-   "12651113",
-   "12638836",
-   "12603830",
-   "12631889",
-   "12681132",
-   "15148"
-  ],
-  "oe_tokens": [
-   "12651113",
-   "12638836",
-   "12603830",
-   "12631889",
-   "12681132",
-   "15148"
-  ],
-  "vehicle_application_raw": "",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": null,
-  "opening_temperature_c": null,
-  "application_notes": "Bowen No. 单元格原文为 \"3653总成OE\"，错位内容原样保留于此：3653总成OE",
-  "source_sheet": "工作表1",
-  "source_row": 70,
-  "source_record_id": "SRC-00764",
-  "source_cell_refs": {
-   "oe": "B70",
-   "vehicle": "C70",
-   "bowen": "D70",
-   "specs": "F70",
-   "seq": null
-  },
-  "section_label_raw": null,
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "3653总成OE",
-  "bowen_overflow_raw": "3653总成OE",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00764"
-  ],
-  "source_sheets": [
-   "工作表1"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 6,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00606",
+  "application_id": "APP-00609",
   "product_id": "BW-3556",
   "bowen_no": "3556",
   "oe_numbers_raw": "8971231613\n418-77K",
@@ -39095,7 +38187,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00607",
+  "application_id": "APP-00610",
   "product_id": "BW-3556",
   "bowen_no": "3556",
   "oe_numbers_raw": "8971231614",
@@ -39148,7 +38240,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00608",
+  "application_id": "APP-00611",
   "product_id": "BW-3011",
   "bowen_no": "3011",
   "oe_numbers_raw": "2551042850\n2550025001\n629482J\n2550027000AT\n2550025000\n2550025001\n2550025002\n255002G670\n256102A001",
@@ -39225,7 +38317,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00609",
+  "application_id": "APP-00612",
   "product_id": "BW-3011",
   "bowen_no": "3011",
   "oe_numbers_raw": "4805178\n96440407",
@@ -39281,7 +38373,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00610",
+  "application_id": "APP-00613",
   "product_id": "BW-3011",
   "bowen_no": "3011",
   "oe_numbers_raw": "255002E000\n2550026100\n2551042000\n621192",
@@ -39347,7 +38439,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00611",
+  "application_id": "APP-00614",
   "product_id": "BW-3583",
   "bowen_no": "3583",
   "oe_numbers_raw": "8890181680\n89017851\n12587396\n12661950\n523160\n19420815\n523160\n131153\n131160",
@@ -39424,66 +38516,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00612",
-  "product_id": "BW-UNRESOLVED-0017",
-  "bowen_no": null,
-  "oe_numbers_raw": "12587395",
-  "oe_numbers_normalized": [
-   "12587395"
-  ],
-  "oe_number_raw": "12587395",
-  "oe_number_normalized": [
-   "12587395"
-  ],
-  "oe_tokens": [
-   "12587395"
-  ],
-  "vehicle_application_raw": "",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": null,
-  "opening_temperature_c": null,
-  "application_notes": "Bowen No. 单元格原文为 \"3583铝外壳\"，错位内容原样保留于此：3583铝外壳",
-  "source_sheet": "工作表1",
-  "source_row": 77,
-  "source_record_id": "SRC-00771",
-  "source_cell_refs": {
-   "oe": "B77",
-   "vehicle": "C77",
-   "bowen": "D77",
-   "specs": "F77",
-   "seq": null
-  },
-  "section_label_raw": null,
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "3583铝外壳",
-  "bowen_overflow_raw": "3583铝外壳",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00771"
-  ],
-  "source_sheets": [
-   "工作表1"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 1,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00613",
+  "application_id": "APP-00616",
   "product_id": "BW-3652",
   "bowen_no": "3652",
   "oe_numbers_raw": "21018811\n12622410    55350941\n131158",
@@ -39545,66 +38578,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00614",
-  "product_id": "BW-UNRESOLVED-0018",
-  "bowen_no": null,
-  "oe_numbers_raw": "23913353",
-  "oe_numbers_normalized": [
-   "23913353"
-  ],
-  "oe_number_raw": "23913353",
-  "oe_number_normalized": [
-   "23913353"
-  ],
-  "oe_tokens": [
-   "23913353"
-  ],
-  "vehicle_application_raw": "宝骏",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": "宝骏",
-  "opening_temperature_c": null,
-  "application_notes": "Bowen No. 单元格原文为 \"同3025尺寸相同，原件阀座有3处豁口，胶圈内圈有3处定位，外圈有定位\"，错位内容原样保留于此：同3025尺寸相同，原件阀座有3处豁口，胶圈内圈有3处定位，外圈有定位",
-  "source_sheet": "工作表1",
-  "source_row": 79,
-  "source_record_id": "SRC-00773",
-  "source_cell_refs": {
-   "oe": "B79",
-   "vehicle": "C79",
-   "bowen": "D79",
-   "specs": "F79",
-   "seq": null
-  },
-  "section_label_raw": null,
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "同3025尺寸相同，原件阀座有3处豁口，胶圈内圈有3处定位，外圈有定位",
-  "bowen_overflow_raw": "同3025尺寸相同，原件阀座有3处豁口，胶圈内圈有3处定位，外圈有定位",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00773"
-  ],
-  "source_sheets": [
-   "工作表1"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 1,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00615",
+  "application_id": "APP-00618",
   "product_id": "BW-3066",
   "bowen_no": "3066",
   "oe_numbers_raw": "23753349\n23753026\n1306300F0016\n4A13L1300070\n23753350",
@@ -39669,7 +38643,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00616",
+  "application_id": "APP-00619",
   "product_id": "BW-3013",
   "bowen_no": "3013",
   "oe_numbers_raw": "MD335170",
@@ -39722,7 +38696,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00617",
+  "application_id": "APP-00620",
   "product_id": "BW-3598",
   "bowen_no": "3598",
   "oe_numbers_raw": "9091603151",
@@ -39775,7 +38749,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00618",
+  "application_id": "APP-00621",
   "product_id": "BW-3077",
   "bowen_no": "3077",
   "oe_numbers_raw": "PE0115171\nXM348575AA\nKL0115171A \n4176181\n4188498\nTX7182D\n1767077E11\n91176904\nF32Z8575A\nF42Z8575A\nFS0515171\nFS1515171\n3599763\nF42Z8575BA\nPE0115171",
@@ -39870,7 +38844,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00619",
+  "application_id": "APP-00622",
   "product_id": "BW-33655A",
   "bowen_no": "33655A",
   "oe_numbers_raw": "8C3Z8575A\n8C3Z8575B\n455780 \n39200 \n49200 \n34200 \n716200",
@@ -39941,7 +38915,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00620",
+  "application_id": "APP-00623",
   "product_id": "BW-3385",
   "bowen_no": "3385",
   "oe_numbers_raw": "2712030575\n2712000015\n2712030375",
@@ -40000,7 +38974,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00621",
+  "application_id": "APP-00624",
   "product_id": "BW-33663",
   "bowen_no": "33663",
   "oe_numbers_raw": "RT-1227（不确定是OE号）\nDS7Z8575R\nRT-1226\nRT-1238",
@@ -40062,7 +39036,7 @@
   "oe_tokens_not_oe_like_count": 1
  },
  {
-  "application_id": "APP-00622",
+  "application_id": "APP-00625",
   "product_id": "BW-3005",
   "bowen_no": "3005",
   "oe_numbers_raw": "471Q1306950\n9091603136\nWV56MC\nS1026L21153-00010\nLFB489Q-1306100B\n94856782\n9091603107\n1306300K000\n2551042541\n4G181306100\n1305A221\n9091603125\nMD175746\nMD310106\n21200-2W202\n1305A285\n212002W20A\n4G181306100\n1066000300\n01651184\n1016051184\n90916A3003\n9091603140\nTH543482J\n1608167380\n1305A190\n9091603144\nTH629582\n1305A163\nLF489Q1306100A \nME191593\n2120057J00\n21200-57J15\nM0310106\n19185390\n88974571\n90916A3002\n30874021",
@@ -40226,7 +39200,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00623",
+  "application_id": "APP-00626",
   "product_id": "BW-3005",
   "bowen_no": "3005",
   "oe_numbers_raw": "MD174234",
@@ -40279,7 +39253,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00624",
+  "application_id": "APP-00627",
   "product_id": "BW-3005",
   "bowen_no": "3005",
   "oe_numbers_raw": "1306300K0000",
@@ -40332,7 +39306,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00625",
+  "application_id": "APP-00628",
   "product_id": "BW-3005",
   "bowen_no": "3005",
   "oe_numbers_raw": "MD164541\nMD170031\nMD317015\n2120057J10\nME200262",
@@ -40397,7 +39371,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00626",
+  "application_id": "APP-00629",
   "product_id": "BW-3516",
   "bowen_no": "3516",
   "oe_numbers_raw": "03H121113D",
@@ -40450,7 +39424,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00627",
+  "application_id": "APP-00630",
   "product_id": "BW-3516",
   "bowen_no": "3516",
   "oe_numbers_raw": "95810612602\n95810612601",
@@ -40506,7 +39480,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00628",
+  "application_id": "APP-00631",
   "product_id": "BW-403229",
   "bowen_no": "403229",
   "oe_numbers_raw": "8974357940",
@@ -40559,7 +39533,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00629",
+  "application_id": "APP-00632",
   "product_id": "BW-35106",
   "bowen_no": "35106",
   "oe_numbers_raw": "D20T010-4160-AA\nD20T0104160AA D20T0104160 1306010A07\nK0022500AB",
@@ -40624,7 +39598,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00630",
+  "application_id": "APP-00633",
   "product_id": "BW-35013",
   "bowen_no": "35013",
   "oe_numbers_raw": "16031-38010\n16031-0S010",
@@ -40680,66 +39654,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00631",
-  "product_id": "BW-UNRESOLVED-0019",
-  "bowen_no": null,
-  "oe_numbers_raw": "1427919总成OE",
-  "oe_numbers_normalized": [
-   "1427919总成OE"
-  ],
-  "oe_number_raw": "1427919总成OE",
-  "oe_number_normalized": [
-   "1427919OE"
-  ],
-  "oe_tokens": [
-   "1427919总成OE"
-  ],
-  "vehicle_application_raw": "",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": null,
-  "opening_temperature_c": null,
-  "application_notes": "Bowen No. 单元格原文为 \"芯子编号：31052\"，错位内容原样保留于此：芯子编号：31052",
-  "source_sheet": "工作表1",
-  "source_row": 96,
-  "source_record_id": "SRC-00790",
-  "source_cell_refs": {
-   "oe": "B96",
-   "vehicle": "C96",
-   "bowen": "D96",
-   "specs": "F96",
-   "seq": null
-  },
-  "section_label_raw": null,
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "芯子编号：31052",
-  "bowen_overflow_raw": "芯子编号：31052",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00790"
-  ],
-  "source_sheets": [
-   "工作表1"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 1,
-  "oe_tokens_not_oe_like_count": 1
- },
- {
-  "application_id": "APP-00632",
+  "application_id": "APP-00635",
   "product_id": "BW-3753",
   "bowen_no": "3753",
   "oe_numbers_raw": "ERR3291",
@@ -40792,137 +39707,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00633",
-  "product_id": "BW-UNRESOLVED-0020",
-  "bowen_no": null,
-  "oe_numbers_raw": "11512247269\n11512354056\n11517787052\n总成OE",
-  "oe_numbers_normalized": [
-   "11512247269",
-   "11512354056",
-   "11517787052",
-   "总成OE"
-  ],
-  "oe_number_raw": "11512247269\n11512354056\n11517787052\n总成OE",
-  "oe_number_normalized": [
-   "11512247269",
-   "11512354056",
-   "11517787052",
-   "OE"
-  ],
-  "oe_tokens": [
-   "11512247269",
-   "11512354056",
-   "11517787052",
-   "总成OE"
-  ],
-  "vehicle_application_raw": "",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": null,
-  "opening_temperature_c": null,
-  "application_notes": "Bowen No. 单元格原文为 \"芯子编号：3130\"，错位内容原样保留于此：芯子编号：3130",
-  "source_sheet": "工作表1",
-  "source_row": 98,
-  "source_record_id": "SRC-00792",
-  "source_cell_refs": {
-   "oe": "B98",
-   "vehicle": "C98",
-   "bowen": "D98",
-   "specs": "F98",
-   "seq": null
-  },
-  "section_label_raw": null,
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "芯子编号：3130",
-  "bowen_overflow_raw": "芯子编号：3130",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00792"
-  ],
-  "source_sheets": [
-   "工作表1"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 4,
-  "oe_tokens_not_oe_like_count": 1
- },
- {
-  "application_id": "APP-00634",
-  "product_id": "BW-UNRESOLVED-0021",
-  "bowen_no": null,
-  "oe_numbers_raw": "04L121026AH\n总成OE",
-  "oe_numbers_normalized": [
-   "04L121026AH",
-   "总成OE"
-  ],
-  "oe_number_raw": "04L121026AH\n总成OE",
-  "oe_number_normalized": [
-   "04L121026AH",
-   "OE"
-  ],
-  "oe_tokens": [
-   "04L121026AH",
-   "总成OE"
-  ],
-  "vehicle_application_raw": "",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": null,
-  "opening_temperature_c": null,
-  "application_notes": "Bowen No. 单元格原文为 \"芯子：211芯子\"，错位内容原样保留于此：芯子：211芯子",
-  "source_sheet": "工作表1",
-  "source_row": 99,
-  "source_record_id": "SRC-00793",
-  "source_cell_refs": {
-   "oe": "B99",
-   "vehicle": "C99",
-   "bowen": "D99",
-   "specs": "F99",
-   "seq": null
-  },
-  "section_label_raw": null,
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "芯子：211芯子",
-  "bowen_overflow_raw": "芯子：211芯子",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00793"
-  ],
-  "source_sheets": [
-   "工作表1"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 2,
-  "oe_tokens_not_oe_like_count": 1
- },
- {
-  "application_id": "APP-00635",
+  "application_id": "APP-00638",
   "product_id": "BW-3555",
   "bowen_no": "3555",
   "oe_numbers_raw": "PW910780",
@@ -40975,7 +39760,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00636",
+  "application_id": "APP-00639",
   "product_id": "BW-3555",
   "bowen_no": "3555",
   "oe_numbers_raw": "PW811761",
@@ -41028,7 +39813,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00637",
+  "application_id": "APP-00640",
   "product_id": "BW-3385",
   "bowen_no": "3385",
   "oe_numbers_raw": "A2712000015 \nA2712000575 \nA2712000375",
@@ -41087,7 +39872,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00638",
+  "application_id": "APP-00641",
   "product_id": "BW-3033",
   "bowen_no": "3033",
   "oe_numbers_raw": "25193683\n25199830\n55597008\n6983105J\n55577072\n55587349\n6338047\n25199829\n55559594\n71744389\n0071744389",
@@ -41170,7 +39955,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00639",
+  "application_id": "APP-00642",
   "product_id": "BW-3009",
   "bowen_no": "3009",
   "oe_numbers_raw": "96835286",
@@ -41223,7 +40008,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00640",
+  "application_id": "APP-00643",
   "product_id": "BW-35116",
   "bowen_no": "35116",
   "oe_numbers_raw": "8980170272\n8974357940",
@@ -41279,7 +40064,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00641",
+  "application_id": "APP-00644",
   "product_id": "BW-3019",
   "bowen_no": "3019",
   "oe_numbers_raw": "WV52TD\n9091603122\n1612425380\n1338E8\n9004833088",
@@ -41344,153 +40129,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00642",
-  "product_id": "BW-UNRESOLVED-0022",
-  "bowen_no": null,
-  "oe_numbers_raw": "1767077G10\n96610574",
-  "oe_numbers_normalized": [
-   "1767077G10",
-   "96610574"
-  ],
-  "oe_number_raw": "1767077G10\n96610574",
-  "oe_number_normalized": [
-   "1767077G10",
-   "96610574"
-  ],
-  "oe_tokens": [
-   "1767077G10",
-   "96610574"
-  ],
-  "vehicle_application_raw": "",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": null,
-  "opening_temperature_c": null,
-  "application_notes": "Bowen No. 单元格原文为 \"3025（胶圈不同）\"，错位内容原样保留于此：3025（胶圈不同）",
-  "source_sheet": "工作表1",
-  "source_row": 107,
-  "source_record_id": "SRC-00801",
-  "source_cell_refs": {
-   "oe": "B107",
-   "vehicle": "C107",
-   "bowen": "D107",
-   "specs": "F107",
-   "seq": null
-  },
-  "section_label_raw": null,
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "parenthetical_note: Bowen 字段出现括号备注",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "3025（胶圈不同）",
-  "bowen_overflow_raw": "3025（胶圈不同）",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00801"
-  ],
-  "source_sheets": [
-   "工作表1"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "parenthetical_note",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 2,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00643",
-  "product_id": "BW-UNRESOLVED-0023",
-  "bowen_no": null,
-  "oe_numbers_raw": "4M5G8575ZA\n4M5G5875AA\nTH624582J\n683782J\nBE8Z8575Z\n96MM8575BD\nDM5G8575AA\n96MM8575B9E",
-  "oe_numbers_normalized": [
-   "4M5G8575ZA",
-   "4M5G5875AA",
-   "TH624582J",
-   "683782J",
-   "BE8Z8575Z",
-   "96MM8575BD",
-   "DM5G8575AA",
-   "96MM8575B9E"
-  ],
-  "oe_number_raw": "4M5G8575ZA\n4M5G5875AA\nTH624582J\n683782J\nBE8Z8575Z\n96MM8575BD\nDM5G8575AA\n96MM8575B9E",
-  "oe_number_normalized": [
-   "4M5G8575ZA",
-   "4M5G5875AA",
-   "TH624582J",
-   "683782J",
-   "BE8Z8575Z",
-   "96MM8575BD",
-   "DM5G8575AA",
-   "96MM8575B9E"
-  ],
-  "oe_tokens": [
-   "4M5G8575ZA",
-   "4M5G5875AA",
-   "TH624582J",
-   "683782J",
-   "BE8Z8575Z",
-   "96MM8575BD",
-   "DM5G8575AA",
-   "96MM8575B9E"
-  ],
-  "vehicle_application_raw": "",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": null,
-  "opening_temperature_c": null,
-  "application_notes": "Bowen No. 单元格原文为 \"3094（胶圈不带凸点）\"，错位内容原样保留于此：3094（胶圈不带凸点）",
-  "source_sheet": "工作表1",
-  "source_row": 108,
-  "source_record_id": "SRC-00802",
-  "source_cell_refs": {
-   "oe": "B108",
-   "vehicle": "C108",
-   "bowen": "D108",
-   "specs": "F108",
-   "seq": null
-  },
-  "section_label_raw": null,
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "parenthetical_note: Bowen 字段出现括号备注",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "3094（胶圈不带凸点）",
-  "bowen_overflow_raw": "3094（胶圈不带凸点）",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00802"
-  ],
-  "source_sheets": [
-   "工作表1"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "parenthetical_note",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 8,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00644",
+  "application_id": "APP-00647",
   "product_id": "BW-31505",
   "bowen_no": "31505",
   "oe_numbers_raw": "5257076\n5337967\n4983736",
@@ -41549,7 +40188,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00645",
+  "application_id": "APP-00648",
   "product_id": "BW-3025",
   "bowen_no": "3025",
   "oe_numbers_raw": "9004833091\n1634187208\n1634187781000\n1634187290000\n1760085821\n17670M83F00",
@@ -41621,7 +40260,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00646",
+  "application_id": "APP-00649",
   "product_id": "BW-3902",
   "bowen_no": "3902",
   "oe_numbers_raw": "MD350415",
@@ -41674,7 +40313,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00647",
+  "application_id": "APP-00650",
   "product_id": "BW-3069",
   "bowen_no": "3069",
   "oe_numbers_raw": "21210AA260\n21210AA300\nSU00300408\n1305A283\n1305A803",
@@ -41739,7 +40378,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00648",
+  "application_id": "APP-00651",
   "product_id": "BW-33119",
   "bowen_no": "33119",
   "oe_numbers_raw": "HL3Z8575A\nHL3Z8575B\nBR3E8575EB\nRT1255\nLB5E8A570AA",
@@ -41804,7 +40443,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00649",
+  "application_id": "APP-00652",
   "product_id": "BW-33119",
   "bowen_no": "33119",
   "oe_numbers_raw": "RT1255",
@@ -41857,7 +40496,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00650",
+  "application_id": "APP-00653",
   "product_id": "BW-33119",
   "bowen_no": "33119",
   "oe_numbers_raw": "RT1258",
@@ -41910,7 +40549,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00651",
+  "application_id": "APP-00654",
   "product_id": "BW-3028",
   "bowen_no": "3028",
   "oe_numbers_raw": "21200ET000\n1N1815171\n21200ED000\n7701068770\n212005RF3A\n7701065352\n212007668R",
@@ -41981,7 +40620,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00652",
+  "application_id": "APP-00655",
   "product_id": "BW-3065",
   "bowen_no": "3065",
   "oe_numbers_raw": "212303RC1A\n21230EL01B\n212308P300\nGD11014294\n212306N200\n2222515910\nTX17595D\n212306N20A\n7701068773\n7701065358\nW52NA-95",
@@ -42064,7 +40703,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00653",
+  "application_id": "APP-00656",
   "product_id": "BW-31605",
   "bowen_no": "31605",
   "oe_numbers_raw": "22121113\n075121113D\n075121113\n069121113\n069121113D\n075121113A\n078121113C\n078121113D\n22037575\n025121113D \n025121113E \n025121113F\n25121113 \n69121113\n11531466174\n11531710953\n11531713954\n1466174\n1713040\n6172001115\n6172001815\n11531710953",
@@ -42180,7 +40819,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00654",
+  "application_id": "APP-00657",
   "product_id": "BW-31605",
   "bowen_no": "31605",
   "oe_numbers_raw": "11531265085",
@@ -42233,7 +40872,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00655",
+  "application_id": "APP-00658",
   "product_id": "BW-31604-1",
   "bowen_no": "31604-1",
   "oe_numbers_raw": "EBC3621\n077121113 \n11531712043\n11531721002\n078121113J\n078121113C\n11537511083\n277192",
@@ -42307,7 +40946,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00656",
+  "application_id": "APP-00659",
   "product_id": "BW-31604-1",
   "bowen_no": "31604-1",
   "oe_numbers_raw": "11531733803\n11531712043\n11531743528\n11531743542\n11537511083",
@@ -42372,7 +41011,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00657",
+  "application_id": "APP-00660",
   "product_id": "BW-3002",
   "bowen_no": "3002",
   "oe_numbers_raw": "F4TZ8575B\n83501426AB\n33008",
@@ -42431,7 +41070,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00658",
+  "application_id": "APP-00661",
   "product_id": "BW-3002",
   "bowen_no": "3002",
   "oe_numbers_raw": "TH627687J\n94618609\n7910011880\n03G121113",
@@ -42493,7 +41132,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00659",
+  "application_id": "APP-00662",
   "product_id": "BW-3528",
   "bowen_no": "3528",
   "oe_numbers_raw": "XL3Z8575AA\nE3HN8575AA \nGTS101",
@@ -42552,7 +41191,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00660",
+  "application_id": "APP-00663",
   "product_id": "BW-3074",
   "bowen_no": "3074",
   "oe_numbers_raw": "1305A623\n1041200GH030",
@@ -42608,7 +41247,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00661",
+  "application_id": "APP-00664",
   "product_id": "BW-3074",
   "bowen_no": "3074",
   "oe_numbers_raw": "1305A280",
@@ -42661,7 +41300,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00662",
+  "application_id": "APP-00665",
   "product_id": "BW-3565",
   "bowen_no": "3565",
   "oe_numbers_raw": "2550003HB0\n2550003850\nTH64488G1",
@@ -42724,7 +41363,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00663",
+  "application_id": "APP-00666",
   "product_id": "BW-3598",
   "bowen_no": "3598",
   "oe_numbers_raw": "90916A3004\n90916C3004\n9091603149\n9091603148\n1075176",
@@ -42789,7 +41428,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00664",
+  "application_id": "APP-00667",
   "product_id": "BW-3310",
   "bowen_no": "3310",
   "oe_numbers_raw": "06K121113G\n06J121113\n06K121113E",
@@ -42848,7 +41487,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00665",
+  "application_id": "APP-00668",
   "product_id": "BW-31016",
   "bowen_no": "31016",
   "oe_numbers_raw": "06L121111K\n06L121111G\n06L121111G",
@@ -42911,7 +41550,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00666",
+  "application_id": "APP-00669",
   "product_id": "BW-32870",
   "bowen_no": "32870",
   "oe_numbers_raw": "55111016AE",
@@ -42964,7 +41603,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00667",
+  "application_id": "APP-00670",
   "product_id": "BW-32588",
   "bowen_no": "32588",
   "oe_numbers_raw": "BR3Z8575C",
@@ -43018,7 +41657,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00668",
+  "application_id": "APP-00671",
   "product_id": "BW-3403",
   "bowen_no": "3403",
   "oe_numbers_raw": "12591881",
@@ -43072,7 +41711,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00669",
+  "application_id": "APP-00672",
   "product_id": "BW-32289",
   "bowen_no": "32289",
   "oe_numbers_raw": "5086739AB\n68534176AA",
@@ -43129,7 +41768,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00670",
+  "application_id": "APP-00673",
   "product_id": "BW-32095",
   "bowen_no": "32095",
   "oe_numbers_raw": "5073598AA\n68045798AA\n68174083AA\n52079476AC",
@@ -43191,7 +41830,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00671",
+  "application_id": "APP-00674",
   "product_id": "BW-32269",
   "bowen_no": "32269",
   "oe_numbers_raw": "F6TZ8575AAA\nF6TZ8575EA",
@@ -43248,7 +41887,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00672",
+  "application_id": "APP-00675",
   "product_id": "BW-32138",
   "bowen_no": "32138",
   "oe_numbers_raw": "1X4Z8575B\nCA6015171\nZZJ1-15-171B",
@@ -43308,7 +41947,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00673",
+  "application_id": "APP-00676",
   "product_id": "BW-3023",
   "bowen_no": "3023",
   "oe_numbers_raw": "21200AA060\n21200AA070\n1306100E0100 \n133749\n21200AA000",
@@ -43373,7 +42012,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00674",
+  "application_id": "APP-00677",
   "product_id": "BW-32899",
   "bowen_no": "32899",
   "oe_numbers_raw": "12559575",
@@ -43427,7 +42066,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00675",
+  "application_id": "APP-00678",
   "product_id": "BW-32839",
   "bowen_no": "32839",
   "oe_numbers_raw": "F4TZ8575B",
@@ -43481,7 +42120,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00676",
+  "application_id": "APP-00679",
   "product_id": "BW-32849",
   "bowen_no": "32849",
   "oe_numbers_raw": "10207375",
@@ -43535,7 +42174,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00677",
+  "application_id": "APP-00680",
   "product_id": "BW-31602",
   "bowen_no": "31602",
   "oe_numbers_raw": "897300789",
@@ -43588,7 +42227,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00678",
+  "application_id": "APP-00681",
   "product_id": "BW-3002-1",
   "bowen_no": "3002-1",
   "oe_numbers_raw": "D5PZ8575A\n10207381\n52028185AC",
@@ -43647,7 +42286,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00679",
+  "application_id": "APP-00682",
   "product_id": "BW-31520",
   "bowen_no": "31520",
   "oe_numbers_raw": "XL3Z8575AA\n3L3Z8575AA",
@@ -43703,7 +42342,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00680",
+  "application_id": "APP-00683",
   "product_id": "BW-31182",
   "bowen_no": "31182",
   "oe_numbers_raw": "2120042L01\n212000B000\n2120042L00 \n21200V5015\n21200V5010\n21200V2705\n2120031U00\n2120085E00\n2120042L05\n2120060U00",
@@ -43783,7 +42422,54 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00681",
+  "application_id": "APP-00684",
+  "product_id": "BW-32603",
+  "bowen_no": "32603",
+  "oe_numbers_raw": "",
+  "oe_numbers_normalized": [],
+  "oe_number_raw": "",
+  "oe_number_normalized": [],
+  "oe_tokens": [],
+  "vehicle_application_raw": "",
+  "vehicle_make": null,
+  "vehicle_make_raw": null,
+  "vehicle_model": null,
+  "engine_code": null,
+  "engine_displacement": null,
+  "engine_application": null,
+  "opening_temperature_c": null,
+  "application_notes": null,
+  "source_sheet": "工作表1",
+  "source_row": 151,
+  "source_record_id": "SRC-00845",
+  "source_cell_refs": {
+   "oe": "B151",
+   "vehicle": "C151",
+   "bowen": "D151",
+   "specs": "F151",
+   "seq": null
+  },
+  "section_label_raw": null,
+  "verification_status": "unverified",
+  "blocked": false,
+  "needs_review": false,
+  "data_status": "ok",
+  "misalignment_notes": [],
+  "bowen_cell_raw": "32603",
+  "bowen_overflow_raw": null,
+  "merged_source_record_count": 1,
+  "merged_source_records": [
+   "SRC-00845"
+  ],
+  "source_sheets": [
+   "工作表1"
+  ],
+  "blocked_reasons": [],
+  "oe_token_count": 0,
+  "oe_tokens_not_oe_like_count": 0
+ },
+ {
+  "application_id": "APP-00685",
   "product_id": "BW-32095",
   "bowen_no": "32095",
   "oe_numbers_raw": "5073598AA\n68045798AA\n68174083AA\n52079476AD\n52079476AB\n52079476AC\nK52079476AE\nK68174083AA\n4792237\n4792237AB\n4792237AC",
@@ -43866,7 +42552,54 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00682",
+  "application_id": "APP-00686",
+  "product_id": "BW-32748-1",
+  "bowen_no": "32748-1",
+  "oe_numbers_raw": "",
+  "oe_numbers_normalized": [],
+  "oe_number_raw": "",
+  "oe_number_normalized": [],
+  "oe_tokens": [],
+  "vehicle_application_raw": "",
+  "vehicle_make": null,
+  "vehicle_make_raw": null,
+  "vehicle_model": null,
+  "engine_code": null,
+  "engine_displacement": null,
+  "engine_application": null,
+  "opening_temperature_c": null,
+  "application_notes": "Bowen No. 单元格原文为 \"32748-1\"，错位内容原样保留于此：32748-2",
+  "source_sheet": "工作表1",
+  "source_row": 154,
+  "source_record_id": "SRC-00848",
+  "source_cell_refs": {
+   "oe": "B154",
+   "vehicle": "C154",
+   "bowen": "D154",
+   "specs": "F154",
+   "seq": null
+  },
+  "section_label_raw": null,
+  "verification_status": "needs_review_misaligned",
+  "blocked": false,
+  "needs_review": true,
+  "data_status": "needs_review",
+  "misalignment_notes": [],
+  "bowen_cell_raw": "32748-1",
+  "bowen_overflow_raw": "32748-2",
+  "merged_source_record_count": 1,
+  "merged_source_records": [
+   "SRC-00848"
+  ],
+  "source_sheets": [
+   "工作表1"
+  ],
+  "blocked_reasons": [],
+  "oe_token_count": 0,
+  "oe_tokens_not_oe_like_count": 0
+ },
+ {
+  "application_id": "APP-00687",
   "product_id": "BW-32703",
   "bowen_no": "32703",
   "oe_numbers_raw": "55111017AD\n55111017AC\n55111017AB\nK55111017AD\nK55111017AA",
@@ -43931,63 +42664,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00683",
-  "product_id": "BW-UNRESOLVED-0024",
-  "bowen_no": null,
-  "oe_numbers_raw": "55111016AE\n55111016AC",
-  "oe_numbers_normalized": [
-   "55111016AE",
-   "55111016AC"
-  ],
-  "oe_number_raw": "55111016AE\n55111016AC",
-  "oe_number_normalized": [
-   "55111016AE",
-   "55111016AC"
-  ],
-  "oe_tokens": [
-   "55111016AE",
-   "55111016AC"
-  ],
-  "vehicle_application_raw": "",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": null,
-  "opening_temperature_c": null,
-  "application_notes": null,
-  "source_sheet": "工作表1",
-  "source_row": 158,
-  "source_record_id": "SRC-00852",
-  "source_cell_refs": {
-   "oe": "B158",
-   "vehicle": "C158",
-   "bowen": "D158",
-   "specs": "F158",
-   "seq": null
-  },
-  "section_label_raw": null,
-  "verification_status": "unverified",
-  "blocked": false,
-  "needs_review": false,
-  "data_status": "ok",
-  "misalignment_notes": [],
-  "bowen_cell_raw": "",
-  "bowen_overflow_raw": null,
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00852"
-  ],
-  "source_sheets": [
-   "工作表1"
-  ],
-  "blocked_reasons": [],
-  "oe_token_count": 2,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00684",
+  "application_id": "APP-00689",
   "product_id": "BW-38278",
   "bowen_no": "38278",
   "oe_numbers_raw": "4892312AC",
@@ -44040,7 +42717,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00685",
+  "application_id": "APP-00690",
   "product_id": "BW-3021-1",
   "bowen_no": "3021-1",
   "oe_numbers_raw": "90916-03078\nKHE4115171",
@@ -44096,7 +42773,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00686",
+  "application_id": "APP-00691",
   "product_id": "BW-3021",
   "bowen_no": "3021",
   "oe_numbers_raw": "MD997603\nW52-82B",
@@ -44152,7 +42829,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00687",
+  "application_id": "APP-00692",
   "product_id": "BW-3084",
   "bowen_no": "3084",
   "oe_numbers_raw": "06E121111M\n06E121111K\n06E121111AC\n06E121111D",
@@ -44214,7 +42891,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00688",
+  "application_id": "APP-00693",
   "product_id": "BW-3032",
   "bowen_no": "3032",
   "oe_numbers_raw": "96407677\n91XM8575AA",
@@ -44270,7 +42947,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00689",
+  "application_id": "APP-00694",
   "product_id": "BW-31515",
   "bowen_no": "31515",
   "oe_numbers_raw": "68005464AA\n5086739AA\n68005464AB\n68534176AA\nBG5X8575AA\n504014236\n5011456AA/5015090AA/5015090AB/5015708AA\n3B121113 \n5015708AC\n5292744\n3954830\n5086739AB\n426190",
@@ -44359,7 +43036,7 @@
   "oe_tokens_not_oe_like_count": 1
  },
  {
-  "application_id": "APP-00690",
+  "application_id": "APP-00695",
   "product_id": "BW-31515",
   "bowen_no": "31515",
   "oe_numbers_raw": "5292738\n5292742",
@@ -44415,7 +43092,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00691",
+  "application_id": "APP-00696",
   "product_id": "BW-3007",
   "bowen_no": "3007",
   "oe_numbers_raw": "RP1723000",
@@ -44468,7 +43145,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00692",
+  "application_id": "APP-00697",
   "product_id": "BW-300701",
   "bowen_no": "300701",
   "oe_numbers_raw": "9648542680\n1338E4\n9630066680",
@@ -44527,7 +43204,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00693",
+  "application_id": "APP-00698",
   "product_id": "BW-3006",
   "bowen_no": "3006",
   "oe_numbers_raw": "1336N1",
@@ -44580,7 +43257,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00694",
+  "application_id": "APP-00699",
   "product_id": "BW-3520",
   "bowen_no": "3520",
   "oe_numbers_raw": "55579011\n55593033\n25200454\n55561629\n1338029\n1338261\n1338379\n1338199\n55563301\n25200455\n1338380\n725024",
@@ -44666,7 +43343,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00695",
+  "application_id": "APP-00700",
   "product_id": "BW-3041-1",
   "bowen_no": "3041-1",
   "oe_numbers_raw": "90916-03142",
@@ -44719,7 +43396,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00696",
+  "application_id": "APP-00701",
   "product_id": "BW-3041-2",
   "bowen_no": "3041-2",
   "oe_numbers_raw": "WV52TA-82\n9091603126\n9091654010",
@@ -44778,7 +43455,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00697",
+  "application_id": "APP-00702",
   "product_id": "BW-3033-Z",
   "bowen_no": "3033-z",
   "oe_numbers_raw": "25199826\n25191992\n25199824\n55579951\n25192230\n1338177\n1338256\n1338373\n1338384\n1338402\n25192233\n55353311\n55564890\n55577073\n55577284\n55587350\n6338044\n25199828\n55578419\n55597008\n96980318\n96984104",
@@ -44894,7 +43571,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00698",
+  "application_id": "APP-00703",
   "product_id": "BW-3010",
   "bowen_no": "3010",
   "oe_numbers_raw": "96180324",
@@ -44947,7 +43624,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00699",
+  "application_id": "APP-00704",
   "product_id": "BW-3150",
   "bowen_no": "3150",
   "oe_numbers_raw": "133844\n133811\n7700866896\n7701348372\n8200267272\n9604915680\n9617178080\n1338.37\n7700872314\n133727\nTH510883J",
@@ -45030,7 +43707,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00700",
+  "application_id": "APP-00705",
   "product_id": "BW-3150",
   "bowen_no": "3150",
   "oe_numbers_raw": "614889\n96057136\n8200125655\n7700966896",
@@ -45092,127 +43769,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00701",
-  "product_id": "BW-UNRESOLVED-0025",
-  "bowen_no": null,
-  "oe_numbers_raw": "03L121113A",
-  "oe_numbers_normalized": [
-   "03L121113A"
-  ],
-  "oe_number_raw": "03L121113A",
-  "oe_number_normalized": [
-   "03L121113A"
-  ],
-  "oe_tokens": [
-   "03L121113A"
-  ],
-  "vehicle_application_raw": "",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": null,
-  "opening_temperature_c": null,
-  "application_notes": "Bowen No. 单元格原文为 \"3150（3086芯）\"，错位内容原样保留于此：3150（3086芯）",
-  "source_sheet": "工作表1",
-  "source_row": 176,
-  "source_record_id": "SRC-00870",
-  "source_cell_refs": {
-   "oe": "B176",
-   "vehicle": "C176",
-   "bowen": "D176",
-   "specs": "F176",
-   "seq": null
-  },
-  "section_label_raw": null,
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "parenthetical_note: Bowen 字段出现括号备注",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "3150（3086芯）",
-  "bowen_overflow_raw": "3150（3086芯）",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00870"
-  ],
-  "source_sheets": [
-   "工作表1"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "parenthetical_note",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 1,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00702",
-  "product_id": "BW-UNRESOLVED-0026",
-  "bowen_no": null,
-  "oe_numbers_raw": "5 157 411",
-  "oe_numbers_normalized": [
-   "5",
-   "157",
-   "411"
-  ],
-  "oe_number_raw": "5 157 411",
-  "oe_number_normalized": [
-   "5",
-   "157",
-   "411"
-  ],
-  "oe_tokens": [
-   "5",
-   "157",
-   "411"
-  ],
-  "vehicle_application_raw": "",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": null,
-  "opening_temperature_c": null,
-  "application_notes": null,
-  "source_sheet": "工作表1",
-  "source_row": 177,
-  "source_record_id": "SRC-00871",
-  "source_cell_refs": {
-   "oe": "B177",
-   "vehicle": "C177",
-   "bowen": "D177",
-   "specs": "F177",
-   "seq": null
-  },
-  "section_label_raw": null,
-  "verification_status": "unverified",
-  "blocked": false,
-  "needs_review": false,
-  "data_status": "ok",
-  "misalignment_notes": [],
-  "bowen_cell_raw": "",
-  "bowen_overflow_raw": null,
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00871"
-  ],
-  "source_sheets": [
-   "工作表1"
-  ],
-  "blocked_reasons": [],
-  "oe_token_count": 3,
-  "oe_tokens_not_oe_like_count": 3
- },
- {
-  "application_id": "APP-00703",
+  "application_id": "APP-00708",
   "product_id": "BW-3004-1",
   "bowen_no": "3004-1",
   "oe_numbers_raw": "XCN36L635AB",
@@ -45265,7 +43822,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00704",
+  "application_id": "APP-00709",
   "product_id": "BW-33663-1",
   "bowen_no": "33663-1",
   "oe_numbers_raw": "7L3Z8575E\nXR85174\n1X4E8575EA\n1X4Z8575FA\n1X4Z8575A\nRT1175\n1X4Z8575B\n1X4Z8575A\n1X4Z8575EA\n1X4E8575FA\n1X4E8575FB\n1X4Z8575F\n1X4Z8575FB\n2C5Z8575AA\n2C2Z8575AA\nBR3Z8575G\n1X4Z8575DA   1X4Z8575EB   AJ5715171A    F8RZ8575BA   GY0115171   XR85174   XW4Z8575AA",
@@ -45384,7 +43941,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00705",
+  "application_id": "APP-00710",
   "product_id": "BW-33151",
   "bowen_no": "33151",
   "oe_numbers_raw": "11518512234\nSU00400002",
@@ -45440,7 +43997,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00706",
+  "application_id": "APP-00711",
   "product_id": "BW-35650",
   "bowen_no": "35650",
   "oe_numbers_raw": "LR027158\nFR3E8575BA\n5249664\n2340556\nK2GE8575BA",
@@ -45505,68 +44062,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00707",
-  "product_id": "BW-UNRESOLVED-0027",
-  "bowen_no": null,
-  "oe_numbers_raw": "M76001306004B",
-  "oe_numbers_normalized": [
-   "M76001306004B"
-  ],
-  "oe_number_raw": "M76001306004B",
-  "oe_number_normalized": [
-   "M76001306004B"
-  ],
-  "oe_tokens": [
-   "M76001306004B"
-  ],
-  "vehicle_application_raw": "玉柴4112 6112发动机",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": "玉柴4112 6112发动机",
-  "opening_temperature_c": null,
-  "application_notes": "Bowen No. 单元格原文为 \"3528（借用）\"，错位内容原样保留于此：3528（借用）",
-  "source_sheet": "工作表1",
-  "source_row": 182,
-  "source_record_id": "SRC-00876",
-  "source_cell_refs": {
-   "oe": "B182",
-   "vehicle": "C182",
-   "bowen": "D182",
-   "specs": "F182",
-   "seq": null
-  },
-  "section_label_raw": null,
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "parenthetical_note: Bowen 字段出现括号备注",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "3528（借用）",
-  "bowen_overflow_raw": "3528（借用）",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00876"
-  ],
-  "source_sheets": [
-   "工作表1"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "parenthetical_note",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 1,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00708",
+  "application_id": "APP-00713",
   "product_id": "BW-3550",
   "bowen_no": "3550",
   "oe_numbers_raw": "",
@@ -45613,7 +44109,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00709",
+  "application_id": "APP-00714",
   "product_id": "BW-3526",
   "bowen_no": "3526",
   "oe_numbers_raw": "7052600 7052526",
@@ -45669,7 +44165,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00710",
+  "application_id": "APP-00715",
   "product_id": "BW-31005",
   "bowen_no": "31005",
   "oe_numbers_raw": "07K121113B",
@@ -45722,7 +44218,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00711",
+  "application_id": "APP-00716",
   "product_id": "BW-3001",
   "bowen_no": "3001",
   "oe_numbers_raw": "028121131B\n056121113A\n037121113/08966483/1338061/75067/90412604\n1338024",
@@ -45784,7 +44280,7 @@
   "oe_tokens_not_oe_like_count": 1
  },
  {
-  "application_id": "APP-00712",
+  "application_id": "APP-00717",
   "product_id": "BW-3001",
   "bowen_no": "3001",
   "oe_numbers_raw": "TH143987J\n515187J\n068121113H \n03G121113A\n032121113\n801587\n32121113",
@@ -45855,7 +44351,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00713",
+  "application_id": "APP-00718",
   "product_id": "BW-3001",
   "bowen_no": "3001",
   "oe_numbers_raw": "30121113\n30121113A\n030121113\n030121113A",
@@ -45917,7 +44413,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00714",
+  "application_id": "APP-00719",
   "product_id": "BW-3080",
   "bowen_no": "3080",
   "oe_numbers_raw": "12031475\n0002037075\n4716264\n 31100040036",
@@ -45979,7 +44475,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00715",
+  "application_id": "APP-00720",
   "product_id": "BW-3080",
   "bowen_no": "3080",
   "oe_numbers_raw": "4078.79D",
@@ -46032,7 +44528,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00716",
+  "application_id": "APP-00721",
   "product_id": "BW-3080",
   "bowen_no": "3080",
   "oe_numbers_raw": "51064020061\n81064010061",
@@ -46088,7 +44584,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00717",
+  "application_id": "APP-00722",
   "product_id": "BW-3080",
   "bowen_no": "3080",
   "oe_numbers_raw": "51064020088",
@@ -46141,7 +44637,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00718",
+  "application_id": "APP-00723",
   "product_id": "BW-3080",
   "bowen_no": "3080",
   "oe_numbers_raw": "248180JV\n0052032675\nTX18.83\n277180\n0609731",
@@ -46206,7 +44702,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00719",
+  "application_id": "APP-00724",
   "product_id": "BW-3080",
   "bowen_no": "3080",
   "oe_numbers_raw": "TH1513.71J\n0032037975",
@@ -46262,7 +44758,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00720",
+  "application_id": "APP-00725",
   "product_id": "BW-3080",
   "bowen_no": "3080",
   "oe_numbers_raw": "22033075\n4078.65D\n0022033075\n0042036575",
@@ -46324,7 +44820,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00721",
+  "application_id": "APP-00726",
   "product_id": "BW-33561",
   "bowen_no": "33561",
   "oe_numbers_raw": "31474297",
@@ -46377,7 +44873,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00722",
+  "application_id": "APP-00727",
   "product_id": "BW-30102",
   "bowen_no": "30102",
   "oe_numbers_raw": "604789J\n7700272554\n7700872635\n2120000Q0B\n604783J",
@@ -46442,7 +44938,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00723",
+  "application_id": "APP-00728",
   "product_id": "BW-3036",
   "bowen_no": "3036",
   "oe_numbers_raw": "TH718895J",
@@ -46495,7 +44991,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00724",
+  "application_id": "APP-00729",
   "product_id": "BW-3920",
   "bowen_no": "3920",
   "oe_numbers_raw": "3690535",
@@ -46548,7 +45044,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00725",
+  "application_id": "APP-00730",
   "product_id": "BW-31105",
   "bowen_no": "31105",
   "oe_numbers_raw": "11538576288 \n8576288 \n11518577896 \n11518588945",
@@ -46610,7 +45106,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00726",
+  "application_id": "APP-00731",
   "product_id": "BW-3076",
   "bowen_no": "3076",
   "oe_numbers_raw": "1305A802\nMN187250\n1338G3\nWV56TC-82\n1305A048\nWV56TA-82\n90118WB459\n9091603121",
@@ -46684,7 +45180,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00727",
+  "application_id": "APP-00732",
   "product_id": "BW-2017",
   "bowen_no": "2017",
   "oe_numbers_raw": "1252566",
@@ -46737,7 +45233,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00728",
+  "application_id": "APP-00733",
   "product_id": "BW-1055",
   "bowen_no": "1055",
   "oe_numbers_raw": "13 38 246\n13 38 369\n10108855\n55591401",
@@ -46811,7 +45307,7 @@
   "oe_tokens_not_oe_like_count": 6
  },
  {
-  "application_id": "APP-00729",
+  "application_id": "APP-00734",
   "product_id": "BW-31510",
   "bowen_no": "31510",
   "oe_numbers_raw": "1634617\n 6153501 6163500 6588962\n6866389  89TM8575AA  928M8575AE  ERT216\n948M8575AA\nF5RZ8575A\nF8RZ8575AA\nF8RZ8575CA",
@@ -46897,7 +45393,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00730",
+  "application_id": "APP-00735",
   "product_id": "BW-3816",
   "bowen_no": "3816",
   "oe_numbers_raw": "03C121110P",
@@ -46950,7 +45446,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00731",
+  "application_id": "APP-00736",
   "product_id": "BW-3816",
   "bowen_no": "3816",
   "oe_numbers_raw": "03C1211100",
@@ -47003,7 +45499,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00732",
+  "application_id": "APP-00737",
   "product_id": "BW-3816",
   "bowen_no": "3816",
   "oe_numbers_raw": "03C121110T",
@@ -47056,7 +45552,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00733",
+  "application_id": "APP-00738",
   "product_id": "BW-3020",
   "bowen_no": "3020",
   "oe_numbers_raw": "4M5G8575GA\nCP9Z8592G\n1566316\n9021071",
@@ -47118,7 +45614,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00734",
+  "application_id": "APP-00739",
   "product_id": "BW-3503",
   "bowen_no": "3503",
   "oe_numbers_raw": "1305A239\n256102F010\n19301P8EA10\n255003A000\n2550035530\n255003B060",
@@ -47186,7 +45682,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00735",
+  "application_id": "APP-00740",
   "product_id": "BW-3288",
   "bowen_no": "3288",
   "oe_numbers_raw": "60653946",
@@ -47239,7 +45735,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00736",
+  "application_id": "APP-00741",
   "product_id": "BW-3841",
   "bowen_no": "3841",
   "oe_numbers_raw": "04E121113K\n04E121116C\n04E121113P",
@@ -47298,7 +45794,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00737",
+  "application_id": "APP-00742",
   "product_id": "BW-3919",
   "bowen_no": "3919",
   "oe_numbers_raw": "60713535\n98463637",
@@ -47354,7 +45850,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00738",
+  "application_id": "APP-00743",
   "product_id": "BW-3086",
   "bowen_no": "3086",
   "oe_numbers_raw": "032121026CE",
@@ -47407,7 +45903,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00739",
+  "application_id": "APP-00744",
   "product_id": "BW-3842",
   "bowen_no": "3842",
   "oe_numbers_raw": "04E121113M",
@@ -47460,7 +45956,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00740",
+  "application_id": "APP-00745",
   "product_id": "BW-31054",
   "bowen_no": "31054",
   "oe_numbers_raw": "1281521700",
@@ -47513,7 +46009,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00741",
+  "application_id": "APP-00746",
   "product_id": "BW-31403",
   "bowen_no": "31403",
   "oe_numbers_raw": "279020120124\n133821\n1338C8\n90606231\n96006231\n20095130601\n20195130601\n21095130601\n212006F900\n212006F901\nGTS299\nPEL10019EVA\nTH1542.89J",
@@ -47602,7 +46098,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00742",
+  "application_id": "APP-00747",
   "product_id": "BW-3500",
   "bowen_no": "3500",
   "oe_numbers_raw": "pw911211",
@@ -47655,7 +46151,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00743",
+  "application_id": "APP-00748",
   "product_id": "BW-3507",
   "bowen_no": "3507",
   "oe_numbers_raw": "160310P010",
@@ -47708,7 +46204,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00744",
+  "application_id": "APP-00749",
   "product_id": "BW-3268",
   "bowen_no": "3268",
   "oe_numbers_raw": "LR121420（总成OE）",
@@ -47763,7 +46259,7 @@
   "oe_tokens_not_oe_like_count": 1
  },
  {
-  "application_id": "APP-00745",
+  "application_id": "APP-00750",
   "product_id": "BW-3016",
   "bowen_no": "3016",
   "oe_numbers_raw": "RT1193\n1374191\n1F7015171A\n1F7015171B\nL35715170B\nLFE215170\nZZC115172\nZZC115172A\nZZCA15172\nZZCA15172A\nL32815170A\nL32815170B\n1462483\n3M4G8575AC",
@@ -47855,7 +46351,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00746",
+  "application_id": "APP-00751",
   "product_id": "BW-3016",
   "bowen_no": "3016",
   "oe_numbers_raw": "L5Z8575B",
@@ -47908,7 +46404,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00747",
+  "application_id": "APP-00752",
   "product_id": "BW-3016",
   "bowen_no": "3016",
   "oe_numbers_raw": "9021072",
@@ -47963,7 +46459,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00748",
+  "application_id": "APP-00753",
   "product_id": "BW-33662",
   "bowen_no": "33662",
   "oe_numbers_raw": "TH721782J\nTH721789J\n52028898AD\n52028898AJ\n52028898AF\n52028898AI\n449203\n416203\n48792",
@@ -48040,7 +46536,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00749",
+  "application_id": "APP-00754",
   "product_id": "BW-3253",
   "bowen_no": "3253",
   "oe_numbers_raw": "'0055194271",
@@ -48093,7 +46589,7 @@
   "oe_tokens_not_oe_like_count": 1
  },
  {
-  "application_id": "APP-00750",
+  "application_id": "APP-00755",
   "product_id": "BW-3085",
   "bowen_no": "3085",
   "oe_numbers_raw": "06E121111T",
@@ -48146,7 +46642,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00751",
+  "application_id": "APP-00756",
   "product_id": "BW-3509",
   "bowen_no": "3509",
   "oe_numbers_raw": "11537633476",
@@ -48199,7 +46695,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00752",
+  "application_id": "APP-00757",
   "product_id": "BW-3522",
   "bowen_no": "3522",
   "oe_numbers_raw": "BM5G9K478BB 1827900",
@@ -48255,7 +46751,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00753",
+  "application_id": "APP-00758",
   "product_id": "BW-3522",
   "bowen_no": "3522",
   "oe_numbers_raw": "1692915  \n1709827  \n1767974  \nBM5G6L721DB  \nBM5G9K478AA\nBM5G9K478AB\n31359806\nBM5Z8592B",
@@ -48329,7 +46825,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00754",
+  "application_id": "APP-00759",
   "product_id": "BW-3511",
   "bowen_no": "3511",
   "oe_numbers_raw": "A2742003300\nA2742000615\n2742003300",
@@ -48388,7 +46884,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00755",
+  "application_id": "APP-00760",
   "product_id": "BW-3080",
   "bowen_no": "3080",
   "oe_numbers_raw": "282830000",
@@ -48441,7 +46937,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00756",
+  "application_id": "APP-00761",
   "product_id": "BW-3192",
   "bowen_no": "3192",
   "oe_numbers_raw": "059115389G \n059115389H \n059115389K \n059115446B\n059115389P 95810701030 95810701031 95810701032",
@@ -48515,7 +47011,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00757",
+  "application_id": "APP-00762",
   "product_id": "BW-2036",
   "bowen_no": "2036",
   "oe_numbers_raw": "038919081K",
@@ -48568,7 +47064,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00758",
+  "application_id": "APP-00763",
   "product_id": "BW-2035",
   "bowen_no": "2035",
   "oe_numbers_raw": "06K919081",
@@ -48621,7 +47117,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00759",
+  "application_id": "APP-00764",
   "product_id": "BW-1002",
   "bowen_no": "1002",
   "oe_numbers_raw": "05C919501",
@@ -48674,7 +47170,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00760",
+  "application_id": "APP-00765",
   "product_id": "BW-35063",
   "bowen_no": "35063",
   "oe_numbers_raw": "31293912 31686560 31474898   31439968  31474700  31474989  9025863  1018221  V95990017",
@@ -48751,77 +47247,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00761",
-  "product_id": "BW-UNRESOLVED-0028",
-  "bowen_no": null,
-  "oe_numbers_raw": "31686046  31686045  5500001209  1066029700",
-  "oe_numbers_normalized": [
-   "31686046",
-   "31686045",
-   "5500001209",
-   "1066029700"
-  ],
-  "oe_number_raw": "31686046  31686045  5500001209  1066029700",
-  "oe_number_normalized": [
-   "31686046",
-   "31686045",
-   "5500001209",
-   "1066029700"
-  ],
-  "oe_tokens": [
-   "31686046",
-   "31686045",
-   "5500001209",
-   "1066029700"
-  ],
-  "vehicle_application_raw": "",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": null,
-  "opening_temperature_c": null,
-  "application_notes": "Bowen No. 单元格原文为 \"37603（天博）非电子\"，错位内容原样保留于此：37603（天博）非电子",
-  "source_sheet": "工作表1",
-  "source_row": 236,
-  "source_record_id": "SRC-00930",
-  "source_cell_refs": {
-   "oe": "B236",
-   "vehicle": "C236",
-   "bowen": "D236",
-   "specs": "F236",
-   "seq": null
-  },
-  "section_label_raw": null,
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "parenthetical_note: Bowen 字段出现括号备注",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "37603（天博）非电子",
-  "bowen_overflow_raw": "37603（天博）非电子",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00930"
-  ],
-  "source_sheets": [
-   "工作表1"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "parenthetical_note",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 4,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00762",
+  "application_id": "APP-00767",
   "product_id": "BW-35062",
   "bowen_no": "35062",
   "oe_numbers_raw": "32263962\n32208972\n30668661",
@@ -48880,7 +47306,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00763",
+  "application_id": "APP-00768",
   "product_id": "BW-3038",
   "bowen_no": "3038",
   "oe_numbers_raw": "06H121026AB",
@@ -48933,7 +47359,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00764",
+  "application_id": "APP-00769",
   "product_id": "BW-3027",
   "bowen_no": "3027",
   "oe_numbers_raw": "1306000B0000\n94581899\n513R-1306950-01\n17670-M83F00",
@@ -48995,7 +47421,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00765",
+  "application_id": "APP-00770",
   "product_id": "BW-3027",
   "bowen_no": "3027",
   "oe_numbers_raw": "P102011-2100",
@@ -49048,7 +47474,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00766",
+  "application_id": "APP-00771",
   "product_id": "BW-3008",
   "bowen_no": "3008",
   "oe_numbers_raw": "10115785  10115787  10182343  10182376  10210450  10226109  3091114  W8800783   3091114",
@@ -49125,7 +47551,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00767",
+  "application_id": "APP-00772",
   "product_id": "BW-30189",
   "bowen_no": "30189",
   "oe_numbers_raw": "032121111BM",
@@ -49178,7 +47604,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00768",
+  "application_id": "APP-00773",
   "product_id": "BW-3289",
   "bowen_no": "3289",
   "oe_numbers_raw": "46785392",
@@ -49231,7 +47657,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00769",
+  "application_id": "APP-00774",
   "product_id": "BW-3014",
   "bowen_no": "3014",
   "oe_numbers_raw": "1027305GD150",
@@ -49284,66 +47710,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00770",
-  "product_id": "BW-UNRESOLVED-0029",
-  "bowen_no": null,
-  "oe_numbers_raw": "1041200GH030",
-  "oe_numbers_normalized": [
-   "1041200GH030"
-  ],
-  "oe_number_raw": "1041200GH030",
-  "oe_number_normalized": [
-   "1041200GH030"
-  ],
-  "oe_tokens": [
-   "1041200GH030"
-  ],
-  "vehicle_application_raw": "",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": null,
-  "opening_temperature_c": null,
-  "application_notes": "Bowen No. 单元格原文为 \"3014数据一样\\n外观结构不同\"，错位内容原样保留于此：3014数据一样 外观结构不同",
-  "source_sheet": "工作表1",
-  "source_row": 245,
-  "source_record_id": "SRC-00939",
-  "source_cell_refs": {
-   "oe": "B245",
-   "vehicle": "C245",
-   "bowen": "D245",
-   "specs": "F245",
-   "seq": null
-  },
-  "section_label_raw": null,
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "3014数据一样\n外观结构不同",
-  "bowen_overflow_raw": "3014数据一样 外观结构不同",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00939"
-  ],
-  "source_sheets": [
-   "工作表1"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 1,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00771",
+  "application_id": "APP-00776",
   "product_id": "BW-2024",
   "bowen_no": "2024",
   "oe_numbers_raw": "EA0123500AA\n3810010H01AA",
@@ -49399,7 +47766,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00772",
+  "application_id": "APP-00777",
   "product_id": "BW-3252",
   "bowen_no": "3252",
   "oe_numbers_raw": "1338841\n55224023\n95526244",
@@ -49458,7 +47825,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00773",
+  "application_id": "APP-00778",
   "product_id": "BW-35102",
   "bowen_no": "35102",
   "oe_numbers_raw": "EA150121801",
@@ -49511,7 +47878,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00774",
+  "application_id": "APP-00779",
   "product_id": "BW-3666",
   "bowen_no": "3666",
   "oe_numbers_raw": "1336CE",
@@ -49564,7 +47931,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00775",
+  "application_id": "APP-00780",
   "product_id": "BW-3524",
   "bowen_no": "3524",
   "oe_numbers_raw": "25192928",
@@ -49617,7 +47984,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00776",
+  "application_id": "APP-00781",
   "product_id": "BW-38282",
   "bowen_no": "38282",
   "oe_numbers_raw": "294192\n21210AA150\n21200AA210\n21200AA200\n21200AA070\n21200AA071\n21200AA072\n21210AA030",
@@ -49695,7 +48062,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00777",
+  "application_id": "APP-00782",
   "product_id": "BW-1045",
   "bowen_no": "1045",
   "oe_numbers_raw": "BOSCH: 0280130107\nFIAT: 7770239\nGMC: 90410792\nHONDA: 37870-PDF-E00 / 37870-PDF-E01\nOPEL: 1338451 / 90410792 / 90510183\nRENAULT: 6000581611 / 6001538842 / 7702218698\nSAAB: 90510183\nVAUXHALL: 90410792 / 90510183\nCHEVROLET: 03439088 / 90410792 / 90510183 / 93358883 \nDACIA: 6000581611 / 6001538842\nBORGWARNER: BERU 0824121078\nHOLDEN: 90410792\nDELPHI: STD00003 / TS10271 / WC10096\nMTE 4051\nST51\n024246  98424793  1207003  37870P5TG00  3922022010  8942058660  ERR2081  1338458  6U0919501  8942205010",
@@ -49937,7 +48304,7 @@
   "oe_tokens_not_oe_like_count": 29
  },
  {
-  "application_id": "APP-00778",
+  "application_id": "APP-00783",
   "product_id": "BW-3957",
   "bowen_no": "3957",
   "oe_numbers_raw": "07D121111AR \n07D121111AQ\n07D121111AP\n07D121111AD\n07D121111AK\n07D121111R\n07D121111RR\n07D121111RP",
@@ -50011,7 +48378,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00779",
+  "application_id": "APP-00784",
   "product_id": "BW-3073",
   "bowen_no": "3073",
   "oe_numbers_raw": "432-140",
@@ -50064,7 +48431,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00780",
+  "application_id": "APP-00785",
   "product_id": "BW-30523",
   "bowen_no": "30523",
   "oe_numbers_raw": "391-140",
@@ -50117,7 +48484,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00781",
+  "application_id": "APP-00786",
   "product_id": "BW-3597",
   "bowen_no": "3597",
   "oe_numbers_raw": "12656949\n12673413\n12656473",
@@ -50176,7 +48543,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00782",
+  "application_id": "APP-00787",
   "product_id": "BW-3071",
   "bowen_no": "3071",
   "oe_numbers_raw": "25201446\n25201447\n1338392",
@@ -50235,7 +48602,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00783",
+  "application_id": "APP-00788",
   "product_id": "BW-33655",
   "bowen_no": "33655",
   "oe_numbers_raw": "8C3Z8575B\n455780\n39200\n49200\n34200\n716200",
@@ -50303,7 +48670,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00784",
+  "application_id": "APP-00789",
   "product_id": "BW-31002",
   "bowen_no": "31002",
   "oe_numbers_raw": "31319606  \n30650753（总成OE）",
@@ -50359,7 +48726,7 @@
   "oe_tokens_not_oe_like_count": 1
  },
  {
-  "application_id": "APP-00785",
+  "application_id": "APP-00790",
   "product_id": "BW-32748-2",
   "bowen_no": "32748-2",
   "oe_numbers_raw": "12597583",
@@ -50412,7 +48779,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00786",
+  "application_id": "APP-00791",
   "product_id": "BW-36583",
   "bowen_no": "36583",
   "oe_numbers_raw": "12257859 12563335 12597583 12632948\n10238201",
@@ -50479,7 +48846,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00787",
+  "application_id": "APP-00792",
   "product_id": "BW-1050A",
   "bowen_no": "1050A",
   "oe_numbers_raw": "83420-16050-A\n371Q-3611100\n476Q-4L-1300800\nF01R064905",
@@ -50541,7 +48908,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00788",
+  "application_id": "APP-00793",
   "product_id": "BW-30116",
   "bowen_no": "30116",
   "oe_numbers_raw": "06L121111P",
@@ -50594,7 +48961,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00789",
+  "application_id": "APP-00794",
   "product_id": "BW-3655-2",
   "bowen_no": "3655-2",
   "oe_numbers_raw": "33101251",
@@ -50647,7 +49014,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00790",
+  "application_id": "APP-00795",
   "product_id": "BW-3654-2",
   "bowen_no": "3654-2",
   "oe_numbers_raw": "33104543",
@@ -50700,7 +49067,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00791",
+  "application_id": "APP-00796",
   "product_id": "BW-35091",
   "bowen_no": "35091",
   "oe_numbers_raw": "9025941",
@@ -50753,7 +49120,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00792",
+  "application_id": "APP-00797",
   "product_id": "BW-2016",
   "bowen_no": "2016",
   "oe_numbers_raw": "23951778",
@@ -50806,7 +49173,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00793",
+  "application_id": "APP-00798",
   "product_id": "BW-3003-3",
   "bowen_no": "3003-3",
   "oe_numbers_raw": "BP6F15171",
@@ -50859,7 +49226,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00794",
+  "application_id": "APP-00799",
   "product_id": "BW-3015",
   "bowen_no": "3015",
   "oe_numbers_raw": "30000020",
@@ -50912,7 +49279,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00795",
+  "application_id": "APP-00800",
   "product_id": "BW-33111",
   "bowen_no": "33111",
   "oe_numbers_raw": "99610601359\n99610601360\n99610601354\n99610612552",
@@ -50974,7 +49341,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00796",
+  "application_id": "APP-00801",
   "product_id": "BW-3588",
   "bowen_no": "3588",
   "oe_numbers_raw": "A2742000115",
@@ -51027,7 +49394,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00797",
+  "application_id": "APP-00802",
   "product_id": "BW-1021",
   "bowen_no": "1021",
   "oe_numbers_raw": "15326386",
@@ -51080,66 +49447,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00798",
-  "product_id": "BW-UNRESOLVED-0030",
-  "bowen_no": null,
-  "oe_numbers_raw": "25189205",
-  "oe_numbers_normalized": [
-   "25189205"
-  ],
-  "oe_number_raw": "25189205",
-  "oe_number_normalized": [
-   "25189205"
-  ],
-  "oe_tokens": [
-   "25189205"
-  ],
-  "vehicle_application_raw": "",
-  "vehicle_make": null,
-  "vehicle_make_raw": null,
-  "vehicle_model": null,
-  "engine_code": null,
-  "engine_displacement": null,
-  "engine_application": null,
-  "opening_temperature_c": null,
-  "application_notes": "Bowen No. 单元格原文为 \"3033胶圈\"，错位内容原样保留于此：3033胶圈",
-  "source_sheet": "工作表1",
-  "source_row": 273,
-  "source_record_id": "SRC-00967",
-  "source_cell_refs": {
-   "oe": "B273",
-   "vehicle": "C273",
-   "bowen": "D273",
-   "specs": "F273",
-   "seq": null
-  },
-  "section_label_raw": null,
-  "verification_status": "blocked_misaligned",
-  "blocked": true,
-  "needs_review": false,
-  "data_status": "blocked",
-  "misalignment_notes": [
-   "descriptive_text: Bowen 字段出现中文说明文字",
-   "bowen_unreadable_leading_token: Bowen No. 单元格无法读出合法编号"
-  ],
-  "bowen_cell_raw": "3033胶圈",
-  "bowen_overflow_raw": "3033胶圈",
-  "merged_source_record_count": 1,
-  "merged_source_records": [
-   "SRC-00967"
-  ],
-  "source_sheets": [
-   "工作表1"
-  ],
-  "blocked_reasons": [
-   "descriptive_text",
-   "bowen_unreadable_leading_token"
-  ],
-  "oe_token_count": 1,
-  "oe_tokens_not_oe_like_count": 0
- },
- {
-  "application_id": "APP-00799",
+  "application_id": "APP-00804",
   "product_id": "BW-3515",
   "bowen_no": "3515",
   "oe_numbers_raw": "19301R40A01",
@@ -51192,7 +49500,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00800",
+  "application_id": "APP-00805",
   "product_id": "BW-3589",
   "bowen_no": "3589",
   "oe_numbers_raw": "NE14T0010140\nNE14T0030340",
@@ -51248,7 +49556,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00801",
+  "application_id": "APP-00806",
   "product_id": "BW-35126",
   "bowen_no": "35126",
   "oe_numbers_raw": "H160022900BC\nH160071901",
@@ -51304,7 +49612,7 @@
   "oe_tokens_not_oe_like_count": 0
  },
  {
-  "application_id": "APP-00802",
+  "application_id": "APP-00807",
   "product_id": "BW-3951",
   "bowen_no": "3951",
   "oe_numbers_raw": "1073-190",

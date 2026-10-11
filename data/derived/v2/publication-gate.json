@@ -1,0 +1,4102 @@
+{
+ "generated_at": "2026-09-26T06:35:43.400Z",
+ "rule": "公开产品 = 状态属于 [prototype_candidate, searchable_noindex] 且未 blocked 且存在可靠主图（mapping_status=exact 且 is_primary_image=true） 且至少有 1 条可对外展示的 application。",
+ "note": "这是网站数据导出层的准入规则。被排除的产品在 data/derived/v2 与 data/processed 中完整保留，仅不进入 website/src/data。",
+ "sources": null,
+ "counts": {
+  "internal_products": 426,
+  "publishable_status_products": 421,
+  "published_products": 394,
+  "excluded_not_publishable_status": 5,
+  "excluded_blocked": 0,
+  "excluded_no_reliable_image": 22,
+  "excluded_no_displayable_application": 4,
+  "excluded_both_image_and_application": 1,
+  "reliable_primary_image_products": 403,
+  "published_applications": 730
+ },
+ "published_products_by_category": {
+  "temperature-sensors": 41,
+  "automotive-switches": 74,
+  "thermostats": 276,
+  "related-cooling-parts": 3
+ },
+ "published_product_ids": [
+  "BW-1001",
+  "BW-1002",
+  "BW-1003",
+  "BW-1004",
+  "BW-1008",
+  "BW-1013",
+  "BW-1015",
+  "BW-1019",
+  "BW-1020",
+  "BW-1021",
+  "BW-1022",
+  "BW-1024",
+  "BW-1026",
+  "BW-1027",
+  "BW-1028",
+  "BW-1030",
+  "BW-1031",
+  "BW-1034",
+  "BW-1037",
+  "BW-1038",
+  "BW-1039",
+  "BW-1040",
+  "BW-1041",
+  "BW-1045",
+  "BW-1046",
+  "BW-1047",
+  "BW-1049",
+  "BW-1050A",
+  "BW-1050B",
+  "BW-1051",
+  "BW-1052",
+  "BW-1053",
+  "BW-1055",
+  "BW-1058",
+  "BW-1059",
+  "BW-1069",
+  "BW-1070",
+  "BW-1073",
+  "BW-1157",
+  "BW-1168",
+  "BW-1198",
+  "BW-2001",
+  "BW-2002",
+  "BW-2003",
+  "BW-2004",
+  "BW-2005",
+  "BW-2006",
+  "BW-2007",
+  "BW-2008",
+  "BW-2009",
+  "BW-2010",
+  "BW-2011",
+  "BW-2014",
+  "BW-2015",
+  "BW-2016",
+  "BW-2017",
+  "BW-2018",
+  "BW-2019",
+  "BW-2020",
+  "BW-2024",
+  "BW-2028",
+  "BW-2029",
+  "BW-2030",
+  "BW-2032",
+  "BW-2033",
+  "BW-2035",
+  "BW-2036",
+  "BW-2037",
+  "BW-2038",
+  "BW-2039",
+  "BW-2041",
+  "BW-2042",
+  "BW-2103",
+  "BW-2147",
+  "BW-2148",
+  "BW-2191",
+  "BW-2317",
+  "BW-3001",
+  "BW-3002",
+  "BW-3002-1",
+  "BW-3002-DQ",
+  "BW-3003",
+  "BW-3003-1",
+  "BW-3004",
+  "BW-3004--1",
+  "BW-3004--4",
+  "BW-3004-1",
+  "BW-3004-3",
+  "BW-3004-4",
+  "BW-3005",
+  "BW-3006",
+  "BW-3007",
+  "BW-300701",
+  "BW-30073",
+  "BW-3008",
+  "BW-3009",
+  "BW-3010",
+  "BW-30101",
+  "BW-30102",
+  "BW-3011",
+  "BW-30116",
+  "BW-3012",
+  "BW-3013",
+  "BW-3014",
+  "BW-3015",
+  "BW-3016",
+  "BW-3016-82",
+  "BW-3017",
+  "BW-30179",
+  "BW-3018",
+  "BW-30182",
+  "BW-30189",
+  "BW-3019",
+  "BW-3020",
+  "BW-3021",
+  "BW-3022",
+  "BW-3023",
+  "BW-3024",
+  "BW-3025",
+  "BW-3026",
+  "BW-3027",
+  "BW-3028",
+  "BW-3029",
+  "BW-3031",
+  "BW-3032",
+  "BW-3033",
+  "BW-3033--1",
+  "BW-3033-Z",
+  "BW-303317",
+  "BW-303401",
+  "BW-303402",
+  "BW-303403",
+  "BW-303404",
+  "BW-3035",
+  "BW-3036",
+  "BW-3037",
+  "BW-3038",
+  "BW-3039",
+  "BW-3040",
+  "BW-3041",
+  "BW-3041-1",
+  "BW-3041-2",
+  "BW-3043",
+  "BW-3044",
+  "BW-3045",
+  "BW-3048",
+  "BW-3051",
+  "BW-30523",
+  "BW-3054",
+  "BW-3055",
+  "BW-3056",
+  "BW-3056-1",
+  "BW-3057",
+  "BW-3058",
+  "BW-3059",
+  "BW-3060",
+  "BW-30604",
+  "BW-3061",
+  "BW-3061A",
+  "BW-3064",
+  "BW-3065",
+  "BW-3066",
+  "BW-3067",
+  "BW-3068",
+  "BW-3069",
+  "BW-3071",
+  "BW-3072",
+  "BW-3073",
+  "BW-3074",
+  "BW-3076",
+  "BW-3077",
+  "BW-3080",
+  "BW-3081",
+  "BW-3082",
+  "BW-3083",
+  "BW-3084",
+  "BW-3085",
+  "BW-3086",
+  "BW-3087",
+  "BW-3090",
+  "BW-3094",
+  "BW-3097",
+  "BW-3098",
+  "BW-31005",
+  "BW-31054",
+  "BW-31105",
+  "BW-31182",
+  "BW-3127",
+  "BW-3136",
+  "BW-31403",
+  "BW-3147",
+  "BW-3150",
+  "BW-31505",
+  "BW-31510",
+  "BW-31515",
+  "BW-31520",
+  "BW-3157",
+  "BW-31602",
+  "BW-31604-1",
+  "BW-31605",
+  "BW-31607",
+  "BW-31608",
+  "BW-3167--1",
+  "BW-3167-1",
+  "BW-3203",
+  "BW-32095",
+  "BW-32138",
+  "BW-32269",
+  "BW-32289",
+  "BW-3241A",
+  "BW-3245",
+  "BW-3251",
+  "BW-3252",
+  "BW-3252A",
+  "BW-3253",
+  "BW-3255",
+  "BW-32588",
+  "BW-3267",
+  "BW-3268",
+  "BW-32703",
+  "BW-32839",
+  "BW-32849",
+  "BW-32870",
+  "BW-3288",
+  "BW-3289",
+  "BW-32899",
+  "BW-33075-2",
+  "BW-3310",
+  "BW-33119",
+  "BW-3312",
+  "BW-33151",
+  "BW-3334",
+  "BW-3336",
+  "BW-3340",
+  "BW-3353",
+  "BW-33561-1",
+  "BW-33662",
+  "BW-33663",
+  "BW-33663-1",
+  "BW-3369",
+  "BW-33743",
+  "BW-3385",
+  "BW-33910",
+  "BW-3403",
+  "BW-3500",
+  "BW-35006",
+  "BW-35013",
+  "BW-35020",
+  "BW-35029",
+  "BW-3503",
+  "BW-3504",
+  "BW-35062",
+  "BW-35063",
+  "BW-35063-1",
+  "BW-35065",
+  "BW-35066",
+  "BW-3507",
+  "BW-35084",
+  "BW-3509",
+  "BW-35091",
+  "BW-35098",
+  "BW-3510",
+  "BW-35102",
+  "BW-35106",
+  "BW-35109",
+  "BW-3511",
+  "BW-35119",
+  "BW-35125",
+  "BW-35126",
+  "BW-3514",
+  "BW-3515",
+  "BW-3516",
+  "BW-3517",
+  "BW-3520",
+  "BW-3521",
+  "BW-3522",
+  "BW-3523",
+  "BW-3524",
+  "BW-3525",
+  "BW-3526",
+  "BW-3527",
+  "BW-3528",
+  "BW-3529",
+  "BW-35298-1",
+  "BW-3531",
+  "BW-3533",
+  "BW-3535",
+  "BW-3536",
+  "BW-3537",
+  "BW-3538",
+  "BW-3539",
+  "BW-3540",
+  "BW-3541",
+  "BW-3542",
+  "BW-3543",
+  "BW-3544",
+  "BW-3545",
+  "BW-3546",
+  "BW-3548",
+  "BW-3549",
+  "BW-3550",
+  "BW-3555",
+  "BW-3556",
+  "BW-35619",
+  "BW-3563",
+  "BW-3565",
+  "BW-35650",
+  "BW-3568",
+  "BW-3569",
+  "BW-3576",
+  "BW-3579",
+  "BW-3582",
+  "BW-3583",
+  "BW-3584",
+  "BW-3585",
+  "BW-3588",
+  "BW-3589",
+  "BW-35907",
+  "BW-3597",
+  "BW-3598",
+  "BW-3652",
+  "BW-3653",
+  "BW-3654",
+  "BW-3654--2",
+  "BW-3654--3",
+  "BW-3654-1",
+  "BW-3654-2",
+  "BW-3654-3",
+  "BW-3655",
+  "BW-3665-1",
+  "BW-3666",
+  "BW-3739",
+  "BW-3752",
+  "BW-3753",
+  "BW-3757",
+  "BW-38090",
+  "BW-3816",
+  "BW-38241",
+  "BW-38278",
+  "BW-38282",
+  "BW-3831",
+  "BW-3831A",
+  "BW-3841",
+  "BW-3842",
+  "BW-3843",
+  "BW-38954",
+  "BW-38955",
+  "BW-3904",
+  "BW-3905",
+  "BW-3905-1",
+  "BW-3909",
+  "BW-3920",
+  "BW-3951",
+  "BW-3957",
+  "BW-4002",
+  "BW-4003",
+  "BW-4004",
+  "BW-4005",
+  "BW-5001",
+  "BW-5002",
+  "BW-5003",
+  "BW-5004",
+  "BW-5006",
+  "BW-5007",
+  "BW-5008A",
+  "BW-5008C",
+  "BW-5009",
+  "BW-5010",
+  "BW-5011",
+  "BW-5013",
+  "BW-5014",
+  "BW-5015",
+  "BW-5016",
+  "BW-5016B",
+  "BW-5018",
+  "BW-5020",
+  "BW-6001",
+  "BW-6002",
+  "BW-6003",
+  "BW-6004",
+  "BW-6005",
+  "BW-6006",
+  "BW-6007",
+  "BW-6008",
+  "BW-6009",
+  "BW-6010",
+  "BW-6012",
+  "BW-6015",
+  "BW-6016",
+  "BW-6017",
+  "BW-6018",
+  "BW-6019",
+  "BW-6136",
+  "BW-641034"
+ ],
+ "excluded_products": {
+  "not_publishable_status": [
+   {
+    "product_id": "BW-3932",
+    "bowen_no": "3932",
+    "status": "draft",
+    "reasons": [
+     "not_publishable_status"
+    ]
+   },
+   {
+    "product_id": "BW-32603",
+    "bowen_no": "32603",
+    "status": "draft",
+    "reasons": [
+     "not_publishable_status"
+    ]
+   },
+   {
+    "product_id": "BW-32748-1",
+    "bowen_no": "32748-1",
+    "status": "draft",
+    "reasons": [
+     "not_publishable_status"
+    ]
+   },
+   {
+    "product_id": "BW-38169",
+    "bowen_no": "38169",
+    "status": "draft",
+    "reasons": [
+     "not_publishable_status"
+    ]
+   },
+   {
+    "product_id": "BW-38298",
+    "bowen_no": "38298",
+    "status": "draft",
+    "reasons": [
+     "not_publishable_status"
+    ]
+   }
+  ],
+  "blocked": [],
+  "no_reliable_image": [
+   {
+    "product_id": "BW-2043",
+    "bowen_no": "2043",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-3003-3",
+    "bowen_no": "3003-3",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-3004-5",
+    "bowen_no": "3004-5",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-3021-1",
+    "bowen_no": "3021-1",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-3192",
+    "bowen_no": "3192",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-3508",
+    "bowen_no": "3508",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-3565-2",
+    "bowen_no": "3565-2",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-3566",
+    "bowen_no": "3566",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-3567",
+    "bowen_no": "3567",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-3655-2",
+    "bowen_no": "3655-2",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-3665",
+    "bowen_no": "3665",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-3902",
+    "bowen_no": "3902",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-3919",
+    "bowen_no": "3919",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-3964",
+    "bowen_no": "3964",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-31002",
+    "bowen_no": "31002",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-32748-2",
+    "bowen_no": "32748-2",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-33111",
+    "bowen_no": "33111",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-33561",
+    "bowen_no": "33561",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-33655",
+    "bowen_no": "33655",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-35116",
+    "bowen_no": "35116",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-36583",
+    "bowen_no": "36583",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   },
+   {
+    "product_id": "BW-403229",
+    "bowen_no": "403229",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image"
+    ]
+   }
+  ],
+  "no_displayable_application": [
+   {
+    "product_id": "BW-3004--3",
+    "bowen_no": "3004--3",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_displayable_application"
+    ]
+   },
+   {
+    "product_id": "BW-31016",
+    "bowen_no": "31016",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_displayable_application"
+    ]
+   },
+   {
+    "product_id": "BW-33655A",
+    "bowen_no": "33655A",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_displayable_application"
+    ]
+   },
+   {
+    "product_id": "BW-35059",
+    "bowen_no": "35059",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_displayable_application"
+    ]
+   }
+  ],
+  "both": [
+   {
+    "product_id": "BW-3011-2",
+    "bowen_no": "3011-2",
+    "status": "searchable_noindex",
+    "reasons": [
+     "no_reliable_image",
+     "no_displayable_application"
+    ]
+   }
+  ]
+ },
+ "all_excluded_products": [
+  {
+   "product_id": "BW-2043",
+   "bowen_no": "2043",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-3003-3",
+   "bowen_no": "3003-3",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-3004--3",
+   "bowen_no": "3004--3",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_displayable_application"
+   ]
+  },
+  {
+   "product_id": "BW-3004-5",
+   "bowen_no": "3004-5",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-3011-2",
+   "bowen_no": "3011-2",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image",
+    "no_displayable_application"
+   ]
+  },
+  {
+   "product_id": "BW-3021-1",
+   "bowen_no": "3021-1",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-3192",
+   "bowen_no": "3192",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-3508",
+   "bowen_no": "3508",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-3565-2",
+   "bowen_no": "3565-2",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-3566",
+   "bowen_no": "3566",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-3567",
+   "bowen_no": "3567",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-3655-2",
+   "bowen_no": "3655-2",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-3665",
+   "bowen_no": "3665",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-3902",
+   "bowen_no": "3902",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-3919",
+   "bowen_no": "3919",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-3932",
+   "bowen_no": "3932",
+   "status": "draft",
+   "reasons": [
+    "not_publishable_status"
+   ]
+  },
+  {
+   "product_id": "BW-3964",
+   "bowen_no": "3964",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-31002",
+   "bowen_no": "31002",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-31016",
+   "bowen_no": "31016",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_displayable_application"
+   ]
+  },
+  {
+   "product_id": "BW-32603",
+   "bowen_no": "32603",
+   "status": "draft",
+   "reasons": [
+    "not_publishable_status"
+   ]
+  },
+  {
+   "product_id": "BW-32748-1",
+   "bowen_no": "32748-1",
+   "status": "draft",
+   "reasons": [
+    "not_publishable_status"
+   ]
+  },
+  {
+   "product_id": "BW-32748-2",
+   "bowen_no": "32748-2",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-33111",
+   "bowen_no": "33111",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-33561",
+   "bowen_no": "33561",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-33655",
+   "bowen_no": "33655",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-33655A",
+   "bowen_no": "33655A",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_displayable_application"
+   ]
+  },
+  {
+   "product_id": "BW-35059",
+   "bowen_no": "35059",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_displayable_application"
+   ]
+  },
+  {
+   "product_id": "BW-35116",
+   "bowen_no": "35116",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-36583",
+   "bowen_no": "36583",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  },
+  {
+   "product_id": "BW-38169",
+   "bowen_no": "38169",
+   "status": "draft",
+   "reasons": [
+    "not_publishable_status"
+   ]
+  },
+  {
+   "product_id": "BW-38298",
+   "bowen_no": "38298",
+   "status": "draft",
+   "reasons": [
+    "not_publishable_status"
+   ]
+  },
+  {
+   "product_id": "BW-403229",
+   "bowen_no": "403229",
+   "status": "searchable_noindex",
+   "reasons": [
+    "no_reliable_image"
+   ]
+  }
+ ],
+ "duplicate_primary_image_products": [],
+ "published_primary_image_by_product": {
+  "BW-1001": {
+   "image_id": "IMG-0270",
+   "source_file": "data/processed/product-images/1001_综合产品信息表_270.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1001"
+  },
+  "BW-1002": {
+   "image_id": "IMG-0271",
+   "source_file": "data/processed/product-images/1002_综合产品信息表_271.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1002"
+  },
+  "BW-1003": {
+   "image_id": "IMG-0272",
+   "source_file": "data/processed/product-images/1003_综合产品信息表_272.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1003"
+  },
+  "BW-1004": {
+   "image_id": "IMG-0273",
+   "source_file": "data/processed/product-images/1004_综合产品信息表_273.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1004"
+  },
+  "BW-1008": {
+   "image_id": "IMG-0274",
+   "source_file": "data/processed/product-images/1008_综合产品信息表_274.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1008"
+  },
+  "BW-1013": {
+   "image_id": "IMG-0275",
+   "source_file": "data/processed/product-images/1013_综合产品信息表_275.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1013"
+  },
+  "BW-1015": {
+   "image_id": "IMG-0276",
+   "source_file": "data/processed/product-images/1015_综合产品信息表_276.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1015"
+  },
+  "BW-1019": {
+   "image_id": "IMG-0277",
+   "source_file": "data/processed/product-images/1019_综合产品信息表_277.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1019"
+  },
+  "BW-1020": {
+   "image_id": "IMG-0278",
+   "source_file": "data/processed/product-images/1020_综合产品信息表_278.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1020"
+  },
+  "BW-1021": {
+   "image_id": "IMG-0279",
+   "source_file": "data/processed/product-images/1021_综合产品信息表_279.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1021"
+  },
+  "BW-1022": {
+   "image_id": "IMG-0280",
+   "source_file": "data/processed/product-images/1022_综合产品信息表_280.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1022"
+  },
+  "BW-1024": {
+   "image_id": "IMG-0288",
+   "source_file": "data/processed/product-images/1024_综合产品信息表_288.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1024"
+  },
+  "BW-1026": {
+   "image_id": "IMG-0281",
+   "source_file": "data/processed/product-images/1026_综合产品信息表_281.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1026"
+  },
+  "BW-1027": {
+   "image_id": "IMG-0282",
+   "source_file": "data/processed/product-images/1027_综合产品信息表_282.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1027"
+  },
+  "BW-1028": {
+   "image_id": "IMG-0283",
+   "source_file": "data/processed/product-images/1028_综合产品信息表_283.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1028"
+  },
+  "BW-1030": {
+   "image_id": "IMG-0284",
+   "source_file": "data/processed/product-images/1030_综合产品信息表_284.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1030"
+  },
+  "BW-1031": {
+   "image_id": "IMG-0285",
+   "source_file": "data/processed/product-images/1031_综合产品信息表_285.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1031"
+  },
+  "BW-1034": {
+   "image_id": "IMG-0286",
+   "source_file": "data/processed/product-images/1034_综合产品信息表_286.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1034"
+  },
+  "BW-1037": {
+   "image_id": "IMG-0287",
+   "source_file": "data/processed/product-images/1037_综合产品信息表_287.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1037"
+  },
+  "BW-1038": {
+   "image_id": "IMG-0290",
+   "source_file": "data/processed/product-images/1038_综合产品信息表_290.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1038"
+  },
+  "BW-1039": {
+   "image_id": "IMG-0291",
+   "source_file": "data/processed/product-images/1039_综合产品信息表_291.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1039"
+  },
+  "BW-1040": {
+   "image_id": "IMG-0292",
+   "source_file": "data/processed/product-images/1040_综合产品信息表_292.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1040"
+  },
+  "BW-1041": {
+   "image_id": "IMG-0293",
+   "source_file": "data/processed/product-images/1041_综合产品信息表_293.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1041"
+  },
+  "BW-1045": {
+   "image_id": "IMG-0294",
+   "source_file": "data/processed/product-images/1045_综合产品信息表_294.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1045"
+  },
+  "BW-1046": {
+   "image_id": "IMG-0295",
+   "source_file": "data/processed/product-images/1046_综合产品信息表_295.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1046"
+  },
+  "BW-1047": {
+   "image_id": "IMG-0296",
+   "source_file": "data/processed/product-images/1047_综合产品信息表_296.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1047"
+  },
+  "BW-1049": {
+   "image_id": "IMG-0297",
+   "source_file": "data/processed/product-images/1049_综合产品信息表_297.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1049"
+  },
+  "BW-1050A": {
+   "image_id": "IMG-0298",
+   "source_file": "data/processed/product-images/1050A_综合产品信息表_298.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1050A"
+  },
+  "BW-1050B": {
+   "image_id": "IMG-0299",
+   "source_file": "data/processed/product-images/1050B_综合产品信息表_299.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1050B"
+  },
+  "BW-1051": {
+   "image_id": "IMG-0300",
+   "source_file": "data/processed/product-images/1051_综合产品信息表_300.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1051"
+  },
+  "BW-1052": {
+   "image_id": "IMG-0311",
+   "source_file": "data/processed/product-images/1052_综合产品信息表_311.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1052"
+  },
+  "BW-1053": {
+   "image_id": "IMG-0301",
+   "source_file": "data/processed/product-images/1053_综合产品信息表_301.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1053"
+  },
+  "BW-1055": {
+   "image_id": "IMG-0302",
+   "source_file": "data/processed/product-images/1055_综合产品信息表_302.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1055"
+  },
+  "BW-1058": {
+   "image_id": "IMG-0303",
+   "source_file": "data/processed/product-images/1058_综合产品信息表_303.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1058"
+  },
+  "BW-1059": {
+   "image_id": "IMG-0304",
+   "source_file": "data/processed/product-images/1059_综合产品信息表_304.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1059"
+  },
+  "BW-1069": {
+   "image_id": "IMG-0305",
+   "source_file": "data/processed/product-images/1069_综合产品信息表_305.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1069"
+  },
+  "BW-1070": {
+   "image_id": "IMG-0306",
+   "source_file": "data/processed/product-images/1070_综合产品信息表_306.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1070"
+  },
+  "BW-1073": {
+   "image_id": "IMG-0307",
+   "source_file": "data/processed/product-images/1073_综合产品信息表_307.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1073"
+  },
+  "BW-1157": {
+   "image_id": "IMG-0308",
+   "source_file": "data/processed/product-images/1157_综合产品信息表_308.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1157"
+  },
+  "BW-1168": {
+   "image_id": "IMG-0309",
+   "source_file": "data/processed/product-images/1168_综合产品信息表_309.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1168"
+  },
+  "BW-1198": {
+   "image_id": "IMG-0310",
+   "source_file": "data/processed/product-images/1198_综合产品信息表_310.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "1198"
+  },
+  "BW-2001": {
+   "image_id": "IMG-0312",
+   "source_file": "data/processed/product-images/2001_综合产品信息表_312.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2001"
+  },
+  "BW-2002": {
+   "image_id": "IMG-0313",
+   "source_file": "data/processed/product-images/2002_综合产品信息表_313.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2002"
+  },
+  "BW-2003": {
+   "image_id": "IMG-0314",
+   "source_file": "data/processed/product-images/2003_综合产品信息表_314.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2003"
+  },
+  "BW-2004": {
+   "image_id": "IMG-0315",
+   "source_file": "data/processed/product-images/2004_综合产品信息表_315.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2004"
+  },
+  "BW-2005": {
+   "image_id": "IMG-0316",
+   "source_file": "data/processed/product-images/2005_综合产品信息表_316.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2005"
+  },
+  "BW-2006": {
+   "image_id": "IMG-0317",
+   "source_file": "data/processed/product-images/2006_综合产品信息表_317.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2006"
+  },
+  "BW-2007": {
+   "image_id": "IMG-0318",
+   "source_file": "data/processed/product-images/2007_综合产品信息表_318.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2007"
+  },
+  "BW-2008": {
+   "image_id": "IMG-0319",
+   "source_file": "data/processed/product-images/2008_综合产品信息表_319.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2008"
+  },
+  "BW-2009": {
+   "image_id": "IMG-0320",
+   "source_file": "data/processed/product-images/2009_综合产品信息表_320.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2009"
+  },
+  "BW-2010": {
+   "image_id": "IMG-0321",
+   "source_file": "data/processed/product-images/2010_综合产品信息表_321.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2010"
+  },
+  "BW-2011": {
+   "image_id": "IMG-0322",
+   "source_file": "data/processed/product-images/2011_综合产品信息表_322.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2011"
+  },
+  "BW-2014": {
+   "image_id": "IMG-0323",
+   "source_file": "data/processed/product-images/2014_综合产品信息表_323.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2014"
+  },
+  "BW-2015": {
+   "image_id": "IMG-0324",
+   "source_file": "data/processed/product-images/2015_综合产品信息表_324.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2015"
+  },
+  "BW-2016": {
+   "image_id": "IMG-0325",
+   "source_file": "data/processed/product-images/2016_综合产品信息表_325.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2016"
+  },
+  "BW-2017": {
+   "image_id": "IMG-0326",
+   "source_file": "data/processed/product-images/2017_综合产品信息表_326.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2017"
+  },
+  "BW-2018": {
+   "image_id": "IMG-0327",
+   "source_file": "data/processed/product-images/2018_综合产品信息表_327.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2018"
+  },
+  "BW-2019": {
+   "image_id": "IMG-0328",
+   "source_file": "data/processed/product-images/2019_综合产品信息表_328.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2019"
+  },
+  "BW-2020": {
+   "image_id": "IMG-0329",
+   "source_file": "data/processed/product-images/2020_综合产品信息表_329.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2020"
+  },
+  "BW-2024": {
+   "image_id": "IMG-0330",
+   "source_file": "data/processed/product-images/2024_综合产品信息表_330.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2024"
+  },
+  "BW-2028": {
+   "image_id": "IMG-0331",
+   "source_file": "data/processed/product-images/2028_综合产品信息表_331.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2028"
+  },
+  "BW-2029": {
+   "image_id": "IMG-0332",
+   "source_file": "data/processed/product-images/2029_综合产品信息表_332.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2029"
+  },
+  "BW-2030": {
+   "image_id": "IMG-0333",
+   "source_file": "data/processed/product-images/2030_综合产品信息表_333.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2030"
+  },
+  "BW-2032": {
+   "image_id": "IMG-0334",
+   "source_file": "data/processed/product-images/2032_综合产品信息表_334.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2032"
+  },
+  "BW-2033": {
+   "image_id": "IMG-0335",
+   "source_file": "data/processed/product-images/2033_综合产品信息表_335.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2033"
+  },
+  "BW-2035": {
+   "image_id": "IMG-0336",
+   "source_file": "data/processed/product-images/2035_综合产品信息表_336.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2035"
+  },
+  "BW-2036": {
+   "image_id": "IMG-0337",
+   "source_file": "data/processed/product-images/2036_综合产品信息表_337.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2036"
+  },
+  "BW-2037": {
+   "image_id": "IMG-0338",
+   "source_file": "data/processed/product-images/2037_综合产品信息表_338.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2037"
+  },
+  "BW-2038": {
+   "image_id": "IMG-0339",
+   "source_file": "data/processed/product-images/2038_综合产品信息表_339.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2038"
+  },
+  "BW-2039": {
+   "image_id": "IMG-0340",
+   "source_file": "data/processed/product-images/2039_综合产品信息表_340.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2039"
+  },
+  "BW-2041": {
+   "image_id": "IMG-0341",
+   "source_file": "data/processed/product-images/2041_综合产品信息表_341.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2041"
+  },
+  "BW-2042": {
+   "image_id": "IMG-0342",
+   "source_file": "data/processed/product-images/2042_综合产品信息表_342.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2042"
+  },
+  "BW-2103": {
+   "image_id": "IMG-0343",
+   "source_file": "data/processed/product-images/2103_综合产品信息表_343.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2103"
+  },
+  "BW-2147": {
+   "image_id": "IMG-0344",
+   "source_file": "data/processed/product-images/2147_综合产品信息表_344.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2147"
+  },
+  "BW-2148": {
+   "image_id": "IMG-0345",
+   "source_file": "data/processed/product-images/2148_综合产品信息表_345.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2148"
+  },
+  "BW-2191": {
+   "image_id": "IMG-0346",
+   "source_file": "data/processed/product-images/2191_综合产品信息表_346.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2191"
+  },
+  "BW-2317": {
+   "image_id": "IMG-0347",
+   "source_file": "data/processed/product-images/2317_综合产品信息表_347.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "2317"
+  },
+  "BW-3001": {
+   "image_id": "IMG-0001",
+   "source_file": "data/processed/product-images/3001_综合产品信息表_001.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3001"
+  },
+  "BW-3002": {
+   "image_id": "IMG-0002",
+   "source_file": "data/processed/product-images/3002_综合产品信息表_002.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3002"
+  },
+  "BW-3002-1": {
+   "image_id": "IMG-0765",
+   "source_file": "data/processed/product-images/3002-1_工作表1_048.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3002-1"
+  },
+  "BW-3002-DQ": {
+   "image_id": "IMG-0151",
+   "source_file": "data/processed/product-images/3002-DQ_综合产品信息表_151.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3002-DQ"
+  },
+  "BW-3003": {
+   "image_id": "IMG-0003",
+   "source_file": "data/processed/product-images/3003_综合产品信息表_003.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3003"
+  },
+  "BW-3003-1": {
+   "image_id": "IMG-0216",
+   "source_file": "data/processed/product-images/3003-1_综合产品信息表_216.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3003-1"
+  },
+  "BW-3004": {
+   "image_id": "IMG-0004",
+   "source_file": "data/processed/product-images/3004_综合产品信息表_004.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3004"
+  },
+  "BW-3004--1": {
+   "image_id": "IMG-0600",
+   "source_file": "data/processed/product-images/3004--1_荣威名爵系列_010.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3004--1"
+  },
+  "BW-3004--4": {
+   "image_id": "IMG-0471",
+   "source_file": "data/processed/product-images/3004--4_长安系列_005.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3004--4"
+  },
+  "BW-3004-1": {
+   "image_id": "IMG-0194",
+   "source_file": "data/processed/product-images/3004-1_综合产品信息表_194.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3004-1"
+  },
+  "BW-3004-3": {
+   "image_id": "IMG-0189",
+   "source_file": "data/processed/product-images/3004-3_综合产品信息表_189.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3004-3"
+  },
+  "BW-3004-4": {
+   "image_id": "IMG-0139",
+   "source_file": "data/processed/product-images/3004-4_综合产品信息表_139.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3004-4"
+  },
+  "BW-3005": {
+   "image_id": "IMG-0005",
+   "source_file": "data/processed/product-images/3005_综合产品信息表_005.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3005"
+  },
+  "BW-3006": {
+   "image_id": "IMG-0006",
+   "source_file": "data/processed/product-images/3006_综合产品信息表_006.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3006"
+  },
+  "BW-3007": {
+   "image_id": "IMG-0007",
+   "source_file": "data/processed/product-images/3007_综合产品信息表_007.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3007"
+  },
+  "BW-300701": {
+   "image_id": "IMG-0008",
+   "source_file": "data/processed/product-images/300701_综合产品信息表_008.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "300701"
+  },
+  "BW-30073": {
+   "image_id": "IMG-0158",
+   "source_file": "data/processed/product-images/30073_综合产品信息表_158.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "30073"
+  },
+  "BW-3008": {
+   "image_id": "IMG-0009",
+   "source_file": "data/processed/product-images/3008_综合产品信息表_009.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3008"
+  },
+  "BW-3009": {
+   "image_id": "IMG-0010",
+   "source_file": "data/processed/product-images/3009_综合产品信息表_010.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3009"
+  },
+  "BW-3010": {
+   "image_id": "IMG-0011",
+   "source_file": "data/processed/product-images/3010_综合产品信息表_011.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3010"
+  },
+  "BW-30101": {
+   "image_id": "IMG-0166",
+   "source_file": "data/processed/product-images/30101_综合产品信息表_166.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "30101"
+  },
+  "BW-30102": {
+   "image_id": "IMG-0168",
+   "source_file": "data/processed/product-images/30102_综合产品信息表_168.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "30102"
+  },
+  "BW-3011": {
+   "image_id": "IMG-0012",
+   "source_file": "data/processed/product-images/3011_综合产品信息表_012.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3011"
+  },
+  "BW-30116": {
+   "image_id": "IMG-0175",
+   "source_file": "data/processed/product-images/30116_综合产品信息表_175.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "30116"
+  },
+  "BW-3012": {
+   "image_id": "IMG-0013",
+   "source_file": "data/processed/product-images/3012_综合产品信息表_013.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3012"
+  },
+  "BW-3013": {
+   "image_id": "IMG-0014",
+   "source_file": "data/processed/product-images/3013_综合产品信息表_014.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3013"
+  },
+  "BW-3014": {
+   "image_id": "IMG-0015",
+   "source_file": "data/processed/product-images/3014_综合产品信息表_015.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3014"
+  },
+  "BW-3015": {
+   "image_id": "IMG-0016",
+   "source_file": "data/processed/product-images/3015_综合产品信息表_016.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3015"
+  },
+  "BW-3016": {
+   "image_id": "IMG-0017",
+   "source_file": "data/processed/product-images/3016_综合产品信息表_017.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3016"
+  },
+  "BW-3016-82": {
+   "image_id": "IMG-0134",
+   "source_file": "data/processed/product-images/3016-82_综合产品信息表_134.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3016-82"
+  },
+  "BW-3017": {
+   "image_id": "IMG-0018",
+   "source_file": "data/processed/product-images/3017_综合产品信息表_018.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3017"
+  },
+  "BW-30179": {
+   "image_id": "IMG-0225",
+   "source_file": "data/processed/product-images/30179_综合产品信息表_225.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "30179"
+  },
+  "BW-3018": {
+   "image_id": "IMG-0019",
+   "source_file": "data/processed/product-images/3018_综合产品信息表_019.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3018"
+  },
+  "BW-30182": {
+   "image_id": "IMG-0183",
+   "source_file": "data/processed/product-images/30182_综合产品信息表_183.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "30182"
+  },
+  "BW-30189": {
+   "image_id": "IMG-0226",
+   "source_file": "data/processed/product-images/30189_综合产品信息表_226.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "30189"
+  },
+  "BW-3019": {
+   "image_id": "IMG-0020",
+   "source_file": "data/processed/product-images/3019_综合产品信息表_020.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3019"
+  },
+  "BW-3020": {
+   "image_id": "IMG-0021",
+   "source_file": "data/processed/product-images/3020_综合产品信息表_021.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3020"
+  },
+  "BW-3021": {
+   "image_id": "IMG-0022",
+   "source_file": "data/processed/product-images/3021_综合产品信息表_022.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3021"
+  },
+  "BW-3022": {
+   "image_id": "IMG-0023",
+   "source_file": "data/processed/product-images/3022_综合产品信息表_023.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3022"
+  },
+  "BW-3023": {
+   "image_id": "IMG-0024",
+   "source_file": "data/processed/product-images/3023_综合产品信息表_024.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3023"
+  },
+  "BW-3024": {
+   "image_id": "IMG-0025",
+   "source_file": "data/processed/product-images/3024_综合产品信息表_025.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3024"
+  },
+  "BW-3025": {
+   "image_id": "IMG-0026",
+   "source_file": "data/processed/product-images/3025_综合产品信息表_026.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3025"
+  },
+  "BW-3026": {
+   "image_id": "IMG-0027",
+   "source_file": "data/processed/product-images/3026_综合产品信息表_027.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3026"
+  },
+  "BW-3027": {
+   "image_id": "IMG-0028",
+   "source_file": "data/processed/product-images/3027_综合产品信息表_028.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3027"
+  },
+  "BW-3028": {
+   "image_id": "IMG-0029",
+   "source_file": "data/processed/product-images/3028_综合产品信息表_029.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3028"
+  },
+  "BW-3029": {
+   "image_id": "IMG-0030",
+   "source_file": "data/processed/product-images/3029_综合产品信息表_030.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3029"
+  },
+  "BW-3031": {
+   "image_id": "IMG-0174",
+   "source_file": "data/processed/product-images/3031_综合产品信息表_174.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3031"
+  },
+  "BW-3032": {
+   "image_id": "IMG-0031",
+   "source_file": "data/processed/product-images/3032_综合产品信息表_031.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3032"
+  },
+  "BW-3033": {
+   "image_id": "IMG-0032",
+   "source_file": "data/processed/product-images/3033_综合产品信息表_032.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3033"
+  },
+  "BW-3033--1": {
+   "image_id": "IMG-0554",
+   "source_file": "data/processed/product-images/3033--1_通用系列_001.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3033--1"
+  },
+  "BW-3033-Z": {
+   "image_id": "IMG-0033",
+   "source_file": "data/processed/product-images/3033-z_综合产品信息表_033.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3033-z"
+  },
+  "BW-303317": {
+   "image_id": "IMG-0034",
+   "source_file": "data/processed/product-images/303317_综合产品信息表_034.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "303317"
+  },
+  "BW-303401": {
+   "image_id": "IMG-0035",
+   "source_file": "data/processed/product-images/303401_综合产品信息表_035.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "303401"
+  },
+  "BW-303402": {
+   "image_id": "IMG-0036",
+   "source_file": "data/processed/product-images/303402_综合产品信息表_036.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "303402"
+  },
+  "BW-303403": {
+   "image_id": "IMG-0214",
+   "source_file": "data/processed/product-images/303403_综合产品信息表_214.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "303403"
+  },
+  "BW-303404": {
+   "image_id": "IMG-0215",
+   "source_file": "data/processed/product-images/303404_综合产品信息表_215.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "303404"
+  },
+  "BW-3035": {
+   "image_id": "IMG-0037",
+   "source_file": "data/processed/product-images/3035_综合产品信息表_037.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3035"
+  },
+  "BW-3036": {
+   "image_id": "IMG-0038",
+   "source_file": "data/processed/product-images/3036_综合产品信息表_038.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3036"
+  },
+  "BW-3037": {
+   "image_id": "IMG-0041",
+   "source_file": "data/processed/product-images/3037_综合产品信息表_041.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3037"
+  },
+  "BW-3038": {
+   "image_id": "IMG-0042",
+   "source_file": "data/processed/product-images/3038_综合产品信息表_042.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3038"
+  },
+  "BW-3039": {
+   "image_id": "IMG-0043",
+   "source_file": "data/processed/product-images/3039_综合产品信息表_043.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3039"
+  },
+  "BW-3040": {
+   "image_id": "IMG-0044",
+   "source_file": "data/processed/product-images/3040_综合产品信息表_044.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3040"
+  },
+  "BW-3041": {
+   "image_id": "IMG-0045",
+   "source_file": "data/processed/product-images/3041_综合产品信息表_045.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3041"
+  },
+  "BW-3041-1": {
+   "image_id": "IMG-0199",
+   "source_file": "data/processed/product-images/3041-1_综合产品信息表_199.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3041-1"
+  },
+  "BW-3041-2": {
+   "image_id": "IMG-0254",
+   "source_file": "data/processed/product-images/3041-2_综合产品信息表_254.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3041-2"
+  },
+  "BW-3043": {
+   "image_id": "IMG-0185",
+   "source_file": "data/processed/product-images/3043_综合产品信息表_185.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3043"
+  },
+  "BW-3044": {
+   "image_id": "IMG-0046",
+   "source_file": "data/processed/product-images/3044_综合产品信息表_046.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3044"
+  },
+  "BW-3045": {
+   "image_id": "IMG-0047",
+   "source_file": "data/processed/product-images/3045_综合产品信息表_047.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3045"
+  },
+  "BW-3048": {
+   "image_id": "IMG-0048",
+   "source_file": "data/processed/product-images/3048_综合产品信息表_048.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3048"
+  },
+  "BW-3051": {
+   "image_id": "IMG-0049",
+   "source_file": "data/processed/product-images/3051_综合产品信息表_049.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3051"
+  },
+  "BW-30523": {
+   "image_id": "IMG-0182",
+   "source_file": "data/processed/product-images/30523_综合产品信息表_182.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "30523"
+  },
+  "BW-3054": {
+   "image_id": "IMG-0051",
+   "source_file": "data/processed/product-images/3054_综合产品信息表_051.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3054"
+  },
+  "BW-3055": {
+   "image_id": "IMG-0143",
+   "source_file": "data/processed/product-images/3055_综合产品信息表_143.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3055"
+  },
+  "BW-3056": {
+   "image_id": "IMG-0052",
+   "source_file": "data/processed/product-images/3056_综合产品信息表_052.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3056"
+  },
+  "BW-3056-1": {
+   "image_id": "IMG-0144",
+   "source_file": "data/processed/product-images/3056-1_综合产品信息表_144.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3056-1"
+  },
+  "BW-3057": {
+   "image_id": "IMG-0053",
+   "source_file": "data/processed/product-images/3057_综合产品信息表_053.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3057"
+  },
+  "BW-3058": {
+   "image_id": "IMG-0145",
+   "source_file": "data/processed/product-images/3058_综合产品信息表_145.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3058"
+  },
+  "BW-3059": {
+   "image_id": "IMG-0054",
+   "source_file": "data/processed/product-images/3059_综合产品信息表_054.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3059"
+  },
+  "BW-3060": {
+   "image_id": "IMG-0056",
+   "source_file": "data/processed/product-images/3060_综合产品信息表_056.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3060"
+  },
+  "BW-30604": {
+   "image_id": "IMG-0266",
+   "source_file": "data/processed/product-images/30604_综合产品信息表_266.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "30604"
+  },
+  "BW-3061": {
+   "image_id": "IMG-0057",
+   "source_file": "data/processed/product-images/3061_综合产品信息表_057.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3061"
+  },
+  "BW-3061A": {
+   "image_id": "IMG-0217",
+   "source_file": "data/processed/product-images/3061A_综合产品信息表_217.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3061A"
+  },
+  "BW-3064": {
+   "image_id": "IMG-0058",
+   "source_file": "data/processed/product-images/3064_综合产品信息表_058.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3064"
+  },
+  "BW-3065": {
+   "image_id": "IMG-0059",
+   "source_file": "data/processed/product-images/3065_综合产品信息表_059.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3065"
+  },
+  "BW-3066": {
+   "image_id": "IMG-0060",
+   "source_file": "data/processed/product-images/3066_综合产品信息表_060.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3066"
+  },
+  "BW-3067": {
+   "image_id": "IMG-0055",
+   "source_file": "data/processed/product-images/3067_综合产品信息表_055.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3067"
+  },
+  "BW-3068": {
+   "image_id": "IMG-0061",
+   "source_file": "data/processed/product-images/3068_综合产品信息表_061.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3068"
+  },
+  "BW-3069": {
+   "image_id": "IMG-0062",
+   "source_file": "data/processed/product-images/3069_综合产品信息表_062.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3069"
+  },
+  "BW-3071": {
+   "image_id": "IMG-0063",
+   "source_file": "data/processed/product-images/3071_综合产品信息表_063.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3071"
+  },
+  "BW-3072": {
+   "image_id": "IMG-0064",
+   "source_file": "data/processed/product-images/3072_综合产品信息表_064.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3072"
+  },
+  "BW-3073": {
+   "image_id": "IMG-0065",
+   "source_file": "data/processed/product-images/3073_综合产品信息表_065.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3073"
+  },
+  "BW-3074": {
+   "image_id": "IMG-0066",
+   "source_file": "data/processed/product-images/3074_综合产品信息表_066.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3074"
+  },
+  "BW-3076": {
+   "image_id": "IMG-0067",
+   "source_file": "data/processed/product-images/3076_综合产品信息表_067.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3076"
+  },
+  "BW-3077": {
+   "image_id": "IMG-0068",
+   "source_file": "data/processed/product-images/3077_综合产品信息表_068.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3077"
+  },
+  "BW-3080": {
+   "image_id": "IMG-0138",
+   "source_file": "data/processed/product-images/3080_综合产品信息表_138.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3080"
+  },
+  "BW-3081": {
+   "image_id": "IMG-0070",
+   "source_file": "data/processed/product-images/3081_综合产品信息表_070.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3081"
+  },
+  "BW-3082": {
+   "image_id": "IMG-0069",
+   "source_file": "data/processed/product-images/3082_综合产品信息表_069.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3082"
+  },
+  "BW-3083": {
+   "image_id": "IMG-0071",
+   "source_file": "data/processed/product-images/3083_综合产品信息表_071.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3083"
+  },
+  "BW-3084": {
+   "image_id": "IMG-0072",
+   "source_file": "data/processed/product-images/3084_综合产品信息表_072.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3084"
+  },
+  "BW-3085": {
+   "image_id": "IMG-0073",
+   "source_file": "data/processed/product-images/3085_综合产品信息表_073.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3085"
+  },
+  "BW-3086": {
+   "image_id": "IMG-0074",
+   "source_file": "data/processed/product-images/3086_综合产品信息表_074.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3086"
+  },
+  "BW-3087": {
+   "image_id": "IMG-0075",
+   "source_file": "data/processed/product-images/3087_综合产品信息表_075.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3087"
+  },
+  "BW-3090": {
+   "image_id": "IMG-0076",
+   "source_file": "data/processed/product-images/3090_综合产品信息表_076.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3090"
+  },
+  "BW-3094": {
+   "image_id": "IMG-0077",
+   "source_file": "data/processed/product-images/3094_综合产品信息表_077.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3094"
+  },
+  "BW-3097": {
+   "image_id": "IMG-0078",
+   "source_file": "data/processed/product-images/3097_综合产品信息表_078.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3097"
+  },
+  "BW-3098": {
+   "image_id": "IMG-0147",
+   "source_file": "data/processed/product-images/3098_综合产品信息表_147.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3098"
+  },
+  "BW-31005": {
+   "image_id": "IMG-0786",
+   "source_file": "data/processed/product-images/31005_工作表1_069.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "31005"
+  },
+  "BW-31054": {
+   "image_id": "IMG-0079",
+   "source_file": "data/processed/product-images/31054_综合产品信息表_079.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "31054"
+  },
+  "BW-31105": {
+   "image_id": "IMG-0789",
+   "source_file": "data/processed/product-images/31105_工作表1_071.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "31105"
+  },
+  "BW-31182": {
+   "image_id": "IMG-0770",
+   "source_file": "data/processed/product-images/31182_工作表1_053.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "31182"
+  },
+  "BW-3127": {
+   "image_id": "IMG-0726",
+   "source_file": "data/processed/product-images/3127_工作表1_009.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3127"
+  },
+  "BW-3136": {
+   "image_id": "IMG-0040",
+   "source_file": "data/processed/product-images/3136_综合产品信息表_040.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3136"
+  },
+  "BW-31403": {
+   "image_id": "IMG-0790",
+   "source_file": "data/processed/product-images/31403_工作表1_072.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "31403"
+  },
+  "BW-3147": {
+   "image_id": "IMG-0080",
+   "source_file": "data/processed/product-images/3147_综合产品信息表_080.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3147"
+  },
+  "BW-3150": {
+   "image_id": "IMG-0186",
+   "source_file": "data/processed/product-images/3150_综合产品信息表_186.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3150"
+  },
+  "BW-31505": {
+   "image_id": "IMG-0240",
+   "source_file": "data/processed/product-images/31505_综合产品信息表_240.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "31505"
+  },
+  "BW-31510": {
+   "image_id": "IMG-0170",
+   "source_file": "data/processed/product-images/31510_综合产品信息表_170.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "31510"
+  },
+  "BW-31515": {
+   "image_id": "IMG-0235",
+   "source_file": "data/processed/product-images/31515_综合产品信息表_235.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "31515"
+  },
+  "BW-31520": {
+   "image_id": "IMG-0767",
+   "source_file": "data/processed/product-images/31520_工作表1_050.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "31520"
+  },
+  "BW-3157": {
+   "image_id": "IMG-0188",
+   "source_file": "data/processed/product-images/3157_综合产品信息表_188.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3157"
+  },
+  "BW-31602": {
+   "image_id": "IMG-0258",
+   "source_file": "data/processed/product-images/31602_综合产品信息表_258.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "31602"
+  },
+  "BW-31604-1": {
+   "image_id": "IMG-0133",
+   "source_file": "data/processed/product-images/31604-1_综合产品信息表_133.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "31604-1"
+  },
+  "BW-31605": {
+   "image_id": "IMG-0232",
+   "source_file": "data/processed/product-images/31605_综合产品信息表_232.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "31605"
+  },
+  "BW-31607": {
+   "image_id": "IMG-0257",
+   "source_file": "data/processed/product-images/31607_综合产品信息表_257.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "31607"
+  },
+  "BW-31608": {
+   "image_id": "IMG-0729",
+   "source_file": "data/processed/product-images/31608_工作表1_012.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "31608"
+  },
+  "BW-3167--1": {
+   "image_id": "IMG-0142",
+   "source_file": "data/processed/product-images/3167--1_综合产品信息表_142.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3167--1"
+  },
+  "BW-3167-1": {
+   "image_id": "IMG-0497",
+   "source_file": "data/processed/product-images/3167-1_宝马奔驰系列_008.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3167-1"
+  },
+  "BW-3203": {
+   "image_id": "IMG-0180",
+   "source_file": "data/processed/product-images/3203_综合产品信息表_180.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3203"
+  },
+  "BW-32095": {
+   "image_id": "IMG-0758",
+   "source_file": "data/processed/product-images/32095_工作表1_041.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "32095"
+  },
+  "BW-32138": {
+   "image_id": "IMG-0760",
+   "source_file": "data/processed/product-images/32138_工作表1_043.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "32138"
+  },
+  "BW-32269": {
+   "image_id": "IMG-0759",
+   "source_file": "data/processed/product-images/32269_工作表1_042.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "32269"
+  },
+  "BW-32289": {
+   "image_id": "IMG-0757",
+   "source_file": "data/processed/product-images/32289_工作表1_040.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "32289"
+  },
+  "BW-3241A": {
+   "image_id": "IMG-0213",
+   "source_file": "data/processed/product-images/3241A_综合产品信息表_213.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3241A"
+  },
+  "BW-3245": {
+   "image_id": "IMG-0211",
+   "source_file": "data/processed/product-images/3245_综合产品信息表_211.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3245"
+  },
+  "BW-3251": {
+   "image_id": "IMG-0081",
+   "source_file": "data/processed/product-images/3251_综合产品信息表_081.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3251"
+  },
+  "BW-3252": {
+   "image_id": "IMG-0082",
+   "source_file": "data/processed/product-images/3252_综合产品信息表_082.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3252"
+  },
+  "BW-3252A": {
+   "image_id": "IMG-0083",
+   "source_file": "data/processed/product-images/3252A_综合产品信息表_083.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3252A"
+  },
+  "BW-3253": {
+   "image_id": "IMG-0084",
+   "source_file": "data/processed/product-images/3253_综合产品信息表_084.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3253"
+  },
+  "BW-3255": {
+   "image_id": "IMG-0181",
+   "source_file": "data/processed/product-images/3255_综合产品信息表_181.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3255"
+  },
+  "BW-32588": {
+   "image_id": "IMG-0755",
+   "source_file": "data/processed/product-images/32588_工作表1_038.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "32588"
+  },
+  "BW-3267": {
+   "image_id": "IMG-0210",
+   "source_file": "data/processed/product-images/3267_综合产品信息表_210.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3267"
+  },
+  "BW-3268": {
+   "image_id": "IMG-0791",
+   "source_file": "data/processed/product-images/3268_工作表1_073.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3268"
+  },
+  "BW-32703": {
+   "image_id": "IMG-0779",
+   "source_file": "data/processed/product-images/32703_工作表1_062.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "32703"
+  },
+  "BW-32839": {
+   "image_id": "IMG-0763",
+   "source_file": "data/processed/product-images/32839_工作表1_046.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "32839"
+  },
+  "BW-32849": {
+   "image_id": "IMG-0764",
+   "source_file": "data/processed/product-images/32849_工作表1_047.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "32849"
+  },
+  "BW-32870": {
+   "image_id": "IMG-0754",
+   "source_file": "data/processed/product-images/32870_工作表1_037.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "32870"
+  },
+  "BW-3288": {
+   "image_id": "IMG-0085",
+   "source_file": "data/processed/product-images/3288_综合产品信息表_085.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3288"
+  },
+  "BW-3289": {
+   "image_id": "IMG-0086",
+   "source_file": "data/processed/product-images/3289_综合产品信息表_086.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3289"
+  },
+  "BW-32899": {
+   "image_id": "IMG-0762",
+   "source_file": "data/processed/product-images/32899_工作表1_045.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "32899"
+  },
+  "BW-33075-2": {
+   "image_id": "IMG-0236",
+   "source_file": "data/processed/product-images/33075-2_综合产品信息表_236.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "33075-2"
+  },
+  "BW-3310": {
+   "image_id": "IMG-0159",
+   "source_file": "data/processed/product-images/3310_综合产品信息表_159.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3310"
+  },
+  "BW-33119": {
+   "image_id": "IMG-0220",
+   "source_file": "data/processed/product-images/33119_综合产品信息表_220.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "33119"
+  },
+  "BW-3312": {
+   "image_id": "IMG-0718",
+   "source_file": "data/processed/product-images/3312_工作表1_002.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3312"
+  },
+  "BW-33151": {
+   "image_id": "IMG-0177",
+   "source_file": "data/processed/product-images/33151_综合产品信息表_177.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "33151"
+  },
+  "BW-3334": {
+   "image_id": "IMG-0178",
+   "source_file": "data/processed/product-images/3334_综合产品信息表_178.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3334"
+  },
+  "BW-3336": {
+   "image_id": "IMG-0087",
+   "source_file": "data/processed/product-images/3336_综合产品信息表_087.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3336"
+  },
+  "BW-3340": {
+   "image_id": "IMG-0176",
+   "source_file": "data/processed/product-images/3340_综合产品信息表_176.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3340"
+  },
+  "BW-3353": {
+   "image_id": "IMG-0728",
+   "source_file": "data/processed/product-images/3353_工作表1_011.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3353"
+  },
+  "BW-33561-1": {
+   "image_id": "IMG-0249",
+   "source_file": "data/processed/product-images/33561-1_综合产品信息表_249.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "33561-1"
+  },
+  "BW-33662": {
+   "image_id": "IMG-0205",
+   "source_file": "data/processed/product-images/33662_综合产品信息表_205.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "33662"
+  },
+  "BW-33663": {
+   "image_id": "IMG-0206",
+   "source_file": "data/processed/product-images/33663_综合产品信息表_206.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "33663"
+  },
+  "BW-33663-1": {
+   "image_id": "IMG-0243",
+   "source_file": "data/processed/product-images/33663-1_综合产品信息表_243.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "33663-1"
+  },
+  "BW-3369": {
+   "image_id": "IMG-0237",
+   "source_file": "data/processed/product-images/3369_综合产品信息表_237.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3369"
+  },
+  "BW-33743": {
+   "image_id": "IMG-0230",
+   "source_file": "data/processed/product-images/33743_综合产品信息表_230.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "33743"
+  },
+  "BW-3385": {
+   "image_id": "IMG-0239",
+   "source_file": "data/processed/product-images/3385_综合产品信息表_239.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3385"
+  },
+  "BW-33910": {
+   "image_id": "IMG-0242",
+   "source_file": "data/processed/product-images/33910_综合产品信息表_242.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "33910"
+  },
+  "BW-3403": {
+   "image_id": "IMG-0756",
+   "source_file": "data/processed/product-images/3403_工作表1_039.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3403"
+  },
+  "BW-3500": {
+   "image_id": "IMG-0088",
+   "source_file": "data/processed/product-images/3500_综合产品信息表_088.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3500"
+  },
+  "BW-35006": {
+   "image_id": "IMG-0234",
+   "source_file": "data/processed/product-images/35006_综合产品信息表_234.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35006"
+  },
+  "BW-35013": {
+   "image_id": "IMG-0244",
+   "source_file": "data/processed/product-images/35013_综合产品信息表_244.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35013"
+  },
+  "BW-35020": {
+   "image_id": "IMG-0091",
+   "source_file": "data/processed/product-images/35020_综合产品信息表_091.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35020"
+  },
+  "BW-35029": {
+   "image_id": "IMG-0246",
+   "source_file": "data/processed/product-images/35029_综合产品信息表_246.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35029"
+  },
+  "BW-3503": {
+   "image_id": "IMG-0089",
+   "source_file": "data/processed/product-images/3503_综合产品信息表_089.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3503"
+  },
+  "BW-3504": {
+   "image_id": "IMG-0090",
+   "source_file": "data/processed/product-images/3504_综合产品信息表_090.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3504"
+  },
+  "BW-35062": {
+   "image_id": "IMG-0264",
+   "source_file": "data/processed/product-images/35062_综合产品信息表_264.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35062"
+  },
+  "BW-35063": {
+   "image_id": "IMG-0263",
+   "source_file": "data/processed/product-images/35063_综合产品信息表_263.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35063"
+  },
+  "BW-35063-1": {
+   "image_id": "IMG-0265",
+   "source_file": "data/processed/product-images/35063-1_综合产品信息表_265.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35063-1"
+  },
+  "BW-35065": {
+   "image_id": "IMG-0092",
+   "source_file": "data/processed/product-images/35065_综合产品信息表_092.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35065"
+  },
+  "BW-35066": {
+   "image_id": "IMG-0093",
+   "source_file": "data/processed/product-images/35066_综合产品信息表_093.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35066"
+  },
+  "BW-3507": {
+   "image_id": "IMG-0094",
+   "source_file": "data/processed/product-images/3507_综合产品信息表_094.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3507"
+  },
+  "BW-35084": {
+   "image_id": "IMG-0167",
+   "source_file": "data/processed/product-images/35084_综合产品信息表_167.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35084"
+  },
+  "BW-3509": {
+   "image_id": "IMG-0095",
+   "source_file": "data/processed/product-images/3509_综合产品信息表_095.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3509"
+  },
+  "BW-35091": {
+   "image_id": "IMG-0261",
+   "source_file": "data/processed/product-images/35091_综合产品信息表_261.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35091"
+  },
+  "BW-35098": {
+   "image_id": "IMG-0229",
+   "source_file": "data/processed/product-images/35098_综合产品信息表_229.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35098"
+  },
+  "BW-3510": {
+   "image_id": "IMG-0250",
+   "source_file": "data/processed/product-images/3510_综合产品信息表_250.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3510"
+  },
+  "BW-35102": {
+   "image_id": "IMG-0247",
+   "source_file": "data/processed/product-images/35102_综合产品信息表_247.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35102"
+  },
+  "BW-35106": {
+   "image_id": "IMG-0100",
+   "source_file": "data/processed/product-images/35106_综合产品信息表_100.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35106"
+  },
+  "BW-35109": {
+   "image_id": "IMG-0256",
+   "source_file": "data/processed/product-images/35109_综合产品信息表_256.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35109"
+  },
+  "BW-3511": {
+   "image_id": "IMG-0096",
+   "source_file": "data/processed/product-images/3511_综合产品信息表_096.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3511"
+  },
+  "BW-35119": {
+   "image_id": "IMG-0253",
+   "source_file": "data/processed/product-images/35119_综合产品信息表_253.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35119"
+  },
+  "BW-35125": {
+   "image_id": "IMG-0192",
+   "source_file": "data/processed/product-images/35125_综合产品信息表_192.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35125"
+  },
+  "BW-35126": {
+   "image_id": "IMG-0101",
+   "source_file": "data/processed/product-images/35126_综合产品信息表_101.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35126"
+  },
+  "BW-3514": {
+   "image_id": "IMG-0190",
+   "source_file": "data/processed/product-images/3514_综合产品信息表_190.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3514"
+  },
+  "BW-3515": {
+   "image_id": "IMG-0140",
+   "source_file": "data/processed/product-images/3515_综合产品信息表_140.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3515"
+  },
+  "BW-3516": {
+   "image_id": "IMG-0135",
+   "source_file": "data/processed/product-images/3516_综合产品信息表_135.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3516"
+  },
+  "BW-3517": {
+   "image_id": "IMG-0102",
+   "source_file": "data/processed/product-images/3517_综合产品信息表_102.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3517"
+  },
+  "BW-3520": {
+   "image_id": "IMG-0103",
+   "source_file": "data/processed/product-images/3520_综合产品信息表_103.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3520"
+  },
+  "BW-3521": {
+   "image_id": "IMG-0104",
+   "source_file": "data/processed/product-images/3521_综合产品信息表_104.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3521"
+  },
+  "BW-3522": {
+   "image_id": "IMG-0105",
+   "source_file": "data/processed/product-images/3522_综合产品信息表_105.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3522"
+  },
+  "BW-3523": {
+   "image_id": "IMG-0155",
+   "source_file": "data/processed/product-images/3523_综合产品信息表_155.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3523"
+  },
+  "BW-3524": {
+   "image_id": "IMG-0106",
+   "source_file": "data/processed/product-images/3524_综合产品信息表_106.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3524"
+  },
+  "BW-3525": {
+   "image_id": "IMG-0107",
+   "source_file": "data/processed/product-images/3525_综合产品信息表_107.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3525"
+  },
+  "BW-3526": {
+   "image_id": "IMG-0164",
+   "source_file": "data/processed/product-images/3526_综合产品信息表_164.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3526"
+  },
+  "BW-3527": {
+   "image_id": "IMG-0108",
+   "source_file": "data/processed/product-images/3527_综合产品信息表_108.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3527"
+  },
+  "BW-3528": {
+   "image_id": "IMG-0130",
+   "source_file": "data/processed/product-images/3528_综合产品信息表_130.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3528"
+  },
+  "BW-3529": {
+   "image_id": "IMG-0109",
+   "source_file": "data/processed/product-images/3529_综合产品信息表_109.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3529"
+  },
+  "BW-35298-1": {
+   "image_id": "IMG-0231",
+   "source_file": "data/processed/product-images/35298-1_综合产品信息表_231.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35298-1"
+  },
+  "BW-3531": {
+   "image_id": "IMG-0201",
+   "source_file": "data/processed/product-images/3531_综合产品信息表_201.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3531"
+  },
+  "BW-3533": {
+   "image_id": "IMG-0179",
+   "source_file": "data/processed/product-images/3533_综合产品信息表_179.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3533"
+  },
+  "BW-3535": {
+   "image_id": "IMG-0161",
+   "source_file": "data/processed/product-images/3535_综合产品信息表_161.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3535"
+  },
+  "BW-3536": {
+   "image_id": "IMG-0110",
+   "source_file": "data/processed/product-images/3536_综合产品信息表_110.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3536"
+  },
+  "BW-3537": {
+   "image_id": "IMG-0111",
+   "source_file": "data/processed/product-images/3537_综合产品信息表_111.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3537"
+  },
+  "BW-3538": {
+   "image_id": "IMG-0112",
+   "source_file": "data/processed/product-images/3538_综合产品信息表_112.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3538"
+  },
+  "BW-3539": {
+   "image_id": "IMG-0197",
+   "source_file": "data/processed/product-images/3539_综合产品信息表_197.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3539"
+  },
+  "BW-3540": {
+   "image_id": "IMG-0113",
+   "source_file": "data/processed/product-images/3540_综合产品信息表_113.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3540"
+  },
+  "BW-3541": {
+   "image_id": "IMG-0114",
+   "source_file": "data/processed/product-images/3541_综合产品信息表_114.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3541"
+  },
+  "BW-3542": {
+   "image_id": "IMG-0221",
+   "source_file": "data/processed/product-images/3542_综合产品信息表_221.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3542"
+  },
+  "BW-3543": {
+   "image_id": "IMG-0228",
+   "source_file": "data/processed/product-images/3543_综合产品信息表_228.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3543"
+  },
+  "BW-3544": {
+   "image_id": "IMG-0223",
+   "source_file": "data/processed/product-images/3544_综合产品信息表_223.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3544"
+  },
+  "BW-3545": {
+   "image_id": "IMG-0191",
+   "source_file": "data/processed/product-images/3545_综合产品信息表_191.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3545"
+  },
+  "BW-3546": {
+   "image_id": "IMG-0193",
+   "source_file": "data/processed/product-images/3546_综合产品信息表_193.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3546"
+  },
+  "BW-3548": {
+   "image_id": "IMG-0123",
+   "source_file": "data/processed/product-images/3548_综合产品信息表_123.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3548"
+  },
+  "BW-3549": {
+   "image_id": "IMG-0251",
+   "source_file": "data/processed/product-images/3549_综合产品信息表_251.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3549"
+  },
+  "BW-3550": {
+   "image_id": "IMG-0115",
+   "source_file": "data/processed/product-images/3550_综合产品信息表_115.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3550"
+  },
+  "BW-3555": {
+   "image_id": "IMG-0116",
+   "source_file": "data/processed/product-images/3555_综合产品信息表_116.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3555"
+  },
+  "BW-3556": {
+   "image_id": "IMG-0117",
+   "source_file": "data/processed/product-images/3556_综合产品信息表_117.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3556"
+  },
+  "BW-35619": {
+   "image_id": "IMG-0259",
+   "source_file": "data/processed/product-images/35619_综合产品信息表_259.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35619"
+  },
+  "BW-3563": {
+   "image_id": "IMG-0118",
+   "source_file": "data/processed/product-images/3563_综合产品信息表_118.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3563"
+  },
+  "BW-3565": {
+   "image_id": "IMG-0119",
+   "source_file": "data/processed/product-images/3565_综合产品信息表_119.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3565"
+  },
+  "BW-35650": {
+   "image_id": "IMG-0173",
+   "source_file": "data/processed/product-images/35650_综合产品信息表_173.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35650"
+  },
+  "BW-3568": {
+   "image_id": "IMG-0148",
+   "source_file": "data/processed/product-images/3568_综合产品信息表_148.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3568"
+  },
+  "BW-3569": {
+   "image_id": "IMG-0169",
+   "source_file": "data/processed/product-images/3569_综合产品信息表_169.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3569"
+  },
+  "BW-3576": {
+   "image_id": "IMG-0196",
+   "source_file": "data/processed/product-images/3576_综合产品信息表_196.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3576"
+  },
+  "BW-3579": {
+   "image_id": "IMG-0098",
+   "source_file": "data/processed/product-images/3579_综合产品信息表_098.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3579"
+  },
+  "BW-3582": {
+   "image_id": "IMG-0171",
+   "source_file": "data/processed/product-images/3582_综合产品信息表_171.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3582"
+  },
+  "BW-3583": {
+   "image_id": "IMG-0172",
+   "source_file": "data/processed/product-images/3583_综合产品信息表_172.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3583"
+  },
+  "BW-3584": {
+   "image_id": "IMG-0162",
+   "source_file": "data/processed/product-images/3584_综合产品信息表_162.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3584"
+  },
+  "BW-3585": {
+   "image_id": "IMG-0163",
+   "source_file": "data/processed/product-images/3585_综合产品信息表_163.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3585"
+  },
+  "BW-3588": {
+   "image_id": "IMG-0099",
+   "source_file": "data/processed/product-images/3588_综合产品信息表_099.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3588"
+  },
+  "BW-3589": {
+   "image_id": "IMG-0248",
+   "source_file": "data/processed/product-images/3589_综合产品信息表_248.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3589"
+  },
+  "BW-35907": {
+   "image_id": "IMG-0262",
+   "source_file": "data/processed/product-images/35907_综合产品信息表_262.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "35907"
+  },
+  "BW-3597": {
+   "image_id": "IMG-0255",
+   "source_file": "data/processed/product-images/3597_综合产品信息表_255.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3597"
+  },
+  "BW-3598": {
+   "image_id": "IMG-0120",
+   "source_file": "data/processed/product-images/3598_综合产品信息表_120.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3598"
+  },
+  "BW-3652": {
+   "image_id": "IMG-0121",
+   "source_file": "data/processed/product-images/3652_综合产品信息表_121.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3652"
+  },
+  "BW-3653": {
+   "image_id": "IMG-0122",
+   "source_file": "data/processed/product-images/3653_综合产品信息表_122.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3653"
+  },
+  "BW-3654": {
+   "image_id": "IMG-0152",
+   "source_file": "data/processed/product-images/3654_综合产品信息表_152.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3654"
+  },
+  "BW-3654--2": {
+   "image_id": "IMG-0154",
+   "source_file": "data/processed/product-images/3654--2_综合产品信息表_154.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3654--2"
+  },
+  "BW-3654--3": {
+   "image_id": "IMG-0691",
+   "source_file": "data/processed/product-images/3654--3_标志雪铁龙系列_010.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3654--3"
+  },
+  "BW-3654-1": {
+   "image_id": "IMG-0153",
+   "source_file": "data/processed/product-images/3654-1_综合产品信息表_153.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3654-1"
+  },
+  "BW-3654-2": {
+   "image_id": "IMG-0500",
+   "source_file": "data/processed/product-images/3654-2_宝马奔驰系列_011.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3654-2"
+  },
+  "BW-3654-3": {
+   "image_id": "IMG-0187",
+   "source_file": "data/processed/product-images/3654-3_综合产品信息表_187.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3654-3"
+  },
+  "BW-3655": {
+   "image_id": "IMG-0124",
+   "source_file": "data/processed/product-images/3655_综合产品信息表_124.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3655"
+  },
+  "BW-3665-1": {
+   "image_id": "IMG-0136",
+   "source_file": "data/processed/product-images/3665-1_综合产品信息表_136.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3665-1"
+  },
+  "BW-3666": {
+   "image_id": "IMG-0160",
+   "source_file": "data/processed/product-images/3666_综合产品信息表_160.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3666"
+  },
+  "BW-3739": {
+   "image_id": "IMG-0204",
+   "source_file": "data/processed/product-images/3739_综合产品信息表_204.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3739"
+  },
+  "BW-3752": {
+   "image_id": "IMG-0195",
+   "source_file": "data/processed/product-images/3752_综合产品信息表_195.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3752"
+  },
+  "BW-3753": {
+   "image_id": "IMG-0747",
+   "source_file": "data/processed/product-images/3753_工作表1_030.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3753"
+  },
+  "BW-3757": {
+   "image_id": "IMG-0157",
+   "source_file": "data/processed/product-images/3757_综合产品信息表_157.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3757"
+  },
+  "BW-38090": {
+   "image_id": "IMG-0267",
+   "source_file": "data/processed/product-images/38090_综合产品信息表_267.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "38090"
+  },
+  "BW-3816": {
+   "image_id": "IMG-0125",
+   "source_file": "data/processed/product-images/3816_综合产品信息表_125.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3816"
+  },
+  "BW-38241": {
+   "image_id": "IMG-0212",
+   "source_file": "data/processed/product-images/38241_综合产品信息表_212.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "38241"
+  },
+  "BW-38278": {
+   "image_id": "IMG-0208",
+   "source_file": "data/processed/product-images/38278_综合产品信息表_208.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "38278"
+  },
+  "BW-38282": {
+   "image_id": "IMG-0207",
+   "source_file": "data/processed/product-images/38282_综合产品信息表_207.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "38282"
+  },
+  "BW-3831": {
+   "image_id": "IMG-0127",
+   "source_file": "data/processed/product-images/3831_综合产品信息表_127.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3831"
+  },
+  "BW-3831A": {
+   "image_id": "IMG-0146",
+   "source_file": "data/processed/product-images/3831A_综合产品信息表_146.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3831A"
+  },
+  "BW-3841": {
+   "image_id": "IMG-0129",
+   "source_file": "data/processed/product-images/3841_综合产品信息表_129.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3841"
+  },
+  "BW-3842": {
+   "image_id": "IMG-0128",
+   "source_file": "data/processed/product-images/3842_综合产品信息表_128.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3842"
+  },
+  "BW-3843": {
+   "image_id": "IMG-0141",
+   "source_file": "data/processed/product-images/3843_综合产品信息表_141.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3843"
+  },
+  "BW-38954": {
+   "image_id": "IMG-0269",
+   "source_file": "data/processed/product-images/38954_综合产品信息表_269.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "38954"
+  },
+  "BW-38955": {
+   "image_id": "IMG-0268",
+   "source_file": "data/processed/product-images/38955_综合产品信息表_268.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "38955"
+  },
+  "BW-3904": {
+   "image_id": "IMG-0227",
+   "source_file": "data/processed/product-images/3904_综合产品信息表_227.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3904"
+  },
+  "BW-3905": {
+   "image_id": "IMG-0200",
+   "source_file": "data/processed/product-images/3905_综合产品信息表_200.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3905"
+  },
+  "BW-3905-1": {
+   "image_id": "IMG-0202",
+   "source_file": "data/processed/product-images/3905-1_综合产品信息表_202.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3905-1"
+  },
+  "BW-3909": {
+   "image_id": "IMG-0222",
+   "source_file": "data/processed/product-images/3909_综合产品信息表_222.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3909"
+  },
+  "BW-3920": {
+   "image_id": "IMG-0788",
+   "source_file": "data/processed/product-images/3920_工作表1_070.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3920"
+  },
+  "BW-3951": {
+   "image_id": "IMG-0260",
+   "source_file": "data/processed/product-images/3951_综合产品信息表_260.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3951"
+  },
+  "BW-3957": {
+   "image_id": "IMG-0794",
+   "source_file": "data/processed/product-images/3957_工作表1_076.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "3957"
+  },
+  "BW-4002": {
+   "image_id": "IMG-0348",
+   "source_file": "data/processed/product-images/4002_综合产品信息表_348.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "4002"
+  },
+  "BW-4003": {
+   "image_id": "IMG-0349",
+   "source_file": "data/processed/product-images/4003_综合产品信息表_349.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "4003"
+  },
+  "BW-4004": {
+   "image_id": "IMG-0350",
+   "source_file": "data/processed/product-images/4004_综合产品信息表_350.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "4004"
+  },
+  "BW-4005": {
+   "image_id": "IMG-0351",
+   "source_file": "data/processed/product-images/4005_综合产品信息表_351.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "4005"
+  },
+  "BW-5001": {
+   "image_id": "IMG-0352",
+   "source_file": "data/processed/product-images/5001_综合产品信息表_352.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "5001"
+  },
+  "BW-5002": {
+   "image_id": "IMG-0353",
+   "source_file": "data/processed/product-images/5002_综合产品信息表_353.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "5002"
+  },
+  "BW-5003": {
+   "image_id": "IMG-0354",
+   "source_file": "data/processed/product-images/5003_综合产品信息表_354.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "5003"
+  },
+  "BW-5004": {
+   "image_id": "IMG-0355",
+   "source_file": "data/processed/product-images/5004_综合产品信息表_355.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "5004"
+  },
+  "BW-5006": {
+   "image_id": "IMG-0356",
+   "source_file": "data/processed/product-images/5006_综合产品信息表_356.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "5006"
+  },
+  "BW-5007": {
+   "image_id": "IMG-0357",
+   "source_file": "data/processed/product-images/5007_综合产品信息表_357.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "5007"
+  },
+  "BW-5008A": {
+   "image_id": "IMG-0368",
+   "source_file": "data/processed/product-images/5008A_综合产品信息表_368.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "5008A"
+  },
+  "BW-5008C": {
+   "image_id": "IMG-0367",
+   "source_file": "data/processed/product-images/5008C_综合产品信息表_367.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "5008C"
+  },
+  "BW-5009": {
+   "image_id": "IMG-0358",
+   "source_file": "data/processed/product-images/5009_综合产品信息表_358.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "5009"
+  },
+  "BW-5010": {
+   "image_id": "IMG-0359",
+   "source_file": "data/processed/product-images/5010_综合产品信息表_359.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "5010"
+  },
+  "BW-5011": {
+   "image_id": "IMG-0360",
+   "source_file": "data/processed/product-images/5011_综合产品信息表_360.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "5011"
+  },
+  "BW-5013": {
+   "image_id": "IMG-0361",
+   "source_file": "data/processed/product-images/5013_综合产品信息表_361.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "5013"
+  },
+  "BW-5014": {
+   "image_id": "IMG-0362",
+   "source_file": "data/processed/product-images/5014_综合产品信息表_362.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "5014"
+  },
+  "BW-5015": {
+   "image_id": "IMG-0363",
+   "source_file": "data/processed/product-images/5015_综合产品信息表_363.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "5015"
+  },
+  "BW-5016": {
+   "image_id": "IMG-0625",
+   "source_file": "data/processed/product-images/5016_日系_025.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "5016"
+  },
+  "BW-5016B": {
+   "image_id": "IMG-0364",
+   "source_file": "data/processed/product-images/5016B_综合产品信息表_364.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "5016B"
+  },
+  "BW-5018": {
+   "image_id": "IMG-0365",
+   "source_file": "data/processed/product-images/5018_综合产品信息表_365.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "5018"
+  },
+  "BW-5020": {
+   "image_id": "IMG-0366",
+   "source_file": "data/processed/product-images/5020_综合产品信息表_366.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "5020"
+  },
+  "BW-6001": {
+   "image_id": "IMG-0369",
+   "source_file": "data/processed/product-images/6001_综合产品信息表_369.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "6001"
+  },
+  "BW-6002": {
+   "image_id": "IMG-0370",
+   "source_file": "data/processed/product-images/6002_综合产品信息表_370.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "6002"
+  },
+  "BW-6003": {
+   "image_id": "IMG-0371",
+   "source_file": "data/processed/product-images/6003_综合产品信息表_371.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "6003"
+  },
+  "BW-6004": {
+   "image_id": "IMG-0372",
+   "source_file": "data/processed/product-images/6004_综合产品信息表_372.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "6004"
+  },
+  "BW-6005": {
+   "image_id": "IMG-0373",
+   "source_file": "data/processed/product-images/6005_综合产品信息表_373.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "6005"
+  },
+  "BW-6006": {
+   "image_id": "IMG-0374",
+   "source_file": "data/processed/product-images/6006_综合产品信息表_374.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "6006"
+  },
+  "BW-6007": {
+   "image_id": "IMG-0375",
+   "source_file": "data/processed/product-images/6007_综合产品信息表_375.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "6007"
+  },
+  "BW-6008": {
+   "image_id": "IMG-0376",
+   "source_file": "data/processed/product-images/6008_综合产品信息表_376.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "6008"
+  },
+  "BW-6009": {
+   "image_id": "IMG-0377",
+   "source_file": "data/processed/product-images/6009_综合产品信息表_377.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "6009"
+  },
+  "BW-6010": {
+   "image_id": "IMG-0378",
+   "source_file": "data/processed/product-images/6010_综合产品信息表_378.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "6010"
+  },
+  "BW-6012": {
+   "image_id": "IMG-0379",
+   "source_file": "data/processed/product-images/6012_综合产品信息表_379.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "6012"
+  },
+  "BW-6015": {
+   "image_id": "IMG-0380",
+   "source_file": "data/processed/product-images/6015_综合产品信息表_380.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "6015"
+  },
+  "BW-6016": {
+   "image_id": "IMG-0381",
+   "source_file": "data/processed/product-images/6016_综合产品信息表_381.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "6016"
+  },
+  "BW-6017": {
+   "image_id": "IMG-0382",
+   "source_file": "data/processed/product-images/6017_综合产品信息表_382.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "6017"
+  },
+  "BW-6018": {
+   "image_id": "IMG-0383",
+   "source_file": "data/processed/product-images/6018_综合产品信息表_383.png",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "6018"
+  },
+  "BW-6019": {
+   "image_id": "IMG-0384",
+   "source_file": "data/processed/product-images/6019_综合产品信息表_384.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "6019"
+  },
+  "BW-6136": {
+   "image_id": "IMG-0385",
+   "source_file": "data/processed/product-images/6136_综合产品信息表_385.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "6136"
+  },
+  "BW-641034": {
+   "image_id": "IMG-0156",
+   "source_file": "data/processed/product-images/641034_综合产品信息表_156.jpeg",
+   "mapping_status": "exact",
+   "is_primary_image": true,
+   "primary_rank": 1,
+   "bowen_no": "641034"
+  }
+ }
+}

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-25T05:01:57.023Z",
+ "generated_at": "2026-09-26T06:35:43.400Z",
  "source_excel": {
   "path": "data/raw/产品信息表1(1).xlsx",
   "sha256_before": "79d5995d437ea5a4393faba87f237ea59f1361f51f22d6d5b28eb34bcd144a12",
@@ -241,37 +241,34 @@
    ]
   }
  ],
- "raw_record_count": 962,
- "auxiliary_excluded_row_count": 11,
- "product_count": 451,
- "application_count": 802,
- "searchable_application_count": 779,
- "clean_application_count": 761,
- "needs_review_application_count": 18,
- "blocked_application_count": 23,
- "blocked_product_count": 23,
- "blocked_product_reasons": {
-  "parenthetical_note:": 2,
-  "descriptive_text:": 21
- },
- "products_missing_bowen_no": 7,
- "products_with_blocked_applications": 23,
- "products_with_needs_review_applications": 19,
+ "raw_record_count": 967,
+ "auxiliary_excluded_row_count": 6,
+ "product_count": 426,
+ "application_count": 777,
+ "searchable_application_count": 777,
+ "clean_application_count": 758,
+ "needs_review_application_count": 19,
+ "blocked_application_count": 0,
+ "blocked_product_count": 0,
+ "blocked_product_reasons": {},
+ "products_missing_bowen_no": 0,
+ "products_with_blocked_applications": 0,
+ "products_with_needs_review_applications": 20,
  "misalignment_hit_records": 38,
  "misalignment_unreadable_records": 23,
- "misalignment_recovered_records": 19,
- "oe_index_count": 3024,
- "oe_token_total": 3247,
- "distinct_normalized_oe_count": 2242,
- "avg_oe_per_product": 7.2,
- "avg_application_per_product": 1.778,
+ "misalignment_recovered_records": 20,
+ "oe_index_count": 3005,
+ "oe_token_total": 3225,
+ "distinct_normalized_oe_count": 2235,
+ "avg_oe_per_product": 7.57,
+ "avg_application_per_product": 1.824,
  "shared_oe_across_products_count": 125,
  "shared_oe_review_rows": 125,
  "product_type_counts": {
   "TemperatureSensor": 41,
   "OilPressureWarningSwitch": 37,
-  "Thermostat": 262,
-  "(null 未确认)": 70,
+  "Thermostat": 302,
+  "(null 未确认)": 5,
   "ThermalSwitch": 4,
   "BrakeLightSwitch": 17,
   "ReverseLightSwitch": 17,
@@ -280,16 +277,15 @@
  "product_type_source_counts": {
   "human_section_label": 365,
   "inherited_from_bowen": 13,
-  "human_review_confirmed": 3,
-  "review_required": 70
+  "human_review_confirmed": 43,
+  "review_required": 5
  },
  "status_counts": {
-  "searchable_noindex": 361,
+  "searchable_noindex": 401,
   "prototype_candidate": 20,
-  "draft": 47,
-  "blocked": 23
+  "draft": 5
  },
- "unknown_product_type_count": 70,
+ "unknown_product_type_count": 5,
  "auto_guessed_product_type_count": 0,
  "prototype_products": [
   {
@@ -623,16 +619,27 @@
   }
  ],
  "oe_engine_relation": {
-  "applications_total": 802,
-  "applications_with_both_oe_and_engine_cell": 562,
-  "applications_oe_but_no_engine_cell": 208,
-  "applications_engine_but_no_oe_cell": 8,
+  "applications_total": 777,
+  "applications_with_both_oe_and_engine_cell": 558,
+  "applications_oe_but_no_engine_cell": 206,
+  "applications_engine_but_no_oe_cell": 7,
   "oe_tokens_split_into_standalone_arrays": false,
   "relation_preserved": true,
   "explanation": "每条 application 同时保留 oe_numbers_raw（整格原文）与 vehicle_application_raw（整格原文），两者来自同一 Excel 行的同一记录块。OE 没有被抽成脱离 application 的独立数组，因此 OE 与 Engine 的行级对应关系没有丢失。"
  },
  "company_facts": {
+  "legal_name_en": "Qufu Bowen Auto Parts Manufacturing Co., Ltd.",
+  "legal_name_zh": "曲阜市博文汽车零部件有限公司",
+  "brand_name": "Bowen",
+  "email": "qfbowen@126.com",
+  "tel_national": "18653750690",
+  "tel_display": "+86 186 5375 0690",
+  "tel_href": "+8618653750690",
+  "domestic_marketplace_url": "https://bowen18653750690.1688.com",
+  "domestic_marketplace_label": "bowen18653750690.1688.com",
+  "domestic_marketplace_note": "China domestic marketplace (1688). This is not the company's export website.",
   "since_year": 2009,
+  "factory_built_year": 2014,
   "manufacturing_base_m2": 10000,
   "production_workshop_m2": 3500,
   "temperature_controlled_workshop_m2": 2000,
@@ -644,6 +651,34 @@
    "IATF 16949",
    "ISO 14001",
    "ISO 45001"
-  ]
+  ],
+  "certification_standards": [
+   "IATF 16949:2016",
+   "ISO 14001:2015",
+   "ISO 45001:2018"
+  ],
+  "internal_only_certifications": [
+   "ISO 14001",
+   "ISO 45001"
+  ],
+  "public_certifications": [
+   "IATF 16949"
+  ],
+  "public_certification_standards": [
+   "IATF 16949:2016"
+  ],
+  "address_en": "No. 3, Duzhi Road, Qufu Electronic Information Industrial Park, Jining City, Shandong Province, 273100, China",
+  "postal_code": "273100",
+  "country": "China",
+  "address_evidence": "IATF 16949:2016 证书原图上的公司注册地址（宣传手册 P12 图 IM69）；宣传手册封底文字层只有邮箱/电话/网址，无地址栏。业务方已确认该地址可对外公开。",
+  "product_range": [
+   "Thermostats",
+   "Temperature Sensors",
+   "Oil Pressure Warning Switches",
+   "Thermal Switches",
+   "Reversing Light Switches",
+   "Brake Light Switches"
+  ],
+  "evidence_source": "宣传手册最终PDF/博文公司宣传手册-英文版.pdf 与 _中文版.pdf（P3 公司概况 / P4 产品系列 / P5–P8 工厂与设备 / P12 管理体系 / P13 资质荣誉 / P14 封底联系方式），以及 P12 的 IATF 16949 证书原图（公司注册地址）"
  }
 }

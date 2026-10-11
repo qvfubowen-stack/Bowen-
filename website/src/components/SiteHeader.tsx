@@ -10,11 +10,19 @@ const NAV = [
   { href: '/factory', label: 'Factory' },
   { href: '/quality', label: 'Quality' },
   { href: '/about', label: 'About Bowen' },
-  { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' },
 ];
 
-export function SiteHeader() {
+/** 页头需要的公司资料子集（全部来自宣传手册，见 src/data/site-facts.json） */
+export interface HeaderCompanyFacts {
+  legal_name_en: string;
+  email: string;
+  tel_display: string;
+  tel_href: string;
+  since_year: number;
+}
+
+export function SiteHeader({ company }: { company: HeaderCompanyFacts }) {
   const pathname = usePathname();
   const router = useRouter();
   const [open, setOpen] = useState(false);
@@ -33,9 +41,11 @@ export function SiteHeader() {
     <header className={styles.header}>
       <div className={`container ${styles.topbar}`}>
         <div className={styles.utility}>
-          <span>Automotive Thermostat Manufacturer · Since 2009</span>
+          <span className={styles.utilityName}>{company.legal_name_en}</span>
           <span className={styles.utilityRight}>
-            <a href="mailto:sales@bowen-thermostat.com">sales@bowen-thermostat.com</a>
+            <a href={`tel:${company.tel_href}`}>{company.tel_display}</a>
+            <span className={styles.utilitySep} aria-hidden="true">·</span>
+            <a href={`mailto:${company.email}`}>{company.email}</a>
           </span>
         </div>
       </div>
@@ -46,7 +56,7 @@ export function SiteHeader() {
             <span className={styles.brandMark} aria-hidden="true">BW</span>
             <span className={styles.brandText}>
               <strong>BOWEN</strong>
-              <small>Thermostat Manufacturing</small>
+              <small>Automotive Thermostat Manufacturer</small>
             </span>
           </Link>
 

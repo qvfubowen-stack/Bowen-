@@ -1,6 +1,7 @@
 'use client';
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
+import { applicationTextEn } from '@/lib/application-display';
 
 /** RFQ 行的数据结构 —— 与需求里的「Add to RFQ 自动带入」字段一一对应 */
 export interface RfqLine {
@@ -25,7 +26,8 @@ interface RfqState {
   ready: boolean;
 }
 
-const STORAGE_KEY = 'bowen.rfq.v1';
+const STORAGE_KEY = 'bowen.rfq.v2';
+const LEGACY_STORAGE_KEY = 'bowen.rfq.v1';
 
 const RfqContext = createContext<RfqState | null>(null);
 
@@ -40,10 +42,16 @@ export function RfqProvider({ children }: { children: React.ReactNode }) {
   // 从本地存储恢复（原型阶段用 localStorage；未来换成服务端会话）
   useEffect(() => {
     try {
-      const raw = window.localStorage.getItem(STORAGE_KEY);
+      const raw = window.localStorage.getItem(STORAGE_KEY) ?? window.localStorage.getItem(LEGACY_STORAGE_KEY);
       if (raw) {
         const parsed = JSON.parse(raw);
-        if (Array.isArray(parsed)) setLines(parsed as RfqLine[]);
+        if (Array.isArray(parsed)) {
+          setLines(parsed.map((line: RfqLine) => ({
+            ...line,
+            vehicle: line.vehicle ? applicationTextEn(line.vehicle) : null,
+            engine: null,
+          })));
+        }
       }
     } catch {
       /* 忽略损坏的本地数据 */

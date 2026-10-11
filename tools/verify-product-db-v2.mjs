@@ -12,7 +12,9 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
-import { oeSearchKey } from './build-product-db-v2.mjs';
+// Phase 4.1：oeSearchKey 等纯函数已移入 tools/lib/oe-keys.mjs。
+// 本脚本**只读**，不再 import 会写文件的构建脚本（原先会顺带重建全部数据）。
+import { oeSearchKey } from './lib/oe-keys.mjs';
 import { PRODUCT_TYPES, LABEL_LOOKUP, normalizeLabel, STATUS } from './config/product-types.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -218,9 +220,46 @@ check('网站数据集里没有 blocked application', () => {
 });
 check('blocked 记录保留了原始来源（source_sheet/source_row/原始单元格）', () => {
   const blockedProducts = products.filter((p) => p.blocked);
-  if (!blockedProducts.length) return '当前没有 blocked 产品（全部异常单元格都能读出编号）';
+  if (!blockedProducts.length) {
+    // 业务方已用 business-decisions-v3 把全部「编号读不出」产品按标黄整体舍弃，
+    // 因此产品库里不再有 blocked 产品 —— 这是正确结果，不是失败。
+    return { ok: true, detail: '当前没有 blocked 产品（业务方已舍弃全部不可读编号产品）' };
+  }
   const bad = blockedProducts.filter((p) => !p.blocked_reasons.length || !p.source_record_ids.length);
   return bad.length === 0 ? { ok: true, detail: `${blockedProducts.length} 个 blocked 产品均保留来源` } : `${bad.length} 个缺来源`;
+});
+check('业务方标黄舍弃的 30 个产品确实已不在产品库', () => {
+  const p = path.join(ROOT, 'data/raw/business-decisions-v3.json');
+  if (!fs.existsSync(p)) return '缺少 business-decisions-v3.json';
+  const dec = read(p);
+  const discarded = dec.product_type_review?.discarded ?? [];
+  const ids = new Set(products.map((x) => x.product_id));
+  const still = discarded.filter((d) => ids.has(d.product_id));
+  return still.length === 0
+    ? { ok: true, detail: `${discarded.length} 个标黄产品全部已移出产品库` }
+    : `${still.length} 个仍在库里: ${still.slice(0, 3).map((x) => x.product_id).join(', ')}`;
+});
+check('业务方确认类型的 40 个产品已标为 Thermostat', () => {
+  const p = path.join(ROOT, 'data/raw/business-decisions-v3.json');
+  if (!fs.existsSync(p)) return '缺少 business-decisions-v3.json';
+  const dec = read(p);
+  const want = dec.product_type_review?.confirmed_bowen_nos ?? [];
+  const map = new Map(products.filter((x) => x.bowen_no).map((x) => [x.bowen_no.toUpperCase(), x.product_type]));
+  const bad = want.filter((n) => map.get(String(n).toUpperCase()) !== 'Thermostat');
+  return bad.length === 0
+    ? { ok: true, detail: `${want.length} 个全部为 Thermostat` }
+    : `${bad.length} 个未确认: ${bad.slice(0, 5).join(', ')}`;
+});
+check('业务方要求补入库的 5 个编号已作为产品存在', () => {
+  const p = path.join(ROOT, 'data/raw/business-decisions-v3.json');
+  if (!fs.existsSync(p)) return '缺少 business-decisions-v3.json';
+  const dec = read(p);
+  const want = dec.image_review?.D3_not_in_database_5?.bowen_nos ?? [];
+  const have = new Set(products.filter((x) => x.bowen_no).map((x) => x.bowen_no.toUpperCase()));
+  const missing = want.filter((n) => !have.has(String(n).toUpperCase()));
+  return missing.length === 0
+    ? { ok: true, detail: `${want.length} 个已入库: ${want.join(', ')}` }
+    : `${missing.length} 个缺失: ${missing.join(', ')}`;
 });
 
 // =====================================================================
@@ -309,11 +348,34 @@ check('审核表里人类填的 Insert/Assembly 原始值被保留在 product_ty
     ? { ok: true, detail: '原始写法已保留（未来做 subtype 有据可依）' }
     : `3064=${JSON.stringify(p3064.product_type_raw_labels)} 3061A=${JSON.stringify(p3061a.product_type_raw_labels)}`;
 });
-check('人工审核表确认的 3 个产品被标记为 human_review_confirmed', () => {
+check('Phase 2 人工审核表确认的 3 个产品仍被标记为 human_review_confirmed', () => {
+  const byNo = new Map(products.filter((p) => p.bowen_no).map((p) => [p.bowen_no.toUpperCase(), p]));
+  const want = ['3005', '3064', '3061A'];
+  const bad = want.filter((n) => byNo.get(n)?.product_type_source !== 'human_review_confirmed');
+  return bad.length === 0
+    ? { ok: true, detail: want.map((n) => `${n}→${byNo.get(n).product_type}`).join(', ') }
+    : `${bad.length} 个丢失或被改写: ${bad.join(', ')}`;
+});
+check('人工确认类型的产品全部来自人工审核，且带可追溯的审核表行号', () => {
+  const dec = read(path.join(ROOT, 'data/raw/business-decisions-v3.json'));
+  const typeReview = dec.product_type_review;
   const confirmed = products.filter((p) => p.product_type_source === 'human_review_confirmed');
-  return confirmed.length === 3
-    ? { ok: true, detail: confirmed.map((c) => `${c.bowen_no}→${c.product_type}`).join(', ') }
-    : `期望 3 个，实际 ${confirmed.length}`;
+  // Phase 2 的 3 个 + Phase 2.7 类型表确认的 40 个（两者都来自人工审核）
+  const expectedMin = 3;
+  if (confirmed.length < expectedMin) return `确认产品只有 ${confirmed.length} 个，少于 ${expectedMin}`;
+  const noRow = confirmed.filter((p) => !p.product_type_evidence?.source_file || !Number.isFinite(p.product_type_evidence?.source_row));
+  if (noRow.length) return `${noRow.length} 个确认产品缺少审核表来源行号`;
+  // 类型表确认的 40 个必须逐个对上人工审阅表里未标黄的行
+  const rows = typeReview.confirmed_form_rows ?? {};
+  const fromForm = confirmed.filter((p) => Object.prototype.hasOwnProperty.call(rows, String(p.bowen_no)));
+  if (fromForm.length !== typeReview.confirmed_count) {
+    return `类型表确认 ${typeReview.confirmed_count} 个，实际在库 ${fromForm.length} 个`;
+  }
+  const wrongType = fromForm.filter((p) => p.product_type !== typeReview.confirmed_product_type);
+  if (wrongType.length) return `${wrongType.length} 个确认产品类型不是 ${typeReview.confirmed_product_type}`;
+  const mismatch = fromForm.filter((p) => p.product_type_evidence.source_row !== rows[String(p.bowen_no)]);
+  if (mismatch.length) return `${mismatch.length} 个产品记录的行号与人工审阅表不一致`;
+  return { ok: true, detail: `共 ${confirmed.length} 个人工确认产品（含类型表 ${fromForm.length} 个），行号全部对得上` };
 });
 
 // =====================================================================
@@ -385,6 +447,64 @@ check('不存在对原始 Excel 的写操作（构建脚本只调用 readFileSyn
   const src = fs.readFileSync(path.join(ROOT, 'tools/build-product-db-v2.mjs'), 'utf8');
   const bad = /writeFileSync\([^)]*RAW_EXCEL/.test(src) || /writeFileSync\([^)]*data\/raw/.test(src);
   return bad ? '构建脚本写入了 data/raw' : true;
+});
+
+// =====================================================================
+section('Phase 4.1 — 准入规则没有删除任何内部资料，且校验保持只读');
+// =====================================================================
+/** 22 个无可靠主图的网站产品（业务方 2026 确认的清单） */
+const NO_IMAGE_PRODUCT_IDS = [
+  'BW-2043', 'BW-3003-3', 'BW-3004-5', 'BW-3021-1', 'BW-3192', 'BW-3508',
+  'BW-3565-2', 'BW-3566', 'BW-3567', 'BW-3655-2', 'BW-3665', 'BW-3902', 'BW-3919',
+  'BW-3964', 'BW-31002', 'BW-32748-2', 'BW-33111', 'BW-33561', 'BW-33655',
+  'BW-35116', 'BW-36583', 'BW-403229',
+];
+
+check('校验脚本不再 import 会写文件的构建脚本（只读）', () => {
+  const src = fs.readFileSync(path.join(ROOT, 'tools/verify-product-db-v2.mjs'), 'utf8');
+  const importsBuild = /from\s+['"]\.\/build-product-db-v2\.mjs['"]/.test(src);
+  const importsPure = /from\s+['"]\.\/lib\/oe-keys\.mjs['"]/.test(src);
+  return !importsBuild && importsPure
+    ? { ok: true, detail: 'oeSearchKey 来自 tools/lib/oe-keys.mjs；未 import 构建脚本' }
+    : `importsBuild=${importsBuild} importsPure=${importsPure}`;
+});
+check('构建脚本有显式 main 入口（import 不会触发写文件）', () => {
+  const src = fs.readFileSync(path.join(ROOT, 'tools/build-product-db-v2.mjs'), 'utf8');
+  const hasMain = /export function main\(\)/.test(src);
+  const hasGuard = /invokedDirectly/.test(src) && /if \(invokedDirectly\) main\(\)/.test(src);
+  return hasMain && hasGuard
+    ? { ok: true, detail: 'export function main() + 直接执行守卫' }
+    : `main=${hasMain} guard=${hasGuard}`;
+});
+check('22 个无可靠主图的产品仍在内部产品库里完整保留（准入规则不删原始数据）', () => {
+  const ids = new Set(products.map((p) => p.product_id));
+  const missing = NO_IMAGE_PRODUCT_IDS.filter((id) => !ids.has(id));
+  return missing.length === 0
+    ? { ok: true, detail: `${NO_IMAGE_PRODUCT_IDS.length} 个全部保留在 data/derived/v2/products.json` }
+    : `内部库里丢了 ${missing.length} 个: ${missing.join(', ')}`;
+});
+check('22 个无可靠主图的产品仍有自己的 application 记录（行级关系未删）', () => {
+  const withApps = new Set(apps.filter((a) => NO_IMAGE_PRODUCT_IDS.includes(a.product_id)).map((a) => a.product_id));
+  return withApps.size === NO_IMAGE_PRODUCT_IDS.length
+    ? { ok: true, detail: `${withApps.size}/${NO_IMAGE_PRODUCT_IDS.length} 个仍有 application` }
+    : `只有 ${withApps.size} 个有 application`;
+});
+check('源图片映射里的 review_required / unresolved 记录未被删除', () => {
+  const p = path.join(ROOT, 'data/processed/product-image-map.json');
+  if (!fs.existsSync(p)) return '缺少 product-image-map.json';
+  const im = read(p).images;
+  const rr = im.filter((r) => r.mapping_status === 'review_required').length;
+  const un = im.filter((r) => r.mapping_status === 'unresolved').length;
+  return rr > 0 && un > 0
+    ? { ok: true, detail: `review_required=${rr} unresolved=${un} 全部保留` }
+    : `review_required=${rr} unresolved=${un}`;
+});
+check('准入规则由 tools/lib/publication-gate.mjs 单点实现（构建与资产脚本共用）', () => {
+  const build = fs.readFileSync(path.join(ROOT, 'tools/build-product-db-v2.mjs'), 'utf8');
+  const assets = fs.readFileSync(path.join(ROOT, 'tools/p4-build-site-assets.mjs'), 'utf8');
+  return /computePublicationGate/.test(build) && /readPublicationGate/.test(assets)
+    ? { ok: true, detail: 'build 用 computePublicationGate，assets 用 readPublicationGate' }
+    : `build=${/computePublicationGate/.test(build)} assets=${/readPublicationGate/.test(assets)}`;
 });
 
 // =====================================================================

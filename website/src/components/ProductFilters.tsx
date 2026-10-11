@@ -10,8 +10,12 @@ interface Props {
   makes: { make: string; productCount: number }[];
 }
 
-const ENGINE_SUGGESTIONS = ['EA111', 'EA211', 'EA888', '4G6', '476ZQA', '2RZ', '4JJ1', 'MR20', 'G4KE'];
-
+/**
+ * Phase 4.1：这里**不再**内置发动机代号候选列表（原来的 EA111 / 4G6 / 476ZQA …）。
+ * 那些代号是从 application 原文里自动提取的，没有人工复核，
+ * 不能作为「已确认发动机代号」推荐给客户。
+ * 该输入框现在只做「application 原文自由文本搜索」。
+ */
 export function ProductFilters({ typeOptions, categories, makes }: Props) {
   const router = useRouter();
   const params = useSearchParams();
@@ -104,19 +108,19 @@ export function ProductFilters({ typeOptions, categories, makes }: Props) {
       </div>
 
       <div className="field">
-        <label className="label" htmlFor="f-engine">Engine / application</label>
+        <label className="label" htmlFor="f-engine">Application text (as recorded)</label>
         <input
           id="f-engine"
           className={`input ${styles.mono}`}
           value={engine}
           onChange={(e) => setEngine(e.target.value)}
-          placeholder="EA111, 4G6, 476ZQA…"
+          placeholder="Text from the application field"
           autoComplete="off"
-          list="engine-suggestions"
         />
-        <datalist id="engine-suggestions">
-          {ENGINE_SUGGESTIONS.map((e) => <option key={e} value={e} />)}
-        </datalist>
+        <span className="hint">
+          Free-text match against the vehicle/application field exactly as recorded. We do not publish
+          extracted engine codes as confirmed data.
+        </span>
       </div>
 
       <div className={styles.actions}>

@@ -37,10 +37,70 @@ import type {
   ProductListResult,
 } from './types';
 
-/** 站点级静态事实（公司规模、认证等），与产品数据分开管理 */
+/** 管理体系认证（逐字来自宣传手册 P12 与证书原图） */
+export interface CertificationFact {
+  standard: string;
+  system: string;
+  scope: string;
+  scope_exclusion: string | null;
+  certification_body: string | null;
+  iatf_certificate_no: string | null;
+  nqa_certificate_no: string | null;
+  /** ISO 证书编号（IATF 用上面两个字段） */
+  certificate_no?: string | null;
+  issue_date: string | null;
+  expiry_date: string | null;
+  surveillance: string | null;
+  /** 证书图片路径；手册未附图片时为 null */
+  image: string | null;
+  /**
+   * Phase 4.1 业务规则：**只有存在证书图片的认证才在公开网站展示**。
+   * is_public === false 的条目只是内部证据，页面不得展示、
+   * 也不得写进元描述或结构化数据。
+   */
+  is_public: boolean;
+  /** is_public === false 时说明为什么（内部记录，不上页面） */
+  public_hide_reason: string | null;
+  evidence: string;
+}
+
+/** 资质荣誉（宣传手册 P13） */
+export interface HonorFact {
+  name: string;
+  name_zh: string;
+  /** certificate = 证书；public_list = 公示名单（不是管理体系认证证书） */
+  document_kind: 'certificate' | 'public_list';
+  certificate_no: string | null;
+  entry_no?: string | null;
+  issue_date: string | null;
+  validity: string | null;
+  image: string | null;
+  is_public: boolean;
+  evidence: string;
+}
+
+/** 站点级静态事实（公司规模、联系方式、认证等），与产品数据分开管理 */
 export interface SiteFacts {
   company: {
+    /** 正式英文全称（宣传手册 P3 / P14） */
+    legal_name_en: string;
+    /** 正式中文名称（宣传手册 P1 / P3 / P14） */
+    legal_name_zh: string;
+    brand_name: string;
     since_year: number;
+    /** 建设工厂并扩大经营规模的年份 */
+    factory_built_year: number;
+    email: string;
+    /** 手册原样号码，不带国家码 */
+    tel_national: string;
+    /** 展示用格式 */
+    tel_display: string;
+    /** tel: 链接用格式 */
+    tel_href: string;
+    /** 国内平台（1688）—— 必须明确标注为中国国内平台，不是海外官网 */
+    domestic_marketplace_url: string;
+    domestic_marketplace_label: string;
+    domestic_marketplace_note: string;
     manufacturing_base_m2: number;
     production_workshop_m2: number;
     temperature_controlled_workshop_m2: number;
@@ -48,8 +108,30 @@ export interface SiteFacts {
     rd_projects: number;
     patents: number;
     software_copyrights: number;
+    /** 内部证据清单（含 ISO 14001 / ISO 45001）—— **页面不得直接展示** */
     certifications: string[];
+    /** 内部完整标准号 —— **页面不得直接展示** */
+    certification_standards: string[];
+    /** 只有内部资料、手册没有证书图片的认证（当前为 ISO 两项） */
+    internal_only_certifications: string[];
+    /**
+     * ★ 允许公开的认证（当前只有 IATF 16949：有证书图片）。
+     * 页面只能用这一组字段，见 website/tools/verify-public-surface.mjs。
+     */
+    public_certifications: string[];
+    public_certification_standards: string[];
+    /** 已由业务方确认可对外公开的街道地址 */
+    address_en: string;
+    postal_code: string;
+    country: string;
+    /** 地址来源说明（内部字段，不入页面） */
+    address_evidence: string;
+    product_range: string[];
+    evidence_source: string;
   };
+  /** 管理体系认证明细 */
+  certifications_detail?: CertificationFact[];
+  honors?: HonorFact[];
   prototype_product_ids?: string[];
   prototype_product_count?: number;
   site_product_count?: number;

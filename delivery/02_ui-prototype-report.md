@@ -130,13 +130,20 @@
 
 > 每个分类都有真实产品，没有强行展示空分类。
 
-> ⚠️ **产品图片（已于 Phase 2.6 更正）**：此前报告称「Excel 图片列为空、没有产品照片」，
-> **该结论错误**。工作簿内实际嵌有 **681 个图片文件 / 798 个图片对象**，可关联到 **398 个产品**。
+> ⚠️ **产品图片（Phase 2.6 更正，Phase 2.7 落定）**：此前报告称「Excel 图片列为空、没有产品照片」，
+> **该结论错误**。工作簿内实际嵌有 **681 个图片文件 / 798 个图片对象**。
 > 图片不在单元格值里，而是 OOXML 浮动绘图对象（`xl/drawings` + `xl/media`），
 > 只读 `cell.value` 看不到。完整审计见 [`../docs/excel-image-audit.md`](../docs/excel-image-audit.md)。
 >
-> 图片来源已提取到 `data/processed/product-images/`，映射见
-> `data/processed/product-image-map.json`（`exact` 767 / `review_required` 26 / `unresolved` 5）。
+> Phase 2.7 业务方已就 9 个图片问题逐条作答，程序全部落实：
+> `exact` **772** 张 → **403 个产品**；`review_required` **21** 张；`unresolved` 5 张
+> （其中 4 张按 D4/D5 **删除**、1 张按 D6 **裁剪保留**）；
+> 另有 **D3 的 5 个编号已补入产品库**、**403 个产品各选出 1 张主图**（D9 确定性规则）。
+> **重要更正**：图片上的「GXN」是**博文自有商标**（D7），不是外部品牌水印，保留即可。
+>
+> 来源已提取到 `data/processed/product-images/`（795 个文件），映射见
+> `data/processed/product-image-map.json`；结论见
+> [`../docs/product-image-review-needed.md`](../docs/product-image-review-needed.md)。
 > **按业务方要求，本阶段暂未把图片接入网站**，页面仍显示 "Photo pending" 占位符。
 
 ---
@@ -489,17 +496,26 @@ Chrome / Edge 按 `F12` → 点左上角设备图标（Toggle device toolbar）�
 
 ### 第一优先：补齐数据缺口（阻塞上线）
 
-1. **确认 70 个产品类型** —— 填 `review/product-type-unconfirmed.xlsx`
-   （40 个只在系列表/辅助表出现，30 个 Bowen No. 为空）
+1. ~~**确认 70 个产品类型**~~ —— **已结案（Phase 2.7）**：
+   业务方审阅 `review/product-type-unconfirmed.xlsx` 后确认未标黄 40 个类型均为 `Thermostat`，
+   标黄 30 个**整体舍弃**。程序已落实（40 个写入类型 + 行号级证据；30 个移出产品库）。
 2. **确认错位判定口径** —— 当前口径是「编号可读就标 needs_review 不阻断」，
    如需从严（凡 Bowen 字段出现尺寸/温度一律 blocked），改一行重跑即可
 3. **人工核对 125 个共享 OE** —— `review/shared-oe-across-products.xlsx`
 4. **产品照片** —— ~~Excel 图片列为空~~ **已更正：图片存在**。
-   已提取 798 张并映射到 398 个产品（见 `docs/excel-image-audit.md`）。
-   仍需业务方：确认主图规则、处理 26 张待确认 + 5 张无法映射、确认水印可用性。
-5. **公司信息 + 认证证书** —— 注册全称/地址/电话/邮箱、证书编号与范围、
-   产能/交期/MOQ/包装规范
-6. **真实邮箱地址** —— 替换两个占位邮箱
+   已提取 798 张并映射到 **403** 个产品（见 `docs/product-image-review-needed.md`）。
+   **Phase 2.7 已结案**：D3 的 5 个编号已补入产品库、4 张按 D4/D5 删除、
+   `IMG-0780` 按 D6 裁剪、水印按 D7 保留（GXN 是本公司商标）、
+   随手拍按 D8 保留、主图按 D9 规则为 403 个产品各选出 1 张。
+   **仍需业务方**：补 **22 张**图片的「博文编号」（补齐即自动归位）。
+5. **公司信息 + 认证证书** —— **已从公司宣传手册提取**
+   （全称 / 邮箱 `qfbowen@126.com` / 电话 / 网址 / 成立 2009 / 建厂 2014 /
+   占地 10,000+ m² / 车间 3,500 m² / 恒温车间 2,000+ m² / 设备 100+ 台 /
+   IATF 16949:2016 + ISO 14001:2015 + ISO 45001:2018 编号与范围 / 三项荣誉），
+   见 [`../docs/company-info-from-brochure.md`](../docs/company-info-from-brochure.md)。
+   **仍缺**：街道地址（手册未载）；产能/交期业务方已明确「先不做了」。
+   本阶段网站源码冻结，尚未落到页面。
+6. ~~**真实邮箱地址**~~ —— **已取得** `qfbowen@126.com`，等授权后替换两个占位邮箱。
 
 ### 第二优先：把原型变成可上线站点
 

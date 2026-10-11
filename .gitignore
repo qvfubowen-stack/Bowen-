@@ -55,6 +55,14 @@ temp/
 .tmp/
 ~$*
 
+# ---- Phase 5：RFQ 本地运行数据，绝不入库 ----
+# .rfq-data/  无数据库凭据时 json 驱动写入的询价记录（含客户联系方式，属于个人数据）
+# .rfq-mock/  自动化测试用的 mock 邮件 outbox（含测试邮件正文）
+# 两者都可能包含真实客户信息，只应存在于服务器本地磁盘。
+.rfq-data/
+.rfq-mock/
+rfq-outbox.jsonl
+
 # ---- 编辑器 / 操作系统 ----
 .vscode/
 .idea/

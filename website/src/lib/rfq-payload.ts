@@ -1,25 +1,33 @@
 /**
- * RFQ payload 构建（纯函数，可单测）
+ * RFQ 客户端请求体构造（纯函数，可单测）
  * ===========================================================================
- * 为什么单独抽出来：成功页要展示「将传输给销售的完整数据」，其中联系信息必须
- * 是用户在表单里**真实填写的值**，不能是占位符。把它做成纯函数后，
- * 既能被 React 组件复用，也能被自动测试直接调用断言。
+ * 职责边界（Phase 5 重构后）：
+ *   - 本模块只在**浏览器**里把表单值整理成 POST /api/rfq 的 JSON 请求体；
+ *   - 真正的可信校验在服务端（src/lib/rfq/validate.ts）。这里的校验只是 UX 提示，
+ *     让客户在提交前就看到错误，不能、也不会被当作安全边界；
+ *   - 不再构造"待展示的完整 payload"——询价内容不再回显到页面（避免泄露内部结构）。
  *
- * 注意：本阶段原型**不真正发送邮件**，本模块只负责构造 payload。
+ * 字段名与字段长度上限来自 src/lib/rfq/constants.ts，前后端共用一份，避免漂移。
  */
+import {
+  FIELD_LIMITS,
+  HONEYPOT_FIELD,
+  MAX_ITEMS,
+  PRIVACY_CONSENT_VERSION,
+} from './rfq/constants';
 
-/** RFQ 明细行（与 rfq-context 的 RfqLine 保持一致的结构子集） */
-export interface RfqPayloadLine {
-  product_id: string;
-  bowen_no: string;
-  product_type: string | null;
-  matched_oe: string | null;
-  vehicle: string | null;
-  engine: string | null;
-  application_id: string | null;
-  quantity: string;
-  remark?: string;
-}
+/** 表单字段名 → 语义字段的映射（集中在这里，组件与测试共用） */
+export const RFQ_FORM_FIELDS = {
+  name: 'name',
+  company: 'company',
+  country: 'country',
+  email: 'email',
+  whatsapp_phone: 'whatsapp',
+  website: 'website',
+  message: 'message',
+  consent: 'consent',
+  honeypot: HONEYPOT_FIELD,
+} as const;
 
 /** 用户在表单里填写的联系信息 */
 export interface RfqContact {
@@ -33,59 +41,62 @@ export interface RfqContact {
   consent: boolean;
 }
 
-export interface RfqPayload {
-  submitted_at: string;
-  contact: {
-    name: string;
-    company: string;
-    country: string;
-    email: string;
-    whatsapp_phone: string;
-    website: string | null;
-    message: string;
-    consent: boolean;
-  };
+/** 一行 RFQ 明细（与服务端 RfqItem 对齐；product_type/matched_oe/vehicle 仅供服务端比对） */
+export interface RfqSubmitLine {
+  product_id: string;
+  bowen_no: string;
+  product_type: string | null;
+  matched_oe: string | null;
+  vehicle: string | null;
+  application_id: string | null;
+  quantity: string;
+  remark: string;
+}
+
+/** POST /api/rfq 的请求体 */
+export interface RfqSubmitBody {
+  name: string;
+  company: string;
+  country: string;
+  email: string;
+  whatsapp_phone: string;
+  website: string;
+  message: string;
   items: {
     product_id: string;
     bowen_no: string;
     product_type: string | null;
     matched_oe: string | null;
     vehicle: string | null;
-    engine: string | null;
     application_id: string | null;
-    quantity: string | null;
-    remark: string | null;
+    quantity: string;
+    remark: string;
   }[];
-  items_count: number;
-  sourcing_list_file: string | null;
-  delivery: {
-    transport: 'prototype_no_email_sent';
-    note: string;
-  };
+  consent: boolean;
+  privacy_consent_version: string;
+  source_page: string;
+  elapsed_ms: number;
+  /** Turnstile token；未配置验证码时为空串 */
+  turnstile_token: string;
+  /** honeypot：真实用户永远留空 */
+  fax: string;
 }
-
-/** 表单字段名 → RfqContact 字段的映射（集中在这里，测试与组件共用） */
-export const RFQ_FORM_FIELDS = {
-  name: 'name',
-  company: 'company',
-  country: 'country',
-  email: 'email',
-  whatsapp_phone: 'whatsapp',
-  website: 'website',
-  message: 'message',
-  consent: 'consent',
-} as const;
 
 /**
  * 从 HTMLFormElement 读取联系信息。
- * 组件与测试都用这个函数，保证「读表单」的口径只有一处。
+ * 组件与测试都用这个函数，保证"读表单"的口径只有一处。
  */
 export function readContactFromForm(form: HTMLFormElement | { elements: unknown }): RfqContact {
   const get = (n: string): string => {
-    const el = (form as HTMLFormElement).elements?.namedItem?.(n) as HTMLInputElement | HTMLTextAreaElement | null;
+    const el = (form as HTMLFormElement).elements?.namedItem?.(n) as
+      | HTMLInputElement
+      | HTMLTextAreaElement
+      | null;
     return el ? String(el.value ?? '').trim() : '';
   };
-  const consentEl = (form as HTMLFormElement).elements?.namedItem?.(RFQ_FORM_FIELDS.consent) as HTMLInputElement | null;
+  const consentEl = (form as HTMLFormElement).elements?.namedItem?.(
+    RFQ_FORM_FIELDS.consent,
+  ) as HTMLInputElement | null;
   return {
     name: get(RFQ_FORM_FIELDS.name),
     company: get(RFQ_FORM_FIELDS.company),
@@ -98,64 +109,58 @@ export function readContactFromForm(form: HTMLFormElement | { elements: unknown 
   };
 }
 
-const EMPTY = '(not provided)';
+export interface BuildRfqBodyOptions {
+  /** 提交时的站内路径，例如 /rfq?product=BW-3005 */
+  sourcePage: string;
+  /** 从表单出现到点击提交的毫秒数（服务端用于最短耗时判断） */
+  elapsedMs: number;
+  /**
+   * Turnstile token。只有配置了 NEXT_PUBLIC_TURNSTILE_SITE_KEY 时才会有值；
+   * 未配置验证码时传 null，提交体里的 turnstile_token 为空串。
+   */
+  turnstileToken?: string | null;
+}
 
-/**
- * 构造 payload。
- * 联系信息使用传入的真实值；空字符串统一显示为 "(not provided)"，
- * **绝不使用 "(from form)" 这类占位文字**。
- */
-export function buildRfqPayload(
+/** 组装请求体：长度截断与空值归一化，避免服务端因为长度问题拒单 */
+export function buildRfqSubmitBody(
   contact: RfqContact,
-  lines: RfqPayloadLine[],
-  fileName: string | null,
-  now: Date = new Date(),
-): RfqPayload {
-  const t = (v: string): string => (v && v.trim() ? v.trim() : EMPTY);
+  lines: RfqSubmitLine[],
+  options: BuildRfqBodyOptions,
+): RfqSubmitBody {
+  const cut = (value: string, max: number): string => String(value ?? '').trim().slice(0, max);
   return {
-    submitted_at: now.toISOString(),
-    contact: {
-      name: t(contact.name),
-      company: t(contact.company),
-      country: t(contact.country),
-      email: t(contact.email),
-      whatsapp_phone: t(contact.whatsapp_phone),
-      website: contact.website && contact.website.trim() ? contact.website.trim() : null,
-      message: t(contact.message),
-      consent: Boolean(contact.consent),
-    },
-    items: lines.map((l) => ({
+    name: cut(contact.name, FIELD_LIMITS.name),
+    company: cut(contact.company, FIELD_LIMITS.company),
+    country: cut(contact.country, FIELD_LIMITS.country),
+    email: cut(contact.email, FIELD_LIMITS.email),
+    whatsapp_phone: cut(contact.whatsapp_phone, FIELD_LIMITS.whatsapp_phone),
+    website: cut(contact.website, FIELD_LIMITS.website),
+    message: cut(contact.message, FIELD_LIMITS.message),
+    items: lines.slice(0, MAX_ITEMS).map((l) => ({
       product_id: l.product_id,
-      bowen_no: l.bowen_no,
+      bowen_no: cut(l.bowen_no, 60),
       product_type: l.product_type,
       matched_oe: l.matched_oe,
       vehicle: l.vehicle,
-      engine: l.engine,
       application_id: l.application_id,
-      quantity: l.quantity && l.quantity.trim() ? l.quantity.trim() : null,
-      remark: l.remark && l.remark.trim() ? l.remark.trim() : null,
+      quantity: cut(l.quantity, FIELD_LIMITS.quantity),
+      remark: cut(l.remark, FIELD_LIMITS.remark),
     })),
-    items_count: lines.length,
-    sourcing_list_file: fileName && fileName.trim() ? fileName.trim() : null,
-    delivery: {
-      transport: 'prototype_no_email_sent',
-      note:
-        'Prototype build: no email is sent. On the production site this payload is POSTed to the '
-        + 'Bowen RFQ endpoint, stored, and forwarded to sales.',
-    },
+    consent: Boolean(contact.consent),
+    privacy_consent_version: PRIVACY_CONSENT_VERSION,
+    source_page: cut(options.sourcePage, FIELD_LIMITS.source_page),
+    elapsed_ms: Math.max(0, Math.round(options.elapsedMs)),
+    turnstile_token: cut(options.turnstileToken ?? '', 4000),
+    fax: '',
   };
 }
 
-/** 校验（纯函数，供组件与测试共用） */
+/** 客户端预校验（仅 UX；服务端会独立再校验一次） */
 export interface RfqValidationErrors {
   [field: string]: string;
 }
 
-export function validateRfq(
-  contact: RfqContact,
-  itemCount: number,
-  fileName: string | null,
-): RfqValidationErrors {
+export function validateRfq(contact: RfqContact, itemCount: number): RfqValidationErrors {
   const errors: RfqValidationErrors = {};
   if (!contact.name) errors.name = 'Please enter your name.';
   if (!contact.company) errors.company = 'Please enter your company name.';
@@ -164,8 +169,16 @@ export function validateRfq(
   else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(contact.email)) {
     errors.email = 'That email address does not look valid.';
   }
-  if (!contact.message && itemCount === 0 && !fileName) {
-    errors.message = 'Add at least one product, upload a sourcing list, or describe what you need.';
+  if (contact.website && !/^https?:\/\/\S+$/i.test(contact.website) && !/^[\w-]+(\.[\w-]+)+(\/\S*)?$/.test(contact.website)) {
+    errors.website = 'Please enter a valid website address or leave it blank.';
+  }
+  if (!contact.message && itemCount === 0) {
+    errors.message = 'Add at least one product or describe what you need.';
+  }
+  if (!contact.consent) {
+    errors.consent = 'Please confirm that you have read the Privacy Policy.';
   }
   return errors;
 }
+
+export { PRIVACY_CONSENT_VERSION };

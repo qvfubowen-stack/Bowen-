@@ -1,19 +1,5 @@
 [
  {
-  "source_record_id": "SRC-00707",
-  "source_sheet": "工作表1",
-  "source_row": 12,
-  "cell_ref": "D12",
-  "cell_raw": "38169"
- },
- {
-  "source_record_id": "SRC-00708",
-  "source_sheet": "工作表1",
-  "source_row": 13,
-  "cell_ref": "D13",
-  "cell_raw": "38298"
- },
- {
   "source_record_id": "SRC-00709",
   "source_sheet": "工作表1",
   "source_row": 14,
@@ -40,27 +26,6 @@
   "source_row": 17,
   "cell_ref": "D17",
   "cell_raw": "38303"
- },
- {
-  "source_record_id": "SRC-00745",
-  "source_sheet": "工作表1",
-  "source_row": 51,
-  "cell_ref": "D51",
-  "cell_raw": "3932"
- },
- {
-  "source_record_id": "SRC-00845",
-  "source_sheet": "工作表1",
-  "source_row": 151,
-  "cell_ref": "D151",
-  "cell_raw": "32603"
- },
- {
-  "source_record_id": "SRC-00848",
-  "source_sheet": "工作表1",
-  "source_row": 154,
-  "cell_ref": "D154",
-  "cell_raw": "32748-1\n32748-2"
  },
  {
   "source_record_id": "SRC-00968",
